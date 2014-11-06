@@ -4,5 +4,6 @@ from django.db import models
 
 class Word(models.Model):
     word = models.CharField(max_length=255)
+    index = models.IntegerField()
     is_spam = models.NullBooleanField(blank=True, null=True)
     email_file = models.CharField(max_length=255)
