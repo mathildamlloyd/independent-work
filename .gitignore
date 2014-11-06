@@ -1,0 +1,10 @@
+# python
+*.py[co]
+
+# Virtualenv
+bin/*
+local/*
+include/*
+lib/*
+
+
