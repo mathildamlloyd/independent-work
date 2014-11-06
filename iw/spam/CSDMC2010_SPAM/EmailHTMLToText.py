@@ -22,6 +22,7 @@ def parse_emails():
         os.makedirs(dstdir)
 
     for filename in os.listdir(srcdir):
+        print("Parsing %s", filename)
         f = os.path.join(srcdir, filename)
         text = ""
         with open(f) as openfileobject:
