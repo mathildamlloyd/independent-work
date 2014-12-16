@@ -35,7 +35,7 @@ def parse_emails():
         count += 1
         print("Processing %d of %d files" % (count, total))
         f = os.path.join(srcdir, filename)
-        f_new = open(os.path.join(dstdir, filename), 'w')
+        #f_new = open(os.path.join(dstdir, filename), 'w')
         text = ""
         with open(f) as openfileobject:
             for idx, line in enumerate(openfileobject):
@@ -47,7 +47,7 @@ def parse_emails():
         parsed_text = BeautifulSoup(text).get_text()
         parsed_text = filter(filter_func, parsed_text).lower()
         # Save cleaned text to new file for review
-        f_new.write(parsed_text)
+        #f_new.write(parsed_text)
         parsed_text = parsed_text.replace("\n", " ")
         parsed_text = parsed_text.split(" ")
         # Get the training label for the current email being parsed
@@ -59,4 +59,4 @@ def parse_emails():
             else:
                 add_word(word, is_spam, True)
             email_wordset.add(word)
-        f_new.close()
+        #f_new.close()
