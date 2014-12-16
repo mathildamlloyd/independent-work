@@ -1,0 +1,37 @@
+hello,
+
+i am having problems with the uvcvideo module (driver for webcam)
+when resuming from suspend to disk on debian lenny (with the latest
+updates) with a 2.6.30 kernel.
+
+when i wanted to blacklist this module for suspend, i noticed that
+it is already in /etc/hibernate/blacklisted-modules.
+
+my hibernate.conf:
+trymethod suspend2.conf
+trymethod disk.conf
+trymethod ram.conf
+
+=> so i guess i am using swsuspend2, and suspend2.conf contains
+the line:
+include common.conf
+
+and common.conf contains this:
+unloadblacklistedmodules yes
+
+so does this command cause hibernate to read
+/etc/hibernate/blacklisted-modules, or do i have to add
+unloadmodules uvcvideo
+?
+
+thanks in advance,
+-- 
+felix natter
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87d3xrd8hu.fsf@smail.inf.fh-brs.de
+
+

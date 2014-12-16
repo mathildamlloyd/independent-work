@@ -1,0 +1,49 @@
+
+the way to debug something like this is to turn on the log (preferences 
+-> hacking support -> debug log enabled) and track the gpg commands 
+being issued and the responses.
+
+fwiw, using exmh 2.5 and gpg 1.0.7 i do not have problems sending 
+encrypted messages to myself. when i select the message, an xterm 
+window pops up asking for the passphrase. i don't recall exmh ever 
+asking me for the passphrase from the tty that started exmh nor from a 
+dialog box. (but then again, i'm not a heavy gpg user).
+
+kevin
+
+in message <200209111917.paa02912@blackcomb.panasas.com>, brent welch writes:
+> hmm - i'm cc'ing the exmh-workers list, because i really don't know
+> much about the various pgp interfaces.  i think there has been some
+> talk about "issues" with the latest version of gpg.
+> 
+> >>>hacksaw said:
+>  > version 2.5 08/15/2002
+>  > linux habitrail.home.fools-errant.com 2.4.7-10smp #1 smp thu sep 6 17:09:31
+>  > edt 2001 i686 unknown
+>  > tk 8.3 tcl 8.3
+>  > 
+>  > it's not clear to me this is a bug with exmh per se, but it's something 
+>  > that manifests through exmh, so i figured asking you might help me track
+>  > it down.
+>  > 
+>  > when i receive a gpg encrypted message, and it asks me for a passphrase, 
+>  > it first tries to ask me via the tty under which exmh is running. it 
+>  > tells me my passphrase is incorrect every time, at which point exmh 
+>  > offers me the line in the message about decrypting. i click the line 
+>  > and it offers me the dialog box, and tells me the passphrase is correct,
+>  > and shows me the decrypted message.
+>  > 
+>  > any ideas on that?
+
+
+
+
+
+
+
+_______________________________________________
+exmh-workers mailing list
+exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

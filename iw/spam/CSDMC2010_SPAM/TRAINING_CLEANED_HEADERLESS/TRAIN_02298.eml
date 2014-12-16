@@ -1,0 +1,21 @@
+on wed, 21 apr 2010 14:14:54 +0200, sjoerd hardeman wrote:
+
+> downgrading is not supported... it will *not* fix your problem. you can 
+> of course uninstall the package and reinstall a previous version 
+> directly from its deb.
+
+and most often, after a major upgrade, the previous versions can't be 
+installed or not function properly any more.
+
+-- 
+tong (remove underscore(s) to reply)
+  http://xpt.sourceforge.net/techdocs/
+  http://xpt.sourceforge.net/tools/
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hqn5oe$ipm$2@dough.gmane.org
+
+

@@ -1,0 +1,61 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on sat, apr 24, 2010 at 09:19:56am +0200, export@hope.cz wrote:
+>    i use linux running in  compact flash so that the size of the compact
+>    flash memory is the limit
+>    only smtp, no pop3 server
+>    can you suggest something?
+
+hello,
+
+this simple search:
+
+$ apt-cache search mta light
+
+showed some exim4 packages and the one you are looking for:
+
+$ apt-cache show msmtp-mta
+package: msmtp-mta
+priority: extra
+section: mail
+installed-size: 100
+maintainer: emmanuel bouthenot 
+architecture: all
+source: msmtp
+version: 1.4.15-1
+replaces: mail-transport-agent
+provides: mail-transport-agent
+depends: msmtp
+conflicts: mail-transport-agent
+filename: pool/main/m/msmtp/msmtp-mta_1.4.15-1_all.deb
+size: 31580
+md5sum: e1023fbea1950397004a1a4dce9f56ed
+sha1: 01aff21c57739af47d4f56ec2aa6f54cca51395e
+sha256:
+e90add2d60dad2bacb1d263d088844db9b68c258b6666ffef1ad3280f1205481
+description: light smtp client with support for server profiles
+ msmtp is an smtp client that can be used to send mails from mutt and
+probably
+ other muas (mail user agents). it forwards mails to an smtp server
+(for
+ example at a free mail provider), which takes care of the final
+delivery.
+ using profiles, it can be easily configured to use different smtp
+servers
+ with different configurations, which makes it ideal for mobile
+clients.
+ .
+ this package is compiled with gsasl and tls/ssl support.
+ .
+ this package provides the regular mta program.
+homepage: http://msmtp.sourceforge.net/
+tag: mail::smtp, mail::transport-agent, protocol::smtp, role::program,
+works-with::mail
+
+regards.
+
+--=20
+huella de clave primaria: 0fda c36f f110 54f4 d42b  d0eb 617d 396c 448b 31eb

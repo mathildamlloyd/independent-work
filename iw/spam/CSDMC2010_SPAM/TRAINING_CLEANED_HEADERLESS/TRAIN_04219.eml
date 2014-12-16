@@ -1,0 +1,27 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on sun, may 02, 2010 at 10:11:43am +0100, hadi motamedi wrote:
+> dear all
+> i need to schedule for a repeated task on my debian server, as the
+> followings:
+> -) telnet to a remote node
+> -) issue a command
+> -) capture the output in a log
+> -) logout from telnet
+> -) wait for a prescribed time interval
+> -) then redo , but append the subsequent output in just on file
+> can you please let me know which options do we have to write such a task?
+> thank you
+
+hello,
+
+for that task, you want expect.
+to schedule it, you need cron.
+
+regards.
+
+--=20
+huella de clave primaria: 0fda c36f f110 54f4 d42b  d0eb 617d 396c 448b 31eb

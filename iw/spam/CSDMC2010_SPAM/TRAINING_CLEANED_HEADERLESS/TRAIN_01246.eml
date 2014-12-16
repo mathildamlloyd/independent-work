@@ -1,0 +1,39 @@
+on fri, 2002-08-16 at 20:58, torsten bronger wrote:
+
+> if i create an rpm according to one of the how-to's with having
+> red hat in mind, how big are my chances that it will also work
+> for the suse distribution, or others?  (i don't know how many
+> base on the rpm system.)
+> 
+> or what must i pay attention to when creating an rpm that should
+> work with the big distributions?
+
+one practice i've adopted is to list requires: only when they're
+absolutely necessary.  this will help because some packages are named
+differently between distributions (eg. sdl <-> libsdl), and the
+dependencies are automatically handled by rpm by depending on shared
+library names.
+
+this doesn't apply to buildrequires: though.
+
+use macros for directory names where available, eg %{_libdir},
+%{_bindir}, %{_datadir} etc.
+
+i'd like to suggest using as many rpm macros for command names as
+possible too, but unfortunately i don't know of a definitive reference
+about them...
+
+i have a small redhat 7.3 rpm/apt repository at
+, and i've received reports from people
+running mandrake 8.x and suse that the rpms work with them out of the
+box.
+
+-- 
+\/ille skytt
+ville.skytta at iki.fi
+
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

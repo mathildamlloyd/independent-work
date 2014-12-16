@@ -1,0 +1,44 @@
+-----begin pgp signed message-----
+hash: sha1
+
+a website i want to use would allow access unless my java applet is jre
+6 update 13 or higher.  as far as i can figure out the applet provided
+by package sun-java6-bin is update 12.
+
+- from the sun microsystems site i downloaded file jre-6u19-i586.bin;
+moved it to directory /usr/lib/jvm, changed ownership to root:root and
+permissions to rwxr-xr-x and ran the binary.  it created a new directory
+/usr/lib/jvm/jre1.6.0_19 and opened in that directory a number of
+subdirectories and files.
+
+next, i needed to add this new jre to /etc/alternatives.  using the
+alternatives configurator provided by package galternatives, as root i
+selected 'java' as the alternative to configure and added to the options
+list /usr/lib/jvm/1.6.0_19/bin/java and finally selected this new option.
+
+after reloading iceweasel, about:plugins still showed the previous jre i
+was using, /usr/lib/jvm/java-6-openjdk/jre/bin/java.
+
+assuming that i can use a later version of jre downloaded from sun on
+iceweasel 3.5, am i on the right track but did not get the newer version
+set up correctly, or is there a different way?
+
+ken heard
+
+
+-----begin pgp signature-----
+version: gnupg v2.0.9 (gnu/linux)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org
+
+ieyearecaayfakvezi8acgkqlnljzokjmtc8gwcfso/c8xip3eo02hmlm2lbumxb
+43gan1fgj6lprotxst5oh30hnvduqzkp
+=pyrx
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bc4ce30.20704@heard.name
+
+

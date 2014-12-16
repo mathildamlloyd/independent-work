@@ -1,0 +1,68 @@
+None> On Mon, 24 May 2010 05:36:32 -0400 (EDT), Ferenc Wagner wrote:
+>> Kurt Roeckx <kurt@roeckx.be> wrote:
+>>> On Sun, May 23, 2010 at 01:11:48PM +0200, Cyril Brulebois wrote:
+>>>> William Pitcock <nenolod@dereferenced.org> (22/05/2010):
+>>>>> This means that users should *test grub2 extensively* before Squeeze
+>>>>> is released so that any issues can be resolved now.
+>>>> 
+>>>> There should also be some folks fixing the discovered issues.
+>>>
+>>> grub2 currently seems to be having 18 RC bugs, plus a whole bunch
+>>> of merged bugs, while lilo only has 1 RC bug.  
+>> 
+>> I chatted about this with the grub upstream a couple of days ago.
+>> According to Vladimir, most of those bugs are already fixed, but there's
+>> nobody around to do a new upload.  Both grub maintainers (Felix Zielke
+>> and Robert Millan) unexpectedly disappeared some time ago.
+>
+> What about Jordi Mallach and Colin Watson?
+
+I really don't know, I just echoed what I heard on the #grub IRC
+channel.  I saw articles from Colin Watson recently, so he's around, but
+I don't know how he feels about Grub maintenance.
+-- 
+Regards,
+Feri.
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/87y6f9z0il.fsf@tac.ki.iif.hu
+
+
+re: lilo removal in squeeze (or, "please test grub2")stephen powell  writes:
+
+> on mon, 24 may 2010 05:36:32 -0400 (edt), ferenc wagner wrote:
+>> kurt roeckx  wrote:
+>>> on sun, may 23, 2010 at 01:11:48pm +0200, cyril brulebois wrote:
+>>>> william pitcock  (22/05/2010):
+>>>>> this means that users should *test grub2 extensively* before squeeze
+>>>>> is released so that any issues can be resolved now.
+>>>> 
+>>>> there should also be some folks fixing the discovered issues.
+>>>
+>>> grub2 currently seems to be having 18 rc bugs, plus a whole bunch
+>>> of merged bugs, while lilo only has 1 rc bug.  
+>> 
+>> i chatted about this with the grub upstream a couple of days ago.
+>> according to vladimir, most of those bugs are already fixed, but there's
+>> nobody around to do a new upload.  both grub maintainers (felix zielke
+>> and robert millan) unexpectedly disappeared some time ago.
+>
+> what about jordi mallach and colin watson?
+
+i really don't know, i just echoed what i heard on the #grub irc
+channel.  i saw articles from colin watson recently, so he's around, but
+i don't know how he feels about grub maintenance.
+-- 
+regards,
+feri.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87y6f9z0il.fsf@tac.ki.iif.hu
+
+

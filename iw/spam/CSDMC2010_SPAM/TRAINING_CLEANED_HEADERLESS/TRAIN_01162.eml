@@ -1,0 +1,36 @@
+hi all folks,
+
+i have 'apt' installed and updated from 'freshmeat.net.  but i failed using it
+
+# apt-get install 
+/mnt/cdrom/linux/cdburner/cdrtools-cdrecord-1.11a23-1.i386.rpm
+processing file dependencies... done
+reading package lists... done
+building dependency tree... done
+e: couldn't find package 
+/mnt/cdrom/linux/cdburner/cdrtools-cdrecord-1.11a23-1.i386.rpm
+
+the file 'cdrtools-cdrecord-1.11a23-1.i386.rpm' is there
+
+i performed another test copying the file 
+'cdrtools-cdrecord-1.11a23-1.i386.rpm' to /root/download
+
+# apt-get install /root/download/cdrtools-cdrecord-1.11a23-1.i386.rpm
+processing file dependencies... done
+reading package lists... done
+building dependency tree... done
+e: couldn't find package /root/download/cdrtools-cdrecord-1.11a23-1.i386.rpm
+
+still failed.  finally i rpm 'cdrtools-cdrecord-1.11a23-1.i386.rpm' from the 
+cd and suceeded.
+
+kindly advise what mistake i have committed.
+
+thanks in advance.
+
+stephen liu
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

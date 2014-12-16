@@ -1,0 +1,155 @@
+> > but it also identified as spam everything in my inbox that had any
+> > mime structure or html parts, and several messages in my saved 'zope
+> > geeks' list that happened to be using mime and/or html.
+> 
+> do you know why?  the strangest implied claim there is that it hates mime
+> independent of html.  for example, the spamprob of 'content-type:text/plain'
+> in that pickle is under 0.21.  'content-type:multipart/alternative' gets
+> 0.93, but that's not a killer clue, and one bit of good content will more
+> than cancel it out.
+
+i reran the experiment (with the new spamham1.pik, but it doesn't seem
+to make a difference).  here are the clues for the two spams in my
+inbox (in hammie.py's output format, which sorts the clues by
+probability; the first two numbers are the message number and overall
+probability; then line-folded):
+
+    66 1.00 s 'facility': 0.01; 'speaker': 0.01; 'stretch': 0.01;
+    'thursday': 0.01; 'young,': 0.01; 'mistakes': 0.12; 'growth':
+    0.85; '>content-type:text/plain': 0.85; 'please': 0.85; 'capital':
+    0.92; 'series': 0.92; 'subject:don': 0.94; 'companies': 0.96;
+    '>content-type:text/html': 0.96; 'fee': 0.96; 'money': 0.96;
+    '8:00am': 0.99; '9:00am': 0.99; '>content-type:image/gif': 0.99;
+    '>content-type:multipart/alternative': 0.99; 'attend': 0.99;
+    'companies,': 0.99; 'content-type/type:multipart/alternative':
+    0.99; 'content-type:multipart/related': 0.99; 'economy': 0.99;
+    'economy"': 0.99
+
+this has 6 content-types as spam clues, only one of which is related
+to html, despite there being an html alternative (and 12 other spam
+clues, vs. only 6 ham clues).  this was an announcement of a public
+event by our building owners, with a text part that was the same as
+the html (afaict).  its language may be spammish, but the content-type
+clues didn't help.  (btw, it makes me wonder about the wisdom of
+keeping punctuation -- 'economy' and 'economy"' to me don't seem to
+deserve two be counted as clues.)
+
+    76 1.00 s '(near': 0.01; 'alexandria': 0.01; 'conn': 0.01;
+    'from:adam': 0.01; 'from:email addr:panix': 0.01; 'poked': 0.01;
+    'thorugh': 0.01; 'though': 0.03; "i'm": 0.03; 'reflect': 0.05;
+    "i've": 0.06; 'wednesday': 0.07; 'content-disposition:inline':
+    0.10; 'contacting': 0.93; 'sold': 0.96; 'financially': 0.98;
+    'prices': 0.98; 'rates': 0.99; 'discount.': 0.99; 'hotel': 0.99;
+    'hotels': 0.99; 'hotels.': 0.99; 'nights,': 0.99; 'plaza': 0.99;
+    'rates,': 0.99; 'rates.': 0.99; 'rooms': 0.99; 'season': 0.99;
+    'stations': 0.99; 'subject:hotel': 0.99
+
+here is the full message (received: headers stripped), with apologies
+to ziggy and david:
+
+"""
+date: fri, 06 sep 2002 17:17:13 -0400
+from: adam turoff 
+subject: hotel information
+to: guido@python.org, davida@activestate.com
+message-id: <20020906211713.gk7451@panix.com>
+mime-version: 1.0
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+user-agent: mutt/1.4i
+
+i've been looking into hotels.  i poked around expedia for availability
+from march 26 to 29 (4 nights, wednesday thorugh saturday).  
+
+i've also started contacting hotels for group rates; some of the group
+rates are no better than the regular rates, and they require signing a
+contract with a minimum number of rooms sold (with someone financially
+responsible for unbooked rooms).  most hotels are less than responsive...
+
+radission - barcelo hotel (dupont circle)
+$125/night, $99/weekend
+
+state plaza hotel (foggy bottom; near gwu)
+$119/night, $99/weekend
+
+hilton silver spring (near metro, in suburban md)
+$99/hight, $74/weekend
+
+windsor park hotel
+conn ave, between dupont circle/woodley park metro stations
+$95/night; needs a car
+
+econo lodge alexandria (near metro, in suburban va)
+$95/night
+
+this is a hand picked list; i ignored anything over $125/night, even
+though there are some really well situated hotels nearby at higher rates.
+also, i'm not sure how much these prices reflect an expedia-only
+discount.  i can't vouch for any of these hotels, either.
+
+i also found out that the down season for dc hotels are mid-june through
+mid-september, and mid-november through mid-january.
+
+z.
+"""
+
+this one has no mime structure nor html!  it even has a
+content-disposition which is counted as a non-spam clue.  it got
+f-p'ed because of the many hospitality-related and money-related
+terms.  i'm surprised $125/night and similar aren't clues too.  (and
+again, several spam clues are duplicated with different variations:
+'hotel', 'hotels', 'hotels.', 'subject:hotel', 'rates,', 'rates.'.
+
+> wrt hating html, possibilities include:
+> 
+> 1. it really had to do with something other than mime/html.
+> 
+> 2. these are pure html (not multipart/alternative with a text/plain part),
+>    so that the tags aren't getting stripped.  the pickled classifier
+>    despises all hints of html due to its c.l.py heritage.
+> 
+> 3. these are multipart/alternative with a text/plain part, but the
+>    latter doesn't contain the same text as the text/html part (for
+>    example, as anthony reported, perhaps the text/plain part just
+>    says something like "this is an hmtl message.").
+> 
+> if it's #2, it would be easy to add an optional bool argument to tokenize()
+> meaning "even if it is pure html, strip the tags anyway".  in fact, i'd like
+> to do that and default it to true.  the extreme hatred of html on tech lists
+> strikes me as, umm, extreme .
+
+i also looked in more detail at some f-p's in my geeks traffic.  the
+first one's a doozie (that's the term, right? :-).  it has lots of
+html clues that are apparently ignored.  it was a multipart/mixed with
+two parts: a brief text/plain part containing one or two sentences, a
+mondo weird url:
+
+http://x60.deja.com/[st_rn=ps]/getdoc.xp?an=687715863&context;=973121507.1408827441&hitnum;=23
+
+and some employer-generated spammish boilerplate; the second part was
+the html taken directly from the above url.  clues:
+
+    43 1.00 s '"main"': 0.01; '(later': 0.01; '(lots': 0.01; '--paul':
+    0.01; '1995-2000': 0.01; 'adopt': 0.01; 'apps': 0.01; 'commands':
+    0.01; 'deja.com': 0.01; 'dejanews,': 0.01; 'discipline': 0.01;
+    'duct': 0.01; 'email addr:digicool': 0.01; 'email name:paul':
+    0.01; 'everitt': 0.01; 'exist,': 0.01; 'forwards': 0.01;
+    'framework': 0.01; 'from:email addr:digicool': 0.01; 'from:email
+    name:1:22': 0.01; 'http>1:24': 0.01;
+    'http>1:57': 0.01; 'http>1:an': 0.01; 'http>1:author': 0.01;
+    'http>1:fmt': 0.01; 'http>1:getdoc': 0.01; 'http>1:pr': 0.01;
+    'http>1:products': 0.01; 'http>1:query': 0.01; 'http>1:search':
+    0.01; 'http>1:viewthread': 0.01; 'http>1:xp': 0.01; 'http>1:zope':
+    0.01; 'inventing': 0.01; 'jsp': 0.01; 'jsp.': 0.01; 'logic': 0.01;
+    'maps': 0.01; 'neo': 0.01; 'newsgroup,': 0.01; 'object': 0.01;
+    'popup': 0.01; 'probable': 0.01; 'query': 0.01; 'query,': 0.01;
+    'resizes': 0.01; 'servlet': 0.01; 'skip:? 20': 0.01; 'stems':
+    0.01; 'subject:jsp': 0.01; 'sucks!': 0.01; 'templating': 0.01;
+    'tempted': 0.01; 'url.': 0.01; 'usenet': 0.01; 'usenet,': 0.01;
+    'wrote': 0.01; 'x-mailer:mozilla 4.74 [en] (windows nt 5.0; u)':
+    0.01; 'zope': 0.01; '#000000;': 0.99; '#cc0000;': 0.99;
+    '#ff3300;': 0.99; '#ff6600;': 0.99; '#ffffff;': 0.99; '':
+    0.99; '>': 0.99; '': 0.99; '"no': 0.99;
+    '.med': 0.99; '.small': 0.99; '0pt;': 0.99; '0px;': 0.99; '10px;':
+    0.99; '11pt;': 0.99; '12px;': 0.99; '18pt;': 0.99; '18px;': 0.99;
+    '1pt;': 0.99; '2px;': 0.99; '640;': 0.99; '8pt;': 0.99; '

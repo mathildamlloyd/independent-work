@@ -1,0 +1,63 @@
+None> About apt.conf there are these lines:
+> --<snip>--
+> RPM 
+> {
+>    // Leave list empty to disable
+>    AllowedDupPkgs {"^kernel$"; "kernel-smp"; "kernel-enterprise"; };
+>    HoldPkgs {"kernel-source"; "kernel-headers"; };
+> }
+> --</snip>--
+> 
+> How do I tell apt hold all kernel packages? Can I use syntax like 
+> "kernel*"; ? 
+> 
+> And I don't quite understand what the part "^kernel$"; means?
+
+You could read about regular expressions.
+^kernel$ matches "kernel" and nothimg more.
+Kerne, kernel-smp and kernel-enterprise are the kernel packages you
+might be running in a RH system. Packages like kernel-headers,
+kernel-BOOT and kernel-doc aren't matched. If it just said "kernel", it
+would match *all* those packages.
+
+-- 
+"You were good with that recorder." (=nokkahuilu)
+"Soitit hyvin sitä mankkaa."
+	-- (Suomennos) Men Behaving Badly
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+re: about apt, kernel updates and dist-upgradeon thu, feb 07, 2002 at 12:29:14am +0200, peter peltonen wrote:
+> about apt.conf there are these lines:
+> ----
+> rpm 
+> {
+>    // leave list empty to disable
+>    allowedduppkgs {"^kernel$"; "kernel-smp"; "kernel-enterprise"; };
+>    holdpkgs {"kernel-source"; "kernel-headers"; };
+> }
+> ----
+> 
+> how do i tell apt hold all kernel packages? can i use syntax like 
+> "kernel*"; ? 
+> 
+> and i don't quite understand what the part "^kernel$"; means?
+
+you could read about regular expressions.
+^kernel$ matches "kernel" and nothimg more.
+kerne, kernel-smp and kernel-enterprise are the kernel packages you
+might be running in a rh system. packages like kernel-headers,
+kernel-boot and kernel-doc aren't matched. if it just said "kernel", it
+would match *all* those packages.
+
+-- 
+"you were good with that recorder." (=nokkahuilu)
+"soitit hyvin sit mankkaa."
+-- (suomennos) men behaving badly
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

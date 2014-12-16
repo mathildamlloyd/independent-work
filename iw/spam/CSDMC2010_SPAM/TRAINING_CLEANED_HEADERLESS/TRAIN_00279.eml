@@ -1,0 +1,34 @@
+on fri, 07 may 2010 19:36:36 +0200, merciadri luca wrote:
+
+> camalen writes:
+> 
+>> just a wild guess, but try to launch the application as "root" user.
+>> maybe it's a device permissions issue :-?
+
+> i had thought about it. i had not tried it, and, to my deception,
+> exactly the same facts happen. when i use hptalx for the first time as
+> root, i configure the calculator, i `save' but when i click `connect'
+> bug buddy pops. :-(
+
+wow...
+
+how about...?
+
+1/ pressing "o.k", instead "save", it will keep your settings only for the
+current session but it just to test if it works :-?
+
+2/ look at "~/.hptalx" file and check if the previously saved settings 
+seem right (port connection pointing to /dev/ttyusb0, and so on...).
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.07.18.12.32@csmining.org
+
+

@@ -1,0 +1,22 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=iso-8859-1
+
+first of all, i am very new to linux but am well aware of the need to
+learn.  after considerable googling with my issue, i gave up and thought i'd
+try a mailing list instead :)
+
+in attempting to install the cvm package (apt-get install cvm), i recieve a
+warning indicating that the xdm service cannot be automatically
+stopped/started and that i should do so manually.
+
+i then use rcconf to remove the little dot-selector-thingy beside xdm,
+which, as far as i understand, should stop the service immediately, but
+errors ensue in the rest of the installation and when i continue the
+installation again (apt-get -f install) i recieve the same warning that xdm
+is running and needs to be stopped manually.  checking in rcconf, the
+service is already unselected.  taking a hint from my background with ms
+windows, i restarted the computer and tried the installation again; same
+warning and rcconf still shows the service as unselected.
+
+what am i not understanding here?  thanks in advance!
+tom schlodder - calgary, alberta, canada

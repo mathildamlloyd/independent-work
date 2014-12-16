@@ -1,0 +1,24 @@
+hi,
+
+im comparison to another computer, working still with lenny, the
+display of fonts in konsole is bad:-(
+without antialiasing on squeeze (as in lenny) the fonts are angular,
+with activated antialiasing the fonts are too spongy. so, where do i
+have to search to resolve this problem? on my lenny-desktop font in
+konsole without antialiasing looks perfect. in squeeze not:-(
+ah: another one: in lenny the used font is "fixed [misc]" and it can
+display an "". using "fixed [misc]" in squeeze cannot show me the ""
+anymore:-(
+
+any hints?
+
+
+ciao, dirk
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100518170123.gb8060@dserver.dnetz
+
+

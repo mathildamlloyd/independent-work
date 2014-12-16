@@ -1,0 +1,30 @@
+on 2010-05-14 00:59 +0200, stan hoeppner wrote:
+
+> allan wind put forth on 5/13/2010 10:13 am:
+>> i use insserv to boot my laptop and used `update-rc.d apache2 
+>> remove` to indicate that i do not want apache2 to start on 
+>> reboot.  indeed this works fine for while.  either an apache2 
+>> (apache2.2-common upgrade) or some other package install/upgrade 
+>> then seems to revert my choice and apache is once again started 
+>> in reboot.
+>> 
+>> is there a better way to disable servers from starting?
+>
+> i just remove the apache link in /etc/rc*.d
+
+this is equivalent to "update-rc.d apache2 remove" and will not
+persist.  the workaround is to keep at least one stop link, then
+update-rc.d will not recreate the symlinks on package upgrades.
+
+in squeeze it is possible to run "update-rc.d disable" and "update-rc.d
+enable" to disable or enable a service.
+
+sven
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87iq6r9gts.fsf@turtle.gmx.de
+
+

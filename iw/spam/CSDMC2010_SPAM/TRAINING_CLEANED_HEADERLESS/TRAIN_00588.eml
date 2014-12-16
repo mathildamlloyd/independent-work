@@ -1,0 +1,25 @@
+hello all,
+i'm trying to get wins name resolution across subnets working and reckon the
+first step is to be 
+able to do a nmblookup without using the -b (broadcast address flag). does
+anyone know how 
+samba can be configured to do broadcasts to subnets other than just the
+local subnet. 
+i don't think this has anything to do with the remote announce parameter.
+
+thanks
+bryan
+
+
+"and the smoke of their torment ascendeth up for ever and ever: and they
+have no rest day nor night, 
+who worship the beast and his image, and whosoever receiveth the mark of his
+name."
+(revelation 14:11)
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,34 @@
+on 05/02/2010 11:41 pm, mark allums wrote:
+> on sun, may 2, 2010 at 7:20 pm, mark allums  wrote:
+>>
+>> all you *need* is the debian installer and basic networking, so the 
+>> netinst
+>> disc (or business card disc) and internet will get you going. once 
+>> you boot
+>> into a base system, apt will take care of you.
+>>
+>> so, yeah.  you have enough to get started.
+>
+>
+> also, when you get to the screen where you are asked what type of
+> system to install, unselect everything.  then when you reboot, you
+> will have a very very basic bare system, which you can then build up
+> to your tastes.
+>
+> scarletdown@csmining.org
+>
+>
+> [redirected back to debian user list]
+>
+>
+for a basic install id just get the first cd iso and install that. that 
+is assumeing you want a desktop. for just command line id get the 
+business card size one.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bde4a55.6050707@csmining.org
+
+

@@ -1,0 +1,48 @@
+hugo vanwoerkom wrote:
+> hugo vanwoerkom wrote:
+>> hi,
+>>
+>> i just made the mistake of my life and upgraded mc from 
+>> 2:4.6.2~git20080311-4 to 3:4.7.0.1-1.
+>>
+>> and the new color scheme is enough to cause instant blindness :-(
+>> no kidding!
+>>
+>> how do i get back to what i had?
+>> anybody?
+>>
+> 
+> so what happened is that starting with 4.7.0 mc supports skins.
+> 
+> there are 5 skins shipped with mc:
+> 
+> darkfar - black background
+> default - the old default: blue background
+> double-lines - like default but with double lines. couldn't get that to 
+> work
+> featured - like double-lines
+> gotar - black backround
+> 
+> i found 2 skins googling:
+> 
+> elite_commander - unreadable with black backround
+> bluemoon - black background.
+> 
+> i found no skins anywhere with my choice for years: white background.
+> 
+> so it's back to the old blue default because it takes days of diddling 
+> to make up a skin.
+> 
+
+i've complained about it on the mc userlist:
+http://mail.gnome.org/archives/mc/2010-april/msg00024.html
+
+hugo
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hqfn09$mbr$1@dough.gmane.org
+
+

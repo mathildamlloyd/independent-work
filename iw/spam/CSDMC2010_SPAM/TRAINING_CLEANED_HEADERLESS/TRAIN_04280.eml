@@ -1,0 +1,15 @@
+>>>>> "r" == robert harley  writes:
+
+    r> depends who writes it.  one guy will write a bug every 5 lines,
+    r> another every 5000 lines.  put them both on a project and that
+    r> will average out to a bug every 4.995 lines.  
+
+and a java program, due to the extensive class libraries, will weigh
+in at 10% the number of lines of the equivalent c program.  qed.
+
+-- 
+gary lawrence murphy  teledynamics communications inc
+ business advantage through community software : http://www.teledyn.com
+"computers are useless.  they can only give you answers."(pablo picasso)
+
+

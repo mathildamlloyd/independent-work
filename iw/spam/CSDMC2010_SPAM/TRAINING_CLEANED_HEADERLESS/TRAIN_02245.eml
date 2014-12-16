@@ -1,0 +1,25 @@
+[martin steigerwald - donnerstag 06 mai 2010 11:34:57] 
+> 
+> hi!
+> 
+> jfyi as this might (partly) be packaging related.
+> 
+> i found the following bugs with akonadi since i upgraded to kde 4.4.3 
+> happening often, possibly always when i start kontact for the first time 
+> after starting a kde session. on further starts of kontact it works as 
+> expected:
+
+umm, that's interesting. i had this since kde 4.4.0 (self-compiled) and
+it vanished when switching from the 4.4.2 debs to the 4.4.3 ones.
+so i thought it was just fixed for 4.4.3. now i wonder what i did to
+make it work.
+
+regards
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201005061144.03642.schwarzerf@csmining.org
+
+

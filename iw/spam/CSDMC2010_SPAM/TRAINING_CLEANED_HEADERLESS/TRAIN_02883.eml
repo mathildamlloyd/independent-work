@@ -1,0 +1,46 @@
+le 14/04/2010 15:28, ron johnson wrote:
+> on 2010-04-13 22:50, stan hoeppner wrote:
+>> hugo vanwoerkom put forth on 4/13/2010 3:53 pm:
+> [snip]
+>>
+>> either way, avoid onboard realtek ethernet as it's not currently
+>> supported
+>> well by debian. one might be able to make it work, but the process
+>> requires
+>> some serious hoop jumping.
+>>
+>
+> really? realtek chips are as common as flies on horse poop, and works
+> perfectly for me.
+>
+> $ lspci -vs 03:00.0
+> 03:00.0 ethernet controller: realtek semiconductor co., ltd.
+> rtl8111/8168b pci express gigabit ethernet controller (rev 02)
+> subsystem: giga-byte technology ga-ep45-ds5 motherboard
+> flags: bus master, fast devsel, latency 0, irq 28
+> i/o ports at ce00 [size=256]
+> memory at fddff000 (64-bit, prefetchable) [size=4k]
+> memory at fdde0000 (64-bit, prefetchable) [size=64k]
+> [virtual] expansion rom at fdd00000 [disabled] [size=64k]
+> capabilities: 
+> kernel driver in use: r8169
+>
+hi, i have an asus "sabertooth" 55i (socket lga1156) with the same 
+realtek lan chip (rev03 here), no problem.
+the motherboard is overpriced due to it's marketing hype regarding 
+"military" grade components and "ceramix" coated heatsinks , but 
+otherwise it's working great, and very cool too with an intel core i7. 
+layout is good for my needs, ample space for large video card without 
+blocking any sata port. bundle is limited to bare minimum (esata/usb 
+bracket and a few cables). used for video processing mainly, occasional 
+kernel compilations, virtualbox vm and the occasional game.works with 
+squeeze amd64 with stock kernel (minor sound glitches with on-board 
+chip) and currently 2.6.33.2 (100% functional), suspend works too.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bc5f916.80103@googlemail.com
+
+

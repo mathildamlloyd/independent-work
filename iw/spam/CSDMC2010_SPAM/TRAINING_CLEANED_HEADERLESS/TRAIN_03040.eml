@@ -1,0 +1,40 @@
+paul e condon writes:
+> i worked on a personal project last year in which i ran into the 32k
+> limit and solved the problem by imposing a simple structure on my
+> directory names.
+
+it's easy if you are planning ahead.  this guy is stuck with an
+application (presumably closed-source) that already requires a flat file
+structure.
+
+> i think because apple didn't want to trouble their users with
+> difficult concepts, like telephones and dialing a telephone number.
+
+the on-screen rebus for a directory was a little dohicky that apple's
+designers imagined looked like a picture of a manila folder.  the idea
+was to sooth computerphobic office workers by making their screens look
+just like their desktops.  that's the origin of the "desktop metaphor".
+fortunately, they did not decide to label disk drives "drawers".
+
+> who remembers dialing?
+
+i do, of course.  i even have several working 500ds somewhere in the
+junk box.
+
+> where did that word come from? ;-)
+
+wikipedia says "the word dialling originally referred to the creation of
+the mathematics required to create a sundial face to tell time based on
+the position of the sun. those skilled in the art were referred to as
+dialists or gnomonists; taken from the word gnomon (a device using a
+shadow as an indicator)."
+-- 
+john hasler
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87och676xx.fsf@thumper.dhh.gt.org
+
+

@@ -1,0 +1,26 @@
+rose, bobby wrote:
+> ouch ;-)  although i'm not ready to give up razor just yet, i'd like to
+> see a pyzor check in sa.  i don't think it even needs to be written in
+> perl.  sa is actually calling razor-check and razor-report as well as
+> dccproc for those checks so it should be nothing more than duplication
+> of coding to add pyzor. 
+
+the problem is that python has a much longer startup time than perl 
+(though this may have changed recently, i don't know). this is partly 
+why python was never very popular for cgis.
+
+matt.
+
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

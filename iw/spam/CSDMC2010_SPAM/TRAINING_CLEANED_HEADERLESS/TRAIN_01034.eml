@@ -1,0 +1,24 @@
+hi all,
+
+i am using dsl [ damn small linux ] which is branched from debain.
+i am trying to use gcc, gdb.  able to install both of them.
+
+i am doing following
+     - run a helloworld.c program whic has a while loop.  so while
+running, its stuck in while.
+     - another shell, "kill -11 pid" [ pid of the ./a.out ]
+after kill, i get segmentation fault.  but core is not dumped. [ i
+expect a print ( core dumped ) ]
+
+anyone faced this ??? please help.
+
+thanks
+- avinash
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/aanlktimx6s-mqkkzx7znyc5xnivc6stjhfrh7ts6rxuc@mail.csmining.org
+
+

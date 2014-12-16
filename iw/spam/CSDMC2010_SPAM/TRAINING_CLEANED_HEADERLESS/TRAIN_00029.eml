@@ -1,0 +1,46 @@
+-----begin pgp signed message-----
+hash: sha1
+
+ron johnson  writes:
+
+> on 05/09/2010 03:49 pm, merciadri luca wrote:
+>> ron johnson wrote:
+>>> i just opened a new writer 3.2.0-9+b1 document then selected the
+>>> "title image" http://i.space.com/images/080702-voyager-01.jpg from
+>>> http://www.space.com/missionlaunches/nasa-tracking-voyager2-problem-100506.html
+>>> and pasted it into the document.
+>> i am using oo 2.4.1.
+>
+> that's *really* old.  if you run stable, then you should deinstall it
+> and get binaries from http://www.go-oo.org
+ok. i will do it. would it be that?
+
+>>                       take for example
+>> http://en.wikipedia.org/wiki/california.
+>
+> still works, although ooo doesn't seem to know how to handle svg
+> documents.
+lucky you, but it must be because of the version. note that it does
+not _always_ hang here, that's purely random.
+- -- 
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+- -- 
+
+doing your best is more important than being the best.
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: processed by mailcrypt 3.5.8 
+
+ieyearecaayfakvnpk4acgkqm0llzlt8mhxirgcgpya4sff/mfurhngomwzxqdgg
+dskan1ehvibym50njr1aa7s/m0mtvxhp
+=px5u
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87hbmgmg1d.fsf@merciadriluca-station.merciadriluca
+
+

@@ -1,0 +1,112 @@
+ouch.... hooooo....
+
+cheers,
+rah
+
+--- begin forwarded text
+
+
+date: thu,  5 sep 2002 09:17:13 -0700
+from: same guy
+subject: re: electric car an edsel...
+to: "r. a. hettinga"  
+
+bob,
+
+this guy's an idiot.
+
+i design loads for systems with the 50 kv capacitors.  one of those has 864
+of such capacitors and stores only 10 megajoules, which means 11 kilojoules
+each.  they weigh 125 kg.
+
+you need high energy per unit mass, and the capacitive system i picked
+maximizes that.
+
+it is precisely the system that maxwell is touting for electrical braking
+and power augmentation for regenerative use in automobiles.  you also need
+voltage you can use in a dc motor, which is why though the actual
+capacitors in the system are charged to 2.5 volts, the system has them
+arranged in series to boost the voltage.
+
+ignore him.  he's a waste of my time.
+
+
+
+------------------------
+  from: "r. a. hettinga" 
+  subject: re: electric car an edsel...
+  date: wed, 4 sep 2002 15:31:39 -0400
+  to: some people...
+
+
+
+--- begin forwarded text
+
+
+date: wed, 4 sep 2002 07:59:10 -0700 (pdt)
+from: "adam l. beberg" 
+to: "r. a. hettinga" 
+cc: 
+subject: re: electric car an edsel...
+
+on wed, 4 sep 2002, r. a. hettinga wrote:
+
+> maxwell (www.maxwell.com) makes and sells high energy density capacitors,
+> called ultracapacitors.  they deliver them in an air-cooled, voltage
+> regulated module that will charge to 42 v and hold 128 kilojoules -- roughly
+> the energy in 2 teaspoons of sugar or a bite of a donut -- and weighs 16
+> kilograms.  if that electrical energy could all be converted to kinetic
+> energy, there's enough to get the capacitor module up to about 200 mph -- in
+> a vacuum.
+
+since the energy you can pack into a capacitor is something like
+1/2*c*(v^2), you want to design your system with the lowest voltage possible
+to fully exploit that v^2 ;) so yea, a 42v system will only be useful for
+accelerating insects, not cars. that must be why 40kv is standard not 42.
+(the joke of putting 42 into goggle to find that model was not missed btw)
+
+most production systems use a mix of batteries and capacitors, as very few
+real world applications run for less then 10 seconds like the car we were
+talking about originally. even 10 seconds is pushing the "capactior is the
+wrong choice" limits. thats why the landspeed record model is a battery one,
+it's got to run for a much longer period of time and needs a steady
+discharge curve.
+
+but it should be safe to say that most people want the indy 500 version, not
+the 1/4 mile sprint version when they are looking for a vehice :) for those
+you dont want a battery or a capacitor, you want to take advantage of whole
+atoms, not just electrons. then you can suck off the electrons you need with
+a fuel cell. however, you will use both capacitors for the braking/accel,
+and batteries to not just dump excess energy in the design.
+
+- adam l. "duncan" beberg
+  http://www.mithral.com/~beberg/
+  beberg@mithral.com
+
+--- end forwarded text
+
+
+-- 
+-----------------
+r. a. hettinga 
+the internet bearer underwriting corporation 
+44 farquhar street, boston, ma 02131 usa
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- edward gibbon, 'decline and fall of the roman empire'
+
+
+---------------end of original message-----------------
+
+--- end forwarded text
+
+
+-- 
+-----------------
+r. a. hettinga 
+the internet bearer underwriting corporation 
+44 farquhar street, boston, ma 02131 usa
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- edward gibbon, 'decline and fall of the roman empire'
+

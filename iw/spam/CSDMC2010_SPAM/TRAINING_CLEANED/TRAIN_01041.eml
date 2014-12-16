@@ -1,0 +1,51 @@
+None> PostgreSQL is apparently capable of providing the proper features and
+> Tobias Koenig has made Akonadi  working with PostgreSQL since the end of
+> last year (http://tokoe-kde.blogspot.com/2009/12/akonadi-
+> and-postgresql.html). That patch was committed to trunk at that time, but
+> apparently didn't make into SC 4.4 (?).
+> So if you want to use PostgreSQL, your best bet would be to port/base that
+> patch on 4.4.
+
+I don't want to reinstate this discussion, but I just found sth which I haven't heard/read about 
+before, which might help you (haven't tried it myself).
+
+I just started the Akonadi Tray utility, then right-clicked on the tray icon and chose Configure...
+The second tab, labelled "Akonadi Server Configuration" has a setting for Database driver, which 
+allows you to choose between MySQL and ... PostgreSQL
+With PostgreSQL selected, you can specify your database settings.
+
+Maybe that helps.
+
+
+-- 
+To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/201005081944.08205.didi.debian@cknow.org
+
+
+re: kde 4.4.3 in unstableon 2010-05-06 diederik de haas wrote:
+> postgresql is apparently capable of providing the proper features and
+> tobias koenig has made akonadi  working with postgresql since the end of
+> last year (http://tokoe-kde.blogspot.com/2009/12/akonadi-
+> and-postgresql.html). that patch was committed to trunk at that time, but
+> apparently didn't make into sc 4.4 (?).
+> so if you want to use postgresql, your best bet would be to port/base that
+> patch on 4.4.
+
+i don't want to reinstate this discussion, but i just found sth which i haven't heard/read about 
+before, which might help you (haven't tried it myself).
+
+i just started the akonadi tray utility, then right-clicked on the tray icon and chose configure...
+the second tab, labelled "akonadi server configuration" has a setting for database driver, which 
+allows you to choose between mysql and ... postgresql
+with postgresql selected, you can specify your database settings.
+
+maybe that helps.
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201005081944.08205.didi.debian@cknow.org
+
+

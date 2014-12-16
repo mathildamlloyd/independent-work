@@ -1,0 +1,93 @@
+Nonethanks for the moment
+
+2010/4/24 Josselin Mouette <joss@debian.org>:
+> Le samedi 24 avril 2010 =C3=A0 13:02 +0200, Philipp Kern a =C3=A9crit :
+>> On Wed, Apr 21, 2010 at 09:00:34AM +0200, Philipp Kern wrote:
+>> > On Wed, Apr 21, 2010 at 08:36:24AM +0200, Josselin Mouette wrote:
+>> > > Dear volatile team, would it be possible to have binNMUs for
+>> > > python-clamav in volatile? Or does it need a source upload? If so, w=
+ho
+>> > > could do it?
+>> > thanks to adsb that already happened. =C2=A0However unless somebody wh=
+o's used
+>> > to the package tests it and reports back a success it won't be copied =
+over.
+>> > dansguardian was the only package for now where that happened. =C2=A0W=
+ould you
+>> > mind testing it?
+>>
+>> ping. =C2=A0It's in volatils's lenny-proposed fwiw.
+>
+> Giulio, could you test it? Or Cl=C3=A9ment?
+> --
+> =C2=A0.''`. =C2=A0 =C2=A0 =C2=A0Josselin Mouette
+> : :' :
+> `. `' =C2=A0=E2=80=9CIf you behave this way because you are blackmailed b=
+y someone,
+> =C2=A0`- =C2=A0 =C2=A0[=E2=80=A6] I will see what I can do for you.=E2=80=
+=9D =C2=A0-- J=C3=B6rg Schilling
+>
+>
+
+
+
+--=20
+Dr. Giulio Spinozzi
+E-Mail: giuliospinozzi@csmining.org
+Web: http://giuliospinozzi.altervista.org
+GnuPG Key ID: 0xABBF9D15 | http://pgp.mit.edu/
+
+
+-- 
+To UNSUBSCRIBE, email to debian-volatile-request@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/r2n951d34ac1004240746he45d72ebq4958a7bdc6141510@mail.csmining.org
+
+
+re: bug#578383: bug nautilus-clamscanyes, tomorrow i'll try...
+thanks for the moment
+
+2010/4/24 josselin mouette :
+> le samedi 24 avril 2010 =c3=a0 13:02 +0200, philipp kern a =c3=a9crit :
+>> on wed, apr 21, 2010 at 09:00:34am +0200, philipp kern wrote:
+>> > on wed, apr 21, 2010 at 08:36:24am +0200, josselin mouette wrote:
+>> > > dear volatile team, would it be possible to have binnmus for
+>> > > python-clamav in volatile? or does it need a source upload? if so, w=
+ho
+>> > > could do it?
+>> > thanks to adsb that already happened. =c2=a0however unless somebody wh=
+o's used
+>> > to the package tests it and reports back a success it won't be copied =
+over.
+>> > dansguardian was the only package for now where that happened. =c2=a0w=
+ould you
+>> > mind testing it?
+>>
+>> ping. =c2=a0it's in volatils's lenny-proposed fwiw.
+>
+> giulio, could you test it? or cl=c3=a9ment?
+> --
+> =c2=a0.''`. =c2=a0 =c2=a0 =c2=a0josselin mouette
+> : :' :
+> `. `' =c2=a0=e2=80=9cif you behave this way because you are blackmailed b=
+y someone,
+> =c2=a0`- =c2=a0 =c2=a0[=e2=80=a6] i will see what i can do for you.=e2=80=
+=9d =c2=a0-- j=c3=b6rg schilling
+>
+>
+
+
+
+--=20
+dr. giulio spinozzi
+e-mail: giuliospinozzi@csmining.org
+web: http://giuliospinozzi.altervista.org
+gnupg key id: 0xabbf9d15 | http://pgp.mit.edu/
+
+
+-- 
+to unsubscribe, email to debian-volatile-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/r2n951d34ac1004240746he45d72ebq4958a7bdc6141510@mail.csmining.org
+
+

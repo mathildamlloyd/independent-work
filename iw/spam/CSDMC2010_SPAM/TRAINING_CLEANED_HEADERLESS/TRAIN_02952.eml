@@ -1,0 +1,27 @@
+http://www.hughes-family.org/bugzilla/show_bug.cgi?id=1052
+
+
+
+
+
+------- additional comments from rod-spamassassin@arsecandle.org  2002-10-03 18:51 -------
+ignoring the conspiracy theories, can you supply examples of spam which was 
+scored with rcvd_in_bondedsender?  the only mail i have received which scored 
+this were from amazon.com.
+
+
+
+------- you are receiving this mail because: -------
+you are the assignee for the bug, or are watching the assignee.
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+spamassassin-devel mailing list
+spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

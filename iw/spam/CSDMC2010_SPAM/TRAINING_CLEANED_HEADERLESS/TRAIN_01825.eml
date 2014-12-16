@@ -1,0 +1,102 @@
+severity: security
+product: gaim
+keywords: gaim hyperlink manual
+references: 
+  can-2002-0989 
+    http://cve.mitre.org/cgi-bin/cvename.cgi?name=can-2002-0989
+  gaim changelog
+    http://gaim.sourceforge.net/changelog
+
+gaim is an instant messaging client based on the published toc
+protocol from aol. the developers of gaim, an instant messenger client
+that combines several different networks, found a vulnerability in the
+hyperlink handling code. the 'manual' browser command passes an
+untrusted string to the shell without escaping or reliable quoting,
+permitting an attacker to execute arbitrary commands on the users
+machine. unfortunately, gaim doesn't display the hyperlink before the
+user clicks on it. users who use other inbuilt browser commands aren't
+vulnerable.
+
+the fixed version of gaim no longer passes the user's manual browser
+command to the shell. commands which contain the %s in quotes will
+need to be amended, so they don't contain any quotes. the 'manual'
+browser command can be edited in the 'general' pane of the
+'preferences' dialog, which can be accessed by clicking 'options' from
+the login window, or 'tools' and then 'preferences' from the menu bar
+in the buddy list window.
+
+please download gaim 0.59.1 or later using red carpet. you may also
+obtain this update from the ximian ftp site.
+
+debian potato
+ftp://ftp.ximian.com/pub/ximian-gnome/debian-potato-i386/gaim_0.59.1-1.ximian.2_i386.deb
+ftp://ftp.ximian.com/pub/ximian-gnome/debian-potato-i386/gaim-common_0.59.1-1.ximian.2_i386.deb
+ftp://ftp.ximian.com/pub/ximian-gnome/debian-potato-i386/gaim-gnome_0.59.1-1.ximian.2_i386.deb
+
+mandrake 8.0
+ftp://ftp.ximian.com/pub/ximian-gnome/mandrake-80-i586/gaim-0.59.1-1.ximian.2.i586.rpm
+
+mandrake 8.1
+ftp://ftp.ximian.com/pub/ximian-gnome/mandrake-81-i586/gaim-0.59.1-1.ximian.2.i586.rpm
+
+mandrake 8.2
+ftp://ftp.ximian.com/pub/ximian-gnome/mandrake-82-i586/gaim-0.59.1-1.ximian.2.i586.rpm
+
+redhat 6.2
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-62-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-62-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+redhat 7.0
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-70-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-70-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+redhat 7.1
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-71-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-71-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+redhat 7.2
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-72-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-72-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+redhat 7.3
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-73-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-73-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+solaris 7/8
+ftp://ftp.ximian.com/pub/ximian-gnome/solaris-7-sun4/gaim-0.59.1-2.ximian.1.sparc.rpm
+
+suse 7.1
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-71-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-71-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+suse 7.2
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-72-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-72-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+suse 7.3
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-73-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-73-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+suse 8.0
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-80-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-80-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+yellowdog 2.0
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-20-ppc/gaim-0.59.1-1.ximian.2.ppc.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-20-ppc/gaim-applet-0.59.1-1.ximian.2.ppc.rpm
+
+yellowdog 2.1
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-21-ppc/gaim-0.59.1-1.ximian.2.ppc.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-21-ppc/gaim-applet-0.59.1-1.ximian.2.ppc.rpm
+
+yellowdog 2.2
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-22-ppc/gaim-0.59.1-1.ximian.2.ppc.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-22-ppc/gaim-applet-0.59.1-1.ximian.2.ppc.rpm
+
+
+
+_______________________________________________
+updates maillist  -  updates@ximian.com
+to unsubscribe from this list, or to change your subscription options, follow the link below:
+http://lists.ximian.com/mailman/listinfo/updates
+

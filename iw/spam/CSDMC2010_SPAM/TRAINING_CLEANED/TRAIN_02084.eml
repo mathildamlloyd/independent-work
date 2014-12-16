@@ -1,0 +1,31 @@
+None> Have you tried "apt-get update" or "aptitude update" before trying to
+> install these packages?
+>
+>
+ Yes, I did "aptitude safe-upgrade" after "aptitude update" and then
+"aptitude full-upgrade".
+
+I selected "n" and it prompted me to "downgrade the packages to testing".
+This means that the versions it had were newer than testing, i.e., from sid.
+How could this be if I followed 2.7.3 of DR? According to that, my candidate
+version is appropriately set:
+
+stuckey@debian:~$ cat /etc/apt/apt.conf
+APT::Default-Release "testing";
+re: aptitude errorfrom nobody tue dec 16 07:55:47 2014
+content-type: text/plain; charset=iso-8859-1
+
+> have you tried "apt-get update" or "aptitude update" before trying to
+> install these packages?
+>
+>
+ yes, i did "aptitude safe-upgrade" after "aptitude update" and then
+"aptitude full-upgrade".
+
+i selected "n" and it prompted me to "downgrade the packages to testing".
+this means that the versions it had were newer than testing, i.e., from sid.
+how could this be if i followed 2.7.3 of dr? according to that, my candidate
+version is appropriately set:
+
+stuckey@debian:~$ cat /etc/apt/apt.conf
+apt::default-release "testing";

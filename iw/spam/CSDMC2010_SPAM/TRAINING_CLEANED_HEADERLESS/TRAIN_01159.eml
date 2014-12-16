@@ -1,0 +1,54 @@
+>
+>
+>
+>---- original message ----
+>from: viaum@sheridanc=2eon=2eca
+>to: debian-user@lists=2edebian=2eorg
+>subject: re: any file details on an executable binary file=3f
+>date: fri, 14 may 2010 11:02:42 -0400
+>
+>>
+>>hello list,
+>>
+>>i was wondering if anyone could suggest a package or means to look
+>at any or all of the information from a given executable binary file:
+>>
+>>- what compiler compiled it
+>>
+>>- what (source) language was it compiled from
+>>
+>>- what computer architecture the file was compiled for
+>>
+>>- how many hardware bits was the file intended for (eg=2e 32-bit or
+>64-bit encoding)
+>>
+>>- endianness
+>>
+>>
+>>if any of the above a simply not possible because of the nature all
+>binary files, it would be helpful to know that too=2e
+>>
+>>thanks=2e
+>>=20
+>>
+>>-m
+>>
+>>
+i have never seen an executable with this info=2e=2e  usually the
+compiler itself strips out any info such as you request=2e=20
+larry
+>> =09=09 =09   =09=09 =20
+>>=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=
+=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=
+=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f
+>>msn dating: find someone special=2e start now=2e
+>>http://go=2emicrosoft=2ecom/=3flinkid=3d9729707
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/380-220105514231329703@netptc.net
+
+

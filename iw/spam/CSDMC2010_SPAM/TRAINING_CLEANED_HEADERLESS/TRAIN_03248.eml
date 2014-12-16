@@ -1,0 +1,27 @@
+on 2010-04-22, dotan cohen  wrote:
+---snip---
+>from where to acquire kde 4.4.2 in a reasonably safe manner?
+
+i don't know of any backported binaries, so you would have to compile it
+yourself. that, however, would be a major undertaking, and presupposes
+that the latest kde4 even compiles against the versions of the various
+libraries included in lenny.
+
+an alternative is to upgrade to testing/unstable, but then you would no
+longer have the uncomplicated life of a lenny user :-)
+
+or you could wait for the next stable release, or at least for the
+freeze announcement.
+
+-- 
+liam o'toole
+birmingham, united kingdom
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/slrnht0bcs.bu7.liam.p.otoole@dipsy.selfip.org
+
+

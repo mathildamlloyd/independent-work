@@ -1,0 +1,13 @@
+[jeremy hylton]
+> here's clarification of why i did:
+
+that's pretty much what i had guessed.  thanks!  one more to try:
+
+> first test results using tokenizer.tokenizer.tokenize_headers()
+> unmodified. 
+> ...
+> second test results using mboxtest.mytokenizer.tokenize_headers().
+> this uses all headers except received, data, and x-from_.
+> ...
+
+try the latter again, but call the base tokenize_headers() too.

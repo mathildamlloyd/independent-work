@@ -1,0 +1,36 @@
+on 2010-04-06 11:30, rodolfo medina wrote:
+[snip]
+> 
+> today i went back to that shop and found many other printers - about ten - none
+> of whose is listed there.  so, that list seems to be quite old.  on the other
+> hand, i seriously need a new printer but would like to be sure it'll work under
+> debian.  what do you debian users suggest?
+> 
+
+(what's your budget and what country do you live in?)
+
+openprinting.org has a by-manufacturer listing grouping all the 
+"perfectly" working printers together, then the "mostly" then the 
+"partially" and "paperweight".
+
+for example:
+http://www.openprinting.org/printers/manufacturer/epson/
+http://www.openprinting.org/printers/manufacturer/fujitsu/
+http://www.openprinting.org/printers/manufacturer/hp
+http://www.openprinting.org/printers/manufacturer/dell
+
+even though it's marked as "mostly", i really like my dell 3100cn 
+color laser printer.  it's *big*, and was $350 about 5 years ago but 
+being laser printer is toner-based, and powder doesn't dry out.
+
+-- 
+"history does not long entrust the care of freedom to the weak
+or the timid."  dwight eisenhower
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bbb694f.8000405@cox.net
+
+

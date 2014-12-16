@@ -1,0 +1,136 @@
+>> i have no idea what that's supposed to mean. you'd use a =
+decompression session and do whatever you want with the pixel buffers it =
+gives you. why do you think you can't?
+
+i believe this is a newbie question related to the general use of the =
+decompression session. let me try to explain:=20
+
+first i initialize my decompression session within the data proc =
+callback function:
+
+*******start***********
+if (videodata->decompressionsession =3d=3d null) {
+    cout << "create decompression session: ";
+    imagedescriptionhandle imagedesc =3d =
+(imagedescriptionhandle)newhandle(0);
+    err =3d sggetchannelsampledescription(c, (handle)imagedesc);
+    err =3d createdecompressionsession( imagedesc,=20
+                                videodata->width, =
+videodata->height,k32bgrapixelformat,=20
+                                displayandcompressframe, videodata,=20
+                                &videodata-;>decompressionsession);
+
+    if (err =3d=3d 0) cout << "success" << endl; else cout << "failed" =
+<< endl;
+}
+*******end***********
+
+
+i do the same for a compression session:
+
+
+*******start***********
+if (videodata->compressionsession =3d=3d null) {
+    cout << "create compression session: ";
+    err =3d createcompressionsession(
+                                videodata->width, videodata->height, =
+videodata->codectype,=20
+                                videodata->averagedatarate, =
+videodata->timescale,
+                                usecompressedframe, videodata,
+                                &videodata-;>compressionsession );
+    if (err =3d=3d 0) cout << "success" << endl; else cout << "failed" =
+<< endl;
+}  =20
+*******end***********
+
+
+furthermore, within the data proc callback i have the decompression =
+call:
+
+
+*******start***********
+err =3d icmdecompressionsessiondecodeframe( =
+videodata->decompressionsession,
+                        (uint8 *)p, len, null, &frametime;, videodata );
+*******end***********
+
+
+which finally allows me to access the pure pixelbuffer to be accessed in =
+my "displayandcompressframe" function.
+in my "displayandcompressframe"-function i display the pixels on a =
+custom frame and compress the frame via:
+
+
+*******start***********
+err =3d icmcompressionsessionencodeframe( videodata->compressionsession, =
+pixelbuffer,
+                                displaytime, displayduration, =
+validtimeflags,
+                                frameoptions, null, null );
+*******end***********
+
+
+this triggers my "usecompressedframe"-function:
+
+
+*******start***********
+static osstatus usecompressedframe( void *encodedframeoutputrefcon,
+                                   icmcompressionsessionref session,
+                                   osstatus err,
+                                   icmencodedframeref encodedframe,
+                                   void *reserved ){
+
+  int size =3d icmencodedframegetdatasize( encodedframe );
+
+  //// what now ???
+
+  return err;
+}
+******** end***************
+
+
+in which i can send the encoded frame across a network but before i =
+involve any network functionality i first want to test if the =
+decompression works. however, here is the problem and i will start with =
+a simple first question:=20
+
+can i feed the encoded frame to the same decompression session which =
+decompresses my device data and displays it or do i need to create a =
+second decompression session with the respective callback ? if i need to =
+create another decompression session are there any special requirements =
+i need to take care of  - so far my first try also failed.
+
+thanks a lot in advance,
+best
+
+-- a l e x
+
+
+
+
+>=20
+>=20
+> --
+> seth willits
+>=20
+>=20
+>=20
+> _______________________________________________
+> do not post admin requests to the list. they will be ignored.
+> quicktime-api mailing list      (quicktime-api@lists.apple.com)
+> help/unsubscribe/update your subscription:
+> =
+http://lists.apple.com/mailman/options/quicktime-api/alexander_carot%40gmx=
+.net
+>=20
+> this email sent to alexander_carot@gmx.net
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

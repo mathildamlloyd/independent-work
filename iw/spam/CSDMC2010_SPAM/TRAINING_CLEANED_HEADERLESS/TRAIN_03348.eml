@@ -1,0 +1,20 @@
+
+
+> if i only execute one command on true/false conditions, i prefer:
+> command && react_true || react_false
+> 
+
+although this generally works it is not correct:
+
+if 'react_true' fails for some reason then 'react_false' is also executed.
+
+--jasper.
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/1270824632.2737.5.camel@dx2000.g48b
+
+

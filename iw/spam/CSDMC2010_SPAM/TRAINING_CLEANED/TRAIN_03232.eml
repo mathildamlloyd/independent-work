@@ -1,0 +1,76 @@
+NoneTried 'apt-get clean' with same results.
+
+On Sat, 2002-02-02 at 06:08, Matthias Saou wrote:
+> Once upon a time, Lance wrote :
+> 
+> > I have failed dependencies in RPM database to I am unable to use
+> > apt-get.  I requests to run 'apt-get -f install' to fix these
+> > dependencies, however, I get these errors when running 'apt-get -f
+> > install' :
+> [...]
+> > error: unpacking of archive failed on file
+> > /usr/share/libgcj.zip;3c5b5e75: cpio: MD5 sum mismatch
+> > E: Sub-process /bin/rpm returned an error code (1)
+> > [root@localhost root]# 
+> 
+> I'd say that the file apt downloaded is corrupted. Maybe trying "apt-get
+> clean" to remove all downloaded files first would solve the problem.
+> 
+> Matthias
+> 
+> -- 
+> Matthias Saou                                World Trade Center
+> -------------                                Edificio Norte 4 Planta
+> System and Network Engineer                  08039 Barcelona, Spain
+> Electronic Group Interactive                 Phone : +34 936 00 23 23
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+re: problems with 'apt-get -f install'hello,
+
+tried 'apt-get clean' with same results.
+
+on sat, 2002-02-02 at 06:08, matthias saou wrote:
+> once upon a time, lance wrote :
+> 
+> > i have failed dependencies in rpm database to i am unable to use
+> > apt-get.  i requests to run 'apt-get -f install' to fix these
+> > dependencies, however, i get these errors when running 'apt-get -f
+> > install' :
+> [...]
+> > error: unpacking of archive failed on file
+> > /usr/share/libgcj.zip;3c5b5e75: cpio: md5 sum mismatch
+> > e: sub-process /bin/rpm returned an error code (1)
+> > [root@localhost root]# 
+> 
+> i'd say that the file apt downloaded is corrupted. maybe trying "apt-get
+> clean" to remove all downloaded files first would solve the problem.
+> 
+> matthias
+> 
+> -- 
+> matthias saou                                world trade center
+> -------------                                edificio norte 4 planta
+> system and network engineer                  08039 barcelona, spain
+> electronic group interactive                 phone : +34 936 00 23 23
+> 
+> _______________________________________________
+> rpm-list mailing list 
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+
+
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

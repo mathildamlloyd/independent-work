@@ -1,0 +1,17 @@
+hi, matthias..
+
+> ..it's a major release and supports now sgi's fam technology
+
+..requires currently some changes for the spec because the dep to fam
+2.6.7-6.
+for compiling fam.h (fam-evel) is required too.
+
+-- 
+regards from germany
+                   matthias
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

@@ -1,0 +1,42 @@
+url: http://www.joelonsoftware.com/news/20020910.html
+date: not supplied
+
+daniel berlinger has noticed[1] that mac software shops are starting to move to 
+os x-only development. this makes sense, for two reasons. first, most people 
+who pay for software have new computers. so while os x may only have a small 
+fraction of the installed base, it has the majority of the population of people 
+who are opening their wallets. second, if os x isn't successful, the mac is _
+over_. it's not like system 9 is getting any more popular. 
+
+then again, there are very few conditions under which it is actually the right 
+business decision to develop software for the macintosh. developing for the mac 
+is not a whole lot different than creating a web site _that only works on 
+netscape_. (given the market share of macs[2] (about 3.5%) and the market share 
+of netscape[3] (about 3.4%), that is not a silly comparison.) 
+
+robb beal wrote[4]: "try this test. go to a venture firm, angel, or big company 
+with a mac os x product/concept/prototype. do they consider the fact that it's 
+a mac application a net plus? (no.)" well _duh_. your product would have to 
+appeal to _25 times more mac _users_ _[as a percentage] than windows users just 
+to break even. in other words, if your windows product appeals to 1 in 100 
+windows users, you have to appeal to 25 in 100 mac users to make the same 
+amount of money. 
+
+now, you may want to make an _emotional_ appeal to developing for the mac. 
+that's fine. if you like macs and you're doing it for fun, more power to ya. 
+
+but as long as we're talking _investment_, you have to tell me why you're going 
+to get 25 times as many users. maybe there's less competition in your category 
+on the mac; maybe you're in a niche like graphics where it seems like macs 
+dominate (they don't, it just seems that way because the elite graphics people 
+in big american cities use macs); maybe your product can't sell to mixed 
+environments unless it runs everywhere. but if you want to make an investment 
+in mac software be prepared to demonstrate how you're going to overcome that 
+magic 25 multiplier.
+
+[1] http://archipelago.phrasewise.com/2002/09/10
+[2] http://maccentral.macworld.com/news/0207/03.marketshare.php
+[3] http://websidestory.com/cgi-bin/wss.cgi?corporate&news;&press;_1_193
+[4] http://radio.weblogs.com/0001123/2002/04/10.html
+
+

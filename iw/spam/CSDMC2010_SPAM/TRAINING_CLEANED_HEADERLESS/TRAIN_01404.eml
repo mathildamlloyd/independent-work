@@ -1,0 +1,22 @@
+> t o n g  :
+>% aptitude upgrade
+>resolving dependencies...
+>no packages will be installed, upgraded, or removed.
+>0 packages upgraded, 0 newly installed, 0 to remove and 9 not upgraded.
+>how can i know which packages are not upgraded?
+
+apt-get upgrade tells and prompt you.
+apt-get is no more worse than aptitude.
+
+-- 
+       architecte informatique chez blueline/gulfsat:
+    administration systeme, recherche & developpement
+                +261 34 29 155 34 / +261 33 11 207 36
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100506195836.2d8cb77d@pbmiha.malagasy.com
+
+

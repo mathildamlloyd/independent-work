@@ -1,0 +1,44 @@
+use perl daily newsletter
+
+in this issue:
+    * how much does perl, php, java, or lisp suck?
+
++--------------------------------------------------------------------+
+| how much does perl, php, java, or lisp suck?                       |
+|   posted by pudge on wednesday september 18, @08:08 (links)        |
+|   http://use.perl.org/article.pl?sid=02/09/17/189201               |
++--------------------------------------------------------------------+
+
+[0]brian_d_foy writes "a long time ago don marti started the os
+sucks-rules-o-meter, and jon orwant wrote his own sucks-rules-o-meter for
+computer languages. recently dan brian improved on that with a little bit
+of natural language processing. now [1]the perl review makes pretty
+pictures of it all. based on searches of altavista and google, we found
+that not a lot of people think php or lisp sucks, a lot think c++ and
+java suck, and they put perl is somewhere in the middle. does perl suck
+more than it use to suck, or has php just shot way ahead?"
+
+discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/09/17/189201
+
+links:
+    0. http://www.theperlreview.com
+    1. http://www.theperlreview.com/at_a_glance.html
+
+
+
+copyright 1997-2002 pudge.  all rights reserved.
+
+
+======================================================================
+
+you have received this message because you subscribed to it
+on use perl.  to stop receiving this and other
+messages from use perl, or to add more messages
+or change your preferences, please go to your user page.
+
+http://use.perl.org/my/messages/
+
+you can log in and change your preferences from there.
+
+

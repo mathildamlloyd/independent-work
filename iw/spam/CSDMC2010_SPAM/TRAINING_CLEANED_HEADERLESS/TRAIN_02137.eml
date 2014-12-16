@@ -1,0 +1,40 @@
+kevin lyda wrote:
+> on mon, aug 19, 2002 at 10:27:57am +0100, padraig brady wrote:
+> 
+>>>on fri, aug 16, 2002 at 05:26:33pm +0100, padraig brady wrote:
+>>>
+>>>>how can i repeat a string an arbitrary number
+>>>>of times in bash/sed/...
+>>>>
+>>>>i.e. i'm missing the repeat in the following:
+>>>>
+>>>>string="> "
+>>>>number=3
+>>>>prefix=repeat $string $number
+>>>>echo $prefix
+>>>
+> 
+> huh?  i missed all this.  do you want the string all on one line?
+> 
+> the string repeated over and over, but with linebreaks in between,
+> this works:
+> 
+>     yes "$string" | head -"$number"
+> 
+> use sed to remove the newline i guess if you want.  the utilities yes,
+> head and sed are on pretty much every unix.
+
+good. i actually looking at `yes` but i was in
+slow mode on friday and didn't consider combining with `head`
+
+to remove newlines then handiest is: tr -d '\n'
+
+thanks,
+pdraig.
+
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+

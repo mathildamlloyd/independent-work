@@ -1,0 +1,67 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain;
+  charset="utf-8"
+content-transfer-encoding: quoted-printable
+
+i ccd you since you ccd me. please do not cc me in the future. i read the=20
+list and that new thread grouping features of kmail are really handy ;).
+
+am dienstag 11 mai 2010 schrieb dotan cohen:
+> on 11 may 2010 00:58, martin steigerwald  wrote:
+> > am montag 10 mai 2010 schrieb nate bargmann:
+> >> * on 2010 10 may 11:50 -0500, dotan cohen wrote:
+> >> > yes, 4.2 and now 4.4 seem to behave badly without a clean ~/.kde.
+> >> > i find that very disturbing and unstable.
+> >>=20
+> >> for the record, i had a clean ~/.kde for 4.2 when it hit sid about a
+> >> year ago and upgraded the offered kde packages through 4.3.4, iirc,
+> >> and then started with a clean ~/.kde for sid's new 4.4.3.
+> >>=20
+> >> - nate >>
+> >=20
+> > imho when a config setting is not handled properly on upgrade of kde
+> > its a bug.
+>=20
+> agreed, but it's not one that is likely to be fixed. there seems to be
+> no backwards-compatibility in kde anymore. it's a problem, i know.
+
+well i got no reply to my detailed bug report yet.
+
+> > i migrated configuration from kde 3.5.10 and just pressed on "reset
+> > to defaults" for quite some appearance related settings in order to
+> > switch them to oxygen. there have been issues, but i mostly didn't
+> > file them as bugs.
+> >=20
+> > only one i triaged and filed: the separator "58" for colon for web
+> > shortcuts in kuriikwsrc or something like that it was is not
+> > recognized by krunner, only by konqueror. ":" instead works with
+> > both. unfortunately konqueror saved it as "58" not as ":".
+>=20
+> it _should_ be escaped.
+
+it doesn't work in krunner when it is. see here:
+
+[bug 218272] new: webshortcuts broken after upgrading kde 3 to 4 due to=20
+decimal in keyword delimiter which krunner doesnt support
+
+https://bugs.kde.org/218272
+=20
+> > anyway i suggest to file those issues as concrete as possible as bugs
+> > as you manage to take time for it.
+
+i did so really. this bug report contains quite some hints on testing with=
+=20
+an empty configuration. its as easy as that:
+
+mkdir ~/.kde-test
+export kdehome=3d~/.kde-test
+
+then start your kde application you want to test with empty settings from=20
+this shell. you can also easily see what configuration files the applicatio=
+n=20
+or the subsystems it uses create.
+
+ciao,
+=2d-=20
+martin 'helios' steigerwald - http://www.lichtvoll.de
+gpg: 03b0 0d6c 0040 0710 4afa  b82f 991b eaac a599 84c7

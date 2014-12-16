@@ -1,0 +1,48 @@
+hi james et al,
+
+i am just using qtmovie because i need to draw the contents of the
+movie into a bitmap. so i am grabbing the nsimage of the current frame
+and using that.
+
+is qtmovie dependant on qtmovieview for events in some fashion?
+
+
+
+thx
+
+bill appleton
+
+
+
+
+
+
+
+on tue, may 18, 2010 at 12:51 pm, james walker  wr=
+ote:
+> on 5/18/2010 11:55 am, bill appleton wrote:
+>
+>> i am using cocoa and qtmovie to open and play valid movie files
+>
+> are you using qtmovieview, or qtmovielayer, or what?
+>
+> --
+> =a0james w. walker, innoventive software llc
+> =a0
+> _______________________________________________
+> do not post admin requests to the list. they will be ignored.
+> quicktime-api mailing list =a0 =a0 =a0(quicktime-api@lists.apple.com)
+> help/unsubscribe/update your subscription:
+> http://lists.apple.com/mailman/options/quicktime-api/billappleton%40dream=
+factory.com
+>
+> this email sent to billappleton@dreamfactory.com
+>
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

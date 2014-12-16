@@ -1,0 +1,46 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on thu, may 13, 2010 at 08:42 -0500, kent west wrote:
+> i've got an older 600mhz piii running sid; if i boot into the
+> installed 2.6.26-2-68 kernel, everything's fine, but if i boot into
+> the installed 2.6.32-5-68 kernel, everything's fine until x is
+> started (either manually or with a session manager or even when
+> trying to create a new xorg.conf file using "x -config"). at that
+> point, the screen goes black, the keyboard stops responding, and the
+> xorg.log fills up with :
+>=20
+> (ee) r128(0): idle timed out, resetting engine...
+> (ee) r128(0): r128ccewaitforidle: cce stop -9
+> (ee) r128(0): r128ccewaitforidle: cce start -9
+> (ee) r128(0): r128ccewaitforidle: cce idle -9
+> (ee) r128(0): idle timed out, resetting engine...
+> (ee) r128(0): r128ccewaitforidle: cce stop -9
+> (ee) r128(0): r128ccewaitforidle: cce start -9
+> (ee) r128(0): r128ccewaitforidle: cce idle -9
+
+i've seen this recently in #debian and we were able to "fix" this with
+the following in /etc/x11/xorg.conf
+
+section "device"
+        identifier "r128"
+        driver "r128"
+        option "noaccel"
+endsection
+
+the related bug report is [1] and this will disable acceleration for
+your card, so it is not really a good fix. you might also want to make
+sure that you have the firmware package(s) installed.
+
+good luck
+
+    wolodja
+
+[1] http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3d581216
+--=20
+  .''`.     wolodja wentland    =20
+ : :'  :   =20
+ `. `'`     4096r/caf14efc=20
+   `-       081c b7cd ff04 2ba9 94ea  36b2 8b7f 7d30 caf1 4efc

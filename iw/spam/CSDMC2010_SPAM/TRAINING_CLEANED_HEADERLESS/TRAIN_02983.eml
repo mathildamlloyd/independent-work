@@ -1,0 +1,20 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=us-ascii
+
+
+on wed, 09 oct 2002 14:43:32 edt, kevin kenny writes:
+>> 3)  you can learn to use procmail,
+
+>can this be done via .forward?
+
+make your .forward contain only the following line:
+"|/usr/bin/procmail"
+ (incl. the quotes, your procmail binary may be in another path)
+
+cheers,
+&rw;
+-- 
+-- for a list of points detailing how technology
+-- has failed to improve our lives, please press 3.                         
+
+

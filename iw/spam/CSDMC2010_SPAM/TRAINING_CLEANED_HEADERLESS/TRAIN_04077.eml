@@ -1,0 +1,19 @@
+mark derricutt wrote:
+> never mind, there was some cron thing doing rpm -qf ???  seems fine now.
+> 
+> --on wednesday, february 06, 2002 07:37:44 +1300 mark derricutt 
+>  wrote:
+> 
+>> fetched 88.1kb in 2m31s (581b/s)
+>> error: cannot get exclusive lock on /var/lib/rpm/packages
+>> error: cannot open packages index using db3 - operation not permitted (1)
+>> e: could not open rpm database:cannot open packages index using db3 -
+>> operation not permitted (1)
+
+you can do a rpm --rebuilddb too
+
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

@@ -1,0 +1,132 @@
+mike,
+
+thanks for explaining this, and clarifying the situation.
+
+i can report that i indeed did not have sufficient privileges. so i
+logged in as somebody who does, and was able to change the preference,
+and everything* now works as advertised.
+
+*except for two-finger scrolling in 1.6.0_20 own-process applets whose
+browser window is displayed on my secondary display! please see bug id
+8017275.
+
+thanks for your help,
+
+rob
+
+on sat, may 22, 2010 at 5:18 pm, mike swingler  wrote:
+> on may 21, 2010, at 12:04 pm, rob dickens wrote:
+>
+>> mike,
+>>
+>> thanks for responding, and explaining what causes the flickering.
+>>
+>>> if your macbook is actually 32-bit only, you should never even see the =
+64-bit jvms.
+>>
+>> and i don't. but like i said,
+>>
+>>> have just tested my applet on a 64-bit mac
+>>
+>> please could you confirm that the 'in their own process' preference is
+>> not currently available for 32-bit macs (and whether there would be
+>> any point in putting in an rfe).
+>
+> the out-of-process plugin2 should work fine on 32-bit only macs.
+>
+> switching between the in and out-of-process plugins is a simple matter of=
+ adding or removing a symlink to the in-process plugin to /library/internet=
+ plug-ins. you should only see grey radio buttons in java preferences if yo=
+u don't have write permissions in that directory. it's possible that if you=
+ have other java plugins present in your ~/library/internet plug-ins folder=
+, that could be confusing the logic...maybe.
+>
+> can you "ls -al@e /library/internet\ plug-ins" and "ls -al@e ~/library/in=
+ternet\ plug-ins" to see what plugins are present, and if there are any fun=
+ny acls or extended attributes?
+>
+> best of luck,
+> mike swingler
+> java runtime engineer
+> apple inc.
+>
+>> on fri, may 21, 2010 at 7:28 pm, mike swingler  wrot=
+e:
+>>
+>>> there is a known race condition between native background repainting an=
+d java drawing in the resize/scrolling case for java applets embedded in th=
+e browser process. the reason you don't see this behavior when using the ou=
+t-of-process plugin is because the applet painting is happening in a sepera=
+te process, and the browser is "pulling the pixels" from the java process w=
+hen the browser thinks it's a good time to repaint.
+>>>
+>>> i'm not clear why unchecking the "64-bit" checkbox in java preferences =
+should enable or disable the out-of-process vs. in-process applet setting. =
+if your macbook is actually 32-bit only, you should never even see the 64-b=
+it jvms.
+>>>
+>>> on may 21, 2010, at 4:42 am, rob dickens wrote:
+>>>
+>>>> have just tested my applet on a 64-bit mac, and it seems,
+>>>>
+>>>> * you have to select the 'in their own process' preference, in order
+>>>> to stop the flicker-on-resize
+>>>>
+>>>> * unticking the 64-bit java checkbox greys out the radio buttons that
+>>>> let you make the above change.
+>>>>
+>>>> ergo, the non-flickering applet container is only available on 64-bit =
+macs.
+>>>>
+>>>> if anyone from apple could clarify the situation, i'd be much obliged.
+>>>>
+>>>> on wed, may 19, 2010 at 10:41 am, chung-kai chen  =
+wrote:
+>>>>
+>>>>> it's really frustrating to see something on mac so bad compared to wi=
+ndows.
+>>>>> i use this page (http://www.javafx.com/samples/tableinsights/index.ht=
+ml) to test
+>>>>> the newly arrived jvm and it still flickers like a hell when scrollin=
+g the page.
+>>>>> the same applet run on windows hosted in virtualbox on my mac shows a=
+lmost
+>>>>> no flickering.
+>>>>>
+>>>>>
+>>>>> 2010/5/19 rob dickens :
+>>>>>
+>>>>>> dear mac-java devs,
+>>>>>>
+>>>>>> have just installed the new version of java, hoping that my applets[=
+1]
+>>>>>> (in safari) would stop flickering when i resized the browser
+>>>>>> window--something which the release notes suggest[2] might be the
+>>>>>> case--, but i find that they do still flicker.
+>>>>>>
+>>>>>> one thing i note is that the java preferences app won't let me chang=
+e
+>>>>>> the way applets are run (from 'within the browser process' to 'in
+>>>>>> their own process'), since the radio buttons are greyed out.
+>>>>>>
+>>>>>> i'm on a 32-bit macbook, btw.
+>>>>>>
+>>>>>> please could somebody help.
+>>>>>>
+>>>>>> best regards,
+>>>>>>
+>>>>>> rob
+>>>>>>
+>>>>>> 1 http://lafros.com/gui
+>>>>>> 2 plugin2 graphics rendering
+>>>>>> 
+>
+>
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

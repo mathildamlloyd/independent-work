@@ -1,0 +1,24 @@
+on 2010-04-19 16:30, clive mcbarton wrote:
+
+> ron johnson wrote:
+>>>> there use to be a "preloader", but i don't see it anymore.
+>> there was a feature where gnome or kde would pre-load ooo at de
+>> startup.  that way, it *appears* that ooo loads much faster, even though
+>> it was really just shifted.
+> 
+> there's still the "preload" package. it preloads whatever is needed
+> most, hence presumably also ooo if that is what's run often.
+> 
+
+which is not the specific-to-ooo package i referred to.
+
+-- 
+dissent is patriotic, remember?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bccccfe.6030207@cox.net
+
+

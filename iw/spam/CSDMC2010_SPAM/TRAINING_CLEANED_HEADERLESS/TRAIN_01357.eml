@@ -1,0 +1,26 @@
+on wed, 19 may 2010 11:33:02 -0500, boyd stephen smith jr. wrote:
+
+>> i took a look, the reason and cure is very simple -- having x to trunk
+>> it each time when started
+>> (http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=287876) whereas
+>> currently, my ~/.xsession-errors kept logs back to stone age.
+> 
+> for what reason can't you simply modify you xsession file to do as you
+> like? it is a conffile, so your changes would be preserved through
+> upgrades.
+
+read the above url again, carefully. the answer is right there before you 
+eyes. you don't agree with it?
+
+-- 
+tong (remove underscore(s) to reply)
+  http://xpt.sourceforge.net/techdocs/
+  http://xpt.sourceforge.net/tools/
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/ht52oh$485$1@dough.gmane.org
+
+

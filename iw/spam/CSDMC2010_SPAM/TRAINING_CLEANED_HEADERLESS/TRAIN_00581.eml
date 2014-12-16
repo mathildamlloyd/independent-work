@@ -1,0 +1,68 @@
+once upon a time, mark wrote :
+
+> hiya, i always seem to get errors when i do an "apt update", is this a 
+> problem on the repository itself, or on my end, or possibly a timeout in 
+> the connection due to my connection being a crappy modem?
+> 
+> [root@spawn root]# apt-get update
+> hit http://apt.nixia.no redhat/7.2/i386/base/pkglist.gnomehide
+> hit http://apt.freshrpms.net redhat/7.2/i386/base/pkglist.os
+> ign http://apt.freshrpms.net redhat/7.2/i386 release.os
+> err http://apt.freshrpms.net redhat/7.2/i386/base/pkglist.updates
+>   bad header line
+> hit http://apt.freshrpms.net redhat/7.2/i386 release.updates
+> err http://apt.freshrpms.net redhat/7.2/i386/base/pkglist.freshrpms
+>   400 bad request
+> err http://apt.freshrpms.net redhat/7.2/i386 release.freshrpms
+>   bad header line
+> hit http://apt.freshrpms.net redhat/7.2/i386/base/srclist.freshrpms
+> ign http://apt.nixia.no redhat/7.2/i386 release.gnomehide
+> ign http://apt.nixia.no redhat/7.2/i386/base/mirrors
+> hit http://apt.freshrpms.net redhat/7.2/i386 release.freshrpms
+[...]
+
+it works for me (it should works with or without the "en" subdirectory).
+does it always give you the same error each time? do you use an proxy
+server?
+
+[root@python root]# apt-get update
+hit http://apt.freshrpms.net redhat/7.2/en/i386/base/srclist.os
+hit http://apt.freshrpms.net redhat/7.2/en/i386 release.os
+hit http://apt.freshrpms.net redhat/7.2/en/i386/base/srclist.updates
+hit http://apt.freshrpms.net redhat/7.2/en/i386 release.updates
+get:1 http://apt.freshrpms.net redhat/7.2/en/i386/base/pkglist.os [1035kb]
+hit http://apt.freshrpms.net redhat/7.2/en/i386 release.os
+get:2 http://apt.freshrpms.net redhat/7.2/en/i386/base/pkglist.updates
+[331kb] hit http://apt.freshrpms.net redhat/7.2/en/i386 release.updates
+hit http://apt.freshrpms.net redhat/7.2/en/i386/base/pkglist.freshrpms
+hit http://apt.freshrpms.net redhat/7.2/en/i386 release.freshrpms
+hit http://apt.freshrpms.net redhat/7.2/en/i386/base/srclist.os
+hit http://apt.freshrpms.net redhat/7.2/en/i386 release.os
+hit http://apt.freshrpms.net redhat/7.2/en/i386/base/srclist.updates
+hit http://apt.freshrpms.net redhat/7.2/en/i386 release.updates
+hit http://apt.freshrpms.net redhat/7.2/en/i386/base/srclist.freshrpms
+hit http://apt.freshrpms.net redhat/7.2/en/i386 release.freshrpms
+ign http://apt.freshrpms.net redhat/7.2/en/$(arch)/base/mirrors
+ign http://apt.freshrpms.net redhat/7.2/en/$(arch)/base/mirrors
+ign http://apt.freshrpms.net redhat/7.2/en/$(arch)/base/mirrors
+fetched 1366kb in 1m16s (17.9kb/s)
+processing file dependencies... done
+reading package lists... done       
+building dependency tree... done
+w: http://apt.freshrpms.net/ will not be authenticated.
+w: http://apt.freshrpms.net/ will not be authenticated.
+w: http://apt.freshrpms.net/ will not be authenticated.
+[root@python root]# 
+
+matthias
+
+-- 
+matthias saou                                world trade center
+-------------                                edificio norte 4 planta
+system and network engineer                  08039 barcelona, spain
+electronic group interactive                 phone : +34 936 00 23 23
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

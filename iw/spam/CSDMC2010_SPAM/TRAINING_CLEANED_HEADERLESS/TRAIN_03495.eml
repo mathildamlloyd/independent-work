@@ -1,0 +1,21 @@
+on wed, apr 21, 2010 at 2:46 pm, mart frauenlob
+ wrote:
+>
+> mysql .... | while read; do
+> =a0 =a0 =a0 =a0mysqldump -e "$reply" > ...
+> done
+>
+
+thanks a million :-)
+
+it is working!!!
+
+--siju
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/t2rb713df2c1004210239gbb5a32b7te508b158bce44775@mail.csmining.org
+
+

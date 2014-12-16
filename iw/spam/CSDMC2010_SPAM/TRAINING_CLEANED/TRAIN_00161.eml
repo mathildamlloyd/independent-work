@@ -1,0 +1,33 @@
+None> What are the best options available on Linux ? SFTP ? WebDAV ? Something
+> else ? Linux servers - Linux and Mac OS-X clients.
+
+Can't speak for the other alternatives, but i've been using scp for
+years with sexy results.
+
+Steve, yes, it's a simpsons quote(ish).
+-- 
+High salt diets are bad for you - but only outside marriage.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+re: [ilug] secure remote file accesson tue, aug 13, 2002 at 12:22:14pm +0100, niall o broin wrote:
+> what are the best options available on linux ? sftp ? webdav ? something
+> else ? linux servers - linux and mac os-x clients.
+
+can't speak for the other alternatives, but i've been using scp for
+years with sexy results.
+
+steve, yes, it's a simpsons quote(ish).
+-- 
+high salt diets are bad for you - but only outside marriage.
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

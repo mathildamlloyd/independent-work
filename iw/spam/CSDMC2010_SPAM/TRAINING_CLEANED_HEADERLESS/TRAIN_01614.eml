@@ -1,0 +1,176 @@
+----------------------------------------------------------------------
+1. isilo(tm) 3.2 for palm os and pocket pc enters beta1
+2. isilo(tm) 3.2 for windows enters beta1
+3. isilox 3.2 for windows and mac os enters beta1
+4. isiloxc 3.2 for windows, linux, freebsd, mac os x,
+   and solaris enter beta1
+----------------------------------------------------------------------
+
+======================================================================
+1. isilo(tm) 3.2 for palm os and pocket pc enters beta1
+----------------------------------------------------------------------
+isilo(tm) 3.2b1 adds the following new features to isilo 3.15:
+
+- a system information dialog, accessible from either the document
+  list view or while viewing a document through the tools menu.
+  the dialog displays the user name (e.g., owner name) and the
+  associated user id of the device.  for palm os, the dialog also
+  displays the free and total amount of dynamic and storage memory.
+- support for isilox/isiloxc generated password protected documents.
+  the password protection is embedded into the document during
+  conversion and can not be modified nor removed from the converted
+  document.
+- support for isilox/isiloxc generated registration code protected
+  documents. the registration code protection is embedded into the
+  document during conversion.
+- support for isilox/isiloxc generated documents that include an
+  expiration date. the expiration date is embedded into the document
+  during conversion.
+- support for displaying title, author, and publisher information
+  messages through the document information dialog accessible through
+  the edit menu while viewing a document.
+
+please note that this is a beta version of the software, and as
+such is intended for testing purposes to help eliminate problems
+and issues before the release.
+
+please report any problems or issues you encounter by sending an
+email to email@isilo.com.  when reporting problems, please include
+all potentially relevant details, including the exact steps used
+to reproduce the problem, os version, and hardware configuration.
+
+to download isilo(tm) 3.2b1 for palm os(r), please go to this url:
+
+    
+
+to download isilo 3.2b1 for pocket pc, please go to this url:
+
+    
+
+
+======================================================================
+2. isilo(tm) 3.2 for windows enters beta1
+----------------------------------------------------------------------
+isilo(tm) 3.2 will be the first version of isilo for windows
+and has the requirements shown here.
+
+basic requirements:
+- pentium or comparable processor
+- windows 95 with internet explorer 4.0.1 or later, windows 98,
+  windows millennium, windows nt 4.0 with service pack 6,
+  windows 2000, or windows xp
+- 16mb of ram for windowsr 95 and windows 98 (32mb recommended),
+  32mb of ram for windows millennium and windows nt 4.0,
+  64mb of ram for windows 2000 and windows xp
+- 5mb of available hard-disk space for installation
+
+additional functionality specific requirements:
+- additional memory required for document storage.
+- isilox required for creating documents utilizing maximum document
+  presentation capabilities.
+
+please note that this is a beta version of the software, and as
+such is intended for testing purposes to help eliminate problems
+and issues before the release.
+
+please report any problems or issues you encounter by sending an
+email to email@isilo.com.  when reporting problems, please include
+all potentially relevant details, including the exact steps used
+to reproduce the problem, os version, and hardware configuration.
+
+to download isilo 3.2b1 for windows, please go to this url:
+
+    
+
+
+======================================================================
+3. isilox 3.2 for windows and mac os enters beta1
+----------------------------------------------------------------------
+isilox 3.2b1 adds the following features to isilox 3.15:
+
+- in the security properties, added support for protecting a document
+  with any or all of a password, registrationn code, and expiration
+  date.
+- added a messages property page for specifying title, author,
+  publisher, password, registration code, and expiration date
+  messages for the document.
+- added cookie support and a cookies property page for managing
+  cookies.
+
+please note that this is a beta version of the software, and as
+such is intended for testing purposes to help eliminate problems
+and issues before the release.
+
+please report any problems or issues you encounter by sending an
+email to email@isilo.com.  when reporting problems, please include
+all potentially relevant details, including the exact steps used
+to reproduce the problem, os version, and hardware configuration.
+
+to download isilox 3.2b1 for windows, please go to this url:
+
+    
+
+to download isilox 3.2b1 for mac os, please go to this url:
+
+    
+
+
+======================================================================
+4. isiloxc 3.2 for windows, linux, freebsd, mac os x,
+   and solaris enter beta1
+----------------------------------------------------------------------
+isilox 3.2b1 adds the following features to isilox 3.15:
+
+- added , , and  container
+  elements under the  element for protecting a
+  document with any or all of a password, registration code, and
+  expiration date. see .ixl file format for more information.
+- added  element for specifying title, author, publisher,
+  password, registration code, and expiration date messages for the
+  document. see .ixl file format for more information.
+- added cookie support and the  element for managing
+  cookies. see .ixl file format for more information.
+
+please note that this is a beta version of the software, and as
+such is intended for testing purposes to help eliminate problems
+and issues before the release.
+
+please report any problems or issues you encounter by sending an
+email to email@isilo.com.  when reporting problems, please include
+all potentially relevant details, including the exact steps used
+to reproduce the problem, os version, and hardware configuration.
+
+to download isiloxc 3.2b1 for windows, please go to this url:
+
+    
+
+to download isiloxc 3.2b1 for linux, please go to this url:
+
+    
+
+to download isiloxc 3.2b1 for freebsd, please go to this url:
+
+    
+
+to download isiloxc 3.2b1 for mac os x, please go to this url:
+
+    
+
+to download isiloxc 3.2b1 for solaris, please go to this url:
+
+    
+
+
+----------------------------------------------------------------------
+you have received this message because you subscribed to the
+isilo(tm) mailing list.  if you would like to be removed from
+this list, please send an email with the subject "unsubscribe"
+to: .
+
+please note that this email address only handles subscriptions
+and unsubscriptions of the mailing list.  any other messages
+sent to this email address are automatically deleted.
+
+----------------------------------------------------------------------
+isilo(tm)             http://www.isilo.com             email@isilo.com
+

@@ -1,0 +1,45 @@
+on sat, may 22, 2010 at 8:08 am, klistvud  wrote:
+>
+> i've recently swapped the hard drive on my box, after cloning my lenny (and
+> other) partition(s) from the old drive that was becoming too small. i just
+> did dd if=/dev/hda2 of=/dev/hdb2
+>
+> after changing the uuid of the new partition and manually making some minor
+> adjustments to /boot/grub/grub.cfg and /etc/fstab, the system boots ok, but
+> there are two glitches i can't seem to sort out:
+>
+> 1. hibernation bails out with the message "cannot find swap device",
+> although there is a big enough, and actively used swap partition on the new
+> drive; and
+>
+> 2. update-grub still refers to the os partition by the old uuid, which is no
+> longer correct. in order to boot, i must manually edit grub.cfg, but i'd
+> like this fixed *properly*.
+>
+> i suspect both issues are related to the changed uuids of both the swap and
+> the os partitions.
+>
+> now, my questions to the savants out there:
+> 1. how do i tell the hibernation scripts that there is a swap device, but
+> with another uuid?
+> 2. where do the grub2 scripts get their uuids from, so i can replace the
+> wrong uuids with the right ones?
+
+re 1. your swap partition's uuid must be different. check
+"/etc/initramfs-tools/". there is a "resume" file (in that dir or in a
+subdir) that will have your swap partition's uuid.
+
+re 2. what do you mean by "after changing the uuid of the new
+partition"? after "dd...", did your run "tune2fs -u ..." on your root
+partition (or the equivalent for xfs, ...; i am assuming that you have
+just one partition)? if you didn't, your root partition still has the
+same uuid and update-grub is picking it up correctly (in which case, i
+have no idea idea how you are booting up!).
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/aanlktin0jzlssk1lqvkkf3r5_yjtynon5gxp6wh5ykdv@mail.csmining.org
+
+

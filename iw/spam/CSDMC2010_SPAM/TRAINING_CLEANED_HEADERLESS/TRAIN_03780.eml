@@ -1,0 +1,21 @@
+on sat, jul 20, 2002 at 12:18:57pm +0100, kenn humborg wrote:
+> > mine, and i is happy person once again. in case you were wondering, the
+> > aim of all of this was to write a shell script that could check for new
+> > mail on an imap server.
+> 
+> doesn't answer your question, but perhaps a combination of expect and
+> (netcat or telnet) might have made for an easier solution?
+
+indeed, and that was the fall-back plan if i couldn't figure this out,
+but i knew it had to be possible, and was determined to find a way.
+
+steve
+-- 
+"oh look, it's the pigeon of love."
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

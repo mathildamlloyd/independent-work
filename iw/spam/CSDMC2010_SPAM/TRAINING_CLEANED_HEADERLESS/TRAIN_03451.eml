@@ -1,0 +1,22 @@
+from nobody tue dec 16 08:46:53 2014
+content-type: text/plain; charset=utf-8
+
+at inkscape wiki, it says that we can open .eps file if ghostscript is
+installed
+http://wiki.inkscape.org/wiki/index.php/faq#what_formats_can_inkscape_import.2fexport.3f
+
+# aptitude search ghostscript
+i a ghostscript                     - the gpl ghostscript postscript/pdf
+interpr
+p   ghostscript-doc                 - the gpl ghostscript postscript/pdf
+interpr
+i a ghostscript-x                   - the gpl ghostscript postscript/pdf
+interpr
+
+or does it meant other ghostscript?
+
+-- 
+regards,
+
+umarzuki mochlis
+http://debmal.my

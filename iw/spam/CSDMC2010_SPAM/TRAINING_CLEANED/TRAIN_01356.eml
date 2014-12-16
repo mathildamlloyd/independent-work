@@ -1,0 +1,37 @@
+None> autostart?
+
+Doesn't work for me.
+regards
+ps sorry for the misprint:
+killall kaddressbook & kontact
+
+
+-- 
+Marco Valli
+
+
+-- 
+To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/201005111643.27090.marco@bastardi.net
+
+
+re: kontack and akonadi: a "dirty" workaround> if you want a workaround, could you try to put "akonadictl start" into 
+> autostart?
+
+doesn't work for me.
+regards
+ps sorry for the misprint:
+killall kaddressbook & kontact
+
+
+-- 
+marco valli
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201005111643.27090.marco@bastardi.net
+
+

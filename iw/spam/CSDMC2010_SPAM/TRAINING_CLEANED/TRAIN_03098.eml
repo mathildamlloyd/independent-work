@@ -1,0 +1,64 @@
+None> On Fri, Apr 23, 2010 at 11:44 PM, Camaleón wrote:
+
+>> Are you getting any warning message?
+>>
+>>
+> when i tried to open it from command line $ inkscape
+> T-SHIRTMODELS-by_APEstar.eps T-SHIRTMODELS-by_APEstar.eps:1: parser
+> error : Start tag expected, '<' not found
+> ����
+> ^
+> 
+> and there's a pop-up with message "Failed to load the requested file
+> T-SHIRTMODELS-by_APEstar.eps"
+
+That error is quite similar to the one reported at Debian BTS. 
+
+Check if the version of Inkscape that you are running is affected by that 
+bug. As per the report, starting from 0.47 the error should be fixed.
+
+Greetings,
+
+-- 
+Camaleón
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/pan.2010.04.23.16.18.29@csmining.org
+
+
+re: cannot open eps file with inkscapeon sat, 24 apr 2010 00:04:48 +0800, umarzuki mochlis wrote:
+
+> on fri, apr 23, 2010 at 11:44 pm, camalen wrote:
+
+>> are you getting any warning message?
+>>
+>>
+> when i tried to open it from command line $ inkscape
+> t-shirtmodels-by_apestar.eps t-shirtmodels-by_apestar.eps:1: parser
+> error : start tag expected, '<' not found
+> 
+> ^
+> 
+> and there's a pop-up with message "failed to load the requested file
+> t-shirtmodels-by_apestar.eps"
+
+that error is quite similar to the one reported at debian bts. 
+
+check if the version of inkscape that you are running is affected by that 
+bug. as per the report, starting from 0.47 the error should be fixed.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.23.16.18.29@csmining.org
+
+

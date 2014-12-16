@@ -1,0 +1,31 @@
+on sun, 23 may 2010 16:11:30 -0400 (edt), william pitcock wrote:
+> "stephen powell"  wrote:
+>> (blah blah blah blah)
+>
+> nobody cares if you are opposed to it.  unless you are offering to become
+> lilo upstream, it's going away.
+> 
+> william
+
+i do understand why a debian package maintainer does not wish to become
+"upstream".  and i hope that someone who is both willing and able to do
+so steps up to the plate.  but withdrawing it from the distribution seems
+like overkill to me, especially since you want to withdraw it from squeeze
+and not squeeze+1.  lilo, as it exists today, works just fine for my
+purposes.  and apparently it works just fine for a lot of other people too.
+
+the lord bless you, william.
+
+-- 
+  .''`.     stephen powell    
+ : :'  :
+ `. `'`
+   `-
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/1170680188.363342.1274662130640.javamail.root@md01.wow.synacor.com
+
+

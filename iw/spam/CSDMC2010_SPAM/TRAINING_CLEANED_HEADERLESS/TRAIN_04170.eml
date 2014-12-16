@@ -1,0 +1,55 @@
+on fri, aug 02, 2002 at 08:40:10pm +0100 or so it is rumoured hereabouts, 
+niall o broin thought:
+> on fri, aug 02, 2002 at 05:21:22pm +0100, conor daly wrote:
+> 
+> > my 17" crt monitor having drowned in a flood (10cm squared of burned 
+> > circuit board urgh!) , i'm thinking of a 15" lcd as a replacement.  
+> > what with me going to the continent and all next week, i might wait and 
+> > buy one there (for a reasonable price (dave neary!  any good sources?)).
+> 
+> conor - it's a rather large continent - people might need to know where you
+> are going to suggest sources. and if you're buying abroad, make sure you get
+> to test it - many places won't have facilities for you to do that.
+
+um yeah, i suppose that'd be useful info...  western france, la rochelle
+area.  test as in test with linux or just turn on and see that it works?
+
+> > question is: can i just plug in _any_ lcd monitor and expect it to work?  
+> > are there special incantations needed for xfree86 to work.  needless to
+> > say, it'll be a bit difficult to bring it back to the shop once i'm home 
+> > in dublin and find it doesn't work!
+> 
+> any monitor should just work - they all have vga connectors and any half
+> decent brand will be know about by xfree setup programs in modern
+> distributions. however, if you have the budget (insurance paying for the
+> dead monitor, perhaps ? - and where was your monitor that it got caught in a
+
+bathroom upstairs, computer desk downstairs, got dripped into, started
+clicking rapidly and smoking before it was noticed and unplugged...
+
+> flood ?) getting a monitor with a dvi input is best. of course, you'll need
+> a dvi out video card then, too. dvi provides a much better picture than vga
+
+i guess that requires something more in the way of budget then...  given
+that this monitor was serving as the single monitor for 4 boxen (via a
+4-way vga kvm switch), i'd be looking at investing in 4 dvi cards along
+with another kvm to suit while a vga version _should_ just plug into
+place. 
+
+conor
+-- 
+conor daly 
+
+domestic sysadmin :-)
+---------------------
+faenor.cod.ie
+  5:20pm  up 72 days,  2:37,  0 users,  load average: 0.08, 0.02, 0.01
+hobbiton.cod.ie
+  5:19pm  up 14 days, 23:42,  1 user,  load average: 0.01, 0.04, 0.00
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

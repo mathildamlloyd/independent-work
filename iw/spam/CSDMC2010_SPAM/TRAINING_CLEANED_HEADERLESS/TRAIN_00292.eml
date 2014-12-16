@@ -1,0 +1,59 @@
+i have to force quit out of netbeans once or twice a day, running
+on snow leopard.  when i look at the log i see a cryptic error message
+like this one:
+4/19/10 4:04:24 pmcom.apple.launchd.peruser.501[98] 
+([0x0-0x14014].org.netbeans.ide.baseide.200912041610[182]) exited with  
+exit code: 143
+
+anyone have advice on preventing these problems?  googling for 143
+suggests it applies to a lot of different things, but might just be  
+the jvm
+telling me it has been killed.
+- tod
+
+on sep 30, 2009, at 4:41 am, jean-christophe helary wrote:
+
+>
+> on 30 sept. 2009, at 20:36, hendrik schreiber wrote:
+>
+>>> all the xeres jar files i seem to have on my machine are packaged  
+>>> with stand alone applications.
+>>
+>> did you check /library/java/extensions and ~/library/java/ 
+>> extensions ?
+>>
+>> there is at least one java app out there that puts a xerces.jar  
+>> into ~/library/java/extensions - unfortunately i don't know which  
+>> one, but users told me about the issue.
+>> in my app it shows up as nosuchmethoderror, so if that gets thrown  
+>> and ~/library/java/extensions/xerces.jar exists, i prompt the user  
+>> to get that thing out of the way...
+>
+> hendrik,
+>
+> there was indeed a xeres.jar in ~/... and now the app works !!!
+>
+> thank you very much !
+>
+>
+>
+>
+>
+> jean-christophe helary
+>
+> _______________________________________________
+> do not post admin requests to the list. they will be ignored.
+> java-dev mailing list      (java-dev@lists.apple.com)
+> help/unsubscribe/update your subscription:
+> http://lists.apple.com/mailman/options/java-dev/tod%40dbentrance.com
+>
+> this email sent to tod@dbentrance.com
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

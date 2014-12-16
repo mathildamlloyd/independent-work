@@ -1,0 +1,25 @@
+From nobody Tue Dec 16 09:15:45 2014
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+Hi List
+i'm running sid on a msi wind 100 with synaptics touchpad.=20
+since my last dist-upgrade yesterday, the touchpad is not working in
+gnome anymore, but still works fine in gdm-greeter, lxde and on console.
+anyone else seeing this? any ideas against which packet to file a bug?
+thanks
+
+  --Jan
+From nobody Tue Dec 16 09:15:45 2014
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iEYEARECAAYFAkvfieIACgkQlTtvZdk47D5fNgCfcngptgFzETrQwxHlG8spCNIe
+JJ4AoIOYnO0rUkkR3u5cXY1EtGpoZtL/
+=l1G2
+-----END PGP SIGNATURE-----

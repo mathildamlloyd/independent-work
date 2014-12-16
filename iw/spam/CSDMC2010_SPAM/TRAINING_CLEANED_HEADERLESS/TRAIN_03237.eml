@@ -1,0 +1,22 @@
+hi,
+
+the wiki on dual channel memory says:
+
+"the memory modules are installed into matching banks, which are usually 
+color coded on the motherboard. these separate channels allow each 
+memory module access to the memory controller, increasing throughput 
+bandwidth."
+
+does that mean that placing 2 1gb modules, each into a different colored 
+slot, is faster than putting 1 2gb module into one slot and leaving the 
+other 3 slots empty?
+
+hugo
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hq7rp5$tgc$1@dough.gmane.org
+
+

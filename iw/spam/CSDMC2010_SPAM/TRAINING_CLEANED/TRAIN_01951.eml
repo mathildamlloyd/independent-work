@@ -1,0 +1,37 @@
+None[snip]
+> 
+> I leave /var in a separate partition, only because I cut my teeth on 
+> Unix/Linux back in the days when filling / or /var would cause a system 
+> crash.
+
+It still can.  But disks aren't 300MB anymore.
+
+-- 
+Dissent is patriotic, remember?
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/4BCF39EF.6070503@cox.net
+
+
+re: backup apt tree?on 2010-04-21 06:58, b. alexander wrote:
+[snip]
+> 
+> i leave /var in a separate partition, only because i cut my teeth on 
+> unix/linux back in the days when filling / or /var would cause a system 
+> crash.
+
+it still can.  but disks aren't 300mb anymore.
+
+-- 
+dissent is patriotic, remember?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bcf39ef.6070503@cox.net
+
+

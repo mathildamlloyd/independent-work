@@ -1,0 +1,217 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hi celejar,
+
+
+
+
+thank you for your reply.
+
+
+
+
+i use linux running in compact flash so that the size of the compact flash memory is the 
+limit
+
+
+
+
+users will send emails to a program running in the compact flash so i need a mail server 
+there too.
+
+
+
+
+only smtp, no pop3 server
+
+
+
+
+can you suggest something?
+
+
+
+
+
+
+
+
+
+
+
+thank you .
+
+
+
+
+best regards,
+
+
+
+
+lad.
+
+
+
+
+
+
+
+
+
+> > does anyone know about a tiny / liteweight smtp server for linux( debian)? i need the 
+
+
+
+
+> > server that can accept several connections at the same time .
+
+
+
+
+> > i do not need pop3 server
+
+
+
+
+> 
+
+
+
+
+> i'm not sure that i can help, but what, exactly, do you mean by tiny /
+
+
+
+
+> liteweight? binary size, cpu / ram usage? iiuc, even the heavy
+
+
+
+
+> hitters like exim use very few resources when not under load. e.g., on
+
+
+
+
+> my system, htop shows exim at 0 cpu, and only "6484 648 588" for "virt
+
+
+
+
+> res shr".
+
+
+
+
+> 
+
+
+
+
+> this has come up before on the list. what, exactly, are your
+
+
+
+
+> restrictions / goals?
+
+
+
+
+> 
+
+
+
+
+> celejar
+
+
+
+
+> -- 
+
+
+
+
+> foffl.sourceforge.net - feeds offline, an offline rss/atom aggregator
+
+
+
+
+> mailmin.sourceforge.net - remote access via secure (openpgp) email
+
+
+
+
+> ssuds.sourceforge.net - a simple sudoku solver and generator
+
+
+
+
+> 
+
+
+
+
+> 
+
+
+
+
+> -- 
+
+
+
+
+> to unsubscribe, email to debian-user-request@lists.debian.org 
+
+
+
+
+> with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+
+
+
+
+> archive: http://lists.debian.org/20100423151453.3f134ce4.celejar@csmining.org
+
+
+
+
+> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bd2b7bc.13085.1000bd@export.hope.cz
+
+

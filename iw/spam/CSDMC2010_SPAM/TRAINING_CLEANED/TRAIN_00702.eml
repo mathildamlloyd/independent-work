@@ -1,0 +1,101 @@
+None> On 5/3/2010 11:01 PM, Stan Hoeppner wrote:
+>> Mark Allums put forth on 5/3/2010 5:01 PM:
+>>
+>>> With 64 bits, you will need more memory, so I suggest you look for a
+>>> machine that can use 4 GB of memory.
+>>
+>> A user's application usage patterns dictate how much memory the machine
+>> needs, not the width of the CPU registers.  The comment above belongs
+>> in the
+>> winders user world, not here on the debian-user list, where we are
+>> assumed
+>> to be competent OPs.  The reasoning behind your suggestion is totally
+>> flawed.
+> 
+> No, 64-bit binaries are larger.  This indicates to me that more memory
+> is very useful to have.
+
+If wallets were all unlimited, we'd all have all our DIMM slots maxed.  I
+made the same argument as you quite some time ago in favor of 32bit Linux
+for small systems such as netbooks.  I was shot down and educated on the
+actual memory footprint of the x86-64 binaries, and it turns out they're not
+that much larger overall, and not nearly to the size that one should need
+4GB RAM on a netbook.  Most of them come with 2GB anyway, which should be
+more than enough for just about all application mixes, whether one chooses a
+64bit OS+apps or 32bit.
+
+> I admit I am just knowledgeable enough to be dangerous, rather than an
+> expert, but on this subject I am confident I am correct.
+
+Correct in that one should get 4GB on a netbook due to 64bit binary size?
+Or correct that 64bit binaries are (slightly) larger than 32bit binaries?
+I'd agree with you on the latter but not on the former.  Stating the case of
+the former is spreading misinformation.  I attempted to shoot it down.  It
+is simply not correct to recommend 4GB for the reason you stated.
+
+> Please do not try to insult.  It is not really useful, and wastes time.
+
+Apologies.  It wasn't meant as an insult but as an exclamation point backing
+incredulity.
+
+-- 
+Stan
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/4BDFB414.6080606@hardwarefreak.com
+
+
+re: 64-bit netbooks with debian linuxmark allums put forth on 5/3/2010 11:41 pm:
+> on 5/3/2010 11:01 pm, stan hoeppner wrote:
+>> mark allums put forth on 5/3/2010 5:01 pm:
+>>
+>>> with 64 bits, you will need more memory, so i suggest you look for a
+>>> machine that can use 4 gb of memory.
+>>
+>> a user's application usage patterns dictate how much memory the machine
+>> needs, not the width of the cpu registers.  the comment above belongs
+>> in the
+>> winders user world, not here on the debian-user list, where we are
+>> assumed
+>> to be competent ops.  the reasoning behind your suggestion is totally
+>> flawed.
+> 
+> no, 64-bit binaries are larger.  this indicates to me that more memory
+> is very useful to have.
+
+if wallets were all unlimited, we'd all have all our dimm slots maxed.  i
+made the same argument as you quite some time ago in favor of 32bit linux
+for small systems such as netbooks.  i was shot down and educated on the
+actual memory footprint of the x86-64 binaries, and it turns out they're not
+that much larger overall, and not nearly to the size that one should need
+4gb ram on a netbook.  most of them come with 2gb anyway, which should be
+more than enough for just about all application mixes, whether one chooses a
+64bit os+apps or 32bit.
+
+> i admit i am just knowledgeable enough to be dangerous, rather than an
+> expert, but on this subject i am confident i am correct.
+
+correct in that one should get 4gb on a netbook due to 64bit binary size?
+or correct that 64bit binaries are (slightly) larger than 32bit binaries?
+i'd agree with you on the latter but not on the former.  stating the case of
+the former is spreading misinformation.  i attempted to shoot it down.  it
+is simply not correct to recommend 4gb for the reason you stated.
+
+> please do not try to insult.  it is not really useful, and wastes time.
+
+apologies.  it wasn't meant as an insult but as an exclamation point backing
+incredulity.
+
+-- 
+stan
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bdfb414.6080606@hardwarefreak.com
+
+

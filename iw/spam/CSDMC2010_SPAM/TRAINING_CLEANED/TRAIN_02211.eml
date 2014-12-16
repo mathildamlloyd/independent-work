@@ -1,0 +1,93 @@
+None> From:  Anders Eriksson <aeriksson@fastmail.fm>
+> Date:  Thu, 22 Aug 2002 23:14:20 +0200
+>
+> 
+> >>>>> On Thu, 22 Aug 2002, "Chris" == Chris Garrigues wrote:
+> 
+>   Chris> --==_Exmh_267413022P Content-Type: text/plain;
+>   Chris> charset=us-ascii
+> 
+>   +> From:  Anders Eriksson <aeriksson@fastmail.fm> Date:  Thu, 22 Aug
+>   +> 2002 20:23:17 +0200
+> 
+>   +> Oooops!
+> 
+>   +> Doesn't work at all. Got this on startup and on any attempt to
+>   +> change folde r (which fail)
+> 
+>   Chris> ~sigh~ I'd already found that and checked it in....apparently
+>   Chris> I did so after you checked it out and before you sent this
+>   Chris> mail...I hoped I was fast enough that you wouldn't see it.
+> 
+>   Chris> Try again!
+> 
+> 
+> Works like a charm. It's like the box was on drugs or something. 
+> 
+> However, while testing it a selected my favourite folder (l-k) and 
+> marked ~400 messages unread. THAT took forever, or about as long as 
+> Catch-up Unseen did before. Any suggestions?
+
+That's fixed now.  I thought I'd caught all the occurrences of that particular 
+coding stupidity.
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+re: cvs reportfrom nobody tue dec 16 07:55:47 2014
+content-type: text/plain; charset=us-ascii
+
+> from:  anders eriksson 
+> date:  thu, 22 aug 2002 23:14:20 +0200
+>
+> 
+> >>>>> on thu, 22 aug 2002, "chris" == chris garrigues wrote:
+> 
+>   chris> --==_exmh_267413022p content-type: text/plain;
+>   chris> charset=us-ascii
+> 
+>   +> from:  anders eriksson  date:  thu, 22 aug
+>   +> 2002 20:23:17 +0200
+> 
+>   +> oooops!
+> 
+>   +> doesn't work at all. got this on startup and on any attempt to
+>   +> change folde r (which fail)
+> 
+>   chris> ~sigh~ i'd already found that and checked it in....apparently
+>   chris> i did so after you checked it out and before you sent this
+>   chris> mail...i hoped i was fast enough that you wouldn't see it.
+> 
+>   chris> try again!
+> 
+> 
+> works like a charm. it's like the box was on drugs or something. 
+> 
+> however, while testing it a selected my favourite folder (l-k) and 
+> marked ~400 messages unread. that took forever, or about as long as 
+> catch-up unseen did before. any suggestions?
+
+that's fixed now.  i thought i'd caught all the occurrences of that particular 
+coding stupidity.
+
+chris
+
+-- 
+chris garrigues                 http://www.deepeddy.com/~cwg/
+vircio                          http://www.vircio.com
+716 congress, suite 200
+austin, tx  78701+1 512 374 0500
+
+  world war iii:  the wrong-doers vs. the evil-doers.
+
+
+

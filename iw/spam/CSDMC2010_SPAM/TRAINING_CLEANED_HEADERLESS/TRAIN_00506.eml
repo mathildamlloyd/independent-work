@@ -1,0 +1,29 @@
+dotan cohen wrote:
+>> but at what price: hal comes back in again, after i just got rid of it, and
+>> also consolekit, after i just got rid of that too...
+>> i dunno, all for just a sound...
+>>
+> 
+> i suppose that depends on how (and why) you got rid of them.
+> 
+> have you tried installing pulse audio, you can control that without
+> the kde tools.
+> 
+> 
+
+hal and friend got installed because they used to be needed for 
+xserver-xorg, but that is no longer true in the latest versions, so i 
+just removed them.
+
+but will pulse audio make my konsole make a sound because that is the 
+only reason i would install systemsettings.
+
+hugo
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hqvfnr$bkp$1@dough.gmane.org
+
+

@@ -1,0 +1,81 @@
+NoneIn message <200209130231.g8D2VO021580@hobbit.linuxworks.com.au.nospam>, Tony Nu
+gent writes:
+> 
+> I have set my right mouse button to [Move] a message to another
+> folder, which works fine.
+> 
+> However, [Link] also uses the same destination folder as [Move], and
+> so if I want to use [Link] I first have to mark the destination
+> folder with a message-move, undo the move, then I can use the
+> [Link].  Very inconvenient.
+> 
+> Is there a better way for me to set this up so that [Link] works
+> with one or two simple clicks?
+> 
+
+According to some old documentation (man exmh-ref)
+
+     The mouse bindings for the folders labels are:
+
+          Left - Change to folder.
+          Middle - View nested folders.
+          Right - Refile current messages to the folder.
+          Shift-Right - Link current messages to the folder.
+          Shift-Middle - Drag a folder label to some drop target.
+          Control-Right - Clear the current target folder.
+
+It should be possible to link using shift-right-click the same way you 
+can move using only right-click.
+
+Kevin
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+
+re: linking message [was: re: patch to complete a change...]
+in message <200209130231.g8d2vo021580@hobbit.linuxworks.com.au.nospam>, tony nu
+gent writes:
+> 
+> i have set my right mouse button to [move] a message to another
+> folder, which works fine.
+> 
+> however, [link] also uses the same destination folder as [move], and
+> so if i want to use [link] i first have to mark the destination
+> folder with a message-move, undo the move, then i can use the
+> [link].  very inconvenient.
+> 
+> is there a better way for me to set this up so that [link] works
+> with one or two simple clicks?
+> 
+
+according to some old documentation (man exmh-ref)
+
+     the mouse bindings for the folders labels are:
+
+          left - change to folder.
+          middle - view nested folders.
+          right - refile current messages to the folder.
+          shift-right - link current messages to the folder.
+          shift-middle - drag a folder label to some drop target.
+          control-right - clear the current target folder.
+
+it should be possible to link using shift-right-click the same way you 
+can move using only right-click.
+
+kevin
+
+
+
+
+_______________________________________________
+exmh-users mailing list
+exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

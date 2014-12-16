@@ -1,0 +1,34 @@
+well you know what i mean.
+
+i noticed 2 connections from my
+(freshly installed rh7.3) machine to
+port 80 of the following addresses.
+
+216.145.20.5
+216.254.17.87
+
+both resolve to cytocin.hubbe.net
+using ccom.net & speakeasy.net dns
+servers respectively.
+
+both connections lasted about 20
+seconds and were about 2 minutes apart.
+any ideas?
+
+i didn't see what processes they came from,
+but i'm keeping a close eye now.
+
+thanks,
+pdraig.
+
+p.s. i'm can't subscribe to the list
+at the moment for some reason? so please
+reply directly.
+
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

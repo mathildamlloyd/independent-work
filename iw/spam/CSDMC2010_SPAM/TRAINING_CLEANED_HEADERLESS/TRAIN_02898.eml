@@ -1,0 +1,28 @@
+> 
+>> if i try to create my qtmovie object on a secondary thread, i get the
+>> following exception :
+>> *2010-04-21 20:09:05.949 qtasyncloadcmdline[5123:3303] an uncaught
+>> exception was raised*
+>> *2010-04-21 20:09:05.950 qtasyncloadcmdline[5123:3303] qtmovie_quicktime
+>> class must be initialized on the main thread.*
+>> *
+>> *
+>> so it's seem's to be impossible to make asynchronous loading on a
+>> secondary thread.
+> 
+> 
+> i would read that exception as saying that the qtmovie class cannot be initialized on a secondary thread, not that a qtmovie object cannot be initialized on a secondary thread.  try calling [qtmovie class] on the main thread before creating a qtmovie instance on a thread.
+
+no way, the exception is not anymore raised but the movie doesn't load to full completion.
+
+i think i must try with quicktime c api.
+
+christophe
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

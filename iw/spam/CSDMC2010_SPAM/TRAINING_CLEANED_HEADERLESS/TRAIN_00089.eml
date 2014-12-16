@@ -1,0 +1,22 @@
+on 2010-05-17 20:07 +0200, rick thomas wrote:
+
+> on may 16, 2010, at 7:59 am, anacron wrote:
+>
+>> /etc/cron.weekly/apt-xapian-index:
+>> traceback (most recent call last):
+>>  file "/usr/sbin/update-apt-xapian-index", line 71, in 
+>>    warnings.filterwarnings("ignore","")
+>> nameerror: name 'warnings' is not defined
+>> run-parts: /etc/cron.weekly/apt-xapian-index exited with return code 1
+
+http://bugs.debian.org/581736
+
+sven
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87mxvy1h46.fsf@turtle.gmx.de
+
+

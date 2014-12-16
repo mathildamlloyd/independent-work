@@ -1,0 +1,25 @@
+on 2010-04-08 06:40,   wrote:
+> the last few days, when using reportbug, i get (from two machines, on 
+> two different networks):
+> 
+> querying debian bts for reports on linux-2.6 (source)...
+> unable to connect to debian bts; continue [y|n|?]?
+> 
+> except some very rare cases.
+> 
+> anybody else having the same problem?
+> 
+
+i just tried it from the southern us, and it worked like a charm.
+
+-- 
+"history does not long entrust the care of freedom to the weak
+or the timid."  dwight eisenhower
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bbdd4ff.6050105@cox.net
+
+

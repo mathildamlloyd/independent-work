@@ -1,0 +1,50 @@
+on thu, nov 12, 2009, i had written:
+ 
+> i don't have proper fan control of my toshiba l305 series
+> laptop. the way i control the fan is by restarting the
+> laptop immediately after an overheating shutdown. this
+> somehow locks the fan on its maximum setting.
+> 
+> toshiba has not been forthcoming with technical data that
+> would help my better control my fan (and hotkeys, etc.)
+
+i solved the overheating problems i had by using utilities
+under vista enabled to set the processor for low frequency
+operation (as opposed to dyamic frequency control), and to
+select the power-saving mode.
+
+one of the utilities was in a toshiba folder under all
+programs, another was in the vista utilities folder.  (sorry
+to be vague, i'm not keen to risk undoing my present success
+to double-check. :-)
+
+vista reported that the os would need to be rebooted
+for the settings to take effect.
+
+when i rebooted into linux, i discovered that the
+fan would speed up at temperatures of 80c.
+also, playing video no longer causes overheat
+and shutdown.
+
+idle temperatures are way down in a reasonable range,
+around 60c.
+
+the laptop uses insyde h2o bios, which provides
+no facilities for setting power-related parameters.
+fan controls and other functions are reportedly 
+available via the omnibook module. i have yet to test
+this, and no immediate need, having dealt with the
+biggest thorn.
+
+regards,
+
+-- 
+joel roth
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100410064405.ga8549@sprite
+
+

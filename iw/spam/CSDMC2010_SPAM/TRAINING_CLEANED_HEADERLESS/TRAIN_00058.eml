@@ -1,0 +1,25 @@
+monique y. mudama wrote:
+> they used to say - you're not a real linux admin until you've
+> completely borked your system and had to wipe and reinstall from
+> scratch at least once.
+>    
+and then recover all your user data, from your hopefully good backup.  
+it gets really entertaining when a raid array fails in an odd way.  (i 
+still cringe about how i learned that md software raid does not always 
+kick bad disks out of an array - if a drive is going bad, and just takes 
+lots of tries to read data, everything just slows waaa....aaaay down.  
+and then unraveling logical volumes on top of software raid can get very 
+interesting.)  you learn a lot from such experiences.  sigh....
+
+-- 
+in theory, there is no difference between theory and practice.
+in  practice, there is.   .... yogi berra
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bd63945.1050005@meetinghouse.net
+
+

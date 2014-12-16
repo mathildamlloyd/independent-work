@@ -1,0 +1,85 @@
+NoneCamaleón <noelamac@csmining.org> writes:
+
+> PDF manipulation is still very limited in Linux so don't expect the same 
+> manageability and easiness of Acrobat Professional or such programs 
+> here :-)
+Mmh okay, but what I want looks basic, doesn't it? No problem.
+
+> That said, I would make first the big PDF file (with all the needed 
+> appended files in there) and then make the bookmarks with a program that 
+> allows creating/editing them, like "jPdfBookmarks¹".
+Thanks. I'll check it out.
+
+> Dunno whether "pdfkt" or "pdfedit" will allow creating/editing
+> bookmarks.
+I think you meant `pdftk' at the place of `pdfkt'.
+
+> ¹ http://flavianopetrocchi.blogspot.com
+Thanks for this link. I'll check it.
+- -- 
+Merciadri Luca
+See http://www.student.montefiore.ulg.ac.be/~merciadri/
+- -- 
+
+To live is the rarest thing in the world.  Most people exist, that's
+ all. (Oscar Wilde)
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+Comment: Processed by Mailcrypt 3.5.8 <http://mailcrypt.sourceforge.net/>
+
+iEYEARECAAYFAkvl17MACgkQM0LLzLt8MhxbAgCfYPgyruQ1P851+ob77Z/EuP92
+5qsAn0FmUa7iHdB+I3pYMgA1TdiusRyV
+=Q+Pr
+-----END PGP SIGNATURE-----
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/87pr16yte3.fsf@merciadriluca-station.MERCIADRILUCA
+
+
+re: pdftk or related: how to make a bookmark for every inserted  pdf?-----begin pgp signed message-----
+hash: sha1
+
+camalen  writes:
+
+> pdf manipulation is still very limited in linux so don't expect the same 
+> manageability and easiness of acrobat professional or such programs 
+> here :-)
+mmh okay, but what i want looks basic, doesn't it? no problem.
+
+> that said, i would make first the big pdf file (with all the needed 
+> appended files in there) and then make the bookmarks with a program that 
+> allows creating/editing them, like "jpdfbookmarks".
+thanks. i'll check it out.
+
+> dunno whether "pdfkt" or "pdfedit" will allow creating/editing
+> bookmarks.
+i think you meant `pdftk' at the place of `pdfkt'.
+
+>  http://flavianopetrocchi.blogspot.com
+thanks for this link. i'll check it.
+- -- 
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+- -- 
+
+to live is the rarest thing in the world.  most people exist, that's
+ all. (oscar wilde)
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: processed by mailcrypt 3.5.8 
+
+ieyearecaayfakvl17macgkqm0llzlt8mhxbagcfypgyruq1p851+ob77z/eup92
+5qsan0fmua7ihdb+i3pymga1tdiusryv
+=q+pr
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87pr16yte3.fsf@merciadriluca-station.merciadriluca
+
+

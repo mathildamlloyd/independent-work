@@ -1,0 +1,57 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=iso-8859-1
+
+hi all,
+
+recently a couple of new machines came to my hands, hp dl 180 g6 with 500gb
+sata hard disk, and i tried to setup a 2-nodes ganeti cluster with debian
+lenny.
+
+default 2-6-26 kernel does work without any issue.
+
+i've done a fresh installation with nothing more than the basics (vim and
+less ;) ) and after a aptitude install ganeti, editing xen-config.xsp and
+grub xen options, upon restarting i get the following error on the screen:
+
+apr 15 13:24:56 virt8 kernel: [  297.381987] ata3.00: exception emask 0x0
+sact 0x0 serr 0x0 action 0x6 frozen
+apr 15 13:24:56 virt8 kernel: [  297.382163] ata3.00: cmd
+a0/00:00:00:24:00/00:00:00:00:00/a0 tag 0 pio 36 in
+apr 15 13:24:56 virt8 kernel: [  297.382164]          cdb 12 00 00 00 24 00
+00 00  00 00 00 00 00 00 00 00
+apr 15 13:24:56 virt8 kernel: [  297.382165]          res
+40/00:00:00:00:00/00:00:00:00:00/00 emask 0x4 (timeout)
+apr 15 13:24:56 virt8 kernel: [  297.382595] ata3.00: status: { drdy }
+apr 15 13:24:56 virt8 kernel: [  297.382727] ata3: hard resetting link
+apr 15 13:24:56 virt8 kernel: [  297.858982] ata3: sata link up 1.5 gbps
+(sstatus 113 scontrol 310)
+apr 15 13:24:56 virt8 kernel: [  297.914096] ata3.00: configured for pio0
+apr 15 13:24:56 virt8 kernel: [  297.914235] ata3: eh complete
+
+the installed versions are:
+linux-image-2.6.26-1-xen-686
+xen-hypervisor-3.2-1-i386
+ganeti                              1.2.6-3+lenny2
+ganeti-instance-debootstrap         0.5-1
+drbd8-utils                         2:8.0.14-2+lenny1
+
+i upgraded to kernel 2-6-26-2 to see whether it solved the issue without
+success.
+i also tried booting with clocksource=acpi_pm. i've also just tried
+acpi=off, pci=nosmi, and nocpi as suggests the ata kernel website without
+much success.
+
+i've checked through internet and found the following:
+
+https://bugzilla.redhat.com/show_bug.cgi?id=480317
+
+it should be solved because hipervisor version 3.2 is higher than the one
+solving the issue (3.0.3) unless redhat's version differ much from the
+debian ones in minnor version....which i don't think.
+
+
+can anyone shed some light on this issue?
+
+thank you in advance!!
+
+samuel

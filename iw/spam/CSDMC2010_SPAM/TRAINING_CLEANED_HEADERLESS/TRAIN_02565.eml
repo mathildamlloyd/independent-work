@@ -1,0 +1,35 @@
+
+on 5. apr. 2010, at 19.34, doug zwick wrote:
+
+> i put an additional try/catch around the code interpreting the =
+x-java-image flavour. if that attempt fails, i fall back to one of the =
+file path or url string flavours. it's ugly, and only really practical =
+because the code has to be able to handle drag sources that only put an =
+url or file path in the transferable.=20
+
+that does of course work, but you might run into issues with protected =
+resources, as you won't be able to share credentials/sessions/etc with =
+the browser (unless you get a path to the browsers locally cached =
+version of the resource).=20
+
+i did some extra testing on this topic, and found there are more things =
+going wrong: the "image/x-pict" flavor, which should contain a tiff =
+encoded version of the image, instead contains only a null-terminated =
+string "unsupported type". it's probably caused by the same underlying =
+problem that leads to the error in the "image/x-java-image" case though, =
+but might help locating the bug.=20
+
+
+best regards,
+
+--=20
+harald k
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

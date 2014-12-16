@@ -1,0 +1,31 @@
+on fri, 07 may 2010 19:58:26 +0200, merciadri luca wrote:
+
+> i noticed on many computers with debian, whatever the kernel (2.6.xx, xx
+>>= 26), that, once ``too much'' tabs have been opened, firefox/iceweasel
+> becomes sluggish, slower and slower, and often stalls after some time. i
+> also noticed that, when becoming more and more sluggish, it takes more
+> and more ram, even when all the pages are completely loaded. why? am i
+> the only person who's experiencing this? is there an objective
+> explanation to this?
+
+he... did you never search in google for "firefox memory hog"? o:-)
+
+there's even a mozilla kb explaining the issue:
+
+reducing memory usage - firefox
+http://kb.mozillazine.org/memory_leak
+
+also, never versions (>3.5.x) provide /a bit/ better memory management.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.07.18.17.57@csmining.org
+
+

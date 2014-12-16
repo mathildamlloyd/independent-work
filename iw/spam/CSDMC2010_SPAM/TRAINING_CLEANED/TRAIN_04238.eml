@@ -1,0 +1,58 @@
+None> Stephen Powell wrote:
+>> If you need
+>> instructions for how to pull in the Sid kernel without upgrading
+>> your whole system ...
+> 
+> As far as I know this line should be appended to /etc/apt/sources.list
+> deb     http://debian.oregonstate.edu/debian/ sid main
+> and then update and upgrade.
+
+Not unless you want to upgrade your entire system to Sid.  To install
+only certain cherry-picked applications from Sid, you have to use
+apt pinning.  And don't use synaptic.  (But since you don't have X
+running, you can't use synaptic.  Yet.  But once you get it running,
+don't use synaptic.  I've heard that it does not respect apt pinning.)
+
+-- 
+  .''`.     Stephen Powell    
+ : :'  :
+ `. `'`
+   `-
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/1018134636.325971.1274469195306.JavaMail.root@md01.wow.synacor.com
+
+
+re: re (6): xorg-server failing on ibm netvista with intel 82815
+ videoon fri, 21 may 2010 14:55:52 -0400 (edt), peter easthope wrote:
+> stephen powell wrote:
+>> if you need
+>> instructions for how to pull in the sid kernel without upgrading
+>> your whole system ...
+> 
+> as far as i know this line should be appended to /etc/apt/sources.list
+> deb     http://debian.oregonstate.edu/debian/ sid main
+> and then update and upgrade.
+
+not unless you want to upgrade your entire system to sid.  to install
+only certain cherry-picked applications from sid, you have to use
+apt pinning.  and don't use synaptic.  (but since you don't have x
+running, you can't use synaptic.  yet.  but once you get it running,
+don't use synaptic.  i've heard that it does not respect apt pinning.)
+
+-- 
+  .''`.     stephen powell    
+ : :'  :
+ `. `'`
+   `-
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/1018134636.325971.1274469195306.javamail.root@md01.wow.synacor.com
+
+

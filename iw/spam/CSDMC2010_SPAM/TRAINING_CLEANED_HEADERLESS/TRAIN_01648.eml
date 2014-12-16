@@ -1,0 +1,37 @@
+
+"zeek" said:
+
+> this was thoroughly confusing, but by playing musical chairs with the spamd
+> args i smashed a bug:
+> 
+> ok:
+> spamd --debug --daemonize --auto-whitelist --username=nobody --allowed-ips=1
+> 27.0.0.1"
+> ok:
+> spamd --debug --daemonize --auto-whitelist --username=nobody --allowed-ips=1
+> 27.0.0.1, 192.168.1.1"
+> not ok:
+> spamd --debug --daemonize --auto-whitelist --username=nobody --allowed-ips=1
+> 92.168.1.1, 127.0.0.1"
+
+fwiw, i can't reproduce this with
+
+  spamd --debug --auto-whitelist --allowed-ips="127.0.0.1"
+  spamd --debug --auto-whitelist --allowed-ips="127.0.0.1, 192.168.1.1"
+  spamd --debug --auto-whitelist --allowed-ips="192.168.1.1, 127.0.0.1"
+
+which i presume is what you meant (except for the missing args
+of course).  they all seem to work ok.
+
+--j.
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: osdn - tired of that same old
+cell phone?  get a new here for free!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1;=vs3390
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

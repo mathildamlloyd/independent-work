@@ -1,0 +1,24 @@
+i've had this binding in my ~/.exmh/exmhbindings for years:
+
+set {bindings(key,flist_findunseen 1 ; inc_presortfinish)} 
+
+after updating to the current code in cvs i get "bad key f" when 
+i hit the "f" key.  i can open the bindings... commands window 
+and define the binding.  it then works until i restart exmh.
+
+i suspect a parsing problem/change.  i'll try to look into this 
+tomorrow unless someone knows where the problem might be.
+
+--hal
+
+
+
+
+
+
+_______________________________________________
+exmh-workers mailing list
+exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

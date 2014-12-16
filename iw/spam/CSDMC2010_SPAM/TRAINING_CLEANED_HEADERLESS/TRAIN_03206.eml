@@ -1,0 +1,36 @@
+el thursday 15 april 2010 09:11:21 freeman va escriure:
+
+> an empty .xsession file will crash gnome too. (i remember that debacle.) i
+> can't offer a technical explanation.  maybe it can be viewed as similar to
+> initiating two desktops environments simultaneously.
+
+=2exsession is the x session script that's executed, so the x session termi=
+nates=20
+when this script also terminates.
+the last command in the script must not quit inmediatly, instead he must=20
+handle the x session (should be a window manager, a desktop or another nice=
+=20
+program).
+
+> --
+> kind regards,
+> freeman
+>
+> http://bugs.debian.org/release-critical/
+
+
+
+=2d-=20
+
+marc oliv=e9
+grup blau
+
+www.grupblau.com =20
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201004161255.50644.marc.olive@grupblau.com
+
+

@@ -1,0 +1,55 @@
+-----begin pgp signed message-----
+hash: sha1
+
+merciadri luca wrote:
+> johannes wiedersich wrote:
+>> why would an
+>> honest soul ever allow information to be read, but not printed?
+>>   
+> to maintain honesty? an honest soul (i.e. me, here) has to send some
+> data to some dishonest person.
+
+the problem is: either you give data to some dishonest person or you
+don't give that data to some dishonest person. tertium non datur.
+
+>> even with acroread it is possible to print screenshots of the documents.
+>> might be a pain to reconstruct a multipage document, but not impossible.
+>>   
+> i know, and we all know this. but this needs some determination, because
+> it needs some time. and when such problems arise, one often thinks (or
+> should, at least, think) `do i really need to copy this using that
+> painful way, to bypass some limitation which is actually imposed to me
+> by an honest person?' this is another aspect of security. there are the
+> technical means, and all the infringements which can be done. but,
+> sometimes, `le jeu n'en vaut pas la chandelle.'
+
+fwiw, if you'd like to rely on such a scheme for security by obstacles,
+you'd have to use something else than pdf. pdf's scheme is broken.
+that's all.
+
+the reason that it is broken for pdfs is that the specifications for pdf
+are freely available, and thus alternative pdf readers have been
+developed. your scheme would require closed specifications and closed
+software to work. this list, however, is all about free software.
+
+- --
+johannes
+
+in questions of science, the authority of a thousand is not worth the
+humble reasoning of a single individual.
+- - galileo galilei, physicist and astronomer (1564-1642)
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+
+ieuearecaayfakvns+oacgkqc1nzprl9qevm2wcfqpavstax7gnbtuminwiquilp
+cm4alrf4niahaat6neydcg0ryaxgs+k=
+=xyrp
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bcd4bea.2090901@physik.blm.tu-muenchen.de
+
+

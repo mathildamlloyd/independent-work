@@ -1,0 +1,67 @@
+i'm running quicktime on windows (xp sp3) and have a reproducible way to
+make movieaudioextractionfillbuffer in a c++ program do something strange.
+it looks like it's calling exit() or doing something equivalent, but i can't
+say for sure.   what i do see is that immediately after calling
+movieaudioextractionfillbuffer, execution continues in the destructors of my
+statically allocated objects.  if i replace the call to
+movieaudioextractionfillbuffer with a call to exit(), i see the same thing.
+
+i'm using version 7.3 of the quicktime sdk, but 
+
+long version;
+gestalt(gestaltquicktimeversion,&version;);
+
+populates version with 0x07668000.  i can reproduce the same behavior with
+version 7.1 of the quicktime sdk, but gestalt still returns the same thing
+in this case.
+
+the quicktime-related things that happen before this are:
+
+- quicktime initializes normally
+- quicktime reads metadata from one aac file
+- quicktime reads metadata from a second aac file
+- quicktime reads the audio properties of an mp3 file
+- and then i call movieaudioextractionfillbuffer
+
+the audio-related function calls are:
+
+movieaudioextractionbegin
+movieaudioextractiongetproperty(kqtpropertyclass_movieaudioextraction_audio,
+ 
+kqtmovieaudioextractionaudiopropertyid_audiostreambasicdescription);
+movieaudioextractionsetproperty(kqtpropertyclass_movieaudioextraction_audio,
+ 
+kqtmovieaudioextractionaudiopropertyid_audiostreambasicdescription);
+
+all of which work as expected (or at least i think they do).
+
+and then
+
+movieaudioextractionfillbuffer
+
+i can give more details about the api calls if necessary.  i think i'm
+calling quicktime correctly since it decodes audio successfully almost all
+the time -- with this file and many others (i.e.
+movieaudioextractionfillbuffer returns normally).  i've had customers report
+similar problems, but this is the first time i've been able to reproduce it
+reliably myself.  unfortunately it's with a complex program.  my attempts to
+reproduce this with a simpler program have failed.  it seems to be
+timing-related but i can't do better than that at the moment.
+
+i'd love some help figuring out what's happening in
+movieaudioextractionfillbuffer, and even better some help making it go away.
+if i need to report this in some more official way to apple to make that
+happen, please let me know.
+
+thanks much.
+
+-db
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

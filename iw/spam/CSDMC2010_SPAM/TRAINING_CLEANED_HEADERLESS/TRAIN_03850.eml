@@ -1,0 +1,29 @@
+on 05/03/2010 03:45 am, martin f krafft wrote:
+> also sprach ron johnson  [2010.05.03.1039 +0200]:
+>> is that q21?
+>>
+>> http://git.debian.org/?p=pkg-mdadm/mdadm.git;a=blob_plain;f=debian/faq;hb=head
+>
+> yes.
+>
+>>> 2. you were asked upon mdadm installation whether you wanted it, and
+>>>     you chose to accept yes. dpkg-reconfigure mdadm if you don't
+>>>     believe in this feature.
+>>
+>> well, not me, since i don't have a soft array...
+>
+> then you probably have much more annoying problems, or will have. ;)
+>
+
+i regularly backup to an external lvm2 lv.
+
+-- 
+dissent is patriotic, remember?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bde8ff2.6070403@cox.net
+
+

@@ -1,0 +1,48 @@
+None[SAdev] Spam-Assassin nightly build 22-8-02Hello all,
+I get problems with the latest nightly build from Spamassassin with
+VMailMgr + OMail-Admin. 
+It scans the mail and gives it an :
+
+        X-Spam-Status: No, hits=11.4 required=7.0
+
+Can someone look at the code for it? Maybe because option -F is gone?
+
+
+Greetings
+Erik Rudolfs
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+[sadev] spam-assassin nightly build 22-8-02hello all,
+i get problems with the latest nightly build from spamassassin with
+vmailmgr + omail-admin. 
+it scans the mail and gives it an :
+
+        x-spam-status: no, hits=11.4 required=7.0
+
+can someone look at the code for it? maybe because option -f is gone?
+
+
+greetings
+erik rudolfs
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: osdn - tired of that same old
+cell phone?  get a new here for free!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1;=vs3390
+_______________________________________________
+spamassassin-devel mailing list
+spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

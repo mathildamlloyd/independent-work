@@ -1,0 +1,64 @@
+NoneOn Tue, Apr 6, 2010 at 11:53 PM, Klaus Becker <colonius@free.fr> wrote:
+
+> Le Mardi 06 Avril 2010 22:41:44, Daniel Sutil a =E9crit :
+> > Finally I applied the following workaround: I remove kdm and installed
+> gdm.
+> > After that, I have no problem to login. I haven't investigated any
+> further
+> > because I really don't know from where the problem comes, but now, mayb=
+e
+> we
+> > have to undo the steps applied with the skype's solution to solve our
+> > problem.
+>
+>
+> Hi,
+>
+> I had the same problem with kdm, but no problem with gdm.
+>
+> cheers
+>
+> Klaus
+>
+> Hi. Installing gdm did not do the trick :(
+
+When doing startx as a normal user from console I get some errors like "xkb
+could not initialize" and "Xinit: no such file or directory" and "Xinit:
+Could not connect to xserver"....
+
+Some friend told me to purge kde and reinstall it. I don't think this will
+help. Do you think I should give it a try?
+re: cannot loginfrom nobody tue dec 16 07:55:46 2014
+content-type: text/plain; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+on tue, apr 6, 2010 at 11:53 pm, klaus becker  wrote:
+
+> le mardi 06 avril 2010 22:41:44, daniel sutil a =e9crit :
+> > finally i applied the following workaround: i remove kdm and installed
+> gdm.
+> > after that, i have no problem to login. i haven't investigated any
+> further
+> > because i really don't know from where the problem comes, but now, mayb=
+e
+> we
+> > have to undo the steps applied with the skype's solution to solve our
+> > problem.
+>
+>
+> hi,
+>
+> i had the same problem with kdm, but no problem with gdm.
+>
+> cheers
+>
+> klaus
+>
+> hi. installing gdm did not do the trick :(
+
+when doing startx as a normal user from console i get some errors like "xkb
+could not initialize" and "xinit: no such file or directory" and "xinit:
+could not connect to xserver"....
+
+some friend told me to purge kde and reinstall it. i don't think this will
+help. do you think i should give it a try?

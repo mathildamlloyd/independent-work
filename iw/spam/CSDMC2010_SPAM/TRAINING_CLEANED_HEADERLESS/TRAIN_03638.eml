@@ -1,0 +1,27 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain;
+  charset="iso-8859-15"
+content-transfer-encoding: quoted-printable
+
+am donnerstag, 8. april 2010 schrieb adrian von bidder:
+
+> given a debian package (kmail, in this case, with installed kdepim-dbg
+> package) and an extracted source package: how do i properly start gdb (or
+> ddd or ...) so that it finds both the debugging symbols and the source
+> code?
+>=20
+> just gdb -p  /usr/bin/kmail doesn't work :-(
+>=20
+> (i've only ever used gdb on locally compiled simple projects, i've never
+> worked with the separate symbol files as delivered in -dbg packages.)
+
+not sure if this is the same as your example, but i usually used
+
+gdb kmail
+attach 
+
+but check the output of ps aux | grep kmail -- if kmail is launched via=20
+kdeinit or kdeinit4, you need to run "gdb kdeinit" or kdeinit4.
+
+cheers,
+carsten

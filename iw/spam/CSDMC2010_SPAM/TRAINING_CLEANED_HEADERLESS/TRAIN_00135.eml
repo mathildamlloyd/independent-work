@@ -1,0 +1,26 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on wed, aug 28, 2002 at 12:14:24am +0100, justin mason wrote:
+> actually, i think procmail supports this directly. use dropprivs=3dyes
+> at the top of the /etc/procmailrc.
+
+hey, look at that!
+
+       dropprivs   if  set  to`yes'  procmail  will drop all privileges
+   it might have had (suid or sgid).  this is only
+   useful if you want to guarantee that the bottom half
+   of  the /etc/procmailrc file is executed on behalf
+   of the recipient.
+
+of course, removing setuid/gid bits on programs that don't need it is
+always a good idea.  a general rule of system administration: don't give
+out permissions unless you absolutely need to.   ;)
+
+--=20
+randomly generated tagline:
+"the cardinal rule at our school is simple. no shooting at teachers. if
+ you have to shoot a gun, shoot it at a student or an administrator."
+                 - "word smart ii", from princeton review pub.

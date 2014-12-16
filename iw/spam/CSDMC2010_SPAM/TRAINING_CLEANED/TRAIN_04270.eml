@@ -1,0 +1,28 @@
+NoneDaemonsI have several running daemons  that write some data to files
+What happens with these open files when INIT 6 command  is issued?
+Are these files that are used by daemons deleted? Or are they closed regularly and saved ?
+And what happens, if the  Linux box is shut down in a dirty way( out of electricity)?
+Thanks
+L.
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/4BE0079D.4796.6039ABB@export.hope.cz
+
+
+daemonsi have several running daemons  that write some data to files
+what happens with these open files when init 6 command  is issued?
+are these files that are used by daemons deleted? or are they closed regularly and saved ?
+and what happens, if the  linux box is shut down in a dirty way( out of electricity)?
+thanks
+l.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4be0079d.4796.6039abb@export.hope.cz
+
+

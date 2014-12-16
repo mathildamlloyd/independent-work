@@ -1,0 +1,42 @@
+on 2010-05-18, robert latest  wrote:
+> hello all,
+>
+> my question is already in the subject line. also i think that i've got
+> the basics figured out, it's just that i don't understand the details.
+>
+> essentially i want user a to run a specific x app as user b. so i
+> think i need to write a tiny shell script like this:
+>
+> #!/bin/sh
+> xhost +b
+> sudo -u b /path/to/app arg1 arg2 arg3
+> xhost -b
+>
+> i need help with two things though:
+>
+> one, "xhost +b" doesn't work, contrary to the manpage. "xhost +"
+> works, granting x access to the entire net, but who cares. this is
+> just a home computer.
+>
+> two, i can't figure out for the life of me what the entry in
+> /etc/sudoers must look like to make sudo do what i want.
+>
+> thanks,
+> robert
+>
+>
+
+consider using the gksu package instead.
+
+-- 
+liam o'toole
+birmingham, united kingdom
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/slrnhv5vtj.b3s.liam.p.otoole@dipsy.selfip.org
+
+

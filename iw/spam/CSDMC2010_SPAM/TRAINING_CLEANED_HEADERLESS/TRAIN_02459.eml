@@ -1,0 +1,55 @@
+on 20100412_152156, hugo vanwoerkom wrote:
+> celejar wrote:
+> >on sat, 10 apr 2010 22:06:06 -0600
+> >paul e condon  wrote:
+> >
+> >...
+> >
+> >>i got a little less timid and tried running smartctl even though i was
+> >>quite unsure of what to expect. it ran. each of the three usb hd gave
+> >>somewhat different output, but none gave output that claimed there was
+> >>a working smart on the drive. these drives are western digital (wd).
+> >>the wd web site mentions smart and also uses the words smart
+> >>drive to mean something else that is a proprietary marketing
+> >>thing, afaict. i
+> >>was unable to find a list of part #s for drives that support s.m.a.r.t.
+> >>
+> >>i think i should be in the market for a better class of drives, but not
+> >>this weekend. thanks for the help.
+> >
+> >my understanding is that s.m.a.r.t. doesn't generally work over usb.
+> >as wikipedia puts it:
+> >
+> >for example, few external drives connected via usb and firewire
+> >correctly send s.m.a.r.t. data over those interfaces.
+> >
+> >http://en.wikipedia.org/wiki/s.m.a.r.t.#standards_and_implementation
+> >
+> 
+> i can use smart on my usb drive enclosure with an ata drive but not
+> with my usb drive enclosure with a sata drive.
+> 
+> hugo
+
+very interesting --- but
+
+my quick googling reveals many usb drive enclosures for both ata and sata
+but the marketers don't make mention of s.m.a.r.t . what is the brand of
+your enclosure. i want to look for it, in particular, and see if it claims
+the feature that you have discovered. actually, on looking a little more
+closely, i'm not seeing any case of a single enclosure that can be used
+with both ata and sata. do i read your post correctly - your enclosure can
+contain either a sata or an ata, and work over usb? but smart only works
+when it is enclosing an ata? 
+
+-- 
+paul e condon           
+pecondon@mesanetworks.net
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100412223607.gl10774@big.lan.gnu
+
+

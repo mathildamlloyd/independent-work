@@ -1,0 +1,30 @@
+norbert zeh [2010.04.15 1517 -0300]:
+> mark [2010.04.13 1542 -0700]:
+> > hi,
+> > 
+> > i'm considering purchasing a new laptop like this one
+> > http://www.thelinuxlaptop.com/viper-linux-laptop.php which uses a dell
+> > wireless 1490 card a.k.a. bcm4310.  i've used b43-fwcutter with great
+> > results on older dell bcm43xx cards in lenny but bcm4310 is not listed here
+> > http://wireless.kernel.org/en/users/drivers/b43#supported_chip_types.  i'm
+> > also curious about the video card (intel graphics media accelerator x4500hd)
+> > but that appears to be supported based on what i've read.
+> >
+> i don't know about this particular card, but i got a dell 1505 (bcm
+> 4323) to work with the linux driver available from broadcom (google
+> broadcom sta linux).  this is not an open-source driver.  some part of
+> it is, another part is a binary blob, but it worked beautifully for me.
+
+a follow-up:  the readme of the broadcom sta driver says that the
+dell 1490 is supported, but it says it's a bcm4311.
+
+cheers,
+norbert
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100416080837.gf22422@cs.dal.ca
+
+

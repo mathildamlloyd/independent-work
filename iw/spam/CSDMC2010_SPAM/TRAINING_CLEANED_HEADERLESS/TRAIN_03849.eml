@@ -1,0 +1,47 @@
+hi,
+
+when running pascal programs based on fpgui, an x11 based interface =
+package, i get an error if the application needs to create the top level =
+(root?) x11 window. but only then. if there is already a toplevel =
+window, for example because xterm runs, then the application open its =
+window and everything behaves as expected.
+
+the problematic call is this:
+
+xgetwmprotocols(fdisplay, awindow, @protocols, @count);
+
+gdb shows these values (if there is an x11 window, the values are =
+exactly the same):
+
+4: count =3d 0
+3: protocols =3d 0x0
+2: awindow =3d 6291457
+1: this->fdisplay =3d 0x803a00
+
+this call produces this x11 error:
+
+x error of failed request:  badatom (invalid atom parameter)
+ major opcode of failed request:  18 (x_changeproperty)
+ atom id in failed request:  0x0
+ serial number of failed request:  103
+ current serial number in output stream:  104
+
+system: mac os x 10.6.3
+
+x11 version:
+michael% x -version
+x.org release 7.3
+x.org x server 1.4.2-apple53
+build date: 20100211
+
+someone suggested  xsync and xinteratom , but i am fairly clueless, when =
+it comes to x11. so could you give me directions how to resolve this?
+
+michael=
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+x11-users mailing list      (x11-users@lists.apple.com)
+help/unsubscribe/update your subscription: http://lists.apple.com/mailman/options/x11-users/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

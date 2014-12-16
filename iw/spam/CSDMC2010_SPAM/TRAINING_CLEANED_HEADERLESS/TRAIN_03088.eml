@@ -1,0 +1,23 @@
+on thu, apr 29, 2010 at 3:24 am, rob owens  wrote:
+> on mon, apr 26, 2010 at 01:56:21pm +0200, javier barroso wrote:
+>> hello stan,
+>>
+>> why debian installer doesn't change its default filesystem to xfs if
+>> it is better than ext3 / ext4? i think always is better stick to
+>> defaults if it is possible
+>>
+> i've read articles which state that ext3 has superior resilience to
+> sudden power loss. =a0that sentiment has been echoed in this thread, by
+> stan i think, with statements like (paraphrasing): =a0xfs is good for
+> production servers which have uninterruptible power supplies.
+good to know, thanks
+
+i will take a look!
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/i2x81c921f31004282356xf4c875bcpf88220aa45102a49@mail.csmining.org
+
+

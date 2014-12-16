@@ -1,0 +1,61 @@
+None<sjoerd@lorentz.leidenuniv.nl> wrote:
+> For a regular user, you need to be in the plugdev group to mount and
+> unmount.
+
+i am not familiar with those settings in linux. so i did some searching.
+http://wiki.debian.org/DebianDesktopHowTo
+
+which says:
+"This is a problem with the way D-Bus figures out what groups you are
+a member of. All users should be added to plugdev, netdev, and
+optionally powerdev, in /etc/groups. Any way of automating this in
+Debian?"
+
+i look around in /etc/ and find there are 2 group files.
+
+mobildebian:/etc# nano group
+group   group-
+
+im guessing i need to remove group [ which is empty ] and rename
+group- to be the group file.
+
+correct?
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/j2xf8d5d4f31004060808se4b0fb28te15a1c3657fd9b5a@mail.csmining.org
+
+
+re: umont ownership?on tue, apr 6, 2010 at 7:51 am, sjoerd hardeman
+ wrote:
+> for a regular user, you need to be in the plugdev group to mount and
+> unmount.
+
+i am not familiar with those settings in linux. so i did some searching.
+http://wiki.debian.org/debiandesktophowto
+
+which says:
+"this is a problem with the way d-bus figures out what groups you are
+a member of. all users should be added to plugdev, netdev, and
+optionally powerdev, in /etc/groups. any way of automating this in
+debian?"
+
+i look around in /etc/ and find there are 2 group files.
+
+mobildebian:/etc# nano group
+group   group-
+
+im guessing i need to remove group [ which is empty ] and rename
+group- to be the group file.
+
+correct?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/j2xf8d5d4f31004060808se4b0fb28te15a1c3657fd9b5a@mail.csmining.org
+
+

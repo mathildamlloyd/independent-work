@@ -1,0 +1,23 @@
+on 5/19/2010 10:50 am, james walker wrote:
+> i need to render a movie into a gworld that may not be the movie's
+> natural size. when the movie is scaled up, say to double size, i see
+> some jaggies. whereas if i open the same movie in quicktime player and
+> stretch the window, i see jaggies while stretching, but when i release
+> the mouse, the image smooths out. what do i need to do to render at a
+> bigger size besides setmoviegworld and setmoviebox? (this is on windows,
+> so no qtkit, please.)
+
+
+by the way, i tried to use a dts incident to get help on this, and got 
+the reply "dts does not provide code-level support for windows.".
+-- 
+   james w. walker, innoventive software llc
+   
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

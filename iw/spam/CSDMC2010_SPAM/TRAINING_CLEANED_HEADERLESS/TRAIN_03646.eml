@@ -1,0 +1,196 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+searchnetworking | voice over ip tip
+july 25, 2002
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+from our sponsor:
+looking for risk free voip?
+http://searchnetworking.com/r/0,,4689,00.htm?quintum
+________________________________________________________________ 
+in this issue | table of contents 
+
+1. voip tips 
+   - troubleshooting voice
+   - voip enable your telephony
+   - understanding delay
+
+2. important announcements and links
+   - network management/voip/wireless strategies revealed
+   - searchnetworking webcast archives 
+   - featured topic: networks of the future
+   - expert response: ted studwell answers your questions
+   - featured book: microsoft encyclopedia of networking
+____________________________________________________________________
+***********************>> sponsored by quintum <<*******************
+looking for risk free voip?
+get a risk free voip solution that is easy to install and
+cost-effective. quintum tenor(r) multipath switches assure voice qos.
+patented selectnet provides real-time mid-call failover from ip to
+public switched phone network. packetsaver voice compression reduces
+bandwidth use 50%.  nataccess works behind nat-enabled firewalls. 2
+port sohos to carrier solutions at:
+http://searchnetworking.com/r/0,,4689,00.htm?quintum
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+troubleshooting voice | by tom lancaster
+
+when you're troubleshooting voice calls, particularly the signaling,
+it's often helpful to look at the detailed output of the device, be
+it a voice-enabled router, telephony server, gateway or whatever. 
+this detailed output can be in the form of logs or debug output as is
+the case in cisco's ios.  in any case, this output is likely to be
+somewhat cryptic.  one of the reasons is because this output often
+uses a set of standardized codes and it is simply easier to put more
+information on the screen using a short number than it is to write an
+essay about why some event happened.
+
+read the entire tip at: 
+http://www.searchnetworking.com/tip/1,289483,sid7_gci840618,00.html
+
+
+got a voip tip of your own? why not send it in? we'll post it on our
+web site, and we'll enter you in our tips contest for some neat
+prizes.   submit your tip here:
+http://searchnetworking.techtarget.com/tipssubmit/1,289485,sid7,00.html
+
+like this tip?  hate it?  email us at
+mailto:tips@searchnetworking.com
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+voip enable your telephony | by tom lancaster
+
+one of the reasons voip has been slowly gaining traction is that
+large enterprises have quite a lot of legacy equipment, and migrating
+to voip from the circuit-switched networks of yore is no easy feat.
+these environments are typically complicated and the stakes are high
+because so many mission-critical systems rely on telephony.
+
+click here for the full tip:
+http://searchnetworking.techtarget.com/tip/1,289483,sid7_gci779073,00.html
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+understanding relay | by tom lancaster
+
+everyone knows that delay is one of the two primary causes of poor
+voice quality, particularly in voip networks, but where does this
+delay come from?  delay is generally defined as the time it takes
+from the instant you speak into the phone until the instant that
+sound is regenerated on the far end. quite a few things have to
+happen to transport this sound through the system, so delay actually
+has many components.
+
+read the entire tip here:
+http://searchnetworking.techtarget.com/tip/1,289483,sid7_gci823706,00.html
+
+___________________________________________________________________ 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+::::::::::  don't miss these important messages and links  ::::::::
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+network management/voip/wireless strategies | searchnetworking
+
+searchnetworking.com hosts the networking decisions conference in
+chicago, october 16-18. sessions focus not only on essential network
+management strategies, but feature critical insight on voip and
+wireless. you find out how to best prepare for these technologies now
+so you won't get left behind, the benefits to gain/pitfalls to avoid,
+plus the real roi for your organization.
+
+get the full story right here: http://www.networkingdecisions.com
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+webcast archives | searchnetworking
+
+if you missed the original airing of our webcast on the best
+practices for availability and performance management with jon
+oltsik, don't fret, it's available for you to view at your leisure. 
+and, while you're at it, take a look at all our previously aired
+webcasts, as well our upcoming live events.  we're sure you'll find
+topics that interest you. 
+
+view of archive on best practices for availability and performance
+management with jon oltsik:
+http://searchnetworking.techtarget.com/webcaststranscriptsecurity/1,289693,sid7_gci832106,00.html 
+
+view our upcoming events and webcast archive list here:
+http://searchnetworking.techtarget.com/onlineevents/0,289675,sid7,00.html
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=  
+networks of the future | searchnetworking featured topic
+
+last week we attended burton group's catalyst conference and heard
+all about the hottest trends in networking: vpns, voip, wireless,
+identity management, and web services. read more about the issues
+surrounding each topic.
+
+click here for the current featured topic:
+http://searchnetworking.techtarget.com/featuredtopic/0,290042,sid7_gci839778,00.html
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=  
+expert advice: ted studwell | voice over ip expert
+
+dear ted,
+where can we get information about inmarsat services? 
+
+>> click for ted studwell's response:
+http://searchnetworking.techtarget.com/atequestionnresponse/0,289625,sid7_cid478713_tax292243,00.html
+
+>> click here for other q&as; with ted that you might find useful:
+http://searchnetworking.techtarget.com/ateanswers/0,289620,sid7_tax292243,00.html
+
+>> click here to pose your voip question to ted studwell:
+http://searchnetworking.techtarget.com/atequestion/0,289624,sid7_cid466224_tax292243,00.html
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+featured book | searchnetworking bookstore
+
+title: microsoft encyclopedia of networking
+author: mitch tulloch, and ingrid tulloch
+
+description: this second edition of the award-winning microsoft
+encyclopedia of networking has been fully updated with thousands of
+entries detailing the latest technologies, standards, products, and
+services. you get clear, concise explanations, including hundreds of
+new articles and diagrams that deftly take you from concept to
+real-world application. you also get the entire encyclopedia on
+cd-rom, for definitive answers wherever you need them.
+
+>> click here for ordering information:
+http://www.digitalguru.com/digitalguru/product_detail.asp?catalog_name=books&category;_name=&product;_id=0735613788&partner;_id=65
+
+____________________________________________________________________ 
+:::::::::::::::::::  searchnetworking contacts   ::::::::::::::::::: 
+
+ susan fogarty, site editor (sfogarty@techtarget.com) 
+   >> send us your suggestions for tips and articles. 
+____________________________________________________________________ 
+
+ kara gattine, assistant site editor (kgattine@techtarget.com)
+   >> send your white papers, tips and best web link recommendations.
+____________________________________________________________________ 
+
+ beth quimby, news editor (bquimby@techtarget.com) 
+   >> send in your product announcements and poll ideas. 
+____________________________________________________________________ 
+
+ gabrielle derussy (gderussy@techtarget.com) 
+   >> sponsor this or any other techtarget newsletter. 
+____________________________________________________________________ 
+::::::::::::::::::::  about this newsletter   ::::::::::::::::::::: 
+created by techtarget (http://www.techtarget.com) 
+ techtarget - the most targeted it media 
+ copyright 2002, all rights reserved.  
+
+
+
+
+unsubscribe from 'voice over ip tips'
+ - simply reply to this email with remove within the body or subject
+>  or
+ - go to: http://searchnetworking.techtarget.com/register
+ - log in to edit your profile.
+ - click on the link to edit email subscriptions.
+ - uncheck the box next to the newsletter you wish 
+   to unsubscribe from.
+ - when finished, click "save changes to my profile."
+
+
+

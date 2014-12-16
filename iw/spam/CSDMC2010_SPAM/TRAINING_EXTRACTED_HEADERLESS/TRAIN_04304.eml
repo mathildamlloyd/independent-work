@@ -1,0 +1,46 @@
+From nobody Tue Dec 16 09:15:45 2014
+Content-Type: text/plain; charset=us-ascii
+
+Hi,
+
+This is the output of scp -vv
+
+$ scp -vv files.tar.gz root@192.168.1.11:/root/Desktop
+Executing: program /usr/bin/ssh host 192.168.1.11, user root, command scp -v -t /root/Desktop
+OpenSSH_5.1p1 Debian-5, OpenSSL 0.9.8g 19 Oct 2007
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Applying options for *
+debug2: ssh_connect: needpriv 0
+debug1: Connecting to 192.168.1.11 [192.168.1.11] port 22.
+debug1: Connection established.
+debug1: identity file /home/user/.ssh/identity type -1
+debug1: identity file /home/user/.ssh/id_rsa type -1
+debug1: identity file /home/user/.ssh/id_dsa type -1
+debug1: Remote protocol version 2.0, remote software version OpenSSH_5.1p1 Debian-5
+debug1: match: OpenSSH_5.1p1 Debian-5 pat OpenSSH*
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version
+ string SSH-2.0-OpenSSH_5.1p1 Debian-5
+debug2: fd 3 setting O_NONBLOCK
+debug1: SSH2_MSG_KEXINIT sent
+Read from socket failed: Connection reset by peer
+lost connection
+
+I get this not matter which file i try to copy.
+
+
+
+
+
+
+
+      From nobody Tue Dec 16 09:15:45 2014
+Content-Type: text/html; charset=us-ascii
+
+<table cellspacing="0" cellpadding="0" border="0" ><tr><td valign="top" style="font: inherit;"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-size: inherit; line-height: inherit; font-size-adjust: inherit; font-stretch: inherit;" valign="top">Hi,<br><br>This is the output of scp -vv<br><br>$ scp -vv files.tar.gz root@192.168.1.11:/root/Desktop<br>Executing: program /usr/bin/ssh host 192.168.1.11, user root, command scp -v -t /root/Desktop<br>OpenSSH_5.1p1 Debian-5, OpenSSL 0.9.8g 19 Oct 2007<br>debug1: Reading configuration data /etc/ssh/ssh_config<br>debug1: Applying options for *<br>debug2: ssh_connect: needpriv 0<br>debug1: Connecting to 192.168.1.11 [192.168.1.11] port 22.<br>debug1: Connection established.<br>debug1: identity file /home/user/.ssh/identity type -1<br>debug1: identity file /home/user/.ssh/id_rsa type -1<br>debug1:
+ identity file /home/user/.ssh/id_dsa type -1<br>debug1: Remote protocol version 2.0, remote software version OpenSSH_5.1p1 Debian-5<br>debug1: match: OpenSSH_5.1p1 Debian-5 pat OpenSSH*<br>debug1: Enabling compatibility mode for protocol 2.0<br>debug1: Local version
+ string SSH-2.0-OpenSSH_5.1p1 Debian-5<br>debug2: fd 3 setting O_NONBLOCK<br>debug1: SSH2_MSG_KEXINIT sent<br>Read from socket failed: Connection reset by peer<br>lost connection<br><br>I get this not matter which file i try to copy.<br></td></tr></tbody></table><br><br><br><br></td></tr></table><br>
+
+
+
+      

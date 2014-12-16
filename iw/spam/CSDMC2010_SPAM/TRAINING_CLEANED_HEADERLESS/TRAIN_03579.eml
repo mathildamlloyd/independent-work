@@ -1,0 +1,30 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on fri, apr 09, 2010 at 13:19 +0000, t o n g wrote:
+> i always use wired network for my laptop because i don't know how to=20
+> properly get wireless going. i've been to web sites like the following=20
+> but they all look rather complicated.
+
+> now i want to try just again. so, what packages do i need to install in=
+=20
+> order to get my wire-networked laptop going wireless? what are the=20
+> configuration (and troubleshooting) steps?=20
+
+check http://wiki.debian.org/wifi/howtouse
+
+i am particularly fond of wpa_supplicant in roaming mode [1] but you
+might want to take a look at wicd or network-mangler as well.
+
+wicd and network-mangler also have curses interfaces, but it is
+impossible to use them for advanced setups like radius, ...
+
+[1] /usr/share/doc/wpasupplicant/readme.modes.gz
+    /usr/share/doc/wpasupplicant/examples/wpa-roam.conf
+--=20
+  .''`.     wolodja wentland    =20
+ : :'  :   =20
+ `. `'`     4096r/caf14efc=20
+   `-       081c b7cd ff04 2ba9 94ea  36b2 8b7f 7d30 caf1 4efc

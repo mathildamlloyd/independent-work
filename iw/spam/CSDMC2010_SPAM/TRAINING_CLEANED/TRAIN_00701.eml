@@ -1,0 +1,61 @@
+None[snip]
+> 
+> Mart's method is the shell way.  The 3GL Way is:
+> 
+> grep -w "$NAME" "$FILE"
+> TMP=$?
+> if [ "$TMP" = "1" ];
+
+That should be:
+
+if [ "$TMP" = "0" ];
+
+> then
+>     echo -e "$NAME\n" >> "$FILE"
+> fi
+> 
+> 
+
+
+-- 
+"History does not long entrust the care of freedom to the weak
+or the timid."  Dwight Eisenhower
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/4BBD0C09.4070304@cox.net
+
+
+re: ot: script to add line to file if it doesn't existon 2010-04-07 16:12, ron johnson wrote:
+[snip]
+> 
+> mart's method is the shell way.  the 3gl way is:
+> 
+> grep -w "$name" "$file"
+> tmp=$?
+> if [ "$tmp" = "1" ];
+
+that should be:
+
+if [ "$tmp" = "0" ];
+
+> then
+>     echo -e "$name\n" >> "$file"
+> fi
+> 
+> 
+
+
+-- 
+"history does not long entrust the care of freedom to the weak
+or the timid."  dwight eisenhower
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bbd0c09.4070304@cox.net
+
+

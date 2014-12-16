@@ -1,0 +1,31 @@
+on sat, 10 apr 2010 07:59:11 -0500
+nate bargmann  wrote:
+
+> if at all possible, avoid wep and use wpa pre-shared key encryption. 
+> wep is easily cracked while wpa offers the use of a 63 character key. 
+> using random characters (as generated at:
+> https://www.grc.com/passwords.htm ) will give you a network that will
+
+or something like pwgen.
+
+> be extremely hard to crack via a brute force attack.  virtually all
+> consumer wireless routers/acess points support wpa psk.
+
+but they may not all support wpa2 / aes / ccmp, and old wpa / tkip is
+insecure:
+
+http://en.wikipedia.org/wiki/wi-fi_protected_access#security_in_pre-shared_key_mode
+
+celejar
+-- 
+foffl.sourceforge.net - feeds offline, an offline rss/atom aggregator
+mailmin.sourceforge.net - remote access via secure (openpgp) email
+ssuds.sourceforge.net - a simple sudoku solver and generator
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100410223033.55fa2dba.celejar@csmining.org
+
+

@@ -1,0 +1,110 @@
+NoneVLC will lag when reading local videos, whatever the codec-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Hi,
+
+When watching videos locally, with VLC, it often lags at some parts of
+the videos, and the following kinds of messages are displayed at the
+console:
+
+==
+[some time] main video output error: picture [hexadecimal ref.] refcount is -1
+overflow in spectral RLE, ignoring
+==
+
+The [some time] references are often ~40 times separated, i.e. I could
+get
+
+==
+[00000010] main video output error: picture [hexadecimal ref.] refcount is -1
+[00000050] main video output error: picture [hexadecimal ref.] refcount is -1
+.
+.
+.
+==
+
+It does not only happen with Матрёшка files (.mkv). (I here
+test if Gnus supports cyrillic out-of-the-box.)
+
+Is it normal? Does it happen often with videos? What would it be due
+to? Are they corrupted?
+
+Thanks.
+
+- -- 
+Merciadri Luca
+See http://www.student.montefiore.ulg.ac.be/~merciadri/
+- -- 
+
+Luck is what happens when preparation meets opportunity. (Lucius Annaeus Seneca)
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+Comment: Processed by Mailcrypt 3.5.8 <http://mailcrypt.sourceforge.net/>
+
+iEYEARECAAYFAkvthfgACgkQM0LLzLt8Mhz+cwCfQ/ZbM/AeD/yQ6BA00vak/haw
+VwsAoKWKVXabMXa8aEwgUC1KT7NjLFWF
+=7PCF
+-----END PGP SIGNATURE-----
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/87eihewged.fsf@merciadriluca-station.MERCIADRILUCA
+
+
+vlc will lag when reading local videos, whatever the codec-----begin pgp signed message-----
+hash: sha1
+
+hi,
+
+when watching videos locally, with vlc, it often lags at some parts of
+the videos, and the following kinds of messages are displayed at the
+console:
+
+==
+[some time] main video output error: picture [hexadecimal ref.] refcount is -1
+overflow in spectral rle, ignoring
+==
+
+the [some time] references are often ~40 times separated, i.e. i could
+get
+
+==
+[00000010] main video output error: picture [hexadecimal ref.] refcount is -1
+[00000050] main video output error: picture [hexadecimal ref.] refcount is -1
+.
+.
+.
+==
+
+it does not only happen with  files (.mkv). (i here
+test if gnus supports cyrillic out-of-the-box.)
+
+is it normal? does it happen often with videos? what would it be due
+to? are they corrupted?
+
+thanks.
+
+- -- 
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+- -- 
+
+luck is what happens when preparation meets opportunity. (lucius annaeus seneca)
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: processed by mailcrypt 3.5.8 
+
+ieyearecaayfakvthfgacgkqm0llzlt8mhz+cwcfq/zbm/aed/yq6ba00vak/haw
+vwsaokwkvxabmxa8aewguc1kt7njlfwf
+=7pcf
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87eihewged.fsf@merciadriluca-station.merciadriluca
+
+

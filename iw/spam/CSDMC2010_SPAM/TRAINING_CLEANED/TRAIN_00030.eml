@@ -1,0 +1,101 @@
+None<mart.frauenlob@chello.at> wrote:
+>
+> how about:
+> ... -p 'my$qlPW' -N ...
+>
+
+# `mysql -u root -p 'my$qlPW' -N -B -e 'show databases'`
+Enter password:
+
+asks for PW
+
+# `mysql -u root -p'my$qlPW' -N -B -e 'show databases'`
+-bash: information_schema: command not found
+
+> or
+> ... -p "my\$qlPW" -N ...
+>
+
+# `mysql -u root -p "my$qlPW" -N -B -e 'show databases'`
+Enter password:
+
+again asks for password
+
+# `mysql -u root -p"my$qlPW" -N -B -e 'show databases'`
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using
+password: YES)
+
+
+> or
+> ... -p my\\\$qlPW -N ...
+>
+
+# `mysql -u root -p\\\my$qlPW -N -B -e 'show databases'`
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using
+password: YES)
+
+# `mysql -u root -p \\\my$qlPW -N -B -e 'show databases'`
+Enter password:
+
+Thanks :-)
+
+--Siju
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/p2pb713df2c1004210157rbd1eed9clc11e1f8b7f6cfe52@mail.csmining.org
+
+
+re: hi how to escaping under ` ` in shon wed, apr 21, 2010 at 2:16 pm, mart frauenlob
+ wrote:
+>
+> how about:
+> ... -p 'my$qlpw' -n ...
+>
+
+# `mysql -u root -p 'my$qlpw' -n -b -e 'show databases'`
+enter password:
+
+asks for pw
+
+# `mysql -u root -p'my$qlpw' -n -b -e 'show databases'`
+-bash: information_schema: command not found
+
+> or
+> ... -p "my\$qlpw" -n ...
+>
+
+# `mysql -u root -p "my$qlpw" -n -b -e 'show databases'`
+enter password:
+
+again asks for password
+
+# `mysql -u root -p"my$qlpw" -n -b -e 'show databases'`
+error 1045 (28000): access denied for user 'root'@'localhost' (using
+password: yes)
+
+
+> or
+> ... -p my\\\$qlpw -n ...
+>
+
+# `mysql -u root -p\\\my$qlpw -n -b -e 'show databases'`
+error 1045 (28000): access denied for user 'root'@'localhost' (using
+password: yes)
+
+# `mysql -u root -p \\\my$qlpw -n -b -e 'show databases'`
+enter password:
+
+thanks :-)
+
+--siju
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/p2pb713df2c1004210157rbd1eed9clc11e1f8b7f6cfe52@mail.csmining.org
+
+

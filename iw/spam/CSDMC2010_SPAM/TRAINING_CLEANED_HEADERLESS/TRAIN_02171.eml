@@ -1,0 +1,47 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+okay. thanks for these precisions.
+
+andrei popescu wrote:
+> on sat,10.apr.10, 11:38:08, merciadri luca wrote:
+>  =20
+>
+> i'm not sure what i can do to prove that something doesn't exist. i=20
+> could for example post the console output of:
+>
+> # apt-get update
+> # apt-get upgrade
+> # aptitude safe-upgrade
+>
+> (using apt-get do a partial upgrade and letting aptitude finish the=20
+> job[1][2])=20
+>
+> but i'm not sure how relevant this is. sure there are differences in=20
+> *behavior*, but i'm not aware of any recent incompatibilities. if you=20
+> find any such incompatibilities please do report them as i'm sure both =
+
+> the developers of apt and aptitude would like to know about them.
+>
+> [1] 'aptitude safe-upgrade' installs new packages while
+> 'apt-get upgrade' doesn't, but this is both expected and documented=20
+> behaviour
+>
+> [2] and in case you're wondering, yes, i just did that on my sid=20
+> machine, but the console output is rather long.
+>
+> regards,
+> andrei
+>  =20
+
+
+--=20
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+i use pgp. if there is an incompatibility problem with your mail
+client, please contact me.
+
+
+
+

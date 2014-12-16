@@ -1,0 +1,59 @@
+None>
+>
+> How can this be fixed?  And shouldn't there be a big warning that trying to
+> upgrade libc6 can break dpkg, on the Debian website page for libc6?
+>
+> Best regards,
+> Chris Austin.
+>
+>
+>
+What should really be the "big warning" is mixing releases... I don't see
+this as possible however. How is dpkg to know that the libc6 upgrade is not
+for security patches or point release?  I suppose something could be put in
+place so that the security repo is treated differently.
+
+The best way to avoid this: Don't mix releases. When necessary, its
+generally safer to build the source packages. You will also realize how far
+you are digging into testing when you start needing to backport libs.
+
+This is potentially reversible, but you should know in the future that core
+packages such as libc6, perl, python, and etc should never be mixed between
+releases.
+
+I have no advice for fixing the current issue... Only avoiding it in the
+future.
+
+-- 
+Jordan Metzmeier
+re: libc6 upgrade lenny to squeeze failed, now dpkg is brokenfrom nobody tue dec 16 07:55:45 2014
+content-type: text/plain; charset=iso-8859-1
+
+>
+>
+> how can this be fixed?  and shouldn't there be a big warning that trying to
+> upgrade libc6 can break dpkg, on the debian website page for libc6?
+>
+> best regards,
+> chris austin.
+>
+>
+>
+what should really be the "big warning" is mixing releases... i don't see
+this as possible however. how is dpkg to know that the libc6 upgrade is not
+for security patches or point release?  i suppose something could be put in
+place so that the security repo is treated differently.
+
+the best way to avoid this: don't mix releases. when necessary, its
+generally safer to build the source packages. you will also realize how far
+you are digging into testing when you start needing to backport libs.
+
+this is potentially reversible, but you should know in the future that core
+packages such as libc6, perl, python, and etc should never be mixed between
+releases.
+
+i have no advice for fixing the current issue... only avoiding it in the
+future.
+
+-- 
+jordan metzmeier

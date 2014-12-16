@@ -1,0 +1,48 @@
+"hunt, bryan" stated the following:
+> 
+> choose the repair option when installing windows nt/2000/whatever
+
+what is the "repair option"?
+
+> -----original message----- from: solocdm [mailto:deedsmis@aculink.net]
+> sent: 31 july 2002 17:48 to: hunt, bryan cc: ilug (request)
+> subject: re: removing lilo
+> 
+> "hunt, bryan" stated the following:
+> 
+> > you need to do a "fdisk /mbr" from a bootable windoze floppy
+> > alternatively boot from linux boot disk and do fdisk, delete all
+> 
+> partitions.
+> 
+> i need to ask a question concerning this issue.
+> 
+> what if i don't want to get rid of the mbr -- it will destroy the
+> os on that drive.  how do i remove lilo without the above fdisk
+> procedure?
+> 
+> > -----original message----- from: jac1
+> > [mailto:jac1@student.cs.ucc.ie]
+> 
+> > i recently had to wipe linux from my pc but forgot to restore the
+> > original mbr (nt). anyone know how i can do this? linux is entirely
+> > gone and no
+> 
+> boot
+> 
+> > floppy. formatting the entire disk doesn't do it either.
+
+-- 
+note: when you reply to this message, please include the mailing
+      list and/or newsgroup address and my email address in to:
+
+*********************************************************************
+signed,
+solocdm
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

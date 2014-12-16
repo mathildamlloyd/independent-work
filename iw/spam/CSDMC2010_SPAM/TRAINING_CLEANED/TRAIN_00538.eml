@@ -1,0 +1,43 @@
+NoneOn Thursday 08 April 2010 07.21:59 Adrian von Bidder wrote:
+> Just gdb -p <pid> /usr/bin/kmail doesn't work :-(
+
+Arrgh!
+
+As it turns out, gdb 7.0 (squeeze) doesn't really work with binarries from=
+=20
+sid (or experimental), at least onn 32bit x86.  gdb 7.1 (sid) works fine.
+
+cheers
+=2D- vbi
+
+=2D-=20
+As we found out later, our activities had both saturated an uplink two
+"hops" up from our university, at the Nordic University Network level
+and made some DoS-alarms go off at the national level. All part of a fun
+release.
+        -- serving Debian sarge and Ubuntu Breezy CD images
+           http://www.acc.umu.se/~maswan/2005-12-10/2gbit-freesoftware.html
+re: attach gdb to program?from nobody tue dec 16 07:55:47 2014
+content-type: text/plain;
+  charset="iso-8859-15"
+content-transfer-encoding: quoted-printable
+
+on thursday 08 april 2010 07.21:59 adrian von bidder wrote:
+> just gdb -p  /usr/bin/kmail doesn't work :-(
+
+arrgh!
+
+as it turns out, gdb 7.0 (squeeze) doesn't really work with binarries from=
+=20
+sid (or experimental), at least onn 32bit x86.  gdb 7.1 (sid) works fine.
+
+cheers
+=2d- vbi
+
+=2d-=20
+as we found out later, our activities had both saturated an uplink two
+"hops" up from our university, at the nordic university network level
+and made some dos-alarms go off at the national level. all part of a fun
+release.
+        -- serving debian sarge and ubuntu breezy cd images
+           http://www.acc.umu.se/~maswan/2005-12-10/2gbit-freesoftware.html

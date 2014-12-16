@@ -1,0 +1,24 @@
+> 
+> it seems that an email consisting of a single line containg a
+> control-m is detected as spam. 
+> 
+> it also seems that an email consisting of 5 blank lines is also
+> treated as spam:
+
+please ignore my last message. it seems that my problems results from
+a homebrewn patch.
+
+  -- michael 
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+razor-users mailing list
+razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

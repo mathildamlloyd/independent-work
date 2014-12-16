@@ -1,0 +1,19 @@
+on friday 30 april 2010 16:44:52 monique y. mudama wrote:
+> the "a" means that it was installed automatically due to a dependency,
+> so if all packages depending on it are uninstalled, it will
+> automatically be removed as well.
+
+thanks! i had realised that "i" meant installed, but as large numbers of 
+dependencies get installed automatically as far as i am concerned, i hadn't 
+managed to work out that some of them got marked!  very few things seem 
+actually to acquire the "a".
+
+lisi
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201004301839.37084.lisi.reisz@csmining.org
+
+

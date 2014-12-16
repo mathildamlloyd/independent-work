@@ -1,0 +1,81 @@
+None> For some reason, this just now triggered a memory for me.  I think
+> sometimes when aptitude is making suggestions to resolve conflicts, it
+> will un-hold packages.  I wonder if this is how your explicit hold gets
+> removed.
+
+  Just so this isn't left hanging, the reason I say this shouldn't
+happen is that it *used* to happen and I fixed it.  There were two ways
+you could get broken holds, and I fixed one in version 0.4.11:
+
+  * The aptitude dependency resolver will now refuse to adjust held
+    packages or install forbidden versions unless you manually allow
+    it to.  This behavior can be disabled by setting
+    Aptitude::ProblemResolver::Allow-Break-Holds to "false".
+
+    aptitude will still break holds when packages are being
+    automatically installed; there is a pending patch against apt that
+    eliminates this behavior.
+
+  and the other in 0.5.9rc1:
+
+  + [all] aptitude now uses the new hooks in apt to prevent the greedy
+          resolver from removing packages or breaking holds.
+
+          (Closes: #177374, #205049, #374353, #376802, #406506,
+                   #430816, #434731, #442420, #452589)
+
+  I am not, at present, aware of any other circumstances where aptitude
+wrongly breaks holds.  That said, I don't put packages on hold very
+often, so I depend on users to send bug reports if they're seeing that
+behavior.
+
+  Daniel
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/20100423141629.GA29441@emurlahn.burrows.local
+
+
+re: how to trick my debian in thinking that a package is not installedon tue, apr 20, 2010 at 05:44:20pm -0600, "monique y. mudama"  was heard to say:
+> for some reason, this just now triggered a memory for me.  i think
+> sometimes when aptitude is making suggestions to resolve conflicts, it
+> will un-hold packages.  i wonder if this is how your explicit hold gets
+> removed.
+
+  just so this isn't left hanging, the reason i say this shouldn't
+happen is that it *used* to happen and i fixed it.  there were two ways
+you could get broken holds, and i fixed one in version 0.4.11:
+
+  * the aptitude dependency resolver will now refuse to adjust held
+    packages or install forbidden versions unless you manually allow
+    it to.  this behavior can be disabled by setting
+    aptitude::problemresolver::allow-break-holds to "false".
+
+    aptitude will still break holds when packages are being
+    automatically installed; there is a pending patch against apt that
+    eliminates this behavior.
+
+  and the other in 0.5.9rc1:
+
+  + [all] aptitude now uses the new hooks in apt to prevent the greedy
+          resolver from removing packages or breaking holds.
+
+          (closes: #177374, #205049, #374353, #376802, #406506,
+                   #430816, #434731, #442420, #452589)
+
+  i am not, at present, aware of any other circumstances where aptitude
+wrongly breaks holds.  that said, i don't put packages on hold very
+often, so i depend on users to send bug reports if they're seeing that
+behavior.
+
+  daniel
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100423141629.ga29441@emurlahn.burrows.local
+
+

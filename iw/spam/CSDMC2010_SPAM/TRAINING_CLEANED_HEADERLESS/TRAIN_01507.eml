@@ -1,0 +1,21 @@
+>
+> from: m christol 
+> subject: file size & cut
+>
+> i had a 40 minute .mov file. i cut 36 minutes off and the file size
+> remained the same (499mb).
+> i had used h.264 & aac
+> i exported the movie & the file size went down to what i expected.
+> why didn't the file size reduce afer the cut?
+
+the file size will stay the same unless you save as a new self- 
+contained qt movie.
+frank
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-users mailing list      (quicktime-users@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-users/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

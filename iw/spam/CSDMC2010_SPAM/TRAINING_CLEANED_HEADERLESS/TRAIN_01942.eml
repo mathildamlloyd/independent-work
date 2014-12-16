@@ -1,0 +1,37 @@
+on wed, apr 21, 2010 at 02:27:47pm +0530, siju george wrote:
+> on wed, apr 21, 2010 at 2:16 pm, mart frauenlob
+>  wrote:
+> >
+> > how about:
+> > ... -p 'my$qlpw' -n ...
+> >
+> 
+> # `mysql -u root -p 'my$qlpw' -n -b -e 'show databases'`
+> enter password:
+> 
+> asks for pw
+> 
+> # `mysql -u root -p'my$qlpw' -n -b -e 'show databases'`
+> -bash: information_schema: command not found
+
+you got the output of 'show databases'. you then consider it a shell
+command and try to excute it. why would you want to do that? what do you
+want to do with that output?
+
+btw: i would suggest that you actually use a .my.cnf to hold the
+password, otherwise the password is available in e.g. the output of 'ps
+auxww'
+
+-- 
+tzafrir cohen         | tzafrir@jabber.org | vim is
+http://tzafrir.org.il |                    | a mutt's
+tzafrir@cohens.org.il |                    |  best
+tzafrir@debian.org    |                    | friend
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100421090133.gv16560@pear.tzafrir.org.il
+
+

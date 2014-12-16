@@ -1,0 +1,39 @@
+on sun, may 02, 2010 at 12:17:54pm -0700, peter tenenbaum wrote:
+> i've been thinking about getting a netbook and i'd like to install debian
+> linux on it when / if i do.  i'd also like to get one which uses an
+> amd64-class processor.  does anyone have any suggestions?  the gateway lt21
+> looks like just what i want in terms of hardware (ie, fairly low-end but
+> 64-bit); has anyone got any positive / negative experience installing debian
+> on this computer?
+
+no specific suggestions. a caution: go to a store and make
+sure your future netbook supports acpi. i've had bad
+experiences with my cheap toshiba satellite l305 series
+laptop: the fan controls (and most other acpi registers) do
+nothing.
+
+it seems either toshiba or the bios maker insyde h2o has
+chosen non-standard ssdt/dsdt table values, with the result
+that only microsoft's os knows where to twiddle.
+
+there are reports that the omnibook module will correctly
+handle insyde h2o bios'ed notebook. have yet to test here.
+
+good luck,
+
+joel
+
+ 
+> thanks in advance,
+> -pt
+
+-- 
+joel roth
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100504000114.ga2112@sprite
+
+

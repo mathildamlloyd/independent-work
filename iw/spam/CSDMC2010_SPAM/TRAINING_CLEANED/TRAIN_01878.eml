@@ -1,0 +1,57 @@
+None> Eduardo M KALINOWSKI wrote:
+>    
+>> On Ter, 18 Mai 2010, Merciadri Luca wrote:
+>>      
+>>> Well, this is effectively Icedove 2.0.0.22 (20090706). How did you
+>>> manage to, under Th. 3?
+>>>        
+>> I don't remember exactly, but I believe somewhere the was an option to
+>> accept the security exception permanently.
+>>      
+> Thanks. I just verified, and it is surely not implemented in my
+> Icedove's version. I should get the new one (which is not in stable
+> branch, evidently).
+>
+>    
+You are better off using the upstream tarball of thunderbird then trying 
+to backport Icedove from squeeze/lenny. Install to your homedir or /opt. 
+As long as your user has write perms to file, it has an update manager 
+that can upgrade itself (somewhat eliminating the need for package 
+management).
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/4BF2EF3A.6070109@csmining.org
+
+
+re: server certificate has expiredon 05/18/2010 03:32 pm, merciadri luca wrote:
+> eduardo m kalinowski wrote:
+>    
+>> on ter, 18 mai 2010, merciadri luca wrote:
+>>      
+>>> well, this is effectively icedove 2.0.0.22 (20090706). how did you
+>>> manage to, under th. 3?
+>>>        
+>> i don't remember exactly, but i believe somewhere the was an option to
+>> accept the security exception permanently.
+>>      
+> thanks. i just verified, and it is surely not implemented in my
+> icedove's version. i should get the new one (which is not in stable
+> branch, evidently).
+>
+>    
+you are better off using the upstream tarball of thunderbird then trying 
+to backport icedove from squeeze/lenny. install to your homedir or /opt. 
+as long as your user has write perms to file, it has an update manager 
+that can upgrade itself (somewhat eliminating the need for package 
+management).
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bf2ef3a.6070109@csmining.org
+
+

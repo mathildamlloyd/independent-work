@@ -1,0 +1,36 @@
+
+on 3. mai 2010, at 14.36, matev=c5=be markovi=c4=8d wrote:
+
+> since i am still an amateur in the java language, i want to practice
+> as much as possible. not long ago i came along with an idea, that i
+> want to write a application (swing application), from which one will
+> be able to choose a file and safely delete it (e.g. rename,delete,
+> overwrite 35-times, possibly less).
+
+i'm not really sure if this is guarateed to work on all java =
+implementations, but you could try to open the file for random access =
+(http://java.sun.com/j2se/1.5.0/docs/api/java/io/randomaccessfile.html), =
+then write random data to the entire contents of the file before you =
+delete. it might even work if you first open, then delete, before =
+writing random data if you prefer that.=20
+
+but it might be that you are better off finding a command-line tool that =
+handles the secure deletion for you, and create a swing app that =
+delegates the heavy lifting to the command-line tool. low-level file =
+system access isn't really one of java's strong points, as its foucs has =
+always been being cross-platform (java 7's nio.2 functionality might fix =
+some of these issues though) .
+
+
+best regards,
+
+--=20
+harald k=
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

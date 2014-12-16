@@ -1,0 +1,41 @@
+on tue, 6 apr 2010 10:17:53 -0400 (edt), alexander samad wrote:
+> 
+> i have a hp mini, which has a 0:02.0 vga compatible controller: intel
+> corporation mobile 945gme express integrated graphics controller (rev 03)
+> 
+> i would like to know how i can force ttyx to go to the external monitor and
+> then back to the local lcd.
+> 
+> also have a problem that if i have my x going to an external monitor and
+> then suspend and re awaken with the laptop not connected to an external
+> monitor i can't get my x session back i have to restart gdm.
+
+i'm not familiar with your laptop, but most laptops have a way to switch
+back and forth between the internal display and an external display via
+the internal keyboard.  on the ibm thinkpad machines that i use (a 600
+and a 390e) it is fn+f7.  consult your hardware documentation.
+
+switching between the two is much easier if your external monitor
+is an lcd monitor.  the internal display probably runs at 60 hz vertical
+refresh.  the external monitor, if it is an lcd display, will probably
+want to run at 60 hz vertical refresh also.  an external crt monitor,
+however, will probably have noticeable flicker at 60 hz vertical refresh.
+it will want to use a higher vertical refresh rate: at least 72 hz.
+
+switching back and forth dynamically between internal and external monitors
+is tricky if they want to use different resolutions and refresh rates.
+it often won't work.
+
+-- 
+  .''`.     stephen powell    
+ : :'  :
+ `. `'`
+   `-
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/1338000668.1398081270566209388.javamail.root@md01.wow.synacor.com
+
+

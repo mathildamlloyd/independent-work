@@ -1,0 +1,30 @@
+None> hmm. also I think I've found some cases where it's hitting on fetchmail
+> Received hdrs.  that's bad.  so it could be fixed....
+
+fetchmail adds Received headers?  That seems wrong.  I'll open a bug
+to investigate.  Can you attach some examples?
+
+> yeah, will do -- somehow.  pity the bugzilla doesn't allow email
+> submissions...
+
+Agreed.  At least you can add information with email.
+
+- Dan
+
+
+re: [sadev] testing with less rulesjustin mason  writes:
+
+> hmm. also i think i've found some cases where it's hitting on fetchmail
+> received hdrs.  that's bad.  so it could be fixed....
+
+fetchmail adds received headers?  that seems wrong.  i'll open a bug
+to investigate.  can you attach some examples?
+
+> yeah, will do -- somehow.  pity the bugzilla doesn't allow email
+> submissions...
+
+agreed.  at least you can add information with email.
+
+- dan
+
+

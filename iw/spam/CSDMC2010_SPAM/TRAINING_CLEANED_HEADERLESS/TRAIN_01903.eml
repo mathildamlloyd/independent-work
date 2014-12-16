@@ -1,0 +1,68 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=utf-8
+content-transfer-encoding: quoted-printable
+
+on fri, apr 23, 2010 at 11:44 pm, camale=c3=b3n  wrote:
+
+> on fri, 23 apr 2010 23:39:08 +0800, umarzuki mochlis wrote:
+>
+> > on fri, apr 23, 2010 at 10:50 pm, camale=c3=b3n wrote:
+>
+> >> have you tested with "file/import" and it fails?
+> >>
+> >>
+> > i cannot import it and it is not detected as inkscape file
+>
+> are you getting any warning message?
+>
+
+when i tried to open it from command line
+$ inkscape t-shirtmodels-by_apestar.eps
+t-shirtmodels-by_apestar.eps:1: parser error : start tag expected, '<' not
+found
+=ef=bf=bd=ef=bf=bd=ef=bf=bd=ef=bf=bd
+^
+
+and there's a pop-up with message "failed to load the requested file
+t-shirtmodels-by_apestar.eps"
+
+
+>
+> >> it seems to need "ps2pdf" so check if you have it installed with
+> >> "whereis ps2pf".
+> >>
+> >>
+> > i have ps2pdf
+> >
+> > $ whereis ps2pdf
+> > ps2pdf: /usr/bin/ps2pdf /usr/share/man/man1/ps2pdf.1.gz
+> >
+> > have i missed something else?
+>
+> not sure... maybe you are facing this bug:
+>
+> ***
+> inkscape: eps import broken
+> http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3d366797
+> ***
+>
+> greetings,
+>
+> --
+> camale=c3=b3n
+>
+>
+> --
+> to unsubscribe, email to debian-user-request@lists.debian.org
+> with a subject of "unsubscribe". trouble? contact
+> listmaster@lists.debian.org
+> archive: http://lists.debian.org/pan.2010.04.23.15.43.59@csmining.org
+>
+>
+
+
+--=20
+regards,
+
+umarzuki mochlis
+http://debmal.my

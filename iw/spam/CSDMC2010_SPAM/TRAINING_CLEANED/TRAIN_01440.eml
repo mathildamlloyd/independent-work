@@ -1,0 +1,73 @@
+NoneAs does the call to FSEjectVolumeSync(), which surprised me, since I =
+thought that if the NSWorkspace call failed then I must be missing some =
+step.
+
+
+Thanks,
+Jim
+
+On May 3, 2010, at 7:13 AM, James Bucanek wrote:
+
+> Jim O'Connor <mailto:joconnor@orderndev.com> wrote (Sunday, May 2, =
+2010 11:27 PM -0800):
+>=20
+>> My alternative is to call system with hdiutil detach, which is ugly.
+>=20
+> I would have thought that the alternative would be to get the volume's =
+FSVolumeRefNum and simply call FSEjectVolumeSync(), which is ultimately =
+what (I believe) NSWorkspace does.
+>=20
+> This would require about eight lines of code, and really isn't that =
+ugly.
+>=20
+> --=20
+> James Bucanek
+>=20
+>=20
+
+ _______________________________________________
+Do not post admin requests to the list. They will be ignored.
+Filesystem-dev mailing list      (Filesystem-dev@lists.apple.com)
+Help/Unsubscribe/Update your Subscription:
+http://lists.apple.com/mailman/options/filesystem-dev/mlsubscriber.tech%40csmining.org
+
+This email sent to mlsubscriber.tech@csmining.org
+
+re: differences between nsworkspace unmountandejectdeviceaturl and
+unmountandejectdeviceatpaththe system call works.
+
+as does the call to fsejectvolumesync(), which surprised me, since i =
+thought that if the nsworkspace call failed then i must be missing some =
+step.
+
+
+thanks,
+jim
+
+on may 3, 2010, at 7:13 am, james bucanek wrote:
+
+> jim o'connor  wrote (sunday, may 2, =
+2010 11:27 pm -0800):
+>=20
+>> my alternative is to call system with hdiutil detach, which is ugly.
+>=20
+> i would have thought that the alternative would be to get the volume's =
+fsvolumerefnum and simply call fsejectvolumesync(), which is ultimately =
+what (i believe) nsworkspace does.
+>=20
+> this would require about eight lines of code, and really isn't that =
+ugly.
+>=20
+> --=20
+> james bucanek
+>=20
+>=20
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+filesystem-dev mailing list      (filesystem-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/filesystem-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

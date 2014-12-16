@@ -1,0 +1,43 @@
+hello all,
+
+on apr 7, 2010, at 10:49 pm, jeremy huddleston wrote:
+
+> there is a bug in your remote mesa.
+> see https://bugs.freedesktop.org/show_bug.cgi?id=3d24226
+>=20
+>=20
+> you should be able to do it via:
+> libgl_always_indirect=3d1 glxgears
+
+do you mean to set a shell environment variable
+%> setenv libgl_always_indirect 1
+then=20
+%> glxgears
+
+> that works for me.
+
+this still gives me the  heinous error:
+
+x error of failed request:  badalloc (insufficient resources for =
+operation)
+  major opcode of failed request:  147 (glx)
+  minor opcode of failed request:  3 (x_glxcreatecontext)
+  serial number of failed request:  19
+  current serial number in output stream:  21
+
+
+my remote linux machine is running centos 5.4 with everything up-to-date =
+via yum. would you recommend filing a bug report with the developers of =
+mesa and hope that some day it trickles down to rhel and then to centos? =
+or should i build my own mesa? and just to clarify, this is not an x11 =
+problem right?
+
+thanks,
+scott=
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+x11-users mailing list      (x11-users@lists.apple.com)
+help/unsubscribe/update your subscription: http://lists.apple.com/mailman/options/x11-users/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

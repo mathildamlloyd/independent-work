@@ -1,0 +1,39 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on sat,24.apr.10, 16:15:46, jordan metzmeier wrote:
+> > try putting this in ~/.bashrc:
+> >
+> > export editor=3d/usr/bin/vim
+>=20
+> you can also make it a system wide configuration with
+> "update-alternatives --config editor". i have not tried it shells
+> other than bash but i assume it is portable.
+
+yep:
+
+# update-alternatives --config editor
+there are 3 choices for the alternative editor (providing /usr/bin/editor).
+
+  selection    path                    priority   status
+------------------------------------------------------------
+  0            /usr/bin/vim.nox         40        auto mode
+  1            /usr/bin/mcedit-debian   25        manual mode
+* 2            /usr/bin/vim.nox         40        manual mode
+  3            /usr/bin/vim.tiny        10        manual mode
+
+press enter to keep the current choice[*], or type selection number:=20
+
+but it won't work if ncftp relies on $editor:
+
+$ echo $editor
+
+$
+
+regards,
+andrei
+--=20
+offtopic discussions among debian users and developers:
+http://lists.alioth.debian.org/mailman/listinfo/d-community-offtopic

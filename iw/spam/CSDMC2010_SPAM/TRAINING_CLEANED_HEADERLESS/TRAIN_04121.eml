@@ -1,0 +1,38 @@
+2010/5/11 johan gr=f6nqvist :
+> 2010-05-10 18:12, matteo riva skrev:
+>>
+>> using xorg 7.5 with radeonhd foss driver.
+>>
+>> anybody had this problem and/or knows about a solution?
+>>
+>
+> i have not had the problem (i use the radeon driver), and do not know of =
+a
+> solution, but wanted to point you to a recent changelog that might be of
+> interest.
+>
+> (from
+> )
+>
+> ----------------
+> =a0debian changelog xorg (1:7.5+6)
+>
+> xorg (1:7.5+6) unstable; urgency=3dmedium
+>
+> =a0 * drop radeonhd from xserver-xorg-video-all. =a0we switched to kernel
+> =a0 =a0 modesetting for radeon, and that clashes with this driver.
+> =a0 [...]
+> =a0-- julien cristau  =a0fri, 07 may 2010 13:34:32 +=
+0200
+>
+> -----------------
+
+hm that's not the problem as i have version 1:7.5+5 (testing)
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/aanlktimv2szrh-s6todhnsopmcggtjnuwyoec98josbb@mail.csmining.org
+
+

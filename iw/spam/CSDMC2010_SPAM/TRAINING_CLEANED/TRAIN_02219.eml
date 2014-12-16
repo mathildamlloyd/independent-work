@@ -1,0 +1,46 @@
+None> On 2010-05-17 08:46 +0200, Alexey Salmin wrote:
+>
+>> So, it's a bug in lsb-core package?
+>
+> Yes, the LSB mandates that /lib/ld-lsb.so.3 is the dynamic linker:
+>
+> http://refspecs.freestandards.org/LSB_4.0.0/LSB-Core-IA32/LSB-Core-IA32/baselib.html
+
+This makes me wonder how Ubuntu obtained their LSB certification,
+considering that they do not seem have /lib/ld-lsb.so.3 in any package
+either, according to http://packages.ubuntu.com.  The whole LSB seems to
+be a joke.
+
+Sven
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/87ocge52fo.fsf@turtle.gmx.de
+
+
+re: executable won't executeon 2010-05-17 08:54 +0200, sven joachim wrote:
+
+> on 2010-05-17 08:46 +0200, alexey salmin wrote:
+>
+>> so, it's a bug in lsb-core package?
+>
+> yes, the lsb mandates that /lib/ld-lsb.so.3 is the dynamic linker:
+>
+> http://refspecs.freestandards.org/lsb_4.0.0/lsb-core-ia32/lsb-core-ia32/baselib.html
+
+this makes me wonder how ubuntu obtained their lsb certification,
+considering that they do not seem have /lib/ld-lsb.so.3 in any package
+either, according to http://packages.ubuntu.com.  the whole lsb seems to
+be a joke.
+
+sven
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87ocge52fo.fsf@turtle.gmx.de
+
+

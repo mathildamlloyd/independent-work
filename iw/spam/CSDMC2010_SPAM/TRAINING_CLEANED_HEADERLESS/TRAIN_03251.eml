@@ -1,0 +1,85 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain;
+  charset="iso-8859-1"
+content-transfer-encoding: quoted-printable
+
+on monday 26 april 2010 20:27:14 celejar wrote:
+> on mon, 26 apr 2010 17:03:07 -0500
+> "boyd stephen smith jr."  wrote:
+> > on monday 26 april 2010 16:34:36 celejar wrote:
+> > > on mon, 26 apr 2010 16:16:32 -0500
+> > > "boyd stephen smith jr."  wrote:
+> > > > on monday 26 april 2010 15:09:57 celejar wrote:
+> > > > > what makes the non-free firmware question particularly interesting
+> > > > > is that the alternative is often to hardcode the functionality in=
+to
+> > > > > the hardware.  now, if you had a board with completely closed hw,
+> > > > > but that presented an open, well documented interface for the
+> > > > > driver, most people would be very happy (although there are, of
+> > > > > course, the open hardware crusaders - more power to them!).  so,
+> > > > > now that they've simply implemented some of that functionality in
+> > > > > sw, in the form of firmware which the driver installs on the card,
+> > > > > but which has nothing to do with your host machine, are you really
+> > > > > any worse off?
+> > > >
+> > > > as a distributor you may very well be.  if you can't provide the
+> > > > source code, you can't satisfy the terms of the gpl (usually).
+> > >
+> > > ?  we're talking about firmware for things like wireless cards,
+> > > produced by the hw manufacturers, e.g., broadcom.  where does the gpl
+> > > enter into this?
+> >
+> > some are included in the tarball provided by the linux kernel team, whi=
+ch
+> > is distributed under the gplv2.  in particular, i am thinking of the
+> > iwl3945 firmware that is required to run my wireless card.
+> >
+> > it doesn't matter what upstream wants to call source code.  the gpl(v2)
+> > defines it as the preferred form for making modifications.  (gplv2,
+> > section 3.)  it is unlikely that the firmware was written in a hex edit=
+or
+> > (or equivalent).  most likely it is c source for a freestanding
+> > (non-hosted) environment with some manufacturer-specific libraries, but
+> > it could also be in some manufacturer-specific assembly code.  either
+> > form would be better for making modifications than a binary blob.
+>=20
+> this is all very well, but the context of this subthread is james's
+> statement that he avoids installing the non-free firmware that his hw
+> requires out of a commitment to floss ideals, to which i responded that
+> i'm not sure if one is really worse off installing such firmware, or
+> using a card that just has that logic built in to its non-free hw.
+
+and i claim he would be better off using a card that doesn't use firmware[1=
+]=20
+or uses free firmware, since non-free firmware is an issue for distributors=
+=20
+and it's relatively easy to "accidentally" participate in distributing=20
+software in violation of its license.
+
+i wouldn't want to be stuck without non-free available, but i recommend mak=
+ing=20
+hardware purchases that allow you to avoid non-free as much as possible.  i=
+'m=20
+gradually moving that way myself.  (desktop and laptop each need one driver=
+=20
+from non-free.)
+
+once you've got the hardware, you might as well use it, even if it requires=
+=20
+non-free drivers.  the manufacturer has already got their cut of what you=20
+paid; you are hurting none but yourself by not using it.  you should try an=
+d=20
+avoid becoming dependent on that hardware, since that makes you dependent o=
+n=20
+non-free software.
+
+[1] "firmware" here is specifically limited to executable data transmitted =
+to=20
+the device from a host operating system, and does not include executable da=
+ta=20
+loaded from an eeprom (or similar) that is provided with the device.
+=2d-=20
+boyd stephen smith jr.            ,=3d ,-_-. =3d.
+bss@iguanasuicide.net            ((_/)o o(\_))
+icq: 514984 ym/aim: datwinkdaddy  `-'(. .)`-'
+http://iguanasuicide.net/             \_/

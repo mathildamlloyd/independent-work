@@ -1,0 +1,68 @@
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Thu, May 13, 2010 at 08:42 -0500, Kent West wrote:
+> I've got an older 600MHz PIII running Sid; if I boot into the
+> installed 2.6.26-2-68 kernel, everything's fine, but if I boot into
+> the installed 2.6.32-5-68 kernel, everything's fine until X is
+> started (either manually or with a session manager or even when
+> trying to create a new xorg.conf file using "X -config"). At that
+> point, the screen goes black, the keyboard stops responding, and the
+> Xorg.log fills up with :
+>=20
+> (EE) R128(0): Idle timed out, resetting engine...
+> (EE) R128(0): R128CCEWaitForIdle: CCE stop -9
+> (EE) R128(0): R128CCEWaitForIdle: CCE start -9
+> (EE) R128(0): R128CCEWaitForIdle: CCE idle -9
+> (EE) R128(0): Idle timed out, resetting engine...
+> (EE) R128(0): R128CCEWaitForIdle: CCE stop -9
+> (EE) R128(0): R128CCEWaitForIdle: CCE start -9
+> (EE) R128(0): R128CCEWaitForIdle: CCE idle -9
+
+I've seen this recently in #debian and we were able to "fix" this with
+the following in /etc/X11/xorg.conf
+
+Section "Device"
+        Identifier "r128"
+        Driver "r128"
+        Option "NoAccel"
+EndSection
+
+the related bug report is [1] and this will disable acceleration for
+your card, so it is not really a good fix. You might also want to make
+sure that you have the firmware package(s) installed.
+
+Good luck
+
+    Wolodja
+
+[1] http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D581216
+--=20
+  .''`.     Wolodja Wentland    <wentland@cl.uni-heidelberg.de>=20
+ : :'  :   =20
+ `. `'`     4096R/CAF14EFC=20
+   `-       081C B7CD FF04 2BA9 94EA  36B2 8B7F 7D30 CAF1 4EFC
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQIcBAEBCAAGBQJL+QF2AAoJEIt/fTDK8U78d4IP/2sEmyGQGwVyVAj0EFa9aqp8
+XP/YDzZSzDxZg4wW2bu02jtgm3srv/BCH154OVi0UzQDsR4BgAyxA9yJzTI8yr/6
++F8ZNY3lHXzKaErCwO5dyAxJdZcBfVu7EkV8sQFya/OwEj6eOIn6AX99bgkNH1rX
+Ev1guDsQ5G4lUNatoGceSjRYR3TVX2BWQzyvy7qin45w7BEd0P2ZzxBrpjAZllVc
+f2218piMAzmKs0HoXL4cwW85kg7DDQ5zSUYZRX6gZdQoAu9sT2MRuRYloGHpLpAz
+op5F0c1dEdtMI4/Y8xkFZVs+jXNlifxv0Y+02as5ZFlr+JkjMQTJ3ft80OjCmfUL
+CS16mjmHmNixZ7sZ9bdNMMrwL05dblrPriUEN3BZSxUoo4O4x1RUpEXd6XoDagus
+j2Xpzb2BbE/nbhgL5EfNJqSSxoqMDdgZchFYTG7T9ACUNYDAiyr8CoQ5otvOM3x8
+YGdUUPkCKXgXMNXzg57vi+/D3cXTvp/Ayy4MPZNfSo0dQh0NqZ8jioJIOMDX3HqQ
+Md5l42DZSRAa2LEFOJVqxdEw9Uj5XQHJkPmXTHI12GsBK/QnQ2FDaVkMNuXiTbSr
+1GcHeqUYteMpGfNqLYxPOSl8LNjQBUSLvDFYL5gSRm07rnmzfvjv98F/Z0/l72An
+gS57qThhk0zUUskiFBi5
+=a1gn
+-----END PGP SIGNATURE-----

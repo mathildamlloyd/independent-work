@@ -1,0 +1,126 @@
+None[SAtalk] Re: Spamassassin-talk digest, Vol 1 #659 - 41 msgs
+
+On 9/11/2002 at 10:01 AM  spamassassin-talk-request@lists.sourceforge.net
+spamassassin-talk@lists.sourceforge.net wrote:
+
+
+>Message: 15
+>From: Vivek Khera <khera@kcilink.com>
+>Date: Wed, 11 Sep 2002 10:06:55 -0400
+>To: spamassassin-talk@example.sourceforge.net
+>Subject: Re: [SAtalk] Calypso email = ratware? 
+>
+>>>>>> "JM" == Justin Mason <jm@jmason.org> writes:
+>
+>JM> Now all we need to do is get all the SpamAssassin users out there to
+>JM> upgrade...
+>
+>Considering that the rules need to adapt to the changing look and feel
+>of spam vs. non-spam, does it make sense to have SA automatically
+>issue a notice when it is, say 9 months old, recommending that the
+>user/operator check for updated rules?
+>
+>Sort of like a nag-ware feature, but in self-defense for the user, not
+>the vendor ;-)
+>
+>-- 
+>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>Vivek Khera, Ph.D.                Khera Communications, Inc.
+>Internet: khera@kciLink.com       Rockville, MD       +1-240-453-8497
+>AIM: vivekkhera Y!: vivek_khera   http://www.khera.org/~vivek/
+
+better yet would be a built-in server check on a periodic basis, even
+daily, looking for the existence of an update, and if found prompt the
+system admin to upgrade the server.  With the ever changing face of spam,
+this would probably be a big benefit to SA users and help keep everyone up
+to date.  We have not done this with too many of the apps we sell on
+www.RoseCitySoftware.com strictly because of joe-average-user concerns
+about spyware and "phoning home", but in cases where the app needs to
+access the internet anyhow, we have done it with great success and minimal
+concern by our users.
+
+----
+Joseph Burke
+President/CEO
+InfiniSource, Inc.
+<jburke@infinisource.com> 
+
+
+
+
+
+
+
+
+-------------------------------------------------------
+In remembrance
+www.osdn.com/911/
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+
+[satalk] re: spamassassin-talk digest, vol 1 #659 - 41 msgs
+
+on 9/11/2002 at 10:01 am  spamassassin-talk-request@lists.sourceforge.net
+spamassassin-talk@lists.sourceforge.net wrote:
+
+
+>message: 15
+>from: vivek khera 
+>date: wed, 11 sep 2002 10:06:55 -0400
+>to: spamassassin-talk@example.sourceforge.net
+>subject: re: [satalk] calypso email = ratware? 
+>
+>>>>>> "jm" == justin mason  writes:
+>
+>jm> now all we need to do is get all the spamassassin users out there to
+>jm> upgrade...
+>
+>considering that the rules need to adapt to the changing look and feel
+>of spam vs. non-spam, does it make sense to have sa automatically
+>issue a notice when it is, say 9 months old, recommending that the
+>user/operator check for updated rules?
+>
+>sort of like a nag-ware feature, but in self-defense for the user, not
+>the vendor ;-)
+>
+>-- 
+>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>vivek khera, ph.d.                khera communications, inc.
+>internet: khera@kcilink.com       rockville, md       +1-240-453-8497
+>aim: vivekkhera y!: vivek_khera   http://www.khera.org/~vivek/
+
+better yet would be a built-in server check on a periodic basis, even
+daily, looking for the existence of an update, and if found prompt the
+system admin to upgrade the server.  with the ever changing face of spam,
+this would probably be a big benefit to sa users and help keep everyone up
+to date.  we have not done this with too many of the apps we sell on
+www.rosecitysoftware.com strictly because of joe-average-user concerns
+about spyware and "phoning home", but in cases where the app needs to
+access the internet anyhow, we have done it with great success and minimal
+concern by our users.
+
+----
+joseph burke
+president/ceo
+infinisource, inc.
+ 
+
+
+
+
+
+
+
+
+-------------------------------------------------------
+in remembrance
+www.osdn.com/911/
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

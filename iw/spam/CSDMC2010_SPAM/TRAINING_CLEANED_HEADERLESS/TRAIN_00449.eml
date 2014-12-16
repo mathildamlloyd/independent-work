@@ -1,0 +1,26 @@
+in lenny, "ls -ld /dev/audio" gives
+
+> lenny:~$ ls -ld /dev/rtc0
+> crw-rw---- 1 root audio 254, 0 may  2 15:25 /dev/rtc0
+>
+
+
+but in sid, it gives
+
+> sid:~$ ls -ld /dev/rtc0
+> crw-rw---- 1 root root 254, 0 may 10 23:51 /dev/rtc0
+>
+
+anybody know why?
+
+thanks!
+
+rick
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/ac045fbc-f572-4d9e-967b-67660214aa82@cs.rutgers.edu
+
+

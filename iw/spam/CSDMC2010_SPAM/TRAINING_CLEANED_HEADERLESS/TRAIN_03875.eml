@@ -1,0 +1,28 @@
+on tue, 11 may 2010 20:40:58 +0100, lisi wrote:
+
+> on tuesday 11 may 2010 17:24:02 nima azarbayjany wrote:
+>> hi all,
+>>
+>> how do you add support for east asian fonts in debian lenny?  for
+>> example, a default install of lenny does not show some of the fonts at
+>> the bottom of www.debian.org.
+> 
+> i used to install japanese fonts via aptitude.  but i rather think that
+> they were installed by default on my most recent installation, so i
+> can't speak for now.  
+
+i had to install japanese fonts manually, no asian fonts were installed 
+by default. the same remains for korean and chinese fonts.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.11.21.52.48@csmining.org
+
+

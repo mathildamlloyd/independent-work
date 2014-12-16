@@ -1,0 +1,36 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+eduardo m kalinowski wrote:
+> on ter, 18 mai 2010, merciadri luca wrote:
+>> hi,
+>>
+>> i am getting some thunderbird message for an imap account of mine. thi=
+s
+>> message tells me that the server's certificate associated to the imap
+>> account has expired since ... 2007. i know, it's already far from here=
+,
+>> but i cannot change the server's certificate. how can i get rid of thi=
+s
+>> message? it annoys me, as there is no box that i could check so that i=
+t
+>> does not appear anymore.
+>>
+>> i have contacted the ml related to the server, but i do not even tell
+>> you who owns the server!
+>
+> is that thunderbird 2 or 3? in 2 i could not find a way to permanently
+> accept problematic certificates, but this has changed in version 3.
+well, this is effectively icedove 2.0.0.22 (20090706). how did you
+manage to, under th. 3?
+
+--=20
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+i use pgp. if there is an incompatibility problem with your mail
+client, please contact me.
+
+
+
+

@@ -1,0 +1,117 @@
+on thu, may 6, 2010 at 10:12 pm, miles fidelman
+ wrote:
+> thanks to all who replied. =a0i'm starting to zero in on this now.
+>
+> a few more details:
+>
+[snip]
+
+>
+> on server 1:
+> eth0: inet addr:207.154.13.48 =a0bcast:207.154.13.63 =a0mask:255.255.255.=
+224
+> (first netblock)
+> server1:/home/milesf# route
+> kernel ip routing table
+> destination =a0 =a0 gateway =a0 =a0 =a0 =a0 genmask =a0 =a0 =a0 =a0 flags=
+ metric ref =a0 =a0use
+> iface
+> localnet =a0 =a0 =a0 =a0* =a0 =a0 =a0 =a0 =a0 =a0 =a0 255.255.255.224 u =
+=a0 =a0 0 =a0 =a0 =a00 =a0 =a0 =a0 =a00 eth0
+> default =a0 =a0 =a0 =a0 207.154.13.33 =a0 0.0.0.0 =a0 =a0 =a0 =a0 ug =a0 =
+=a00 =a0 =a0 =a00 =a0 =a0 =a0 =a00 eth0
+> server1:/home/milesf# arp -a
+> ? (207.154.13.33) at 00:d0:03:b3:18:00 [ether] on eth0
+>
+> on server 2:
+> eth0: net addr:207.154.59.130 =a0bcast:207.154.59.159 =a0mask:255.255.255=
+.224
+> (2nd netblock)
+> server2:/home/milesf# route
+> kernel ip routing table
+> destination =a0 =a0 gateway =a0 =a0 =a0 =a0 genmask =a0 =a0 =a0 =a0 flags=
+ metric ref =a0 =a0use
+> iface
+> localnet =a0 =a0 =a0 =a0* =a0 =a0 =a0 =a0 =a0 =a0 =a0 255.255.255.224 u =
+=a0 =a0 0 =a0 =a0 =a00 =a0 =a0 =a0 =a00 eth0
+> default =a0 =a0 =a0 =a0 207.154.59.129 =a00.0.0.0 =a0 =a0 =a0 =a0 ug =a0 =
+=a00 =a0 =a0 =a00 =a0 =a0 =a0 =a00 eth0
+> server2:/home/milesf# arp -a
+> ? (207.154.59.129) at 00:d0:03:b3:18:00 [ether] on eth0
+>
+> from box 1 -> box 2
+> traceroute to 207.154.59.130 (207.154.59.130), 30 hops max, 40 byte packe=
+ts
+> =a01 =a0207.154.13.33 (207.154.13.33) =a00.418 ms =a00.429 ms =a00.481 ms
+> =a02 =a0server2.neighborhoods.net (207.154.59.130) =a00.299 ms =a00.317 m=
+s =a00.309 ms
+>
+> from box 2 -> box 1
+> server2:/home/milesf# traceroute 207.154.13.48
+> traceroute to 207.154.13.48 (207.154.13.48), 30 hops max, 40 byte packets
+> =a01 =a0207.154.13.33 (207.154.13.33) =a00.352 ms =a00.369 ms =a00.436 ms
+> =a02 =a0server1.neighborhoods.net (207.154.13.48) =a00.292 ms =a00.295 ms=
+ =a00.302 ms
+>
+> the traffic is definitely going through the datacenter's router
+> (207.154.13.33).
+>
+> i'm thinking that adding something like:
+>
+> server 1: route add -net 207.154.13.128 netmask 255.255.255.244 dev eth0
+> server 2: route add -net 207.154.13.32 netmask 255.255.255.244 dev eth0
+
+why not just limit it to the ip address you want currently only 2
+
+server 1: ip route add 207.154.59.130 dev eth0  src 207.154.13.48
+server 2: ip route add 207.154.13.48 dev eth0 src 207.154.59.130
+
+just put in routing statements for the ip's that you need
+
+>
+>
+> one of the machines is a production machine, so i want to be fairly sure =
+of
+> this before starting to play with the routing table.
+>
+> any more comments?
+>
+> and... anybody know if the "route" command persists across reboots, and i=
+f
+> so, where it store the information?
+
+iproute is the new route
+
+place them in /etc/network/interfaces as post-up command don't forget
+|| true at the end of the command
+
+
+>
+> thanks again,
+
+answered agan
+
+>
+> miles
+>
+> --
+> in theory, there is no difference between theory and practice.
+> in =a0practice, there is. =a0 .... yogi berra
+>
+>
+>
+> --
+> to unsubscribe, email to debian-user-request@lists.debian.org with a subj=
+ect
+> of "unsubscribe". trouble? contact listmaster@lists.debian.org
+> archive: http://lists.debian.org/4be2b248.7080507@meetinghouse.net
+>
+>
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/u2w836a6dcf1005062058qd3b61a7dx5fb98b79a742344f@mail.csmining.org
+
+

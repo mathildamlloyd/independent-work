@@ -1,0 +1,63 @@
+None> Padraig Brady wrote:
+> 
+>>>Paul Jakma wrote:
+>>>
+>>>>chars in hex to plain ASCII?
+>>>>
+>>>>eg given
+>>>>   http://w%77%77%2Eo%70%74%6F%72%69um.n%65t/remove.html
+>>>>
+>>>>is there an easy way to turn it into
+>>>>
+>>>>   http://www.optorium.net/remove.html
+>>>>eg, whether by piping through some already available tool, or 
+>>>>programmatically (printf? - but i dont see how.).
+>>>
+>>Actually the following would be in some way sensible:
+>>echo -e "`echo "$enc" | sed 's/%\([0-9a-fA-F]\{2,2\}\)/\\\x\1/g'`"
+> 
+> 
+> Why {2,2}? Why not {2}?
+
+Me being silly, that's all.
+
+Pádraig.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+re: [ilug] converting strings of hex to asciidavid neary wrote:
+> padraig brady wrote:
+> 
+>>>paul jakma wrote:
+>>>
+>>>>chars in hex to plain ascii?
+>>>>
+>>>>eg given
+>>>>   http://w%77%77%2eo%70%74%6f%72%69um.n%65t/remove.html
+>>>>
+>>>>is there an easy way to turn it into
+>>>>
+>>>>   http://www.optorium.net/remove.html
+>>>>eg, whether by piping through some already available tool, or 
+>>>>programmatically (printf? - but i dont see how.).
+>>>
+>>actually the following would be in some way sensible:
+>>echo -e "`echo "$enc" | sed 's/%\([0-9a-fa-f]\{2,2\}\)/\\\x\1/g'`"
+> 
+> 
+> why {2,2}? why not {2}?
+
+me being silly, that's all.
+
+pdraig.
+
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+

@@ -1,0 +1,40 @@
+i can verify that these calls do actually work for synchronization. i =
+grab the master time base of the movie i am considering the master =
+(which can be arbitrary, so just pick one) and set the master time base =
+of the other movies using that. they stay in perfect lock step for the =
+rest of the way for me.
+
+-matt
+
+
+on apr 13, 2010, at 12:22 pm, james walker wrote:
+
+> on 4/11/2010 4:24 pm, rapha=ebl ding=e9 wrote:
+>=20
+>> yes, sure, but my point was only about having two movies perfectly in =
+sync,
+>> and this sample code is just a way to achieve it !
+>=20
+> i tried adding the bit about getmovietimebase and =
+settimebasemastertimebase to my project, and it didn't seem to help =
+synchronization.
+>=20
+> i also tried making a movie with references to the two video tracks, =
+so that the video tracks would be playing in the same movie, and they =
+still don't stay synchronized when playing.
+>=20
+> it looks like i may have to require that the two movies be somehow =
+preprocessed to be side by side in a single video track.
+> --=20
+>  james w. walker, innoventive software llc
+>  
+> _______________________________________________
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

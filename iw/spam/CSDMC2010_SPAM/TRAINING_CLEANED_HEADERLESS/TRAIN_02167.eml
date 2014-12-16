@@ -1,0 +1,106 @@
+solocdm wrote:
+> how are there four (/bin/dnsdomainname /bin/domainname
+> /bin/nisdomainname /bin/ypdomainname) different types of hostname
+> links with their own separate options?
+
+the program has different behaviour depending on the value of
+argv[0], probably...
+
+here's a simple example...
+
+#include 
+#include 
+#include 
+
+long int add(long int a, long int b)
+{
+  return a+b;
+}
+
+long int subtract(long int a, long int b)
+{
+  return a-b;
+}
+
+int main(int argc, char **argv)
+{
+  long int a, b; /* operands */
+  long int (*operation)(long int a, long int b);
+  char *progname, *marker;
+
+  if(argc != 3)
+  {
+    fprintf(stderr, "usage: %s [int1] [int2]\n", argv[0]);
+    exit(1);
+  }
+
+  progname = strrchr(argv[0], '/');
+  if(progname == null)
+    progname = argv[0];
+  else
+    progname ++; /* skip past the '/' */
+  
+  if(strcmp(progname, "add") == 0)
+  {
+    operation = add;
+  }
+  else if (strcmp(progname, subtract) == 0)
+  {
+    operation = subtract;
+  }
+  else
+  {
+    fprintf(stderr, "program called with invalid "
+            "name %s. quitting.\n", argv[0]);
+    exit(1);
+  }
+
+  a = strtol(argv[1], &marker;, 0); /* use base 16 for args
+                                    * starting 0x, and base 8 for 
+                                    * args starting 0 */
+  if(*marker != '\0')
+  {
+    fprintf(stderr, "invalid character %c in argument %s.\n",
+            *marker, argv[1]);
+    exit(1);
+  }
+
+  b = strtol(argv[2], &marker;, 0); /* use base 16 for args
+                                    * starting 0x, and base 8 for 
+                                    * args starting 0 */
+  if(*marker != '\0')
+  {
+    fprintf(stderr, "invalid character %c in argument %s.\n",
+            *marker, argv[2]);
+    exit(1);
+  }
+  
+  printf("%ld %c %ld = %ld\n", 
+          a, 
+          (operation == add)?'+':'-', 
+          b, 
+          operation(a, b));
+          
+  return 0;
+}
+
+say that's in operation.c, compile it using 
+
+gcc -ansi -pedantic -wall -w -o2 -o add operation.c
+and then 
+ln add subtract
+and run both, with appropriate arguments.
+
+
+
+-- 
+       david neary,
+    marseille, france
+  e-mail: bolsh@gimp.org
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

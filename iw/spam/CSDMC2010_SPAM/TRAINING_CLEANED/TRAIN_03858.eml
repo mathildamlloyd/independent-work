@@ -1,0 +1,75 @@
+None> The attachments contain the lines written to /var/log/auth.log and
+> /var/log/mail.log when the attempt to mail via NEWSERVER:587 failed,
+> also my /etc/postfix/main.cf (without comments).
+
+I see nothing about the failure. All seems to go fine, Postfix 
+establishes a connection with remote server and silently fails :-/
+
+Put Postfix into a more verbose logging. In "main.cf":
+
+***
+debug_peer_level = 2
+debug_peer_list = NEWSERVER
+***
+
+Reload Postfix and try again.
+
+P.S. 1 - Check the more basic here: saslauth mechanisms being used for 
+authenticating and of course, a correct password in "/etc/postfix/
+sasl_passwd" O:-)
+
+P.S. 2 - Remember that "535 5.7.3 Authentication unsuccessful" is a 
+message coming from Exchange server -not Postfix- so it would be great if 
+you could review the logs from the MS server side.
+
+Greetings,
+
+-- 
+Camaleón
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/pan.2010.05.13.12.11.39@csmining.org
+
+
+re: authentication unsuccessful relaying from postfix to
+microsoft esmtp mail serviceon thu, 13 may 2010 11:59:20 +0100, clive standbridge wrote:
+
+> the attachments contain the lines written to /var/log/auth.log and
+> /var/log/mail.log when the attempt to mail via newserver:587 failed,
+> also my /etc/postfix/main.cf (without comments).
+
+i see nothing about the failure. all seems to go fine, postfix 
+establishes a connection with remote server and silently fails :-/
+
+put postfix into a more verbose logging. in "main.cf":
+
+***
+debug_peer_level = 2
+debug_peer_list = newserver
+***
+
+reload postfix and try again.
+
+p.s. 1 - check the more basic here: saslauth mechanisms being used for 
+authenticating and of course, a correct password in "/etc/postfix/
+sasl_passwd" o:-)
+
+p.s. 2 - remember that "535 5.7.3 authentication unsuccessful" is a 
+message coming from exchange server -not postfix- so it would be great if 
+you could review the logs from the ms server side.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.13.12.11.39@csmining.org
+
+

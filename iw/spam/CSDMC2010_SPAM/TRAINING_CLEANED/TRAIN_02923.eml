@@ -1,0 +1,60 @@
+None> I noticed on many computers with Debian, whatever the kernel (2.6.xx, xx
+>>= 26), that, once ``too much'' tabs have been opened, Firefox/Iceweasel
+> becomes sluggish, slower and slower, and often stalls after some time. I
+> also noticed that, when becoming more and more sluggish, it takes more
+> and more RAM, even when all the pages are completely loaded. Why? Am I
+> the only person who's experiencing this? Is there an objective
+> explanation to this?
+
+He... did you never search in Google for "Firefox memory hog"? O:-)
+
+There's even a Mozilla KB explaining the issue:
+
+Reducing memory usage - Firefox
+http://kb.mozillazine.org/Memory_Leak
+
+Also, never versions (>3.5.x) provide /a bit/ better memory management.
+
+Greetings,
+
+-- 
+Camaleón
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/pan.2010.05.07.18.17.57@csmining.org
+
+
+re: is firefox/iceweasel leaking?on fri, 07 may 2010 19:58:26 +0200, merciadri luca wrote:
+
+> i noticed on many computers with debian, whatever the kernel (2.6.xx, xx
+>>= 26), that, once ``too much'' tabs have been opened, firefox/iceweasel
+> becomes sluggish, slower and slower, and often stalls after some time. i
+> also noticed that, when becoming more and more sluggish, it takes more
+> and more ram, even when all the pages are completely loaded. why? am i
+> the only person who's experiencing this? is there an objective
+> explanation to this?
+
+he... did you never search in google for "firefox memory hog"? o:-)
+
+there's even a mozilla kb explaining the issue:
+
+reducing memory usage - firefox
+http://kb.mozillazine.org/memory_leak
+
+also, never versions (>3.5.x) provide /a bit/ better memory management.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.07.18.17.57@csmining.org
+
+

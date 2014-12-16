@@ -1,0 +1,32 @@
+el jueves 06 mayo 2010 18:01:42 nate bargmann  escribi=f3:
+> * on 2010 06 may 09:45 -0500, facundo aguilera wrote:
+> > el jueves 06 mayo 2010 10:22:09 nate bargmann  escribi?:
+> > > i'm tired of typing this time and again:
+> > >=20
+> > > no speaker beep in konsole--dev says, "too bad."
+> >=20
+> > konsole -> settings -> notifications -> bell in current session -> run
+> > "beep"
+> >=20
+> > (aptitude install beep)
+> >=20
+> > is this what you want?
+>=20
+> i have been doing that as a work-around which is not ideal as it is much
+> slower than the pc speaker beep, especially for tab completion.  it
+> seems to take some time to load between successive tab key presses.
+>=20
+> - nate >>
+
+if beep doesn't beep in your pc speaker, maybe the problem is your system=20
+configuration.
+
+=46acundo
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201005061826.32061.budinero@csmining.org
+
+

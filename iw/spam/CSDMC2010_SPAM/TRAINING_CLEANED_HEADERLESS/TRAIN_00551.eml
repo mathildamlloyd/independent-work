@@ -1,0 +1,55 @@
+dear all
+
+on an up-to-date testing machine, i am using iceweasel + tor + privoxy.  
+florian helped me with an issue like this sometime back, but revisiting 
+his helpful advice has not helped on this occasion.
+
+the situation is as follows:
+
+using iceweasel, i enable the tor button and receive a warning message 
+"tor proxy test: local http proxy is unreachable. is polipo running 
+properly?"
+
+well, no because polipo wasn't installed - why and when this suddenly 
+became a necessity i don't know, but anyway i installed polipo and 
+configured it according to the tutorial on 
+http://wiki.archlinux.org/index.php/polipo which, in my circumstances, 
+required me to uncomment this line in the config file:
+
+         socksparentproxy = localhost:9050
+
+having restarted the daemons, and still getting the same error and no 
+connection, i pointed the browser at privoxy as per the polipo 
+configuration page referred to above, in the preferences/ network 
+settings tab, and in the polipo config file, i uncommented the line:
+
+         socksparentproxy = localhost:9050
+
+i then restarted polipo, double-checked the privoxy config file to 
+ensure that forwarding was still set as required and restarted the tor 
+and privoxy daemons.  however, i still get the same error messages 
+(basically cannot connect to web-pages) and the tor test gives the same 
+results as before.
+
+ from researching this on the web, i am unable to ascertain whether or 
+not i even need polipo, but the preferences settings tab for the tor 
+button have a check-box for using polipo, so it appears as if tor is now 
+expecting polipo to be installed and running as default.  but, i have 
+now reached the limit of what i know what to do or can figure out.  i am 
+also conscious of the risk of screwing things up further in an effort to 
+fix this, so before proceeding further would like to ask this list for 
+help and advice.
+
+i appreciate any thoughts/ ideas.
+
+thanks
+
+ag
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4befa041.10005@csmining.org
+
+

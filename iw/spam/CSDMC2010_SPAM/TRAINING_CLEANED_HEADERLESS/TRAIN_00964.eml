@@ -1,0 +1,60 @@
+ --- matthias saou  wrote: > once
+upon a time, chris wrote :
+> 
+> > to bring things back on topic, i was practicing my
+> "rpmbuild'n skillz"
+> > and made an rpm with some simple software tools to
+> drive my dvd+rw
+> > burner. no gui frontend, but it works just fine
+> from the command line. i
+> > even used it to burn a bootable dvd version of red
+> hat 7.3.
+> > 
+> >
+>
+ftp://people.redhat.com/ckloiber/dvd+rw-tools-0.1.src.rpm
+> 
+> nice! :-)
+> what about the "dvdrecord" package that's already
+> included in 7.3? it
+> doesn't do what this one does? i'm asking this
+> because i've got a friend
+> with an imac running yellowdog linux (basically red
+> hat linux for ppc), and
+> it's one of the newer versions with a dvd burner.
+> i'd be very interested in
+> using his drive to burn dvds full of 2-cds movies or
+> full of "files for
+> xmame" ;-)
+> also, a bootable dvd of red hat linux 7.3 would be
+> great as i've still not
+> burned the cds even once for myself since i always
+> install through the
+> network (and haven't found an easy way of purchasing
+> an english boxed set
+> here in spain...).
+> 
+> matthias
+> 
+that's done by bero - not too sure whether it works on
+dvd+rw drives, i believe it supports only dvd-r.
+
+would be nice to have a unified tool for dvd/cd
+burning - already i do my cd burning from dvdrecord
+since it is more recent.
+
+regards,
+
+michel
+
+__________________________________________________
+do you yahoo!?
+everything you'll ever need on one web page
+from news and sport to email and music charts
+http://uk.my.yahoo.com
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

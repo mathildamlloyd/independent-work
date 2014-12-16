@@ -1,0 +1,40 @@
+-----begin pgp signed message-----
+hash: sha1
+
+ionreflex wrote:
+> @stefan
+> 
+> [quote]
+> 486 will work.  686 may work.
+> [/quote]
+> 
+> 
+> my impression exactly, but i'd like to be sure : if i scrape this install,
+> i'll have a hard time recovering it...
+
+there is nothing in the way to install *both* kernels. just give the 686
+a try and if it does not work you can just reboot into the 486 and
+uninstall the 686. make sure that the 486 is installed before you try
+the 686, though.
+
+- --
+johannes
+
+in questions of science, the authority of a thousand is not worth the
+humble reasoning of a single individual.
+- - galileo galilei, physicist and astronomer (1564-1642)
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+
+ieyearecaayfakvnramacgkqc1nzprl9qeuw0acdfhbg9pluidzpumgd2ftpseiq
+4pqan2clzpn7qmch9fpkkkkxzoedv/jv
+=leb4
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-laptop-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bcd45a3.3020902@physik.blm.tu-muenchen.de
+
+

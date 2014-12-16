@@ -1,0 +1,23 @@
+NoneOn Tue, Apr 20, 2010 at 10:05:57PM +0200, Thierry Chatelet wrote:
+> No was not the same. But you can hear if fan speed goes up when you load=
+=20
+> either the cpu or the graphic card.
+
+For giggles, I just enabled the BIOS warning beep when my CPU gets >60C. Af=
+ter starting 4x burnP6 and letting it run for a while, sure enough, I got t=
+he warning beep. I'm gonna look a little more into this, and maybe involve =
+my vga card in this using FurMark to see what happens there.
+re: sudden reboots with firefox and flashfrom nobody tue dec 16 07:55:47 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on tue, apr 20, 2010 at 10:05:57pm +0200, thierry chatelet wrote:
+> no was not the same. but you can hear if fan speed goes up when you load=
+=20
+> either the cpu or the graphic card.
+
+for giggles, i just enabled the bios warning beep when my cpu gets >60c. af=
+ter starting 4x burnp6 and letting it run for a while, sure enough, i got t=
+he warning beep. i'm gonna look a little more into this, and maybe involve =
+my vga card in this using furmark to see what happens there.

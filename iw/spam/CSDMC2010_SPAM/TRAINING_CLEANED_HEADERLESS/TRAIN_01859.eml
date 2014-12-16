@@ -1,0 +1,387 @@
+
+
+<!--
+ body      { background-image: url(http://images.lockergnome.com/images/issue/top-right.gif); scrollbar-3dlight-color: #dee8ec; scrollbar-arrow-color: #000000; scrollbar-base-color: #007c7a; scrollbar-darkshadow-color: #507686; scrollbar-face-color: #a9c4cf; scrollbar-highlight-color: #dee8ec; scrollbar-shadow-color: #507686 }
+ a:link    { color: #0000ff; text-decoration: underline; font-weight: normal }
+ a:visited { color: #000000; text-decoration: underline; font-weight: normal }
+ a:active  { color: #000000; text-decoration: none }
+ a:hover   { color: #26343a; text-decoration: none }
+ p.title   { background: #a9c4cf; border-bottom: #507686 4px solid; border-left: #dee8ec 4px solid; border-right: #507686 4px solid; border-top: #dee8ec 4px solid; color: #26343a; font-family: comic sans ms, trebuchet ms, helvetica, arial; font-size: 14pt; font-weight: normal }
+ p.news    { background: #a9c4cf; border-bottom: #507686 4px solid; border-left: #dee8ec 4px solid; border-right: #507686 4px solid; border-top: #dee8ec 4px solid; color: #26343a; font-family: comic sans ms, trebuchet ms, helvetica, arial; font-size: 18pt; font-weight: normal }
+ p.sidebar { background: #a9c4cf; border-bottom: #507686 3px solid; border-left: #dee8ec 3px solid; border-right: #507686 3px solid; border-top: #dee8ec 3px solid; color: #26343a; font-family: comic sans ms, trebuchet ms, helvetica, arial; font-size: 10pt; font-weight: bold; text-align: center }
+ .url      { font-size: 8pt; font-family: verdana, tahoma, arial }
+-->
+20020715 lockergnome digital media
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+07.15.2002 mediareport
+
+
+content management is key: need a reason your boss should be sending you to gnomedex? some of the leading experts on content management solutions (those things we affectionately call blogs) will be sharing the future of blogging and how you can adapt it to both the way you do business and the way you communicate in general. join evan williams and doc searls as they share pearls of wisdom on blogging, linux and other open source applications that are changing our lives. if that's not enough incentive, remind the boss that the internet security guru, steve gibson, will be sharing his wisdom as well. 
+register for gnomedex today!   
+
+
+to all you dream theater fans out there, please accept my humblest of apologies. 
+i mistakenly announced their break up in the last gnomeaudio section, causing 
+quite a stir among a number of subscribers. in fact, they just released a double 
+album this year and have been touring in support of that release. 
+for today's false alarm, please make note of the tragedy that is the n'sync 
+breakup (oh wait, that's just wishful thinking).
+
+i know i've already carried on about my kyocera 6035 phone, but this thing is 
+awesome.  i've got all my contacts in one device. web browsing is good - i'm 
+sure it would be better on a color screen, like the 
+treo 270, but for what i'll need, 
+this works well. i'm currently looking for an ssh client i can install, so that 
+remote server logins will be possible. my one complaint is the base station's 
+use of a serial connector instead of usb, but i suppose they were cutting costs. 
+
+i'm also scoping out the 
+palm markup language 
+(pml) standard for marking up palm docs, 
+in an effort to make the gnometomes a little flashier. i've installed several of 
+the files on my phone and while they are easy to read, have all the content 
+organized, and function as useful tips for the various subjects, i'd like to add 
+some minor tweaks to future tomes, so that they look even better for me and 
+anyone else who reads them on their palm.  
+
+
+
+
+jake ludington
+
+gnomeproducer
+tomeraider v2.0 [1673k] w98/w2k/pocket pc/palm $25
+http://www.tomeraider.com/
+
+
+of the formats lockergnome uses for our gnometomes, tomeraider is by far my 
+favorite. designed with a feel similar to chm, the tr format is quite easy 
+to read, as it places section titles in a pane separate from content, 
+allowing you, the reader, to navigate through our tips (or anything else) 
+with much greater ease than the linear format the other versions present. 
+the windows version of the software is truly designed with ease of use in 
+mind. creating ebooks for tomeraider is a simple matter of combining a 
+modified set of html tags with the  designation for page breaks. the 
+only trick for yankees like me is remembering that center is tagged centre 
+in the software.
+
+
+
+
+
+gnomefeature
+the herd of star wars nerds
+http://www.ifilm.com/ifilm/product/film_info/0,3699,2439321,00.html?cch=11
+ 
+triumph the dog is low-tech, he's not cute like the pets.com sock puppet, 
+but he manages to maintain a twisted appeal to fans of lowbrow comedy. in 
+this segment, triumph makes a mockery of geeks standing in line for 
+episode ii. whether you've been one of those geeks yourself, or you've 
+never understood why anyone would dress up and wait in line for a movie, 
+you'll still find this film amusing. 10 minutes was more than necessary 
+to get the point across, yet triumph delivers enough one-liners 
+throughout to keep you watching all the way to the end.
+ 
+
+
+
+
+
+
+
+gnomeskin
+
+
+kids world for desktopx by frogboy
+
+posted on 7/14/2002 12:35:00 am  --  
+
+
+
+
+
+[download]
+--[zoom]
+--[visit wincustomize]
+
+
+
+gnomeaudio
+heleen van den hombergh
+http://www.heleenvandenhombergh.com/
+http://artists.mp3s.com/artists/378/heleen_van_den_hombergh.html
+  
+ 
+classic jazz vocal styling, juxtaposing arrangements of contemporary 
+pieces with arrangements of jazz standards. combined with some 
+beautiful piano arrangements, heleen's voice is a thing of beauty. a 
+netherlands native,  who originally dreamed of saving the rainforests 
+(at least according to her biography), her interpretation of american 
+jazz standards and show tunes is more remarkable than most native 
+english speaking vocalists. no world tour is currently scheduled, so 
+you'll probably have to journey to europe to see her in person, but 
+for those of you living elsewhere in the world, the internet makes a 
+fabulous venue for experiencing heleen  van den hombergh's talent. 
+
+
+
+
+
+a book for every geek: want to know more about 
+networking? 
+have you ever wanted to 
+write an e-book? maybe you need to polish 
+your 
+web design skills? get full-length books from the poor richard's 
+series, including poor richard's e-mail publishing, by chris pirillo, at gnometomes.com, for 50% off the suggested retail price of the print versions. 
+click here to learn more.    
+
+
+gnomeplugin
+aezay caption draw v1.0 [71k] w9x/nt/w2k/xp free
+http://www.winamp.com/plugins/detail.jhtml?componentid=112660
+
+reminding me of creating captions for webcam32, this application uses 
+incomprehensible string values to display relevant info about winamp 
+songs in the windows caption bar. list song names, time of day, 
+playlist information, filenames, and a variety of other more obscure 
+information. changing caption colors is also doable within this 
+plug-in. a set of hot keys makes controlling winamp from your keyboard 
+more functional, although you can't remap any of the keys.
+
+
+
+
+gnomedvd
+
+
+click for details
+
+the man who wasn't there (r) 2001
+drama - 116min
+reviewer's tilt (9)
+
+special dvd features worth a look-thornton and coen brothers commentary
+
+much more film noir, than a movie trying to imitate film noir, the man
+who wasn't there captures the inevitable hopelessness of the genre. ed
+crane (billy bob thornton) is the archetype everyman. a barber by trade,
+crane represents the individual in society. he hears everything, but
+truly knows nothing. everything he hears is modified ever so slightly by
+the retelling. he gets neither the whole story nor the true motivations.
+left to guess at the motivations and desires of those around him, crane
+develops an indifference to it all. when a snake oil sales man slithers
+into town, crane takes this opportunity to cheat the cheaters and punish
+the punishers.  as indifferent as crane appears, he is no match for the
+amorality of fate. as much as fate is indifferent in its wrath, however,
+so is it artistic in its execution. that is what makes our lives so
+entertaining. fate doles ultimate justice, but never as expected. the
+man who wasn't there is truly a kafkaesque tale of an individual's year
+to turn against the tide of inevitability. atypical of cuter, more
+recent coen brothers fare, this film is reminiscent of their earlier
+noir works like blood simple and miller's crossing. frances mcdormand
+does an outstanding job making as crane's selfish wife and james
+gandolfini exudes boorishness as doris' boss. the real outstanding
+performances, however, rest with the supporting cast. tony shalhoub, as
+pompus attorney freddy riedenschneider and  jon polito as the snake oil
+salesman impress and entertain as cruel, but offbeat parodies of their
+characters. the black and white cinematography by roger deakins also
+impresses and precisely underscores the bleakness of crane's life and
+the monochromatic nature of fate.
+
+ 
+
+
+region 1 encoding (us and canada only)
+format: b&w, widescreen anamorphic, closed captioned
+sound: dolby digital 5.1, dolby digital 2.0 surround spanish, dolby digital 2.0 surround french
+billy bob thornton, joel coen and ethan coen commentary
+deleted scenes
+making-of featurette
+interview with director of photography roger deakins
+photo gallery
+trailers
+
+review by brett trout
+
+gnomewallpaper
+
+
+isolation for photo manipulation by fake[x]
+
+posted on  7/14/02 11:08pm  --  
+
+
+
+
+[download]
+
+--[zoom]
+--[visit deskmod]
+
+
+
+
+
+
+http://www.lockergnome.com/issues/digitalmedia/20020715.html
+your subscribed e-mail address is: [qqqqqqqqqq-lg@spamassassin.taint.org] - to unsubscribe or change your delivery address, please visit the subscription management page. for further information, please refer to the gnomecredits in the sidebar.
+
+
+
+
+
+
+lockergnome
+geekathon 2002
+
+latest windows daily
+latest digital media
+latest tech specialist
+latest penguin shell
+latest apple core
+latest web weekly
+latest bits & bytes
+latest audio show
+
+the gnomeshopper
+
+microsoft office tips
+pc productivity tips
+cool internet tips
+windows 2000 tips
+windows xp tips
+top 50 fun sites
+must-know tech terms
+top 50 useful sites
+top 75 tech sites
+top 50 penguincore
+top 50 penguintweaks
+
+
+recommend us!
+advertise with us
+high-tech job search
+chat with gnomies
+watch the webcams
+computer power user
+
+submit your opinion
+read past issues
+download x-setup
+about lockergnome
+our privacy policy
+view more options
+get chris's book
+
+general feedback
+e-mail the editor
+jake's blog
+
+our xml / rss feed
+syndicate our tips
+link to lockergnome
+
+
+
+
+
+click here to zoom
+
+gnomespecials
+manage your workgroup
+form pilot
+say the time 5.0
+boomer - stream now
+create web/cd catalog
+easy web editor
+kleptomania
+tag&rename
+pretty good solitaire
+visualize color combos
+firststop websearch
+ecobuilder
+book collector
+get listed here
+question: which group is 250,000+ strong and always looking for stuff to make their personal and professional lives run smoother?  
+
+
+
+gnomemusic
+
+
+
+goo goo goes disney
+
+the goo goo dolls have had some of their most successful songs come out of movies, so it's not a big leap to see...
+
+
+lenny paints town pink
+
+lenny kravitz and pink are gearing up to hit the road. the u.s. leg of lenny live kicks off today in virginia beach...
+
+
+up on the roof
+
+oh, the difference a preposition makes. dave matthews band will launch their new album, busted stuff, on the ed...
+
+
+bow wow wants to bark-play-for duke
+
+the rapper formerly known as lil (he's dropped the lil) bow wow says he's like to play basketball in college and...
+
+
+whitney's new song leaked
+
+whitney houston needs a hit and she's hoping "whatcha lookin' at" is it. the song was leaked over new york radio...
+
+
+fat joe in bar fight
+
+rapper fat joe - real name joseph cartagena - is charged with breaking a man's jaw during a bar fight in b.b. king's... 
+
+
+
+gnomecredits
+
+2002, lockergnome llc. issn: 1095-3965. all rights reserved. please read our terms of service. our web site is hosted by digitaldaze. domain registered at dns central.
+
+
+
+
+search past issues:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

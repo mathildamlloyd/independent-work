@@ -1,0 +1,32 @@
+at fermi (yes i'm back there; long story), we're buying 4u systems like 
+the fiscal year is ending.  we have ~20 asa ir4us1 systems (not pushing 
+them, there are some other similar units available), with 60 more on 
+order.  they're 2-1/2 tb for $10k, although we add a separate ide or 
+scsi system disk, because the 3ware raid controllers can saturate. 
+intel sds2 motherboard, 2 1.4ghz p3s, 2 gb ram, 2 3ware 7850 raid 
+controllers, 16 160gb maxtors, syskonnect gigabit enet, fermi redhat 7.3.
+
+http://www.asacomputers.com/cgi-bin/index.fcg?action=displayscreen&templateid;=25
+
+there's some interesting info at:
+
+http://mit.fnal.gov/~msn/cdf/caf/server_evaluation.html
+
+we've decided to go with xfs (which linus has just merged into the 2.5 
+tree), mostly because none of the other journaled fs's can maintain >30 
+gb/s rates with a nearly full filesystem (mostly gb files) with random 
+deletions (we use these systems for caching our 2 petabyte tape store). 
+  ext3 almost did it but dropped from from ~38mb/s to 10 with random 
+deletions, and didn't want to do direct io at all.  only concern is an 
+occasional system lock-up we haven't chased down yet.  a load avg > 100 
+is always a patio of fun.
+
+oddly, even fairly beefy systems like these will breathe hard to keep up 
+with the new stk 9940b tape drives, which crank along at a steady 
+30gb/s.  and you oldforktimers will remember "doofus" my old file server 
+system.  it would only take 2.1" of rackspace now, instead of 14 racks.
+
+cheers,
+wayne
+
+

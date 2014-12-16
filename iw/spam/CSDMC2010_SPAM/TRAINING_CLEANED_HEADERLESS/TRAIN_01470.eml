@@ -1,0 +1,30 @@
+on 2010-05-06, tixy  wrote:
+> on thu, 2010-05-06 at 08:44 +0000, liam o'toole wrote:
+>> you're probably seeing the new (version 2.30) gnome icon theme. i don't
+>> particulary like the new navigation buttons, but i suppose i'll get used
+>> to them.
+>
+> i found the new icons don't have enough contrast to be easily
+> distinguishable so i changed the icons theme. unfortunately, some apps
+> still use the new ones; i'm guessing this may be due to gnome icon
+> symlinks named gtk-*.
+>
+> once gnome 2.30 is fully in squeeze, i'm hoping to find some time to
+> discover what hacks are required to get legible icons again.
+>
+
+you could try downloading the 2.28 icons and placing them under
+~/.icons/gnome. hopefully they will override the system-wide 2.30 icons.
+
+-- 
+liam o'toole
+birmingham, united kingdom
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/slrnhu5lck.bu7.liam.p.otoole@dipsy.selfip.org
+
+

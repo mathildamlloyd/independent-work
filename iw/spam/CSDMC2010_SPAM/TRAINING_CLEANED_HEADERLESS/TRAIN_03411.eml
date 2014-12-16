@@ -1,0 +1,30 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=iso-8859-1
+
+hello there. i own a dell studio 1555 with an ati mobility radeon hd4570. i
+have a debian testing installation and currently i have to use either radeon
+or the radeonhd drivers cause the proprietary (fglrx) driver doesn't support
+the xserver currently available in testing. everything works just fine. i
+even got 3d acceleration and kwin effects. the problem is that the xorg
+process is using the cpu and consuming much memory. the memory consumed is
+about 160mb but that doesn't really bother me cause i got plenty of it :p.
+well the annoying thing is the cpu fan; xorg uses about 10% (as shown in
+kde's system monitor) and so the fan does never stop. has anyone else
+spotted any high cpu usage when using those drivers? if i disable the kde
+effects the memory consumption gets lower but the cpu is still in heavy use
+by the xorg process.
+
+
+well i got a few more questions about these open source drivers. does anyone
+know if they have power saving enabled? i think when i used the fgrlx driver
+the battery lasted much longer. i also got an issue with suspend. it worked
+with the fglrx driver but with the opensource drivers the laptop doesn't
+wake up. well it does but the display shows nothing. i have to play with
+alt+ctrl+f* before it shows something. then if i type my pass i can see that
+the s2ram process is consuming 50% of the cpu! one time when doing so the
+laptop turn off by itself. i think it overheated so that makes me think that
+something goes wrong with the acpi after waking up from suspend.
+
+sorry for the long post. thanks in advance for any help.
+
+j

@@ -1,0 +1,18 @@
+well, not really, but that is what the message says.  actually, it says that the session lasted less than ten seconds, but who's counting.
+
+this started happening last monday night after doing a full-upgrade on my laptop, running squeeze.
+
+in reality:  if i click on ok (the only button available) then the session does indeed end and i am dropped back to a login window.  if i click the 'x' button, the same thing happens.  if i click the 'minimize' button, however, the message just goes away (it does not appear in the task bar) and i can continue to work as if nothing had happened.
+
+i thought that maybe i just had something messed up in some configuration file in my home directory, so i tried creating a new user to see if it still happened there.  it did.  that eliminates a personal config file from being the problem, but leaves me no closer to an answer.  is anyone else using lxde on squeeze having this problem?
+
+ marc shapiro
+mshapiro_42@yahoo.com
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/497147.39102.qm@web55506.mail.re4.yahoo.com
+
+

@@ -1,0 +1,60 @@
+on tue, 20 apr 2010 21:00:26 +0200, nick douma wrote:
+
+> i recently built a new computer with the following specs:
+> 
+> * intel core i7 930
+> * gigabyte x58a-ud7
+> * ocz platinum xtc ocz3p1333lv6gk (6gb ddr3) * gigabyte gv-n275ud-896i
+> (nvidia geforce gt 275) * 2x 1tb saamsung spinpoint f1 hd102uj * 2x
+> 500gb seagate barracuda 7200.10 st3500630as
+>   - both in raid0 using intel matrix raid
+
+
+i hope you also get a 1000 watts power supply to feed that equipment >:-)
+ 
+
+> here's the problem: i initially installed windows 7 64bit on this pc.
+> whenever i tried to watch a flash movie using minefield and adobe flash
+> 10.1, i would always get sudden reboots. it wasn't a bsod, because i
+> received no such screen and no memory dumps were made. suspecting that
+> it might be because of minefield, i installed firefox 3.6. i received
+> the same results. even using ie8 and opera, i would reliably get sudden
+> reboots when watching flash movies. fed up with this, i installed debian
+> lenny as a dual boot.
+
+(...)
+
+> can anyone advise me what to do from here on? i tried googling the
+> initials firefox + flash problems, but nothing conclusive came up. i'm
+> posting a message on this list, because the problem is not limited to
+> just windows, and i believe someone can give me some new insights on
+> this problem.
+
+
+so, as you already discarded flashplayer as unique source of your 
+reboots, i will take a look into:
+
+1/ system overheating (reboots tend to happen due to high temperatures, 
+watch the bios cpu temps and control the rpm of the fans).
+
+2/ ram memory modules and voltages. check the ram dimms are certified for 
+you motherboard and also, look into the bios voltages are the correct 
+ones for you type of ram.
+
+3/ hard disks health. you can test this with "smartcl".
+
+being a brand-new computer i would suspect for bad hardware or assembly 
+problems :-/
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.20.19.14.21@csmining.org
+
+

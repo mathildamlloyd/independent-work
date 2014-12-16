@@ -1,0 +1,57 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain;
+  charset="utf-8"
+content-transfer-encoding: quoted-printable
+
+am donnerstag 06 mai 2010 schrieb boyd stephen smith jr.:
+> on wednesday 05 may 2010 17:58:09 modestas vainius wrote:
+> > hello,
+> >=20
+> > on ketvirtadienis 06 gegu=c5=be=c4=97 2010 01:54:06 boyd stephen smith =
+jr.=20
+wrote:
+> > > i'm still using kmail/kontact/etc. (basically kdepim) from 4.3
+> > > since i have no desire to run yet another rdbms on my system.  (i
+> > > already run postgresql, and have a number of apps that use sqlite
+> > > installed.)
+> >=20
+> > ...
+> >=20
+> > > okay, ending this email here, because thinking about a stable
+> > > debian that includes kdepim 4.4 angers and saddens me.
+> >=20
+> > how many users have postgres installed on their desktop? do you
+> > complain
+> >=20
+> >  just because `ps aux | grep mysqld` returns something and you can't
+> >  stand it or you have any real issues with it?
+>=20
+> i have real issues with having to spare the disk space and ram on my
+> laptop for it.  postgresql is for work; i don't get much choice about
+> running that.
+>=20
+> i also have a history with mysql and i *do* *not* *trust* it with my
+> data. ups or not.  my email is fairly important for me -- i am
+> probably in kmail only slightly less than i am in a source code
+> editor.  when i'm testing or deploying updates, i spend *more* time in
+> kmail.
+
+kmail doesn't use akonadi at all in kde 4.4. it might use akonadi in kde=20
+4.5. the only thing using akonadi by default in kde 4.4 is the new=20
+kaddressbook. afaik.
+
+so kde 4.5 might even be more problematic in the beginning. especially=20
+when i remember the roughnesses of kde 4.3.0 and kde 4.4.0 i do not=20
+suggest to ship a .0 or even .1 release of kde. even kde 4.4.2 had quite=20
+some bugs that kde 4.4.3 fixed.
+
+so shipping kde 4.4.3 or 4.4.4 oder 4.4.5 imho could well be a better=20
+option that to ship kde 4.5.0 with debian squeeze.
+
+sadly i have not seen any kde 4.x.0 release yet thats really suitable for=20
+debian stable.
+
+ciao,
+=2d-=20
+martin 'helios' steigerwald - http://www.lichtvoll.de
+gpg: 03b0 0d6c 0040 0710 4afa  b82f 991b eaac a599 84c7

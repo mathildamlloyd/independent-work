@@ -1,0 +1,47 @@
+None> On 2010-04-15 04:56, John A. Sullivan III wrote:
+> > Hello, all.  We've installed acroread 8.1.7-0.1 from debian-multimedia.
+> > It is not seeing any of the printers on our cups print server.  It just
+> > shows the custom lpr printer.  How do we get it to see our printers like
+> > all the other applications in our KDE setup do? We are running Lenny +
+> > backports.  Thanks - John
+> > 
+> 
+> Semi-OT from your question, but v8.1.7 is *really* old.  Make that 
+> really *REALLY* old.  If you're running Stable and that's what's in 
+> the Stable repos, then remove it an go directly to adobe to get the 
+> latest version.
+<snip>
+I thought about doing that but it looks like the only deb is a 32 bit
+one and we are running 64 bit :(
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/1271339566.4177.19.camel@Family.pacifera.com
+
+
+re: acroread not seeing printerson thu, 2010-04-15 at 07:25 -0500, ron johnson wrote:
+> on 2010-04-15 04:56, john a. sullivan iii wrote:
+> > hello, all.  we've installed acroread 8.1.7-0.1 from debian-multimedia.
+> > it is not seeing any of the printers on our cups print server.  it just
+> > shows the custom lpr printer.  how do we get it to see our printers like
+> > all the other applications in our kde setup do? we are running lenny +
+> > backports.  thanks - john
+> > 
+> 
+> semi-ot from your question, but v8.1.7 is *really* old.  make that 
+> really *really* old.  if you're running stable and that's what's in 
+> the stable repos, then remove it an go directly to adobe to get the 
+> latest version.
+
+i thought about doing that but it looks like the only deb is a 32 bit
+one and we are running 64 bit :(
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/1271339566.4177.19.camel@family.pacifera.com
+
+

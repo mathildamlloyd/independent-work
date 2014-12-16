@@ -1,0 +1,59 @@
+None>
+> Answering that requires fairly complete knowledge of the business
+> model. But, in all probability: no, it isn't usually worth it. So, it
+> comes down to how difficult you want to make the cracker's job.
+>
+> > Look at the DVDs.
+>
+> IIRC, CSS was cracked by reverse-engineering a software player; and
+> one where the developers forgot to encrypt the decryption key at that.
+
+This make me wonder about the relative protection of smart cards.  They have 
+an internal procession unit around 4MHz.  Can we consider them as trusted 
+hardware ?  The ability to ship smart cards periodicaly uppon cashing of a 
+monthly subscription fee would not raise too much the cost of "renting" the 
+system.  Smart card do their own self encryption.  Can they be used to 
+decrypt data needed by the system ?  The input of the system could me mangled 
+and the would keep a reference of how long it was in service.
+
+This sounds really feasible but I may be totaly wrong.  I may also be wrong 
+about the safety of a smart card.  
+
+What do you think ?
+
+-- 
+Yannick Gingras
+Coder for OBB : Oceangoing Bared Bonanza
+http://OpenBeatBox.org
+
+
+re: secure sofware key> > is the use of "trusted hardware" really worth it ?
+>
+> answering that requires fairly complete knowledge of the business
+> model. but, in all probability: no, it isn't usually worth it. so, it
+> comes down to how difficult you want to make the cracker's job.
+>
+> > look at the dvds.
+>
+> iirc, css was cracked by reverse-engineering a software player; and
+> one where the developers forgot to encrypt the decryption key at that.
+
+this make me wonder about the relative protection of smart cards.  they have 
+an internal procession unit around 4mhz.  can we consider them as trusted 
+hardware ?  the ability to ship smart cards periodicaly uppon cashing of a 
+monthly subscription fee would not raise too much the cost of "renting" the 
+system.  smart card do their own self encryption.  can they be used to 
+decrypt data needed by the system ?  the input of the system could me mangled 
+and the would keep a reference of how long it was in service.
+
+this sounds really feasible but i may be totaly wrong.  i may also be wrong 
+about the safety of a smart card.  
+
+what do you think ?
+
+-- 
+yannick gingras
+coder for obb : oceangoing bared bonanza
+http://openbeatbox.org
+
+

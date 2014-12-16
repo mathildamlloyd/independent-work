@@ -1,0 +1,69 @@
+None> Does anyone have any practical experience with high-performance socket 
+> code in C++ under Linux, and is there any speed difference between unix 
+> domain sockets, loopback sockets, and a real ethernet interface if all 
+> of the packets are going from one process on the machine to another 
+> process on the same machine?
+
+In short yes. The more logic involved the longer
+the CPU is executing it. I.E. there is more logic
+executed (including NIC logic) when going down
+to the metal than when using lo. So how much
+logic is involved for each type of IPC (why
+are you limiting yourself to sockets? there are
+mutexes, shared mem, files, messages...). Anyway the
+best IPC method to choose is dictated by the data
+you want to communicate between the processes,
+as the various IPC mechanisms are tuned for
+various data types.
+
+IBM are running a series comparing doze and Linux IPC mechanisms.
+The socket (which references the others at the bottom) is here:
+http://www-106.ibm.com/developerworks/linux/library/l-rt6/?t=gr,Redhat=Sockets
+
+The following in google gave useful info also:
+"linux IPC mechanisms compared"
+
+Pádraig.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+re: [ilug] socket latency queryvincent cunniffe wrote:
+> does anyone have any practical experience with high-performance socket 
+> code in c++ under linux, and is there any speed difference between unix 
+> domain sockets, loopback sockets, and a real ethernet interface if all 
+> of the packets are going from one process on the machine to another 
+> process on the same machine?
+
+in short yes. the more logic involved the longer
+the cpu is executing it. i.e. there is more logic
+executed (including nic logic) when going down
+to the metal than when using lo. so how much
+logic is involved for each type of ipc (why
+are you limiting yourself to sockets? there are
+mutexes, shared mem, files, messages...). anyway the
+best ipc method to choose is dictated by the data
+you want to communicate between the processes,
+as the various ipc mechanisms are tuned for
+various data types.
+
+ibm are running a series comparing doze and linux ipc mechanisms.
+the socket (which references the others at the bottom) is here:
+http://www-106.ibm.com/developerworks/linux/library/l-rt6/?t=gr,redhat=sockets
+
+the following in google gave useful info also:
+"linux ipc mechanisms compared"
+
+pdraig.
+
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

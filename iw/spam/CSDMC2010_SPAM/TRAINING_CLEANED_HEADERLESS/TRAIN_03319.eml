@@ -1,0 +1,36 @@
+hi xfs developers,
+when studying xfs code(2.4.19), i found that the inode will be locked by 
+xfs_ilock_share flags before we get acl, which may cause deadlock.
+because when getting acl, it will allocate memory in km_sleep, if the 
+memory is tight, the process will call xfs_strategy, and may 
+lock(xfs_ilock_share)the same inode again. if between these two locks, 
+another process try to lock the inode by xfs_ilock_excl, these two 
+processes  will be deadlock. as follows,
+
+    a process get ea                         b process want lock ipa
+
+1) xfs_ilock(ipa, xfs_ilock_share)             .....................
+            |                                         |
+            |                                         |
+         get acl                        2) xfs_ilock(ipa, xfs_ilock_excl)
+            |                                         |
+            |                                         |
+        memory tight
+            |
+            |
+        xfs_stragegy
+            |
+            |
+3)xfs_ilock(ipa, xfs_ilock_share)        ............................
+
+  these two processes will be dead lock.
+
+so i believe that acl allocation gfp_maskshould be changed to km_nofs.
+right?
+
+best regards
+                                                 wdd
+
+
+
+

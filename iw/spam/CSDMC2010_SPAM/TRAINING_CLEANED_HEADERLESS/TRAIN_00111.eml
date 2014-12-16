@@ -1,0 +1,29 @@
+> on thu, apr 15, 2010 at 02:29:58pm -0600, jason kolpin wrote:
+> > as a user of this software in production environments and a long
+> > time debian user at various levels i must admit this clamav issue is
+> > simply a pain.
+
+on 16.04.10 03:04, gaijin wrote:
+> i would think clamav would be an integral part of debian 
+> security, and any changes to it would move in reverse, from the bottom 
+> up (old & stable into unstable & volatile), and not the other way 
+> around.  it just seems the logical progression for software like clamav 
+> and rkhunter, which is still saying the hdparm lines in my init scripts 
+> are a possible rootkit.   perhaps another"security.volatile" file group that concentrates on the stable version first, then trikles to old and unstable?
+
+debian-security has different goal. debian-volatile is here for this kind of
+issue. i hope new clamav will appear in next lenny update.
+-- 
+matus uhlar - fantomas, uhlar@fantomas.sk ; http://www.fantomas.sk/
+warning: i wish not to receive e-mail advertising to this address.
+varovanie: na tuto adresu chcem nedostavat akukolvek reklamnu postu.
+they that can give up essential liberty to obtain a little temporary
+safety deserve neither liberty nor safety. -- benjamin franklin, 1759
+
+
+-- 
+to unsubscribe, email to debian-volatile-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100419180150.ga2732@fantomas.sk
+
+

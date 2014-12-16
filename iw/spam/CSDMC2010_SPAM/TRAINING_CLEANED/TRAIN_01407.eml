@@ -1,0 +1,1161 @@
+Noneing=3F
+
+I think you need to checkout iidc cameras=22
+
+http=3A//damien=2Edouxchamps=2Enet/ieee1394/cameras/
+
+(And you could help me a lot if end up working with them for capture=2E=2E=
+=2E)
+
+---Larry =
+
+
+----- Original Message -----
+From=3A quicktime-api-request=40lists=2Eapple=2Ecom
+Date=3A Friday=2C April 23=2C 2010 3=3A06 pm
+Subject=3A QuickTime-API Digest=2C Vol 7=2C Issue 112
+To=3A quicktime-api=40lists=2Eapple=2Ecom
+
+=3E Send QuickTime-API mailing list submissions to
+=3E 	quicktime-api=40lists=2Eapple=2Ecom
+=3E =
+
+=3E To subscribe or unsubscribe via the World Wide Web=2C visit
+=3E 	http=3A//lists=2Eapple=2Ecom/mailman/listinfo/quicktime-api
+=3E or=2C via email=2C send a message with subject or body =27help=27 to=
+
+=3E 	quicktime-api-request=40lists=2Eapple=2Ecom
+=3E =
+
+=3E You can reach the person managing the list at
+=3E 	quicktime-api-owner=40lists=2Eapple=2Ecom
+=3E =
+
+=3E When replying=2C please edit your Subject line so it is more specifi=
+c
+=3E than =22Re=3A Contents of QuickTime-API digest=2E=2E=2E=22
+=3E =
+
+=3E =
+
+=3E Today=27s Topics=3A
+=3E =
+
+=3E    1=2E Re=3A Video Decode Acceleration API - VDADecoderCreate retur=
+ns
+=3E       ParamErr (Ryan Walklin)
+=3E    2=2E Re=3A Any luck with HD web cams=3F (Ken Aspeslagh)
+=3E    3=2E RE=3A Any luck with HD web cams=3F (Mark Jones)
+=3E    4=2E Re=3A Any luck with HD web cams=3F (Beth S)
+=3E    5=2E Re=3A Any luck with HD web cams=3F (rob=40haptek=2Ecom)
+=3E =
+
+=3E =
+
+=3E --------------------------------------------------------------------=
+--
+=3E =
+
+=3E Message=3A 1
+=3E Date=3A Fri=2C 23 Apr 2010 23=3A11=3A42 +1200
+=3E From=3A Ryan Walklin =3Cryan=40testtoast=2Ecom=3E
+=3E Subject=3A Re=3A Video Decode Acceleration API - VDADecoderCreate re=
+turns
+=3E 	ParamErr
+=3E To=3A Jean-Daniel Dupas =3Cdevlists=40shadowlab=2Eorg=3E
+=3E Cc=3A quicktime-api=40lists=2Eapple=2Ecom
+=3E Message-ID=3A =3C64B200B9-1E2F-4F4E-B516-1B9AAE292CB8=40testtoast=2E=
+com=3E
+=3E Content-Type=3A text/plain=3B charset=3D=22iso-8859-1=22
+=3E =
+
+=3E =
+
+=3E On 23/04/2010=2C at 11=3A04 PM=2C Jean-Daniel Dupas wrote=3A
+=3E =
+
+=3E =3E =
+
+=3E =3E Le 23 avr=2E 2010 =EF=BF=BD 13=3A01=2C Ryan Walklin a =EF=BF=BDc=
+rit =3A
+=3E =3E =
+
+=3E =3E=3E =
+
+=3E =3E=3E On 23/04/2010=2C at 10=3A45 PM=2C Jean-Daniel Dupas wrote=3A
+=3E =3E=3E =
+
+=3E =3E=3E=3E =
+
+=3E =3E=3E=3E Le 23 avr=2E 2010 =EF=BF=BD 12=3A39=2C Ryan Walklin a =EF=BF=
+=BDcrit =3A
+=3E =3E=3E=3E=3E =
+
+=3E =3E=3E=3E =
+
+=3E =3E=3E=3E What is hardwareDecoder=3F
+=3E =3E=3E=3E  Shouldn=27t it be =26hardwareDecoder =3F
+=3E =3E=3E =
+
+=3E =3E=3E Having said that=2C I=27ve just tried passing in a **VDADecod=
+er =
+
+=3E reference which works=2E Odd=2E Thanks for the tip! Presumably the h=
+eader =
+
+=3E / API doc has a bug=2E
+=3E =3E =
+
+=3E =3E And if you try without the =27=26=27=2C but you initialize your =
+pointer to =
+
+=3E NULL before=2C does it works =3F =
+
+=3E =3E =
+
+=3E No=2C it doesn=27t seem to=2E I was initialising the pointer to NULL=
+ =
+
+=3E initially=2C downside of copy and pasted code =3A)=2E
+=3E =
+
+=3E -Ryan
+=3E =
+
+=3E =3E -- Jean-Daniel
+=3E =3E =
+
+=3E =3E =
+
+=3E =3E =
+
+=3E =3E =
+
+=3E =
+
+=3E -------------- next part --------------
+=3E An HTML attachment was scrubbed=2E=2E=2E
+=3E URL=3A http=3A//lists=2Eapple=2Ecom/mailman/private/quicktime-api/at=
+tachments/20100423/f560ca57/attachment=2Ehtml
+=3E =
+
+=3E ------------------------------
+=3E =
+
+=3E Message=3A 2
+=3E Date=3A Fri=2C 23 Apr 2010 11=3A12=3A41 -0400
+=3E From=3A Ken Aspeslagh =3Cken=40ecamm=2Ecom=3E
+=3E Subject=3A Re=3A Any luck with HD web cams=3F
+=3E To=3A quicktime-api=40lists=2Eapple=2Ecom
+=3E Message-ID=3A =3C420D8DC8-3323-4AF3-8792-8ECBCF71B85B=40ecamm=2Ecom=3E=
+
+=3E Content-Type=3A text/plain=3B charset=3Dus-ascii
+=3E =
+
+=3E Hi Beth=3A
+=3E =
+
+=3E If you can get your hands on a Second Generation MacBook Pro (LED =
+
+=3E Backlight)=2C one of the Aluminum iMacs=2C or one of the Apple Displ=
+ays =
+
+=3E with a built-in cam=2C these all have a 1280 x 1024 capable built-in=
+ =
+
+=3E iSight=2E Not exactly HD but larger than 640x480=2E
+=3E =
+
+=3E Thanks=2C
+=3E Ken
+=3E =
+
+=3E -------------------------------------
+=3E =22The major difference between a thing that might go wrong and a th=
+ing =
+
+=3E that cannot possibly go wrong is that when a thing that cannot =
+
+=3E possibly go wrong goes wrong it usually turns out to be impossible t=
+o =
+
+=3E get at or repair=2E=22 - Douglas Adams
+=3E =
+
+=3E =
+
+=3E On Apr 23=2C 2010=2C at 7=3A05 AM=2C quicktime-api-request=40lists=2E=
+apple=2Ecom wrote=3A
+=3E =
+
+=3E =3E I need to choose a web cam with which to do some Quicktime exper=
+imental
+=3E =3E work=2E  It would need to give me high quality frames larger tha=
+n =
+
+=3E 640x480=2E  I
+=3E =3E tried the Logitech Quickcam Vision Pro last year but wasn=27t pa=
+rticularly
+=3E =3E pleased with the quality=2E  Maybe I was doing something wrong=2E=
+
+=3E =3E =
+
+=3E =3E What web cams are you developers having good Quicktime luck with=
+=3F
+=3E =3E =
+
+=3E =3E Thanks=2C
+=3E =3E -Beth=2E
+=3E =
+
+=3E =
+
+=3E =
+
+=3E ------------------------------
+=3E =
+
+=3E Message=3A 3
+=3E Date=3A Fri=2C 23 Apr 2010 11=3A31=3A13 -0400
+=3E From=3A Mark Jones =3CMark=2EJones=40mathworks=2Ecom=3E
+=3E Subject=3A RE=3A Any luck with HD web cams=3F
+=3E To=3A Ken Aspeslagh =3Cken=40ecamm=2Ecom=3E=2C	=22quicktime-api=40li=
+sts=2Eapple=2Ecom=22
+=3E 	=3Cquicktime-api=40lists=2Eapple=2Ecom=3E
+=3E Message-ID=3A
+=3E 	=3C5E8D356EE3CC7140AF4412F02C467DBDA2F5BDEDE1=40EXCHANGE-AH=2Ead=2E=
+mathworks=2Ecom=3E
+=3E 	=
+
+=3E Content-Type=3A text/plain=3B charset=3D=22us-ascii=22
+=3E =
+
+=3E =3E -----Original Message-----
+=3E =3E From=3A quicktime-api-bounces+mark=2Ejones=3Dmathworks=2Ecom=40l=
+ists=2Eapple=2Ecom
+=3E =3E =
+
+=3E =5Bmailto=3Aquicktime-api-bounces+mark=2Ejones=3Dmathworks=2Ecom=40l=
+ists=2Eapple=2Ecom=5D =
+
+=3E On
+=3E =3E Behalf Of Ken Aspeslagh
+=3E =3E Sent=3A Friday=2C April 23=2C 2010 11=3A13 AM
+=3E =3E To=3A quicktime-api=40lists=2Eapple=2Ecom
+=3E =3E Subject=3A Re=3A Any luck with HD web cams=3F
+=3E =3E =
+
+=3E =3E Hi Beth=3A
+=3E =3E =
+
+=3E =3E If you can get your hands on a Second Generation MacBook Pro (LE=
+D Backlight)=2C
+=3E =3E one of the Aluminum iMacs=2C or one of the Apple Displays with a=
+ =
+
+=3E built-in cam=2C
+=3E =3E these all have a 1280 x 1024 capable built-in iSight=2E Not exac=
+tly HD =
+
+=3E but
+=3E =3E larger than 640x480=2E
+=3E =3E =
+
+=3E =3E Thanks=2C
+=3E =3E Ken
+=3E =3E =
+
+=3E =3E -------------------------------------
+=3E =3E =22The major difference between a thing that might go wrong and =
+a =
+
+=3E thing that
+=3E =3E cannot possibly go wrong is that when a thing that cannot possib=
+ly =
+
+=3E go wrong
+=3E =3E goes wrong it usually turns out to be impossible to get at or =
+
+=3E repair=2E=22 -
+=3E =3E Douglas Adams
+=3E =3E =
+
+=3E =3E =
+
+=3E =3E On Apr 23=2C 2010=2C at 7=3A05 AM=2C quicktime-api-request=40lis=
+ts=2Eapple=2Ecom wrote=3A
+=3E =3E =
+
+=3E =3E =3E I need to choose a web cam with which to do some Quicktime e=
+xperimental
+=3E =3E =3E work=2E  It would need to give me high quality frames larger=
+ than =
+
+=3E 640x480=2E  I
+=3E =3E =3E tried the Logitech Quickcam Vision Pro last year but wasn=27=
+t particularly
+=3E =3E =3E pleased with the quality=2E  Maybe I was doing something wro=
+ng=2E
+=3E =
+
+=3E Really=3F  I think that the Logitech Quickcam Vision Pro and Logitec=
+h =
+
+=3E Quickcam Pro 9000 are two of the better web cams that I have used=2E=
+  =
+
+=3E =
+
+=3E =3E =3E
+=3E =3E =3E What web cams are you developers having good Quicktime luck =
+with=3F
+=3E =3E =3E
+=3E =3E =3E Thanks=2C
+=3E =3E =3E -Beth=2E
+=3E =3E =
+
+=3E =3E  =5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=
+=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=
+=5F=5F
+=3E =3E Do not post admin requests to the list=2E They will be ignored=2E=
+
+=3E =3E QuickTime-API mailing list      (QuickTime-API=40lists=2Eapple=2E=
+com)
+=3E =3E Help/Unsubscribe/Update your Subscription=3A
+=3E =3E http=3A//lists=2Eapple=2Ecom/mailman/options/quicktime-
+=3E =3E api/mark=2Ejones=2540mathworks=2Ecom
+=3E =3E =
+
+=3E =3E This email sent to mark=2Ejones=40mathworks=2Ecom
+=3E =
+
+=3E =
+
+=3E ------------------------------
+=3E =
+
+=3E Message=3A 4
+=3E Date=3A Fri=2C 23 Apr 2010 09=3A11=3A30 -0700
+=3E From=3A Beth S =3Ciphonedev=40hoagy=2Eorg=3E
+=3E Subject=3A Re=3A Any luck with HD web cams=3F
+=3E To=3A Ken Aspeslagh =3Cken=40ecamm=2Ecom=3E
+=3E Cc=3A quicktime-api=40lists=2Eapple=2Ecom
+=3E Message-ID=3A
+=3E 	=3Cy2y4df1667d1004230911t5e4f60d9n69c7029058defca7=40mail=2Egmail=2E=
+com=3E
+=3E Content-Type=3A text/plain=3B charset=3D=22iso-8859-1=22
+=3E =
+
+=3E Well I actually need two of them hooked up to the same system=2E  I =
+want =
+
+=3E to do
+=3E some XYZ tracking of objects to get rid of our Wiimote tracking=2E
+=3E =
+
+=3E http=3A//rationalcraft=2Ecom/Winscape=2Ehtml
+=3E =
+
+=3E Are there really no USB webcams out there that can deliver decent vi=
+deo
+=3E greater than 640x480 in Quicktime=3F
+=3E =
+
+=3E -Beth=2E
+=3E =
+
+=3E On Fri=2C Apr 23=2C 2010 at 8=3A12 AM=2C Ken Aspeslagh =3Cken=40ecam=
+m=2Ecom=3E wrote=3A
+=3E =
+
+=3E =3E Hi Beth=3A
+=3E =3E
+=3E =3E If you can get your hands on a Second Generation MacBook Pro (LE=
+D
+=3E =3E Backlight)=2C one of the Aluminum iMacs=2C or one of the Apple D=
+isplays =
+
+=3E with a
+=3E =3E built-in cam=2C these all have a 1280 x 1024 capable built-in iS=
+ight=2E =
+
+=3E Not
+=3E =3E exactly HD but larger than 640x480=2E
+=3E =3E
+=3E =3E Thanks=2C
+=3E =3E Ken
+=3E =3E
+=3E =3E -------------------------------------
+=3E =3E =22The major difference between a thing that might go wrong and =
+a =
+
+=3E thing that
+=3E =3E cannot possibly go wrong is that when a thing that cannot possib=
+ly =
+
+=3E go wrong
+=3E =3E goes wrong it usually turns out to be impossible to get at or =
+
+=3E repair=2E=22 -
+=3E =3E Douglas Adams
+=3E =3E
+=3E =3E
+=3E =3E On Apr 23=2C 2010=2C at 7=3A05 AM=2C quicktime-api-request=40lis=
+ts=2Eapple=2Ecom wrote=3A
+=3E =3E
+=3E =3E =3E I need to choose a web cam with which to do some Quicktime e=
+xperimental
+=3E =3E =3E work=2E  It would need to give me high quality frames larger=
+ than 640x480=2E
+=3E =3E  I
+=3E =3E =3E tried the Logitech Quickcam Vision Pro last year but wasn=27=
+t particularly
+=3E =3E =3E pleased with the quality=2E  Maybe I was doing something wro=
+ng=2E
+=3E =3E =3E
+=3E =3E =3E What web cams are you developers having good Quicktime luck =
+with=3F
+=3E =3E =3E
+=3E =3E =3E Thanks=2C
+=3E =3E =3E -Beth=2E
+=3E =3E
+=3E =3E
+=3E -------------- next part --------------
+=3E An HTML attachment was scrubbed=2E=2E=2E
+=3E URL=3A http=3A//lists=2Eapple=2Ecom/mailman/private/quicktime-api/at=
+tachments/20100423/c2068e09/attachment=2Ehtml
+=3E =
+
+=3E ------------------------------
+=3E =
+
+=3E Message=3A 5
+=3E Date=3A Fri=2C 23 Apr 2010 12=3A50=3A14 -0600
+=3E From=3A rob=40haptek=2Ecom
+=3E Subject=3A Re=3A Any luck with HD web cams=3F
+=3E To=3A =22Beth S=22 =3Ciphonedev=40hoagy=2Eorg=3E
+=3E Cc=3A quicktime-api=40lists=2Eapple=2Ecom
+=3E Message-ID=3A =3C289eca33aba4d27c8684c13e4a225b81=2Esquirrel=40www=2E=
+haptek=2Ecom=3E
+=3E Content-Type=3A text/plain=3Bcharset=3Diso-8859-1
+=3E =
+
+=3E Interesting!
+=3E Though I agree with Mark that the Logitech is a pretty darn good cam=
+era=2E
+=3E =
+
+=3E For tracking people though=2C do you really need HD resolution=3F
+=3E The Logitech for example slows way down at above 640 x 480 resolutio=
+n=2C
+=3E to something below 10 hz as I recall=2E
+=3E =
+
+=3E You might be better off using a couple of PS 2 Eye cameras=2C which
+=3E can run at 120 hz at 320 x 240=2C and treating people as low-resolut=
+ion=2C
+=3E but low-latency =22blobs=22=2E
+=3E =
+
+=3E rob
+=3E =
+
+=3E =3E Well I actually need two of them hooked up to the same system=2E=
+  I =
+
+=3E want to
+=3E =3E do
+=3E =3E some XYZ tracking of objects to get rid of our Wiimote tracking=2E=
+
+=3E =3E
+=3E =3E http=3A//rationalcraft=2Ecom/Winscape=2Ehtml
+=3E =3E
+=3E =3E Are there really no USB webcams out there that can deliver decen=
+t video
+=3E =3E greater than 640x480 in Quicktime=3F
+=3E =3E
+=3E =3E -Beth=2E
+=3E =3E
+=3E =3E On Fri=2C Apr 23=2C 2010 at 8=3A12 AM=2C Ken Aspeslagh =3Cken=40=
+ecamm=2Ecom=3E wrote=3A
+=3E =3E
+=3E =3E=3E Hi Beth=3A
+=3E =3E=3E
+=3E =3E=3E If you can get your hands on a Second Generation MacBook Pro =
+(LED
+=3E =3E=3E Backlight)=2C one of the Aluminum iMacs=2C or one of the Appl=
+e Displays =
+
+=3E with
+=3E =3E=3E a
+=3E =3E=3E built-in cam=2C these all have a 1280 x 1024 capable built-in=
+ iSight=2E =
+
+=3E Not
+=3E =3E=3E exactly HD but larger than 640x480=2E
+=3E =3E=3E
+=3E =3E=3E Thanks=2C
+=3E =3E=3E Ken
+=3E =3E=3E
+=3E =3E=3E -------------------------------------
+=3E =3E=3E =22The major difference between a thing that might go wrong a=
+nd a thing
+=3E =3E=3E that
+=3E =3E=3E cannot possibly go wrong is that when a thing that cannot pos=
+sibly =
+
+=3E go
+=3E =3E=3E wrong
+=3E =3E=3E goes wrong it usually turns out to be impossible to get at or=
+ =
+
+=3E repair=2E=22 -
+=3E =3E=3E Douglas Adams
+=3E =3E=3E
+=3E =3E=3E
+=3E =3E=3E On Apr 23=2C 2010=2C at 7=3A05 AM=2C quicktime-api-request=40=
+lists=2Eapple=2Ecom
+=3E =3E=3E wrote=3A
+=3E =3E=3E
+=3E =3E=3E =3E I need to choose a web cam with which to do some Quicktim=
+e
+=3E =3E=3E experimental
+=3E =3E=3E =3E work=2E  It would need to give me high quality frames lar=
+ger than
+=3E =3E=3E 640x480=2E
+=3E =3E=3E  I
+=3E =3E=3E =3E tried the Logitech Quickcam Vision Pro last year but wasn=
+=27t
+=3E =3E=3E particularly
+=3E =3E=3E =3E pleased with the quality=2E  Maybe I was doing something =
+wrong=2E
+=3E =3E=3E =3E
+=3E =3E=3E =3E What web cams are you developers having good Quicktime lu=
+ck with=3F
+=3E =3E=3E =3E
+=3E =3E=3E =3E Thanks=2C
+=3E =3E=3E =3E -Beth=2E
+=3E =3E=3E
+=3E =3E=3E
+=3E =3E  =5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=
+=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=
+=5F=5F
+=3E =3E Do not post admin requests to the list=2E They will be ignored=2E=
+
+=3E =3E QuickTime-API mailing list      (QuickTime-API=40lists=2Eapple=2E=
+com)
+=3E =3E Help/Unsubscribe/Update your Subscription=3A
+=3E =3E http=3A//lists=2Eapple=2Ecom/mailman/options/quicktime-api/rob=25=
+40haptek=2Ecom
+=3E =3E
+=3E =3E This email sent to rob=40haptek=2Ecom
+=3E =
+
+=3E =
+
+=3E =
+
+=3E =
+
+=3E ------------------------------
+=3E =
+
+=3E =5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=
+=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=5F=
+
+=3E QuickTime-API mailing list
+=3E QuickTime-API=40lists=2Eapple=2Ecom
+=3E http=3A//lists=2Eapple=2Ecom/mailman/listinfo/quicktime-api
+=3E =
+
+=3E End of QuickTime-API Digest=2C Vol 7=2C Issue 112
+=3E *********************************************
+ _______________________________________________
+Do not post admin requests to the list. They will be ignored.
+QuickTime-API mailing list      (QuickTime-API@lists.apple.com)
+Help/Unsubscribe/Update your Subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+This email sent to mlsubscriber.tech@csmining.org
+
+re: quicktime-api digest, vol 7, issue 112what do you mean webcam=3f do you mean something with built in webstream=
+ing=3f
+
+i think you need to checkout iidc cameras=22
+
+http=3a//damien=2edouxchamps=2enet/ieee1394/cameras/
+
+(and you could help me a lot if end up working with them for capture=2e=2e=
+=2e)
+
+---larry =
+
+
+----- original message -----
+from=3a quicktime-api-request=40lists=2eapple=2ecom
+date=3a friday=2c april 23=2c 2010 3=3a06 pm
+subject=3a quicktime-api digest=2c vol 7=2c issue 112
+to=3a quicktime-api=40lists=2eapple=2ecom
+
+=3e send quicktime-api mailing list submissions to
+=3e quicktime-api=40lists=2eapple=2ecom
+=3e =
+
+=3e to subscribe or unsubscribe via the world wide web=2c visit
+=3e http=3a//lists=2eapple=2ecom/mailman/listinfo/quicktime-api
+=3e or=2c via email=2c send a message with subject or body =27help=27 to=
+
+=3e quicktime-api-request=40lists=2eapple=2ecom
+=3e =
+
+=3e you can reach the person managing the list at
+=3e quicktime-api-owner=40lists=2eapple=2ecom
+=3e =
+
+=3e when replying=2c please edit your subject line so it is more specifi=
+c
+=3e than =22re=3a contents of quicktime-api digest=2e=2e=2e=22
+=3e =
+
+=3e =
+
+=3e today=27s topics=3a
+=3e =
+
+=3e    1=2e re=3a video decode acceleration api - vdadecodercreate retur=
+ns
+=3e       paramerr (ryan walklin)
+=3e    2=2e re=3a any luck with hd web cams=3f (ken aspeslagh)
+=3e    3=2e re=3a any luck with hd web cams=3f (mark jones)
+=3e    4=2e re=3a any luck with hd web cams=3f (beth s)
+=3e    5=2e re=3a any luck with hd web cams=3f (rob=40haptek=2ecom)
+=3e =
+
+=3e =
+
+=3e --------------------------------------------------------------------=
+--
+=3e =
+
+=3e message=3a 1
+=3e date=3a fri=2c 23 apr 2010 23=3a11=3a42 +1200
+=3e from=3a ryan walklin =3cryan=40testtoast=2ecom=3e
+=3e subject=3a re=3a video decode acceleration api - vdadecodercreate re=
+turns
+=3e paramerr
+=3e to=3a jean-daniel dupas =3cdevlists=40shadowlab=2eorg=3e
+=3e cc=3a quicktime-api=40lists=2eapple=2ecom
+=3e message-id=3a =3c64b200b9-1e2f-4f4e-b516-1b9aae292cb8=40testtoast=2e=
+com=3e
+=3e content-type=3a text/plain=3b charset=3d=22iso-8859-1=22
+=3e =
+
+=3e =
+
+=3e on 23/04/2010=2c at 11=3a04 pm=2c jean-daniel dupas wrote=3a
+=3e =
+
+=3e =3e =
+
+=3e =3e le 23 avr=2e 2010 =ef=bf=bd 13=3a01=2c ryan walklin a =ef=bf=bdc=
+rit =3a
+=3e =3e =
+
+=3e =3e=3e =
+
+=3e =3e=3e on 23/04/2010=2c at 10=3a45 pm=2c jean-daniel dupas wrote=3a
+=3e =3e=3e =
+
+=3e =3e=3e=3e =
+
+=3e =3e=3e=3e le 23 avr=2e 2010 =ef=bf=bd 12=3a39=2c ryan walklin a =ef=bf=
+=bdcrit =3a
+=3e =3e=3e=3e=3e =
+
+=3e =3e=3e=3e =
+
+=3e =3e=3e=3e what is hardwaredecoder=3f
+=3e =3e=3e=3e  shouldn=27t it be =26hardwaredecoder =3f
+=3e =3e=3e =
+
+=3e =3e=3e having said that=2c i=27ve just tried passing in a **vdadecod=
+er =
+
+=3e reference which works=2e odd=2e thanks for the tip! presumably the h=
+eader =
+
+=3e / api doc has a bug=2e
+=3e =3e =
+
+=3e =3e and if you try without the =27=26=27=2c but you initialize your =
+pointer to =
+
+=3e null before=2c does it works =3f =
+
+=3e =3e =
+
+=3e no=2c it doesn=27t seem to=2e i was initialising the pointer to null=
+ =
+
+=3e initially=2c downside of copy and pasted code =3a)=2e
+=3e =
+
+=3e -ryan
+=3e =
+
+=3e =3e -- jean-daniel
+=3e =3e =
+
+=3e =3e =
+
+=3e =3e =
+
+=3e =3e =
+
+=3e =
+
+=3e -------------- next part --------------
+=3e an html attachment was scrubbed=2e=2e=2e
+=3e url=3a http=3a//lists=2eapple=2ecom/mailman/private/quicktime-api/at=
+tachments/20100423/f560ca57/attachment=2ehtml
+=3e =
+
+=3e ------------------------------
+=3e =
+
+=3e message=3a 2
+=3e date=3a fri=2c 23 apr 2010 11=3a12=3a41 -0400
+=3e from=3a ken aspeslagh =3cken=40ecamm=2ecom=3e
+=3e subject=3a re=3a any luck with hd web cams=3f
+=3e to=3a quicktime-api=40lists=2eapple=2ecom
+=3e message-id=3a =3c420d8dc8-3323-4af3-8792-8ecbcf71b85b=40ecamm=2ecom=3e=
+
+=3e content-type=3a text/plain=3b charset=3dus-ascii
+=3e =
+
+=3e hi beth=3a
+=3e =
+
+=3e if you can get your hands on a second generation macbook pro (led =
+
+=3e backlight)=2c one of the aluminum imacs=2c or one of the apple displ=
+ays =
+
+=3e with a built-in cam=2c these all have a 1280 x 1024 capable built-in=
+ =
+
+=3e isight=2e not exactly hd but larger than 640x480=2e
+=3e =
+
+=3e thanks=2c
+=3e ken
+=3e =
+
+=3e -------------------------------------
+=3e =22the major difference between a thing that might go wrong and a th=
+ing =
+
+=3e that cannot possibly go wrong is that when a thing that cannot =
+
+=3e possibly go wrong goes wrong it usually turns out to be impossible t=
+o =
+
+=3e get at or repair=2e=22 - douglas adams
+=3e =
+
+=3e =
+
+=3e on apr 23=2c 2010=2c at 7=3a05 am=2c quicktime-api-request=40lists=2e=
+apple=2ecom wrote=3a
+=3e =
+
+=3e =3e i need to choose a web cam with which to do some quicktime exper=
+imental
+=3e =3e work=2e  it would need to give me high quality frames larger tha=
+n =
+
+=3e 640x480=2e  i
+=3e =3e tried the logitech quickcam vision pro last year but wasn=27t pa=
+rticularly
+=3e =3e pleased with the quality=2e  maybe i was doing something wrong=2e=
+
+=3e =3e =
+
+=3e =3e what web cams are you developers having good quicktime luck with=
+=3f
+=3e =3e =
+
+=3e =3e thanks=2c
+=3e =3e -beth=2e
+=3e =
+
+=3e =
+
+=3e =
+
+=3e ------------------------------
+=3e =
+
+=3e message=3a 3
+=3e date=3a fri=2c 23 apr 2010 11=3a31=3a13 -0400
+=3e from=3a mark jones =3cmark=2ejones=40mathworks=2ecom=3e
+=3e subject=3a re=3a any luck with hd web cams=3f
+=3e to=3a ken aspeslagh =3cken=40ecamm=2ecom=3e=2c=22quicktime-api=40li=
+sts=2eapple=2ecom=22
+=3e =3cquicktime-api=40lists=2eapple=2ecom=3e
+=3e message-id=3a
+=3e =3c5e8d356ee3cc7140af4412f02c467dbda2f5bdede1=40exchange-ah=2ead=2e=
+mathworks=2ecom=3e
+=3e =
+
+=3e content-type=3a text/plain=3b charset=3d=22us-ascii=22
+=3e =
+
+=3e =3e -----original message-----
+=3e =3e from=3a quicktime-api-bounces+mark=2ejones=3dmathworks=2ecom=40l=
+ists=2eapple=2ecom
+=3e =3e =
+
+=3e =5bmailto=3aquicktime-api-bounces+mark=2ejones=3dmathworks=2ecom=40l=
+ists=2eapple=2ecom=5d =
+
+=3e on
+=3e =3e behalf of ken aspeslagh
+=3e =3e sent=3a friday=2c april 23=2c 2010 11=3a13 am
+=3e =3e to=3a quicktime-api=40lists=2eapple=2ecom
+=3e =3e subject=3a re=3a any luck with hd web cams=3f
+=3e =3e =
+
+=3e =3e hi beth=3a
+=3e =3e =
+
+=3e =3e if you can get your hands on a second generation macbook pro (le=
+d backlight)=2c
+=3e =3e one of the aluminum imacs=2c or one of the apple displays with a=
+ =
+
+=3e built-in cam=2c
+=3e =3e these all have a 1280 x 1024 capable built-in isight=2e not exac=
+tly hd =
+
+=3e but
+=3e =3e larger than 640x480=2e
+=3e =3e =
+
+=3e =3e thanks=2c
+=3e =3e ken
+=3e =3e =
+
+=3e =3e -------------------------------------
+=3e =3e =22the major difference between a thing that might go wrong and =
+a =
+
+=3e thing that
+=3e =3e cannot possibly go wrong is that when a thing that cannot possib=
+ly =
+
+=3e go wrong
+=3e =3e goes wrong it usually turns out to be impossible to get at or =
+
+=3e repair=2e=22 -
+=3e =3e douglas adams
+=3e =3e =
+
+=3e =3e =
+
+=3e =3e on apr 23=2c 2010=2c at 7=3a05 am=2c quicktime-api-request=40lis=
+ts=2eapple=2ecom wrote=3a
+=3e =3e =
+
+=3e =3e =3e i need to choose a web cam with which to do some quicktime e=
+xperimental
+=3e =3e =3e work=2e  it would need to give me high quality frames larger=
+ than =
+
+=3e 640x480=2e  i
+=3e =3e =3e tried the logitech quickcam vision pro last year but wasn=27=
+t particularly
+=3e =3e =3e pleased with the quality=2e  maybe i was doing something wro=
+ng=2e
+=3e =
+
+=3e really=3f  i think that the logitech quickcam vision pro and logitec=
+h =
+
+=3e quickcam pro 9000 are two of the better web cams that i have used=2e=
+  =
+
+=3e =
+
+=3e =3e =3e
+=3e =3e =3e what web cams are you developers having good quicktime luck =
+with=3f
+=3e =3e =3e
+=3e =3e =3e thanks=2c
+=3e =3e =3e -beth=2e
+=3e =3e =
+
+=3e =3e  =5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=
+=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=
+=5f=5f
+=3e =3e do not post admin requests to the list=2e they will be ignored=2e=
+
+=3e =3e quicktime-api mailing list      (quicktime-api=40lists=2eapple=2e=
+com)
+=3e =3e help/unsubscribe/update your subscription=3a
+=3e =3e http=3a//lists=2eapple=2ecom/mailman/options/quicktime-
+=3e =3e api/mark=2ejones=2540mathworks=2ecom
+=3e =3e =
+
+=3e =3e this email sent to mark=2ejones=40mathworks=2ecom
+=3e =
+
+=3e =
+
+=3e ------------------------------
+=3e =
+
+=3e message=3a 4
+=3e date=3a fri=2c 23 apr 2010 09=3a11=3a30 -0700
+=3e from=3a beth s =3ciphonedev=40hoagy=2eorg=3e
+=3e subject=3a re=3a any luck with hd web cams=3f
+=3e to=3a ken aspeslagh =3cken=40ecamm=2ecom=3e
+=3e cc=3a quicktime-api=40lists=2eapple=2ecom
+=3e message-id=3a
+=3e =3cy2y4df1667d1004230911t5e4f60d9n69c7029058defca7=40mail=2egmail=2e=
+com=3e
+=3e content-type=3a text/plain=3b charset=3d=22iso-8859-1=22
+=3e =
+
+=3e well i actually need two of them hooked up to the same system=2e  i =
+want =
+
+=3e to do
+=3e some xyz tracking of objects to get rid of our wiimote tracking=2e
+=3e =
+
+=3e http=3a//rationalcraft=2ecom/winscape=2ehtml
+=3e =
+
+=3e are there really no usb webcams out there that can deliver decent vi=
+deo
+=3e greater than 640x480 in quicktime=3f
+=3e =
+
+=3e -beth=2e
+=3e =
+
+=3e on fri=2c apr 23=2c 2010 at 8=3a12 am=2c ken aspeslagh =3cken=40ecam=
+m=2ecom=3e wrote=3a
+=3e =
+
+=3e =3e hi beth=3a
+=3e =3e
+=3e =3e if you can get your hands on a second generation macbook pro (le=
+d
+=3e =3e backlight)=2c one of the aluminum imacs=2c or one of the apple d=
+isplays =
+
+=3e with a
+=3e =3e built-in cam=2c these all have a 1280 x 1024 capable built-in is=
+ight=2e =
+
+=3e not
+=3e =3e exactly hd but larger than 640x480=2e
+=3e =3e
+=3e =3e thanks=2c
+=3e =3e ken
+=3e =3e
+=3e =3e -------------------------------------
+=3e =3e =22the major difference between a thing that might go wrong and =
+a =
+
+=3e thing that
+=3e =3e cannot possibly go wrong is that when a thing that cannot possib=
+ly =
+
+=3e go wrong
+=3e =3e goes wrong it usually turns out to be impossible to get at or =
+
+=3e repair=2e=22 -
+=3e =3e douglas adams
+=3e =3e
+=3e =3e
+=3e =3e on apr 23=2c 2010=2c at 7=3a05 am=2c quicktime-api-request=40lis=
+ts=2eapple=2ecom wrote=3a
+=3e =3e
+=3e =3e =3e i need to choose a web cam with which to do some quicktime e=
+xperimental
+=3e =3e =3e work=2e  it would need to give me high quality frames larger=
+ than 640x480=2e
+=3e =3e  i
+=3e =3e =3e tried the logitech quickcam vision pro last year but wasn=27=
+t particularly
+=3e =3e =3e pleased with the quality=2e  maybe i was doing something wro=
+ng=2e
+=3e =3e =3e
+=3e =3e =3e what web cams are you developers having good quicktime luck =
+with=3f
+=3e =3e =3e
+=3e =3e =3e thanks=2c
+=3e =3e =3e -beth=2e
+=3e =3e
+=3e =3e
+=3e -------------- next part --------------
+=3e an html attachment was scrubbed=2e=2e=2e
+=3e url=3a http=3a//lists=2eapple=2ecom/mailman/private/quicktime-api/at=
+tachments/20100423/c2068e09/attachment=2ehtml
+=3e =
+
+=3e ------------------------------
+=3e =
+
+=3e message=3a 5
+=3e date=3a fri=2c 23 apr 2010 12=3a50=3a14 -0600
+=3e from=3a rob=40haptek=2ecom
+=3e subject=3a re=3a any luck with hd web cams=3f
+=3e to=3a =22beth s=22 =3ciphonedev=40hoagy=2eorg=3e
+=3e cc=3a quicktime-api=40lists=2eapple=2ecom
+=3e message-id=3a =3c289eca33aba4d27c8684c13e4a225b81=2esquirrel=40www=2e=
+haptek=2ecom=3e
+=3e content-type=3a text/plain=3bcharset=3diso-8859-1
+=3e =
+
+=3e interesting!
+=3e though i agree with mark that the logitech is a pretty darn good cam=
+era=2e
+=3e =
+
+=3e for tracking people though=2c do you really need hd resolution=3f
+=3e the logitech for example slows way down at above 640 x 480 resolutio=
+n=2c
+=3e to something below 10 hz as i recall=2e
+=3e =
+
+=3e you might be better off using a couple of ps 2 eye cameras=2c which
+=3e can run at 120 hz at 320 x 240=2c and treating people as low-resolut=
+ion=2c
+=3e but low-latency =22blobs=22=2e
+=3e =
+
+=3e rob
+=3e =
+
+=3e =3e well i actually need two of them hooked up to the same system=2e=
+  i =
+
+=3e want to
+=3e =3e do
+=3e =3e some xyz tracking of objects to get rid of our wiimote tracking=2e=
+
+=3e =3e
+=3e =3e http=3a//rationalcraft=2ecom/winscape=2ehtml
+=3e =3e
+=3e =3e are there really no usb webcams out there that can deliver decen=
+t video
+=3e =3e greater than 640x480 in quicktime=3f
+=3e =3e
+=3e =3e -beth=2e
+=3e =3e
+=3e =3e on fri=2c apr 23=2c 2010 at 8=3a12 am=2c ken aspeslagh =3cken=40=
+ecamm=2ecom=3e wrote=3a
+=3e =3e
+=3e =3e=3e hi beth=3a
+=3e =3e=3e
+=3e =3e=3e if you can get your hands on a second generation macbook pro =
+(led
+=3e =3e=3e backlight)=2c one of the aluminum imacs=2c or one of the appl=
+e displays =
+
+=3e with
+=3e =3e=3e a
+=3e =3e=3e built-in cam=2c these all have a 1280 x 1024 capable built-in=
+ isight=2e =
+
+=3e not
+=3e =3e=3e exactly hd but larger than 640x480=2e
+=3e =3e=3e
+=3e =3e=3e thanks=2c
+=3e =3e=3e ken
+=3e =3e=3e
+=3e =3e=3e -------------------------------------
+=3e =3e=3e =22the major difference between a thing that might go wrong a=
+nd a thing
+=3e =3e=3e that
+=3e =3e=3e cannot possibly go wrong is that when a thing that cannot pos=
+sibly =
+
+=3e go
+=3e =3e=3e wrong
+=3e =3e=3e goes wrong it usually turns out to be impossible to get at or=
+ =
+
+=3e repair=2e=22 -
+=3e =3e=3e douglas adams
+=3e =3e=3e
+=3e =3e=3e
+=3e =3e=3e on apr 23=2c 2010=2c at 7=3a05 am=2c quicktime-api-request=40=
+lists=2eapple=2ecom
+=3e =3e=3e wrote=3a
+=3e =3e=3e
+=3e =3e=3e =3e i need to choose a web cam with which to do some quicktim=
+e
+=3e =3e=3e experimental
+=3e =3e=3e =3e work=2e  it would need to give me high quality frames lar=
+ger than
+=3e =3e=3e 640x480=2e
+=3e =3e=3e  i
+=3e =3e=3e =3e tried the logitech quickcam vision pro last year but wasn=
+=27t
+=3e =3e=3e particularly
+=3e =3e=3e =3e pleased with the quality=2e  maybe i was doing something =
+wrong=2e
+=3e =3e=3e =3e
+=3e =3e=3e =3e what web cams are you developers having good quicktime lu=
+ck with=3f
+=3e =3e=3e =3e
+=3e =3e=3e =3e thanks=2c
+=3e =3e=3e =3e -beth=2e
+=3e =3e=3e
+=3e =3e=3e
+=3e =3e  =5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=
+=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=
+=5f=5f
+=3e =3e do not post admin requests to the list=2e they will be ignored=2e=
+
+=3e =3e quicktime-api mailing list      (quicktime-api=40lists=2eapple=2e=
+com)
+=3e =3e help/unsubscribe/update your subscription=3a
+=3e =3e http=3a//lists=2eapple=2ecom/mailman/options/quicktime-api/rob=25=
+40haptek=2ecom
+=3e =3e
+=3e =3e this email sent to rob=40haptek=2ecom
+=3e =
+
+=3e =
+
+=3e =
+
+=3e =
+
+=3e ------------------------------
+=3e =
+
+=3e =5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=
+=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=5f=
+
+=3e quicktime-api mailing list
+=3e quicktime-api=40lists=2eapple=2ecom
+=3e http=3a//lists=2eapple=2ecom/mailman/listinfo/quicktime-api
+=3e =
+
+=3e end of quicktime-api digest=2c vol 7=2c issue 112
+=3e *********************************************
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

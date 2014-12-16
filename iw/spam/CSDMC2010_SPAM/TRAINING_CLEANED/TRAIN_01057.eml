@@ -1,0 +1,68 @@
+None> On 4/14/2010 9:28 AM, Ron Johnson wrote:
+
+>> Really?   RealTek chips are as common as flies on horse poop, and works
+>> perfectly for me.
+>>
+
+(...)
+
+> Same here. Realtek 100mbit and GigE chips have always worked great
+> regardless of kernel version. The chipsets that have horrible support
+> are the Marvell adapters that use the 'sky2' module.
+> 
+> See this thread for details (sky2 module has still not been fixed since
+> its introduction in 8/2006):
+> http://forums.gentoo.org/viewtopic-t-487018-postdays-0-postorder-asc-
+start-0.html
+
+Mmmm... I manage some lenny systems running a variety of network adapters 
+(mainly Intel -e1000e- , Realtek -r8169- and Marvell -skge-) and have not 
+experienced any problem with them :-?
+
+Greetings,
+
+-- 
+Camaleón
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/pan.2010.04.14.14.17.57@csmining.org
+
+
+re: realtek ethernet (was re: recent mobo recommendation)on wed, 14 apr 2010 10:02:42 -0400, ryan manikowski wrote:
+
+> on 4/14/2010 9:28 am, ron johnson wrote:
+
+>> really?   realtek chips are as common as flies on horse poop, and works
+>> perfectly for me.
+>>
+
+(...)
+
+> same here. realtek 100mbit and gige chips have always worked great
+> regardless of kernel version. the chipsets that have horrible support
+> are the marvell adapters that use the 'sky2' module.
+> 
+> see this thread for details (sky2 module has still not been fixed since
+> its introduction in 8/2006):
+> http://forums.gentoo.org/viewtopic-t-487018-postdays-0-postorder-asc-
+start-0.html
+
+mmmm... i manage some lenny systems running a variety of network adapters 
+(mainly intel -e1000e- , realtek -r8169- and marvell -skge-) and have not 
+experienced any problem with them :-?
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.14.14.17.57@csmining.org
+
+

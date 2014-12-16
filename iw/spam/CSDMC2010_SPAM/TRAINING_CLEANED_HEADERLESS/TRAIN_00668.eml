@@ -1,0 +1,71 @@
+
+chris said:
+> 
+> i can tell you what the 'clear' and 'del' arguments mean:
+> 
+> mh_sequenceupdate lists/l-k clear cur {} public
+> this means to clear the 'cur' sequence for lists/l-k
+> 
+> mh_sequenceupdate lists/l-k del unseen 5400 public
+> this means to delete message 5400 from the 'unseen' sequence for lists/l-k
+> 
+> can you explain more what you were actually doing as this occurred?  this 
+> doesn't appear to be background processing.  is there significance to message 
+> 5400?  is it the one that isn't displaying?
+> 
+> chris
+
+after sending the report i started fiddling with the ftoc_rescanline 
+stuff and i havn't seen it since. i can't really tell if it was my 
+hacking that removed it, or if it was some transitional magic 
+happening since this was the first invocation of that version of 
+exmh. i've backed out my stuff now, and'll let you know if it happens 
+again.
+
+
+on another thing with the ftoc_rescanline stuff. this routine is 
+called at times still unclar to me. an inspection of the routine 
+suggests that it is used in the transition of a message to/form 
+"current" state to re-paint the ftoc line. however, checking the 
+msg.tcl code (msgchange) we find:
+
+    if {$msgid != {}} {
+        # allow null msgid from msg_showwhat, which supplies line 
+instead
+        if {$msgid < 0}  return
+    } else {
+        # line null too, try using first in folder
+        if {[string length $line] == 0} { set line 1 }
+        set msgid [ftoc_msgnumber [ftoc_findmsg $msgid $line]]
+    }
+    ftoc_clearcurrent
+    mh_setcur $exmh(folder) $msgid
+    ftoc_showsequences $exmh(folder)
+
+the ftoc_clearcurrent calls ftoc_rescanline to clear the '+' sign 
+_before_ the on-disk transition is made. i hacked this stuff and more 
+or less changed the order. it works, but fails on some folder changes.
+
+my feeling of this is that we really do not want to have a 
+ftoc_clearcurrent, but rather just a rescanline and the caller had 
+better know the line or msgid. that routine shoud just put in the '+' 
+if the line/msg in question happened to be the cur msg. thoughts?
+
+
+/anders
+
+
+
+
+
+
+
+
+
+
+_______________________________________________
+exmh-workers mailing list
+exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

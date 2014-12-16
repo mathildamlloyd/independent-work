@@ -1,0 +1,27 @@
+when i make two "local" disks via macfuse and i try to eject one of them =
+the finder insists on warning me that there are two drives on the same =
+partition, and giving me the option to unmount all of them or just the =
+one i tried to. this is very inconvenient for me.
+
+the mount command shows:
+
+
+myfs@fuse0 on /volumes/myfs_2gig (...)
+myfs@fuse1 on /volumes/myfs_4gig (...)
+
+my suspicion is that the finder just looks for the mount=46rom value =
+then calls volumes partitions on the same disk if they only vary in the =
+last number.
+
+thoughts?
+
+thanks,
+jim o'connor=
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+filesystem-dev mailing list      (filesystem-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/filesystem-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

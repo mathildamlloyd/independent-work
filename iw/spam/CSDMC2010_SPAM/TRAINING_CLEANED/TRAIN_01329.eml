@@ -1,0 +1,165 @@
+None> 
+> After some discussion about lilo on #debian-devel in IRC, it has pretty
+> much been determined that kernel sizes have crossed the line past where
+> lilo can reliably determine the payload size.
+> 
+> This bug *can* be fixed, but not without a significant rewrite of the
+> way that lilo's stage2 loader code works.  Given that there is no active
+> upstream and that the Debian lilo package carries many patches for bug
+> fixes that are alleviated by standardizing on grub2, this seems like the
+> best option for Debian.
+> 
+> This means that users should *test grub2 extensively* before Squeeze is
+> released so that any issues can be resolved now.
+> 
+> As for removal, the following things need to be done:
+> 
+> (1) The release notes need to be updated to reflect that lilo is no
+> longer a bootloader option;
+> (2) The debian-installer team needs to remove the lilo-installer udeb;
+> (3) The ftpmasters need to remove lilo from unstable (which will be done
+> using the appropriate bug filing once the above steps are made);
+> (4) Users need to test grub2 now.
+
+First of all, forgive me for cross-posting, which is generally a no-no.
+But if you can cross-post, I can cross-reply.
+
+Second, unless you reply to debian-user, to which I am subscribed, please
+CC me.  I am not subscribed to any of the other lists.
+
+I am not a Debian package maintainer or a Debian developer.  I am just an
+ordinary system administrator.  So I'm sure that my opinion will not count
+for much.  But I am opposed to the removal of lilo.  Both grub-legacy and
+grub-pc use sectors on the hard disk outside of the master boot record
+(cylinder 0, head 0, sector 1).  In other words they use cylinder 0, head 0,
+sector 2 and possibly subsequent sectors on cylinder 0 head 0.  This breaks
+the design of the backup software that my employer uses.  This backup software
+backs up the master boot record and all partitions; but since the extra
+sectors used by grub-legacy and grub-pc are outside the master boot record
+and are not part of any partition, they don't get backed up.  Consequently,
+if we have a hard drive failure and restore from a backup, we have an
+unbootable machine.  Lilo uses only the master boot record.  A lilo-booted
+machine can be backed up and restored with our existing backup software
+just fine.  Given these requirements, I wouldn't use grub-pc even if it
+were bug free and well documented.  (But neither is the case!)
+
+As for the claims that kernels are too big now, I find that hard to
+believe, especially now that we have the large-memory option available.
+The standard stock Debian kernel image file that I use for Squeeze,
+vmlinuz-2.6.32-3-686, is currently 2234080 bytes.  Are you trying to tell
+me that there's no room for a 2M kernel below the start of the EBDA?
+
+I am able to load *both* the kernel *and* the initial RAM filesystem
+below the EBDA (i.e. the large-memory option is not used) if I use
+MODULES=dep instead of MODULES=most in the initial RAM filesystem
+under Lenny.  I'll bet I can do it with Squeeze too.
+
+I realize that lilo doesn't work for everyone, and I'm not suggesting
+that it be the default bootloader; but to get rid of it entirely is
+unacceptable.  As far as I know, it's the only bootloader that meets
+all of my requirements, and I will not voluntarily give it up.
+
+No doubt you will tell me that I am welcome to maintain it myself.
+Unfortunately, I do not have the requisite skills to do so.  All I
+can do is to appeal in the name of reason that it not be dropped.
+
+Also, please excuse my ignorance, but what exactly is this
+"payload size" to which you refer?  Is that the same thing as the
+size of the kernel?  Or is it something else?
+
+-- 
+  .''`.     Stephen Powell    
+ : :'  :
+ `. `'`
+   `-
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/698259750.358730.1274641482395.JavaMail.root@md01.wow.synacor.com
+
+
+re: lilo removal in squeeze (or, "please test grub2")on sat, 22 may 2010 23:39:52 -0400 (edt), william pitcock wrote:
+> 
+> after some discussion about lilo on #debian-devel in irc, it has pretty
+> much been determined that kernel sizes have crossed the line past where
+> lilo can reliably determine the payload size.
+> 
+> this bug *can* be fixed, but not without a significant rewrite of the
+> way that lilo's stage2 loader code works.  given that there is no active
+> upstream and that the debian lilo package carries many patches for bug
+> fixes that are alleviated by standardizing on grub2, this seems like the
+> best option for debian.
+> 
+> this means that users should *test grub2 extensively* before squeeze is
+> released so that any issues can be resolved now.
+> 
+> as for removal, the following things need to be done:
+> 
+> (1) the release notes need to be updated to reflect that lilo is no
+> longer a bootloader option;
+> (2) the debian-installer team needs to remove the lilo-installer udeb;
+> (3) the ftpmasters need to remove lilo from unstable (which will be done
+> using the appropriate bug filing once the above steps are made);
+> (4) users need to test grub2 now.
+
+first of all, forgive me for cross-posting, which is generally a no-no.
+but if you can cross-post, i can cross-reply.
+
+second, unless you reply to debian-user, to which i am subscribed, please
+cc me.  i am not subscribed to any of the other lists.
+
+i am not a debian package maintainer or a debian developer.  i am just an
+ordinary system administrator.  so i'm sure that my opinion will not count
+for much.  but i am opposed to the removal of lilo.  both grub-legacy and
+grub-pc use sectors on the hard disk outside of the master boot record
+(cylinder 0, head 0, sector 1).  in other words they use cylinder 0, head 0,
+sector 2 and possibly subsequent sectors on cylinder 0 head 0.  this breaks
+the design of the backup software that my employer uses.  this backup software
+backs up the master boot record and all partitions; but since the extra
+sectors used by grub-legacy and grub-pc are outside the master boot record
+and are not part of any partition, they don't get backed up.  consequently,
+if we have a hard drive failure and restore from a backup, we have an
+unbootable machine.  lilo uses only the master boot record.  a lilo-booted
+machine can be backed up and restored with our existing backup software
+just fine.  given these requirements, i wouldn't use grub-pc even if it
+were bug free and well documented.  (but neither is the case!)
+
+as for the claims that kernels are too big now, i find that hard to
+believe, especially now that we have the large-memory option available.
+the standard stock debian kernel image file that i use for squeeze,
+vmlinuz-2.6.32-3-686, is currently 2234080 bytes.  are you trying to tell
+me that there's no room for a 2m kernel below the start of the ebda?
+
+i am able to load *both* the kernel *and* the initial ram filesystem
+below the ebda (i.e. the large-memory option is not used) if i use
+modules=dep instead of modules=most in the initial ram filesystem
+under lenny.  i'll bet i can do it with squeeze too.
+
+i realize that lilo doesn't work for everyone, and i'm not suggesting
+that it be the default bootloader; but to get rid of it entirely is
+unacceptable.  as far as i know, it's the only bootloader that meets
+all of my requirements, and i will not voluntarily give it up.
+
+no doubt you will tell me that i am welcome to maintain it myself.
+unfortunately, i do not have the requisite skills to do so.  all i
+can do is to appeal in the name of reason that it not be dropped.
+
+also, please excuse my ignorance, but what exactly is this
+"payload size" to which you refer?  is that the same thing as the
+size of the kernel?  or is it something else?
+
+-- 
+  .''`.     stephen powell    
+ : :'  :
+ `. `'`
+   `-
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/698259750.358730.1274641482395.javamail.root@md01.wow.synacor.com
+
+

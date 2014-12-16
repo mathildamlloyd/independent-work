@@ -1,0 +1,32 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain;
+  charset="iso-8859-1"
+content-transfer-encoding: quoted-printable
+
+
+hi nate,
+
+am freitag 07 mai 2010 schrieb nate bargmann:
+> i also
+> think that setting a different wallpaper for each desktop could be more
+> intuitive than having to enable desktop activities in the settings
+> manager, then zoom out with the cashew, then set the wallpaper via
+> right-click menu from each desktop, and find out it's a craps shoot=20
+> which desktop has which wallpaper.  but those are nits i've noticed=20
+> so far and are fixable.
+
+the activities system upto to kde 4.4 imho is quite broken. activity=20
+selection is slow, it forgets which activity is mapped to which desktop=20
+from time to time and and and... i reported about 10 bugs just regarding=20
+that activity system in kde's bugtracker, of which a user named beat wolf=20
+marked most invalid in the last days cause this stuff gets completely=20
+rewritten in kde 4.5. in kde 4.5 there will be a new activity system=20
+sporting nepomuk and whatnot, i think there has been a blog post, maybe by=
+=20
+aaron seigo on planet kde.i agree rewriting the stuff is one of the better=
+=20
+things you can do with it ;-).  let's see what comes out of it.
+
+=2d-=20
+martin 'helios' steigerwald - http://www.lichtvoll.de
+gpg: 03b0 0d6c 0040 0710 4afa  b82f 991b eaac a599 84c7

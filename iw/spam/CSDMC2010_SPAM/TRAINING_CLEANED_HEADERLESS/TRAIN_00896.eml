@@ -1,0 +1,28 @@
+alexey salmin wrote:
+> on sat, may 15, 2010 at 3:08 am, kent west  wrote:
+>   
+>> kent west wrote:
+>>     
+>>> westk[@]goshen.acu.edu]:/usr/local/maple_network_tools/flexlm/11.7:> ldd
+>>> lmgrd
+>>> /usr/bin/ldd: line 117: ./lmgrd: no such file or directory
+>>>       
+> not amd64, ok :) try to use ldd on that binary and check if all
+> dependencies are present.
+>   
+
+see above.
+
+-- 
+kent west     <*)))><
+http://kentwest.blogspot.com
+praise yah! \o/
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bedb3cf.5070101@acu.edu
+
+

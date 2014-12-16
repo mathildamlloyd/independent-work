@@ -1,0 +1,82 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain;
+  charset="utf-8"
+content-transfer-encoding: quoted-printable
+
+am dienstag 11 mai 2010 schrieb mike bird:
+> on mon may 10 2010 15:20:52 martin steigerwald wrote:
+> > this list is not for development issues like developing / maintaining
+> > kde 3.5 packages for squeeze.
+> >=20
+> > so imho any further request for kde 3.5 in squeeze is off topic on
+> > this list as debian kde/qt maintainers repeatedly said they won't.
+>=20
+> please don't lie.  this list is for "discussions related to kde in
+> debian. those developing kde-based packages are encouraged to use this
+> to discuss issues and share their experience."
+> http://lists.debian.org/debian-kde/
+
+=46irst its imho.
+
+second its from what i understood about the different purposes of debian-
+kde and qt-kde-ml mailing lists.
+
+and debian-kde is clearly sorted as users mailing list:
+
+debian in kde
+http://lists.debian.org/users.html
+
+debian-qt-kde: packages using qt and/or kde
+http://lists.debian.org/devel.html
+
+so i think my view is not that far off.
+
+so or so: your posts did not seem to me to bring anyone even the slightest=
+=20
+bit forward towards having kde 3.5.
+
+so i finish with a suggestion, how this can work:
+
+=2d--------------------------------------------------------------------
+hi developers and users of debian in kde,
+
+i set up an alioth project repository of kde 3.5 packages that i forward-
+ported to squeeze at:
+
+http://some-alioth-url
+
+right now i started just with the forward port of the basic kde packages.
+
+i like to continue that work and to make the package co-installable with=20
+kde 4.=20
+
+i appreciate any helping hand. if you are a user and want to use kde 3 i=20
+encourage you to try may package. please note they are not co-installable=20
+with kde 4 in the moment. if you are a developer please help me with=20
+building and polishing packages.
+
+if you want to help out, subscribe to mailinglist xyz.
+
+regards,
+mike
+=2d--------------------------------------------------------------------
+
+now, how about that, mike? how about being the change you want to achieve?
+
+thanks.
+
+note: kde 3.5 doesn't really need to be co-installable for those only=20
+interested in kde 3.5. at least not initially.
+
+just a small start might pull this off for you. but if you do not *act*,=20
+probably nothing will happen. you can't change those who are not=20
+interested in providing kde 3.5 for debian squeeze. so either you start=20
+pulling it off for yourself or it - unless someone else feels the=20
+motivation to do it - *will just not happen*.
+
+its as easy as that.
+
+ciao,
+=2d-=20
+martin 'helios' steigerwald - http://www.lichtvoll.de
+gpg: 03b0 0d6c 0040 0710 4afa  b82f 991b eaac a599 84c7

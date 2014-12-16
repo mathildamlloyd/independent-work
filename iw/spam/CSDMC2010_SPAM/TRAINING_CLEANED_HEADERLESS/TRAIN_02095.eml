@@ -1,0 +1,36 @@
+on sun, 18 apr 2010, jeremy huddleston wrote:
+
+> on apr 18, 2010, at 10:06, pierre baguis wrote:
+>
+>> i tried to logout and it made no difference. rebooting solved the issue.
+>>
+>> in the other machine where i installed xquartz, not even a logout was necessary. everything went smoothly and the update was applied right away.
+>
+> i suspect something else was going on outside of x11... the symptoms you were describing were very odd and not something a reboot would effect in x11.
+>
+
+this is exactly the problem i saw when i updated x11 to 2.5.0 (mouse 
+button 2 sends leave/notify instead of buttonpress or buttonrelease), and 
+as a matter of fact i went so far as to open a ticket on it.  it was 
+marked invalid a short while later when i reported that the problem went 
+away with a reboot.
+
+
+
+since that ticket was closed, i have seen the same problem on a second 
+system running 10.5.8 (a powerbook g4 15").  a reboot also solved the 
+problem on the second system.  unfortunately i haven't seen the problem 
+appear again on either of my two systems, so i can't offer any help in 
+root causing it.
+
+mike
+-- 
+mike thornburg
+mthorn@cisco.com
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+x11-users mailing list      (x11-users@lists.apple.com)
+help/unsubscribe/update your subscription: http://lists.apple.com/mailman/options/x11-users/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

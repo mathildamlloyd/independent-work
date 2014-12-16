@@ -1,0 +1,37 @@
+on wed, 19 may 2010 18:43:41 -0400 (edt), peter easthope wrote:
+> now in the log there is no (ee) and no /dev/fb0.  
+> this is what appears on the screen after startx is issued.
+> 
+> peter@dalton:~$ startx 
+>   [many lines omitted]
+> (==) using system config directory "/usr/share/x11/xorg.conf.d"
+> error setting mtrr (base = 0xf8000000, size = 0x03000000, type = 1) inappropriat
+> e ioctl for device (25)
+> selinux: disabled on system, not enabling in x server
+> 
+> waiting for x server to shut down ...error setting mtrr (base = 0xf8000000, size
+>  = 0x03000000, type = 1) inappropriate ioctl for device (25)
+> 
+> 
+> peter@dalton:~$
+> 
+> regards,        ... peter e.
+
+this may be unrelated, but i noticed from the log that acpi is disabled.  a standard
+stock debian kernel has acpi enabled by default.  the only way it should fail is if
+you have a kernel boot parameter to disable it.  please post your /etc/lilo.conf
+file.
+
+-- 
+  .''`.     stephen powell    
+ : :'  :
+ `. `'`
+   `-
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/2022607631.279778.1274320646171.javamail.root@md01.wow.synacor.com
+
+

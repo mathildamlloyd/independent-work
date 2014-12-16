@@ -1,0 +1,32 @@
+> will have problems though if you use windows, as it will tell wrong time
+> for half the year, and will reset the clock when you boot into it after
+> the change in time (this might be fixed in xp/2000, i don't know).
+> even if you set the hwclock to localtime, you will get problems when you
+> boot into windows, as both linux and windows will try to alter the
+> hwclock (maybe there is a way to suppress windows doing this).
+> m
+
+hi there,
+
+i recently delved into how the linux system clock and the hardware clock
+interact with each other when i set up ntp on my system while connected
+to the net. however, i didn't realise that windows altered the hw clock
+as there was no mention of it in any of the docs i read. 
+i still dual-boot on a regular basis and if windows is sneakily messing
+with the clock, i'd be interested to know in what way it is and how it
+couild be stopped from doing so. everything seems to work fine since i
+set the system up but i still don't like to have these gaps in my
+knowledge.
+
+regards,
+anthony geoghegan
+-- 
+the worst sin towards our fellow creatures is not to hate them,
+but to be indifferent to them. that is the essence of inhumanity
+ - george bernard shaw
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+

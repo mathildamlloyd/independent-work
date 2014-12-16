@@ -1,0 +1,30 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on mon,05.apr.10, 07:36:03, lubos rendek wrote:
+> thanks guys for this.. now what is the best way to link modules to a
+> specific hardware. for example my lsmod shows that i use 'ecb' module.
+> for someone like me this name does not say much. is there a way to
+> find which module belongs to which piece of hardware?
+
+$ /sbin/modinfo ecb
+filename:       /lib/modules/2.6.32-4-amd64/kernel/crypto/ecb.ko
+description:    ecb block cipher algorithm
+license:        gpl
+depends:       =20
+vermagic:       2.6.32-4-amd64 smp mod_unload modversions=20
+
+(i use the full path because modinfo is in /sbin, which is usually not=20
+in the user's $path).
+
+but if you are curious only about the hardware related modules lspci=20
+will tell what modules are used by the respective hardware. you will=20
+need to run it as root with the -vvv parameters.
+
+regards,
+andrei
+--=20
+offtopic discussions among debian users and developers:
+http://lists.alioth.debian.org/mailman/listinfo/d-community-offtopic

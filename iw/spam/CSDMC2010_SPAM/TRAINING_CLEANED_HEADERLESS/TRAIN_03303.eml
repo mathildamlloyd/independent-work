@@ -1,0 +1,34 @@
+on mon, 2002-08-19 at 22:34, angles puglisi wrote:
+> matthias saou (matthias@egwn.net) wrote*:
+> >then why bother : the new red hat linux beta "(null)" is now available and
+> >should be announced anytime now. it contains rpm 4.1-0.81.
+> 
+> ahhh ... this is funny. last night i upgraded to limbo ii (.93).
+> 
+> installed limbo ii kernel, installed libstdc++ from rawhide (rpm -ivh) so the
+> newer apt would work, told apt it is ok to have multiple of libstdc++, copied
+> the actual rawhide "libstdc++.so.5.0.0" file to another directory, removed that
+> rawhide libstdc++ package, installed (rpm -ivh ) the limbo ii libstdc++ package
+> (new apt does not like it), make that symlink "libstdc++.so.5" point to that
+> rawhide file i moved earlier.
+
+you can just recompile the apt source rpm, if it's the newer one. (such
+as mine). there's no dependancies on libstdc++ other than binary ones.
+
+currently on release dwd2, which i'm using on my home rawhide box.
+(obviously not production, since the old apt works fine on production
+boxes).
+
+now... does anyone know of a good way to delete "old" rpms from a
+directory containing both "new" and "old" rpms? say i have
+blurb-0.1.0-1.i386.rpm, blurb-0.1.0-2.i386.rpm, and
+blurb-0.1.1-1.i386.rpm, and want to remove the blurb-0.1.0-* because of
+the presence of blurb-0.1.1-1? anyone have a convenient script?
+
+dave.
+
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

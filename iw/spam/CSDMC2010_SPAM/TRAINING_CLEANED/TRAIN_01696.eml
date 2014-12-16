@@ -1,0 +1,254 @@
+None#import <Foundation/Foundation.h>
+#import <DiskArbitration/DiskArbitration.h>
+
+DADissenterRef
+DiskApproved(DADiskRef disk, void *context)
+{
+	char const *CdiskName = DADiskGetBSDName(disk);
+	DADissenterRef dissenter;
+	char *type;
+	NSString *diskName = [NSString stringWithUTF8String:CdiskName];
+	NSRange s1s1NumberRange = NSMakeRange([diskName length] - 4, 4);
+
+	if([[diskName substringWithRange:s1s1NumberRange]  
+isEqualToString:@"s3s1"]) /* check for our magic partition */
+	{
+		CFStringRef arguments[] =
+		{
+			CFStringCreateWithCString(kCFAllocatorDefault, "nobrowse",  
+kCFStringEncodingUTF8),
+			CFStringCreateWithCString(kCFAllocatorDefault, "owners",  
+kCFStringEncodingUTF8),
+			CFStringCreateWithCString(kCFAllocatorDefault, "suid",  
+kCFStringEncodingUTF8),
+			NULL
+		};
+
+		DADiskMountWithArguments(disk,
+								NULL,
+								kDADiskMountOptionDefault,
+								NULL,
+								NULL,
+								arguments);
+
+		/* deny the mount since we already mounted it */
+		dissenter = DADissenterCreate(kCFAllocatorDefault,
+									kDAReturnNotPermitted,
+									CFSTR("mounted hidden"));
+
+		type = "mounted hidden";
+	}
+	else
+	{
+		/* allow normal mounting */
+		dissenter = NULL;
+
+		type = "mounted normal";
+	}
+
+	printf("%s: %s\n", CdiskName, type);
+
+	return dissenter;
+}
+
+int
+main (int argc, const char * argv[])
+{
+     NSAutoreleasePool *pool = [NSAutoreleasePool new];
+	DAApprovalSessionRef session = DAApprovalSessionCreate 
+(kCFAllocatorDefault);
+
+	if (!session)
+	{
+		fprintf(stderr, "failed to create Disk Arbitration session");
+		goto out;
+	}
+
+	DARegisterDiskMountApprovalCallback(session,
+										NULL,  // matches all disk objects
+										DiskApproved,
+										NULL); // context
+
+	DAApprovalSessionScheduleWithRunLoop(session,
+										 CFRunLoopGetCurrent(),
+										 kCFRunLoopDefaultMode);
+
+	CFRunLoopRunInMode(kCFRunLoopDefaultMode,
+						60 /* seconds */,
+						false);
+
+	DAApprovalSessionUnscheduleFromRunLoop(session,
+										 CFRunLoopGetCurrent(),
+										 kCFRunLoopDefaultMode);
+
+	DAUnregisterApprovalCallback(session,
+								DiskApproved,
+								NULL);
+
+out:
+    if (session)
+		CFRelease(session);
+
+     [pool release];
+
+	return 0;
+}
+
+
+________________________________________________________________________ 
+_______________________
+
+
+The example appears to work but I'm noticing when calling  
+DADiskMountWithArguments() from the callback function it seems to  
+trigger the approval process for the same partition, is there  
+something I need to do to prevent this?
+
+Also, is it possible to change the mountroot rather than specifying a  
+mountpoint???
+
+I've look at suggested solution to my mount issue and a manual  
+solution is not acceptable or the use of the fstab file because it  
+cannot be guaranteed that it exists or that the content will be correct.
+
+It has been suggested that example code does exist however no one has  
+point me to or provided me with or even a link to any sample code and  
+google is pretty useless.
+
+-- Dale
+ _______________________________________________
+Do not post admin requests to the list. They will be ignored.
+Filesystem-dev mailing list      (Filesystem-dev@lists.apple.com)
+Help/Unsubscribe/Update your Subscription:
+http://lists.apple.com/mailman/options/filesystem-dev/mlsubscriber.tech%40csmining.org
+
+This email sent to mlsubscriber.tech@csmining.org
+
+re: auto mounting a partition with nobrowseexample code:
+
+#import 
+#import 
+
+dadissenterref
+diskapproved(dadiskref disk, void *context)
+{
+char const *cdiskname = dadiskgetbsdname(disk);
+dadissenterref dissenter;
+char *type;
+nsstring *diskname = [nsstring stringwithutf8string:cdiskname];
+nsrange s1s1numberrange = nsmakerange([diskname length] - 4, 4);
+
+if([[diskname substringwithrange:s1s1numberrange]  
+isequaltostring:@"s3s1"]) /* check for our magic partition */
+{
+cfstringref arguments[] =
+{
+cfstringcreatewithcstring(kcfallocatordefault, "nobrowse",  
+kcfstringencodingutf8),
+cfstringcreatewithcstring(kcfallocatordefault, "owners",  
+kcfstringencodingutf8),
+cfstringcreatewithcstring(kcfallocatordefault, "suid",  
+kcfstringencodingutf8),
+null
+};
+
+dadiskmountwitharguments(disk,
+null,
+kdadiskmountoptiondefault,
+null,
+null,
+arguments);
+
+/* deny the mount since we already mounted it */
+dissenter = dadissentercreate(kcfallocatordefault,
+kdareturnnotpermitted,
+cfstr("mounted hidden"));
+
+type = "mounted hidden";
+}
+else
+{
+/* allow normal mounting */
+dissenter = null;
+
+type = "mounted normal";
+}
+
+printf("%s: %s\n", cdiskname, type);
+
+return dissenter;
+}
+
+int
+main (int argc, const char * argv[])
+{
+     nsautoreleasepool *pool = [nsautoreleasepool new];
+daapprovalsessionref session = daapprovalsessioncreate 
+(kcfallocatordefault);
+
+if (!session)
+{
+fprintf(stderr, "failed to create disk arbitration session");
+goto out;
+}
+
+daregisterdiskmountapprovalcallback(session,
+null,  // matches all disk objects
+diskapproved,
+null); // context
+
+daapprovalsessionschedulewithrunloop(session,
+ cfrunloopgetcurrent(),
+ kcfrunloopdefaultmode);
+
+cfrunloopruninmode(kcfrunloopdefaultmode,
+60 /* seconds */,
+false);
+
+daapprovalsessionunschedulefromrunloop(session,
+ cfrunloopgetcurrent(),
+ kcfrunloopdefaultmode);
+
+daunregisterapprovalcallback(session,
+diskapproved,
+null);
+
+out:
+    if (session)
+cfrelease(session);
+
+     [pool release];
+
+return 0;
+}
+
+
+________________________________________________________________________ 
+_______________________
+
+
+the example appears to work but i'm noticing when calling  
+dadiskmountwitharguments() from the callback function it seems to  
+trigger the approval process for the same partition, is there  
+something i need to do to prevent this?
+
+also, is it possible to change the mountroot rather than specifying a  
+mountpoint???
+
+i've look at suggested solution to my mount issue and a manual  
+solution is not acceptable or the use of the fstab file because it  
+cannot be guaranteed that it exists or that the content will be correct.
+
+it has been suggested that example code does exist however no one has  
+point me to or provided me with or even a link to any sample code and  
+google is pretty useless.
+
+-- dale
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+filesystem-dev mailing list      (filesystem-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/filesystem-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

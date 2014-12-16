@@ -1,0 +1,34 @@
+on fri, 30 apr 2010 16:28:22 -0500
+stan hoeppner  wrote:
+
+> celejar put forth on 4/30/2010 3:20 pm:
+> 
+> > it is still small, though - under 70 lines of actual perl code,
+> > although it does, of course, require the basic perl installation and
+> > about a half-dozen other modules.
+> > 
+> > if anyone has any feedback, or suggestions for improvement, i'd love
+> > to hear them.
+> 
+> if you're writing an smtpd from scratch in perl, why reinvent the wheel?
+> 
+> http://wiki.qpsmtpd.org/
+
+thanks.  steve kemp also pointed this out to me.  i hadn't found it,
+and since neither you, nor he, responded to me earlier email wondering
+if such a thing existed, i decided to practice my perl by coding one
+myself ...
+
+celejar
+-- 
+foffl.sourceforge.net - feeds offline, an offline rss/atom aggregator
+mailmin.sourceforge.net - remote access via secure (openpgp) email
+ssuds.sourceforge.net - a simple sudoku solver and generator
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100501222630.3ec5cbca.celejar@csmining.org
+
+

@@ -1,0 +1,39 @@
+on tue, may 11, 2010 at 3:11 am, lisi  wrote:
+> on tuesday 11 may 2010 01:10:50 rob owens wrote:
+>>
+>> you could use uuid's instead of device names (/dev/sdx) to get around th=
+is
+>> issue.
+>
+> there was a thread on this recently, and i think it was said that even uu=
+id's
+> can change with changing hardware. =a0it was suggested, if i remember
+> correctly, that the only safe way =a0to prevent a name change is to label=
+ the
+> partitions when you first partition the drive and use labels in fstab etc=
+..
+>
+> i am sure someone will correct me if i have got this wrong, so if noone d=
+oes
+> so i have probably remembered correctly.
+
+i don't remember a thread on debian-user about uuids changing with
+changing hardware (i could be wrong though!) but there was a thread in
+march on ubuntu-users where a guy was duplicating disks for a rollout
+and he was convinced that the bios of the boxes into which he was
+plugging in the duplicated hds was changing the uuids of the disks'
+partitions because he was unable to boot from those disks unless he
+changed the fstab to use /dev/sdax devices. i pointed out that the
+idea that a bios could change a filesystem's superblock didn't make
+any sense and that it could not be a uuid problem because he could
+boot boxes with intel mobos but not boxes with another manufacturer's
+mobos (i assume that he could have replied that the other mobos were
+changing the uuids and the intels ones not...).
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/aanlktinx1xhrnmpalqc1md9-xadx3kergm47h8j_e7k8@mail.csmining.org
+
+

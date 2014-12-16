@@ -1,0 +1,50 @@
+please don't top post!
+
+> on sat, may 22, 2010 at 7:25 pm, chris bannister
+>  wrote:
+> > on fri, may 21, 2010 at 08:32:00pm +0530, tapas mishra wrote:
+> >> on fri, may 21, 2010 at 7:23 pm, =a0 wrot=
+e:
+> >> > on fri, may 21, 2010 at 04:10:55pm +0530, tapas mishra wrote:
+> >> >> bootloader =3d "/usr/lib/xen-3.2-1/bin/pygryb"
+> >> > =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0=
+ =a0 =a0^^^^^^^^
+> >> > shouldn't that be pygrub?
+> >> sorry that was a type error i mean the same.
+> >
+> > please copy n paste error messages!
+
+on sat, may 22, 2010 at 06:56:01pm +0530, tapas mishra wrote:
+> i have wiped out all debian instances from my server.
+> thanks for your message  i struggled for 2 months.
+> here is a snapshot if some one thinks i am a newbie and have not done
+> my homework
+> http://farm4.static.flickr.com/3356/4617619327_7f4bfcdb05_o.png
+> this is not exact thing as my problem was but thanks for your
+> response.
+> i have wiped out debian from my server for ever.
+> i do not have any grudge with debian but my experience has been more
+> than frustrating.
+> i failed to have a centos domu on debian dom0 i really really needed
+> centos as one of the guest oses.there were more guests running with
+> debian but now none of them are there.
+> you can go through more snapshots here
+> http://www.flickr.com/photos/48996087@n07/
+> all of them are on a debian server.i have finally failed.
+> thanks for your response.
+
+i believe you have misunderstood me. i mean that instead of *typing* the
+errors out by long hand copy the error using the mouse and past it into
+your email/bug report. you could instead use the "script" command. this
+eliminates the problems which typing out errors can cause.=20
+
+"religion is excellent stuff for keeping common people quiet."
+   -- napoleon bonaparte
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100523115232.ga18258@fischer
+
+

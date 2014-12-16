@@ -1,0 +1,60 @@
+None[Solved] xorg synaptics driver no longer working with udev?From nobody Tue Dec 16 07:55:47 2014
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+> On Thu, Apr 15, 2010 at 23:27:41 +0200, Sjoerd Hardeman wrote:
+>=20
+> [...]
+>=20
+>> Hal is certainly no longer working, see #567389. Yet, udev now also
+>> stopped working...
+>=20
+> OK, I think I understand a little bit better how this is supposed to be=
+
+> working now. Try to add your touchpad options to the InputClass section=
+
+> of the file /usr/lib/X11/xorg.conf.d/10-synaptics.conf as a first test.=
+
+>=20
+> [...]
+>=20
+> I am curious to hear if this actually works because I cannot try it
+> myself. (My up-to-date Sid desktop does not have a touchpad.)
+Hi Florian,
+
+The new xorg version migrated to testing today, and indeed contains the
+file /usr/share/X11/xorg.conf.d/50-synaptics.conf. Setting the options
+there enabled my special touchpad-tricks again. Thanks!
+
+Sjoerd
+
+[solved] xorg synaptics driver no longer working with udev?from nobody tue dec 16 07:55:47 2014
+content-type: text/plain; charset=utf-8
+content-transfer-encoding: quoted-printable
+
+> on thu, apr 15, 2010 at 23:27:41 +0200, sjoerd hardeman wrote:
+>=20
+> [...]
+>=20
+>> hal is certainly no longer working, see #567389. yet, udev now also
+>> stopped working...
+>=20
+> ok, i think i understand a little bit better how this is supposed to be=
+
+> working now. try to add your touchpad options to the inputclass section=
+
+> of the file /usr/lib/x11/xorg.conf.d/10-synaptics.conf as a first test.=
+
+>=20
+> [...]
+>=20
+> i am curious to hear if this actually works because i cannot try it
+> myself. (my up-to-date sid desktop does not have a touchpad.)
+hi florian,
+
+the new xorg version migrated to testing today, and indeed contains the
+file /usr/share/x11/xorg.conf.d/50-synaptics.conf. setting the options
+there enabled my special touchpad-tricks again. thanks!
+
+sjoerd
+

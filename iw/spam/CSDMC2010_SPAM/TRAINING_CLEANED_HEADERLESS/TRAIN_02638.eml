@@ -1,0 +1,25 @@
+on mon, apr 05, 2010 at 06:14:42pm -0400, mike viau  was heard to say:
+> both "aptitude search ~pextra ~smisc" and "aptitude search ~pextra search ~smisc" resulted in a list of package which did not necessarily meet both the search patterns specified.
+
+  that's because "aptitude search" implicitly puts an ?or between its
+parameters.  around them.  whatever.
+
+  if you quote the arguments so they end up in a single command-line
+parameter, this should work.
+
+  on the surface, this behavior is dumb.  on the other hand, if an
+implicit ?and was used, "aptitude search gnome kde" would return only
+packages matching *both* gnome and kde, which probably isn't what the
+user wanted.  trade-offs in both directions; the one aptitude picked
+means that if you want to use complex patterns, you need to be aware
+of where your command-line arguments are.
+
+  daniel
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100430143733.gf22310@emurlahn.burrows.local
+
+

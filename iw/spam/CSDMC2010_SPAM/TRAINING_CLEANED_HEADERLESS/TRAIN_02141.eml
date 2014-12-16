@@ -1,0 +1,26 @@
+on sat, apr 10, 2010 at 07:59:11am -0500, nate bargmann wrote:
+> if at all possible, avoid wep and use wpa pre-shared key encryption. 
+> wep is easily cracked while wpa offers the use of a 63 character key. 
+> using random characters (as generated at:
+> https://www.grc.com/passwords.htm ) will give you a network that will
+> be extremely hard to crack via a brute force attack.  virtually all
+> consumer wireless routers/acess points support wpa psk.
+> 
+> - nate >>
+> 
+
+been thinking about it. thanks!
+
+-- 
+kind regards,
+freeman
+
+http://bugs.debian.org/release-critical/
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100410202215.gb9287@europa.office
+
+

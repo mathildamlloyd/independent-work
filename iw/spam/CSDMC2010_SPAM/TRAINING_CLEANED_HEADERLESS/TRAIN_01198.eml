@@ -1,0 +1,47 @@
+on 5/20/2010 6:09 pm, lrhorer wrote:
+>
+>          ok, i'm stumped.  i was having some problems which were likely related
+> to the old kernel in debian "lenny", so i upgraded to "squeeze" in
+> order to alleviate the issue, which it apparently has.  now, however, i
+> need to fsck the main array on the box, which is formatted as xfs.  the
+> xfs-repair utility is not on the upgraded system.  (i was forced to do
+> a fresh install of the boot drive.)  how can i obtain the xfs file
+> utilities - particularly xfs-repair - under "squeeze"?
+>
+>
+
+
+if xfsprogs is installed, then i think fsck will do it, just first run 
+something like:
+
+tune2fs -c912 /dev/sda3
+
+and reboot, where c is the capital 'c', 912 is some number larger than 
+the current maximum mount count (before automatically fsck'ing) and 
+substitute your actual device path for the /dev/sda3 i used as an 
+example.
+
+i think xfsprogs has some other tools as well.
+
+oh wait, i reread your question.
+
+
+if the machine is in working order, you can just do:
+
+#apt-get install xfsprogs
+
+if not, then a live cd will be needed, something like knoppix, be sure 
+it has xfs support.  just boot the live cd or dvd, and bob's your uncle.
+
+i'm unsure, does the debian squeeze installer fully support xfs?
+
+
+maa
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bf5dae7.9060002@allums.com
+
+

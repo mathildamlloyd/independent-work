@@ -1,0 +1,28 @@
+> (3) the need for special backup requirements will be 
+> used by the opponents of linux at my place of employment 
+> to oppose further deployments of linux, ...
+
+what about the carrot approach?  find an even better 
+backup method, compatible with grub 2 and appealing 
+to your management for its efficiency.
+
+or what about putting grub on a usb flash which can 
+be replicated easily and is largely independent of 
+your main non-volatile storage.  the flash fails 
+and you plug in another.  main storage fails and 
+you invoke the traditional backup.
+
+regards,       ... peter e.
+
+-- 
+carnot is waiting for a disk replacement; web pages may not work.
+google "pathology workshop".
+in ethno click here -> desktops.opendoc http://carnot.pathology.ubc.ca/.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/171056504.59254.34770.@heaviside.invalid
+
+

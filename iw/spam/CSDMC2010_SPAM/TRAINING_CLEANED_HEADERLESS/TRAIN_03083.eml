@@ -1,0 +1,29 @@
+on mon, 3 may 2010 22:11:59 -0400
+zachary uram  wrote:
+
+> i have a static ip setup, i wish to add a router and it has a web
+> interface, i can get to it if i start a dhcp server and then
+> 192.168.1.1 is setup, but i'd really prefer to not do this.
+> is there a way i can setup devices such as this without needing to run
+> dhcp? also i was generally curious if there is any program which will
+
+i don't quite understand the problem.  can you explain this a bit more clearly?
+
+> search my lan and report the address of any network enabled devices it
+> finds (firewalls, dsl modems, routers, etc.)? thanks!
+
+nmap?
+
+celejar
+-- 
+foffl.sourceforge.net - feeds offline, an offline rss/atom aggregator
+mailmin.sourceforge.net - remote access via secure (openpgp) email
+ssuds.sourceforge.net - a simple sudoku solver and generator
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100503231602.30b10b53.celejar@csmining.org
+
+

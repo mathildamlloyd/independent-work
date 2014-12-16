@@ -1,0 +1,24 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=utf-8; format=flowed
+content-transfer-encoding: quoted-printable
+
+mihamina rakotomandimby schreef:
+>> david baron  :
+>> is there any other way?
+>=20
+> yes.
+of course it's list policy to ask smart questions, but it's also list=20
+policy not to give useless answers (well, not policy, but it's certainly =
+
+recommended).
+@david: read=20
+http://www.exim.org/exim-html-current/doc/html/spec_html/index.html for=20
+the full documentation.
+exim has a cli interface to remove frozen messages, man exim for=20
+details. eg. to show frozen messages:
+  exim -bp
+and read
+
+sjoerd
+
+

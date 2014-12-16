@@ -1,0 +1,46 @@
+this specific application plays movies in a loop.
+
+there are no problems when i use the following qtmoviedidendnotification =
+notification handler:
+
+- (void)moviedidend: (nsnotification *)notification
+{
+[self performselectoronmainthread: @selector(startnextmovie) =
+withobject: null waituntildone: no];
+}
+
+however qtkit does not release the qtmovie objects when i use the gcd =
+version:
+
+- (void)moviedidend: (nsnotification *)notification
+{
+dispatch_async(dispatch_get_main_queue(), ^{
+[self  startnextmovie];
+});
+}
+
+-(void) startnextmovie
+{
+[movieview setmovie: [self nextmovie]];
+}
+
+now comes the weird part, the qtmovie objects are released when the user =
+interacts (click in menubar/window etc) with the application.
+
+since this is a kiosk application that never happens and after a while =
+the application simply runs out of memory.
+
+i this a known issue?
+
+- henk
+
+
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

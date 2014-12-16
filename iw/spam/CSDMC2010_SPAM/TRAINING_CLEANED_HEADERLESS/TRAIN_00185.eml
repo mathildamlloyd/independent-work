@@ -1,0 +1,46 @@
+andreas weber put forth on 4/6/2010 2:08 am:
+> on 2010-04-04 01:42, stan hoeppner wrote:
+>> telling the op to throw out a multi thousand dollar 24 port managed gige
+>> switch due to a minor issue with one pc or server is not very sage advice.
+> 
+> i said "try changing", not "throw out" (reading and quoting is a basic
+> skill). having sold many _multi-thousand-euro-switches_ let me tell you
+> that they can be broken right from the start. doa should ring a bell. a
+> simple temporary change of the switch (often the replacement is provided
+> by the vendor) would immediately show if this could be the problem.
+> 
+> it's a bit of a general problem on lists like this one (very technical
+> ones) that some very smart people dislike simple straight forward
+> solutions to be checked first, although it happens all the time that
+> smart people stumble over simple problems. instead they like to tell
+> other people they're not sage enough.
+> 
+> so sorry for my "is the cable ok?" approach as a first aid, i will keep
+> my mouth shut now, knowing that there's a savvy elite around.
+
+please forgive me if my choice of words offended you.  that wasn't my
+intention at all.  i was speaking figuratively, not literally.  my point was
+that swapping out the production switch, which probably has others users
+plugged in, shouldn't be the first troubleshooting step, especially if it's
+a managed switch and can thus show per port configuration and traffic data.
+
+this data usually shines a bight light on these types of issues.  usually
+the problem in cases like the op is having relate to vlan configuration.  on
+manyy/most managed switches which have global vlans already configured, but
+not all ports configured, if you plug a pc into an unconfigured port the pc
+sees a dead network.  the solution is to add that port to one or more
+appropriate vlans.
+
+-- 
+stan
+
+
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bbb11a7.4010702@hardwarefreak.com
+
+

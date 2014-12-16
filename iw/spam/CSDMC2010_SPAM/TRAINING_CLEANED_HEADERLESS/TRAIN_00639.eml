@@ -1,0 +1,28 @@
+on thu, 8 apr 2010 10:40:46 -0400 (edt)
+stephen powell  wrote:
+
+...
+
+> it sounds to me like you want to get pristine kernel sources directly
+> from kernel.org and compile them and run them on a debian system.
+> i've never done that, but others tell me that they do it.  of course,
+> this is not supported by debian.  but why don't you just install the
+
+i'm not sure that it's correct to say that using kernel-package to
+build and install vanilla kernel sources is "not supported by debian".
+my understanding is that the package is supposed to work on any kernel
+tree, not just debian's packaged ones.  perhaps manoj will comment?
+
+celejar
+-- 
+foffl.sourceforge.net - feeds offline, an offline rss/atom aggregator
+mailmin.sourceforge.net - remote access via secure (openpgp) email
+ssuds.sourceforge.net - a simple sudoku solver and generator
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100408110101.a6211079.celejar@csmining.org
+
+

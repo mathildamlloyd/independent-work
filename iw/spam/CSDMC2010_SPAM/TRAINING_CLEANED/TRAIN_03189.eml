@@ -1,0 +1,59 @@
+None> You seem to posses knowledge of these things that is 180 degrees opposite
+> of fact.  OLTP, or online transaction processing, is typified by retail or
+> web point of sale transactions or call logging by telcos.  OLTP databases
+> are typically much more write than read heavy.  OLAP, or online analytical
+> processing, is exclusively reads, made up entirely of search queries.
+> Why/how would you think OLTP is mostly reads?
+
+If all you're doing is appending to a log file then you're write-intensive.
+For example, some INN servers using cycbuffs are write-intensive if they can
+forward the articles out to the peers before they disappear from cache.
+
+OLTP databases have indices (or hash tables or whatever) that need to be
+read even when writing a new record.  Then of course, the data that has been
+written needs to be used for something such as fulfillment and analysis.
+Both are mostly reads.  Backup from the live DB is all reads.
+
+I typically saw about 90% reads in OLTP databases.
+
+I think this is getting off-topic for debian-user.
+
+--Mike Bird
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/201004281917.14982.mgb-debian@yosemite.net
+
+
+re: questions about raid 6on wed april 28 2010 18:51:18 stan hoeppner wrote:
+> you seem to posses knowledge of these things that is 180 degrees opposite
+> of fact.  oltp, or online transaction processing, is typified by retail or
+> web point of sale transactions or call logging by telcos.  oltp databases
+> are typically much more write than read heavy.  olap, or online analytical
+> processing, is exclusively reads, made up entirely of search queries.
+> why/how would you think oltp is mostly reads?
+
+if all you're doing is appending to a log file then you're write-intensive.
+for example, some inn servers using cycbuffs are write-intensive if they can
+forward the articles out to the peers before they disappear from cache.
+
+oltp databases have indices (or hash tables or whatever) that need to be
+read even when writing a new record.  then of course, the data that has been
+written needs to be used for something such as fulfillment and analysis.
+both are mostly reads.  backup from the live db is all reads.
+
+i typically saw about 90% reads in oltp databases.
+
+i think this is getting off-topic for debian-user.
+
+--mike bird
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201004281917.14982.mgb-debian@yosemite.net
+
+

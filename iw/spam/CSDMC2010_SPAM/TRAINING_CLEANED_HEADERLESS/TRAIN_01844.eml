@@ -1,0 +1,32 @@
+mike swingler wrote:
+
+> your class is scoped under a jnlp-specifc classloader: using the =
+provided jclass reference or directly passing a reference to the class =
+object you need will remove any lookup ambiguity. you should not =
+consider the jni class lookup mechanism to be reliable while you are =
+being called from a static initializer.
+
+if you spawn the new thread in java, and have it call down into your jni =
+library, the thread will already be attached to the jvm, be part of the =
+correct java threadgroup, and inherit all the expected behaviour of the =
+jws environment. if you create the thread in native code, what java =
+threadgroup does it belong to? i've always avoided spawning new threads =
+in native code because of the amibuguity here.
+
+be advised, however, that the thread where the static initializer is =
+running is holding the monitor lock for the class being loaded. the =
+monitor is not released until the static initializer returns and class =
+initialization is complete. this can result in deadlock when a helper =
+thread attempts to do anything with the class while the static =
+initializer is still running. i think it is in the jvm specification =
+where this is spelled out. i had to do some digging through it once, a =
+long time ago, to resolve a deadlocking issue (involving the native =
+carbon native event thread, which tells you how long ago this was).=
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

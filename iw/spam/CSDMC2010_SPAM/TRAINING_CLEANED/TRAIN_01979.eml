@@ -1,0 +1,64 @@
+NoneOn 4/19/2010 2:29 PM, Bob Proulx wrote:
+> Joe Emenaker wrote:
+>   =20
+>> I'm looking for a good battery charge/discharge profiler tool for my
+>> Ubuntu laptop.
+>>     =20
+> Of course I am sure that you know you are posting about Ubuntu to the
+> Debian laptop mailing list?  The least you could do is to lie to us
+> and say you are running Debian when posting to a Debian list.  :-)
+>   =20
+
+Well, I maintain about 4 Debian servers... and I've been using Debian=20
+almost exclusively ever since the .deb packaging system got rolled out=20
+(yeah... waaaayyy back). Because Ubuntu is a derivative of Debian (in=20
+the sense that just about anything available for Debian is either also=20
+packaged for, or the Debian package is installable on, Ubuntu), and also =
+
+because we in the Debian crowd have better kung-fu than those lame=20
+GUI-installer Ubuntu-ites...... *and* because I've already been=20
+subscribed on this list for several years....   I figured I'd ask here.
+
+> There are some useful tools available though.  You might look at 'ibam'=
+=2E
+>   =20
+
+Yeah, I saw IBAM, but it looked like it just generated plain ol' .png=20
+files or something. I was hoping for something a little more snazzy.
+
+- Joe
+
+re: battery monitor tools?from nobody tue dec 16 07:55:46 2014
+content-type: text/plain; charset=iso-8859-1; format=flowed
+content-transfer-encoding: quoted-printable
+
+on 4/19/2010 2:29 pm, bob proulx wrote:
+> joe emenaker wrote:
+>   =20
+>> i'm looking for a good battery charge/discharge profiler tool for my
+>> ubuntu laptop.
+>>     =20
+> of course i am sure that you know you are posting about ubuntu to the
+> debian laptop mailing list?  the least you could do is to lie to us
+> and say you are running debian when posting to a debian list.  :-)
+>   =20
+
+well, i maintain about 4 debian servers... and i've been using debian=20
+almost exclusively ever since the .deb packaging system got rolled out=20
+(yeah... waaaayyy back). because ubuntu is a derivative of debian (in=20
+the sense that just about anything available for debian is either also=20
+packaged for, or the debian package is installable on, ubuntu), and also =
+
+because we in the debian crowd have better kung-fu than those lame=20
+gui-installer ubuntu-ites...... *and* because i've already been=20
+subscribed on this list for several years....   i figured i'd ask here.
+
+> there are some useful tools available though.  you might look at 'ibam'=
+=2e
+>   =20
+
+yeah, i saw ibam, but it looked like it just generated plain ol' .png=20
+files or something. i was hoping for something a little more snazzy.
+
+- joe
+

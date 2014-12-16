@@ -1,0 +1,53 @@
+some time ago, my slrn stopped being able to talk to my local news
+server, and i'm just now trying to troubleshoot it.  i suspect this has
+a really obvious answer, but because i'm not at all familiar with ipv6,
+i'm not seeing it.  i'm running sid, mostly up to date.
+
+apparently, the problem is that inetd has leafnode listening on ipv6,
+but not on ipv4.  i think i need to either get slrn to work with ipv6,
+or get leafnode listening on ipv4.  actually i'd like to know how to do
+both.  i'd very much appreciate any pointers you can give me.
+
+$ netstat -l | grep nntp
+tcp6       0      0 [::]:nntp               [::]:* listen
+
+$ telnet :: 119
+trying ::...
+connected to ::.
+escape character is '^]'.
+200 leafnode nntp daemon, version 1.11.7 running at ip6-localhost (my fqdn: a.b.org)
+
+telnet localhost 119
+trying 127.0.0.1...
+telnet: unable to connect to remote host: connection refused
+
+this is surprising, because i thought you had to specifically tell
+inetd to use ipv6.  my inetd.conf has this line:
+
+nntp stream tcp nowait news /usr/sbin/tcpd /usr/sbin/leafnode
+
+... but neither loosening my /etc/hosts.* files nor removing tcpd from
+the loop seems to help.
+
+i'm a total newb regarding ipv6.  currently my environment has:
+nntpserver=localhost
+... which some time ago allowed slrn to read from the local news server.
+
+changing to 
+nntpserver=::
+does not satisfy slrn:
+connecting to host  ...
+failed to resolve
+
+any suggestions?
+
+-- 
+monique
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100428185732.gb25336@mail.bounceswoosh.org
+
+

@@ -1,0 +1,50 @@
+on thu, 6 may 2010 23:31:15 +0300
+alexander batischev  wrote:
+
+> > these days, the init.d script dependencies in squeeze are quite
+> > complete, so complete that it is actually possible to run all the
+> > init.d scripts in parallell based on these dependencies. if you want
+> > to test your squeeze system, make sure dependency based boot
+> > sequencing is enabled, and add this line to /etc/default/rcs:
+> >
+> > concurrency=makefile
+> >
+> > that is it. it will cause sysv-rc to use the startpar tool to run
+> > scripts in parallel using the dependency information stored in
+> > /etc/init.d/.depend.boot, /etc/init.d/.depend.start and
+> > /etc/init.d/.depend.stop to order the scripts. startpar is configured
+> > to try to start the kdm and gdm scripts as early as possible, and will
+> > start the facilities required by kdm or gdm as early as possible to
+> > make this happen.
+> >
+> > give it a try, and see if you like the result. if some services fail
+> > to start properly, it is most likely because they have incomplete
+> > init.d script dependencies in their startup script (or some of their
+> > dependent scripts have incomplete dependencies). report bugs and get
+> > the package maintainers to fix it. :)
+> 
+> well, i did that and restarted system. i didn't notice any errors, and
+> system doesn't boot faster or slower than usual. don't know is it good
+> or bad news, though
+
+the last time we discussed this, it was claimed that there will be no
+difference on single core systems:
+
+http://lists.debian.org/debian-user/2009/09/msg00721.html
+
+i have a single core (celeron m) system - should i bother with this at
+all?
+
+celejar
+-- 
+foffl.sourceforge.net - feeds offline, an offline rss/atom aggregator
+mailmin.sourceforge.net - remote access via secure (openpgp) email
+ssuds.sourceforge.net - a simple sudoku solver and generator
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100506184743.09f79826.celejar@csmining.org
+
+

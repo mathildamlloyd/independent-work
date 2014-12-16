@@ -1,0 +1,37 @@
+-----begin pgp signed message-----
+hash: sha1
+
+hi,
+
+when surfing on webpages, it someztimes happen that pages embed videos
+through flash (e.g. youtube). from time to time, my iceweasel/ff
+browser happens to play the video ~4 times faster than the normal
+(i.e. 1 time) speed, because it bugs. but the rest of the webpage
+remains normal, not specially buggy, neither do the other tabs. 
+
+has somebody already experienced such problems? if so, which websites
+with? special bug.
+
+thanks.
+- -- 
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+- -- 
+
+do not triumph before the victory.
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: processed by mailcrypt 3.5.8 
+
+ieyearecaayfakvm2fgacgkqm0llzlt8mhzdiwcdfoqcdh1kcajtcowjjvguccod
+bfwanajkbwdj2/wzddcjc4j9klnmfkob
+=5wdz
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87y6ftcbuv.fsf@merciadriluca-station.merciadriluca
+
+

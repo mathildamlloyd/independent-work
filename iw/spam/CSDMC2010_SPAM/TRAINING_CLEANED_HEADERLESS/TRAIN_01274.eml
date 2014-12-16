@@ -1,0 +1,50 @@
+on mon, 26 apr 2010 02:24:52 -0400 (edt), martin f krafft wrote:
+> 
+> stephen powell wrote:
+>> this is hardly a new book.  in fact, it was written in the days of woody.
+>> (woody -> sarge -> etch -> lenny -> squeeze)
+> 
+> it was written in the days of the sarge freeze and is entirely
+> focused on sarge.
+>>
+>> and parts of it are obsolete.  but the author focuses on the core
+>> stuff of unix/linux, and so most of it is still current. it's an
+>> excellent guide for how to accomplish common computing tasks in
+>> linux,
+> 
+> interesting analysis. ;)
+>
+> 
+> i /wanted/ to focus on debian and leave out the "core stuff of
+> unix/linux" and "common computing tasks", because that's documented
+> elsewhere.
+> 
+> it is true that in the last 5 years, some parts have been obsoleted,
+> but i'd say most of it still applies.
+> 
+> regardless, there's a need for a new edition. i am working on it.
+
+i think there may be some confusion here, mr. krafft.  the comments
+i made above were not in reference to anything _you_ wrote.  they were
+in reference to the original edition of "the linux cookbook", by
+michael stutz, which was copyrighted in 2001.
+
+   http://dsl.org/cookbook/cookbook_toc.html
+
+i suggest that you go back and look more closely at my original post.
+
+;-)
+
+-- 
+  .''`.     stephen powell    
+ : :'  :
+ `. `'`
+   `-
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/701354956.9070.1272291449420.javamail.root@md01.wow.synacor.com
+
+

@@ -1,0 +1,211 @@
+None> I downloaded a driver from the nVidia website and installed it using RPM.
+> Then I ran Sax2 (as was recommended in some postings I found on the net),
+but
+> it still doesn't feature my video card in the available list. What next?
+
+
+hmmm.
+
+Peter.
+
+Open a terminal and as root type
+lsmod
+you want to find a module called
+NVdriver.
+
+If it isn't loaded then load it.
+#insmod NVdriver.o
+Oh and ensure you have this module loaded on boot.... else when you reboot
+you might be in for a nasty surprise.
+
+Once the kernel module is loaded
+
+#vim /etc/X11/XF86Config
+
+in the section marked
+Driver I have "NeoMagic"
+you need to have
+Driver "nvidia"
+
+Here is part of my XF86Config
+
+Also note that using the card you are using you 'should' be able to safely
+use the FbBpp 32 option .
+
+Section "Module"
+ Load  "extmod"
+ Load  "xie"
+ Load  "pex5"
+ Load  "glx"
+ SubSection "dri"    #You don't need to load this Peter.
+  Option     "Mode" "666"
+ EndSubSection
+ Load  "dbe"
+ Load  "record"
+ Load  "xtrap"
+ Load  "speedo"
+ Load  "type1"
+EndSection
+
+#Plus the Modelines for your monitor should be singfinicantly different.
+
+Section "Monitor"
+ Identifier   "Monitor0"
+ VendorName   "Monitor Vendor"
+ ModelName    "Monitor Model"
+ HorizSync    28.00-35.00
+ VertRefresh  43.00-72.00
+        Modeline "800x600" 36 800 824 896 1024 600 601 603 625
+ Modeline "1024x768" 49 1024 1032 1176 1344 768 771 777 806
+EndSection
+
+Section "Device"
+
+ Identifier  "Card0"
+ Driver      "neomagic" #Change this to "nvidia"... making sure the modules
+are in the correct path
+ VendorName  "Neomagic" # "Nvidia"
+ BoardName   "NM2160"
+ BusID       "PCI:0:18:0"
+EndSection
+
+Section "Screen"
+ Identifier "Screen0"
+ Device     "Card0"
+ Monitor    "Monitor0"
+ DefaultDepth 24
+ SubSection "Display"
+  Depth     1
+ EndSubSection
+ SubSection "Display"
+  Depth     4
+ EndSubSection
+ SubSection "Display"
+  Depth     8
+ EndSubSection
+ SubSection "Display"
+  Depth     15
+ EndSubSection
+ SubSection "Display"
+  Depth     16
+ EndSubSection
+ SubSection "Display"
+  Depth     24
+  #FbBpp   32 #Ie you should be able lto uncomment this line
+  Modes   "1024x768" "800x600" "640x480" # And add in higher resulutions as
+desired.
+ EndSubSection
+EndSection
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+re: [ilug] newbie seeks advice - suse 7.2< >
+> i downloaded a driver from the nvidia website and installed it using rpm.
+> then i ran sax2 (as was recommended in some postings i found on the net),
+but
+> it still doesn't feature my video card in the available list. what next?
+
+
+hmmm.
+
+peter.
+
+open a terminal and as root type
+lsmod
+you want to find a module called
+nvdriver.
+
+if it isn't loaded then load it.
+#insmod nvdriver.o
+oh and ensure you have this module loaded on boot.... else when you reboot
+you might be in for a nasty surprise.
+
+once the kernel module is loaded
+
+#vim /etc/x11/xf86config
+
+in the section marked
+driver i have "neomagic"
+you need to have
+driver "nvidia"
+
+here is part of my xf86config
+
+also note that using the card you are using you 'should' be able to safely
+use the fbbpp 32 option .
+
+section "module"
+ load  "extmod"
+ load  "xie"
+ load  "pex5"
+ load  "glx"
+ subsection "dri"    #you don't need to load this peter.
+  option     "mode" "666"
+ endsubsection
+ load  "dbe"
+ load  "record"
+ load  "xtrap"
+ load  "speedo"
+ load  "type1"
+endsection
+
+#plus the modelines for your monitor should be singfinicantly different.
+
+section "monitor"
+ identifier   "monitor0"
+ vendorname   "monitor vendor"
+ modelname    "monitor model"
+ horizsync    28.00-35.00
+ vertrefresh  43.00-72.00
+        modeline "800x600" 36 800 824 896 1024 600 601 603 625
+ modeline "1024x768" 49 1024 1032 1176 1344 768 771 777 806
+endsection
+
+section "device"
+
+ identifier  "card0"
+ driver      "neomagic" #change this to "nvidia"... making sure the modules
+are in the correct path
+ vendorname  "neomagic" # "nvidia"
+ boardname   "nm2160"
+ busid       "pci:0:18:0"
+endsection
+
+section "screen"
+ identifier "screen0"
+ device     "card0"
+ monitor    "monitor0"
+ defaultdepth 24
+ subsection "display"
+  depth     1
+ endsubsection
+ subsection "display"
+  depth     4
+ endsubsection
+ subsection "display"
+  depth     8
+ endsubsection
+ subsection "display"
+  depth     15
+ endsubsection
+ subsection "display"
+  depth     16
+ endsubsection
+ subsection "display"
+  depth     24
+  #fbbpp   32 #ie you should be able lto uncomment this line
+  modes   "1024x768" "800x600" "640x480" # and add in higher resulutions as
+desired.
+ endsubsection
+endsection
+
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+

@@ -1,0 +1,36 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+ron johnson wrote:
+> on 2010-04-15 06:38, merciadri luca wrote:
+> [snip]
+>
+> hmph...
+>
+> before opening the pages, start capturing packets (using wireshark if
+> you must, or tshark from the cli).
+i will try this.
+>
+> your symptoms *probably* happen to me, but i just accept it as part of
+> firefox's poor threading.
+>
+> for example, if i "kill -15" the iceweasel pid then exit the gui to
+> apt-get upgrade and then restart xfce and iceweasel, all the (4 or 5)
+> windows and (total of 20-50) tabs restore.  it takes 3-4 minutes for
+> all of them to complete loading.
+that is a good example of a massive tab load. if i have so many tabs
+opened, and that i kill the resp. pid, i can restore the tabs, just as
+you do, and then the whole connection stalls. nothing loads, and each
+url keeps its name, not the page's title.
+
+
+--=20
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+i use pgp. if there is an incompatibility problem with your mail
+client, please contact me.
+
+
+
+

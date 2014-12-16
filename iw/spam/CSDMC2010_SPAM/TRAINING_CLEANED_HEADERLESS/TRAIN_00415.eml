@@ -1,0 +1,32 @@
+on tue, 18 may 2010 18:08:24 +0200, merciadri luca wrote:
+
+> i realized that my computer (this one, debian lenny, w. k.
+> 2.6.26-2-686-bigmem) was frozen. i tried escaping from the screensaver,
+> but nothing worked, except launching another tty, and restarting gdm.
+> here is the interesting output i obtained by looking at /var/log/syslog
+> and dmesg:
+> 
+> ==
+> [24892.623421] atkbd.c: unknown key pressed (translated set 2, code 0xbb
+> on isa0060/serio0).
+
+(...)
+
+that seems to be unrelated with a x freeze. looks like a keyboard key 
+mapping error but nothing serious.
+
+just review your "/var/log/xorg.0.log". if x crashed there must something 
+there :-?
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.18.17.20.50@csmining.org
+
+

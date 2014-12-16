@@ -1,0 +1,47 @@
+p.s. matter of fact, far as i understant plain english, the first part =
+is somewhat cryptic, too:
+
+on may 20, 2010, at 2:53 am, david hoerl wrote:
+
+> in your program=e2=80=99s control-flow statements, you can test for =
+the presence (or absence) of the appropriate negative literal to =
+determine how to proceed. for example, the following while statement =
+from the simplecocoatool code implicitly tests the word object variable =
+for the presence of a returned object (or, in another sense, the absence =
+of nil):
+>=20
+> while (word =3d [enm nextobject]) { printf("%s\n", [word utf8string]);
+> }
+
+i am not quite sure what's an "appropriate negative literal" and whether =
+it's present or absent, but perhaps it's just that there's a fine point =
+there which escapes me (i do admit i did not check the doc, it might use =
+the term before in a way which makes the statement unambiguous).
+
+what's -- imho of course -- pretty misleading is what follows though. =
+seems to me we are checking the word object variable very very =
+explicitly -- you can't be much more explicit in testing xxx than =
+writing "while (xxx)".
+
+what we are -- in fact -- testing _implicitly_ is whether the _enm_ =
+object variable might contain nil.
+
+or do implicit/explicit mean something else in english than in all other =
+languages i bumped into?
+
+best,
+---
+ondra =c4=8cada
+ocsoftware:     ocs@ocs.cz               http://www.ocs.cz
+private         ondra@ocs.cz             http://www.ocs.cz/oc
+
+
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+objc-language mailing list      (objc-language@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/objc-language/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

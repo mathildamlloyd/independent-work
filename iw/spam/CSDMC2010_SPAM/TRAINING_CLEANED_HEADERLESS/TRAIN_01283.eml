@@ -1,0 +1,25 @@
+john culleton wrote:
+> i have the debian variant knoppix installed on my laptop. now i want to
+> move some icons to the bottom bar and have them stay there between
+> sessions. i know how to do this with various versions of slackware using
+> kde 3.5 and xfce but i am a newcomer to the world of debian.
+> 
+> anyone have any hints?
+
+there is nothing related to debian, only to the desktop in use. 
+the latest knoppix (6.0) use lxde for the desktop. if this is your version, 
+aqd your desktop, have a look at the lxde documentation on 
+http://www.lxde.org/
+you could also ask for help on the lxde forum (same url as above).
+
+xavier
+
+
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hroq30$10q$1@dough.gmane.org
+
+

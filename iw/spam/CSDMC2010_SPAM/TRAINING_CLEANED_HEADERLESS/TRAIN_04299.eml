@@ -1,0 +1,216 @@
+searchsecurity | security and industry news
+july 23, 2002
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+from our sponsor:
+
+- free security webcast from microsoft and netiq 
+http://searchsecurity.com/r/0,,4619,00.htm?freesecuritywebcast 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+in this issue | today's highlights
+
+1. the top stories 
+- php flaw could crash, burn web servers
+- quick takes: major vendors throw support at saml
+- netbugtraq founder's security tips
+- roi calculators: honest projection or fuzzy math?
+
+2. important announcements and links
+- new poll: will heuristics ever fully replace signature-based
+antivirus protection?
+- infosec know it all daily trivia: tuesday, july 23, 2002
+- network security tip: firewall best practices 
+- best web links: risk analysis
+- the missing link: scot has cyber tomb with a view
+ 
+____________________________________________________________________
+*********************** sponsored by: netiq **********************
+
+free security webcast from microsoft and netiq 
+is your enterprise secure? learn how to combat hackers during the
+free 8/20/02 webcast, "computer crime forensics," part ii of the
+"defending the enterprise" series. tune in as security experts from
+the fbi, shell, microsoft and netiq show you how to dig deep to trace
+the steps of a hacker and preserve valuable evidence if you're ever
+compromised. they'll also cover how to safeguard and harden your
+windows network during a live q&a; session. discover expert
+countermeasures to secure and protect your enterprise. register now! 
+http://searchsecurity.com/r/0,,4619,00.htm?freesecuritywebcast 
+
+____________________________________________________________________
+lead story
+
+php flaw could crash, burn web servers | news: searchsecurity
+a security vulnerability in the popular php scripting language could
+allow an attacker to crash a web server or run arbitrary code on a
+system. only particular versions of php are impacted, and users are
+urged to upgrade or patch immediately. 
+http://www.searchsecurity.com/originalcontent/0,289142,sid14_gci840432,00.html  
+
+more on this topic
+>> read the searchsecurity news exclusive, "open-source security:
+it's all in the scrutiny:"
+http://searchsecurity.techtarget.com/originalcontent/0,289142,sid14_gci811614,00.html 
+
+>> visit our best web links on vulnerabilities:
+http://searchsecurity.techtarget.com/bestweblinks/0,289521,sid14_tax281934,00.html 
+
+>> click here for top 10 articles of the week:
+http://searchsecurity.techtarget.com/originalcontent/0,289142,sid14_gci816475,00.html    
+____________________________________________________________________
+********************************************************************
+other stories
+in addition to the headlines below, others are available on our news
+page.
+ >> full stories: http://searchsecurity.techtarget.com/news/
+ 
+quick takes: major vendors throw support at saml | news:
+searchsecurity
+rsa security and crm vendor epeople announce support for the security
+assertion markup language (saml) specification, leading off this
+edition of quick takes. also included are items from red siren and
+veridian, iss and st. bernard software, watchguard and sigaba. 
+http://www.searchsecurity.com/originalcontent/0,289142,sid14_gci840356,00.html 
+
+netbugtraq founder's security tips | news: searchwindowsmanageability
+what's wrong with windows security? how can you right those wrongs?
+security expert russ cooper offers his insights and tips. 
+http://searchwindowsmanageability.techtarget.com/originalcontent/0,289142,sid33_gci839660,00.html  
+
+roi calculators: honest projection or fuzzy math? | news:
+searchebusiness
+corporate budget watchdogs are breathing down your neck, wanting you
+to justify every technology expense. so do roi calculators accurately
+forecast a project's likely returns or merely encourage you to open
+up your wallet and spend?
+http://searchebusiness.techtarget.com/originalcontent/0,289142,sid19_gci839773,00.html 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+additional security headlines
+all headlines, including those below, are available on our news page.
+ >> full stories: http://searchsecurity.techtarget.com/news/
+
+- what does the future hold for pgp?
+- gao faults u.s. cyber-security efforts
+- firewall safeguards web-enabled apps
+- security flaws in pingtel phone
+
+____________________________________________________________________
+important features and links:
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+take our poll | searchsecurity reader survey
+
+will heuristics ever fully replace signature-based antivirus
+protection?
+
+http://searchsecurity.techtarget.com/poll 
+
+previous poll results
+
+what is the weakest security link in your organization?
+people (138 votes) 92%
+technology (6 votes) 4%
+don't know (6 votes) 4%
+total votes: 150
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+infosec know it all daily trivia | tuesday, july 23, 2002 
+
+this type of ids involves a wrapper or a scanner that looks for
+specific events. when it sees the event, it correlates it and decides
+whether or not it's an acceptable event.
+a. anomaly detection
+b. signature-based
+c. blind barricade
+d. profile detection
+
+>> check your answer:
+http://searchsecurity.techtarget.com/tip/1,289483,sid14_gci840086,00.html 
+
+>> visit our featured topic on intrusion detection:
+http://searchsecurity.techtarget.com/featuredtopic/0,290042,sid14_gci779273,00.html 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+firewall best practices | network security tip
+
+firewalls are not the end-all, be-all solution to information
+security. they are, however, a necessary component of an effective
+information security infrastructure. the following list is a set of
+best practices, in no particular order, that you should consider to
+ensure that your firewall is configured for optimal performance and
+effectiveness...
+http://searchsecurity.techtarget.com/tip/1,289483,sid14_gci838215,00.html  
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+risk analysis | best web links
+
+knowing where your company's security weaknesses are allow you to
+prioritize and better allocate your resources. learn more about risk
+analysis from the resources we've collected here.
+http://searchsecurity.techtarget.com/bestweblinks/0,289521,sid14_tax281906,00.html  
+ 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+the missing link | scot has cyber tomb with a view
+
+sometimes an epitaph just can't be the last word. billy kemp was a
+great scot who died a couple of years ago at the young age of 52. he
+was a councilman, husband, father and pillar of his community. his
+family couldn't possibly post all that on a tombstone. but they did
+manage to fit http://www.billykemp.org.uk/ on there. yep, kemp's
+tombstone doubles as a billboard for his web site, created
+posthumously by his son as a tribute to his father's life. the grave
+site has gotten more than 33,000 hits, perhaps more visits than the
+gravesite!
+
+source: vnunet
+http://www.vnunet.com/news/1133759 
+ 
+>> have you missed a missing link? peruse our archive: 
+http://searchsecurity.techtarget.com/bestweblinks/0,289521,sid14_tax292200,00.html
+
+____________________________________________________________________
+********************** searchsecurity contacts *********************
+
+cathy gagne, site editor (mailto:cgagne@techtarget.com)
+   >> send in your original articles and best practices.
+____________________________________________________________________
+
+crystal ferraro, assistant editor (mailto:cferraro@techtarget.com)
+   >> send in your favorite web sites.
+____________________________________________________________________
+
+mike mimoso, news editor (mailto:mmimoso@techtarget.com)
+   >> send in your news, product announcements and article ideas.
+____________________________________________________________________
+
+ed hurley, assistant news editor (mailto:ehurley@techtarget.com)
+   >> send in your news, product announcements and article ideas.
+____________________________________________________________________
+
+gabrielle derussy (mailto:gderussy@techtarget.com)
+   >> sponsor this or any other techtarget newsletter.
+____________________________________________________________________
+
+____________________________________________________________________
+********************* about this newsletter ************************
+
+created by techtarget (http://www.techtarget.com)
+ techtarget - the most targeted it media
+ copyright 2002, all rights reserved.
+
+
+unsubscribe from 'daily news'
+ - simply reply to this email with remove within the body or subject
+>  or
+ - go to: http://searchsecurity.techtarget.com/register
+ - log in to edit your profile.
+ - click on the link to edit email subscriptions.
+ - uncheck the box next to the newsletter you wish 
+   to unsubscribe from.
+ - when finished, click "save changes to my profile."
+
+
+

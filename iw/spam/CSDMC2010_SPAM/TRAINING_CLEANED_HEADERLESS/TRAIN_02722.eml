@@ -1,0 +1,39 @@
+on 04/24/2010 05:31 pm, b. alexander wrote:
+> on sat, apr 24, 2010 at 3:11 pm, ron johnson  wrote:
+[snip]
+>>
+>> xfs is the canonical fs for when you have lots of big files.  i've also
+>> seen simple benchmarks on this list showing that it's faster than ext3/ext4.
+>>
+>
+> thats cool. what about lots of little files? that was another of the draws
+> of reiser3. i have a space i mount on /media/archive, which has everything
+> from mp3/oggs and movies, to books to a bunch of tiny files. this will
+> probably be the first victim for the xfs test partition.
+
+that same unofficial benchmark showed surprising small-file speed by 
+xfs.
+
+>> xfs and ext[34] can all be extended.  for production servers with a working
+>> ups, i'd go with ext3 for /&  /boot and xfs (since it hates sudden power
+>> outages) for the "/data" directories.  for production workstations, i'd
+>> stick with the standby ext3 for /&  /boot and ext3 or xfs for /home and
+>> "/data" (depending on the workload).
+>>
+>
+> define "hates sudden power outages"...is it recoverable?
+>
+
+they got pretty corrupted.  maybe it's been robustified in the 
+intervening years.
+
+-- 
+dissent is patriotic, remember?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bd37551.3070109@cox.net
+
+

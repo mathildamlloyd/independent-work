@@ -1,0 +1,62 @@
+on tue, may 04, 2010 at 11:08:12am +0200, imre vida wrote:
+>=20
+> a few days ago syslog-ng stopped working properly on my=20
+> laptop.
+>=20
+> its output consists only of error report lines such as the following:
+> may  3 06:35:16 sharp syslog-ng[4361]: log statistics; processed=3d'desti=
+nation(d_error)=3d249', processed=3d'cent er(received)=3d0', processed=3d's=
+rc.internal(s_src#1)=3d206', stamp=3d'src.internal(s_src#1)=3d1272860716', =
+processed=3d 'destination(d_syslog)=3d206', processed=3d'destination(d_xcon=
+sole)=3d268', processed=3d'destination(d_newscrit)=3d0', processed=3d'desti=
+nation(d_auth)=3d74', processed=3d'destination(d_daemon)=3d77', processed=
+=3d'global(payload_realloc s)=3d0', processed=3d'global(msg_clones)=3d0', p=
+rocessed=3d'destination(d_mail)=3d1354', processed=3d'destination(d_cron)=
+=3d36', processed=3d'destination(d_kern)=3d243', processed=3d'destination(d=
+_uucp)=3d0', processed=3d'destination(d_debu g)=3d36', processed=3d'destina=
+tion(d_lpr)=3d0', processed=3d'destination(d_user)=3d16', processed=3d'cent=
+er(queued)=3d0', processed=3d'global(sdata_updates)=3d0', processed=3d'dest=
+ination(d_newsnotice)=3d0', processed=3d'destination(d_conso le_all)=3d268'=
+, processed=3d'destination(d_console)=3d1', processed=3d'source(s_src)=3d20=
+42', processed=3d'destination(d _newserr)=3d0'
+> =20
+> this started when the /var partition filled up due to an=20
+> update (without cleaning up old debs before). in an 'emergency'
+> clean up i deleted also old, compressed log files (as i usually do).
+>=20
+> this has happened before without an consequences, but now what ever=20
+> i try (de/reinstall, pure/reinstall) the problem persists.
+>=20
+> i switched to sysklogd which work absolutely fine.
+>=20
+> i wonder if anybody could give me a hint what went wrong=20
+> and how could i fix this.
+>=20
+> many thanks=20
+>=20
+> imre
+>=20
+> running:
+> debian testing
+> kernel 2.6.31.6
+> (compiled from source)
+>=20
+
+--=20
+imre vida, m.d., ph.d.
+neuroscience and molecular pharmacology
+fbls, university of glasgow=20
+west medical building=20
+glasgow, g12 8qq, u.k.
+tel.: 0044 141 330 5143
+fax.: 0044 141 330 5481
+email: i.vida@bio.gla.ac.uk
+--
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100504095002.ga25888@bio.gla.ac.uk
+
+

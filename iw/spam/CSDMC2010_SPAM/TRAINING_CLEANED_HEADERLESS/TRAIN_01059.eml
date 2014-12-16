@@ -1,0 +1,26 @@
+> having upgraded iceweasel, i am no longer able to call firefox or mozilla 
+> from command line any more. i don't mind firefox is called iceweasel or 
+> whatever in debian, but entirely stopping me from starting firefox is 
+> something i don't feel comfortable.
+> please comment. 
+
+if i understand correctly, you cannot find executable.
+i encountered similar on my bsd box, when file changed
+the name to firefox3. after a bit of climbing up and
+falling down, the answer has shown.
+if the question is: what is an alternative to firefox,
+i could say: conkeror. depends on libxul. almost the
+same look and feel, but no tables nor bars. i recompiled
+from the source both lib and the browser. i assume for
+debian already may be found the binary file.
+if i missed the point, sorry.
+
+                           zoran
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100507150339.ga980@faust.net
+
+

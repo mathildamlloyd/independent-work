@@ -1,0 +1,53 @@
+ron johnson wrote:
+> on 2010-04-08 19:50, godo wrote:
+>> ron johnson wrote:
+>>> hi,
+>>>
+>>> i just locally installed upstream firefox, and of course debian 
+>>> alternatives doesn't know about it, so iceweasel, which uses 
+>>> x-www-browser loads iceape, which i don't want.
+>>>
+>>> "update-alternatives --install" seems to be what i want in order to 
+>>> add /usr/local/firefox/firefox to the x-www-browser list, but can't 
+>>> get it to work.
+>>>
+>>> # update-alternatives --install x-www-browser firefox \
+>>>                                        /usr/local/firefox/firefox 3
+>>> update-alternatives: error: alternative link is not absolute as it 
+>>> should be: x-www-browser
+>>>
+>>> what am i doing wrong?
+>>>
+>>> tia
+>>>
+>> hi
+>> first i newer used update-alternatives so i don't know but is it maybe a
+>> problem: "firefox 3" in # update-alternatives --install x-www-browser 
+>> firefox /usr/local/firefox/firefox 3
+>> shouldn be /usr/local/firefox/"firefox 3" maybe?
+>>
+> 
+> the parameters to "update-alternatives --install" are:
+> link      x-www-browser
+> name      firefox
+> path      /usr/local/firefox/firefox
+> priority  3
+> 
+> 
+> 
+ahh sorry. wrong interpretation.
+
+-- 
+bye,
+goran dobosevic
+hrvatski: www.dobosevic.com
+  english: www.dobosevic.com/en/
+registered linux user #503414
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bbe8a00.9040205@dobosevic.com
+
+

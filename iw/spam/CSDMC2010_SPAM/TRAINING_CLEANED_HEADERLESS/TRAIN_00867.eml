@@ -1,0 +1,70 @@
+on fri, 23 apr 2010, mike swingler wrote:
+
+> on apr 23, 2010, at 8:24 am, michael allman wrote:
+>
+>> on fri, 23 apr 2010, mike swingler wrote:
+>>
+>>> on apr 23, 2010, at 2:15 am, michael allman wrote:
+>>>
+>>>> hello,
+>>>>
+>>>> i'm not sure, but i think apple wrote java plug-in 2 for npapi.  i'm seeing some serious display issues viewing some applets in firefox using this plugin.  for a single example, if i go to
+>>>>
+>>>> http://pivot.apache.org/demos/
+>>>>
+>>>> and left-click on the "kitchen sink" demo, wait for the applet to load, and then switch back to the demos tab, the bottom 85% or so of the browser window still shows the applet.  can the apple java engineers comment on this issue?
+>>>>
+>>>> i'm running firefox 3.6.3 on mac os 10.6.3.
+>>>
+>>> are you running the npapi plugin2 using the 10m3050 developer preview? visually, it looks pretty good to me in ff 3.6.3 on 10.6.3 (there are some event issues like scrolling and right click - but i'm not seeing a clipping issue).
+>>
+>> i don't know what the 10m3050 developer preview is, so i guess that's a "no".
+>>
+>>> what version of java does your browser think it's running (you can search for "what version of java do i have")?
+>>
+>> from http://www.javatester.org/version.html, i get "java version: 1.6.0_17 from apple inc."  also, under "about:plugins" i see the version of the java npapi plugin is 13.1.0.
+>>
+>> i'm going to send you a screen grab of the rendering error i'm seeing in a separate message that's not cc'd to java-dev.  interestingly, if i grab the applet window, i get the clipped applet display stretched to fit the size of the entire applet window.  if i grab the firefox window, i just get the firefox window display.  i guess this makes sense since the applet runs in a separate process, though i don't understand why the applet display is getting messed up.  maybe this is a clue to where the problem lies.
+>
+> that's really not necessary, thanks. the problem has to do with using 
+> clipping rectangles on overlay windows, which is a strategy that we have 
+> completely abandoned in the next release.
+>
+> please download and install the new developer preview of java for mac os 
+> x (10m3050+9m3150) at 
+> . 
+> we have made a considerable amount of progress on plugin2 since "java 
+> for mac os x 10.6 update 1" has been shipped, and i think you'll find 
+> the experience with plugin2 much more usable with this preview of "java 
+> for mac os x 10.6 update 2".
+>
+> we still have more work to do on plugin2, but we'll keep everyone up to 
+> date with the release notes in later developer previews after "java for 
+> mac os x 10.6 update 2" and "java for mac os x 10.5 update 7" go live.
+
+i installed 10m3050 and it looks like overall a big improvement.  in 
+particlar, the rendering errors i've seen are gone.  however, i have 
+noticed one new problem which i don't think was present in the previous 
+version of the plugin.  i can't (mouse) drag inside an applet in firefox. 
+dragging works in safari.  if i open
+
+http://pivot.apache.org/demos/decorators.html
+
+i can't move the "window" by dragging the title bar.  also, if i open
+
+http://pivot.apache.org/demos/itunes-search.html
+
+and search for "beethoven" i cannot drag the scrollbar.  do you have the 
+same problem?
+
+cheers,
+
+michael
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

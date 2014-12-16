@@ -1,0 +1,58 @@
+-----begin pgp signed message-----
+hash: sha1
+
+off-topic. but say this is of course being done in java (on os x).
+if you were writing say a online program for entering stock buy and  
+sell transactions. how do you imagine avoiding someone entering a  
+$15,000,000,000 transaction instead of a $15,000,000 transaction?
+
+how about something like...
+
+if (transactionamount > reasonablelimits.maximumtransactionamount) {
+
+if (transactionamount - reasonablelimits.maximumtransamount <  
+1000000000l)
+showreenteramountandverifydialog();
+else if (transactionamount -  
+reasonablelimits.maximumtransactionamount < 5000000000l)
+for (i=0;i<3;i++)
+showreenteramountandverifydialog();
+else
+throw new illegaltransactionexception("the ceo is the only one  
+authorized to enter this transaction with cfo and board of directors  
+approval");
+}
+
+p&g;: trading error behind sudden share price drop - marketwatch
+http://www.marketwatch.com/story/pg-trading-error-behind-sudden-share- 
+price-drop-2010-05-06
+
+youtube - trading error caught on tape! p&g;/dow meltdown -- dow jones  
+falls almost 1000 points!
+http://www.youtube.com/watch?v=nxybpd8taxq
+
+mike hall        hallmike at att dot net
+http://www195.pair.com/mik3hall
+http://www195.pair.com/mik3hall/home.html
+http://sourceforge.net/projects/macnative
+
+
+
+
+-----begin pgp signature-----
+version: gnupg/macgpg2 v2.0.14 (darwin)
+
+ijweaqecaayfakvjruyacgkquvk/zsathtimqqqah5qmhgmfcsdllc/ml9yelfwd
+j6fvilyrv5stby4rywn63ok6j/idszox4dicnof4hx5zfwubudrsgig8ddyn4x0k
+3hzjdutib/5wgtwqkijqs7z08wmyqif/o52fdhg9demfgt7zot+5ll4p274sj5fq
+hn7d4wwetqt6zcwiupo=
+=k9e6
+-----end pgp signature-----
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

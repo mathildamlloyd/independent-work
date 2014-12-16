@@ -1,0 +1,350 @@
+-------------------------------------------------------------------------
+the debian project                                 http://www.debian.org/
+debian gnu/linux 4.0 updated                             press@debian.org
+may 22nd, 2010                   http://www.debian.org/news/2010/20100522
+-------------------------------------------------------------------------
+
+debian gnu/linux 4.0 updated
+
+the debian project is pleased to announce the ninth and final update of
+its oldstable distribution debian gnu/linux 4.0 (codename "etch").
+
+this update incorporates all security updates which have been released
+for the oldstable release since the previous point release, with one
+exception which it was unfortunately not possible to include, together
+with a few adjustments to serious problems.
+
+please note: security support for the oldstable distribution ended in
+february 2010 [1] and no updates have been released since that point.
+
+  1: http://www.debian.org/news/2010/20100121
+
+those who frequently install updates from security.debian.org won't
+have to update many packages and most updates from security.debian.org
+are included in this update.
+
+new cd and dvd images containing updated packages and the regular
+installation media accompanied with the package archive respectively
+will be available soon at the regular locations.
+
+upgrading to this revision online is usually done by pointing the
+aptitude (or apt) package tool (see the sources.list(5) manual page) to
+one of debian's many ftp or http mirrors.  a comprehensive list of
+mirrors is available at:
+
+    
+
+please note that the oldstable distribution will be moved from the main
+archive to the archive.debian.org repository after june 6th 2010.
+after this move, it will no longer be available from the main mirror
+network.  more information about the distribution archive and a list of
+mirrors is available at:
+
+    
+
+
+miscellaneous bugfixes
+----------------------
+
+this oldstable update adds a few important corrections to the following
+packages:
+
+    package                                      reason
+
+    backup-manager         fix disclosure of mysql passwords to local users
+    binutils               add mips support for ".set symbol,value" gas syntax
+    fam                    fix 100% cpu usage in famd
+    fetchmail              fix potential mitm against apop and potential dos
+    freedoom               remove copyright-violating material
+    glibc                  fix incorrect libc6-amd64 dependency
+    gnupg                  fix memory leak and cleanup terminal on interrupt
+    irssi                  fix out of bounds access
+    kazehakase             disallow adding bookmarks for data:/javascript: uris
+    linux-2.6              several vulnerabilities
+    linux-2.6.24           several vulnerabilities
+    mksh                   fix unauthenticated local privilege escalation
+    mt-daapd               update the embedded prototype.js to fix security issues
+    openafs                don't create invalid pointers to kernel memory when handling errors
+    openssl                deprecate md2 hash signatures and fix several dos vulnerabilities
+    serveez                fix remote buffer overflow
+    tetex-bin              don't fail when latex is more than five years old
+    texlive-bin            don't fail when latex is more than five years old
+    texlive-extra          don't fail when latex is more than five years old
+    texlive-lang           don't fail when latex is more than five years old
+    wordpress              fix dos via long title and specially constructed charset parameter
+    xcftools               fix crash with files containing negative co-ordinates
+
+
+debian installer
+----------------
+
+the debian installer has been updated in this point release to offer
+better support for installation of the "oldstable" distribution and
+from archive.debian.org and to resolve issues with checking the gpg
+signatures of some files on mirror servers.
+
+the kernel image used by the installer has been updated to incorporate
+a number of important and security-related fixes.
+
+
+security updates
+----------------
+
+this revision adds the following security updates to the oldstable
+release.  the security team has already released an advisory for each
+of these updates:
+
+    advisory id    package                 correction(s)
+
+    dsa-1617       refpolicy               incompatible policy from previous dsa
+    dsa-1622       newsx                   arbitrary code execution
+    dsa-1748       libsoup                 arbitrary code execution
+    dsa-1754       roundup                 privilege escalation
+    dsa-1761       moodle                  file disclosure
+    dsa-1762       icu                     cross site scripting
+    dsa-1763       openssl                 denial of service
+    dsa-1763       openssl097              denial of service
+    dsa-1765       horde3                  several vulnerabilities
+    dsa-1766       krb5                    several vulnerabilities
+    dsa-1767       multipath-tools         denial of service
+    dsa-1768       openafs                 arbitrary code execution
+    dsa-1770       imp4                    cross-site scripting
+    dsa-1771       clamav                  several vulnerabilities
+    dsa-1772       udev                    privilege escalation
+    dsa-1773       cupsys                  arbitrary code execution
+    dsa-1775       php-json-ext            denial of service
+    dsa-1777       git-core                privilege escalation
+    dsa-1779       apt                     several vulnerabilities
+    dsa-1780       libdbd-pg-perl          arbitrary code execution
+    dsa-1781       ffmpeg                  arbitrary code execution
+    dsa-1782       mplayer                 arbitrary code execution
+    dsa-1783       mysql-dfsg-5.0          several vulnerabilities
+    dsa-1784       freetype                arbitrary code execution
+    dsa-1786       acpid                   denial of service
+    dsa-1787       linux-2.6.24            several vulnerabilities
+    dsa-1789       php5                    several vulnerabilities
+    dsa-1790       xpdf                    several vulnerabilities
+    dsa-1793       kdegraphics             several vulnerabilities
+    dsa-1794       user-mode-linux         several vulnerabilities
+    dsa-1794       fai-kernels             several vulnerabilities
+    dsa-1794       linux-2.6               several vulnerabilities
+    dsa-1796       libwmf                  denial of service
+    dsa-1798       pango1.0                arbitrary code execution
+    dsa-1799       qemu                    several vulnerabilites
+    dsa-1801       ntp                     buffer overflows allowing dos or code execution
+    dsa-1802       squirrelmail            code execution vulnerability in map_yp_alias function
+    dsa-1803       nsd                     denial of service
+    dsa-1804       ipsec-tools             denial of service
+    dsa-1805       gaim                    several vulnerabilities
+    dsa-1806       cscope                  arbitrary code execution
+    dsa-1807       cyrus-sasl2             fixes arbirary code execution
+    dsa-1810       cupsys                  denial of service
+    dsa-1810       libapache-mod-jk        information disclosure
+    dsa-1812       apr-util                several vulnerabilities
+    dsa-1813       evolution-data-server   regressions in previous security update
+    dsa-1814       libsndfile              arbitrary code execution
+    dsa-1816       apache2                 privilege escalation
+    dsa-1816       apache2-mpm-itk         rebuild against apache2 2.2.3-4+etch8
+    dsa-1818       gforge                  insufficient input sanitising
+    dsa-1819       vlc                     several vulnerabilities
+    dsa-1824       phpmyadmin              several vulnerabilities
+    dsa-1825       nagios2                 arbitrary code execution
+    dsa-1826       eggdrop                 several vulnerabilities
+    dsa-1829       sork-passwd-h3          regression in previous security update
+    dsa-1832       camlimages              arbitrary code execution
+    dsa-1833       dhcp3                   arbitrary code execution
+    dsa-1834       apache2                 denial of service
+    dsa-1834       apache2-mpm-itk         denial of service
+    dsa-1835       tiff                    several vulnerabilities
+    dsa-1837       dbus                    denial of service
+    dsa-1839       gst-plugins-good0.10    arbitrary code execution
+    dsa-1841       git-core                denial of service
+    dsa-1842       openexr                 several vulnerabilities
+    dsa-1847       bind9                   denial of service
+    dsa-1848       znc                     remote code execution
+    dsa-1849       xml-security-c          signature forgery
+    dsa-1850       libmodplug              arbitrary code execution
+    dsa-1851       gst-plugins-bad0.10     arbitrary code execution
+    dsa-1852       fetchmail               ssl certificate verification weakness
+    dsa-1853       memcached               arbitrary code execution
+    dsa-1854       apr-util                arbitrary code execution
+    dsa-1854       apr                     arbitrary code execution
+    dsa-1855       subversion              arbitrary code execution
+    dsa-1857       camlimages              arbitrary code execution
+    dsa-1858       imagemagick             several vulnerabilities
+    dsa-1859       libxml2                 several issues
+    dsa-1860       ruby1.8                 several issues
+    dsa-1860       ruby1.9                 several issues
+    dsa-1861       libxml                  several issues
+    dsa-1863       zope2.9                 arbitrary code execution
+    dsa-1865       fai-kernels             several vulnerabilities
+    dsa-1865       user-mode-linux         several vulnerabilities
+    dsa-1866       kdegraphics             several vulnerabilities
+    dsa-1867       kdelibs                 several vulnerabilities
+    dsa-1869       curl                    ssl certificate verification weakness
+    dsa-1871       wordpress               regression fix
+    dsa-1872       fai-kernels             several vulnerabilities
+    dsa-1872       user-mode-linux         several vulnerabilities
+    dsa-1877       mysql-dfsg-5.0          arbitrary code
+    dsa-1878       devscripts              remote code execution
+    dsa-1880       openoffice.org          arbitrary code execution
+    dsa-1882       xapian-omega            cross-site scripting
+    dsa-1883       nagios2                 several cross-site scriptings
+    dsa-1884       nginx                   arbitrary code execution
+    dsa-1888       openssl                 deprecate md2 hash signatures and fix several dos vulnerabilities
+    dsa-1888       openssl097              deprecate md2 hash signatures
+    dsa-1889       icu                     security bypass due to multibyte sequence parsing
+    dsa-1890       wxwindows2.4            arbitrary code execution
+    dsa-1890       wxwidgets2.6            arbitrary code execution
+    dsa-1891       changetrack             arbitrary code execution
+    dsa-1892       dovecot                 arbitrary code execution
+    dsa-1893       cyrus-imapd-2.2         arbitrary code execution
+    dsa-1893       kolab-cyrus-imapd       arbitrary code execution
+    dsa-1894       newt                    arbitrary code execution
+    dsa-1896       opensaml                potential code execution
+    dsa-1896       shibboleth-sp           potential code execution
+    dsa-1897       horde3                  arbitrary code execution
+    dsa-1898       openswan                denial of service
+    dsa-1899       strongswan              denial of service
+    dsa-1900       postgresql-7.4          various problems
+    dsa-1900       postgresql-8.1          various problems
+    dsa-1901       mediawiki1.7            several vulnerabilities
+    dsa-1902       elinks                  arbitrary code execution
+    dsa-1903       graphicsmagick          several vulnerabilities
+    dsa-1904       wget                    ssl certificate verification weakness
+    dsa-1909       postgresql-ocaml        missing escape function
+    dsa-1910       mysql-ocaml             missing escape function
+    dsa-1911       pygresql                missing escape function
+    dsa-1912       camlimages              arbitrary code execution
+    dsa-1912       advi                    arbitrary code execution
+    dsa-1914       mapserver               serveral vulnerabilities
+    dsa-1916       kdelibs                 ssl certificate verification weakness
+    dsa-1917       mimetex                 several vulnerabilities
+    dsa-1918       phpmyadmin              several vulnerabilities
+    dsa-1919       smarty                  several vulnerabilities
+    dsa-1920       nginx                   denial of service
+    dsa-1921       expat                   denial of service
+    dsa-1923       libhtml-parser-perl     denial of service
+    dsa-1925       proftpd-dfsg            ssl certificate verification weakness
+    dsa-1926       typo3-src               several vulnerabilities
+    dsa-1928       linux-2.6.24            several vulnerabilities
+    dsa-1929       linux-2.6               several vulnerabilities
+    dsa-1933       cupsys                  cross-site scripting
+    dsa-1934       apache2                 several issues
+    dsa-1934       apache2-mpm-itk         several issues
+    dsa-1935       gnutls13                ssl certificate
+    dsa-1936       libgd2                  several vulnerabilities
+    dsa-1937       gforge                  cross-site scripting
+    dsa-1938       php-mail                insufficient input sanitising
+    dsa-1939       libvorbis               several vulnerabilities
+    dsa-1940       php5                    multiple issues
+    dsa-1942       wireshark               several vulnerabilities
+    dsa-1943       openldap2.3             ssl certificate
+    dsa-1944       request-tracker3.6      session hijack vulnerability
+    dsa-1944       request-tracker3.4      session hijack vulnerability
+    dsa-1945       gforge                  denial of service
+    dsa-1946       belpic                  cryptographic weakness
+    dsa-1947       shibboleth-sp           cross-site scripting
+    dsa-1948       ntp                     denial of service
+    dsa-1951       firefox-sage            insufficient input sanitizing
+    dsa-1953       expat                   regression fix
+    dsa-1954       cacti                   insufficient input sanitising
+    dsa-1955       network-manager         information disclosure
+    dsa-1958       libtool                 privilege escalation
+    dsa-1960       acpid                   weak file permissions
+    dsa-1961       bind9                   cache poisoning
+    dsa-1964       postgresql-8.1          several vulnerabilities
+    dsa-1964       postgresql-7.4          several vulnerabilities
+    dsa-1966       horde3                  cross-site scripting
+    dsa-1968       pdns-recursor           cache poisoning
+    dsa-1969       krb5                    denial of service
+    dsa-1971       libthai                 arbitrary code execution
+    dsa-1972       audiofile               buffer overflow
+    dsa-1973       glibc                   information disclosure
+    dsa-1974       gzip                    arbitrary code execution
+    dsa-1977       python2.4               several vulnerabilities
+    dsa-1977       python2.5               several vulnerabilities
+    dsa-1979       lintian                 multiple vulnerabilities
+    dsa-1980       ircd-hybrid             arbitrary code execution
+    dsa-1981       maildrop                privilege escalation
+    dsa-1982       hybserv                 denial of service
+    dsa-1984       libxerces2-java         denial of service
+    dsa-1985       sendmail                insufficient input validation
+    dsa-1987       lighttpd                denial of service
+    dsa-1989       fuse                    denial of service
+    dsa-1991       squid3                  denial of service
+    dsa-1991       squid                   denial of service
+    dsa-1992       chrony                  denial of service
+    dsa-1994       ajaxterm                session hijacking
+    dsa-1995       openoffice.org          several vulnerabilities
+    dsa-1997       mysql-dfsg-5.0          several vulnerabilities
+    dsa-2003       fai-kernels             several vulnerabilities
+    dsa-2003       user-mode-linux         several vulnerabilities
+    dsa-2003       linux-2.6               several vulnerabilities
+    dsa-2004       linux-2.6.24            several vulnerabilities
+
+
+unfortunately it was not possible to include the security updates for
+the lcms package in this point release due to a mismatch between the
+upstream tarball used for the security update and that already present
+in the oldstable distribution.
+
+
+removed packages
+----------------
+
+the following packages were removed due to circumstances beyond our
+control:
+
+    package                                reason
+
+    destar                                 security issues
+    libclass-dbi-loader-relationship-perl  license problems
+    libhdate-pascal                        [source:hdate] licensing issues
+    loop-aes-modules-2.6-sparc32           [source:loop-aes] corresponding source / kernel no longer in the archive
+    loop-aes-modules-2.6-sparc64           [source:loop-aes] corresponding source / kernel no longer in the archive
+    loop-aes-modules-2.6-sparc64-smp       [source:loop-aes] corresponding source / kernel no longer in the archive
+    loop-aes-modules-2.6-vserver-sparc64   [source:loop-aes] corresponding source / kernel no longer in the archive
+    rails                                  security and usability issues
+
+a few further packages were removed as a result, as they depend on
+libclass-dbi-loader-relationship-perl; these packages are:
+
+    maypole
+    maypole-authentication-usersession-cookie
+    maypole-plugin-upload
+    memories
+
+
+additionally those parts of the libwww-search-perl and
+libperl4caml-ocaml-dev packages which rely on the google soap search
+api (provided by libnet-google-perl) are no longer functional as the
+api has been retired by google.  the remaining portions of the packages
+will continue to function as before.
+
+
+about debian
+------------
+
+the debian project is an organisation of free software developers who
+volunteer their time and effort, collaborating via the internet.  their
+tasks include maintaining and updating debian gnu/linux which is a free
+distribution of the gnu/linux operating system.  debian's dedication to
+free software, its non-profit nature, and its open development model
+makes it unique among gnu/linux distributions.
+
+
+contact
+-------
+
+for further information, please visit the debian web pages at
+, send mail to , or contact
+the oldstable release team at 
+
+
+-- 
+to unsubscribe, email to debian-announce-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100523065640.gb3233@melusine.alphascorpii.net
+
+

@@ -1,0 +1,29 @@
+i am continuing to suffer the on-going de-volution of the once-decent
+epiphany browser under debian squeeze.  first they broke file
+downloading.  they still haven't fixed that.  i'll bet it's been
+six months or more.
+
+now i can't reply to any e-mails using the wow basic
+webmail client.  i click on the "reply" button, the mail compose
+screen appears for a fraction of a second, then i get this error
+screen.  the problem does not occur with iceweasel.  the problem is
+very recent.  it broke with a recent
+"aptitude update;aptitude full-upgrade" sequence.  i suppose i could
+report a bug, but i'm not about to give them my password so they
+can logon as me to test it!  i'm going back to iceweasel again.
+i kept using epiphany so i would know when the file download feature
+got fixed.  instead they broke something else.
+
+-- 
+  .''`.     stephen powell    
+ : :'  :
+ `. `'`
+   `-
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/17634273.96763.1271524660328.javamail.root@md01.wow.synacor.com
+
+

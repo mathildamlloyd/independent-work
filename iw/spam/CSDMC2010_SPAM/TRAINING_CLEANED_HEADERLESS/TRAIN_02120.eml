@@ -1,0 +1,63 @@
+on sat, 08 may 2010 22:18:05 +0200, merciadri luca wrote:
+
+> camalen writes:
+> 
+>> can you see the "awaiting server cmd." message in calculator's display?
+
+> pointing this out is a good thing, but i had already tested this.
+> actually, since i installed many programs in spanish, my calculator is
+> (to my dismay) in spanish, and i get, by pressing and holding right
+> shift and by pressing the right arrow, on the calculator,
+> 
+> ==
+> espero comand.servidor
+> ==
+> 
+> it looks like
+> 
+> ==
+> awaiting server cmd.
+> ==
+
+ah, in spanish. curious :-). yes, so it translates.
+ 
+> and, evidently, doing *another* combination of keys gives me a text with
+> the xmodem server.
+> 
+> thus, what i am doing is right.
+
+o.k.
+
+>> port "100"? what kind of port nomenclature is that? :-?
+> i do not know. i also wondered.
+> 
+>> i would expect "/dev/ttyusb0" for an usb device or "/dev/ttys0" for the
+>> first rs-232 port...
+> me too.
+> 
+>> i think the application is crashing because cannot establish a
+>> connection with the device.
+> such a (trivial, as habitual) case should have been handled by the
+> developers, shouldn't it?
+
+yes... i would report. but also take a look into this:
+
+connect hp 50g (or hp 49g+) to a linux box with hptalx
+http://bleedux.wordpress.com/2010/03/11/connect-hp-50g-to-a-linux-box-with-hptalx/
+
+and see if that helps. it seems to be written for archlinux (another 
+linux distribution) but it points some interesting things that you can 
+check.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.08.22.47.21@csmining.org
+
+

@@ -1,0 +1,71 @@
+-----begin pgp signed message-----
+hash: sha1
+
+kelly clowers wrote:
+
+
+
+> i don't know specifically about buggy bioses, but in general, foxconn
+> is not a brand associated with quality, while gigabyte, asus and intel are.
+
+aside from the quality issue, two+ years ago there was considerable
+internet chatter about bioses on some foxconn models that were
+unfriendly to linux.  according to the foxconn article in the wikipedia
+foxconn was forced by some of the companies which used foxconn boards in
+their own brands to fix those bioses.  in any event if the information
+in that article is even half true, foxconn is a manufacturer to avoid.
+
+
+
+> intel chipsets make sense for intel motherboards, the days when you
+> needed to look to via or someone else to provide the needed features
+> are mostly gone (nvidia is, for now, still the best for more powerful
+> integrated graphics with intel cpus. but linux users probably don't
+> want nvidia graphics anyway).
+
+as i mentioned in my "another thought" post, i am planning to use a
+nvidia gpu anyway, mainly in order to have two monitors.
+
+
+> driver-wise it isn't really a matter of the north- or south- bridge, it is
+> about the individual chips that need drivers. things like ata controllers
+> and wired ethernet controllers are generally a non-issue nowadays.
+> the biggest things you need to look at are the gpu (all intel gpus
+> except the mobile gma500 have good support), and wireless 802.11
+> chipsets (not usually built in on desktops, of course)
+
+good to know.
+
+> in the case of the ga-g41m-es2h, the southbridge is old (ich7; ich11
+> will be out soon), and the realtek audio and ethernet chips aren't the
+> greatest. nonetheless, they do the job and shouldn't have any major
+> compatibly problems with recent kernels. it should be noted that
+> boards with newer ichs and something other than realtek are a
+> fair bit more expensive.
+
+in view of your comments i looked further into what is available
+locally.  the model i was originally looking at was a ga-g31m-es2l for
+ca$59.00.  i found however a ga-ep43-ud3l with the ich10 and many other
+more advanced features including better realtek audio for ca$83.00.  as
+i am using an external gpu which gpu internal chipset is provided is not
+really an issue for me. i think the latter model is better value for the
+price.
+
+regards, ken heard
+
+-----begin pgp signature-----
+version: gnupg v2.0.9 (gnu/linux)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org
+
+ieyearecaayfakvpwf4acgkqlnljzokjmtfrcacgguee10nsliuzclah/s4lxqts
+vw8an0dph6rxxttf5f5zoagufto4lkh5
+=iwk/
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bcfc1ff.9090103@heard.name
+
+

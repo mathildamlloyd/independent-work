@@ -1,0 +1,88 @@
+Nonetrouble with TransferModeI'm developing a QT app on Windows, and am using a WSH javascript to =
+control output from the application. I have everything working, except I =
+want to make a track blend 50% with the background and it just doesn't =
+seem to work. Here is what I'm using:
+
+qtTargetMovie.QTControl.Movie.Tracks(3).top =3D =
+qtTargetMovie.QTControl.Movie.height-qtTargetMovie.QTControl.Movie.Tracks(=
+3).height;
+qtTargetMovie.QTControl.Movie.Tracks(3).TransferMode =3D =
+QTTransferModesEnum.qtTransferModeBlend;
+qtTargetMovie.QTControl.Movie.Tracks(3).OperationColor =3D =
+"32768,32768,32768";
+qtTargetMovie.QTControl.Movie.Tracks(3).HighQualityMode =3D true;
+
+The first line is changing the location of the track, which it does just =
+fine, so I know I have the right track addressed. The next line just =
+doesn't seem to happen. The track is always set to Dither when I check =
+the Movie Properties. I am using version 7.6.6 of QT on Windows.
+
+I also tried:
+
+qtTargetMovie.QTControl.Movie.Tracks(3).TransferMode =3D =
+QTTransferModesEnum.qtTransferModeStraighAlphaBlend;
+
+I'm using the book "QuickTime For .NET and COM Developers" by John =
+Cromie as my reference (which is excellent, btw).
+
+
+Patrick Besong
+Manager, Creative Design & Development
+Education Technology Services
+The Pennsylvania State University
+210 Rider Bldg. University Park PA 16802
+814 865-2154
+pzb4@psu.edu
+
+ _______________________________________________
+Do not post admin requests to the list. They will be ignored.
+QuickTime-API mailing list      (QuickTime-API@lists.apple.com)
+Help/Unsubscribe/Update your Subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+This email sent to mlsubscriber.tech@csmining.org
+
+trouble with transfermodei'm developing a qt app on windows, and am using a wsh javascript to =
+control output from the application. i have everything working, except i =
+want to make a track blend 50% with the background and it just doesn't =
+seem to work. here is what i'm using:
+
+qttargetmovie.qtcontrol.movie.tracks(3).top =3d =
+qttargetmovie.qtcontrol.movie.height-qttargetmovie.qtcontrol.movie.tracks(=
+3).height;
+qttargetmovie.qtcontrol.movie.tracks(3).transfermode =3d =
+qttransfermodesenum.qttransfermodeblend;
+qttargetmovie.qtcontrol.movie.tracks(3).operationcolor =3d =
+"32768,32768,32768";
+qttargetmovie.qtcontrol.movie.tracks(3).highqualitymode =3d true;
+
+the first line is changing the location of the track, which it does just =
+fine, so i know i have the right track addressed. the next line just =
+doesn't seem to happen. the track is always set to dither when i check =
+the movie properties. i am using version 7.6.6 of qt on windows.
+
+i also tried:
+
+qttargetmovie.qtcontrol.movie.tracks(3).transfermode =3d =
+qttransfermodesenum.qttransfermodestraighalphablend;
+
+i'm using the book "quicktime for .net and com developers" by john =
+cromie as my reference (which is excellent, btw).
+
+
+patrick besong
+manager, creative design & development
+education technology services
+the pennsylvania state university
+210 rider bldg. university park pa 16802
+814 865-2154
+pzb4@psu.edu
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

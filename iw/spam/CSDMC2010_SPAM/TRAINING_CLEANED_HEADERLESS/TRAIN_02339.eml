@@ -1,0 +1,45 @@
+on 2010-05-15 17:32 +0200, hugo vanwoerkom wrote:
+
+> (on sid) i pinned grub-legacy, to avoid going to grub2.
+>
+> then when i do 'apt-get dist-upgrade' i see:
+>
+> the following packages have been kept back:
+>   grub
+>
+> and
+>
+> the following packages will be upgraded:
+> ... grub-legacy ...
+>
+> but when i do 'aptitude full-upgrade' i see:
+>
+> the following packages will be removed:
+> ... grub-legacy{a} ...
+
+you should run "aptitude unmarkauto grub-legacy" and remove the
+transitional grub package.  unfortunately the case where a transitional
+package a pulls in another package b is not handled well by the package
+managers, i always end up "aptitude unmarkauto b; aptitude markauto a"
+to tell apt that i want to keep the new package and that it can remove
+the transitional one as soon as nothing depends on it anymore.
+
+> the following new packages will be installed:
+> ... grub-pc{a} ...
+>
+> so why does aptitude pay no attention to my pin?
+
+because it decides that the grub-legacy package is unused and can be
+removed despite the pin.  whether this is the right thing is debatable;
+i'm sure you find some bug reports about that if you dig into the long
+list of aptitude bugs.
+
+sven
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87fx1tcg4h.fsf@turtle.gmx.de
+
+

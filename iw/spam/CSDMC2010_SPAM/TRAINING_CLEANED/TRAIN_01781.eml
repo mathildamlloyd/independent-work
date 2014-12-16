@@ -1,0 +1,52 @@
+None[Spambayes] timtest broke?[Skip Montanaro]
+> After my latest cvs up, timtest fails with
+>
+>     Traceback (most recent call last):
+>       File "/home/skip/src/spambayes/timtest.py", line 294, in ?
+>         drive(nsets)
+>       File "/home/skip/src/spambayes/timtest.py", line 264, in drive
+>         d = Driver()
+>       File "/home/skip/src/spambayes/timtest.py", line 152, in __init__
+>         self.global_ham_hist = Hist(options.nbuckets)
+>     AttributeError: 'OptionsClass' object has no attribute 'nbuckets'
+>
+> I'm running it as
+>
+>     timtest -n5 > Data/timtest.out
+>
+> from my ~/Mail directory (not from my ~/src/spambayes directory).  If I
+> create a symlink to ~/src/spambayes/bayes.ini it works once again, but
+> shouldn't there be an nbuckets attribute with a default value already?
+
+I never used ConfigParser before, but I read that its read() method silently
+ignores files that don't exist.  If 'bayes.ini' isn't found, *none* of the
+options will be defined.  Since you want to run this from a directory other
+than my spambayes directory, it's up to you to check in changes to make that
+possible <wink>.
+
+[spambayes] timtest broke?[skip montanaro]
+> after my latest cvs up, timtest fails with
+>
+>     traceback (most recent call last):
+>       file "/home/skip/src/spambayes/timtest.py", line 294, in ?
+>         drive(nsets)
+>       file "/home/skip/src/spambayes/timtest.py", line 264, in drive
+>         d = driver()
+>       file "/home/skip/src/spambayes/timtest.py", line 152, in __init__
+>         self.global_ham_hist = hist(options.nbuckets)
+>     attributeerror: 'optionsclass' object has no attribute 'nbuckets'
+>
+> i'm running it as
+>
+>     timtest -n5 > data/timtest.out
+>
+> from my ~/mail directory (not from my ~/src/spambayes directory).  if i
+> create a symlink to ~/src/spambayes/bayes.ini it works once again, but
+> shouldn't there be an nbuckets attribute with a default value already?
+
+i never used configparser before, but i read that its read() method silently
+ignores files that don't exist.  if 'bayes.ini' isn't found, *none* of the
+options will be defined.  since you want to run this from a directory other
+than my spambayes directory, it's up to you to check in changes to make that
+possible .
+

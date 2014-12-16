@@ -1,0 +1,55 @@
+-----begin pgp signed message-----
+hash: sha1
+
+hi,
+
+when watching videos locally, with vlc, it often lags at some parts of
+the videos, and the following kinds of messages are displayed at the
+console:
+
+==
+[some time] main video output error: picture [hexadecimal ref.] refcount is -1
+overflow in spectral rle, ignoring
+==
+
+the [some time] references are often ~40 times separated, i.e. i could
+get
+
+==
+[00000010] main video output error: picture [hexadecimal ref.] refcount is -1
+[00000050] main video output error: picture [hexadecimal ref.] refcount is -1
+.
+.
+.
+==
+
+it does not only happen with  files (.mkv). (i here
+test if gnus supports cyrillic out-of-the-box.)
+
+is it normal? does it happen often with videos? what would it be due
+to? are they corrupted?
+
+thanks.
+
+- -- 
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+- -- 
+
+luck is what happens when preparation meets opportunity. (lucius annaeus seneca)
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: processed by mailcrypt 3.5.8 
+
+ieyearecaayfakvthfgacgkqm0llzlt8mhz+cwcfq/zbm/aed/yq6ba00vak/haw
+vwsaokwkvxabmxa8aewguc1kt7njlfwf
+=7pcf
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87eihewged.fsf@merciadriluca-station.merciadriluca
+
+

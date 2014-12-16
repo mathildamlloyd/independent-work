@@ -1,0 +1,31 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain;
+  charset="iso-8859-15"
+content-transfer-encoding: quoted-printable
+
+on wednesday 05 may 2010 23.21:15 boyd stephen smith jr. wrote:
+> in 4.4, kmail depends on mysql-server in order to send mail. (kmail ->
+> akonadi  -> mysql-server).
+
+note that mysql recently split their server package into a "server" and a=20
+"core" package, so you get a minimal mysql installation without a system-
+wide copy of mysql running.
+
+yes, akonadi will still use mysql internally, but it's (mostly) transparent=
+=20
+to the user.  my main issue with the akonadi/mysql dependencies is thus=20
+solved.
+
+(yes, it is not very cool to have mysql running for akonadi and virtuoso fo=
+r=20
+nepomuk/strigi and probably quite a few copies of libsqlite and libdb for=20
+other subsystems.  but i guess we'll just have to live with that unless=20
+we're prepared to do the work ourselves... )
+
+cheers
+=2d- vbi
+
+=2d-=20
+=46orgive him, for he believes that the customs of his tribe are the laws
+of nature!
+-- g. b. shaw

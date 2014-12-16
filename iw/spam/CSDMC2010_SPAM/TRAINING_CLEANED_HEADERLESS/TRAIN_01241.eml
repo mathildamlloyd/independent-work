@@ -1,0 +1,102 @@
+hugo vanwoerkom wrote:
+> hugo vanwoerkom wrote:
+>> hi,
+>>
+>>
+>> when i install a kernel i get "md subsystem is not loaded" as a warning:
+>>
+>> ...
+> 
+> 
+> 
+> see that is exactly the trouble with rolling ur own kernel. i never set 
+> raid options. which? good question. so i made an "educated guess" 
+> (what?) and set:
+> 
+> hugo@debian:/hda10/backup.files$ diff .config.2.6.33.4-nodebian 
+> .config.2.6.33.4-raid-nodebian
+> 3,4c3,4
+> < # linux kernel version: 2.6.33.4-hvw
+> < # thu may 13 13:24:07 2010
+> ---
+>  > # linux kernel version: 2.6.33.4
+>  > # fri may 14 13:32:21 2010
+> 920c920
+> < # config_raid_attrs is not set
+> ---
+>  > config_raid_attrs=m
+> 1095c1095,1117
+> < # config_md is not set
+> ---
+>  > config_md=y
+>  > config_blk_dev_md=m
+>  > config_md_linear=m
+>  > config_md_raid0=m
+>  > config_md_raid1=m
+>  > config_md_raid10=m
+>  > config_md_raid456=m
+>  > config_md_raid6_pq=m
+>  > # config_async_raid6_test is not set
+>  > config_md_multipath=m
+>  > config_md_faulty=m
+>  > config_blk_dev_dm=m
+>  > # config_dm_debug is not set
+>  > config_dm_crypt=m
+>  > config_dm_snapshot=m
+>  > config_dm_mirror=m
+>  > config_dm_log_userspace=m
+>  > config_dm_zero=m
+>  > config_dm_multipath=m
+>  > config_dm_multipath_ql=m
+>  > config_dm_multipath_st=m
+>  > config_dm_delay=m
+>  > config_dm_uevent=y
+> 2413a2436,2441
+>  > config_xor_blocks=m
+>  > config_async_core=m
+>  > config_async_memcpy=m
+>  > config_async_xor=m
+>  > config_async_pq=m
+>  > config_async_raid6_recov=m
+> hugo@debian:/hda10/backup.files$
+> 
+> 
+> we'll see if the "md subsystem" gets loaded.
+> and why are there no google hits for this? who knows.
+> 
+
+after changing my kernel with the above, the "md subsystem" loads 
+because now i get:
+
+assembling md arrays...done (no arrays found in config file or 
+automatically).
+
+so it depends on one or more of those kernel configs, at least in 2.6.33.4.
+
+trouble is that years ago when i started compiling my own kernel, i did 
+not start a file with 3 columns: date - function - reason for adding, so 
+now i have a kernel that keeps getting bigger and i don't know 
+specifically why the entries are there, other than in general, like the 
+ones above.
+
+hugo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hsmcb2$e4q$1@dough.gmane.org
+
+

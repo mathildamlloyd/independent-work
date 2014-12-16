@@ -1,0 +1,49 @@
+hi,
+
+havn't tried this, but looks like what you want.  i use procmail to filter
+different incomgin to/ccs to different folders then use folder hok, but
+this looks closer to what you want.
+
+
+http://www.linuxcare.com/viewpoints/ap-of-the-wk/03-31-00.epl
+
+**************************************************************************
+some of the mailto links on our web site forward to me. when i reply to
+someone who writes to one of these aliases, i prefer to keep the mail alias
+as the from: address in my reply. for example, when someone sends email to
+coolapps@linuxcare.com to suggest a program for me to review [pardon the
+blatant plug...], it forwards to me. when i hit reply, the from: line in
+the email will contain coolapps@linuxcare.com instead of my main address
+bneely@linuxcare.com. my .muttrc file accomplishes this with two lines:
+
+set alternates = "kbeditor@linuxcare.com|coolapps@linuxcare.com"
+set reverse_name
+
+**************************************************************************
+
+on tue, 30 jul 2002, david neary wrote:
+
+> i have 3 or 4 email addresses (which get used for different
+> reasons), and i'd prefer not to mix them up. so i was wondering
+> if anyone knows of a way that i can have mail (apart from list
+> mail, which i have already sorted) which arrives to a certain
+> e-mail address have the from: header in the reply automatically
+> set to the address it came to.
+> 
+> for example, say i have a company, and sales@company.com,
+> info@company.com and tech@company.com arrive in the same mailbox.
+> i don't want to reply to sales@company.com mails with the from:
+> set to dave@company.com, i would like the mail to come from
+> sales@company.com.
+> 
+> is there any way to do this? bearing in mind that mail can arrive
+> with my email in the to or cc fields (and bcc?), and it might be
+> buried in a couple of dozen other recipients...
+
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

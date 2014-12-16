@@ -1,0 +1,90 @@
+hi all,
+
+with respect to my problem that the video callback is triggered more =
+often than i want to (see below) i had a guess that it is related to the =
+device frame rate. in that context i tried to set the frame rate of my =
+inbuilt isight to 1 and sggetframerate did confirm this:=20
+
+  err =3d sgsetframerate(videodata->sgchanvideo,inttofixed(1));
+  fixed *framerate;
+  sggetframerate(videodata->sgchanvideo,framerate);
+  int rate =3d fixedtoint(*framerate);
+  cout << "framerate: " << rate << endl;  //// plots 1 when executing
+
+however, when i execute the app the frame size is much higher (i guess =
+30 fps or more). i saw an older post from 2007, which dealt with the =
+same problem of not being able to set the inbuilt ichat frame rate but =
+nobody replied. does anyone have a guess how to approach this problem ?
+
+thanks in advance
+
+-- a l e x
+
+
+***********************************
+hi all,
+
+i have a thread, which triggers the sgidle call according to my desired =
+frame rate:
+
+void video::run(){
+ while (running){
+   sj->dfc->videoblocker->lock();
+   sj->dfc->videowaiter->wait(sj->dfc->videoblocker);
+
+   err =3d sgidle(videodata->seqgrab);
+   usleep(1000000/1);   //// framerate
+
+   sj->dfc->videoblocker->unlock();
+ }
+}
+
+in this example the thread waits for 1 second before executing the next =
+time, which results in a frame rate of 1 fps. however, i discovered some =
+ strange system behavior, which forced me to verify if this is really =
+the case: i applied a time measurement between each data proc function =
+call and in fact it is executed 4 more times ins between in approx. 250 =
+microsecond intervals. in the following i have plotted the measured =
+interval times in ms:
+
+1000.38
+0.026
+0.023
+0.024
+0.027
+1002.55
+0.025
+0.026
+0.022
+0.021
+1002.61
+0.026
+0.021
+0.02
+0.024
+1002.54
+0.026
+0.023
+0.024
+0.02
+1000.18
+0.026
+0.137
+0.025
+0.024
+
+etc .... and so forth. this is actually not happening when i reside =
+above a framerate of 25 fps. can anyone tell me why this is happening =
+and how i can prevent this to happen ?=20
+
+thanks a lot in advance, best
+
+-- a l e x
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

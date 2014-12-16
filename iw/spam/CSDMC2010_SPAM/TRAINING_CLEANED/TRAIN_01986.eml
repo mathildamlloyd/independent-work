@@ -1,0 +1,49 @@
+None> 
+> "Gordon Mohr" said:
+> 
+> > I still think self-add whitelists are underrated. 
+> > A FoRK whitelist would presumably start with
+> > all subscribers, and grow from there. Bouncing
+> > problem mail, in a way that humans can understand
+> > how to whitelist themselves for a resend, avoids 
+> > the problem of silent failures without opening the 
+> > door to lazy, forged-"from" spammers. 
+> 
+> Big problem I see with this system, is the
+> automatically-generated-but-important mails like online tickets,
+> bills, etc.
+
+Besides lists, this is the reason I can't use such a system. I get more
+than a few mails from 'dont-respond-to-this-address@' password reminder
+generators, for example. SpamAssassin does flag a few of those as spam,
+but at least I've still got them.
+
+Luis
+http://xent.com/mailman/listinfo/fork
+
+
+re: hd/id: high-def independence dayon wed, 2002-07-24 at 07:09, justin mason wrote:
+> 
+> "gordon mohr" said:
+> 
+> > i still think self-add whitelists are underrated. 
+> > a fork whitelist would presumably start with
+> > all subscribers, and grow from there. bouncing
+> > problem mail, in a way that humans can understand
+> > how to whitelist themselves for a resend, avoids 
+> > the problem of silent failures without opening the 
+> > door to lazy, forged-"from" spammers. 
+> 
+> big problem i see with this system, is the
+> automatically-generated-but-important mails like online tickets,
+> bills, etc.
+
+besides lists, this is the reason i can't use such a system. i get more
+than a few mails from 'dont-respond-to-this-address@' password reminder
+generators, for example. spamassassin does flag a few of those as spam,
+but at least i've still got them.
+
+luis
+http://xent.com/mailman/listinfo/fork
+
+

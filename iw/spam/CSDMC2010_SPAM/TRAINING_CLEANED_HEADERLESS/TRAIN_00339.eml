@@ -1,0 +1,54 @@
+from nobody tue dec 16 09:15:45 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on mon, apr 19, 2010 at 09:16 -0400, b. alexander wrote:
+> i've got an issue with a sid box that i have been maintaining for a while=
+=2e this
+> is my workstation, and i have noticed a growing number of broken packages,
+> unmet dependencies and conflicts. i have been using safe-upgrade for mont=
+hs
+> now, hoping that it would work itself out over time. however, this hasn't
+> happened. so what can i do to fix the problems without losing functionali=
+ty?
+> below is the result of aptitude full-upgrade (forgive the cut-and-paste):
+
+as a sid user you are certainly aware of the differences between
+'safe-upgrade' and 'full-upgrade' and i would be interested in the
+actions proposed by aptitude if you run a full-update.
+
+i assume that this will allow aptitude to take actions which are more to
+your liking as you obviously don't like the ones proposed by aptitude
+when you run safe-upgrade.
+
+thanks for testing a development branch of debian :)
+
+    wolodja
+--=20
+  .''`.     wolodja wentland    =20
+ : :'  :   =20
+ `. `'`     4096r/caf14efc=20
+   `-       081c b7cd ff04 2ba9 94ea  36b2 8b7f 7d30 caf1 4efc
+from nobody tue dec 16 09:15:45 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: digital signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+iqicbaebcaagbqjlzfp/aaojeit/ftdk8u781scp/1m1+duohmazxupu3pv0xxpl
+axagdjq1zb/ikatyk6mmpfjaomcn50teuxhufik8xchkmuoux4mne9beq6qepdks
+oyikesdizzh+htogov0w0pqwqlwvrylxx9iiny11v33sctgraf6kmberdcat52ax
+o3qvgs8zrawjc/vacfeaiigoklst3uovjan6sze2osy3td7urom0ltyitvjmqlff
+ei9bv0jydgakpvf1af9lsmgnlbyn9mdkfuxsusb8lxp8ww1v8g0s7vyzgxgshr8o
+y+txoshzvfofjujwlxzxany0txkb/ieidy+u7ypcgj7ron2thhl88caomd3tcp18
+z1fytx2f+morc029g8efimv2+da8u7did4gqcjwqvhkmyq+lplbegcrzyvxbkjdv
+x1zcw6oxhagp2pam8j7slyaa/pofha3oslrzqmyurnuqgkhu9tkgm5v9vrej/fod
+vamycf9no5c4fd1lvysqhqe/40ea8x1beih382mmykxl/zhh/xvqs83zfkohubue
+kizb01/jo0g4eh+95605gwqvukwetorwlzbjh1ewicalk8ynotg5xelhsengnspt
+2mzwmmtsqvmdg0+funltvqtaafkk9jaaeegyupu6p5ttckovr8tkc+cqgqhuhppg
+t3c7jn3xvtee+irzflpr
+=xf6w
+-----end pgp signature-----

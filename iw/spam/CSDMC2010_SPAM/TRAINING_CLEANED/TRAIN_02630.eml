@@ -1,0 +1,96 @@
+None> On 05/14/2010 04:32 AM, Camaleón wrote:
+
+>>> You seems to be conflating 3 different entities: 1. Adobe Flash
+>>> 2. Adobe Flash Player
+>>> 3. SWF file format
+>>
+>> AFAIK:
+>>
+>> #1 As per Wikipedia → Licence: Proprietary EULA (it can be wrong,
+>> though) #2 Adobe Flash Player is closed source, non freely
+>> distributable, etc... #3 Falls into #1 (is just a "container")
+> 
+> No.  It's a file format, and that file format has (except for Sorensen
+> Spark) been published.
+
+"Published" does not means FLOSS or GPL. I would like to know what is the 
+licence of Flash :-)
+ 
+>> So, what is the current status of Flash technology, which license
+>> uses...?
+>>
+>>
+> You're still apparently confusing Flash the closed-source authoring
+> software, Flash the closed-source player software and the
+> proprietary-but-published (and very complex, with many different file
+> extensions) SWF file.
+> 
+> Adobe's SWF license allows others to create "flash" players.
+
+No sir, I am not confusing them. Is just Adobe licence of Flash which is 
+not clear enough, I'm afraid. If is "proprietary", we have a problem here.
+
+Being proprietary they can stop publishing the specs at any time, at 
+their convenience :-/
+
+Greetings,
+
+-- 
+Camaleón
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/pan.2010.05.14.10.38.00@csmining.org
+
+
+re: flash is open?on fri, 14 may 2010 05:00:51 -0500, ron johnson wrote:
+
+> on 05/14/2010 04:32 am, camalen wrote:
+
+>>> you seems to be conflating 3 different entities: 1. adobe flash
+>>> 2. adobe flash player
+>>> 3. swf file format
+>>
+>> afaik:
+>>
+>> #1 as per wikipedia  licence: proprietary eula (it can be wrong,
+>> though) #2 adobe flash player is closed source, non freely
+>> distributable, etc... #3 falls into #1 (is just a "container")
+> 
+> no.  it's a file format, and that file format has (except for sorensen
+> spark) been published.
+
+"published" does not means floss or gpl. i would like to know what is the 
+licence of flash :-)
+ 
+>> so, what is the current status of flash technology, which license
+>> uses...?
+>>
+>>
+> you're still apparently confusing flash the closed-source authoring
+> software, flash the closed-source player software and the
+> proprietary-but-published (and very complex, with many different file
+> extensions) swf file.
+> 
+> adobe's swf license allows others to create "flash" players.
+
+no sir, i am not confusing them. is just adobe licence of flash which is 
+not clear enough, i'm afraid. if is "proprietary", we have a problem here.
+
+being proprietary they can stop publishing the specs at any time, at 
+their convenience :-/
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.14.10.38.00@csmining.org
+
+

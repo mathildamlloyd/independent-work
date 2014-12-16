@@ -1,0 +1,28 @@
+el 2010-05-12 a las 06:58 +1930, germana oliveira escribi:
+
+(forwarding to the list)
+
+> exactly, thanks camaleon, and sorry not to answer quick... im going to try
+> some ideas and talk to you!
+
+o.k, but better reply to list so anyone can help and benefit from your 
+findings :-)
+
+> >
+> > those machines have their own samba implementation, ldap, hard disk and
+> > so on... they act as a central hub for managing all the jobs and tasks
+> > (scanning, faxing and printing) so you can create users and groups and
+> > grating them different permission levels based on their credentials.
+
+greetings,
+
+-- 
+camalen 
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100511113642.ga6396@stt008.linux.site
+
+

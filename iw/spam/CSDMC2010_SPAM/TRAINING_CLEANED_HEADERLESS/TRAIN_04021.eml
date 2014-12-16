@@ -1,0 +1,28 @@
+on 05/05/2010 08:49 am, camalen wrote:
+> on wed, 05 may 2010 09:42:03 +1000, alex samad wrote:
+>
+>> right tools for the job, i never ever thought about putting 64bit os on
+>> my netbook - it physically limited to 2g of memory
+>
+> 64-bits kernels are not only intended for systems with tons of ram. those
+> kernels usually have enabled the "nx bit" and afaik, only 32 bits pae
+> kernels enable such feature.
+>
+> btw, my shuttle box has also a ram limitation of 2 gib (and currently
+> using only 1 gib) but has installed "amd64". it runs fine, without
+> noticeable drawbacks.
+>
+
+the question, though, is: "what -- beyond geekness -- is the 
+*benefit* of amd64 in 'low' ram systems?"
+
+-- 
+dissent is patriotic, remember?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4be17920.2030606@cox.net
+
+

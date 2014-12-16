@@ -1,0 +1,37 @@
+on fri, may 21, 2010 3:54 am, quicktime-api-request@lists.apple.com wrote:
+
+> i have a wmv file.
+>
+> if ([qtmovie caninitwithfile:path])
+> {
+>   qtmovie = [qtmovie moviewithfile:path error:nil];
+>   if (qtmovie)
+>   {
+>       nsvalue*   naturalsize =
+>       [qtmovie attributeforkey:qtmovienaturalsizeattribute];
+>
+>       nssize     pixelsize;
+>
+>       [naturalsize getvalue:&pixelsize;];
+>    }
+> }
+>
+> i always end up with pixel sizes of zero for both width and height.
+>
+> i am guessing the data is not loaded yet. how can i find this information
+> but not load the entire movie... just enough to get non-zero data?
+
+you need to pay attention to the load state of the qtmovie. details have
+been presented on this list before and are in the qtkit documentation.
+
+tim monroe
+quicktime engineering
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

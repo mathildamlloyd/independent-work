@@ -1,0 +1,54 @@
+except that the server doesn't know you are the same person that reported
+the spam, since the identity isn't checked (at least not required, so i
+assume it's not checked) when doing a razor-check
+--
+daniel higgins
+administrateur systme
+netcommunications inc.
+----- original message -----
+from: "tabor j. wells" 
+to: "daniel higgins" 
+cc: ; "ml-razor-users" 
+sent: wednesday, august 07, 2002 10:39 am
+subject: re: [razor-users] what's wrong with the razor servers now?
+
+
+> on wed, aug 07, 2002 at 10:22:13am -0400,
+> daniel higgins  is thought to have said:
+>
+> > maybe i'm wrong, but it could be that your trust isn't high enough to
+flag a
+> > single message as spam?
+>
+> it would seem to make sense that regardless of your tes value, the
+> signatures you report should always come back as spam when you check them
+> since you should always be able to trust yourself. :)
+>
+> --
+> --------------------------------------------------------------------
+> tabor j. wells                                razor-users@fsckit.net
+> fsck it!                 just another victim of the ambient morality
+>
+>
+> -------------------------------------------------------
+> this sf.net email is sponsored by:thinkgeek
+> welcome to geek heaven.
+> http://thinkgeek.com/sf
+> _______________________________________________
+> razor-users mailing list
+> razor-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/razor-users
+>
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+razor-users mailing list
+razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

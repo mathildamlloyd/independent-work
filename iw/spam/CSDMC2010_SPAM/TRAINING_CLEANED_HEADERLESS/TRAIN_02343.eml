@@ -1,0 +1,20 @@
+mark derricutt wrote:
+> hiya, i just myself an rpm, and when i did -uvh to upgrade the earlier 
+> version i had installed (also from my rpm) i got:
+> 
+> [root@spawn i386]# rpm -uvh mulberry-2.2-b1.i386.rpm
+> preparing...                ########################################### 
+> [100%]
+>   1:mulberry               ########################################### 
+> [100%]
+> error: db3 error(-30998) from db->close: db_incomplete: cache flush was 
+> unable to complete
+
+it's not the rpm, it's the rpm-system with you. the cache seems to have 
+rottened. try removing /var/lib/rpm/__db*
+
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

@@ -1,0 +1,45 @@
+None>
+> export EDITOR=/usr/bin/vim
+>
+> Regards,
+> Andrei
+> --
+
+
+You can also make it a system wide configuration with
+"update-alternatives --config editor". I have not tried it shells
+other than bash but I assume it is portable.
+
+-- 
+Jordan Metzmeier
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/g2s50e5edd51004241315vb494b3b0jfeabf8a9c839c553@mail.csmining.org
+
+
+re: how to setup my environment variable for vim ?> try putting this in ~/.bashrc:
+>
+> export editor=/usr/bin/vim
+>
+> regards,
+> andrei
+> --
+
+
+you can also make it a system wide configuration with
+"update-alternatives --config editor". i have not tried it shells
+other than bash but i assume it is portable.
+
+-- 
+jordan metzmeier
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/g2s50e5edd51004241315vb494b3b0jfeabf8a9c839c553@mail.csmining.org
+
+

@@ -1,0 +1,79 @@
+NoneOn Mon, 3 May 2010 00:47:25 +0200 Sebastien Delafond wrote:
+
+> On May/02, Francesco Poli wrote:
+> > Could it be a Sylpheed bug?
+>=20
+> We've narrowed it down to an encoding issue: the original DSA email was
+> sent as ISO-8859-1, and mutt was able to verify it just fine; however,
+> on a system using UTF-8, any kind of pasting of the original text will
+> produce a file that gpg does not verify:
+
+The fact is that I didn't perform any pasting: even running "gpg
+--verify" directly on the message file fails (Sylpheed stores e-mail
+messages in MH format, hence each message is on a separate file).
+
+I received the message encoded as quoted-printable: maybe something in
+the middle performed some re-encoding, that broke the signature?
+
+However, that does not explain why Mutt is able to correctly verify
+the signature...
+Damn Mutt, always one step beyond!  ;-)
+
+> that'll teach me to include the
+> "=C3=A9" in my firstname instead of a plain "e" ;)
+
+Wouldn't we be better off using PGP/MIME signed messages (RFC 2015)
+in order to avoid encoding issues?
+As far as I've heard, clear-signed e-mail messages are deprecated precisely
+because of this kind of signature breakages, due to possible re-encoding.
+
+Any thoughts?
+
+
+--=20
+ http://www.inventati.org/frx/progs/scripts/pdebuild-hooks.html
+ Need some pdebuild hook scripts?
+..................................................... Francesco Poli .
+ GnuPG key fpr =3D=3D C979 F34B 27CE 5CD8 DC12  31B5 78F4 279B DD6D FCF4
+re: broken signature for dsa-2040-1from nobody tue dec 16 07:55:46 2014
+content-type: text/plain; charset=utf-8
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on mon, 3 may 2010 00:47:25 +0200 sebastien delafond wrote:
+
+> on may/02, francesco poli wrote:
+> > could it be a sylpheed bug?
+>=20
+> we've narrowed it down to an encoding issue: the original dsa email was
+> sent as iso-8859-1, and mutt was able to verify it just fine; however,
+> on a system using utf-8, any kind of pasting of the original text will
+> produce a file that gpg does not verify:
+
+the fact is that i didn't perform any pasting: even running "gpg
+--verify" directly on the message file fails (sylpheed stores e-mail
+messages in mh format, hence each message is on a separate file).
+
+i received the message encoded as quoted-printable: maybe something in
+the middle performed some re-encoding, that broke the signature?
+
+however, that does not explain why mutt is able to correctly verify
+the signature...
+damn mutt, always one step beyond!  ;-)
+
+> that'll teach me to include the
+> "=c3=a9" in my firstname instead of a plain "e" ;)
+
+wouldn't we be better off using pgp/mime signed messages (rfc 2015)
+in order to avoid encoding issues?
+as far as i've heard, clear-signed e-mail messages are deprecated precisely
+because of this kind of signature breakages, due to possible re-encoding.
+
+any thoughts?
+
+
+--=20
+ http://www.inventati.org/frx/progs/scripts/pdebuild-hooks.html
+ need some pdebuild hook scripts?
+..................................................... francesco poli .
+ gnupg key fpr =3d=3d c979 f34b 27ce 5cd8 dc12  31b5 78f4 279b dd6d fcf4

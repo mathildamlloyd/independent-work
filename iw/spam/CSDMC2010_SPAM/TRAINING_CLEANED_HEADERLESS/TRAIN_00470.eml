@@ -1,0 +1,20 @@
+on 2010-04-06 07:12 +0200, brian ryans wrote:
+
+> quoting johan grnqvist on 2010-04-05 23:50:37:
+>>
+>> i think you may be interested in the dist-upgrade command instead.
+>
+> now called full-upgrade (though dist-upgrade remains for backcompat).
+> upgrade is now safe-upgrade.
+
+this is true for aptitude but not for apt-get.
+
+sven
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87sk79kv51.fsf@turtle.gmx.de
+
+

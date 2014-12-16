@@ -1,0 +1,42 @@
+spam: this mail is probably spam.  the original message has been altered
+spam: so you can recognise or block similar unwanted mail in future.
+spam: see http://spamassassin.org/tag/ for more details.
+spam: 
+spam: content analysis details:   (5.30 hits, 5 required)
+spam: invalid_date       (1.6 points)  invalid date: header (not rfc 2822)
+spam: remove_subj        (1.7 points)  body: list removal information
+spam: spam_phrase_05_08  (0.7 points)  body: spam phrases score is 05 to 08 (medium)
+spam:                    [score: 6]
+spam: superlong_line     (-2.2 points) body: contains a line >=199 characters long
+spam: msg_id_added_by_mta_3 (0.2 points)  'message-id' was added by a relay (3)
+spam: missing_mimeole    (1.6 points)  message has x-msmail-priority, but no x-mimeole
+spam: missing_outlook_name (1.7 points)  message looks like outlook, but isn't
+spam: 
+
+*************************************
+*   reich for governor committee    *
+*   newsletter sign-up confirmation *
+*************************************
+
+thank you for signing up for the reich report, the weekly newsletter of the reich for governor campaign. you can read our previous newsletter on our website at http://robertreich.org/gov/newsletter.asp . if you would like to volunteer for the campaign, please contact our volunteer coordinator, meg ansara, at meg@robertreich.org or call (617) 547-2206 x132. 
+
+our headquarters is located at 625 mount auburn street, near the star market in cambridge.  we are open from 9 am to 9 pm monday through thursday, 9 am to 6 pm friday, 10 am to 6 pm saturday, and 12 noon to 8 pm on sundays. we are a bus ride away from harvard square (bus #71 or #73) and parking is readily available in the back of the building. we encourage all reich supporters to come to the headquarters for events, to volunteer for phone banking, or just to see how we operate. 
+
+we encourage you to forward this e-mail to your friends, family, and colleagues, and ask them to sign up for our newsletter at http://www.robertreich.org/gov/emailpage.asp . help us start a 'virtual' campaign!
+
+if you do not want to receive future newsletters, please send an e-mail to newsletter@robertreich.org with 'remove' as the subject line. 
+
+-- jesse alan gordon
+technology director
+reich for governor committee
+jesse@robertreich.org
+
+*************************************
+*   reich for governor committee    *
+*   p.o. box 381483                 *
+*   cambridge, ma 02238             *
+*   http://www.robertreich.org      *
+*************************************
+
+
+

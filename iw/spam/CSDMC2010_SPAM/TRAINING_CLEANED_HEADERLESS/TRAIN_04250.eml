@@ -1,0 +1,49 @@
+am dienstag, den 20.04.2010, 12:33 +0200 schrieb jonas andradas:
+hi jonas et al, 
+> 
+> in my humble opinion, this statement holds true if you keep the
+> "original" windows that came with your laptop.  
+
+...i'm not using my originally windows software which was preinstalled on
+my laptop. i bought it seperately but it's also software originally
+belonging to a laptop but a different model than my own. 
+
+maybe this might play a role, but i'm far away from being an expert in
+this items.
+
+one can read on some linux websites which deal with this energy saving
+problem, that it makes no sense anyway to change, for example, your cpu
+state in order to save battery power, i.e. that it is useless to choose
+the mode "powersave" or "conservative"  for saving power. on the other
+side. it is likewise useless to choose the mode "performance" to tune
+your cpu efficiency.
+
+for me this makes sense. modern cpu's are flexible enough to quickly
+change between "low" and "performance" if needed. modern notebook hdd's
+are likewise already optimized for energy saving modes. 
+
+but something must be different between windows and linux. using my
+windows there is indeed a different if i would set the power management
+to "performance" or to "powersave". this makes nearly an hour or a half
+difference in battery lifetime of my multiboot laptop! of course this
+drepends on what you do, but the difference is obvious.
+
+using my debian i seldom reach a larger time span as if using windows in
+"performance" mode, in spite of it is so "quiet" when working with it or
+when idle, and windows always is so "restless" as if always something
+happens on the disk, some processes are running etc.
+
+maybe this after all has something to do with the different kernels? 
+
+greetings dirk 
+
+
+
+
+
+-- 
+to unsubscribe, email to debian-laptop-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/1271769864.30038.54.camel@linux-d59.netz
+
+

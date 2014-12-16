@@ -1,0 +1,57 @@
+-----begin pgp signed message-----
+hash: sha1
+
+camalen  writes:
+
+> on tue, 18 may 2010 18:08:24 +0200, merciadri luca wrote:
+>
+>> i realized that my computer (this one, debian lenny, w. k.
+>> 2.6.26-2-686-bigmem) was frozen. i tried escaping from the screensaver,
+>> but nothing worked, except launching another tty, and restarting gdm.
+>> here is the interesting output i obtained by looking at /var/log/syslog
+>> and dmesg:
+>> 
+>> ==
+>> [24892.623421] atkbd.c: unknown key pressed (translated set 2, code 0xbb
+>> on isa0060/serio0).
+>
+> (...)
+>
+> that seems to be unrelated with a x freeze. looks like a keyboard key 
+> mapping error but nothing serious.
+>
+> just review your "/var/log/xorg.0.log". if x crashed there must something 
+> there :-?
+nothing really interesting there. just:
+
+==
+audit: tue may 18 18:01:04 2010: 3716 x: client 33 rejected from local host (uid 0)
+  auth name: mit-magic-cookie-1 id: -1
+==
+but 18:01:24 seems to be when i asked to restart gdm.
+
+note that i do not think that x crashed entirely. i just mean that the
+screen was looking like frozen, but screensaver was still
+moving... slowly, or sometimes really slowly.
+- -- 
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+- -- 
+
+all flowers are not in one garden.
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: processed by mailcrypt 3.5.8 
+
+ieyearecaayfakvy14iacgkqm0llzlt8mhwcwqcbbd5balf2to8zrwuwiyfxlhdc
+g10anjguzqn84eqdh4qc6os5s2gaahk8
+=ayau
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/877hn1ytfh.fsf@merciadriluca-station.merciadriluca
+
+

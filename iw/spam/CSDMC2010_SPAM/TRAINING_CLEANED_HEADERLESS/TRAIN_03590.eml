@@ -1,0 +1,39 @@
+>> maybe use dummy packages, or rename the packages so that kde 3.5 could
+>> remain installed, and not be forced to upgrade to kde4.
+>
+> that ship has sailed and it isn't coming back. =c2=a0kde 3.5 is considere=
+d
+> dead. =c2=a0why some motivated person has not forked it yet has escaped m=
+e.
+>
+
+not exactly forked, but maintained:
+http://apt.pearsoncomputing.net/
+
+
+> =c2=a0still, either pales in
+> comparison to the kde 3.5 as does kde4
+
+please, let me know what kde 4 is missing for you. kde 4.4 has only a
+handful of regressions from kde 3.5.10, and they are not dealbreakers.
+some of those are addressed in kde 4.5.
+
+the "kde 4 sux" time has passed. if you still have problems with kde
+4, then please let me know what they are so that they can be fixed.
+
+thanks!
+
+
+--=20
+dotan cohen
+
+http://bido.com
+http://what-is-what.com
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/u2j880dece01005060559i8d269387ue479fb65b3fe4596@mail.csmining.org
+
+

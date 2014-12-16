@@ -1,0 +1,60 @@
+None[SAtalk] SpamAssassin an Razor problemHi....
+
+i installed razor an SpamAssassin on an redhat 6.3 with a fresh per 5.8.0.
+when I install Mail::SpamAssassin using the CPAN the followin error in make
+test appears.
+
+t/forged_rcvd...........ok
+t/nonspam...............ok
+t/razor.................        Test skipped: Razor is not installed.
+t/razor.................ok
+        2/2 skipped: Razor is not installed.
+t/reportheader..........ok
+
+How can i get the razor running with the SpamAssassin ?
+
+Thanks for helping
+
+Alex
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+[satalk] spamassassin an razor problemhi....
+
+i installed razor an spamassassin on an redhat 6.3 with a fresh per 5.8.0.
+when i install mail::spamassassin using the cpan the followin error in make
+test appears.
+
+t/forged_rcvd...........ok
+t/nonspam...............ok
+t/razor.................        test skipped: razor is not installed.
+t/razor.................ok
+        2/2 skipped: razor is not installed.
+t/reportheader..........ok
+
+how can i get the razor running with the spamassassin ?
+
+thanks for helping
+
+alex
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: osdn - tired of that same old
+cell phone?  get a new here for free!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1;=vs3390
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

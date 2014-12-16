@@ -1,0 +1,68 @@
+use the gui and don't delete files, use the other option, whats it called
+again, the dustbin or something ;-)
+
+conor who only knows about symbolic links ;-))
+
+i'm pretty sure that i have a softlink from
+/mnt/public/mnt/public/downloads/linux/wastecpu/setiathome to
+/home/cwynne/seti
+
+the /mnt/pub....../seti.. directory resides on an external raidvolume and
+/home/../seti is on the internal ide2 drive. 
+so i dont have to cd around the gaf. i suppose that would count as across
+different devices. 
+
+if you're wondering [probably not] why /mnt/public is there twice, its
+because i restored from tapebackup and i didn't know that it keeps the
+directory structure. i know now ;-)
+
+actually, how can i fix that quickly and easily? i thought about firstly
+mv'ing the structure to /tmp. then copying it back again but i'm sure some
+wee genius knows a quickie solution. mind you i never even bothered trying a
+its not a priority now that its all linked anyway. 
+
+cw
+
+--------------------------------
+ hum.  interesting variation on the classic technique of
+ redefining `rm' to `mv' the files into `./.trash/' (or
+ with a prefix of `#' or a suffix of `~'; the variations
+ are endless).  these classic techniques only provide a
+ means to roll back accidental `rm's, so there is still
+ considerable scope for data lost as there are other ways
+ of deleting files --- which is not a problem for this
+ hard link idea.
+
+ but, like the classic techniques, there is no rolling
+ back of accidental overwrites.
+
+ ( rolling back overwrites reminds me of the "snapshot"
+  facility on network appliance fileservers.  and of the
+  various "versioning" filesystems which appeared --- and
+  then vanished? --- over the years.... )
+
+ one severe(?) gotcha is some files shouldn't have any
+ hard links.  both rcs *,v (and hence cvs) and sccs s.*
+ files are like this --- the rcs(/cvs?)/sccs toolsets
+ complain if there are hard links.
+
+cheers,
+-blf-
+--
+ innovative, very experienced, unix and      | brian foster    dublin,
+ireland
+ chorus (embedded rtos) kernel internals     | e-mail: blf@utvinternet.ie
+ expert looking for a new position ...       | mobile: (+353 or 0)86 854
+9268
+  for a rsum, contact me, or see my website  http://www.blf.utvinternet.ie
+
+    stop e$$o (exxonmobile):  whatever you do, don't buy esso --- they
+     don't give a damn about global warming.    http://www.stopesso.com
+     supported by greenpeace, friends of the earth, and numerous others...
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,35 @@
+hi
+
+i've just recompiled the kernel from sources with the command
+
+fakeroot make-kpkg --initrd --append-to-version=-recompiled kernel-image 
+kernel-headers
+
+and installed it successfully.
+
+however, the kernel name is
+
+2.6.32.10+drm33.1-recompiled
+
+and that "+drm33.1" seems to cause problems to eclipse which does not 
+recognize it as a valid version (i think the problem is with the '+' 
+character).
+
+is there a way to change the version so that i can do without that '+'?
+
+thanks in advance
+lorenzo
+
+-- 
+lorenzo bettini, phd in computer science, di, univ. torino
+home: http://www.lorenzobettini.it music: http://www.purplesucker.com
+blogs: http://tronprog.blogspot.com  http://longlivemusic.blogspot.com
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hphrtv$dhs$1@dough.gmane.org
+
+

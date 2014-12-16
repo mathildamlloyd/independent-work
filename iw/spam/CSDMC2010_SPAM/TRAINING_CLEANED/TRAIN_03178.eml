@@ -1,0 +1,118 @@
+NoneStrange behaviour: Scanner and NetbeansHi all
+
+=46rom time to time I have to assess Flash projects, and to assist my =
+marking a few years ago I wrote a program which uses a Scanner to open =
+the .fla file and read it on a "line by line" basis.  Although this is =
+really stretching what a Scanner should do, it has proven surprisingly =
+useful over the years.
+
+My original version of the software was written with an "old" Xcode =
+style project using the now deprecated jam.  Recently I decided I needed =
+to make some changes to it and I thought it would be a good move to =
+transfer it to Netbeans --- and it didn't work!  The Scanner wouldn't =
+read a .fla file when run from Netbeans, but it would when run from =
+Xcode, using either a jam or ant type project.  It would also work if I =
+navigated to the Netbeans "dist" folder and double clicked the jar =
+directly. =20
+
+The following code shows the problem:
+
+      String fullFileName =3D "/Users/boblang1/Desktop/xxx.fla";
+     =20
+      try {
+        Scanner in =3D new Scanner (new File (fullFileName));
+        while (in.hasNextLine ()) {
+          String line =3D in.nextLine ();
+          System.out.println (line);
+        }
+      }
+      catch (Exception e) {
+        System.out.println ("Exception reading file: " + fullFileName);
+        System.out.println (e);
+      }
+
+When run inside Xcode or by double clicking the jar, the Scanner reads =
+the .fla file.  When run inside Netbeans, it appears to open the file =
+but won't return any lines (the while loop terminates early).  There are =
+no exceptions reported. =20
+
+BTW, the problem only seems to happen with .fla files.  I can read .txt =
+files quite successfully.
+
+I'm running fully up to date Snow Leopard, with the latest developer =
+preview Java. As far as I can tell, I don't have any older versions of =
+Java on my computer.  All the versions in /System/Library appear to link =
+to Java 1.6.=20
+
+Any ideas?
+
+Bob
+
+
+ _______________________________________________
+Do not post admin requests to the list. They will be ignored.
+Java-dev mailing list      (Java-dev@lists.apple.com)
+Help/Unsubscribe/Update your Subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+This email sent to mlsubscriber.tech@csmining.org
+
+strange behaviour: scanner and netbeanshi all
+
+=46rom time to time i have to assess flash projects, and to assist my =
+marking a few years ago i wrote a program which uses a scanner to open =
+the .fla file and read it on a "line by line" basis.  although this is =
+really stretching what a scanner should do, it has proven surprisingly =
+useful over the years.
+
+my original version of the software was written with an "old" xcode =
+style project using the now deprecated jam.  recently i decided i needed =
+to make some changes to it and i thought it would be a good move to =
+transfer it to netbeans --- and it didn't work!  the scanner wouldn't =
+read a .fla file when run from netbeans, but it would when run from =
+xcode, using either a jam or ant type project.  it would also work if i =
+navigated to the netbeans "dist" folder and double clicked the jar =
+directly. =20
+
+the following code shows the problem:
+
+      string fullfilename =3d "/users/boblang1/desktop/xxx.fla";
+     =20
+      try {
+        scanner in =3d new scanner (new file (fullfilename));
+        while (in.hasnextline ()) {
+          string line =3d in.nextline ();
+          system.out.println (line);
+        }
+      }
+      catch (exception e) {
+        system.out.println ("exception reading file: " + fullfilename);
+        system.out.println (e);
+      }
+
+when run inside xcode or by double clicking the jar, the scanner reads =
+the .fla file.  when run inside netbeans, it appears to open the file =
+but won't return any lines (the while loop terminates early).  there are =
+no exceptions reported. =20
+
+btw, the problem only seems to happen with .fla files.  i can read .txt =
+files quite successfully.
+
+i'm running fully up to date snow leopard, with the latest developer =
+preview java. as far as i can tell, i don't have any older versions of =
+java on my computer.  all the versions in /system/library appear to link =
+to java 1.6.=20
+
+any ideas?
+
+bob
+
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

@@ -1,0 +1,30 @@
+on tue, may 11, 2010 at 09:48, camale=c3=b3n  wrote:
+> on tue, 11 may 2010 12:26:21 -0400, jordan metzmeier wrote:
+>
+>>> users having problems with flash plugin on their 64 bits os can install
+>>> a 32 bits browser and run the 32 bits plugin, which is annoying but it
+>>> should work.
+>>>
+>>>
+>> does this work natively or does it require a chroot?
+>
+> natively... afaik, i see two approaches:
+>
+> 1/ firefox can be downloaded from mozilla site (and mozilla does not
+> provide a 64-bit version for their browser, only 32-bit binaries). once
+> downloaded, no need to install anything, just click and run. then, you
+> can download the flash plugin (32 bits) and store it under firefox
+> plugins folder.
+
+they do provide 64-bit nightly builds, though.
+
+cheers,
+kelly clowers
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/aanlktim-mdyzhnwxwhgdsm3o_auoidtjxd2ctnlss6aq@mail.csmining.org
+
+

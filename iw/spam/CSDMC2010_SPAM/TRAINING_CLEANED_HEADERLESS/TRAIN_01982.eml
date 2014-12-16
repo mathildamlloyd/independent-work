@@ -1,0 +1,52 @@
+-----begin pgp signed message-----
+hash: sha1
+
+on tuesday 27 august 2002 07:45 am, justin mason wrote:
+> tony svanstrom, on spamassassin-talk, noted this us patent:
+>
+> http://appft1.uspto.gov/netacgi/nph-parser?sect1=pto2&sect2;=hitoff&u;=/netah
+>tml/pto/search-adv.html&r;=62&f;=g&l;=50&d;=pg01&s1;=spam&p;=2&os;=haiku&rs;=spam
+>
+>   method of anti-spam
+>
+>   abstract
+>
+>   a method of anti-spam is to set an optional trustcode, or a trustlist, or
+>   at least a trustweb based on online mail delivery at a recipient's e-mail
+>   address. a mail sender is compelled at the first time to deliver a mail
+> by way of: taking the way of "visiting trustweb and sending online", or
+> enclosing the recipient's trustcode in the mail and sending in another way
+> other than the mentioned. after the sender's e-mail address has been stored
+> automatically in the recipient's trustlist, the sender may send mails to
+> the same recipient in whatever the ways feasible.
+>
+>
+> sounds a lot like tmda to me. :(  filing date is july 26, 2001,  granted
+> may 16, 2002.
+>
+> tmdaers, have you seen this before?  i'd presume tmda is prior art, but
+> still, it could be troublesome...
+>
+>
+i took a bit of time to review what is on the above url.  if i were a news 
+editor, the headline would be:
+
+"inventor" from country that ignores patents and copyrights, seeks patent for 
+inventing the wheel!
+- -- 
+- ------------------------------------------------------------------------
+robin lynn frank---director of operations---paradigm, omega, llc
+http://paradigm-omega.com              http://paradigm-omega.net
+ 2002.  all rights reserved.  no duplication/dissemination permitted.
+use of pgp/gpg encrypted mail preferred. no html/attachments accepted.
+fingerprint:  08e0 567c 63cc 5642 db6d  d490 0f98 d7d3 77ea 3714
+key server:  http://paradigm-omega.com/keymaster.html
+- ------------------------------------------------------------------------
+-----begin pgp signature-----
+version: gnupg v1.0.7 (gnu/linux)
+
+id8dbqe9beckd5jx03fqnxqramtfakdm6bdsepbg8fb9ore0xus5jb4t1wcfbtcw
+/pbxqxo7pei1f9lij4gd0/c=
+=pnjx
+-----end pgp signature-----
+

@@ -1,0 +1,27 @@
+
+> on sat, may 01, 2010 at 17:20:56 +0200, alois mahdal wrote:
+>> hello,
+>>
+>> because a stupid mistake, i have interrupted apt-get during early
+>> stage of dist-upgrade from lenny to squeeze.
+>>
+>> now i cannot get apt-get working and i don't know how to fix it.
+>>
+
+
+i know it's cold comfort, but this is the reason why people say  
+"before you do a major upgrade, always do a full backup.  and be sure  
+you know how to do a full "bare-metal" restore from that backup, just  
+incase you actually need it!"
+
+enjoy!
+
+rick
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/e3cfc3c9-600e-499f-899a-d9b6b92e32a4@pobox.com
+
+

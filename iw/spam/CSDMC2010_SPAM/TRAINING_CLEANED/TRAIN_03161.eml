@@ -1,0 +1,89 @@
+None"Boyd Stephen Smith Jr." <bss@iguanasuicide.net> writes:
+
+> On Friday 14 May 2010 12:04:42 Merciadri Luca wrote:
+>> I have many text files (actually .tex files) which contain some
+>> sequence or regexp (it depends on the files) that I would like to
+>> remove. Is there a commandline/GUI for doing this massive edit?
+>
+> (sed -i -e "s/$regexp//" "$file") for a single file.  (GNU sed only.)
+>
+> (find $dir -type f -exec sed -i -e "s/$regexp//" {} \;) for all files in a 
+> directory.
+Thanks both. (@Andrei: it was in the content of the file, sorry not to
+have specified it before.)
+
+I am using the second command. The problem is that, for one set of
+files (that I have selected, no problem for this), I have to use a
+really simple expression: I need to find all the occurences of
+`\paragraph{}' and replace them with nothing (i.e. with `'). I know
+regexps, but replacing `$regexp' with `\paragraph{}' gives error
+messages. Any idea? Thanks.
+
+- -- 
+Merciadri Luca
+See http://www.student.montefiore.ulg.ac.be/~merciadri/
+- -- 
+
+The absent are always in the wrong.
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+Comment: Processed by Mailcrypt 3.5.8 <http://mailcrypt.sourceforge.net/>
+
+iEYEARECAAYFAkvtje0ACgkQM0LLzLt8MhzeCgCfUiKS/MXIJ3pQSvPeGEXj2/88
+zjQAoKWQ7OuTuxQRfe+SZRMI8fPicX//
+=brRM
+-----END PGP SIGNATURE-----
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/87vdaqqsk2.fsf@merciadriluca-station.MERCIADRILUCA
+
+
+re: deleting some regexp/simple expression from lots of files in a secure way-----begin pgp signed message-----
+hash: sha1
+
+"boyd stephen smith jr."  writes:
+
+> on friday 14 may 2010 12:04:42 merciadri luca wrote:
+>> i have many text files (actually .tex files) which contain some
+>> sequence or regexp (it depends on the files) that i would like to
+>> remove. is there a commandline/gui for doing this massive edit?
+>
+> (sed -i -e "s/$regexp//" "$file") for a single file.  (gnu sed only.)
+>
+> (find $dir -type f -exec sed -i -e "s/$regexp//" {} \;) for all files in a 
+> directory.
+thanks both. (@andrei: it was in the content of the file, sorry not to
+have specified it before.)
+
+i am using the second command. the problem is that, for one set of
+files (that i have selected, no problem for this), i have to use a
+really simple expression: i need to find all the occurences of
+`\paragraph{}' and replace them with nothing (i.e. with `'). i know
+regexps, but replacing `$regexp' with `\paragraph{}' gives error
+messages. any idea? thanks.
+
+- -- 
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+- -- 
+
+the absent are always in the wrong.
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: processed by mailcrypt 3.5.8 
+
+ieyearecaayfakvtje0acgkqm0llzlt8mhzecgcfuiks/mxij3pqsvpegexj2/88
+zjqaokwq7outuxqrfe+szrmi8fpicx//
+=brrm
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87vdaqqsk2.fsf@merciadriluca-station.merciadriluca
+
+

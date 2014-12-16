@@ -1,0 +1,38 @@
+here are some numbers with the new algorithm for counting points on
+elliptic curves (over fields of characteristic 2).
+
+in 1998, reynald lercier set a record at 1663 bits in 330 days of cpu
+on 266 mhz alphas.  in 1999, frederik vercauteren set a record at 1999
+bits in 65 days of cpu on 400 mhz pcs.
+
+i've been working on the problem since then.  these were measured just
+now on rajit's 750 mhz alpha:
+
+  1009 bits:
+    lift:  4.8 s + 0.64 s precomputation.
+    norm:  2.6 s + 0.31 s precomputation.
+
+  1663 bits:
+    lift: 18.5 s + 2.1 s precomputation.
+    norm:  7.0 s + 1.9 s precomputation.
+
+  1999 bits:
+    lift: 29.4 s + 3.6 s precomputation.
+    norm: 16.6 s + 3.4 s precomputation.
+
+  15013 bits:
+    lift: 1 h 39 m + 13 m precomputation
+    norm: 39 m + 1 h 41 m precomputation
+
+
+bye,
+  rob.
+     .-.                    robert.harley@argote.ch                    .-.
+    /   \           .-.      software development       .-.           /   \
+   /     \         /   \       .-.     _     .-.       /   \         /     \
+  /       \       /     \     /   \   / \   /   \     /     \       /       \
+ /         \     /       \   /     `-'   `-'     \   /       \     /         \
+            \   /         `-'       argotech      `-'         \   /
+             `-'                http://argote.ch/              `-'
+http://xent.com/mailman/listinfo/fork
+

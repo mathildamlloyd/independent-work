@@ -1,0 +1,32 @@
+using -lm 4 is yielding an extra 20% a day, but it gets false positives
+where it shouldn't.
+
+such as an email with a word doc and the signature below.  after looking at
+the word doc, directions to the sender's cabin, i am convinced it marked the
+body, which contains no next except the "incredimail advertisment"
+signature, as spam.
+
+so i have to turn off -lm 4.  razor has been getting other strange emails it
+shouldn't with -lm 4 on.
+
+      see the incredimail ad signature i am talking about below:
+
+      fox
+
+
+
+____________________________________________________
+  incredimail - email has finally evolved - click here
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+razor-users mailing list
+razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

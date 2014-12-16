@@ -1,0 +1,79 @@
+None> On Wed, 11 Sep 2002, Stephane Lentz wrote:
+> 
+> > => I faced a similar problem with the FreeBSD when trying to 
+> > install SpamAssassin through the ports on my fresh FreeBSD 4.6.2. 
+> > I had to define PERL5LIB with some given order of directories
+> > so that the latest File::Spec module get used. 
+> 
+> Good to hear it's not just me.  Mind telling me how you set PERL5LIB
+> specificly? I've tried a few things (setenv in the shell, as well as
+> $PERL5LIB == ...inside the Makefile.PL, even on the perl command
+> line..) with no success.
+> 
+- Presuming your run Bash  :
+Note the directory lists 
+#  perl -e 'map { print "$_\n" } @INC'
+Then set up the Shell variable PERL5LIB variable (and put it in some .bashrc 
+for future use)
+# export PERL5LIB="directory1:directory2:directory3:directory4"
+Then try to install the software
+
+PERL5LIB is explained perlrun(1) : do 
+# man perlrun for more information
+
+Regards, 
+
+SL/
+---
+Stephane Lentz / Alcanet International - Internet Services
+
+
+-------------------------------------------------------
+In remembrance
+www.osdn.com/911/
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+
+re: [satalk] re: [sadev] file::spec and v2.41on wed, sep 11, 2002 at 01:46:19pm -0700, david raistrick wrote:
+> on wed, 11 sep 2002, stephane lentz wrote:
+> 
+> > => i faced a similar problem with the freebsd when trying to 
+> > install spamassassin through the ports on my fresh freebsd 4.6.2. 
+> > i had to define perl5lib with some given order of directories
+> > so that the latest file::spec module get used. 
+> 
+> good to hear it's not just me.  mind telling me how you set perl5lib
+> specificly? i've tried a few things (setenv in the shell, as well as
+> $perl5lib == ...inside the makefile.pl, even on the perl command
+> line..) with no success.
+> 
+- presuming your run bash  :
+note the directory lists 
+#  perl -e 'map { print "$_\n" } @inc'
+then set up the shell variable perl5lib variable (and put it in some .bashrc 
+for future use)
+# export perl5lib="directory1:directory2:directory3:directory4"
+then try to install the software
+
+perl5lib is explained perlrun(1) : do 
+# man perlrun for more information
+
+regards, 
+
+sl/
+---
+stephane lentz / alcanet international - internet services
+
+
+-------------------------------------------------------
+in remembrance
+www.osdn.com/911/
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

@@ -1,0 +1,34 @@
+marc perkel  writes:
+
+> here something i want - maybe it's in there. i want a way to pipe a file 
+> containing messages into one of the "masses" tools and have it output 
+> the messages that match a specific rule.
+> 
+> the reason i want this is to pipe non-spam corpus through a rule and get 
+> a file of messages so i can look at the false positives and try to 
+> figure out why there was a match. ideally - i would like this debug 
+> modes to put [[ ]] around the phrase that triggered the match. i think 
+> this would be a good tool for fixing/improving otherwise good rules that 
+> have unexplained fp.
+
+  $ cd mass-check
+  $ ./mass-check [options] > nonspam.log
+  $ egrep rule_name nonspam.log|awk '{print $3}'|xargs cat > rule_name.fp
+
+it's pretty easy to figure out what matched if you write a short perl
+script to match regular expressions or just use pcregrep (perl regular
+expression grep).
+
+dan
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+spamassassin-devel mailing list
+spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

@@ -1,0 +1,31 @@
+
+on apr 25, 2010, at 4:12 am, dave keck wrote:
+
+>> just include the protocol in the category interface e.g.
+>> 
+>> @interface myobject(foodelegate) 
+>> ....
+>> @end
+>> 
+>> and make sure this is visible to the compiler when you set an instance
+>> as a delegate.
+> 
+> ah! i was under the false impression that categories couldn't declare
+> themselves as implementing a protocol. this works beautifully.
+
+i ran into a problem doing this a few years ago, where calling
+-conformstoprotocol: would cause a hang when the protocol was 
+implemented in a category.  that might be fixed by now, but be 
+careful if you check conformance.
+
+-- 
+adam
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+objc-language mailing list      (objc-language@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/objc-language/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

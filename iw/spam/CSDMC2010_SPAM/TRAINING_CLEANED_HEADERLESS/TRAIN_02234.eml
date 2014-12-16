@@ -1,0 +1,22 @@
+ok..solved my own question:
+
+should have been:
+
+$ update-alternatives --display x-www-browser
+
+instead of:
+
+$ update-alternatives -display x-www-browser
+
+for the want of a dash an error message is returned.
+
+-- 
+c
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100415131305.28e9489f@mondo
+
+

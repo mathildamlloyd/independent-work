@@ -1,0 +1,25 @@
+on sat, 17 apr 2010 07:24:20 +0200, israel garcia wrote:
+
+> on sat, apr 17, 2010 at 2:12 am, stan hoeppner wrote:
+
+>> what pcie raid card are you using?
+> adaptec aac-raid card inside a supermicro server.
+
+i wish you the best (similar setup here and bad experience with adaptec 
+raid cards) :-(
+
+as per the 4 tib issue. i just have reviewed the wikipedia article about 
+mbr and forgot the limit of 2 tib for a "bootable" partition.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.17.08.12.46@csmining.org
+
+

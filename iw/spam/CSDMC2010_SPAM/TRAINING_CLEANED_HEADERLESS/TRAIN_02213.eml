@@ -1,0 +1,65 @@
+on wed, apr 28, 2010 at 3:50 pm, stephen powell  wrot=
+e:
+> on wed, 28 apr 2010 09:38:37 -0400 (edt), israel garcia wrote:
+>>
+>> do you know the support time for debian lenny?
+>
+> i'm not exactly sure what you mean by that. =c2=a0first of all, you need
+> to define what "support" means. =c2=a0it will receive support for securit=
+y
+> fixes as long as it remains the stable release, and probably for some
+> time after it becomes oldstable.
+hi stephen
+
+yes, i meant security support... thanks
+
+regards,
+israel.
+
+usually, the security team drops
+> support for oldstable shortly before the current testing release
+> becomes the stable release. =c2=a0there is no announced timetable for thi=
+s,
+> but historically the mean time between releases has been about two
+> years, give or take a few months.
+>
+> if what you mean is a commercial support contract, debian itself,
+> as an organization, does not offer commercial support. =c2=a0commercial
+> support is sometimes available from third parties, such as a hardware
+> vendor which pre-installs debian. =c2=a0one can also negotiate a support
+> contract from an independent consultant.
+>
+> if what you mean is informal support, from mailing lists such as this,
+> it has no official start or end. =c2=a0if you can find someone on the
+> list who is willing and able to answer your question, you have support.
+> if you can't, then you don't.
+>
+> --
+> =c2=a0.''`. =c2=a0 =c2=a0 stephen powell
+> =c2=a0: :' =c2=a0:
+> =c2=a0`. `'`
+> =c2=a0 `-
+>
+>
+> --
+> to unsubscribe, email to debian-user-request@lists.debian.org
+> with a subject of "unsubscribe". trouble? contact listmaster@lists.debian=
+.org
+> archive: http://lists.debian.org/1259806833.51430.1272462615419.javamail.=
+root@md01.wow.synacor.com
+>
+>
+
+
+
+--=20
+regards;
+israel garcia
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/j2i194a2c241004280700tc22f8d71y58e0214fbdbc9e8d@mail.csmining.org
+
+

@@ -1,0 +1,51 @@
+-----begin pgp signed message-----
+hash: sha1
+
+liam o'toole wrote:
+>> adding debian-multimedia.org breaks a couple of things. including vlc. i
+>> don't know why they don't fix their repository.
+>>
+>> i'm curious if many people use debian-multimedia. is it trustworthy?
+>>
+>>
+> 
+> i have been using debian-multimedia with debian stable for years without
+> any problems. it is a vauluable and reliable service,
+
+valuable yes, since it provides useful video processing apps. i'm using
+it also since recently. it probably is reliable, although for me it did
+  break vlc the moment i started using it.
+
+> and is provided by a well-known debian developer.
+
+good to know.
+
+how come there is no link anywhere on debian.org pointing to
+debian-multimedia.org? anything to establish a chain of trust. as it is,
+i looked and looked but didn't find. even when searching for
+"multimedia" on debian.org, it does not mention debian-multimedia.org at
+all. not even when searching for "debian-multimedia". every new debian
+user trying to verify the credibilitiy of debian-multimedia.org would
+have given up at this point for sure.
+
+with the information that marillat is a debian developer (and the
+precise spelling of his name) i was actually able to go to the
+developer's page on debian org, find him, and see a link to d-m. so in a
+very roundabout way, d-m is actually endorsed by debian.org. but how
+would anybody find out about this in a reasonable amount of time?
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org
+
+ieyearecaayfakvmyosacgkq+vsrxyk4409xcwcgixo8as/wa8db8m2sp4kv3c2l
+knaana2xq8lpi6rtgd06yimcbrme45ih
+=kc7/
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bccc8eb.8000702@web.de
+
+

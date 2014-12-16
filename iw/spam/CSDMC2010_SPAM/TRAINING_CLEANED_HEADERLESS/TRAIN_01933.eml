@@ -1,0 +1,44 @@
+ron johnson on 14/05/10 20:46, wrote:
+> on 05/14/2010 10:04 am, adam hardy wrote:
+> [snip]
+>>>>>
+>>> isn't this what snmp was designed for?
+>>
+>> there was probably a lot more that it was designed for. plus one of the
+>> first things to appear in google:
+>>
+>> "despite its acronym, snmp is not exactly simple! in fact, it never
+>> ceases to amaze me how much of a black art implementing and using snmp"
+> 
+> but snmp relies on the network, no?
+> 
+>> i don't necessarily want to avoid it, it's just got that 'can-of-worms'
+>> sort of feel to it and i'm hoping i only need the little script in bash.
+>> or at least i did until i realised i'd have to tie ping together with
+>> dyndns.org and smsclient. possibly a brainer. i mean, not a no-brainer.
+>>
+> 
+> shell programming is *incredibly* rich.  with pipes, "variable 
+> substitution" redirection, file io, all manner of control operators, 
+> dialog/zenity, etc, etc.
+> 
+> if (as i suspect) you're new to bash programming, doing this yourself 
+> will open you up to a world of possibilities you barely knew existed.
+
+i wouldn't say i'm new to it, but i'm not experienced. i write little snippets 
+every now and again and edit system startup files etc.
+
+this is certainly a challenge though. i guess if i can interface dyndns.org and 
+smsclient relatively simply with options you mention, i'll probably manage it.
+
+i might also put a check in there for other protocols like http, just in case 
+ping happens to be the last protocol standing when the machine or connection is 
+about to keel over! (thanks to joe in the other msg for the tip)
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bedaed3.4020803@cyberspaceroad.com
+
+

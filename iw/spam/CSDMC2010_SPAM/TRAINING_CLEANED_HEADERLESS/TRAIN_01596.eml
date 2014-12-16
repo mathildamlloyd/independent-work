@@ -1,0 +1,53 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on tue, apr 06, 2010 at 05:23:02pm -0400, stephen powell wrote:
+> on tue, 6 apr 2010 16:41:53 -0400 (edt), alexander samad wrote:
+> > on wed, apr 7, 2010 at 1:03 am, stephen powell wrote:
+> >>
+> >> i'm not familiar with your laptop, but most laptops have a way to swit=
+ch
+
+[snip]
+
+>=20
+> i'm talking about an either/or scenario, where by means of a key
+> combination on the internal keyboard the monitor is switched to internal
+> or external.  using both monitors simultaneously with different images
+> on each one (i.e. displaying a web browser in one window and playing
+> solitaire in the other one) is a whole different thing.  if that's what
+> you want to do, you're out of my league.  i have no experience with that.=
+=20
+> >=20
+> > but i really wanted to be able to do it from the cmd line !
+>=20
+> well, there's chvt, but that is something completely different.
+> that's multiple logical (text-mode) terminals on a single physical
+> terminal.
+>=20
+
+okay a couple of things, i thing we are talking similiar and dissimiliar
+things.
+
+
+turn on laptop - not connected to ext monitor
+loads debian
+starts gdm
+login
+connect to external monitor
+use xrandr to move screen to ext monitor
+close lid on laptop
+use alt+ctrl+f1 to get to tty1
+
+the ext monitor stays on the x screen and the laptop monitors goes to
+the tty - but the lid is closed, i want to move the tty to the ext
+monitor
+
+hope that clears it up...
+
+alex
+
+
+--=20

@@ -1,0 +1,41 @@
+on wed, apr 07, 2010 at 09:07:14pm +0200, rodolfo medina wrote:
+
+>> the problem is reported here:
+>> 
+>>  http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=508589
+>> 
+>> does anyone know if it has been fixed, and how?  i don't have the
+>> possibility of installing sid.
+
+
+
+"a. f. cano"  writes:
+
+> don't know if it's been fixed.  most likely not in lenny and the
+> standard kernels.  i encounter this problem much too often and each time
+> it requires a hard reboot.  strangely, the mouse still works so i can
+> log out of kde, but then the shutdown process hangs until i hit
+> ctrl-alt-del.  then it continues, but the laptop doesn't shut down all
+> the way.  i have to hold the power button for 10 seconds and then it
+> does shut down.  this is a very low level issue.
+>
+> i don't use kppp.  this happens with regular pon/poff.  i suspect
+> it's related to the cdc_acm driver which is the one being used by my
+> phone (motorola e815) through a usb cable.  it's not 100% repeatable.
+> i suspect something in the close routine is overwriting part of the
+> keyboard driver, but only some times.  btw, this is on a dell 8600,
+> with the nvidia-legacy driver.
+
+
+maybe installing a new version of the kernel would fix it?  haven't you tried,
+a.?
+
+rodolfo
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87fx36gsiw.fsf@csmining.org
+
+

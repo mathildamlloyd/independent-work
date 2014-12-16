@@ -1,0 +1,41 @@
+NoneOn Tuesday 27 April 2010 02:44:20 Thomas Pomber wrote:
+> You really gotta know your hardware!
+
+I don't find that to be true at all.  For non-removable media except / you =
+can=20
+simply use UUIDs everything should be fine.  For / you can generally use a=
+=20
+UUID, too.  Removable media can be handled in a variety of ways.  I prefer=
+=20
+using udev to fill in any gaps; writing udev rules doesn't really require=20
+familiarity with hardware (udev will tell you everything useful) and there =
+are=20
+some descent guides available.
+=2D-=20
+Boyd Stephen Smith Jr.           	 ,=3D ,-_-. =3D.
+bss@iguanasuicide.net            	((_/)o o(\_))
+ICQ: 514984 YM/AIM: DaTwinkDaddy 	 `-'(. .)`-'
+http://iguanasuicide.net/        	     \_/
+re: ever make your own fstab from scratch?from nobody tue dec 16 07:55:48 2014
+content-type: text/plain;
+  charset="iso-8859-1"
+content-transfer-encoding: quoted-printable
+
+on tuesday 27 april 2010 02:44:20 thomas pomber wrote:
+> you really gotta know your hardware!
+
+i don't find that to be true at all.  for non-removable media except / you =
+can=20
+simply use uuids everything should be fine.  for / you can generally use a=
+=20
+uuid, too.  removable media can be handled in a variety of ways.  i prefer=
+=20
+using udev to fill in any gaps; writing udev rules doesn't really require=20
+familiarity with hardware (udev will tell you everything useful) and there =
+are=20
+some descent guides available.
+=2d-=20
+boyd stephen smith jr.            ,=3d ,-_-. =3d.
+bss@iguanasuicide.net            ((_/)o o(\_))
+icq: 514984 ym/aim: datwinkdaddy  `-'(. .)`-'
+http://iguanasuicide.net/             \_/

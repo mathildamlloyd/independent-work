@@ -1,0 +1,112 @@
+from nobody tue dec 16 08:46:53 2014
+content-type: text/plain;
+  charset="utf-8"
+content-transfer-encoding: quoted-printable
+
+hello,
+
+on ketvirtadienis 06 gegu=c5=be=c4=97 2010 23:48:43 boyd stephen smith jr. =
+wrote:
+> >  but whether
+> >  upstream software meets users' needs is out of debian scope.
+>=20
+> there's a lot to consider, since debian needs upstream's help in addressi=
+ng
+> bugs throughout the lifetime of stable, and that's easier to achieve with
+> the latest release.  but then again, stable needs to be usable on release
+> day. "release early, release often" is great for development, it is not so
+> great for stability (both in "lack of bugs" and "lack of change"
+> meanings). sometimes the most recent release from upstream is not best for
+> debian stable.
+
+you missed my point completely. what is subjectively unusable for you, is=20
+perfectly usable for others and the other way round. debian is not your=20
+personal distro, it strives to keep balance. and balance is towards 4.4 sid=
+e=20
+you like it or not due to many factors. when squeeze is released, kde 4.5 m=
+ay=20
+be in .3 or later patch release upstream so the point about the latest and=
+=20
+greatest here is completely out-of-place.
+
+now if at particular time upstream software does not meet your personal nee=
+ds,=20
+you go and look for alternatives. you talk like kdepim 4.3 was flawless. bu=
+t=20
+it wasn't! there is no place for "software does not do x, remove it from=20
+stable" discussions here.
+
+> >  just find
+> >  another software/solution which does, develop it by yourself, pay
+> >  somebody to develop it for you or ask kindly and wait till somebody
+> >  else is motivated enough to do it.
+>=20
+> i will, but i see no reason not to air my grievances.
+
+insisting that others do something (revert to kdepim 4.3) based solely on y=
+our=20
+personal grievances does not help productive communication.
+
+> > you run a dozen of db servers,
+>=20
+> i'm not the only person that does.  most users have a sqlite datatbase th=
+ey
+> don't even know about.  people that develop or test web applications
+> generally have to deal with a db as well.  in small shops, the test
+> database often lives on the developers work system.
+>
+> > you don't want another one, you don't trust
+> > mysql,
+>=20
+> i'm not the only one with these concerns.
+
+i've never said that you're the only one. i find myself in the odd position=
+=20
+that i mostly share opinion with you about excessive "explosion" of db serv=
+er=20
+instances on the desktop but i still can't help myself to argue. you starte=
+d=20
+this off on a wrong foot by demanding to accommodate to your needs.
+
+> > you say kde 4.4 is inappropriate for stable.
+>=20
+> that is my opinion.
+>=20
+> > nothing objective and
+> >=20
+> >  you assume that your truth is an ultimate one.
+>=20
+> not really.  i made objective statement about kmail based on observable
+> facts. i also voiced an opinion that i based on that statement.
+
+what facts? that kdepim/kmail needs akonadi? that's hardly news. akonadi=20
+integration is not stable enough? there is still time to improve it. that's=
+=20
+what ana's blog was about.
+
+> >  if you have so
+> >  many problems with particular piece of software, look for better optio=
+ns
+> >  or read the first part of this mail again.
+>=20
+> i have problems with a very narrow selection of selection of the software.
+> specifically, i don't want to need mysql installed in order to use kmail
+> effectively in debian stable.
+
+it is not like every mail client on the market suddenly needs mysql. actual=
+ly,=20
+kmail is probably unique in this area.
+
+> there are a number of solutions to this.  newer akonadi should run on non-
+> mysql data stores.  older kmail doesn't talk to akonadi.  patches could be
+> applied to either.  stable could include software from multiple kde
+> releases, as has been done before.
+
+what i tried to say to you all this time, if akonadi renders kmail unusable=
+ to=20
+you, switch the client! akonadi by itself is not a bug, it is not going awa=
+y!=20
+take it or switch to something else, simple as that.
+
+=2d-=20
+modestas vainius 

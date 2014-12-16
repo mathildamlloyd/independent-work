@@ -1,0 +1,50 @@
+date:wed, 12 may 2010 11:05:21 -0400 (edt)
+stephen powell  wrote,
+> your kernel installation environment is not configured correctly for
+> use with lilo.  that's why you are having trouble upgrading to
+> a newer kernel.  assuming that you are using only stock kernel images,
+> here is what you should do:
+
+the instructions are like clockwork.  thanks!
+incorporation in the lilo package would be good.
+
+> i don't know if the new kernel will fix the x problem ...
+
+unfortunately x remains broken with an error 
+about /dev/fb0.
+
+the log is here in case anyone is interested.
+    http://carnot.yi.org/dalton.xorg.0.log
+with minimal understanding, i noticed these lines.
+
+(ii) primary device is: pci 00@00:02:0
+(ww) falling back to old probe method for vesa
+(ww) falling back to old probe method for fbdev
+(ii) loading sub module "fbdevhw"
+(ii) loadmodule: "fbdevhw"
+(ii) loading /usr/lib/xorg/modules/linux/libfbdevhw.so
+(ii) module fbdevhw: vendor="x.org foundation"
+compiled for 1.7.6.901, module version = 0.0.2
+abi class: x.org video driver, version 6.0
+(ee) open /dev/fb0: no such file or directory
+
+i've tried various ideas found with google.
+remove the intel driver and leave the vesa 
+driver installed for example.
+
+is fb a standalone driver?  is it an accessory 
+to the vesa driver?
+
+thanks for any ideas,          ... peter e.
+
+-- 
+google "pathology workshop".
+in ethno click here -> desktops.opendoc http://carnot.yi.org/.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/171056496.45946.40347.@heaviside.invalid
+
+

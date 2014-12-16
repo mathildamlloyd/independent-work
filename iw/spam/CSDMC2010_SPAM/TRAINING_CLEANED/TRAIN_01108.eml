@@ -1,0 +1,56 @@
+NoneHow does the Finder decide that two drives are on the same
+	partition?When I make two "local" disks via MacFuse and I try to eject one of them =
+the Finder insists on warning me that there are two drives on the same =
+partition, and giving me the option to unmount all of them or just the =
+one I tried to. This is very inconvenient for me.
+
+The mount command shows:
+
+
+MyFS@fuse0 on /Volumes/MyFS_2Gig (...)
+MyFS@fuse1 on /Volumes/MyFS_4Gig (...)
+
+My suspicion is that the Finder just looks for the mount=46rom value =
+then calls volumes partitions on the same disk if they only vary in the =
+last number.
+
+Thoughts?
+
+Thanks,
+Jim O'Connor=
+ _______________________________________________
+Do not post admin requests to the list. They will be ignored.
+Filesystem-dev mailing list      (Filesystem-dev@lists.apple.com)
+Help/Unsubscribe/Update your Subscription:
+http://lists.apple.com/mailman/options/filesystem-dev/mlsubscriber.tech%40csmining.org
+
+This email sent to mlsubscriber.tech@csmining.org
+
+how does the finder decide that two drives are on the same
+partition?when i make two "local" disks via macfuse and i try to eject one of them =
+the finder insists on warning me that there are two drives on the same =
+partition, and giving me the option to unmount all of them or just the =
+one i tried to. this is very inconvenient for me.
+
+the mount command shows:
+
+
+myfs@fuse0 on /volumes/myfs_2gig (...)
+myfs@fuse1 on /volumes/myfs_4gig (...)
+
+my suspicion is that the finder just looks for the mount=46rom value =
+then calls volumes partitions on the same disk if they only vary in the =
+last number.
+
+thoughts?
+
+thanks,
+jim o'connor=
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+filesystem-dev mailing list      (filesystem-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/filesystem-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

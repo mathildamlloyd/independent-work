@@ -1,0 +1,116 @@
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: text/plain; charset=ISO-8859-1
+
+@Merciadri Luca
+
+[quote]
+I have no answer to your question, but I am wondering... what does 'lol'
+mean here? Is it some version of something, or did you simply put this over
+there because you have some sense of humor and you like to make your
+(somewhat old) config appear less depressing to the others' eyes?
+[/quote]
+
+
+... it's the hostname, but it is funny! I don't give a damn about what
+others might think anyway, I'm just having fun with it, making some tests,
+pushing my knowledge...
+
+@Stefan
+
+[quote]
+486 will work.  686 may work.
+[/quote]
+
+
+My impression exactly, but I'd like to be sure : if I scrape this install,
+I'll have a hard time recovering it...
+
+@Bob
+
+[quote]
+ionreflex@lol:~$ cat /proc/cpuinfo
+processor: 0
+vendor_id: GenuineIntel
+cpu family: 5
+model: 4
+model name: Pentium MMX
+stepping: 4
+cpu MHz: 165.791
+fdiv_bug: no
+hlt_bug: no
+f00f_bug: yes
+coma_bug: no
+fpu: yes
+fpu_exception: yes
+cpuid level: 1
+wp: yes
+flags: fpu vme de pse tsc msr mce cx8 mmx
+bogomips: 330.95
+[/quote]
+
+[quote]
+ionreflex@lol:~$ cat /etc/debian_version
+4.0
+[/quote]
+
+
+I had to doublecheck to make sure I wasn't jumping any major, thanks for
+that insight; I already knew what chip was inside the laptop, I'm just not
+sure what and where to look for to know which kernel to choose. If you can
+point me in the right direction, I would really appreciate it!
+
+Tankiou all! :o)
+
+
+
+Ion
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<span class=3D"Apple-style-span" style=3D"font-family: arial, sans-serif; f=
+ont-size: 13px; border-collapse: collapse; "><div>@Merciadri Luca</div><blo=
+ckquote style=3D"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; ma=
+rgin-left: 40px; border-top-style: none; border-right-style: none; border-b=
+ottom-style: none; border-left-style: none; border-width: initial; border-c=
+olor: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; p=
+adding-left: 0px; ">
+<div>[quote]</div><div>I have no answer to your question, but I am wonderin=
+g... what does &#39;lol&#39; mean here? Is it some version of something, or=
+ did you simply put this over there because you have some sense of humor an=
+d you like to make your (somewhat old) config appear less depressing to the=
+ others&#39; eyes?</div>
+<div>[/quote]</div></blockquote><div><br></div><div>... it&#39;s the hostna=
+me, but it is funny! I don&#39;t give a damn about what others might think =
+anyway, I&#39;m just having fun with it, making some tests, pushing my know=
+ledge...</div>
+<div><br></div><div>@Stefan</div><blockquote style=3D"margin-top: 0px; marg=
+in-right: 0px; margin-bottom: 0px; margin-left: 40px; border-top-style: non=
+e; border-right-style: none; border-bottom-style: none; border-left-style: =
+none; border-width: initial; border-color: initial; padding-top: 0px; paddi=
+ng-right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+<div>[quote]</div><div class=3D"im"><div>486 will work. =A0686 may work.</d=
+iv></div><div>[/quote]</div></blockquote><div><br></div><div>My impression =
+exactly, but I&#39;d like to be sure : if I scrape this install, I&#39;ll h=
+ave a hard time recovering it...</div>
+<div><br></div><div>@Bob</div><blockquote style=3D"margin-top: 0px; margin-=
+right: 0px; margin-bottom: 0px; margin-left: 40px; border-top-style: none; =
+border-right-style: none; border-bottom-style: none; border-left-style: non=
+e; border-width: initial; border-color: initial; padding-top: 0px; padding-=
+right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+<div>[quote]</div><div>ionreflex@lol:~$ cat /proc/cpuinfo</div><div>process=
+or: 0</div><div>vendor_id: GenuineIntel</div><div>cpu family: 5</div><div>m=
+odel: 4</div><div>model name: Pentium MMX</div><div>stepping: 4</div><div>
+cpu MHz: 165.791</div><div>fdiv_bug: no</div><div>hlt_bug: no</div><div>f00=
+f_bug: yes</div><div>coma_bug: no</div><div>fpu: yes</div><div>fpu_exceptio=
+n: yes</div><div>cpuid level: 1</div><div>wp: yes</div><div>flags: fpu vme =
+de pse tsc msr mce cx8 mmx</div>
+<div>bogomips: 330.95</div><div>[/quote]</div><div><br></div><div>[quote]</=
+div><div>ionreflex@lol:~$ cat /etc/debian_version</div><div>4.0</div><div>[=
+/quote]</div></blockquote><div><br></div><div>I had to doublecheck to make =
+sure I wasn&#39;t jumping any major, thanks for that insight; I already kne=
+w what chip was inside the laptop, I&#39;m just not sure what and where to =
+look for to know which kernel to choose. If you can point me in the right d=
+irection, I would really appreciate it!</div>
+<div><br></div><div>Tankiou all! :o)</div><div><br></div><div><br></div><di=
+v><br></div><div>Ion</div></span>

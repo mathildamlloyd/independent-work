@@ -1,0 +1,48 @@
+zhang weiwu put forth on 5/24/2010 11:02 pm:
+> hello. in our company we use a email naming convention like this:
+> 
+> zhang weiwu on holz project 
+> 
+> problem being when a special email address is needed for office it, it
+> become too long for many web forms and email clients:
+> 
+> zhang weiwu the support engineer of office it services of icd ss 
+> 
+> so what would a *nix guru make this shorter?
+> 
+> i ask here because debian people, or especially those who find unix
+> style homy, likes terse names. who else than unix folks that can make
+> such short name like "ls" and "etc"?
+> 
+> i thought of "zhangweiwu+ihd.icc_ss@realss.com", ihd for "it help desk".
+> i would take that if none better. chances are the email address will be
+> used for years, thus i think i should be so prudent that i ask on the list.
+
+this is exactly why display names were invented...
+
+address:       abs@example.com
+display name:  alphabet soup
+
+or
+
+address:       zw@realss.com
+display name:  zhang weiwu, support engineer
+
+and something called a signature, which is where you should put all that other
+crap:
+
+office it services of icd ss
+
+to try to jam all of that information into the smtp address itself is silly.
+again, this is what display names and sigs are for.
+
+-- 
+stan
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bfb6376.8040004@hardwarefreak.com
+
+

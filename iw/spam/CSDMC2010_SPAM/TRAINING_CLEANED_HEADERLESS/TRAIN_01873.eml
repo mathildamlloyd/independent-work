@@ -1,0 +1,28 @@
+t o n g wrote:
+> hi,
+> 
+> having upgraded iceweasel, i am no longer able to call firefox or mozilla 
+> from command line any more. i don't mind firefox is called iceweasel or 
+> whatever in debian, but entirely stopping me from starting firefox is 
+> something i don't feel comfortable.
+> 
+> please comment. 
+
+
+i fail to see the problem, firefox is now '/user/bin/iceweasel'
+
+'update-alternatives --config x-www-browser' and enter your choice.
+-- 
+jimmy johnson
+
+bakersfield, ca. u.s.a.
+registered linux user #380263
+k.i.s.s. (keep it simple stupid)
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4be3bfce.1020900@csmining.org
+
+

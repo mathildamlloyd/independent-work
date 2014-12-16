@@ -1,0 +1,47 @@
+on tue, 13 apr 2010 16:04:00 -0400, ken heard wrote:
+
+(...)
+ 
+> after reloading iceweasel, about:plugins still showed the previous jre i
+> was using, /usr/lib/jvm/java-6-openjdk/jre/bin/java.
+> 
+> assuming that i can use a later version of jre downloaded from sun on
+> iceweasel 3.5, am i on the right track but did not get the newer version
+> set up correctly, or is there a different way?
+
+just a side note about java/java plugin download from oracle/sun site.
+
+last time i had to install it in that way on a linux system i needed to 
+make a symlink for the plugin to work in firefox, as described in the 
+installation guide ("enable and configure" section):
+
+http://www.java.com/en/download/help/linux_install.xml#enable
+
+but nowadays, the proper way for setting this should be using "update-
+alternatives" as you mentioned above. 
+
+what is the output of "update-alternatives --display firefox-
+javaplugin.so" command?
+
+mine shows:
+
+stt008:~# update-alternatives --display firefox-javaplugin.so
+firefox-javaplugin.so - el estado es auto.
+ el enlace apunta actualmente a /usr/lib/jvm/java-6-sun/jre/lib/amd64/
+libnpjp2.so
+/usr/lib/jvm/java-6-sun/jre/lib/amd64/libnpjp2.so - prioridad 63
+actualmente la mejor versin es /usr/lib/jvm/java-6-sun/jre/lib/amd64/
+libnpjp2.so.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.14.15.11.22@csmining.org
+
+

@@ -1,0 +1,28 @@
+once upon a time, harig, wrote :
+
+> > 
+> > the workaround is to pass an extra argument to configure as follows :
+> > 
+> > %configure --program-prefix=%{?_program_prefix:%{_program_prefix}}
+> > 
+> 
+> this works when you are defining a switch that %configure
+> does not already define, but how can we override an
+> existing switch?
+
+well, %configure doesn't define "--program-prefix=", so that's why it
+works. maybe you thought that was an example, but no, it's the exact syntax
+to use as a workaround ;-)
+
+matthias
+
+-- 
+matthias saou                                world trade center
+-------------                                edificio norte 4 planta
+system and network engineer                  08039 barcelona, spain
+electronic group interactive                 phone : +34 936 00 23 23
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

@@ -1,0 +1,25 @@
+once upon a time, brian wrote :
+
+>     also- i noticed this repo has about an 8k bandwidth.  is there a way
+>     i can put this behind the others, so i don't hammer it for things
+>     that are at other repos?  i'm respectful about bandwidth, having
+>     lived on dialup for so long.  now i'm on fiber optic and it's a whole
+>     other world...
+
+sure, just use "os" and "updates" from apt.freshrpms.net for instance then
+add the lines for that repository with only the module you want/need (here
+it's "testing73" i guess).
+
+matthias
+
+-- 
+matthias saou                                world trade center
+-------------                                edificio norte 4 planta
+system and network engineer                  08039 barcelona, spain
+electronic group interactive                 phone : +34 936 00 23 23
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

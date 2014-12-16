@@ -1,0 +1,73 @@
+on sat, 01 may 2010 19:14:52 +0200, florian kulzer  
+ wrote:
+
+> on sat, may 01, 2010 at 17:20:56 +0200, alois mahdal wrote:
+>> hello,
+>>
+>> because a stupid mistake, i have interrupted apt-get during early
+>> stage of dist-upgrade from lenny to squeeze.
+>>
+>> now i cannot get apt-get working and i don't know how to fix it.
+>>
+
+[...]
+
+>> dpkg: warning: 'ldconfig' not found on path.
+>> dpkg: 1 expected program(s) not found on path.
+>> nb: root's path should usually contain /usr/local/sbin, /usr/sbin
+>> and /sbin.
+>> e: sub-process /usr/bin/dpkg returned an error code (2)
+>
+> both "locale" and "ldconfig" were shifted from libc6 to libc-bin going
+> from lenny and squeeze; my guess would be that you upgraded to the
+> squeeze version of libc6, but you did not yet complete the installation
+> of libc-bin, so now these important commands (and others) are missing on
+> your system. (the libc-bin package does not exist for lenny.)
+>
+> if dpkg still works then you can try to download libc-bin for your
+> architecture from http://packages.debian.org/squeeze/libc-bin and
+> install the .deb with "dpkg -i ...", see here:
+>
+> http://www.debian.org/doc/manuals/reference/ch02.en.html#_rescue_with_the_dpkg_command
+>
+
+thanks, florian.
+
+unfortunately, dpkg was too broken, so i had to use ubuntu livecd (because  
+i could not find dpkg at debian installer cd / rescue mode) to boot and do  
+following:
+
+  1. mount -t ext2 /dev/sdax /media/root
+  # ...and all relevant partitions (/usr, /var, ...) respectively
+  2. mount --bind /dev /media/root/dev
+  # since dpkg was complaining about missing debian-exim group, i had to  
+get rid of statoverride:
+  3. chroot /media/root
+  4. dpkg-statoverride --remove /etc/exim4/passwd.client
+  # later i must not forget to restore /var/lib/dpkg/statoverride from  
+statoverride-old
+  5. exit && cd
+  6. wget  
+http://ftp.cz.debian.org/debian/pool/main/e/eglibc/libc-bin_2.10.2-6_amd64.deb
+  7. wget  
+http://ftp.cz.debian.org/debian/pool/main/e/eglibc/libc6_2.10.2-6_amd64.deb
+  8. dpkg --root=/media/root -i libc-bin_2.10.2-6_amd64.deb
+  9. dpkg --root=/media/root -i libc6_2.10.2-6_amd64.deb
+10. reboot
+
+after reboot and restoration of statoverride, i can continue with apt-get  
+upgrade and apt-get dist-upgrade; dpkg seems to work.
+
+thanks again to you all!
+
+
+-- 
+using opera's revolutionary e-mail client: http://www.opera.com/mail/
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/op.vb3fsevk53tp3f@hugo.lennycz-depot
+
+

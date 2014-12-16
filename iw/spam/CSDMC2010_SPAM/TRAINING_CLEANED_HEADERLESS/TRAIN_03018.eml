@@ -1,0 +1,31 @@
+stephen powell put forth on 4/8/2010 9:38 pm:
+
+> for some reason, this well-known proverb is going through my head:
+> 
+>    give a man a fish and you feed him for a day.
+>    teach a man to fish and you feed him for a lifetime.
+> 
+> i'd rather learn to fish.
+
+this is exactly the reason i chose debian 10 years ago when i was looking
+for my first linux distro.  i told a friend i wanted a server distro that
+wasn't going to spoon feed me, but make me learn something about linux.
+
+casey, a seasoned debian sysadmin, recommended i download the debian net
+install floppies and do my first install from the mirrors, only a compact
+base install, and to install everything else i needed by hand with apt.
+that was potato with a 2.2 kernel.
+
+i only use linux for non-gui servers.  i don't use desktop linux.  all my
+admin'ing requires knuckle busting. ;)  and i like it that way.
+
+-- 
+stan
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bbf9f3f.1040303@hardwarefreak.com
+
+

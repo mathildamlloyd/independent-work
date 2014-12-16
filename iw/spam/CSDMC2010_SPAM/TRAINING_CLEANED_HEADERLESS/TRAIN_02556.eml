@@ -1,0 +1,68 @@
+on mon, may 10, 2010 at 12:49 pm, camale=c3=b3n  wrote:
+> on mon, 10 may 2010 11:57:35 +0200, israel garcia wrote:
+>
+>> on mon, may 10, 2010 at 10:41 am, camale=c3=b3n wrote:
+>>
+>>> does this help?
+>>>
+>>> ***
+>>> http://wiki.xensource.com/xenwiki/xennetworking#head-
+> d5446face7e308f577e5aee1c72cf9d156903722
+>
+>> i could be possible for me to configure this on every dom0 and setup an
+>> dhcp server for all hosts. but, it's a little complicated. i'd prefer to
+>> look for other solution to see how can i protect my ip servers if a
+>> newone gets an used ip. i was taking a look at this
+>> http://sourceforge.net/projects/ipwatchd/, but i've to make my own test.
+>>
+>> is there something similar tp ipwatchd inside debian os?
+>
+> it's available in sid:
+>
+> http://packages.debian.org/sid/ipwatchd-gnotify
+>
+> but, are you sure you want such a solution for your xen doms? :-?
+no, i'm not. :-)
+>
+> that tool seems to be focused for desktop users and just for alerting
+> purposes, i mean, what is intended to do when it detects a ip conflict?
+ ipwatchd v1.2 has some changes, is says "it protects your host before
+ip takeover by answering gratuitous arp requests received from
+conflicting system"
+>
+> you can use a network scanner (nmap, arp-scan, netdiscover...) to prevent
+> assigning a duplicate ip address to the hosts but i'm not sure this is
+> your goal.
+>
+i know, but somtimes manual errors comes when setup a new domu's network.
+
+thanks
+regards
+israel.
+> greetings,
+>
+> --
+> camale=c3=b3n
+>
+>
+> --
+> to unsubscribe, email to debian-user-request@lists.debian.org
+> with a subject of "unsubscribe". trouble? contact listmaster@lists.debian=
+.org
+> archive: http://lists.debian.org/pan.2010.05.10.10.49.45@csmining.org
+>
+>
+
+
+
+--=20
+regards;
+israel garcia
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/aanlktilggev17cjaclqhnt25523umv7tl2krn9vzggde@mail.csmining.org
+
+

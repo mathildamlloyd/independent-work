@@ -1,0 +1,42 @@
+from nobody tue dec 16 09:15:45 2014
+content-type: text/plain; charset=us-ascii
+
+hi,
+
+this is the output of scp -vv
+
+$ scp -vv files.tar.gz root@192.168.1.11:/root/desktop
+executing: program /usr/bin/ssh host 192.168.1.11, user root, command scp -v -t /root/desktop
+openssh_5.1p1 debian-5, openssl 0.9.8g 19 oct 2007
+debug1: reading configuration data /etc/ssh/ssh_config
+debug1: applying options for *
+debug2: ssh_connect: needpriv 0
+debug1: connecting to 192.168.1.11 [192.168.1.11] port 22.
+debug1: connection established.
+debug1: identity file /home/user/.ssh/identity type -1
+debug1: identity file /home/user/.ssh/id_rsa type -1
+debug1: identity file /home/user/.ssh/id_dsa type -1
+debug1: remote protocol version 2.0, remote software version openssh_5.1p1 debian-5
+debug1: match: openssh_5.1p1 debian-5 pat openssh*
+debug1: enabling compatibility mode for protocol 2.0
+debug1: local version
+ string ssh-2.0-openssh_5.1p1 debian-5
+debug2: fd 3 setting o_nonblock
+debug1: ssh2_msg_kexinit sent
+read from socket failed: connection reset by peer
+lost connection
+
+i get this not matter which file i try to copy.
+
+
+
+
+
+
+
+      from nobody tue dec 16 09:15:45 2014
+content-type: text/html; charset=us-ascii
+
+hi,this is the output of scp -vv$ scp -vv files.tar.gz root@192.168.1.11:/root/desktopexecuting: program /usr/bin/ssh host 192.168.1.11, user root, command scp -v -t /root/desktopopenssh_5.1p1 debian-5, openssl 0.9.8g 19 oct 2007debug1: reading configuration data /etc/ssh/ssh_configdebug1: applying options for *debug2: ssh_connect: needpriv 0debug1: connecting to 192.168.1.11 [192.168.1.11] port 22.debug1: connection established.debug1: identity file /home/user/.ssh/identity type -1debug1: identity file /home/user/.ssh/id_rsa type -1debug1:
+ identity file /home/user/.ssh/id_dsa type -1debug1: remote protocol version 2.0, remote software version openssh_5.1p1 debian-5debug1: match: openssh_5.1p1 debian-5 pat openssh*debug1: enabling compatibility mode for protocol 2.0debug1: local version
+ string ssh-2.0-openssh_5.1p1 debian-5debug2: fd 3 setting o_nonblockdebug1: ssh2_msg_kexinit sentread from socket failed: connection reset by peerlost connectioni get this not matter which file i try to copy.

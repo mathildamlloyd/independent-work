@@ -1,0 +1,46 @@
+-----begin pgp signed message-----
+hash: sha1
+
+hi,
+
+jason self wrote/schrieb @ 15.04.2010 21:52:
+
+> kurt roeckx  wrote ..
+>  
+>> what does this mean exactly?
+>
+> it means that you need to be running least version 0.95 of clamav, and 
+> preferably always the latest & greatest version, to be protected. outdated anti-
+> virus software is not effective.
+
+& you have to exchange the packages build on clamav, too, as mentioned
+in above announcement.
+
+deb http://volatile.debian.org/debian-volatile \
+lenny-proposed-updates/volatile main contrib non-free
+
+/me just learned it the hard way (dansguardian), as everybody was
+claiming that there is no web access :(.
+
+thx to adam for the announcement and the volatile team for the updated
+packages. dansguardian (i386) from volatile lenny-proposed-updates has
+no problem here.
+
+- -- 
+br - maik
+-----begin pgp signature-----
+version: gnupg v1.4.9 (mingw32)
+comment: signature of maik holtkamp
+
+ieyearecaayfakvigwoacgkqz3bq6aadmi919acglwsr1nl4aj523gvnd4jdjae0
+rx4aokkbeqqoh4frknirvzuqx+kufa8z
+=8gq9
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-security-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bc8196a.3090601@medical-city.de
+
+

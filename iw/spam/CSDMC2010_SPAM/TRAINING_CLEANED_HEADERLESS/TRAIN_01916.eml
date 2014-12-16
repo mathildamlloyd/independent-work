@@ -1,0 +1,9 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain
+content-transfer-encoding: quoted-printable
+
+hi,
+
+nscd was the problem. he cached the local passwd ...
+
+cu denny

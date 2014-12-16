@@ -1,0 +1,24 @@
+>>>>> "stuart" == stuart wier  writes:
+
+ stuart> "headless=true" is not a help since the program
+ stuart> needs to run just as if it had graphics.
+
+i don't understand this explanation.  i generate large image files all
+the time using java.awt.headless=true.  my graphics code can't tell the
+difference whether it's running on real awt or headless awt, it works
+fine either way.  i didn't have to do anything special for this to work.
+are you sure it matters to your code?
+
+just checking...
+
+-- 
+seth tisue @ northwestern university | http://tisue.net
+lead developer, netlogo: http://ccl.northwestern.edu/netlogo/
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

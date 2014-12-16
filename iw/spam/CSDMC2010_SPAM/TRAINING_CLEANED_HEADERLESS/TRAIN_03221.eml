@@ -1,0 +1,35 @@
+=20
+
+> -----original message-----
+> from: samba-bounces@lists.samba.org=20
+> [mailto:samba-bounces@lists.samba.org] on behalf of udo m=fcller
+> sent: wednesday, 07 april, 2010 13:48
+> to: samba@lists.samba.org
+> subject: re: [samba] how to mount shares as a user without=20
+> mount.cifs setuid
+>=20
+> am 07.04.10 22:44, schrieb gary dale:
+> > how do i mount an smb/cifs share as a normal user without running
+> > mount.cifs? or if i have to mount the share as root, how can i get
+> > reasonable access to the shares?
+>=20
+> use fuse.
+>=20
+> regards udo
+
+unfortunately, the suggested fusesmb replacement is an apples to oranges ki=
+nd of thing.
+
+gary, i heard a rumour that cifs-utils 4.2 is supposed to address this issu=
+e, but i can't find documentation on the web. =20
+
+4.2 hasn't made it into sid yet (so it will be a bit before squeeze sees it=
+).=
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4a09477d575c2c4b86497161427dd94c149f788651@city-exchange07
+
+

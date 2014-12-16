@@ -1,0 +1,39 @@
+None>
+>sorry, i missed this.  redhat supplies something similar called kickstart
+>(guess who inspired them?).  pc hardware is dumb, so you'll need to use
+>a floppy.  otoh, every jumpstart config i've seen required rarp plus
+>plugging the new box's ethernet+ip into a file.  a kickstart boot can
+>just use a dhcp server.
+
+Aye, but it'll still need a /boot/kickstart/$VER/$IP-kickstart won't it
+to proceed automatically?  [or am I completely off track there?]
+
+-- 
+	Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+re: [ilug] sparc solaris (was: dell gx260 v redhat 7.3)on tue, 06 aug 2002 12:56:17 bst, kevin lyda said:
+>
+>sorry, i missed this.  redhat supplies something similar called kickstart
+>(guess who inspired them?).  pc hardware is dumb, so you'll need to use
+>a floppy.  otoh, every jumpstart config i've seen required rarp plus
+>plugging the new box's ethernet+ip into a file.  a kickstart boot can
+>just use a dhcp server.
+
+aye, but it'll still need a /boot/kickstart/$ver/$ip-kickstart won't it
+to proceed automatically?  [or am i completely off track there?]
+
+-- 
+niall
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,52 @@
+None"Clark C . Evans" said:
+
+> Hello.  I'm hosted on a FreeBSD box where I can't modify the
+> local Perl installation.  I downloaded and installed procmail
+> in my home directory, and now I'm trying to get spamassassin to work...
+> 
+> bash-2.05$ perl Makefile.PL PREFIX=/home/cce SYSCONFDIF=/home/cce/etc
+> Warning: prerequisite HTML::Parser 0 not found at (eval 1) line 219.
+> Warning: prerequisite Pod::Usage 0 not found at (eval 1) line 219.
+> 'SYSCONFDIF' is not a known MakeMaker parameter name.
+
+SYSCONFDIR.
+
+--j.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+re: [satalk] getting single-user spam assassin to work in freebsd
+    default install
+"clark c . evans" said:
+
+> hello.  i'm hosted on a freebsd box where i can't modify the
+> local perl installation.  i downloaded and installed procmail
+> in my home directory, and now i'm trying to get spamassassin to work...
+> 
+> bash-2.05$ perl makefile.pl prefix=/home/cce sysconfdif=/home/cce/etc
+> warning: prerequisite html::parser 0 not found at (eval 1) line 219.
+> warning: prerequisite pod::usage 0 not found at (eval 1) line 219.
+> 'sysconfdif' is not a known makemaker parameter name.
+
+sysconfdir.
+
+--j.
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: osdn - tired of that same old
+cell phone?  get a new here for free!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1;=vs3390
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

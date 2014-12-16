@@ -1,0 +1,27 @@
+on fri, apr 30, 2010 at 09:14:43pm -0500, brian ryans  was heard to say:
+> in aptitude, i can execute queued package modification orders (install,
+> remove, etc) by use of 'aptitude install', with no arguments.
+> 
+> how does one queue packages using only the command line? i'm looking to
+> duplicate the following sequence done in the curses ui:
+> 
+> sudo aptitude
+> /* browse package lists, find desired pkgs to install */
+> q
+> 
+> standard information sources (readme, usd/aptitude, etc) were no-go as
+> to getting the information.
+> 
+> any pointers would be appreciated.
+
+  add --schedule-only to the command-line.
+
+  daniel
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100503140737.gb14980@emurlahn.burrows.local
+
+

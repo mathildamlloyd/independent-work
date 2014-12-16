@@ -1,0 +1,68 @@
+camalen wrote:
+
+> on tue, 25 may 2010 18:57:31 +0200, deloptes wrote:
+> 
+>> camalen wrote:
+>> 
+>>> if evolution is working "off-line", switch into "on-line" mode, that
+>>> should go away the message about "network not available".
+>>> 
+>>> 
+>> this is the problem the online option (down left) is outblended and
+>> inactive. i don't understand why.
+> 
+> it could be a bug, but evolution depends much in network-manager settings
+> to check the connection status of the computer. be sure you are indeed
+> online.
+
+does somebody here is using it (also in production)?
+i want to cross check some things.
+i'm not using network manager, because the stupid thing is waiting for me to
+login to connect, but my home is on a network share that i need to have
+mounted before i login
+
+> 
+> also, go to "file" menu and look there for any "switch to online" option
+> you can toggle on.
+
+be sure i've done this already .. this option is disabled too
+
+> 
+> you can try by launching evolution being another user (not your usual
+> one) and from a console, to see any output errors.
+
+this is a good idea, i'll try. i've actually tried but only to see if evo is
+running
+
+> 
+>> by the way i'm using evolution in kde4 so may be there is something from
+>> gnome missing.
+>> 
+>> i did a test upgrade so may be evolution packages are upgraded but
+>> dependant were not installed - is it possible?
+> 
+> check for any updated packages again.
+
+updating daily 
+
+> 
+> update manager should care about the required packages and dependancies
+> that will be upgraded, i doubt you are missing one of them, it should
+> have warned you if something was missing or broken :-?
+> 
+
+thanks - perhaps is the network manager. i'll get it running and check
+again.
+
+if someone is reading mails with evolution 2.30 from exchange please give me
+a note.
+
+regards
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hth4dp$ds3$1@dough.gmane.org
+
+

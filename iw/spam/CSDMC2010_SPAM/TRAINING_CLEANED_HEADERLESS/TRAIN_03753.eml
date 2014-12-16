@@ -1,0 +1,163 @@
+i did more testing with your patch on top of today's cvs, but the patch
+didn't help at all.
+the following is the results of the tests:
+
+testing setup:
+1. created a "/dev/md0" with 4 scsi disks
+2. created a lvm volume group "vg" with the "/dev/md0"
+3. created a lvm logical volume "vol1" with "vg"
+4. created a xfs fs with a command:
+    mkfs.xfs -f -d sunit=8,swidth=8 /dev/vg/vol1
+    -----------meta-data=/dev/vg/vol1           isize=256    agcount=8,
+agsize=32767 blks
+    -----------data     =                       bsize=4096   blocks=262136,
+imaxpct=25
+    -----------         =                       sunit=1      swidth=1 blks,
+unwritten=0
+    -----------naming   =version 2              bsize=4096
+    -----------log      =internal log           bsize=4096   blocks=1200,
+version=1
+    -----------         =                       sunit=1 blks
+    -----------realtime =none                   extsz=65536  blocks=0,
+rtextents=0
+
+test results:
+1. mount with quota enabled => occasional kernel oops, attached the file
+oops1
+2. mount without quota enabled => occasional kernel oops, attached the file
+oops2
+3. mount without quota enabled, while md device is in degraded mode =>
+always kernel oops, attached the file oops3
+
+thanks,
+
+jlee
+
+----- original message -----
+from: "eric sandeen" 
+to: "james lee" 
+cc: ; 
+sent: tuesday, august 13, 2002 3:03 pm
+subject: re: kernel bug at filemap.c:843!
+
+
+> hi guys -
+>
+> we treat md and lvm somewhat specially, and i wonder if in this case md
+> is masking the fact that you're using lvm, and that might be where the
+> problem starts.
+>
+> can you try this patch, which will cause lvm & md to be treated the
+> same, to see if it helps?  it's probably not the final solution, but it
+> might offer some hints.
+>
+> thanks,
+>
+> -eric
+>
+> --- linux/fs/xfs/pagebuf/page_buf_locking.c_1.24 tue aug 13 14:05:18 2002
+> +++ linux/fs/xfs/pagebuf/page_buf_locking.c tue aug 13 13:59:37 2002
+> @@ -198,7 +196,7 @@
+>   pagebuf_target_blocksize(target, page_cache_size);
+>
+>   if ((major(dev) == md_major) || (major(dev) == evms_major))
+> - target->pbr_flags = pbr_aligned_only;
+> + target->pbr_flags = pbr_sector_only;
+>   else if (major(dev) == lvm_blk_major)
+>   target->pbr_flags = pbr_sector_only;
+>   else
+>
+>
+>
+> on mon, 2002-08-12 at 01:40, james lee wrote:
+> > hi,
+> >
+> > i'm also having the exactly same problem.
+> > tested with 2.4.19-xfs(checked out from sgi's cvs on aug 10) on redhat
+7.2.
+> > kernel and userland tools are compiled with gcc 2.91.66
+> > the following is the result of some tests:
+> >
+> > scsidisks -> xfs: ok
+> > scsidisks -> raid5 -> xfs: ok
+> > scsidisks -> lvm -> xfs: ok
+> > scsidisks -> raid0 -> lvm -> xfs: ok
+> > scsidisks -> raid1 -> lvm -> xfs: ok
+> > scsidisks -> raid5 -> lvm -> xfs: kernel bug at filemap.c:843!
+> >
+> > this problem is always reproducible with the following shell script:
+> >
+> >         #!/bin/sh
+> >         mkraid /dev/md0
+> >         vgcreate volumegroup /dev/md0
+> >         lvcreate -l1g -ntestvolume volumegroup
+> >         mkfs.xfs -f -d size=32m /dev/volumegroup/testvolume
+> >         mount -t xfs /dev/volumegroup/testvolume
+> > /mnt -onoatime,nodiratime,usrquota,grpquota
+> >
+> > whenever i run the above script, mount command always generates kernel
+oops.
+> > but, if i insert some delay as of the following, then mount goes well:
+>
+>
+> --
+> eric sandeen      xfs for linux     http://oss.sgi.com/projects/xfs
+> sandeen@sgi.com   sgi, inc.         651-683-3102
+
+
+begin 666 oops1.dat
+m=&5s=&5d.b r+c0n,3dm>&9s("a31tdg7-t96t@8w)e871e9"!o;b!t;w @;v8@
+m3%9-("l@340l('-o;65t:6ue6uo;w!s(#(n-"xq(&]n(&dv.;#8@,bxt+c$y+b @3w!t:6]n6ub;vp@:6yf;w)m871i;vxn("!)
+m('=i;&p;*87-s=6ue('1h870@=&ae;(&qo9r;!m871c:&5s('1h92!k97)n96p@
+m86yd(&uo9;'5l97,@=&aa;="!a6uo;w!s("ut(&5l9c,r+6ds.#8@
+m+6$@:3,x-@i%1dq!1u,z(# p,#$p,c0v"f5a>#h@8s$y969b-# @("!e8g@z
+m(&,p,v$w9#$t(" @96-x.b p,# p,# q-b @(&5d>#h@,# p,# p,# *97-i
+m.b!c,6,p,&5c8r @(&5d:3h@9c5f,f9f,c @("!e8g z(# p,# p,# q(" @
+m97-p.b!f-6-d,3dy. id2ma8r\q,3 ^"e1r86-e.r!c,#(t-c4x.2 \<&%g96)u9e]i
+m;w)e<75e&9s7w)e861?8g5f*s-e+v8p
+m/@i4&9s7w)e861s8blx,"]c,#x*5')a8v4[(&,p,c-b960t(#qx9g-?8vuo=6yt
+m9g,k-37-t96u?8v%l;"ls,r\s.#x*0v]d93l@(&,p,3)b9&0v(#qu;fqo8vm?
+m<&%g92lt-b\w,#x*,# p,# p,# @/%]%25 ^.@i#;v1e.r @8s q,f)d9#8@
+m/'5n;&]c:u]p86=e*s0v+s&9f9f9f9f5a*"5e8w@i+"5e8w@*0v]d93l@(&,p
+m,3)b9&1c(#qu;fqo8vm?<&%g92lt8r\w,#x*(" @-ch@(" s-"!c," @(" @
+m(" @(" @(" @(" @(" @('ao#0h)65s:2dl)65a> i#;v1e.r @8s q
+m,f)d93$@/'5n;&]c:u]p86=e*s4q+s&9s("a31tdg7-t96t@=vet:"!q=6]t82!e;f%b;&5d
+m+"!c&9s("uf("ud('-u;fet/3@l6]u(&-a;b!g970*;6]r92!a8v-u'!l86en#h@8s s83=d
+m,30@("!e8w@z(# p,# p,#$v(" @961x.b p,# p,# p, ie&9s
+m7v)u;&ms;=&%t*s%b,r]b.# ^"e1r86-e.r!c,#%f,3,y.2 \>&9s7w%m7w%u
+m;w1a8vae8vlk8sdo,34p/@i4&9s7vuo=6yt
+m9g,k9c!b+s$p,# ^"e1r86-e.r!c,#(s,s9b8b \>&9s7w)e861s8bls8b]c
+m,#x*5')a8v4[(&,p,c,s-s p(#qx9g-? i#;v1e.r @8s q,f)d9#d@/'5n;&]c:u]p86=e*s0y+s"dl)65c> i#;v1e.r @8s q,f)d9&,@/'5n;&]c:u]p86=e*s1c+s&]r(" @("0p
+m>&,p+"5a; i#;v1e.r @8s q,f)d9&4@/'5n;&]c:u]p86=e*s1e+s"pp>#0h)65s:2d*0v]d93l@(&,p,3)b9&4t(#qu;fqo8vm?<&%g92lu-"\w
+m,#x*(" @93h@(" w-" q," @(" @(" @(" @(" @(" @(" @(&ie;(" @(" r
+m," \7t5)4"lp>#(p/b!c,#$r8f1f-b \=6yl;v-k7w!a9v4k-c8o-s ^"d-o
+m9&4[("!c,#$r8f1e-b \=6yl;v-k7w!a9v4k-38o-s ^"b @,3 z(" @-6(@
+m(" @(" @(" @(" @(" @(" @(" @("!p;w @(" @)65b> i#;v1e.r @8s q
+m,f)d93<@/'5n;&]c:u]p86=e*s4w+s i#;v1e.r @8s q,f)d
+m93d@/'5n;&]c:u]p86=e*s4y+s&]r(" @("5e87@l*"5e87@i"@h*-b!w87)n:6yg2!n;w0@8f4@&9s("a31tdg7-t96t@8w)e871e9"!o;b!t;w @;v8@
+m3%9-("l@340l('=h:6qe($u$(&es;(&en;(&1e9w)a9&5d(&uo9;&4@86qw87es
+m(&=e;f5r871e&9s("uf("ud('-u;fet/3@l6uo;w!s(#t]/3t]
+m/3t]/3t]/3t]/3t]/3t]/0ik6us("ad969a=6qt*0h@(" @("ul("]p6us(&5t8rx@(&ms;>6uo;w!s("uh(&5x<&qa;:6ys('1h92!o
+m<'1i;vys+@h*:v5r;f5l($)51r!a="!f:6qe;6%p+f,z.#0s(0ii;g9a;&ed;
+m(&]p97)a;f0z(# p,# *0u!5.b @(" p"d5)4#h@(" @,# q,#i;/&,p,3)b
+m9&0v/et@(" @3f]t('1a:6yt960*57-i;f<@9&5f875l=',@9g)o;2!k#h@,# p,# p,38@
+m("!e9'@z(# p,# p,# p"f5s:3h@8s%c,#)a8s@@("!e9&dz;(&5f,#ee96,p
+m(" @96)p.b p,# p,# p,2 @(&5s<#h@968p-f9a-&,*9',z(# p,3@@("!e
+m2ma8r\q,3 ^"e1r86-e.r!c,#(t-c4x.2 \<&%g96)u
+m9e]i;w)e<75e&9s7w)e861s8blr,2]c
+m,#x*5')a8v4[(&,p,c-b9#1e(#qx9g-?8vuo=6yt9g,k,v5e+s8q,#x*5')a
+m8v4[(&,p,c-c,#!b(#qx9g-?;6]u;g0k-&(o-c ^"e1r86-e.r!c,#(t968r
+m-b \;&en;=f9s7w)e861? i#;v1e.r @8s q,f)d9#d@/'5n;&]c:u]p86=e
+m*s0y+s"dl)65c> i#;v1e.r @8s q,f)d9&,@/'5n
+m;&]c:u]p86=e*s1c+s&]r(" @("0p>&,p+"5a; i#;v1e.r @8s q,f)d9&4@/'5n;&]c
+m:u]p86=e*s1e+s"pp>#0h)65s:2d*0v]d93l@(&,p,3)b9&4t(#qu
+m;fqo8vm?<&%g92lu-"\w,#x*(" @93h@(" w-" q," @(" @(" @(" @(" @
+m(" @(" @(&ie;(" @(" r," \7t5)4"lp>#(p/b!c,#$r8f1f-b \=6yl;v-k
+m7w!a9v4k-c8o-s ^"d-o9&4[("!c,#$r8f1e-b \=6yl;v-k7w!a9v4k-38o
+m-s ^"b @,3 z(" @-6(@(" @(" @(" @(" @(" @(" @(" @("!p;w @(" @
+m)65b> i#;v1e.r @8s q,f)d93<@/'5n;&]c:u]p86=e*s4w+s i#;v1e.r @8s q,f)d93d@/'5n;&]c:u]p86=e*s4y+s&]r(" @("5e87@l*"5e87@i
+m"@h]/3t]/3t]/3t]/3t]/3t]/3t]/3t]/3t]/3t]/3t]/3t]/3t]/3t]/3t]
++/3t]/3t]/3t]/0h`
+`
+end
+

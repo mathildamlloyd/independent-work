@@ -1,0 +1,41 @@
+on wed, 14 apr 2010 11:12:29 -0500, hugo vanwoerkom wrote:
+
+> ron johnson wrote:
+
+>> come on, man...  you should know the drill.
+>> 
+>> specify:
+>> 
+>> o budget
+>> o needed features
+>> o preferred features
+>> 
+>> 
+> budget - any
+
+nice!
+
+> needed features - desktop configuration, at least 2 pci express slots -
+> atx form factor
+> 
+> preferred features - runs with debian
+
+then i can recommend a supermicro c2sbx (intel socket 775), which is the 
+latest board i had to install a debian lenny and is working fine.
+
+or you can also look at msi, gigabyte, abit, intel... or almost any 
+motherboard manufacturer that for sure will fit your "lax" requirements 
+>:-)
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.14.17.32.24@csmining.org
+
+

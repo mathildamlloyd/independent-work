@@ -1,0 +1,24 @@
+liam o'toole  writes:
+
+> on 2010-04-14, paul chany  wrote:
+
+>> i have setup somewhere the java_home environment variable, but
+>> don't know where?
+> ---snip---
+>
+> maybe /etc/environment?
+
+here on my gnu/linux lenny system this file is empty.
+
+--
+regards, paul chany
+you can freely correct me in my english.
+http://csanyi-pal.info
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87hbne2vqv.fsf@csmining.org
+
+

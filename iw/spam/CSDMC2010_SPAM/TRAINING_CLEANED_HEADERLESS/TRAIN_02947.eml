@@ -1,0 +1,48 @@
+on sun, 25 apr 2010 06:59:33 -0400 (edt), camale=c3=b3n wrote:
+> on sat, 24 apr 2010 15:27:35 -0400, stephen powell wrote:
+>>
+>> i have noticed that when printing multi-page pdf files from evince on
+>> the gnome desktop, using cups under debian lenny, i get a blank page
+>> after every page.
+>=20
+> it does the same when you print with another pdf viewer (i.e., gv)? it=20
+> happens with *any* pdf?
+
+well, i didn't try them all, but both evince and xpdf do the same thing.
+and yes, it seems to be every multi-page pdf file.
+>>
+>> my printer is an hp paintjet.  this wastes paper and
+>> is very annoying.  i have searched the internet, of course, but i did
+>> not find any solutions.  the closest i found was debian bug report
+>> 316392, but his work-around doesn't work for me.  my ppd file already
+>> specifies letter instead of a4 for page size.  does anyone know a
+>> work-around for this?  surely someone has run across this before.
+>=20
+> if you think is a problem of "size detection" try by setting in printing=
+=20
+> page layout tab a zoom scale of 90%, just for testing purposes.
+
+well, that makes the image slightly smaller, but i still get a blank
+page between every printed page.
+
+further testing leads me to believe that this problem is driver-specific.
+when i print to another printer, an ibm proprinter ii, i do not have
+this problem.  i see that in lenny the ghostscript pj driver is used
+and in squeeze they have switched to the hplis driver.  perhaps upgrading
+to squeeze may fix the problem.  in the meantime, i'm going to do some
+experimenting with the ghostscript driver directly and see what i can
+see.
+
+--=20
+  .''`.     stephen powell   =20
+ : :'  :
+ `. `'`
+   `-
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/1696116502.168906.1273361784808.javamail.root@md01.wow.synacor.com
+
+

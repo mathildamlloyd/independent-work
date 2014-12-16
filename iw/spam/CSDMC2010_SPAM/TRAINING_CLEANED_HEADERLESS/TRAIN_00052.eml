@@ -1,0 +1,32 @@
+hello everyone!
+
+according to this tutorial (http://d-i.pascal.at/) i was able to start 
+the installation process from usb stick on my:
+
+hp 5700 thin client terminal
+1 ghz processor
+512 ram
+256 internal flash drive
+
+but i get stuck because there is not enough space even for minimal 
+installation (netinstall.iso).
+now the question:
+
+i have also another 4gb usb stick. can i install the biggest parts of 
+the system on it?
+if yes, which parts of the filesystem do i need place on internal flash 
+memory (ide ata, faster), and
+which on the usb stick?
+
+the device will be used as a ftp, nas etc.
+
+thanks on advance
+krzysztof
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bc5800d.1020207@op.pl
+
+

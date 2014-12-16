@@ -1,0 +1,70 @@
+this update appears to have broken the sunpkcs11 provider... sort of.
+
+attempting to use an alternate pkcs11 provider while the one while
+
+security.provider.1=3dsun.security.pkcs11.sunpkcs11 =
+${java.home}/lib/security/sunpkcs11-macosx.cfg
+
+is present in java.security results in things like this (an example from =
+jarsigner):
+
+jarsigner error: java.security.invalidkeyexception: private keys must be =
+instance of rsaprivate(crt)key or have pkcs#8 encoding
+
+replacing security.provider.1 with an instance of bouncycastle (or =
+removing it and renumbering all of the other entries) is a work-around.
+
+on may 18, 2010, at 1:35 pm, mike swingler wrote:
+
+> java developers,
+>=20
+> the latest java software updates for both mac os x 10.6 and 10.5 are =
+now live and available to all mac os x customers via software update. if =
+you installed any of the developer previews, running software update =
+will automatically bring you up to date with the final gm version.
+>=20
+> manual download links:
+> java for mac os x 10.6 update 2: 
+> java for mac os x 10.5 update 7: 
+>=20
+>=20
+> like the last pair of releases, all of the javadoc api jars, source =
+jars, native frameworks headers, and tools documentation is in a =
+separate docs package. be sure to install this package to keep your ide =
+in sync with the java platform sources. we've made a number of additions =
+to the eawt, so you may also want to check out the appledocs.jar if you =
+haven't looked at it in a while.
+>=20
+> java for mac os x 10.6 update 2 developer documentation:
+> =
+
+>=20
+> java for mac os x 10.5 update 7 developer documentation:
+> =
+
+>=20
+>=20
+> the team sends their thanks to everyone who installed the developer =
+previews and helped to make this a great release.
+>=20
+> warm regards,
+> mike swingler
+> java runtime engineer
+> apple inc.
+>=20
+> _______________________________________________
+> do not post admin requests to the list. they will be ignored.
+> java-dev mailing list      (java-dev@lists.apple.com)
+> help/unsubscribe/update your subscription:
+> http://lists.apple.com/mailman/options/java-dev/nsayer%40kfu.com
+>=20
+> this email sent to nsayer@kfu.com
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

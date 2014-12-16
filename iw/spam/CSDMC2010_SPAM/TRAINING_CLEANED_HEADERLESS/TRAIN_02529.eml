@@ -1,0 +1,22 @@
+i'm not sure this is the right list to write to... sorry in any case...
+
+i have three different tools (e.g. a, b, c) that use the same package (a 
+package i created).
+is there a way to put it all in a singe xcode project that creates the 
+package, then a.jar, b.jar and finally c.jar?
+i tried with multiple targets, but it didn't work (may be i forgot to 
+set some options?).
+
+any idea?
+
+many thanks in advance,
+best regards,
+livio.
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

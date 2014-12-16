@@ -1,0 +1,573 @@
+
+
+<!--
+ body      { background-image: 
+url(http://www.lockergnome.com/images/issue/top-right.gif); 
+scrollbar-3dlight-color: #dadada; scrollbar-arrow-color: #17514b; 
+scrollbar-base-color: #007c7a; scrollbar-darkshadow-color: #808080; 
+scrollbar-face-color: #c0c0c0; scrollbar-highlight-color: #dadada; 
+scrollbar-shadow-color: #808080 }
+ a:link    { color: red; text-decoration: underline }
+ a:visited { color: #ff8080; text-decoration: underline }
+ a:active  { color: #000000; text-decoration: none }
+ a:hover   { color: #820000; text-decoration: none }
+ p.title   { background: #c0c0c0; border-bottom: #808080 4px solid; border-left: 
+
+
+
+#dadada 4px solid; border-right: #808080 4px solid; border-top: #dadada 4px 
+solid; color: #000000; font-family: comic sans ms, trebuchet ms, helvetica, 
+arial; font-size: 14pt; font-weight: normal }
+ p.news    { background: #c0c0c0; border-bottom: #808080 4px solid; border-left: 
+
+
+
+#dadada 4px solid; border-right: #808080 4px solid; border-top: #dadada 4px 
+solid; color: #000000; font-family: comic sans ms, trebuchet ms, helvetica, 
+arial; font-size: 18pt; font-weight: normal }
+ p.sidebar { background: #dadada; border-bottom: #c0c0c0 3px solid; border-left: 
+
+
+
+#ffffff 3px solid; border-right: #c0c0c0 3px solid; border-top: #ffffff 3px 
+solid; color: #000000; font-family: comic sans ms, trebuchet ms, helvetica, 
+arial; font-size: 10pt; font-weight: bold; text-align: center }
+ .link     { background: #dadada; border-bottom: #c0c0c0 3px solid; border-left: 
+
+
+
+#ffffff 3px solid; border-right: #c0c0c0 3px solid; border-top: #ffffff 3px 
+solid; color: #808080; font-size: 9pt; font-family: verdana; font-weight: bold; 
+padding: 3px; width: 100% }
+ .url      { font-size: 8pt; font-family: verdana, tahoma, arial }
+ .fixed    { font-family: courier, courier new; font-size: 10px }
+-->
+20020709 lockergnome penguin shell
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 07.09.2002 penguinreport
+
+
+career services from lockergnome and dice.com: we've teamed up with
+dice.com to bring you a full service i.t. career enhancement solution.
+whether you are looking for your
+dream 
+job
+or trying to
+hire 
+talented people,
+the full-featured career resource center is the place to start. find your
+it talent 
+solution
+today!
+
+i don't usually spend much time explaining metaphors. they are, after all, 
+metaphorical. they can be filled with whatever symbolism you choose. written 
+well, we all come to some similar understanding of their meaning. but, i'll 
+depart today, contrary to my normal practice, to take a few minutes explaining a 
+
+
+
+
+recent metaphor.
+
+i'm a linux guy through and through. as a user, i see myself as right about at 
+the average on the curve. for love of the language and open source attitude, 
+though, you'd be hard-pressed to find anyone with quite the same level of 
+enthusiasm. put simply, there's very little about the linux and broader open 
+source worlds that i don't like or believe in.
+
+take, for example, the practice of recursive acronyms. gnu ("gnu's not unix"), 
+hurd ("herd of unix-replacing daemons"), wine ("wine is not an emulator"), even 
+php ("php hypertext processor") - all carry on the tradition of recursion in the 
+
+
+
+
+unix/linux world. goofy as it sounds, i love this stuff.
+
+so it is that i set out to create a recursive metaphor last week. it could only 
+have happened on or about the 4th of july. in fact, it happened in the edition 
+of the 3rd. i wrote a piece about how we americans spend more time over the 
+course of a year talking about what's wrong with our system than what's 
+right. i wrote it knowing full well that many of the responses i'd get would be 
+a) from readers outside the us and b) in sharp disagreement to my comments or 
+those of citizens of other countries. you're following me, right? people would 
+disagree with an article that said we spend much time disagreeing. this, of 
+course, would prove my point in a somewhat metaphorical way - the perfect 
+recursive metaphor. the point was to be made yet more perfectly by the eventual 
+inclusion in penguin shell of the comments of someone from outside the us 
+
+
+
+
+disagreeing with my take our argumentativeness as americans. ideally, they would 
+
+
+
+
+be comments that disagreed with our collective american perception of being 
+disagreeable. they would, of course, point out things about which citizens of 
+other countries can disagree with americans on. by exercising the right to 
+disagree, we'd subtly agree that we have that right. yet another level of 
+recursion and a final layer of metaphor.
+
+the response to both my own and johan sauviller's comments was overwhelming. in 
+the main, i believe both were appreciated. many commented on the balance of the 
+two pieces. some readers were surprised, i think, to see a dissenting opinion 
+published so quickly, if at all. overall, the ability to express honestly held 
+opinions, to agree and to disagree on a global level closed the circle on the 
+metaphor in a perfect way.
+
+things have, however, gotten a bit more ugly in the past few days. i'm not sure 
+whether some were slow in getting to the july 3rd issue, or whether it's just 
+been stewing since then. take, for instance, these comments by a reader who will 
+
+
+
+
+remain mercifully nameless:
+
+
+we get enough
+america bashing from our left-wing whacko extremist press and schools here
+in the usa that we don't wish to hear some (insert favorite adjective here)
+from belgium whining too!
+
+
+followed by:
+
+
+... please don't let tony single-handedly tarnish the fine reputation
+of lockergnome. i'm sure there are other articulate linux experts out there who 
+would be able to replace him.
+
+
+... and, in a later note on the topic ...
+
+
+censorship is to be encouraged in a
+free-market society whenever and wherever it doesn't come from the
+government.
+
+
+clearly, the metaphor just whizzed right over the heads of some.
+chris 
+
+
+
+
+has been great about allowing all his authors plenty of room in the editorial 
+piece at the beginning of each newsletter. this particular piece is no 
+exception. he's shown a quiet confidence in the face of some very shrill 
+comments. while we all generally stay focused on technical issues, chris has 
+shown unwavering support for the notion that we geeks are, in the end, humans 
+with opinions and thoughts to share. i think it's one of the things that makes 
+the lockergnome newsletters stand out from the pack - the personal touch.
+
+so, despite the irrationality of some of this week's comments, i'll continue to 
+occasionally throw in a personal aside with the technical stuff.
+
+just watch out. recursive metaphors are only funny until someone puts an eye 
+out.
+tony
+steidler-dennison
+
+gnometweak
+
+
+lockergnome readers, save 50% on the computing encyclopedia!
+are you looking for the ultimate computing resource? discover the
+computing encyclopedia from smart computing.  regular price $59,
+special offer for lockergnome readers,
+get 
+your set today, only $29.95!
+
+win apps in linux?
+
+yesterday, i mentioned an interesting review of two products for linux by codeweavers - crossover 
+office and crossover plugin. you've probably heard of both by now, as they've 
+garnered quite a bit of publicity both in and out of the linux world. you'll 
+recall that i promised to try to secure copies for review this week. with the 
+help of a friendly sales rep at codeweavers, i was able to accomplish that task 
+this morning. true to the second half of the promise, we'll spend the next few 
+days looking at these two products and how they might impact your linux use. 
+let's take them in chronological order, starting today with crossover plugin.
+
+a bit of background is in order. codeweavers is, in their own words, " ... the 
+leading corporate backer of the wine project. wine has been, for the past several years, an 
+ongoing project to port windows applications to linux. it's a tough goal, but 
+it's also one that's been undertaken by others in the past year or so. though the progress has been 
+slow, the wine project has managed to stay at the front of this development 
+realm.
+crossover 
+plugin marks a change in the philosophy of the wine project. prior to its 
+release, wine had taken a "full system" approach. running windows applications 
+in wine required the installation of a sizeable daemon and no small amount of 
+configuration work. crossover plugin has moved wine away from the system-wide 
+approach to one that's much more modular. rather than executing at system 
+startup, wine is called as-needed, with the virtual windows path to the called 
+program. when the program is closed, so is wine. crossover plugin has focused on 
+
+
+
+creating linux functionality with one related set of windows 
+applications: browser plugins.
+
+the results stand as a clear indication that the change in philosophy is a 
+success. off the top, crossover plugin bundles quicktime 5, windows media player 
+
+
+
+6.2, shockwave 8.5, flash 6, and realplayer 8 into a linux-accesible browser 
+plugin package. throw in more esoteric apps like ipix, trillian, authorware web 
+player 6 and efax messenger 2, and you've got virtually every need plugin need 
+covered.
+
+but this package doesn't stop there. included in the crossover plugin package 
+are viewers for word, excel and powerpoint, as well as several 
+microsoft-oriented fonts. honestly, i was stunned at the range of applications 
+offered by the codeweavers developers.
+
+having had some experience with wine, i was a bit leery about the install 
+process and about the ability to get all these great applications to work with 
+my redhat setup. i've never been completely successful with wine, but i hoped 
+for the best when i started the crossover plugin installation. i really did want 
+
+
+
+these apps to work.
+
+the installation was quite easy. by running the install-crossover.sh script from 
+
+
+
+the command line, i was able to install the installers for both crossover plugin 
+
+
+
+and crossover office, which we'll talk about tomorrow. i started the plugin 
+installs with quicktime, a tool i've admittedly missed in linux. in the 
+background, crossover plugin had already created a virtual c:\ drive on my 
+machine. i clicked on the quicktime install and immediately saw a familiar sight 
+
+
+
+- the vise installer in its windows format. crossover plugin first checked for 
+feedback from the windows binary, opened a virtual windows window, then stepped 
+out while the vise installer took care of the rest. though the install failed 
+four times, it appeared to be a server failure rather than a failure of the 
+crossover program. i kept "retry"ing and, with some persistence, managed to get 
+a full quicktime 5 install downloaded from the apple servers. quite literally, 
+the install looked and performed exactly as i've seem many times in windows. 
+when the install was completed, crossover again checked for the windows binary, 
+located the appropriate .dll files in the virtual c:\ drive and dropped the 
+plugins into the /home/tony/.netscape/plugins and /home/tony/.mozilla/plugins 
+directories.
+
+the process was so smooth that i had to check the plugin listings in these 
+browsers - "help", "about plugins." sure enough, the crossover quicktime plugin 
+was listed. quickly, i ran out to the apple site and opened the "men in black 
+ii" movie trailer. quicktime performed flawlessly.
+
+i followed with the windows media player, shockwave, flash, ipix, and efax 
+messenger installs. of those, the only ones that weren't self-contained in the 
+crossover install were ipix and efax. even at that, the installer pointed me to 
+the windows download then found the .exe file when the download was done. within 
+
+
+
+a half-hour, i had all installed and tested.
+
+then, just for grins, i installed realplayer 8 via crossover. this was despite 
+the recommendation in the installer screen to use the linux version. it went as 
+smoothly as the others with one caveat - the player played media files at a much 
+
+
+
+faster speed than that in windows. fast enough to make me laugh, in fact, 
+reminded of dave and alvin the chipmunk. ah well, six out of seven is pretty 
+strong given my previous troubles with wine.
+
+i also installed a few fonts - arial, times new roman, trebuchet, and veranda. 
+in every case, the install was quick and absolutely painless.
+
+wine has always held great promise. at times, it's been painful to watch the 
+tedious pace of development, only because that promise was so alluring. with the 
+
+
+
+backing of codeweavers and a fundamental change in the approach to development, 
+wine has finally realized the goal of integrating windows applications 
+seamlessly into the stable linux environment. the results are so strong that, if 
+
+
+
+i didn't know better, i'd swear that a few of these plugins actually run better 
+in linux than in their native windows. honestly, i didn't realize how much i 
+missed them until i started using them in linux today.
+
+tomorrow holds a few surpirses, with a look at codeweavers' crossover office 
+package.
+recommend it!
+send us a 
+gnometweak
+
+gnomecore
+kernel configuration - part ix
+
+we're nine parts into the kernel configuration series, with quite a bit yet to 
+go. if you haven't been following along, we're breaking out the configuration 
+screens one at a time in an attempt to shed some light on the purpose and 
+function of each. with that knowledge, you should be able to make a clear 
+decision as to how to configure each section.
+
+today, it's the parallel port support section. this is pretty simple. if you 
+need parallel port support - such as for a printer - select this option either 
+as a driver built into the kernel or as a loadable module.
+
+most will use the pc-style hardware option in conjuction with a windows printer. 
+
+
+
+but that's not all the parallel port can be used for. as an example, the builds 
+i did with the telescope company required parallel port support, as the 
+telescope cameras were attached to this port.
+
+be aware - this kernel configuration option only makes a driver available for 
+the parallel port. the computer's bios sets the mode for the port - ecp, epp, or 
+
+
+
+auto. on the majority of modern computers, the auto mode is the default and will 
+
+
+
+work just fine. however, if you have problems communicating with your printer 
+following a kernel recompile, try changing the mode of your printer in the 
+bios.
+
+tomorrow, it's plug and play configuration.
+recommend it!
+send us a gnomecore 
+tip
+
+gnomefile
+netics 2.0
+
+http://www.citi.umich.edu/u/marius/netics/
+
+"netics is an extensible network statistics collector. it puts the network 
+interface in promiscuous mode and reads the data stream (after it strips off the 
+
+
+
+appropriate protocol headers), then displays the results at specified intervals, 
+
+
+
+either in a "progress bar" mode or as raw statistics. currently, it supports 2 
+statistics, both involving entropy: lzw compressability and ueli maurer's 
+universal statistical test. maurer's test is a very good and comprehensive 
+measure of entropy, but requires a large amount of data. the lzw statistic 
+requires much less data."
+recommend it!
+send us a gnomefile 
+suggestion
+
+gnomevoice
+helping hand
+scribbled by karl steenblik
+
+"dear linux community at lockergnome.
+
+"i am the web master for largest health care camp in the state of utah. 
+no not cancer camp it is the diabetic camp.
+
+"the foundation for children and youth with diabetes serves about 900
+diabetic children a year and their families.  we have education, family
+support, diet planning and most important is camp.  the place where kids
+can learn about how to better manage their disease.
+
+"we are a totally non profit camp that puts all money from fees into our
+camp.  we pay no salaries to physicians, dietitians, social workers,
+nurses and educators that make our camp possible.  yes even me the lowly
+web master donates his time and web space at att to the cause.
+
+"att recently decided to pull access to our photo page due to a password
+protection.  we give out a password to all parents so that they can see
+photos of camp while the sessions are happening.  we do not however what
+the creeps of the web to have access to photos of our kids.
+
+"we are looking for someone in the state to help our camp by donating web
+space.  now it may not be your organization, but i know linux people and
+lockergnome and i think someone there may know someone who would be able
+to help us.
+
+"you can still have access to the public part of our site that att has not
+shut down at www.fcyd-inc.org.
+
+"please i have the parents of 120 diabetic kids wanting to see photos of
+their children.  they are all e-mailing me and i have no one to turn to.
+
+"hoping to hear from someone soon."
+
+karl r steenblik
+webmaster fcyd camp
+salt lake city.
+help karl.
+
+recommend it!
+speak your 
+gnomevoice
+
+gnomeclick
+mobilix.org
+http://mobilix.org/
+
+mobilix.org is a full site related to using linux on mobile devices, including 
+pdas and laptops. it includes information for subsctibing to the linux-laptop 
+mailing list, information on linux-powered wearable computers, wap enabled 
+access, and linux on cell phones. mobilix looks to be a great resource for all 
+kinds of tips, tricks and useful information for taking your linux on the 
+road.
+recommend it!
+suggest a 
+gnomeclick
+
+
+
+http://www.lockergnome.com/issues/penguinshell/20020709.html
+your subscribed e-mail address is: [qqqqqqqqqq-lg@spamassassin.taint.org] - to unsubscribe or 
+change your delivery address, please 
+visit the subscription 
+management
+page. use of the gnome moniker by penguin shell does not imply endorsement of 
+the gnome desktop environment. penguin 
+shell is an equal-opportunity desktop employer. for further information, please 
+refer to the gnomecredits in the 
+sidebar.
+
+
+
+look over here
+
+download tip ebooks
+
+latest windows 
+daily
+latest digital
+media
+latest tech 
+specialist
+latest penguin 
+shell
+latest apple core
+latest web 
+weekly
+latest bits & bytes
+latest audio show
+
+low price search
+our tech conference
+
+microsoft office tips
+pc 
+productivity tips
+cool 
+internet tips
+windows 2000 tips
+windows xp tips
+
+
+
+
+
+tell a friend about 
+us!
+advertise with 
+us
+high-tech job 
+search
+chat with gnomies
+watch the webcams
+computer power user
+
+read past issues
+download x-setup
+about lockergnome
+our privacy 
+policy
+view more 
+options
+our xml / rss 
+feed
+syndicate our 
+tips
+link to 
+lockergnome
+get chris's book
+win a digital camera
+
+
+general feedback
+chris's blog
+e-mail the editor
+
+
+gnomespecials
+manage your workgroup
+form pilot
+say the time 5.0
+boomer - stream now
+create web/cd catalog
+easy web editor
+kleptomania
+tag&rename
+pretty good solitaire
+visualize color combos
+firststop websearch
+ecobuilder
+book collector
+get listed here
+question: which group is 250,000+ strong and always looking for stuff to make their personal and professional lives run smoother? 
+
+
+
+
+
+
+
+
+click here to zoom
+
+
+look it up
+
+
+
+
+
+
+byte me now
+
+2002, lockergnome llc. issn: 1095-3965. all rights reserved. please read our terms of service. our web site is hosted by digitaldaze. domain registered at dns central.
+
+
+
+

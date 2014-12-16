@@ -1,0 +1,69 @@
+NoneJohannes Wiedersich wrote:
+> Merciadri Luca wrote:
+> > Gunnar Wolf wrote:
+> >> Merciadri Luca dijo [Tue, Apr 20, 2010 at 02:00:13PM +0200]:
+> >>  =20
+> >>
+> >> Yet, you say in your previous reply they would be able to remove the=
+
+> >> watermark from the document. That is clearly more complicated.
+> >>  =20
+> > Sure, but I think that PDFs are composed `in layers,' aren't they? If=
+
+> > `layers' were not merged together, it might still be possible to remo=
+ve
+> > the watermark.
+>
+> Gunnar did not suggest not to merge the layers, did he?
+He did not, as you said.
+> Just use a grey-by-dotting watermark for black text, merge the layers
+> and it will
+> be rather difficult to remove the watermark.
+I did not merge the layers before sending it to them. Problematic?
+
+--=20
+Merciadri Luca
+See http://www.student.montefiore.ulg.ac.be/~merciadri/
+I use PGP. If there is an incompatibility problem with your mail
+client, please contact me.
+
+A woman is like a cup of tea; you'll never know how strong she is until
+she boils.
+
+re: pdf is blocked for printing, etc. ok for acroread (it behaves
+ as expected), but kpdf allows me to print it, even if it isprotected! why?from nobody tue dec 16 07:55:46 2014
+content-type: text/plain; charset=utf-8
+content-transfer-encoding: quoted-printable
+
+johannes wiedersich wrote:
+> merciadri luca wrote:
+> > gunnar wolf wrote:
+> >> merciadri luca dijo [tue, apr 20, 2010 at 02:00:13pm +0200]:
+> >>  =20
+> >>
+> >> yet, you say in your previous reply they would be able to remove the=
+
+> >> watermark from the document. that is clearly more complicated.
+> >>  =20
+> > sure, but i think that pdfs are composed `in layers,' aren't they? if=
+
+> > `layers' were not merged together, it might still be possible to remo=
+ve
+> > the watermark.
+>
+> gunnar did not suggest not to merge the layers, did he?
+he did not, as you said.
+> just use a grey-by-dotting watermark for black text, merge the layers
+> and it will
+> be rather difficult to remove the watermark.
+i did not merge the layers before sending it to them. problematic?
+
+--=20
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+i use pgp. if there is an incompatibility problem with your mail
+client, please contact me.
+
+a woman is like a cup of tea; you'll never know how strong she is until
+she boils.
+

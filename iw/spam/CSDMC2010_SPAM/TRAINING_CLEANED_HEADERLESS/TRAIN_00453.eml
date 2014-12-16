@@ -1,0 +1,47 @@
+on wed, 21 apr 2010 12:44:38 -0500, ron johnson wrote:
+
+> on 2010-04-21 12:22, camalen wrote: [snip]
+>> 
+>> for geforce 7600gs you have the following options:
+>> 
+>> 1/ "nv" driver (only 2-d)
+> 
+> except that nvidia deprecated this driver a few weeks ago...
+
+... only for "newer" (fermi) cards ;-)
+
+>> 2/ "nvidia" driver from debian "contrib" and "non-free" sources 3/
+>> "nvidia" driver from nvidia website 4/ vesa driver (not recommended)
+> 
+> ... and recommended people use the vesa driver.
+
+yes, how bad :-(
+ 
+> nv obviously won't immediately stop working, but as x.org releases new
+> versions of the client and server, bit-rot will inevitably set in.
+
+i agree. i guess from now on nvidia will be pushing their own proprietary 
+drivers.
+ 
+>> i am currently using option #2 for my geforce 7600gs in debian lenny
+>> and works pretty well.
+>> 
+>> 
+> i use #3 with a 7300gs in a mixed 32/64-bit environment (totally
+> unsupported by nvidia, but works like a charm).
+
+i find it a bit more difficult to manage (if you change the kernel, you 
+need to recompile the driver again).
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.21.18.04.01@csmining.org
+
+

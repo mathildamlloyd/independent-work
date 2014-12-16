@@ -1,0 +1,21 @@
+concerning xorg, look through the log file /var/log/xorg.0.log, e.g.,
+the command
+
+$ grep -i dynamic
+
+should tell you if power saving ("dynamic clock scaling") is enabled or not.
+
+generally, the problem of energy consumption can be tackled with the program
+powertop best called as root. maybe, it can tell you the culprit for the
+observed cpu usage.
+
+regards,
+jrg-volker.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hplc2d$2nh$1@dough.gmane.org
+
+

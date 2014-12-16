@@ -1,0 +1,560 @@
+NoneNTK Now, 2002-08-30
+ _   _ _____ _  __ <*the* weekly high-tech sarcastic update for the uk>
+| \ | |_   _| |/ / _ __   __2002-08-30_ o join! mail an empty message to
+|  \| | | | | ' / | '_ \ / _ \ \ /\ / / o ntknow-subscribe@lists.ntk.net
+| |\  | | | | . \ | | | | (_) \ v  v /  o website (+ archive) lives at:
+|_| \_| |_| |_|\_\|_| |_|\___/ \_/\_/   o     http://www.ntk.net/
+
+
+        "A case in point is web designer Matt Jones, the man 
+         responsible for how BBC News Online looked when it launched. 
+         Since then, he has invented 'warchalking', which he recently 
+         described as a 'curse'..."
+                              http://news.bbc.co.uk/1/hi/2210091.stm
+                  - but you cannot turn against me! I... created you!
+
+
+                                >> HARD NEWS <<
+                               stiffening sinews
+
+         More hot summer days in the mailinglist alleyways,
+         dangerously empty of sane postings, strewn with the rotting
+         carcasses of broiling vacation messages. Hacktress and
+         Silicon Valley's chief rat-keeper LILE ELAM, excitedly posts
+         about a new open 802.11 network she's found. "I am here at
+         the police station waiting to see a judge and I thought I
+         would check to see if there is connectivity", she writes,
+         somewhat recklessly, to the Bay Area Wireless list. Exit
+         the rest of the Wifi community through the nearest window
+         and out into the streets... where, cooling tempers, the
+         Microsoft Palladium boys are on an endless summer tour,
+         reassuring the experts that while, hmm, they *suppose* Pd
+         could *theoretically* be used as a Hollywood DRM system,
+         they truly have no plans to do any such thing. Cypherpunk
+         and friend of freedom Lucky Green hears this; thinks up four
+         or five of the obvious Palladium DRM implementations; sends
+         them off to be patented in his name. Licensing funds, we
+         imagine, will go on cracking his own DRMs. And so the mail
+         loops on.
+         http://lists.bawug.org/pipermail/wireless/2002-August/008507.html
+                                 - administrivia: HI MOM, I'M IN JAIL
+    http://www.mail-archive.com/cryptography@wasabisystems.com/msg02554.html
+                             - Green/Palladium, like Green Kryptonite
+
+         Could Lucky get himself arrested under the DMCA for
+         distributing a circumvention device? Worse: now we have the
+         EUCD incoming, could he here in the UK? Will Alan Cox go to
+         jail for posting detailed Changelogs? Will even the nicest
+         UK cryptographer (or curious garage tinkerer) find
+         themselves hauled up under our new and scarily DMCAish
+         copyright regime? Find out the facts at the free FAIR DEAL
+         FOR COPYRIGHT conference, organised by the irrepressible
+         FOUNDATION FOR INFORMATION POLICY RESEARCH for Wednesday
+         2002-09-18 at the London School of Economics. All the usual
+         fun from the creators of the Scrambling for Safety crypto
+         cons: we confidently predict government spokesmen caught in
+         headlights, wanton Dave Bird heckling, some industry bigwig
+         fighting off the audience with a broken chairleg, and other
+         epiphenomena of the interzone between legal minds and hacker
+         ethics. Oh, and FIPR are still looking for a Programme
+         Director, so if you're interested, let them know. We
+         suggested a convention raffle (first prize: the director's
+         job, second prize: Ross Anderson as your personal slave for
+         a day). They say there's some rule that would break, though.
+         http://www.fipr.org/vacancy.html
+- doesn't the Foundation use psychohistory for filling these positions?
+
+         For those of us who can't read the abbreviation EULA without 
+         thinking of Martian fighting machines and their "deafening 
+         howls... which roared like thunder", we're sorry to report 
+         that this weekend's multimedia performance of Jeff Wayne's WAR 
+         OF THE WORLDS has been postponed due to "health and safety 
+         issues". The event was to feature computer graphics, 
+         fireworks, "60ft-tall Martian fighting machines" wreaking 
+         "havoc and destruction", and - most terrifyingly of all - the 
+         possibility of a David Essex tribute singer performing with 
+         Hawkwind, but UKP18 tickets for the Sat 2002-08-31 show at 
+         Manchester's Heaton Park will still be valid at a range of new 
+         venues next summer. Ironically, the Martians' original 
+         invasion plans were similarly thwarted by health and safety 
+         issues, "slain after all man's devices had failed by the 
+         humblest creatures that God, in his wisdom, has put upon this 
+         earth: bacteria. Minute, invisible, bacteria. For, directly 
+         the invaders arrived and drank and fed, our microscopic allies 
+         attacked them..."
+         http://www.waroftheworlds.info/postpone.htm
+                           - "...From that moment, they were doomed."
+
+
+                                >> ANTI-NEWS <<
+                             berating the obvious
+
+         moving on from PUERILE GOOGLE MISSPELLINGS, weird search-and-
+         replace artefact: http://www.google.com/search?q=consideyellow ,
+         Japanese fan sites for "plince", "steery dan", "def reppard" 
+         et al, plus the 18,000 or more self-referential Usenet .sigs: 
+         http://groups.google.com/groups?q=%22get+random+signatures%22 
+         ...http://www.colocation-network.com/ "Zerodowntime" ad leads 
+         to: http://www.ntk.net/2002/08/30/dohzero.gif ... slightly 
+         harsh alt text: http://www.ntk.net/2002/08/30/dohover.gif ... 
+         US military discovers the only "translator" those bastards 
+         seem to understand: http://www.ntk.net/2002/08/30/dohgun.gif 
+         ... scary blue men herald return of the bizarre BBC hacking 
+         pics: http://news.bbc.co.uk/1/hi/1494091.stm ... reporter RYAN 
+         DILLEY http://news.bbc.co.uk/1/hi/uk/2202552.stm pulls his 
+         http://starwars.org.pl/galeria/e2/char/anakin/t001.jpg face 
+         ... banjo maestro GEORGE FORMBY still alive, cooking, black: 
+     http://www.readersheds.co.uk/readersheds/shop.cfm?WOSNAMES=Wosnames
+         ... thanks guys, that ought to do it: http://www.eap.ca/ ... 
+         
+
+                               >> EVENT QUEUE <<
+                         goto's considered non-harmful
+
+         Controversially, we're all in favour of THE GUARDIAN GREAT 
+         BRITISH BLOG COMPETITION (closing date next Fri 2002-09-06, 
+         first prize UKP1000, entry free), in that any initiative that 
+         encourages this notoriously primadonna-ish "community" to try 
+         and engage with real-world notions of editorial quality surely 
+         has to be a good thing. Our only disappointment is that The 
+         Guardian appears to be focussing on the "best" of the entries, 
+         when everyone knows the real fun is to be had cruising the 
+         truly terrible examples that the genre has to offer, mentally 
+         allocating points for "Most Depressing Recycling Of Daypop Top
+         40 URLs", "Most Unsettling Revelations About Personal Life", 
+         plus of course "Most Tedious Linking/Reciprocal Linking To Other 
+         Bloggers In Absence Of Having Anything Interesting To Say". 
+         http://www.guardian.co.uk/weblog/bestbritishblog/
+                              - "A strange game, Professor Falken..."
+       http://media.guardian.co.uk/newmedia/comment/0,7496,765161,00.html
+                         - "...the only winning move is not to play."
+
+
+                                >> TRACKING <<
+               sufficiently advanced technology : the gathering
+
+          The respective trademark holders will hate this, but
+          Windows really *is* like the Sun. You have this big hulking
+          mass of concentrated power in the middle, with a few small
+          orbiting utilities - like WinZip, and PuTTY, and VNC.
+          Occasionally one will get a bit too close to the OS, and
+          Microsoft will suck it down and turn it into fuel for the
+          System. One such discrete satellite remains FILEZILLA, the
+          still-necessary ftp gui client for Windows. Those who know
+          it won't need the introduction, although they might
+          appreciate the note that it's getting close to v2.0 time.
+          For dogged WS_FTP users, though, it's got multiple
+          downloads, auto-restart of interrupted 'loads, queuing, and
+          sftp and Kerberos support. It's also GPL'd which makes it a
+          nice bit of source for anyone wanting to grok Win32
+          networking from something that works.
+          http://filezilla.sf.net/
+  - talking of trademarks, will the Godzilla people strike before MS?
+
+
+                                >> MEMEPOOL <<
+                ceci n'est pas une http://www.gagpipe.com/
+
+         (Not safe for work) next year's RED NOSE DAY looks more fun 
+         than usual: http://www.threepillows.com/tour2.htm ... Mirrored 
+         Disaster Recovery Suite - to go with mirrored bathroom etc?: 
+       http://www.dovebid.com/Auctions/AuctionDetail.asp?AuctionID=1450
+         ... and then the kid can take you to court for mental cruelty: 
+         http://www.cnn.com/2002/TECH/ptech/08/27/turok.baby.reut/ ... 
+         "funny" prefixes in front of "chalking" #n+1 - the actually 
+         quite pragmatic: http://www.pinkbunny.co.uk/poochalking/ ... 
+         no longer knowing - or caring - if these are prank AMAZON 
+         reviews or not, for Potter's ever-popular "vibrating" broom: 
+     http://www.amazon.com/exec/obidos/tg/stores/detail/-/toys/B00005NEBW/
+         ... ditto "Use This Software At Your Own Risk" disclaimer for: 
+         http://www.palmgear.com/software/showsoftware.cfm?prodID=41030 
+         ... DAFFY DUCK appears in dock - accused of "dethpicable" 
+         behaviour?: http://news.bbc.co.uk/1/hi/england/2223065.stm , 
+         http://www.ananova.com/news/story/sm_659889.html ...
+
+
+                                >> GEEK MEDIA <<
+                                  get out less
+
+         TV>> celebrity cameo night tonight, with Brad Pitt in FRIENDS 
+         (9pm, Fri, C4), Sydney Pollack in WILL AND GRACE (9.30pm, Fri, 
+         C4), Dustin Hoffman in V GRAHAM NORTON (10.30pm, Fri, C4), and 
+         a singing, dancing peanut in globalised trade documentary ALT-
+         TV (7.30pm, Fri, C4)... the BBC have kept McEnroe and the 
+         heart monitor, got rid of the live crocodiles in gimmicky 
+         quizshow THE CHAIR (6.40pm, Sat, BBC1)... and a month of 
+         "September 11th" specials kicks off with AVENGING TERROR (8pm, 
+         Sat & Sun, C4) - yet those responsible for BOWFINGER (9pm, 
+         Sat, C4) and NOTTING HILL (9pm, Sun, C4) still remain 
+         unpunished... John "The Last Seduction" Dahl's ROUNDERS (11pm, 
+         Sat, BBC2) turns out to be about high-stakes poker, rather 
+         than the girls' version of baseball... in the wake of DAVE 
+         GORMAN'S IMPORTANT ASTROLOGY EXPERIMENT (10.40pm, Sun, BBC2), 
+         how about a three-way challenge where he, Tony Hawks and Pete 
+         McCarthy battle to come up with the most lucrative pointless 
+         pretext for a book and TV show?... but we still have a soft 
+         spot for Ron "Alien: Resurrection" Perlman liberal self-
+         flagellation THE LAST SUPPER (11.20pm, Sun, C4)... 9/11 CLEAR 
+         THE SKIES (9pm, Sun, BBC2) is a presumably uneventful account 
+         of "how US air defence systems responded to the events of 
+         September 11th"... inexplicably, the three finalists in THE 
+         TARTIEST MEN IN BRITAIN (10.30pm, Mon, ITV) all come from 
+         Leeds... Larry Clark takes a somewhat indirect approach to 
+         conveying his safe-sex message in New York filth-fest KIDS 
+         (1.15am, Tue, C4)... and the September 11th build-up continues 
+         with HOW THE TWIN TOWERS COLLAPSED (8pm, Mon, C4), LET'S ROLL: 
+         THE STORY OF FLIGHT 93 (10.30pm, Wed, ITV), plus THE MEYSSAN 
+         CONSPIRACY (11.05pm, Tue, C4) - ie the French guy behind: 
+       http://www.asile.org/citoyens/numero13/pentagone/erreurs_en.htm
+         ... away from the polluted nightmare of modern living, a 
+         family seek out a new way of life in Earth Summit tie-in A 
+         LAND WORTH LOVING (7pm, Wed, BBC1)... which coincidentally 
+         also forms the plot of this week's second Heather "Bowfinger" 
+         Graham turkey, LOST IN SPACE (7.55pm, Wed, BBC1) - not to be 
+         confused with the return of those annoying posh women in 
+         WORLD'S WORST DRESSED (8pm, Wed, BBC2), who have at least shut 
+         up about their always-doomed hideously purple e-commerce 
+         site: http://news.bbc.co.uk/1/hi/business/712188.stm ...
+         
+         FILM>> the comic skills of Cameron Diaz, Christina Applegate 
+         and Parker Posey combine in a cross between a teen smut comedy 
+         and an episode of "Sex And The City", THE SWEETEST THING 
+         ( http://www.screenit.com/movies/2002/the_sweetest_thing.html :
+         As [Diaz] and [Applegate] drive down the road still dressed in 
+         just their bras and underwear, [Applegate] drops her bottle of 
+         fingernail polish. [Diaz] then goes over to get it, with 
+         her panty-covered butt in the air and her head down toward 
+         [Applegate]'s legs and crotch; [Selma Blair] [has] her mouth 
+         stuck around a man's privates after apparently performing oral 
+         sex on him)... Robin Williams plays a surprisingly convincing 
+         Hannibal Lecter in morally complicated Alaskan Al Pacino 
+         murder madness INSOMNIA ( http://www.cndb.com/ : You can see 
+         [Crystal Lowe's] tits in autopsy photos and again - along with 
+         bush - when she's seen on a autopsy table. Nice boobs but 
+         she's dead)... it's Eddie Murphy, Randy Quaid, Jay "Jerry 
+         Maguire" Mohr, John Cleese and Pam Grier - together at last! - 
+         in blaxploitation sci-fi spoof THE ADVENTURES OF PLUTO NASH 
+  ( http://www.screenit.com/movies/2002/the_adventures_of_pluto_nash.html :
+         the woman then causes the image of [Rosario "Kids" Dawson] to 
+         suddenly have much larger breasts and an exaggeratedly large 
+         rear end)... all of which, shockingly, are an improvement on 
+         John Woo interspersing lame battle scenes with agonising anti-
+         racist philosophising in WW2 Navajo crypto clunker WINDTALKERS 
+         ( http://www.capalert.com/capreports/windtalkers.htm : 
+         gambling; beheading; brief partial nudity of a Japanese 
+         soldier; I have no doubt that such gore is present in war but 
+         must it be regurgitated in and as entertainment?)... 
+
+
+                               >> SMALL PRINT <<
+
+       Need to Know is a useful and interesting UK digest of things that
+         happened last week or might happen next week. You can read it
+       on Friday afternoon or print it out then take it home if you have
+     nothing better to do. It is compiled by NTK from stuff they get sent.
+                       Registered at the Post Office as
+                     "yeah, but bet we were banned first"
+                    http://www.b3ta.com/newsletter/issue54/
+
+
+                                 NEED TO KNOW
+            THEY STOLE OUR REVOLUTION. NOW WE'RE STEALING IT BACK.
+                         Archive - http://www.ntk.net/
+              Unsubscribe? Mail ntknow-unsubscribe@lists.ntk.net
+                Subscribe? Mail ntknow-subscribe@lists.ntk.net
+ NTK now is supported by UNFORTU.NET, and by you: http://www.geekstyle.co.uk/
+
+                          (K) 2002 Special Projects.
+             Copying is fine, but include URL: http://www.ntk.net/
+
+                    Tips, news and gossip to tips@spesh.com
+             All communication is for publication, unless you beg.
+              Press releases from naive PR people to pr@spesh.com
+     Remember: Your work email may be monitored if sending sensitive material.
+       Sending >500KB attachments is forbidden by the Geneva Convention.
+              Your country may be at risk if you fail to comply.
+
+
+
+
+
+ntk now, 2002-08-30
+ _   _ _____ _  __ <*the* weekly high-tech sarcastic update for the uk>
+| \ | |_   _| |/ / _ __   __2002-08-30_ o join! mail an empty message to
+|  \| | | | | ' / | '_ \ / _ \ \ /\ / / o ntknow-subscribe@lists.ntk.net
+| |\  | | | | . \ | | | | (_) \ v  v /  o website (+ archive) lives at:
+|_| \_| |_| |_|\_\|_| |_|\___/ \_/\_/   o     http://www.ntk.net/
+
+
+        "a case in point is web designer matt jones, the man 
+         responsible for how bbc news online looked when it launched. 
+         since then, he has invented 'warchalking', which he recently 
+         described as a 'curse'..."
+                              http://news.bbc.co.uk/1/hi/2210091.stm
+                  - but you cannot turn against me! i... created you!
+
+
+                                >> hard news <<
+                               stiffening sinews
+
+         more hot summer days in the mailinglist alleyways,
+         dangerously empty of sane postings, strewn with the rotting
+         carcasses of broiling vacation messages. hacktress and
+         silicon valley's chief rat-keeper lile elam, excitedly posts
+         about a new open 802.11 network she's found. "i am here at
+         the police station waiting to see a judge and i thought i
+         would check to see if there is connectivity", she writes,
+         somewhat recklessly, to the bay area wireless list. exit
+         the rest of the wifi community through the nearest window
+         and out into the streets... where, cooling tempers, the
+         microsoft palladium boys are on an endless summer tour,
+         reassuring the experts that while, hmm, they *suppose* pd
+         could *theoretically* be used as a hollywood drm system,
+         they truly have no plans to do any such thing. cypherpunk
+         and friend of freedom lucky green hears this; thinks up four
+         or five of the obvious palladium drm implementations; sends
+         them off to be patented in his name. licensing funds, we
+         imagine, will go on cracking his own drms. and so the mail
+         loops on.
+         http://lists.bawug.org/pipermail/wireless/2002-august/008507.html
+                                 - administrivia: hi mom, i'm in jail
+    http://www.mail-archive.com/cryptography@wasabisystems.com/msg02554.html
+                             - green/palladium, like green kryptonite
+
+         could lucky get himself arrested under the dmca for
+         distributing a circumvention device? worse: now we have the
+         eucd incoming, could he here in the uk? will alan cox go to
+         jail for posting detailed changelogs? will even the nicest
+         uk cryptographer (or curious garage tinkerer) find
+         themselves hauled up under our new and scarily dmcaish
+         copyright regime? find out the facts at the free fair deal
+         for copyright conference, organised by the irrepressible
+         foundation for information policy research for wednesday
+         2002-09-18 at the london school of economics. all the usual
+         fun from the creators of the scrambling for safety crypto
+         cons: we confidently predict government spokesmen caught in
+         headlights, wanton dave bird heckling, some industry bigwig
+         fighting off the audience with a broken chairleg, and other
+         epiphenomena of the interzone between legal minds and hacker
+         ethics. oh, and fipr are still looking for a programme
+         director, so if you're interested, let them know. we
+         suggested a convention raffle (first prize: the director's
+         job, second prize: ross anderson as your personal slave for
+         a day). they say there's some rule that would break, though.
+         http://www.fipr.org/vacancy.html
+- doesn't the foundation use psychohistory for filling these positions?
+
+         for those of us who can't read the abbreviation eula without 
+         thinking of martian fighting machines and their "deafening 
+         howls... which roared like thunder", we're sorry to report 
+         that this weekend's multimedia performance of jeff wayne's war 
+         of the worlds has been postponed due to "health and safety 
+         issues". the event was to feature computer graphics, 
+         fireworks, "60ft-tall martian fighting machines" wreaking 
+         "havoc and destruction", and - most terrifyingly of all - the 
+         possibility of a david essex tribute singer performing with 
+         hawkwind, but ukp18 tickets for the sat 2002-08-31 show at 
+         manchester's heaton park will still be valid at a range of new 
+         venues next summer. ironically, the martians' original 
+         invasion plans were similarly thwarted by health and safety 
+         issues, "slain after all man's devices had failed by the 
+         humblest creatures that god, in his wisdom, has put upon this 
+         earth: bacteria. minute, invisible, bacteria. for, directly 
+         the invaders arrived and drank and fed, our microscopic allies 
+         attacked them..."
+         http://www.waroftheworlds.info/postpone.htm
+                           - "...from that moment, they were doomed."
+
+
+                                >> anti-news <<
+                             berating the obvious
+
+         moving on from puerile google misspellings, weird search-and-
+         replace artefact: http://www.google.com/search?q=consideyellow ,
+         japanese fan sites for "plince", "steery dan", "def reppard" 
+         et al, plus the 18,000 or more self-referential usenet .sigs: 
+         http://groups.google.com/groups?q=%22get+random+signatures%22 
+         ...http://www.colocation-network.com/ "zerodowntime" ad leads 
+         to: http://www.ntk.net/2002/08/30/dohzero.gif ... slightly 
+         harsh alt text: http://www.ntk.net/2002/08/30/dohover.gif ... 
+         us military discovers the only "translator" those bastards 
+         seem to understand: http://www.ntk.net/2002/08/30/dohgun.gif 
+         ... scary blue men herald return of the bizarre bbc hacking 
+         pics: http://news.bbc.co.uk/1/hi/1494091.stm ... reporter ryan 
+         dilley http://news.bbc.co.uk/1/hi/uk/2202552.stm pulls his 
+         http://starwars.org.pl/galeria/e2/char/anakin/t001.jpg face 
+         ... banjo maestro george formby still alive, cooking, black: 
+     http://www.readersheds.co.uk/readersheds/shop.cfm?wosnames=wosnames
+         ... thanks guys, that ought to do it: http://www.eap.ca/ ... 
+         
+
+                               >> event queue <<
+                         goto's considered non-harmful
+
+         controversially, we're all in favour of the guardian great 
+         british blog competition (closing date next fri 2002-09-06, 
+         first prize ukp1000, entry free), in that any initiative that 
+         encourages this notoriously primadonna-ish "community" to try 
+         and engage with real-world notions of editorial quality surely 
+         has to be a good thing. our only disappointment is that the 
+         guardian appears to be focussing on the "best" of the entries, 
+         when everyone knows the real fun is to be had cruising the 
+         truly terrible examples that the genre has to offer, mentally 
+         allocating points for "most depressing recycling of daypop top
+         40 urls", "most unsettling revelations about personal life", 
+         plus of course "most tedious linking/reciprocal linking to other 
+         bloggers in absence of having anything interesting to say". 
+         http://www.guardian.co.uk/weblog/bestbritishblog/
+                              - "a strange game, professor falken..."
+       http://media.guardian.co.uk/newmedia/comment/0,7496,765161,00.html
+                         - "...the only winning move is not to play."
+
+
+                                >> tracking <<
+               sufficiently advanced technology : the gathering
+
+          the respective trademark holders will hate this, but
+          windows really *is* like the sun. you have this big hulking
+          mass of concentrated power in the middle, with a few small
+          orbiting utilities - like winzip, and putty, and vnc.
+          occasionally one will get a bit too close to the os, and
+          microsoft will suck it down and turn it into fuel for the
+          system. one such discrete satellite remains filezilla, the
+          still-necessary ftp gui client for windows. those who know
+          it won't need the introduction, although they might
+          appreciate the note that it's getting close to v2.0 time.
+          for dogged ws_ftp users, though, it's got multiple
+          downloads, auto-restart of interrupted 'loads, queuing, and
+          sftp and kerberos support. it's also gpl'd which makes it a
+          nice bit of source for anyone wanting to grok win32
+          networking from something that works.
+          http://filezilla.sf.net/
+  - talking of trademarks, will the godzilla people strike before ms?
+
+
+                                >> memepool <<
+                ceci n'est pas une http://www.gagpipe.com/
+
+         (not safe for work) next year's red nose day looks more fun 
+         than usual: http://www.threepillows.com/tour2.htm ... mirrored 
+         disaster recovery suite - to go with mirrored bathroom etc?: 
+       http://www.dovebid.com/auctions/auctiondetail.asp?auctionid=1450
+         ... and then the kid can take you to court for mental cruelty: 
+         http://www.cnn.com/2002/tech/ptech/08/27/turok.baby.reut/ ... 
+         "funny" prefixes in front of "chalking" #n+1 - the actually 
+         quite pragmatic: http://www.pinkbunny.co.uk/poochalking/ ... 
+         no longer knowing - or caring - if these are prank amazon 
+         reviews or not, for potter's ever-popular "vibrating" broom: 
+     http://www.amazon.com/exec/obidos/tg/stores/detail/-/toys/b00005nebw/
+         ... ditto "use this software at your own risk" disclaimer for: 
+         http://www.palmgear.com/software/showsoftware.cfm?prodid=41030 
+         ... daffy duck appears in dock - accused of "dethpicable" 
+         behaviour?: http://news.bbc.co.uk/1/hi/england/2223065.stm , 
+         http://www.ananova.com/news/story/sm_659889.html ...
+
+
+                                >> geek media <<
+                                  get out less
+
+         tv>> celebrity cameo night tonight, with brad pitt in friends 
+         (9pm, fri, c4), sydney pollack in will and grace (9.30pm, fri, 
+         c4), dustin hoffman in v graham norton (10.30pm, fri, c4), and 
+         a singing, dancing peanut in globalised trade documentary alt-
+         tv (7.30pm, fri, c4)... the bbc have kept mcenroe and the 
+         heart monitor, got rid of the live crocodiles in gimmicky 
+         quizshow the chair (6.40pm, sat, bbc1)... and a month of 
+         "september 11th" specials kicks off with avenging terror (8pm, 
+         sat & sun, c4) - yet those responsible for bowfinger (9pm, 
+         sat, c4) and notting hill (9pm, sun, c4) still remain 
+         unpunished... john "the last seduction" dahl's rounders (11pm, 
+         sat, bbc2) turns out to be about high-stakes poker, rather 
+         than the girls' version of baseball... in the wake of dave 
+         gorman's important astrology experiment (10.40pm, sun, bbc2), 
+         how about a three-way challenge where he, tony hawks and pete 
+         mccarthy battle to come up with the most lucrative pointless 
+         pretext for a book and tv show?... but we still have a soft 
+         spot for ron "alien: resurrection" perlman liberal self-
+         flagellation the last supper (11.20pm, sun, c4)... 9/11 clear 
+         the skies (9pm, sun, bbc2) is a presumably uneventful account 
+         of "how us air defence systems responded to the events of 
+         september 11th"... inexplicably, the three finalists in the 
+         tartiest men in britain (10.30pm, mon, itv) all come from 
+         leeds... larry clark takes a somewhat indirect approach to 
+         conveying his safe-sex message in new york filth-fest kids 
+         (1.15am, tue, c4)... and the september 11th build-up continues 
+         with how the twin towers collapsed (8pm, mon, c4), let's roll: 
+         the story of flight 93 (10.30pm, wed, itv), plus the meyssan 
+         conspiracy (11.05pm, tue, c4) - ie the french guy behind: 
+       http://www.asile.org/citoyens/numero13/pentagone/erreurs_en.htm
+         ... away from the polluted nightmare of modern living, a 
+         family seek out a new way of life in earth summit tie-in a 
+         land worth loving (7pm, wed, bbc1)... which coincidentally 
+         also forms the plot of this week's second heather "bowfinger" 
+         graham turkey, lost in space (7.55pm, wed, bbc1) - not to be 
+         confused with the return of those annoying posh women in 
+         world's worst dressed (8pm, wed, bbc2), who have at least shut 
+         up about their always-doomed hideously purple e-commerce 
+         site: http://news.bbc.co.uk/1/hi/business/712188.stm ...
+         
+         film>> the comic skills of cameron diaz, christina applegate 
+         and parker posey combine in a cross between a teen smut comedy 
+         and an episode of "sex and the city", the sweetest thing 
+         ( http://www.screenit.com/movies/2002/the_sweetest_thing.html :
+         as [diaz] and [applegate] drive down the road still dressed in 
+         just their bras and underwear, [applegate] drops her bottle of 
+         fingernail polish. [diaz] then goes over to get it, with 
+         her panty-covered butt in the air and her head down toward 
+         [applegate]'s legs and crotch; [selma blair] [has] her mouth 
+         stuck around a man's privates after apparently performing oral 
+         sex on him)... robin williams plays a surprisingly convincing 
+         hannibal lecter in morally complicated alaskan al pacino 
+         murder madness insomnia ( http://www.cndb.com/ : you can see 
+         [crystal lowe's] tits in autopsy photos and again - along with 
+         bush - when she's seen on a autopsy table. nice boobs but 
+         she's dead)... it's eddie murphy, randy quaid, jay "jerry 
+         maguire" mohr, john cleese and pam grier - together at last! - 
+         in blaxploitation sci-fi spoof the adventures of pluto nash 
+  ( http://www.screenit.com/movies/2002/the_adventures_of_pluto_nash.html :
+         the woman then causes the image of [rosario "kids" dawson] to 
+         suddenly have much larger breasts and an exaggeratedly large 
+         rear end)... all of which, shockingly, are an improvement on 
+         john woo interspersing lame battle scenes with agonising anti-
+         racist philosophising in ww2 navajo crypto clunker windtalkers 
+         ( http://www.capalert.com/capreports/windtalkers.htm : 
+         gambling; beheading; brief partial nudity of a japanese 
+         soldier; i have no doubt that such gore is present in war but 
+         must it be regurgitated in and as entertainment?)... 
+
+
+                               >> small print <<
+
+       need to know is a useful and interesting uk digest of things that
+         happened last week or might happen next week. you can read it
+       on friday afternoon or print it out then take it home if you have
+     nothing better to do. it is compiled by ntk from stuff they get sent.
+                       registered at the post office as
+                     "yeah, but bet we were banned first"
+                    http://www.b3ta.com/newsletter/issue54/
+
+
+                                 need to know
+            they stole our revolution. now we're stealing it back.
+                         archive - http://www.ntk.net/
+              unsubscribe? mail ntknow-unsubscribe@lists.ntk.net
+                subscribe? mail ntknow-subscribe@lists.ntk.net
+ ntk now is supported by unfortu.net, and by you: http://www.geekstyle.co.uk/
+
+                          (k) 2002 special projects.
+             copying is fine, but include url: http://www.ntk.net/
+
+                    tips, news and gossip to tips@spesh.com
+             all communication is for publication, unless you beg.
+              press releases from naive pr people to pr@spesh.com
+     remember: your work email may be monitored if sending sensitive material.
+       sending >500kb attachments is forbidden by the geneva convention.
+              your country may be at risk if you fail to comply.
+
+
+
+
+

@@ -1,0 +1,31 @@
+on tuesday 04 may 2010 05:30:25 don wrote:
+> hi,
+> 
+> i have a problem (actually more than one, but let's tackle this one
+> first) with my password on kde log in screen no being accepted.  the
+> password does work ok when logging in using command line / terminal.
+> 
+> i have 3 users, and all have this same situation.  their passwords work
+> on cli but not on the welcome log in screen graphically.
+> 
+> using 2.6.32-3-686 #1 smp with squeeze/sid.
+> 
+> never a problem like this previous to past month or so (cannot pinpoint
+> date as i was out of circulation in hospital for a week late march).
+> 
+> any help appreciated -- knowledgeable enough to be dangerous, so even
+> though i'm not a newbie, don't assume i'm an expert.
+> 
+> regards,
+> don
+> 
+first idea would be keyboard country in x, but i bet you thought about that?
+thierry
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201005040632.39783.tchatelet@free.fr
+
+

@@ -1,0 +1,15 @@
+i upgraded my squeeze box to kde 4.4 about a week ago, and have been 
+contending with jumpy, hesitant video performance ever since. i'm not sure 
+which package to file this bug against; if it helps i'm running an nvidia 
+7900gs using the drivers in the nvidia-glx package. it ran fine with kde 4.3. 
+thanks!
+
+gene
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201005241916.06367.gkodadek@csmining.org
+
+

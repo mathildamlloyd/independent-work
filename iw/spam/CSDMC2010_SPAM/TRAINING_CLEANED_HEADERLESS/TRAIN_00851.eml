@@ -1,0 +1,44 @@
+on tue, 11 may 2010 12:59:00 +0100, lisi wrote:
+
+> on tuesday 11 may 2010 12:34:13 tom h wrote:
+
+>> > i am sure someone will correct me if i have got this wrong, so if
+>> > noone does so i have probably remembered correctly.
+>>
+>> i don't remember a thread on debian-user about uuids changing with
+>> changing hardware (i could be wrong though!) but there was a thread in
+>> march on ubuntu-users where a guy was duplicating disks for a rollout
+>> and he was convinced that the bios of the boxes into which he was
+>> plugging in the duplicated hds was changing the uuids of the disks'
+>> partitions because he was unable to boot from those disks unless he
+>> changed the fstab to use /dev/sdax devices. i pointed out that the idea
+>> that a bios could change a filesystem's superblock didn't make any
+>> sense and that it could not be a uuid problem because he could boot
+>> boxes with intel mobos but not boxes with another manufacturer's mobos
+>> (i assume that he could have replied that the other mobos were changing
+>> the uuids and the intels ones not...).
+> 
+> thanks, tom - i may be getting confused with that.
+
+no, lisi, you are right. here is the thread:
+
+***
+question about fstab in squeeze and uuid
+http://lists.debian.org/debian-user/2010/03/msg01026.html
+***
+
+but using "labels" can lead to another problems. i'm afraid there is no 
+"one size fits all" here :-/
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.11.13.47.27@csmining.org
+
+

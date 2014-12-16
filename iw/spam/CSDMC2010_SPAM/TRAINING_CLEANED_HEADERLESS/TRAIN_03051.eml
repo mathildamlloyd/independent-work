@@ -1,0 +1,51 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=utf-8
+
+>
+>
+>
+> ##### 2 - my microphone works with lots of noise.
+> hi! i have a problem with my microphone. it works with lots of noise and
+> recorded sound is very-very quiet or simply there is no sound but only
+> rhythmical crack. this result changes when i change in alsamixer l r capture
+> parameter (capture [db gain=6.00, 6.00] - lots of noise and quite sound,
+> capture [db gain=30.00, 30.00] - rhythmical crack). maybe this is a problem
+> of bad configuration. who can help?
+> i have not only one parameter but two parameters l r capture and now i was
+> talking about the first of them. when i turn the second parameter a bit up
+> from null than that is a loud siren. who knows this problem?
+>
+> this happens with my inner microphone in acer 5220 and with my microsoft
+> lifecam under ubuntu 9.04 (mint 7).
+> this is about my sound card:
+> 00:1b.0 audio device: intel corporation 82801h (ich8 family) hd audio
+> controller (rev 03)
+> subsystem: acer incorporated [ali] device 011f
+> control: i/o- mem+ busmaster+ speccycle- memwinv- vgasnoop- parerr-
+> stepping- serr+ fastb2b- disintx-
+> status: cap+ 66mhz- udf- fastb2b- parerr- devsel=fast >tabort-  serr-  latency: 0, cache line size: 64 bytes
+> interrupt: pin a routed to irq 21
+> region 0: memory at fc300000 (64-bit, non-prefetchable) [size=16k]
+> capabilities: 
+> kernel driver in use: hda intel
+> kernel modules: snd-hda-intel
+>
+> thanks,
+> theodore
+>
+> #########
+>
+with regard to the noise produced on the microphone when plugged into the
+sound card, try the sound card drivers available here,
+ www.opensound.com/oss.html . thought by some to be superior to alsa.
+
+
+i'm not clear i
+>
+> --
+> to unsubscribe, email to debian-laptop-request@lists.debian.org
+> with a subject of "unsubscribe". trouble? contact
+> listmaster@lists.debian.org
+> archive: http://lists.debian.org/9910535707.20100507203657@csmining.org
+>
+>

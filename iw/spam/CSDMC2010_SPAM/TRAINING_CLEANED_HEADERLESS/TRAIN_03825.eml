@@ -1,0 +1,23 @@
+> try putting this in ~/.bashrc:
+>
+> export editor=/usr/bin/vim
+>
+> regards,
+> andrei
+> --
+
+
+you can also make it a system wide configuration with
+"update-alternatives --config editor". i have not tried it shells
+other than bash but i assume it is portable.
+
+-- 
+jordan metzmeier
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/g2s50e5edd51004241315vb494b3b0jfeabf8a9c839c553@mail.csmining.org
+
+

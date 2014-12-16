@@ -1,0 +1,39 @@
+* on 2010 21 may 17:30 -0500, thomas pircher wrote:
+> boyd stephen smith jr. wrote:
+> >> a) without asking me,
+> >> b) without telling me and
+> >> c) without being told to do so.
+> >
+> > from what i understand, all 3 of these are primary goals of the network-
+> > manager package.
+> 
+> i'm sure network-manager will live up to its goals, eventually. for the time 
+> being i have created a new bug with the title "network-manager ignores 
+> configured interfaces in /etc/network/interfaces". ;-)
+> it doesn't yet show up on bugs.debian.org, i guess it takes some time.
+
+as i understand it, both network manager and wicd are intended to
+control the network interfaces.  if you want to control the interfaces
+manually, remove nm.  if you want to use nm then only the loopback
+interface should be defined in /etc/network/interface.  
+
+nm works very well for me on my ubuntu lucid laptop.  meanwhile, my
+debian desktop utilizes /etc/network/interface as it doesn't roam
+anywhere.
+
+- nate >>
+
+-- 
+
+"the optimist proclaims that we live in the best of all
+possible worlds.  the pessimist fears this is true."
+
+ham radio, linux, bikes, and more: http://n0nb.us/index.html
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100522022951.ge2171@n0nb.us
+
+

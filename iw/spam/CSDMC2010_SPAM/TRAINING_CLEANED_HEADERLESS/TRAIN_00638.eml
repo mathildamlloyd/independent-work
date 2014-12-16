@@ -1,0 +1,66 @@
+on 6 may 2010 20:54, mike bird  wrote:
+> on thu may 6 2010 10:24:08 dotan cohen wrote:
+>> > even with perfect packaging kde sc 4 is slow and unreliable,
+>>
+>> slow? can you elaborate? i can help with that.
+>>
+>> unreliable? in what way?
+>
+> are you aware that kde pim developers noticed that the percentage of
+> kmail users on kde-pim's own mailing list has dropped below 50%? =c2=a0ev=
+en
+> kde developers are fed up with kde unreliability.
+>
+
+no, i am not aware of that. i also don't use kmail.
+
+
+> did you check my email's user-agent string?
+
+no. do you customarily read the complete email headers of those whom
+with which you correspond?
+
+
+>=c2=a0it's "kmail/1.9.9" - the
+> last debian stable kmail. =c2=a0how come you're not using kmail if it's s=
+o
+> stable in kde sc 4?
+>
+
+i  cannot use kmail until two feature requests are implemented:
+https://bugs.kde.org/show_bug.cgi?id=3d72926
+https://bugs.kde.org/show_bug.cgi?id=3d159251
+
+thunderbird has this implemented as an extension:
+https://addons.mozilla.org/en-us/thunderbird/addon/594
+
+
+> sune is not interested in working on kde 3.5 but he's using slrn via
+> gmane.
+>
+> i have great respect for ana's work but even ana is using mutt.
+>
+> have you ever actually tried converting normal office workers from
+> kde 3.5 to kde sc 4? =c2=a0i have. =c2=a0twice. =c2=a0utter failure.
+>
+
+i have done tens of kde 4 installs, and filed or triaged over 1300
+bugs at kde. i have installed kde-based systems for home users,
+students, university laboratories, a library, and some small home
+offices. am i qualified enough for you to tell me what's wrong
+already?
+
+
+--=20
+dotan cohen
+
+http://bido.com
+http://what-is-what.com
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/p2o880dece01005061202xb6b00dbag1bc9731e28987444@mail.csmining.org
+
+

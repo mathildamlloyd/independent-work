@@ -1,0 +1,39 @@
+on wed, 05 may 2010 13:15:50 +0200, jochen schulz wrote:
+
+> camalen:
+>> on wed, 05 may 2010 10:36:34 +0100, john o laoi wrote:
+>> 
+>>> what would ye think of doing
+>>> 
+>>> aptitude purge gnome
+>>> followed by
+>>> aptitude install gnome
+>>> 
+>>> is that likely to break lots of other things?
+> 
+> usually not, but i don't see the point in doing that. it appears you
+> would just reinstall the package with your bug in it.
+
+the point is, "which" package? gnome-panel have all the point to be the 
+culprit but, how we could know what is causing the mess? it can be a mix 
+of several packages, it's hard to tell.
+ 
+>> how do you (you = people using squeeze) usually run updates for gnome?
+> 
+> i run sid and in cases like these (don't run gnome) i either downgrade
+> to the version in testing, use an archived version or just sit and wait.
+
+then my vote goes to "sit and wait" :-)
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.05.13.37.00@csmining.org
+
+

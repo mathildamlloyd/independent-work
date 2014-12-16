@@ -1,0 +1,18 @@
+on fri, may 21, 2010 at 8:23 am, steve fishpaste
+ wrote:
+> why is the chromium-browser in sid so old? chromium has been on the
+> 6.x branch for a couple of weeks now and debian is still using the 5.x
+> branch.
+
+question, on lenny is there a different repository for chromium? just
+did a apt search to find chromium.
+
+only package is some arcade game.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/aanlktilbhlidmece40pe70dnlnqundq-eme_0mogazwz@mail.csmining.org
+
+

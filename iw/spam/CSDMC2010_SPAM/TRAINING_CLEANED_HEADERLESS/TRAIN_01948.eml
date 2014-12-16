@@ -1,0 +1,38 @@
+
+on tue, april 27, 2010 00:33, bernard wrote:
+> hi to everyone !
+>
+> on my previous systems, i used to create overall backups of partitions,
+> using 'systemrescuecd'. this is no longer possible ever since 2007 that
+> i have a raid1 mirroring system on my debian. systemrescuecd does not
+> backup lvm volumes, or, if it does, that must be a very new feature, and
+> i have not found any doc on this.
+>
+> so, what should i do so as to backup my system ?  i once tried 'dd', but
+> i think i remember it took forever, and i don't really know whether i
+> would have been able to use the resulting file to successfully restore
+> the partitions if needed.
+>
+> could someone suggest something that has been successfully tried ?  even
+> 'dd' could do, if it is ok with lvm and if i get some details. i
+> understand that i would have to unmount the partitions, but this is not
+> a problem. i have two ide mirrored disks of 200 gb each.
+>
+> thanks in advance for your insights.
+>
+
+how about clonezilla (http://www.clonezilla.org/)? it supports lvm2 (not
+1) and is based on debian (i think you should be able to get what you need
+from the debian repositories anyway). but i'm not an expert :)
+
+
+-- 
+rarely do people communicate; they just take turns talking.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/14970.81.246.17.226.1272353817.squirrel@stevenleeuw.kwik.to
+
+

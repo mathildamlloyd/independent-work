@@ -1,0 +1,38 @@
+
+on mon, apr 26, 2010 at 9:14 pm, raymond martin  =
+wrote:
+
+>> raymond,
+>>=20
+>> take a look at mike's post.
+>=20
+> which basically says that the wrong thing is being chosen in the =
+program.
+
+what i read was that there is a difference between how java 6 and java 5 =
+handle glyph rendering. that means that there is a not backward =
+compatible modification in java 6 that triggers that problem. no need to =
+have a bs in computer science to parse that.
+
+> anyway, the main thread here really is about slow performance, not =
+about glyph rendering.
+
+and glyph rendering affects performance. and it is likely that other =
+modifications in java 6 similarly affect performance for other areas. =
+are you being a troll ?
+
+
+jean-christophe helary
+----------------------------------------
+fun: http://mac4translators.blogspot.com
+work: http://www.doublet.jp (ja/en > fr)
+tweets: http://twitter.com/brandelune
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

@@ -1,0 +1,19 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on sun,11.apr.10, 00:00:24, dotan cohen wrote:
+=20
+> i was thinking of squeeze as (if i'm not mistaken, correct me if i am)
+> lenny is still on kde 4.2.x and open office 2.x. kde 4.4 is such an
+> improvement over 4.2, and ooo 3.2 is worlds ahead of 2.4.
+
+actually lenny is still on kde 3.5, but you can get ooo 3.2 from=20
+backports.
+
+regards,
+andrei
+--=20
+offtopic discussions among debian users and developers:
+http://lists.alioth.debian.org/mailman/listinfo/d-community-offtopic

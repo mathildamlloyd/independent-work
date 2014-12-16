@@ -1,0 +1,34 @@
+on mon may 10 2010 05:04:52 michael thaler wrote:
+> in 2009 kde was around 4.7 million lines of code [1] and had about 450
+> contributors [2]. kde 3.5 had less lines of code and less developers, but
+> the numbers are the same order of magnitude. even if you find some people
+> that are willing to maintain and improve kde 3.5, how do you want to
+> maintain and improve some of million lines of code which were developed by
+> hundreds of people? and you have to maintain qt3 as well. that is just
+> totally unrealistic.
+
+it may well take 450 people to turn kde 3.5 into kde 4.  it takes
+far fewer to maintain a pre-existing, excellent, stable code base.
+
+> i don't think it is appropriate to spam the list with your request about
+> keeping kde 3.5 in debian squeeze, even though the debian kde team decided
+> to not do that. there are lots of people who like kde 4 and are happy that
+> the debian kde team does a really good job providing kde 4 for debian. i
+> understand thst you do not like kde 4. people told you what your options
+> are and keeping kde 3.5 is, for several reasons already stated, not one of
+> them. so please do accept that stop spamming the list with your "rescue kde
+> 3.5" requests.
+
+please don't interfere with discussions about rescuing kde 3.5.
+we're not trying to stop you from running kde 4.  please don't
+interfere with our work.
+
+--mike bird
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201005101140.11764.mgb-debian@yosemite.net
+
+

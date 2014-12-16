@@ -1,0 +1,18 @@
+on 2010-05-11, marcus better  wrote:
+> the system will often grind to a halt for several minutes while iotop shows 
+> that it is busy swapping, usually swapping in the eclipse process. the most 
+> annoying thing is that kde becomes totally unresponsive during all this 
+> time, i cannot even move the mouse pointer.
+
+except i only have 512mb ram in my laptop, it matches my experience of
+eclipse.
+
+/sune
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/slrnhuim5s.rvp.nospam@sshway.ssh.pusling.com
+
+

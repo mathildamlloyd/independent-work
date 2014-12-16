@@ -1,0 +1,49 @@
+hi all,
+
+anyone ever try connecting at 1200bps in linux? i've got a usr 56k
+faxmodem which is meant to connect to another (same) modem and i have to
+connect at this speed due to the (nt) port settings on the remote side,
+but the modem handshake always fails at this speed.
+
+the modem handshake works at slightly higher speeds (4800bps to
+~57600bps) but that is no good for tx/rx'ing data to the remote server
+as it insists at talking at the speed of treacle/1200bps.
+
+note minicom fails to handshake at 1200bps, but hyperterm in windows
+worked first time(!?), any ideas?
+
+baud 1200 7 data bits even parity
+
+i am doing a atz3 to reset the modem then i send this init string:
+
+at&f1e1v1q0x4y0s32;=232&a1;&b0;&c1;&d2;&h0;&i0;&k1;&m4;&n0;&p0;&r1;&s0;&u0;&y1;
+
+... which is most of the defaults.
+
+usr said to set s15=128 (disables v.42)) 
+& set s32=98 (disable v.92 & x2)
+
+but the s15=128 just makes the handshake lockup instead of just giving
+up.
+
+btw this is a bank's system i am connecting to so reconfiguring their
+modems may be difficult.
+
+colin.
+
+
+-- 
+colin nevin,
+software engineer,
+merit solutions ltd. (dublin),
+5 goatstown cross,
+dublin 14.
+------------------------------------------
+printed using 100% recycled electrons.
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

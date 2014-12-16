@@ -1,0 +1,44 @@
+i'm developing a qt app on windows, and am using a wsh javascript to =
+control output from the application. i have everything working, except i =
+want to make a track blend 50% with the background and it just doesn't =
+seem to work. here is what i'm using:
+
+qttargetmovie.qtcontrol.movie.tracks(3).top =3d =
+qttargetmovie.qtcontrol.movie.height-qttargetmovie.qtcontrol.movie.tracks(=
+3).height;
+qttargetmovie.qtcontrol.movie.tracks(3).transfermode =3d =
+qttransfermodesenum.qttransfermodeblend;
+qttargetmovie.qtcontrol.movie.tracks(3).operationcolor =3d =
+"32768,32768,32768";
+qttargetmovie.qtcontrol.movie.tracks(3).highqualitymode =3d true;
+
+the first line is changing the location of the track, which it does just =
+fine, so i know i have the right track addressed. the next line just =
+doesn't seem to happen. the track is always set to dither when i check =
+the movie properties. i am using version 7.6.6 of qt on windows.
+
+i also tried:
+
+qttargetmovie.qtcontrol.movie.tracks(3).transfermode =3d =
+qttransfermodesenum.qttransfermodestraighalphablend;
+
+i'm using the book "quicktime for .net and com developers" by john =
+cromie as my reference (which is excellent, btw).
+
+
+patrick besong
+manager, creative design & development
+education technology services
+the pennsylvania state university
+210 rider bldg. university park pa 16802
+814 865-2154
+pzb4@psu.edu
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

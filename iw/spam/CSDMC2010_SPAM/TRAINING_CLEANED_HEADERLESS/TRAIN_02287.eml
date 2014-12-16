@@ -1,0 +1,52 @@
+brian odonoghue said:
+>
+>
+>> -----original message-----
+>> from: ciaran johnston [mailto:cj@nologic.org]
+>> sent: 16 august 2002 15:09
+>> to: ilug@linux.ie
+>> subject: [ilug] backup solutions
+>>
+>> hi folks,
+>> i maintain a colocated server on behalf of a small group of
+>> individuals, and am looking at backup solutions. is it possible to get
+>> some sort of low-
+>> end internal tape / other solution that could be used to back up
+>> approx. 40
+>> gigs of data or am i just dreaming? my isp does offer backups at extra
+>> cost
+>> but the only problem with that is, well, the extra cost.
+>>
+>> what i was hoping to do was to install some kind of internal tape
+>> device, then swap tapes round every month, so i had an onsite backup
+>> of say the last 24 hours and an offsite backup of the last month. is
+>> this feasible? i'm beginning to think it isn't. external devices are
+>> not an option as part
+>> of the charge for colocation is rackspace.
+>>
+>> thanks,
+>> ciaran.
+>
+> i'd recommend a good external dlt drive.
+> you will probably need a scsi card for that too.
+
+yeah, so would i, but as i said, external ain't really an option.
+
+/ciaran.
+
+>
+> mmmm.
+>
+> --
+> irish linux users' group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription
+> information. list maintainer: listmaster@linux.ie
+
+
+
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+

@@ -1,0 +1,35 @@
+None> that is the CVS version, but it seems that more breakage is to come with the
+> kernel :(
+
+Limbo seems to be able to compile its own kernel with its own gcc 3.1. 
+That said, I don't want to know what kind of patches Redhat are applying 
+to that kernel. The .spec file alone is 128KBytes! One of the patches is 
+2.4.19-ac10. Redhat don't seem to have patched Limbo's gcc too heavily.
+
+Paul.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+re: [ilug] optimizing for pentium pt.2liam bedford wrote:
+> that is the cvs version, but it seems that more breakage is to come with the
+> kernel :(
+
+limbo seems to be able to compile its own kernel with its own gcc 3.1. 
+that said, i don't want to know what kind of patches redhat are applying 
+to that kernel. the .spec file alone is 128kbytes! one of the patches is 
+2.4.19-ac10. redhat don't seem to have patched limbo's gcc too heavily.
+
+paul.
+
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

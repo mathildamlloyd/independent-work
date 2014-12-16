@@ -1,0 +1,40 @@
+>sorry for the ot. just wondering if anybody knows of a similar type mailing
+>list specifically dealing with macosx?  (which, fyi is a version of bsd)
+
+>sln,
+
+>tim
+
+hi tim,
+it isn't a "version" of anything except nextstep, with a mac hackjob.
+it has a bastardised, but functional bsd -layer- which sit's atop mach and
+uses case insensitive hfs+ but it isn't really a bsd.
+
+(here's a neat trick, touch "makefile" and "makefile", notice the lack of
+error message but the absence of "makefile", and don't bother formatting for
+ufs. the apple ufs implementation performs like a dog, was frozen in 97,
+implemented badly and has not been updated since. hfs+ get's tweaked every
+now and then, but enough screaming has them looking at shoving ufs2 in there
+somewhere down the road. )
+
+then there's the holdover next inherent weirdness, such as multiple versions
+of common unix files, but none of them do anything, and all changes you
+would usually append to them have to go through netinfo manager.
+
+all in all, i find it to be a functional, if not overly quirky desktop
+environment.
+
+as for your initial question,
+http://www.omnigroup.com/developer/mailinglists/
+
+regards,
+mark.
+
+
+
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+

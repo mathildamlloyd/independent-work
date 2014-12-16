@@ -1,0 +1,36 @@
+hi all,
+
+after about a fortnight, i tried to update my debian squeeze desktop,
+and i was using the mirror.cse.iitk.ac.in mirror. after downloading
+the repository lists, it tells me there are no updates -- i am
+surprised as i know that gnome 2.30 is already in testing. thinking
+that it could be a problem with the mirror, i switch to
+ftp.ch.debian.org and update. this time, it does say there are about
+300 updates.
+
+i issue a safe-upgrade, but the electricity goes out just as the
+updates begin downloading. after i turn the computer back on, issuing
+a safe-upgrade shows there are no updates! i try to aptitude update
+but it thinks that the repositories are already updated, though
+apt-cache show nautilus gives the version 2.28.4. as i was in a hurry
+at the time, i just deleted /var/lib/apt/lists, so aptitude had no
+choice but to really download the lists. after this the safe-upgrade
+proceeded as usual. i realised after deleting /var/lib/apt/lists that
+i should have kept a copy, but too late.
+
+though the problem is (in a sense) solved, i am curious as to how this
+(bug?) could have occurred. after all this i checked
+mirror.cse.iitk.ac.in  and it does have nautilus 2.30.1, so maybe the
+first no-updates scenario was also caused by this bug/problem.
+
+abhishek
+--
+please cc me as i am not subscribed to debian-user.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/aanlktinkeqchqnw2ja6zije7g9eslap37wjjb3yfu_lp@mail.csmining.org
+
+

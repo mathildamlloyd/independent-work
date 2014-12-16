@@ -1,0 +1,22 @@
+if i were to install a bare-bones squeeze system, then add lenny
+repositories and declare lenny to be the default-release in apt.conf,
+can i expect to have many problems installing a full desktop environment
+from the lenny repos?  (gnome, lxde, or fluxbox, most likely).
+
+reason:
+
+i use a debian-live usb and i like to run lenny because of the
+infrequent updates.  but one of my laptops requires the squeeze kernel
+in order for wifi to work.  i've been told by the debian-live developer
+that i cannot install alternate kernels on my live system (otherwise i'd
+be able to use a kernel from backports.org).
+
+-rob
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100429013529.gc8530@aurora.owens.net
+
+

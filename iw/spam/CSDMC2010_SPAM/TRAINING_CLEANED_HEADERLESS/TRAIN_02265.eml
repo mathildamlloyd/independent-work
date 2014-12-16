@@ -1,0 +1,28 @@
+in message <5378.1027548783@dimebox>, hal devore writes:
+>
+>>>>>> on wed, 24 jul 2002, "chris" == chris garrigues wrote:
+>
+>  chris> am i the only one for whom typing control-l to the main
+>  chris> window causes this error?
+>
+>getting it here too on a copy i haven't updated from cvs since 
+>about may sometime.
+
+it's in 2.5 as well.
+
+//christer
+
+-- 
+| sys admin @ medic              www: http://www.dtek.chalmers.se/            |
+| email: mort@dtek.chalmers.se   phone: (0)31 772 5431, (0)707 53 57 57      |
+"i fought the loa and the loa won, i fought the loa and the loa won..."
+        -- dave aronsson, a.s.r.
+
+
+
+_______________________________________________
+exmh-workers mailing list
+exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

@@ -1,0 +1,18 @@
+> cat /proc/sys/net/ipv6/bindv6only
+> if output is 1 then:
+> echo 0 > /proc/sys/net/ipv6/bindv6only
+> --
+
+thanks goran.
+that fixed it.
+
+
+anybody know what was the problem?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/n2g1f1816a91004270951mb5bcfd94p13b23eed96558b2d@mail.csmining.org
+
+

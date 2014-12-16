@@ -1,0 +1,35 @@
+on wed, 7 apr 2010 07:45:25 -0400 (edt), lubos rendek wrote:
+> on mon, apr 5, 2010 at 8:53 am, stephen powell wrote:
+>> on sun, 4 apr 2010 17:36:03 -0400 (edt), lubos rendek wrote:
+>>>
+>>> thanks guys for this.. now what is the best way to link modules to a
+>>> specific hardware. for example my lsmod shows that i use 'ecb' module.
+>>> for someone like me this name does not say much. is there a way to
+>>> find which module belongs to which piece of hardware?
+>>
+>> =c2=a0 /sbin/modinfo ecb
+>>
+>> the "description" line is helpful of course. =c2=a0and the "alias" lines
+>> identify which pieces of hardware will cause the module to be loaded,
+>> for most device drivers. =c2=a0(some older device drivers don't have any
+>> internal aliases and require help from external aliases to load
+>> automatically when the corresponding hardware device is detected.
+>
+> thanks stephen this is exactly what i was looking for. :-)
+
+you're welcome.  but please don't "top post".
+http://en.wikipedia.org/wiki/top_posting
+
+--=20
+  .''`.     stephen powell    
+ : :'  :
+ `. `'`
+   `-
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/766271365.1619171270649684391.javamail.root@md01.wow.synacor.com
+
+

@@ -1,0 +1,34 @@
+on wednesday 14 april 2010 00:59:14 debian-user-digest-
+request@lists.debian.org wrote:
+> > ~$ sudo /etc/init.d/clamav-daemon start
+> > starting clamav daemon: clamd error: unknown group 20 incorrect number
+> > of  arguments
+> >
+> >  failed!
+> > 
+> >
+> > after latest upgrade. anyone have a quick fix?
+> 
+> yes :
+> change the 2 lines in /etc/clamav/clamd.conf :
+> 
+> localsocketgroup amavis
+> localsocketmode 770
+> 
+> bug #577499
+
+ok. now get 
+~$ sudo /etc/init.d/clamav-daemon start
+starting clamav daemon: clamd error: failed to change socket ownership to 
+group amavis
+ failed!
+
+the group does exist.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201004141549.00100.d_baron@012.net.il
+
+

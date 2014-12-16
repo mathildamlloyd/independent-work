@@ -1,0 +1,281 @@
+
+
+cnet virus & security newsletter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+july 17, 2002
+
+
+
+
+
+
+--robert vamosisenior associate editorcnet software and internet services
+
+
+dear readers,
+so far, 2002 has been a year marked with variations on earlier
+worms. if you update your antivirus software on a regular basis,
+these new versions of frethem and yaha shouldn't be a nuisance.
+but if you haven't updated in a while, these variants--plus the
+continuing threat of klez.h--should motivate you. in security
+news, a flaw in certain versions of pgp encryption could affect
+outlook users. read on to learn whether you're vulnerable.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+frethem.k worm wants to give you a password
+ an e-mail message that promises to reveal secret information with
+a password is yet another variant from the pesky frethem worm
+family. frethem.k, technically known as w32.frethem.k@mm, also
+called frethem.l by some vendors, uses its own smtp engine to
+send e-mail using addresses obtained from infected systems. this
+worm does not carry a destructive payload. mac and linux users
+are not affected.
+
+
+
+yaha.e screensaver worm spreading
+ the yaha.e mass-mailing worm masquerades as a friendly
+screensaver, proving that users worldwide are still opening
+attached files from total strangers. yaha.e (w32.yaha.e@mm, also
+known as lentin.e, yaha.f, and yaha.g) is a successful variant of
+a worm first seen around valentine's day this year. thankfully,
+this worm does not affect mac, linux, or unix users.
+
+
+
+
+
+
+leaky pgp outlook plug-in 
+pgp 7.03 and 7.04, widely used plug-ins for microsoft's outlook
+e-mail client, inadvertently weakens security and leaves the mail
+program open to attack. fortunately, there is a patch available.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+digital photography starter kitthis guide to digital photos will show you the best products to take your images from snap to finish.
+
+
+ panasonic's littlest lumix
+ minolta"s 4-megapixel dimage f100
+
+
+
+
+
+
+
+
+
+
+
+most popular products
+digital cameras
+1. canon powershot g2
+2. canon powershot s30
+3. canon powershot s40
+4. canon powershot a40
+5. sony cyber shot dsc-f707
+ see all most popular cameras
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+search
+
+in softwareall cnetthe web
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+the e-mail address for your subscription isqqqqqqqqqq-cnet-newsletters@example.com
+unsubscribe|
+manage my subscriptions
+|faq|
+advertise
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+price comparisons |
+product reviews |
+tech news |
+downloads |
+all cnet services
+
+
+
+
+
+        copyright 2002 cnet networks, inc. all rights reserved.          
+
+
+

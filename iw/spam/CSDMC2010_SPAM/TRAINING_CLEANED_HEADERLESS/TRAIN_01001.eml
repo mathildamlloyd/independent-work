@@ -1,0 +1,32 @@
+on 05/13/2010 08:37 am, steef wrote:
+>
+> hi list,
+>
+> how do i get rid of the message of a new (of course much valued)
+> maintainer christian about mta's and cron when updating squeeze on the
+> commandline before using startx? apt-get upgrade hangs on this message
+> and i do not know the protocol to go on in this situation (if there is
+> any). so i cannot upgrade.
+>
+> thank you in advance!
+>
+> steef
+>
+>
+hi,
+i'm think by pressing "q".
+
+-- 
+bye,
+goran dobosevic
+hrvatski: www.dobosevic.com
+  english: www.dobosevic.com/en/
+registered linux user #503414
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bebd280.9010303@dobosevic.com
+
+

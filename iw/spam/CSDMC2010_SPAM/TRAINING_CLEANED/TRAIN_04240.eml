@@ -1,0 +1,57 @@
+None> let me guess, you haven't tried the boot parameter root=/dev/hda2 if you
+> are using lilo??
+
+ Ah, you see - cobalt's don't use lilo. They have an openboot-like prom
+that looks in an ext2 partition in /dev/hda1 for a file called
+/boot/vmlinux.gz - nothing else.
+
+ The only way I think you can set parameters is with a "set_params" line.
+
+ However, when I run 
+    set_params root=/dev/hda2
+ and then run:
+    bfd /boot/vmlinux.gz
+
+ It boots the old kernel, I assume from the prom. It seems to do this, if
+something goes wrong - no error, just boots the default kernel.
+
+ BTW, 'bfd' means 'boot from disk'.
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+re: [ilug] rh7.3 on cobalt - the saga continueson tue, aug 13, 2002 at 06:54:28am +0100, anders holm mentioned:
+> let me guess, you haven't tried the boot parameter root=/dev/hda2 if you
+> are using lilo??
+
+ ah, you see - cobalt's don't use lilo. they have an openboot-like prom
+that looks in an ext2 partition in /dev/hda1 for a file called
+/boot/vmlinux.gz - nothing else.
+
+ the only way i think you can set parameters is with a "set_params" line.
+
+ however, when i run 
+    set_params root=/dev/hda2
+ and then run:
+    bfd /boot/vmlinux.gz
+
+ it boots the old kernel, i assume from the prom. it seems to do this, if
+something goes wrong - no error, just boots the default kernel.
+
+ btw, 'bfd' means 'boot from disk'.
+
+kate
+
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

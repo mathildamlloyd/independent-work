@@ -1,0 +1,22 @@
+you seem to have configuration files of older texlive packages on your
+system (marked with "rc" in your dpkg output).
+
+so try to get rid of them and, may be, update your
+texlive-installation'. with aptitude the commands are
+
+aptitude purge ~c            # this removes all old configuration files
+
+aptitude update
+aptitude install ~utexlive   # update of all texlive packages
+
+-- 
+regards,
+jrg-volker.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hre6lt$495$1@dough.gmane.org
+
+

@@ -1,0 +1,46 @@
+on may 22, 2010, at 9:30 am, paul libbrecht wrote:
+
+> le 22-mai-10 =e0 17:36, mike swingler a =e9crit :
+>=20
+>>> i don't think this was mentioned but the mac beta of the chrome =
+browser will now run applets which i gather is dependent on this java =
+upgrade.
+>>>=20
+>>> (not that i am in any way suggesting mac users should use anything =
+other than safari themselves, but if one produces web sites that contain =
+java applets it is obviously something which one has to be aware of.)
+>>=20
+>> this is because the out-of-process plugin2 is now present in =
+/library/internet plug-ins by default, and is picked up automatically by =
+browsers that support it.
+>=20
+> which browsers is that?
+> my java preferences indicate i wish jdk 1.6 but browserspy confirms =
+i'm running 1.5:
+> http://browserspy.dk/java.php
+> (for safari and camino at least)
+
+off the top of my head:
+
+safari will pickup plugin2 if plugin1 is not present - which java =
+preferences toggles
+chrome picks up plugin2 only
+firefox is hardwired to plugin1 with the jep/mrj, unless you remove it =
+them from (app)/contents/macos/plugins
+camino is also hardwired with the jep/mrj, but does not pick up plugin2 =
+if they are disabled (not sure why)
+opera seems to always die on launch for me
+
+regards,
+mike swingler
+java runtime engineer
+apple inc.
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

@@ -1,0 +1,35 @@
+hi!
+
+asterisk in debian/lenny claims to be bristuffed, not? at least the
+the debian patch tracking system shows the bristuff-patches:
+
+[1] http://bit.ly/brrhe7
+
+we have a quadbri-card and recently needed support from junghanns.net
+but they refused telling us there is no bristuff installed because of
+the show version output:
+
+*cli> show version
+asterisk 1.4.21.2~dfsg-3+lenny1 built by pbuilder @ grnetbox on a  
+x86_64 running linux on 2009-12-14 19:04:56 utc
+
+why was the "bristuffed" line removed? debian/etch did have that
+postfix.
+
+after telling them debian/lenny is bristuffed they said this
+"installation method" is not supported. huh?!
+does anyone has a comment on this?
+
+greetings,
+ - darsha
+
+
+p.s.: x-posted to debian-user and asterisk-user list.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bc20abe.1020103@syn-net.org
+
+

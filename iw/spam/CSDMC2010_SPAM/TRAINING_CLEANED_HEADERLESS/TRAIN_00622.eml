@@ -1,0 +1,104 @@
+i too have been having issues with gl stuff (work just added some 3d =
+stuff recently to our software). i just figured it was unsupported.=20
+
+i'm running (under vmware) a fedora 12 x86_64 vm (no vmware tools =
+installed)... i use ssh -x from osx to the vm.. i then tried the line =
+you suggested:=20
+
+[john@subvale ~]$ libgl_always_indirect=3d1 glxgears
+x error of failed request:  badalloc (insufficient resources for =
+operation)
+  major opcode of failed request:  147 (glx)
+  minor opcode of failed request:  3 (x_glxcreatecontext)
+  serial number of failed request:  22
+  current serial number in output stream:  24
+
+i see a window created then disappear, and that error in my ssh session.
+
+(i run other x stuff through that ssh session just fine.)
+
+--john
+
+
+on apr 7, 2010, at 10:49 pm, jeremy huddleston wrote:
+
+> there is a bug in your remote mesa.
+> see https://bugs.freedesktop.org/show_bug.cgi?id=3d24226
+>=20
+>=20
+> you should be able to do it via:
+> libgl_always_indirect=3d1 glxgears
+>=20
+> that works for me.
+>=20
+>=20
+> on apr 7, 2010, at 19:17, james gunning wrote:
+>=20
+>> dear jeremy,
+>>                 thanks for all your great work on xquartz. i'm =
+running the latest 2.5.0.
+>> i wonder if you can send to the list some clarification (or a url) =
+about remote opengl.
+>>=20
+>> i find at present i can't get a glxgears from a remote linux box to =
+work
+>> with any combination of=20
+>> libgl_always_software
+>> libgl_always_indirect
+>> libgl_always_hardware
+>>=20
+>> at present.=20
+>>=20
+>> with libgl_always_indirect unset
+>> glxinfo gives me
+>> name of display: localhost:10.0
+>> error: couldn't find rgb glx visual or fbconfig
+>>=20
+>> with libgl_always_indirect set, glxinfo seems ok:
+>> ...
+>> name of display: localhost:10.0
+>> display: localhost:10  screen: 0
+>> direct rendering: no (libgl_always_indirect set)
+>> server glx vendor string: sgi...
+>> ....
+>>=20
+>>=20
+>> but glxgears yields
+>> x error of failed request:  badalloc (insufficient resources for =
+operation)
+>>  major opcode of failed request:  147 (glx)
+>>  minor opcode of failed request:  3 (x_glxcreatecontext)
+>>  serial number of failed request:  20
+>>  current serial number in output stream:  22
+>>=20
+>> in previous versions, i got remote opengl to work ok via =
+libgl_always_indirect.
+>> i'm doubtless confused. any clarifications welcome.
+>>=20
+>> very best wishes,=20
+>>        james.
+>>=20
+>>  _______________________________________________
+>> do not post admin requests to the list. they will be ignored.
+>> x11-users mailing list      (x11-users@lists.apple.com)
+>> help/unsubscribe/update your subscription: =
+http://lists.apple.com/mailman/options/x11-users/jeremyhu%40freedesktop.or=
+g
+>>=20
+>> this email sent to jeremyhu@freedesktop.org
+>=20
+> _______________________________________________
+> do not post admin requests to the list. they will be ignored.
+> x11-users mailing list      (x11-users@lists.apple.com)
+> help/unsubscribe/update your subscription: =
+http://lists.apple.com/mailman/options/x11-users/garionphx%40csmining.org
+>=20
+> this email sent to garionphx@csmining.org
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+x11-users mailing list      (x11-users@lists.apple.com)
+help/unsubscribe/update your subscription: http://lists.apple.com/mailman/options/x11-users/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

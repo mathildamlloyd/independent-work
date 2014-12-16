@@ -1,0 +1,78 @@
+james raftery wrote:
+> 
+> i don't know what role ns0 plays in relation to the ie zone. it's
+> certainly not involved in the regular resolution process. it may
+> be involved in zone distribution as you suggest. iirc (and i often
+> don't) on friday ns0 had a serial that none of the ie nameservers
+> shared. unfortunately i don't have a record of that.
+
+>>from indexing cno, ns0 appears to be iedr's cno nameserver for its cno
+domains (iedr.com and others).
+ 
+> > this whole thing does seriously bring into question iedr's decision to
+> > outsource the technical admininstration of .ie to a company that
+> > apparently does not even admin its own dns. it is a nice story though -
+> > almost as good as the time that .ie disappeared for 8 hours in july
+> > 1998.
+> 
+> ... and only you noticed :)
+> [ messages on the iedr-forum list at the time don't support
+>   your assertion ]
+
+yeah but i was right and i was there. the people who were saying that it
+did not happen did not see the fadeout in progress. it only came back
+after the server was rebooted properly. however improbable it seemed at
+the time, the nameservers came back up after a power outage without the
+.ie zonefile. as a result it, there was nothing in the file that the
+secondaries picked up. at the time, i thought that the file was on an
+nfs. but if it regenerated after reboot, and the nfs input was not
+there, it would have generated a blank zonefile - that makes some sense.
+history now but it has an alarming relevance. :)
+ 
+> as an aside, shortly after my note on friday uucp-gw-1.pa.dec.com and
+> uucp-gw-2.pa.dec.com stopped responding to dns requests. so ie had
+> two dead nameservers, four stuck a week in the past and three
+> working correctly. marvellous.
+
+confirm that. the nameservers themselves had connectivity problems from
+what i could see and it was going on for a while, even *after* the
+initial soa problems. 
+
+i am thinking of writing a simple .ie secondary state monitor for
+inclusion on whoisireland.com as these guys seem to be technologically
+incapable of running their own dnses. what kind of distorted logic hands
+the admin of a national tld to a company that does not even handle dns
+for its own domain? whatever selection process iedr used should be
+investigated by the relevant government department, especially as the
+company supposedly providing technical administration to iedr did not
+actually spot this loss of synch. the iedr contract with the company
+should be reviewed in the light of this event. this kind of 1 week loss
+of synch should not happen with a national domain. ireland as e-hub -
+more like e-jit central! :)
+
+regards...jmcc
+-- 
+********************************************
+john mccormac            * hack watch news
+jmcc@hackwatch.com       * 22 viewmount, 
+voice:   +353-51-873640  * waterford,
+bbs&fax;: +353-51-850143  * ireland
+http://www.hackwatch.com/~kooltek
+********************************************
+
+-----begin pgp public key block-----
+version: 2.6
+
+mqcnazaypnsaaaeeapgthanyitutnawf8bu6mf5pcblqxdeuhf3xt6uol+/od+z+
+zocax8ka9ljbjuqyw8hlqvtv5kcellrp2hpqmk7ypow1fqwlptjof+zmcxevd1qz
+tret2vs/kirqryvkoaxojhqizur1g3ovbnidpkeo4kkulz9xkuxcgzsulkkvaaux
+tcjkb2huie1jq29ybwfjidxqbwnjqghhy2t3yxrjac5jb20+tbjqbwnjqghhy2t3
+yxrjac5jb20=
+=stfy
+-----end pgp public key block-----
+_______________________________________________
+iiu mailing list
+iiu@iiu.taint.org
+http://iiu.taint.org/mailman/listinfo/iiu
+
+

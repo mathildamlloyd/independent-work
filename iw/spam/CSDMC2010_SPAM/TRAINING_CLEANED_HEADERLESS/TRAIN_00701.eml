@@ -1,0 +1,31 @@
+on 2010-04-07 16:12, ron johnson wrote:
+[snip]
+> 
+> mart's method is the shell way.  the 3gl way is:
+> 
+> grep -w "$name" "$file"
+> tmp=$?
+> if [ "$tmp" = "1" ];
+
+that should be:
+
+if [ "$tmp" = "0" ];
+
+> then
+>     echo -e "$name\n" >> "$file"
+> fi
+> 
+> 
+
+
+-- 
+"history does not long entrust the care of freedom to the weak
+or the timid."  dwight eisenhower
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bbd0c09.4070304@cox.net
+
+

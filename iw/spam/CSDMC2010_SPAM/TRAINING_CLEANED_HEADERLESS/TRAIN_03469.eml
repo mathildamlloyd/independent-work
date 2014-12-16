@@ -1,0 +1,65 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=utf-8
+content-transfer-encoding: quoted-printable
+
+i may be a light debian user. 'cause i simply use gnome power manager as
+battery tool, supposed to be the default power manager in gnome. i think it
+is kind of dull. i've found battery using up much more quickly under debian
+than it under windows(yes, i'm using a dual-booting laptop).
+
+so, is this just because i choosed a unsuitable tool? or it has any other
+reason. in the comparison mentioned above, i was doing some file work and/o=
+r
+running emacs
+
+on mon, apr 19, 2010 at 11:29 pm, bob proulx  wrote:
+
+> joe emenaker wrote:
+> > i'm looking for a good battery charge/discharge profiler tool for my
+> > ubuntu laptop.
+>
+> of course i am sure that you know you are posting about ubuntu to the
+> debian laptop mailing list?  the least you could do is to lie to us
+> and say you are running debian when posting to a debian list.  :-)
+>
+> > a couple of years ago, i came across a really neat tool for windows for
+> > estimating the time remaining until the battery is completely charged o=
+r
+> > discharged. it was pretty clever about how it went about it. it would
+> > ...
+> > tool was learning what "80%" /really/ meant to that battery.
+>
+> i have often wanted this too.  and your other wishlist items as well.
+> as far as i know there isn't a tool that does exactly this for
+> gnu/linux in general or on debian in particular.  if you find one i
+> would be interested in it.
+>
+> there are some useful tools available though.  you might look at 'ibam'.
+>
+>  ibam is an advanced battery monitor for laptops, which uses
+>  statistical and adaptive linear methods to provide accurate
+>  estimations of minutes of battery left or of the time needed until
+>  full recharge. it requires apm, acpi or pmu.
+>
+> it needs some training.  but given that it does perform fairly well.
+> unfortunately it isn't tied into the system tray tools and so isn't
+> going to be a seemless integration there.  it is available in gkrellm
+> if you use that stack.  see the gkrellm-ibam package.
+>
+> bob
+>
+> -----begin pgp signature-----
+> version: gnupg v1.4.9 (gnu/linux)
+>
+> ieyearecaayfakvmyzoacgkq0prco8e2ulydhacdgu6+dgfyc/jebz7zkj1dadeq
+> qqianifmqo0x0ow6l6rsl4pqzdputg6z
+> =3debsh
+> -----end pgp signature-----
+>
+>
+
+
+--=20
+mit freundlichen gr=c3=bc=c3=9fen
+
+zichen chen

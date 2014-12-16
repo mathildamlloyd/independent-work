@@ -1,0 +1,64 @@
+hi,
+
+matthew french:
+> declan houlihan mentioned:
+> > we're actually investigating switching from sparc/solaris to
+> > intel/linux.
+boo hisss *duck* :)
+
+> well, why not try linux on sparc. 
+>
+> and you get a working version of your favourite kde/gnome desktop instead of
+> dte, uhm, i mean cde.
+um.. http://wwws.sun.com/software/star/gnome/ integrated into solaris.
+
+of course then there's http://wwws.sun.com/software/solaris/freeware/ for 
+solaris 9 which gives you afterstep and windowmaker among other stuff. my 
+personal favourite at the moment is enlightenment which also has solaris 
+packages available for download.
+
+> > basically the whole installation procedure is
+> > "boot net - install"
+> talking of which, you can install sparc linux using this technique as well.
+> the image takes a while to load, but once this is done you can install in
+> the normal fashion.
+out of curiosity, does `normal fashion` mean that you still have to do the 
+interactive customisations or is it like solaris jumpstart where you can 
+specify everything on the install server, do `boot net - install` go home, and 
+come in to a fully installed and patched desktop the next morning?
+
+> there are minor problems: like the serial console drivers, but for workstation 
+> installs i suspect it will work fine.
+i don't see why this should be a _major problem. the prom (ie the "ok" prompt) 
+is almost at the hardware level and hence dosent depend on the os so you 
+should be able to connect to that easily enough. once the machine is installed 
+cant you just log in over the network? the network is the computer after all 
+(sorry couldn't resist!)
+
+valen@tuatha.org said:
+> side, sun's terminal handling leaves a lot to be desired - it won't
+> work properly on a wyse 120+ for instance, no matter what emulation
+> mode the wyse is trying to do.
+hmm... i'm not familiar with wyse stuff, but i only need to use the console 
+when something breaks, then anything capable of something basic like vt100 at 
+9600 8n1 seems to work  . not sure why you'd need to worry about this much 
+really, just set up jumpstart to install automatically then you don't need to 
+look at the console at all.
+
+cheers,
+~al
+
+-- 
+expressed in this posting are my opinions.  they are in no way related
+to opinions held by my employer, sun microsystems.
+statements on sun products included here are not gospel and may
+be fiction rather than truth.
+
+
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

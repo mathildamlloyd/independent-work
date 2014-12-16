@@ -1,0 +1,35 @@
+-----begin pgp signed message-----
+hash: sha1
+
+this looks like kerneloops sends the oopses through a simple
+url. strange. it seems not to even ping a reference ip to see if the
+connexion is still alive. weird.
+
+submit-url = http://submit.kerneloops.org/submitoops.php is appended
+at the end of my kerneloops.conf.
+
+
+
+- -- 
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+- -- 
+
+life is like a box of chocolate, you never know what you're gonna
+  get.
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: processed by mailcrypt 3.5.8 
+
+ieyearecaayfakvtwzcacgkqm0llzlt8mhxaoaczasvlasane6dqtrtgoojdfiti
+stkanjwrxyotnvuf6zxson6y1fkwy3e7
+=uuad
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87r5m4d0w8.fsf@merciadriluca-eee.workgroup
+
+

@@ -1,0 +1,33 @@
+From nobody Tue Dec 16 09:15:45 2014
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Sven Joachim wrote:
+> Syntax highlighting in Emacs' shell-script-mode leaves much to be
+> desired, so this is not really a bad sign.  Does it work if you leave
+> out the apostrophes?
+>  =20
+It worked anyway. But emacs confused me. Sorry!
+
+--=20
+Merciadri Luca
+See http://www.student.montefiore.ulg.ac.be/~merciadri/
+I use PGP. If there is an incompatibility problem with your mail
+client, please contact me.
+
+
+
+
+From nobody Tue Dec 16 09:15:45 2014
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iEYEARECAAYFAkvjHvwACgkQM0LLzLt8MhxX4QCfUxjmop2Rt+XTVlZUFltoku2U
+ZBgAnjI8JdVC9sNBi6UotYu8I/EwPz68
+=qwR/
+-----END PGP SIGNATURE-----

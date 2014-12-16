@@ -1,0 +1,38 @@
+on fri, aug 02, 2002 at 05:21:22pm +0100, conor daly wrote:
+
+> my 17" crt monitor having drowned in a flood (10cm squared of burned 
+> circuit board urgh!) , i'm thinking of a 15" lcd as a replacement.  
+> what with me going to the continent and all next week, i might wait and 
+> buy one there (for a reasonable price (dave neary!  any good sources?)).
+
+conor - it's a rather large continent - people might need to know where you
+are going to suggest sources. and if you're buying abroad, make sure you get
+to test it - many places won't have facilities for you to do that.
+
+> question is: can i just plug in _any_ lcd monitor and expect it to work?  
+> are there special incantations needed for xfree86 to work.  needless to
+> say, it'll be a bit difficult to bring it back to the shop once i'm home 
+> in dublin and find it doesn't work!
+
+any monitor should just work - they all have vga connectors and any half
+decent brand will be know about by xfree setup programs in modern
+distributions. however, if you have the budget (insurance paying for the
+dead monitor, perhaps ? - and where was your monitor that it got caught in a
+flood ?) getting a monitor with a dvi input is best. of course, you'll need
+a dvi out video card then, too. dvi provides a much better picture than vga
+because it removes the analog stage - basically dvi gives you a direct
+connection from video ram pixels to monitor pixels - the best pictures i've
+ever seen on a computer is on my notebook screen at 1400x1050 (which doesn't
+use dvi, but an internal connection which has the same effect). brand wise,
+i like iiyama a lot and i think they may have a europe wide warranty.
+
+
+
+niall
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

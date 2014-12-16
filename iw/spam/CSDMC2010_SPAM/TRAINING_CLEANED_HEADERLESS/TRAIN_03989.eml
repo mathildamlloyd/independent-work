@@ -1,0 +1,30 @@
+
+hi all,
+
+i was having some problems with ooffice so i did "apt-get update" and
+then ran "apt-get upgrade" to see if ooffice was among the packages to
+be upgraded.  it wasn't, but i tried "apt-get install ooffice"
+anyway, and presto it started upgrading ooffice.
+
+so i looked at the man-page:
+
+ upgrade
+is used to install the newest versions of all packages currently
+installed on the system
+
+i did, in fact, have ooffice installed so i'm not clean on why upgrade
+alone did seem to want to upgrade the package.
+
+any ideas ?
+
+thanks,
+
+brian
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100405213737.0656411a@windy.deldotd.com
+
+

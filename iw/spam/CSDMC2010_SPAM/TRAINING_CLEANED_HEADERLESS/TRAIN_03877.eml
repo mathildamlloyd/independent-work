@@ -1,0 +1,57 @@
+stephen powell wrote:
+> on mon, 10 may 2010 15:16:21 -0400 (edt), kent west wrote:
+>   
+>> something i've never figured out with debian is how to know which 
+>> package to install to get a certain printer driver.
+>>
+>> i know i've printed to this hp color laserjet cm3530 from a debian box 
+>> before, but i have no idea what package i had installed to do so, nor 
+>> what driver i chose (since i can't find the cm3530 listed in my 
+>> web-based cups setup (localhost:631)).
+>>
+>> i'm unsure if i don't have the right package installed, or if i used a 
+>> different driver in the past. google and the debian search engines are 
+>> not helping me one whit.
+>>
+>> i've never really understood the relationship between printer drivers 
+>> for general use and printer drivers for gutenprint (whatever that is), 
+>> or the relationship between those and/or cup-driver-gutenprint and/or 
+>> cupsys-driver-gutenprint (and the descriptions are less than helpful), 
+>> so any help would be appreciated.
+>>
+>> thanks!
+>>     
+>
+> what release of debian are you using?  lenny?  squeeze?  sid?
+>   
+
+lenny.
+
+> i've experienced what you describe before, mainly because older releases
+> of debian used the lpr/lpd printing setup, and i used apsfilter to
+> install printer drivers.  then when i switched to a newer release of
+> debian that used cups, and foomatic did not have a driver for the printer,
+> especially for older or less popular printers.
+>
+> http://www.linuxprinting.org and http://www.cups.org are good places
+> to start looking for documentation.
+>   
+
+but that's going outside of the debian box. i can do that, but i tend to 
+think debian should have everything needed for non-proprietary stuff. 
+maybe i expect too much from the debian packaging/documentation.
+
+
+-- 
+kent west     <*)))><
+http://kentwest.blogspot.com
+praise yah! \o/
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4be86bb5.4050700@acu.edu
+
+

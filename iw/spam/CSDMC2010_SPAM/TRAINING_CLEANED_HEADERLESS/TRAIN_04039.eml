@@ -1,0 +1,33 @@
+on fri, jul 19, 2002 at 08:48:40pm +0100, ronan cunniffe wrote:
+> quoting ronan waide :
+> 
+> > sure, but soft links would do the same. to be honest, i'm trying to
+> > think of a useful use of hard links right now, and i'm a little
+> > stumped. there's gotta be some benefit that i'm missing that's
+> > immediately obvious to everyone.
+> 
+> using niall's example - single set of files but >1 namespace, and suppose that
+> you want to delete some items from the set according to rules applied to the
+> namespaces.  with soft links you need an *extra* namespace the others refer to,
+> and after filtering the namespaces, you have to do a manual reference count to
+> decide what goes and what stays.  with hard links, you just unlink and deletion
+> is automatic.
+
+couldn't have put it better myself, but that's not going to stop me trying :-) 
+the above situation occurs precisely because of the major functional difference
+between symbolic links (aka soft links, or symlinks to their friends) and hard
+links. two hard links to the same file are exactly equivalent - one is no more
+the files "real" directory entry than is the other. otoh a symlink is a special
+thing which is a link to a real file, and when the file linked to is erased, you
+end up with a broken symbolic link - you can't have a broken hard link (except
+of course in the case of a banjaxed filesystem).
+
+
+niall
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

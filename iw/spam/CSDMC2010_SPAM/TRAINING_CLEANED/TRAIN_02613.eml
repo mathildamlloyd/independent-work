@@ -1,0 +1,153 @@
+NoneOn Sat, May 1, 2010 at 12:27 PM, Anand Sivaram <aspnair@csmining.org> wrote:
+
+> On Sat, May 1, 2010 at 15:43, James Stuckey <jhstuckey@csmining.org> wrote:
+> > If I try to play them in MOC I get: (0) Can't set audio parameters:
+> Invalid
+> > argument
+> >
+> > With mplayer I see:
+> >
+> > MPlayer SVN-r30656 (C) 2000-2010 MPlayer Team
+> > Can't open joystick device /dev/input/js0: No such file or directory
+> > Can't init input joystick
+> > mplayer: could not connect to socket
+> > mplayer: No such file or directory
+> > Failed to open LIRC support. You will not be able to use your remote
+> > control.
+> >
+> > Playing 02 Lohengrin - Prelude, Act 1.flac.
+> > Audio only file format detected.
+> >
+> ==========================================================================
+> > Opening audio decoder: [ffmpeg] FFmpeg/libavcodec audio decoders
+> > AUDIO: 96000 Hz, 6 ch, s32le, 6195.6 kbit/33.61% (ratio: 774455->2304000)
+> > Selected audio codec: [ffflac] afm: ffmpeg (FFmpeg FLAC audio)
+> >
+> ==========================================================================
+> > [AO_ALSA] alsa-lib: pcm_hw.c:1293:(snd_pcm_hw_open) open
+> /dev/snd/pcmC0D0p
+> > failed: Device or resource busy
+> > [AO_ALSA] Playback open error: Device or resource busy
+> > Failed to initialize audio driver 'alsa'
+> > [AO OSS] audio_setup: Can't open audio device /dev/dsp: Device or
+> resource
+> > busy
+> > [AO_ALSA] alsa-lib: pcm_hw.c:1293:(snd_pcm_hw_open) open
+> /dev/snd/pcmC0D0p
+> > failed: Device or resource busy
+> > [AO_ALSA] Playback open error: Device or resource busy
+> > [AO ARTS] loading the aRts backend "/usr/lib/libartscbackend.la" failed
+> > [AO ESD] esd_open_sound failed: Connection timed out
+> > AO: [pulse] Init failed: Connection refused
+> > [JACK] cannot open server
+> > ao_nas: init(): Can't open nas audio server -> nosound
+> > [AO SDL] Samplerate: 96000Hz Channels: Stereo Format s32le
+> > [AO SDL] Unsupported audio format: 0x19.
+> > [AO_ALSA] alsa-lib: pcm_hw.c:1293:(snd_pcm_hw_open) open
+> /dev/snd/pcmC0D0p
+> > failed: Device or resource busy
+> > [AO SDL] Unable to open audio: Couldn't open audio device: Device or
+> > resource busy
+> > DVB card number must be between 1 and 4
+> > AO: [null] 96000Hz 6ch s32le (4 bytes per sample)
+> > Video: no video
+> > Starting playback...
+> > A:   3.5 (03.5) of 570.0 (09:30.0)  1.4%
+> > Exiting... (Quit)
+> >
+> > Running file on the file gives:
+> > flac: FLAC audio bitstream data, 24 bit, 6 channels, 96 kHz, 54720000
+> > samples
+> >
+> > This only happens with this file. The file plays on other systems
+> (windows).
+> >
+>
+> Most of the cheap in built audio cards could only support 16bit
+> 44100Hz/48000Hz
+> So just see the specification of your audio card.
+> But audio players could down sample them to 16bit 44100Hz/48000Hz,
+> windows player may be doing that.  But of course, that reduces the
+> quality.
+>
+>
+Ah, okay. So the decoding is being done on the sound card? In what sense
+does the sound card need to support the file type?
+re: can't play 24bit/96khz flac filesfrom nobody tue dec 16 07:55:46 2014
+content-type: text/plain; charset=iso-8859-1
+
+on sat, may 1, 2010 at 12:27 pm, anand sivaram  wrote:
+
+> on sat, may 1, 2010 at 15:43, james stuckey  wrote:
+> > if i try to play them in moc i get: (0) can't set audio parameters:
+> invalid
+> > argument
+> >
+> > with mplayer i see:
+> >
+> > mplayer svn-r30656 (c) 2000-2010 mplayer team
+> > can't open joystick device /dev/input/js0: no such file or directory
+> > can't init input joystick
+> > mplayer: could not connect to socket
+> > mplayer: no such file or directory
+> > failed to open lirc support. you will not be able to use your remote
+> > control.
+> >
+> > playing 02 lohengrin - prelude, act 1.flac.
+> > audio only file format detected.
+> >
+> ==========================================================================
+> > opening audio decoder: [ffmpeg] ffmpeg/libavcodec audio decoders
+> > audio: 96000 hz, 6 ch, s32le, 6195.6 kbit/33.61% (ratio: 774455->2304000)
+> > selected audio codec: [ffflac] afm: ffmpeg (ffmpeg flac audio)
+> >
+> ==========================================================================
+> > [ao_alsa] alsa-lib: pcm_hw.c:1293:(snd_pcm_hw_open) open
+> /dev/snd/pcmc0d0p
+> > failed: device or resource busy
+> > [ao_alsa] playback open error: device or resource busy
+> > failed to initialize audio driver 'alsa'
+> > [ao oss] audio_setup: can't open audio device /dev/dsp: device or
+> resource
+> > busy
+> > [ao_alsa] alsa-lib: pcm_hw.c:1293:(snd_pcm_hw_open) open
+> /dev/snd/pcmc0d0p
+> > failed: device or resource busy
+> > [ao_alsa] playback open error: device or resource busy
+> > [ao arts] loading the arts backend "/usr/lib/libartscbackend.la" failed
+> > [ao esd] esd_open_sound failed: connection timed out
+> > ao: [pulse] init failed: connection refused
+> > [jack] cannot open server
+> > ao_nas: init(): can't open nas audio server -> nosound
+> > [ao sdl] samplerate: 96000hz channels: stereo format s32le
+> > [ao sdl] unsupported audio format: 0x19.
+> > [ao_alsa] alsa-lib: pcm_hw.c:1293:(snd_pcm_hw_open) open
+> /dev/snd/pcmc0d0p
+> > failed: device or resource busy
+> > [ao sdl] unable to open audio: couldn't open audio device: device or
+> > resource busy
+> > dvb card number must be between 1 and 4
+> > ao: [null] 96000hz 6ch s32le (4 bytes per sample)
+> > video: no video
+> > starting playback...
+> > a:   3.5 (03.5) of 570.0 (09:30.0)  1.4%
+> > exiting... (quit)
+> >
+> > running file on the file gives:
+> > flac: flac audio bitstream data, 24 bit, 6 channels, 96 khz, 54720000
+> > samples
+> >
+> > this only happens with this file. the file plays on other systems
+> (windows).
+> >
+>
+> most of the cheap in built audio cards could only support 16bit
+> 44100hz/48000hz
+> so just see the specification of your audio card.
+> but audio players could down sample them to 16bit 44100hz/48000hz,
+> windows player may be doing that.  but of course, that reduces the
+> quality.
+>
+>
+ah, okay. so the decoding is being done on the sound card? in what sense
+does the sound card need to support the file type?

@@ -1,0 +1,59 @@
+NoneOn Tue, 20 Apr 2010 15:22:00 +0000 (UTC)
+T o n g <mlist4suntong@yahoo.com> wrote:
+
+Hello T,
+
+> How can I trick my Debian into thinking that a package is not
+> installed?
+
+Your best option is, as others have said, to use pinning.  If that
+doesn't work, or you prefer not to use that method, you could
+
+1) simply uninstall durep using the package manager you usually use,
+then d/l the package from the repos, and install, by hand, from your
+local copy.
+
+or
+
+2) build and install from source as the package manager will know
+nothing about it that way.
+
+--=20
+ Regards  _
+         / )           "The blindingly obvious is
+        / _)rad        never immediately apparent"
+
+I must be hallucinating, watching angels celebrating
+There Must Be An Angel (Playing With My Heart) - Eurythmics
+re: how to trick my debian in thinking that a package is not
+ installedfrom nobody tue dec 16 07:55:44 2014
+content-type: text/plain; charset=us-ascii
+content-transfer-encoding: quoted-printable
+
+on tue, 20 apr 2010 15:22:00 +0000 (utc)
+t o n g  wrote:
+
+hello t,
+
+> how can i trick my debian into thinking that a package is not
+> installed?
+
+your best option is, as others have said, to use pinning.  if that
+doesn't work, or you prefer not to use that method, you could
+
+1) simply uninstall durep using the package manager you usually use,
+then d/l the package from the repos, and install, by hand, from your
+local copy.
+
+or
+
+2) build and install from source as the package manager will know
+nothing about it that way.
+
+--=20
+ regards  _
+         / )           "the blindingly obvious is
+        / _)rad        never immediately apparent"
+
+i must be hallucinating, watching angels celebrating
+there must be an angel (playing with my heart) - eurythmics

@@ -1,0 +1,17 @@
+after doing a apt-get dist-update and restarting the pc because of some 
+errors i'm getting the problem as show in the image.
+
+http://i4.photobucket.com/albums/y116/fscussel/untitled.jpg
+
+
+can't dist-update and system is not working correctly, many missing 
+libraries which i don't know how to reinstall since it doesn't allow because 
+of deppendencies. i'm lost. 
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/d0b0add22f8e4df9998b38187d784c04@phoenix
+
+

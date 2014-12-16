@@ -1,0 +1,67 @@
+-----begin pgp signed message-----
+hash: sha1
+
+florian kulzer wrote:
+> did you have any security upgrades lately 
+
+sure, i install them regularly. doesn't everybody?
+
+> or did you install packages from backports or volatile
+
+i do have the following as part of my sources.conf:
+
+deb http://volatile.debian.org/debian-volatile lenny/volatile main
+contrib non-free
+deb-src http://volatile.debian.org/debian-volatile lenny/volatile main
+contrib non-free
+deb http://www.debian-multimedia.org lenny main
+
+i am not sure if i actually installed anything from volatile.
+
+> or any non-debian stuff? 
+
+yes, from debian-multimedia.org. presumably that counts as non-debian.
+
+> another thing to try is to activate the desktop icons for removable
+> devices and test if users can mount the devices by clicking on the
+> icons.
+
+sorry to sound stupid, but how do i activate those? right now i don't
+see any icons on the desktop when plugging devices in.
+
+> i suspect that the fstab entry is not really a problem. maybe you can
+> setup pmount for the individual users so that it is more convenient.
+
+yes, the pmount works fine now, it did not even require setting anything up.
+
+> unfortunately i do not understand what else your dbus error message is
+> trying to tell us. i would run "lshal --monitor", then plug in a usb
+> stick and try to mount it; maybe that will turn up something useful.
+> 
+> seeing what hal knows about a usb stick might also help; hal can be
+> queried like this:
+> 
+> lshal -u $(hal-find-by-property --key block.device --string "/dev/sdx")
+> lshal -u $(hal-find-by-property --key block.device --string "/dev/sdx1")
+> 
+> (replace "sdx" as is appropriate)
+
+thanks for showing and explaining lshal to me. i'll explore with it and
+report if i find something interesting.
+
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org
+
+ieyearecaayfakvdqa4acgkq+vsrxyk4408syacelv3a1tt3vkgvtwya+obz71nu
+igqan0hgk+w/0ykmqb/vtjnrf1oelyib
+=3b0a
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bc3a80f.5010907@web.de
+
+

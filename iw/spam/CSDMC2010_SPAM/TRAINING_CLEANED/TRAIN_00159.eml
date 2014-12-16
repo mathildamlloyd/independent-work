@@ -1,0 +1,90 @@
+None> On Mar 27, 2010, at 3:11 PM, Martin Nedbal wrote:
+>
+>    
+>> Hi,
+>> I have a simple JNI-based code for embedding WebKit into Swing GUI (I
+>> can post sources if needed). It works fine while in regular Swing JFrame
+>> but it fails to work when added to modal JDialog - events are blocked
+>> apparently. WebKit view shows properly, but if I request a page to be
+>> loaded into it it's not loaded and FrameLoaderDelegate does not get
+>> didFinishLoadForFrame nor didFail* calls.
+>>
+>> I wasn't able to find much about this issue in Google/Apple mailing
+>> lists. The only thing I found was a thread from 2005 discussing nasty
+>> workaround based on having non-modal dialog with blocking loop after
+>> setVisible() call.
+>>
+>> It can be reproduced on Snow Leopard with latest Java6 installed but it
+>> does not really seems to be dependent on versions that much.
+>>
+>> Any ideas how to solve this problem in a clean way?
+>>      
+> I think the problem is that when an AWT-based dialog is up, the runloop is being run in a private Java-modality mode that doesn't let WebKit "events" occur the same way it lets key, mouse, and other events through. But that's just a guess.
+>
+> If you have reproducible test case, can you submit it to<http://bugreporter.apple.com>, and we can take a look and see if there isn't something we can do from within the AWT.
+>
+> Thanks,
+> Mike Swingler
+> Java Runtime Engineer
+> Apple Inc.
+>    
+Sure, no problem.
+
+I'll prepare simple example and file it to bugreporter.
+
+Best regards,
+   Martin
+ _______________________________________________
+Do not post admin requests to the list. They will be ignored.
+Java-dev mailing list      (Java-dev@lists.apple.com)
+Help/Unsubscribe/Update your Subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+This email sent to mlsubscriber.tech@csmining.org
+
+re: events not being dispatched when having native cocoa component
+ in modal jdialogon 04/07/2010 06:48 pm, mike swingler wrote:
+> on mar 27, 2010, at 3:11 pm, martin nedbal wrote:
+>
+>    
+>> hi,
+>> i have a simple jni-based code for embedding webkit into swing gui (i
+>> can post sources if needed). it works fine while in regular swing jframe
+>> but it fails to work when added to modal jdialog - events are blocked
+>> apparently. webkit view shows properly, but if i request a page to be
+>> loaded into it it's not loaded and frameloaderdelegate does not get
+>> didfinishloadforframe nor didfail* calls.
+>>
+>> i wasn't able to find much about this issue in google/apple mailing
+>> lists. the only thing i found was a thread from 2005 discussing nasty
+>> workaround based on having non-modal dialog with blocking loop after
+>> setvisible() call.
+>>
+>> it can be reproduced on snow leopard with latest java6 installed but it
+>> does not really seems to be dependent on versions that much.
+>>
+>> any ideas how to solve this problem in a clean way?
+>>      
+> i think the problem is that when an awt-based dialog is up, the runloop is being run in a private java-modality mode that doesn't let webkit "events" occur the same way it lets key, mouse, and other events through. but that's just a guess.
+>
+> if you have reproducible test case, can you submit it to, and we can take a look and see if there isn't something we can do from within the awt.
+>
+> thanks,
+> mike swingler
+> java runtime engineer
+> apple inc.
+>    
+sure, no problem.
+
+i'll prepare simple example and file it to bugreporter.
+
+best regards,
+   martin
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

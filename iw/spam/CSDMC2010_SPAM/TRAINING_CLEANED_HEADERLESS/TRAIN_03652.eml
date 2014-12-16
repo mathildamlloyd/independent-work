@@ -1,0 +1,53 @@
+on 4/24/2010 10:53 am, b. alexander wrote:
+> hi,
+>
+> i have a question on filesystems. back in the day, i started using 
+> reiser3. it was faster than ext3, and it could be extended without 
+> umounting the filesystem (which has since been fixed in ext3), plus, 
+> unlike any filesystem i have encountered, it could be reduced in size.
+>
+> well, now reiser3 is very long in the tooth, reiser4 will probably 
+> never go anywhere, so i'm wondering what filesystems are recommended. 
+> last i heard, ext4 is stablizing, but it had problems with filesystem 
+> corruption, though that was mid-fall last year, iirc.
+>
+> so now, i would like to slowly start replacing my reiser3 partitions 
+> with...something else. there are two options, the old standards, e.g. 
+> ext3/4, xfs, etc, and then there are a slew of new filesystems, such 
+> as nilfs2, btrfs and exofs.
+>
+> i'm talking about a range of machines, from workstations to servers to 
+> nfs and storage servers with multi-terabyte disks, and a backup server 
+> with several hundred gigs of backups.
+>
+> does anyone have suggestions and practical experience with the pros 
+> and cons of the various filesystems?
+>
+> thanks,
+> --b
+
+if file integrity are important to you, look for a fs that keeps 
+checksums of individual files.  otherwise, if a file becomes corrupted, 
+you'll never know it, unless you keep your own checksums.  there are 
+only a small handful of filesystems that keep checksums of your files.  
+btrfs and zfs come to mind.  i believe zfs is more mature than btrfs, 
+but it isn't in the kernel.  i believe the only way to get zfs on linux 
+is through fuse.
+
+there's also jfs, which has been around for a number of years, and is 
+mature.  it doesn't checksum your files, but it does use copy-on-write 
+(as do btrfs and zfs), which goes a long way to keeping your data from 
+getting corrupted, something xfs does not do.
+
+so if btrfs were more mature, or if zfs were included in the kernel, i'd 
+recommend either of those.  but as it is, i think jfs is the way to go.
+
+-- kevin
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bd3ad1b.70001@familyross.net
+
+

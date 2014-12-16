@@ -1,0 +1,35 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain;
+  charset="utf-8"
+content-transfer-encoding: quoted-printable
+
+hi, frank.=20
+try to set dhcp pool size in your router to 2 or 3
+=d0=92=d1=82=d0=be=d1=80=d0=bd=d0=b8=d0=ba 11 =d0=bc=d0=b0=d1=8f 2010 00:06=
+:28 you wrote:
+> hi guys,
+>=20
+> i'm having some headaches with our wlan. we're going online with 2
+> laptops, that means we try. we do have the following setup:
+>=20
+> the router is a speedport w 303v and we do have the folloeing laptops:
+> asus m6n, intel ipw2100 driver, debian/sid with wicd
+> acer aspire 5680, atheros ar2413 with the ath5k driver, ubuntu 8.10 with
+> network manager
+>=20
+> when my wife is online with her acer/ubuntu system i cannot connect with
+> my asus/debian machine. the wireless network is detected but i do not
+> get an ip address.this is from the wicd.log file:
+> no dhcpoffers received.
+> no working leases in persistent database - sleeping.
+> dhcp connection failed
+> exiting connection thread
+> sending connection attempt result dhcp_failed
+>=20
+> it does work the other way round though!
+>=20
+>=20
+> any ideas on where to look?
+>=20
+> thx frank
+>=20

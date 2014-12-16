@@ -1,0 +1,33 @@
+on 01/-10/-28163 02:59 pm, kelly clowers wrote:
+ > i don't have nvidia myself, but tt should be a matter of installing 
+nouveau,
+ > and then changing the "driver" line in /etc/x11/xorg.conf from "nv" to
+ >   "nouveau"
+ > (or adding the line in the "device" section if it doesn't exist).
+
+good old /etc/x11/xorg.conf. there isn't one on this system. i used to 
+hate fiddling around with that file. the transition to other means of 
+controlling video has been fraught with peril for some, but a few false 
+starts with video configuration on this system under various 
+distributions finally convinced me that the voyage needed to be undertaken.
+
+ > cheers,
+ > kelly clowers
+
+many thanks for your response.
+
+best,
+sam
+
+ps: i also sent this message from a different e-mail account. i figured 
+i'd resend it to clear up any question about who was actually responding 
+to the thread. sorry about the dumbness. too much swapping of systems 
+and info around this place.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4be9ad52.2060401@comcast.net
+
+

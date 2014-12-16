@@ -1,0 +1,84 @@
+on saturday 17 april 2010 05:35:45 nick boyce wrote:
+> on 17/04/2010 01:03, stan hoeppner wrote:
+> > camale=c3=b3n put forth on 4/16/2010 8:31 am:
+> >> it can be worst, though. there are manufacturers that paint all the ram
+> >> slots in black or using the same color and so forcing us to read the
+> >> manual >:-)
+> >
+> > the manufacturers have bastardized the color coding to the point it's
+> > useless; thus reading the manual is the only safe bet to get dual chann=
+el
+> > operation setup correctly.
+>
+> um ... just my 2p: [score -1, redundant]
+>
+> my current rig - abit nf7-s v2 mobo (nforce 2 chipset) and athlon xp cpu
+> - has 3 dimm slots all the same fetching shade of blue.  i initially
+> added two 256mb sticks in slots 1 & 2, and got dual channel operation
+> (the bios reports it at boot time : "dual channel operation enabled").
+> when i subsequently added another 512mb stick in slot 3 this did not
+> apparently affect dual channel operation (the message still appears).
+> maybe i get dual channel for the first 512mb, but only single channel
+> for the second 512mb.
+
+i too have an  abit nf7 (tho' not an -s).  the memory was installed by the=
+=20
+shop where i bought the components of my computer.  (i was intending to bui=
+ld=20
+it myself and he didn't trust me with the cpu or memory!!)  he told me taht=
+ i=20
+had dual channel memory installed, and would need to replace both 256 mb=20
+sticks if i increased the memory capacity.
+
+i have never seen any sign of dual channel operation. (tho' i didn't know w=
+hat=20
+to look for, which hardly helped!)
+
+dmidecode gives:
+
+memory device
+       [snip]
+        size: 256 mb
+        form factor: dimm
+        set: none
+        locator: a0
+        bank locator: bank0/1
+        [snip]
+
+memory device
+        [snip]
+        size: no module installed
+        form factor: dimm
+        set: none
+        locator: a1
+        bank locator: bank2/3
+        [snip]
+
+memory device
+        [snip]
+        size: 256 mb
+        form factor: dimm
+        set: none
+        locator: a2
+        bank locator: bank4/5
+       =20
+would i be correct in taking this to mean  that the memory modules appear t=
+o=20
+be incorrectly installed, and that i could improve my memory performance by=
+=20
+moving one of the modules that dual channel functions?  and also, if that=20
+does not give me enough improvement (which it almost certainly won't), i=20
+could add another module in the third channel, which would not necessarily=
+=20
+need to be the same size as the other two?
+
+tia
+lisi
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201004171604.06301.lisi.reisz@csmining.org
+
+

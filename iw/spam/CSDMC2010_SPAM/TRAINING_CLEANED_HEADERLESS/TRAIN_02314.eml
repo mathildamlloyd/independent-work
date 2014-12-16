@@ -1,0 +1,42 @@
+hi all,
+
+a few questions on class structure.
+
+i am working on an example to create a list of recent files that have been opened.
+
+this obviously involves a uitableview
+
+so i created a class called filelistview and made it a subclass of uitableview like:
+
+@interface filelistview : uitableview
+
+so i call the init method and i want to create the table with the items in it.
+
+here is what i am not understanding:
+1. using proper mvc, i should have a uitableviewcontroller and for a sequence of events, on init i should create the controller, assign my table to the controller, implement the necessary methods the uitableview requires and them populate the table. it does not make sense to me that on filelistview *filelist = [[filelistview alloc] init]; what i need to do.
+
+i guess i am confused by subclassing my filelistview to uitableview.
+
+do i create the table controller first, then create the table, then assign the table to the controller and then load the data into the controller so that it is reflected into the table?
+
+2. where can i find out what methods must be implemented as a requirement for a uitableview, i recall someplace stuff like minimumrows, style, etc.
+
+3. difference between a delegate and a controller?
+
+i found the table view programming guide so that will help, but can someone explain to me from a more generic stand point? maybe i need more study on mvc too.
+
+i am not using interfacebuilder, btw, but i would think that would be known since i am asking on an objective-c list....
+
+-jason
+
+as thomas edison said, "i have not failed. i've just found 10,000 ways that won't work."
+
+* sent from jason's ipad *
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+objc-language mailing list      (objc-language@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/objc-language/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

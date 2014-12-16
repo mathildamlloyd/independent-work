@@ -1,0 +1,22 @@
+url: 4538e94b3b2c6b19041756b37b1f9916
+date: not supplied
+
+since the amphetadesk source code is so easily modifiable on any platform, i've 
+been seeing some interesting hacks and modifications lately. the most powerful 
+of them is l.m. orchard's newest template[1], which provides an insane amount 
+of new features, including hiding old items, click counting, and an outline 
+based format. more than likely, a revised version of his hack will appear as a 
+selectable template in the next version (amphetadesk v0.94). 
+
+also of interest is brian cantoni's ftpstore[2]: _"ftpstore is a slight 
+addition to the amphetadesk news aggregator. the modified code will retrieve 
+the personal channel list from an ftp location during startup and store it back 
+to the same location during shutdown. this provides a simple method to keep 
+your saved channels in a network location. if you use amphetadesk at home and 
+at work, for example, this feature will let you keep your list of channels in 
+sync."_ it's a major improvement for amphetadesk users with multiple machines.
+
+[1] http://www.decafbad.com/news_archives/000228.phtml
+[2] http://www.cantoni.org/software/amphetadesk.html
+
+

@@ -1,0 +1,77 @@
+None> Phil R Lawrence said:
+> 
+> 
+>>>something to watch out for is to use "nomime" => 1 in the Mail::Audit
+>>>ctor; the M:A folks changed the API there.
+>>
+>>What has MIME to do with it?  I read in perldoc M:A that your suggestion 
+>>is less expensive, but how does that help S:A?
+> 
+> 
+> M:A, for some reason, changes its base class depending on whether the
+> incoming message is mime or not.  Therefore the Mail::Internet methods
+> suddenly become unavailable for MIME messages...
+> 
+> (you do *not* want to know what I thought of that when I found it ;)
+
+As a new user of SA, I guess I'm having trouble connecting the dots.  If 
+I understand you:  If I don't use the "nomime" => 1 option and I recieve 
+MIME mail, the Mail::Internet modules become unavailable.
+
+Unavailable for which?  MA?  SA?  What do these methods do?  Does this 
+mean my incoming MIME mail won't be checked by SA unless I specify 
+"nomime" => 1?
+
+Thanks,
+Phil
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+re: [satalk] testing the installjustin mason wrote:
+> phil r lawrence said:
+> 
+> 
+>>>something to watch out for is to use "nomime" => 1 in the mail::audit
+>>>ctor; the m:a folks changed the api there.
+>>
+>>what has mime to do with it?  i read in perldoc m:a that your suggestion 
+>>is less expensive, but how does that help s:a?
+> 
+> 
+> m:a, for some reason, changes its base class depending on whether the
+> incoming message is mime or not.  therefore the mail::internet methods
+> suddenly become unavailable for mime messages...
+> 
+> (you do *not* want to know what i thought of that when i found it ;)
+
+as a new user of sa, i guess i'm having trouble connecting the dots.  if 
+i understand you:  if i don't use the "nomime" => 1 option and i recieve 
+mime mail, the mail::internet modules become unavailable.
+
+unavailable for which?  ma?  sa?  what do these methods do?  does this 
+mean my incoming mime mail won't be checked by sa unless i specify 
+"nomime" => 1?
+
+thanks,
+phil
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: jabber - the world's fastest growing 
+real-time communications platform! don't just im. build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

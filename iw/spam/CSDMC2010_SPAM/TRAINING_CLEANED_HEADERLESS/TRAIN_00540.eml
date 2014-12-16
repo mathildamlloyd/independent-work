@@ -1,0 +1,37 @@
+on mon, may 17, 2010 at 3:59 pm, sven joachim  wrote:
+> on 2010-05-17 08:54 +0200, sven joachim wrote:
+>
+>> on 2010-05-17 08:46 +0200, alexey salmin wrote:
+>>
+>>> so, it's a bug in lsb-core package?
+>>
+>> yes, the lsb mandates that /lib/ld-lsb.so.3 is the dynamic linker:
+>>
+>> http://refspecs.freestandards.org/lsb_4.0.0/lsb-core-ia32/lsb-core-ia32/=
+baselib.html
+>
+> this makes me wonder how ubuntu obtained their lsb certification,
+> considering that they do not seem have /lib/ld-lsb.so.3 in any package
+> either, according to http://packages.ubuntu.com. =a0the whole lsb seems t=
+o
+> be a joke.
+>
+> sven
+>
+
+it appears that ld-lsb symlinks are created by lsb-core postinst
+script. that's why they're not listed in package contents.
+
+kent, it seems that it's a somehow better solution for you to install
+the lsb-core package (or a whole lsb group) rather than create that
+symlink manually (it's not that important though).
+
+alexey
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/aanlktikx6udd_ny3krob09xgi9be6txwaop1l2yi835n@mail.csmining.org
+
+

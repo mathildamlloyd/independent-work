@@ -1,0 +1,21 @@
+what's the best mechanism to migrate a working bootable system from one
+drive to a smaller capacity drive?
+
+e.g. take this 226g filesystem
+
+df -h
+filesystem            size  used avail use% mounted on
+/dev/sdb1             226g  4.1g  210g   2% /
+tmpfs                 3.0g     0  3.0g   0% /lib/init/rw
+udev                  3.0g  244k  3.0g   1% /dev
+tmpfs                 3.0g     0  3.0g   0% /dev/shm
+
+and transfer it onto say a 32g drive?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/3cc33b52b344d44be33167a82fe301fe@192.168.0.66
+
+

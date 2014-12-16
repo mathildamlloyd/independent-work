@@ -1,0 +1,23 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain;
+  charset="iso-8859-1"
+content-transfer-encoding: quoted-printable
+
+hi,
+since this seems to be the time to complain about kde, i'd like to ask for=
+=20
+help on an old issue: kded4 prevent the plasma weather applets from working=
+=2e=20
+when i login to my kde session the weather applets fail to retrieve any dat=
+a.=20
+i've confirmed with wireshark/tcpdump that there is no network traffic at t=
+hat=20
+time. as soon as i kill kded4 the weather applets startk working immedeatel=
+y.=20
+is there are another workaround than killing kded4 (since that messes up so=
+me=20
+other things in kde) or, even better, a fix available?
+
+=2d-=20
+mit freundlichen gr=fc=dfen / best regards
+dominik

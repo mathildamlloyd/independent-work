@@ -1,0 +1,44 @@
+
+i see that robert s. wojciechowski jr. posted about this issue on 7/26,
+but i don't see any responses. i get that error when calling razor-report
+from a sendmail alias, but not from the command line as a different user.
+the way i solved it was to run 
+
+razor-admin -create
+
+and
+
+razor-admin -discover
+
+with a -home argument set to the global /etc/razor directory, which is
+explicitly specified in the args to the alias pipe.
+
+the manual page, which suggests that /etc/razor/razor-agent.conf will be
+loaded first, does not also say that razor-admin will then create a
+.razor directory in the user's home directory if it does not exist
+(although this /is/ pointed out in the razor-agents(1) page. this may
+lead to some minor confusion if the user is trying to set the discovery
+and other defaults for a default (e.g., /etc/razor) install. the
+workaround is as i say above, namely, explicitly specify the path to
+razorhome on the command line, e.g.
+
+razor-admin -home=/etc/razor -create
+razor-admin -home=/etc/razor -discover
+
+hth,
+steve
+
+-- 
+hesketh.com/inc. v: (919) 834-2552 f: (919) 834-2554 w: http://hesketh.com
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: dice - the leading online job board
+for high-tech professionals. search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+razor-users mailing list
+razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

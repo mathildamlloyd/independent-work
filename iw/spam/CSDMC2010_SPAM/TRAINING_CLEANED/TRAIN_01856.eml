@@ -1,0 +1,51 @@
+None> Dolphin does not mount my other hard drives. They appear in "places" but
+> when I click I get a message
+> ""org.freedesktop.Hal.Device.Volume.PermissionDenied: Refusing to mount
+> device /dev/sdaX for uid = 1000"". I tried, as read in other forums, create
+> a configuration file for Polkit but in vain.
+> I also saw that this is a common problem in other Distros, possibly a
+> problem with KDE 4.4.
+> Important detail: in earlier versions of KDE 4.x I solved this problem by
+> changing the permissions of the HAL PolicyKit module located in
+> systemsettings but in KDE 4.4 this module is missing, ie has been removed
+
+Search for a thread named "PolicyKit Authorization (System Settings) crashes every time"
+First msg can be found here: http://lists.debian.org/debian-kde/2009/12/msg00073.html
+and it continues here: http://lists.debian.org/debian-kde/2010/03/msg00087.html
+
+It is indeed an issue with KDE 4.4 and has to do with the switch to policykit-1, which is in review 
+and will/should be included (again) with KDE 4.5
+
+
+-- 
+To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/201005081843.43186.didi.debian@cknow.org
+
+
+re: automount hdd kde 4.4 problemon 2010-05-08 leonardo meira wrote:
+> dolphin does not mount my other hard drives. they appear in "places" but
+> when i click i get a message
+> ""org.freedesktop.hal.device.volume.permissiondenied: refusing to mount
+> device /dev/sdax for uid = 1000"". i tried, as read in other forums, create
+> a configuration file for polkit but in vain.
+> i also saw that this is a common problem in other distros, possibly a
+> problem with kde 4.4.
+> important detail: in earlier versions of kde 4.x i solved this problem by
+> changing the permissions of the hal policykit module located in
+> systemsettings but in kde 4.4 this module is missing, ie has been removed
+
+search for a thread named "policykit authorization (system settings) crashes every time"
+first msg can be found here: http://lists.debian.org/debian-kde/2009/12/msg00073.html
+and it continues here: http://lists.debian.org/debian-kde/2010/03/msg00087.html
+
+it is indeed an issue with kde 4.4 and has to do with the switch to policykit-1, which is in review 
+and will/should be included (again) with kde 4.5
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201005081843.43186.didi.debian@cknow.org
+
+

@@ -1,0 +1,13 @@
+hdparm -d1 /dev/hdc says operation not permitted.
+dvd playback is very jumpy.
+does someone have any ideas on what i can do yo get dma transfers?
+thanks alvie
+
+
+
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

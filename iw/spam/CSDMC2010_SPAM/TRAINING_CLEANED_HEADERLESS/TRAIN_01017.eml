@@ -1,0 +1,76 @@
+on sat, may 1, 2010 at 20:55, andrea giuliano  wrote=
+:
+> here aplay -l:
+>
+> card 0: nvidia [hda nvidia], device 0: hda generic [hda generic]
+> =a0subdevices: 1/1
+> =a0subdevice #0: subdevice #0
+>
+> here is amixer info, too:
+>
+> card default 'nvidia'/'hda nvidia at 0xf9ef8000 irq 22'
+> =a0mixer name =a0 =a0: 'via id 397'
+> =a0components =a0 =a0: 'hda:11060397'
+> =a0controls =a0 =a0 =a0: 4
+> =a0simple ctrls =a0: 3
+>
+> actually, you are right, it's rather strange i see just a few controls,
+> they should be many more (my card is a 7.1 points one).
+>
+> on sat, 2010-05-01 at 14:08 +0000, camale=f3n wrote:
+>> on sat, 01 may 2010 15:52:46 +0200, andrea giuliano wrote:
+>>
+>> > alsamixer doesn'i show muted input. not does gnome-volume-settings. i
+>> > also checked out gnome-sound-properties, and it gives no errors at all=
+,
+>> > as if it thinks everything is working fine.
+>> >
+>> > here is the output from amixer:
+>>
+>> only "master", "pcm" and "capture"?
+>>
+>> no "mic" and no additional "aux" or "surround" outputs? :-?
+>>
+>> > and here is /proc/asound/cards
+>> >
+>> > =a00 [nvidia =a0 =a0 =a0 =a0 ]: hda-intel - hda nvidia
+>> > =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 hda nvidia at 0xf9ef8000 i=
+rq 22
+>> >
+>> > i'm going to try a livecd or such, but i'm not very optimistic.
+>>
+>> modern motherboards use to include 5.1 or 7.1 audio channel chipset, it'=
+s
+>> a bit weird your amixer output only shows 3 devices...
+>>
+>> this may sound silly, but have you tried to plug the speakers jack in al=
+l
+>> the outlets available?
+>>
+>> what does "aplay -l" say?
+>>
+>> greetings,
+>>
+>> --
+>> camale=f3n
+>>
+>>
+>
+>
+> --
+> to unsubscribe, email to debian-user-request@lists.debian.org
+> with a subject of "unsubscribe". trouble? contact listmaster@lists.debian=
+.org
+> archive: http://lists.debian.org/1272727535.20670.1.camel@debian
+>
+>
+
+what is the output of /usr/share/alsa/alsa.conf
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/v2wd0bf7b0b1005010910s737eaa0dnf75809624ea3d653@mail.csmining.org
+
+

@@ -1,0 +1,37 @@
+on fri, 14 may 2010 16:18:51 -0400, stefan monnier wrote:
+
+>> look at pdf. pdf became a iso/iec standard but we (at linux) still lack
+>> for a pdf editor that can compete with acrobat professional.
+>  
+> in the gnu/linux world, being able to edit pdf files is not considered
+> as a worthwhile feature.  better edit the file in some other format, and
+> only use pdf for a "static output format".  in my experience, this works
+> very well.
+
+you must be kidding. or at least you must be unaware about the existence 
+of pdftk toolkit, itex and gnupdf library, xournal or pdfedit, a set of 
+applications and frameworks available in this "gnu/linux world", intended 
+for pdf editing and manipulation.
+
+there is more than pdf/a (a pdf spec for archiving purposes) out there. 
+
+have you ever heard about pdf forms (editing required), about adding 
+bookmarks inside a pdf file structure, about making annotations or 
+markups or just creating a link?
+
+there are many situations where the user has the pdf file but lacks the 
+original document, and if you want to perform any modification in that 
+file, we (linux users) are stuck :-/
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.14.21.39.38@csmining.org
+
+

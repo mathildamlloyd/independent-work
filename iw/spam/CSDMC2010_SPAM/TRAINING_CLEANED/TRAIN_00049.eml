@@ -1,0 +1,67 @@
+None> On Sat,10.Apr.10, 16:24:45, Paul E Condon wrote:
+>  
+> > The errors that I am experiencing are all similar. The first
+> > indication of a problem is a message from the kernel (I think). An
+> > example is:
+> > 
+> > kernel: [78454.939948] journal commit I/O error
+>  
+> [...]
+>  
+> > When this happens, all the USB drives (3 of them) disappear from
+> > /dev/disks/by-label (they are all labeled by me). I have not
+> 
+> Just a long shot, bun since you are connecting 3 USB drives to the same 
+> computer you might experience power issues. If you connect only one 
+> drive do you get the same issues? Or you could try a powered USB hub if 
+> you have one.
+
+This is a good thing to look into. Now I am experiencing a interlude
+of error free operation, so I can't test it.  
+
+Thanks
+-- 
+Paul E Condon           
+pecondon@mesanetworks.net
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/20100411214740.GG10774@big.lan.gnu
+
+
+re: about usb hard drives and errorson 20100411_115203, andrei popescu wrote:
+> on sat,10.apr.10, 16:24:45, paul e condon wrote:
+>  
+> > the errors that i am experiencing are all similar. the first
+> > indication of a problem is a message from the kernel (i think). an
+> > example is:
+> > 
+> > kernel: [78454.939948] journal commit i/o error
+>  
+> [...]
+>  
+> > when this happens, all the usb drives (3 of them) disappear from
+> > /dev/disks/by-label (they are all labeled by me). i have not
+> 
+> just a long shot, bun since you are connecting 3 usb drives to the same 
+> computer you might experience power issues. if you connect only one 
+> drive do you get the same issues? or you could try a powered usb hub if 
+> you have one.
+
+this is a good thing to look into. now i am experiencing a interlude
+of error free operation, so i can't test it.  
+
+thanks
+-- 
+paul e condon           
+pecondon@mesanetworks.net
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100411214740.gg10774@big.lan.gnu
+
+

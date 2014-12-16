@@ -1,0 +1,33 @@
+on tue, 06 apr 2010 16:22:19 -0400, stephen powell wrote:
+
+> on tue, 6 apr 2010 13:51:31 -0400 (edt), camalen wrote:
+>> 
+>> note the device "mount" options, automatically added by hal:
+>> 
+>> ***
+>> /dev/sdc1 on /media/disk type vfat
+>> (rw,nosuid,nodev,uhelper=hal,shortname=lower,uid=1000) ***
+> 
+> i didn't see that in your /etc/fstab file, camalen.  where did this
+> come from? (pardon my ignorance; but as i said before, i never use usb
+> hot plug and i am largely ignorant of this subject.  i know a few things
+> about the regular mount and umount commands issued from a shell prompt. 
+> but this hotplug stuff is new to me.)
+
+nothing to pardon :-)
+
+that was the output of the "mount" command i sent in an early post, just 
+after i plugged the usb key.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.06.21.42.21@csmining.org
+
+

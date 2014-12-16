@@ -1,0 +1,29 @@
+on thu, 29 apr 2010 21:46:31 +0200, james stuckey wrote:
+
+>> > i don't use gnome or kde.
+>>
+>> and what de (if any) are you using? :-)
+>>
+> i'm using wmii
+
+uh... and how does one change dpi settings in that :-)?
+
+you could try running:
+
+xrandr --dpi 96
+
+or if you have installed nvidia control panel application, iirc you can 
+also change it from there.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.29.20.03.03@csmining.org
+
+

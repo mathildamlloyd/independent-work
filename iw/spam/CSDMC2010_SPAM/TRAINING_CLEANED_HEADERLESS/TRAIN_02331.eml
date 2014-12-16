@@ -1,0 +1,26 @@
+> the double > (>>) operator?
+>
+
+yes!
+
+
+> i'd also recommend that you check out tee and tee -a.
+>
+
+nice, that's not what i need here, but i do have use for it in a
+script that's been giving me trouble if it will output to a shell
+variable. thanks!
+
+-- 
+dotan cohen
+
+http://bido.com
+http://what-is-what.com
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/k2g880dece01005060934s8502b5d3g623cace24898ab82@mail.csmining.org
+
+

@@ -1,0 +1,61 @@
+after logging in as somebody with administrator privileges, i *was*
+able to select the 'in their own process' preference, and safari then
+worked as advertised. i was also then able to change this preference
+from my own account (without admin privileges).
+
+re the lack of two-finger scrolling in chrome own-process applets,
+this turns out to occur only when the browser window is on my
+secondary display(!) (plugged into my macbook), and applies to safari
+as well. this i describe in a bug report i've just submitted.
+
+on sat, may 22, 2010 at 2:19 pm, rob dickens  wrote:
+> sorry - meant to include a link to the applet (which contains a scroll pa=
+ne):
+>
+> http://lafros.com/demos/gui/tabs/1.1/tabsdemo.html
+>
+> on sat, may 22, 2010 at 2:17 pm, rob dickens  wrot=
+e:
+>> thanks for mentioning this. i was particularly interested to see what
+>> would happen here on my 32-bit macbook, where i don't seem to have the
+>> option of selecting the 'in their own process' preference--the radio
+>> buttons are greyed-out--which appears to be required in order to avoid
+>> the flickering seen on resizing the browser window.
+>>
+>> lo and behold, there is no flicker! :-d
+>>
+>> however, on the downside, two-finger scrolling (inside the applet) is
+>> not supported (as it is in safari) :-(
+>>
+>> rob
+>>
+>> on sat, may 22, 2010 at 12:34 pm, david leader
+>>  wrote:
+>>> i don't think this was mentioned but the mac beta of the chrome browser=
+ will
+>>> now run applets which i gather is dependent on this java upgrade.
+>>>
+>>> (not that i am in any way suggesting mac users should use anything othe=
+r
+>>> than safari themselves, but if one produces web sites that contain java
+>>> applets it is obviously something which one has to be aware of.)
+>>>
+>>> david
+>>> _______________________________________________
+>>> do not post admin requests to the list. they will be ignored.
+>>> java-dev mailing list =a0 =a0 =a0(java-dev@lists.apple.com)
+>>> help/unsubscribe/update your subscription:
+>>> http://lists.apple.com/mailman/options/java-dev/robcdickens%40csmining.org
+>>>
+>>> this email sent to robcdickens@csmining.org
+>>>
+>>
+>
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

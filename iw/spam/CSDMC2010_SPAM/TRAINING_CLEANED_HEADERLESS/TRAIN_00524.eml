@@ -1,0 +1,57 @@
+on 16 april 2010 22:00, john magolske  wrote:
+> i'm looking for a way to play *.3gp audio files from the command line.
+> mplayer doesn't seem to work:
+>
+> =c2=a0 =c2=a0% mplayer some-audio-file.3gp
+> =c2=a0 =c2=a0[...]
+> =c2=a0 =c2=a0playing some-audio-file.3gp.
+> =c2=a0 =c2=a0libavformat file format detected.
+> =c2=a0 =c2=a0[lavf] audio stream found, -aid 0
+> =c2=a0 =c2=a0=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=
+=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=
+=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=
+=3d=3d=3d=3d
+> =c2=a0 =c2=a0opening audio decoder: [ffmpeg] ffmpeg/libavcodec audio deco=
+ders
+> =c2=a0 =c2=a0cannot find codec 'libamr_nb' in libavcodec...
+> =c2=a0 =c2=a0adecoder init failed :(
+> =c2=a0 =c2=a0adecoder init failed :(
+> =c2=a0 =c2=a0cannot find codec for audio format 0x726d6173.
+> =c2=a0 =c2=a0read docs/html/en/codecs.html!
+> =c2=a0 =c2=a0audio: no sound
+> =c2=a0 =c2=a0video: no video
+>
+> any suggestions for alternate approaches, pointers on how & what to
+> install in terms of a codec, or maybe a way to convert these files
+> (ideally without transcoding degradation)?
+>
+> these audio files were created by the android app "voice recorder".
+>
+> tia for any help,
+>
+> john
+>
+
+this is by far the best app for converting 3gp files:
+http://www.miksoft.net/mobilemediaconverter.htm
+
+it's not cli, it's ugly, but it works better than anything else. the
+sound qualit of the resulting files is excellent, and it will work in
+batch.
+
+--=20
+dotan cohen
+
+http://bido.com
+http://what-is-what.com
+
+please cc me if you want to be sure that i read your message. i do not
+read all list mail.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/r2n880dece01004172250k42a00cb4v97283cef940e7335@mail.csmining.org
+
+

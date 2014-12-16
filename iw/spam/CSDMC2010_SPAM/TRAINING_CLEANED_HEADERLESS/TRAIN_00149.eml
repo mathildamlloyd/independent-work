@@ -1,0 +1,26 @@
+on wed, 12 may 2010, eeri kask - eeri.kask@inf.tu-dresden.de wrote:
+
+> (1)  does it make sense to upgrade tiger to leopard running on a
+> g4-powerbook-12" laptop?
+
+i run 10.5 on such a powerbook as well as a 1ghz g4 emac. if anything 
+performance overall was improved over 10.4. one have 1gb of ram the other 
+3/4 gb. the only downside was that at some point there was an update to 
+10.5 where my firewire enclosure became unreliable. it seems to affect 
+certain ide to fw bridge chips in hard drive enclosures and i was unlucky. 
+i can usually power cycle the drive and try again successfully. it matters 
+not which cable and drive i use, i have three enclosures, and once is the 
+culprit.
+
+with regards to x11, the growing pains are mostly over for me. i do use 
+xvnc for 8-bit though. this may be improved in later versions of x11 
+though. the key options to xvnc are -cc 3 -depth 8
+
+mzs
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+x11-users mailing list      (x11-users@lists.apple.com)
+help/unsubscribe/update your subscription: http://lists.apple.com/mailman/options/x11-users/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

@@ -1,0 +1,49 @@
+kent west wrote:
+> i tried installing hpijs-ppds, but i still don't see the cm3530 
+> listed; i do now see a color laserjet 3550 (without the cm, and not 
+> the 3530), but who knows if that'd work? not me.
+>
+> the hplip-gui package is already installed, but running "hplip-gui" 
+> did nothing. "man hplip-gui" did nothing (i thought all debian 
+> packages are supposed to have a man page, even if it does nothing more 
+> than point to some other documentation?). (looking in 
+> /usr/share/doc/hplip-gui would have eventually maybe clued me to the 
+> hp-toolbox, but thankfully you've already pointed me to it so i didn't 
+> have to dig blindly.)
+>
+> the hp-toolbox said no device is set up, and to run hp-setup (as 
+> root). it failed to automagically find my printer, but i chose to use 
+> the manual button and enter the printer's ip address, and now it 
+> presents me with a list of six possible ppd drivers, none of which 
+> have names very close at all to my printer (cm4730, cm6030, cm4730, 
+> and postscript variants of those).
+>
+> arg.
+>
+> thanks for the help though. at least i'm seeing stuff i've never seen 
+> before. (and they say windows is hard to configure. pfft. (sorry for 
+> the ranting; i'm just frustrated. i really do love debian, and really 
+> do hate windows.))
+>
+
+so i manually downloaded hplip from hp's web site 
+(http://hplipopensource.com/hplip-web/downloads.html), but when i try to 
+run it, it complains about gcc not being installed. so i aptitude 
+installed gcc, and then tried again, and it still complains about gcc 
+not being installed.
+
+arg!
+
+-- 
+kent west     <*)))><
+http://kentwest.blogspot.com
+praise yah! \o/
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4be871ba.3050805@acu.edu
+
+

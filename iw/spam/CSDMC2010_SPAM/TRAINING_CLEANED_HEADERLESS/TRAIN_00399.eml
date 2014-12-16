@@ -1,0 +1,42 @@
+one possible solution is using the "nvidia-settings"-tool.
+you can configure your display-settings in a gui and save it  
+permanently to an xorg file.
+i'm using this method since years and it works very well and flawlessly.
+
+[screenshot]
+http://ourcraft.files.wordpress.com/2009/12/nvidia-settings.png
+
+
+-
+sebastian
+
+
+
+zitat von james allsopp :
+
+> hi,
+> i've a small 4:3 monitor which was working fine with debian at about
+> 1152x864 (vga connection) on a nvidia 9500gt with the proprietary drivers
+> (sorry want to experiment with cuda so non-free wasn't an option). however,
+> i've just bought a new 1080p tv and connected it to the computer via hdmi.
+> this unfortunately has permanently knocked the resolution down on the
+> monitor to 800x600, which is next to unusable. would anyone with a similar
+> configuration be willing to share an xorg.conf or share some advice on this.
+> i think i'd like the monitor to be either 1280x960, 1152x864, 1024x768 and
+> the tv to work at 1600x900 1366x768 or 1280x720.
+>
+>
+> thanks for any help!
+> jim
+>
+
+
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100518122107.112868rwr08lxasc@webmail.df.eu
+
+

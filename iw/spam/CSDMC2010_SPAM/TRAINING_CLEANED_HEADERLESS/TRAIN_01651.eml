@@ -1,0 +1,24 @@
+hello all,
+i get problems with the latest nightly build from spamassassin with
+vmailmgr + omail-admin. 
+it scans the mail and gives it an :
+
+        x-spam-status: no, hits=11.4 required=7.0
+
+can someone look at the code for it? maybe because option -f is gone?
+
+
+greetings
+erik rudolfs
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: osdn - tired of that same old
+cell phone?  get a new here for free!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1;=vs3390
+_______________________________________________
+spamassassin-devel mailing list
+spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

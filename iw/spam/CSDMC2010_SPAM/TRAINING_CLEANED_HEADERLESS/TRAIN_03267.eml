@@ -1,0 +1,25 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=us-ascii; format=flowed
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on sat, apr 17, 2010 at 12:02:40pm -0400, daniel d jones wrote:
+>that was the first thing i tried and sed gave me an error:
+>
+>sed: -e expression #1, char 18: unknown option to `s'
+>
+>i just went back and tried it again and it worked, so i have no idea what i
+>did the first time that made it not work.
+
+you can run into that sort of problem if your pattern to replace contains a=
+ny=20
+forward slashes (/) in it.  if you need to such an expansion, you probably=
+=20
+want to do it in two passes, first doing a / to \/ substitution on your=20
+replacement strings, then inserting them into your final expression:
+
+pata=3d`echo $1 | sed 's,/,\/,'`
+patb=3d`echo $2 | sed 's,/,\/,'`
+sed -e "s/pattern1/$pata/" -e "s/pattern2/$patb/" < input > output
+
+me

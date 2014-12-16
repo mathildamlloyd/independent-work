@@ -1,0 +1,40 @@
+>> when i unplug stick, udev unmounts it from mountpoint. pay attention
+>> to moment of unmount - it happens *after* unplugging, so no cache can
+>> be flushed as far as device is already disconnected.
+>>
+>> i though about running umount /mnt/sd[a-z] before unplugging, but then
+>> decided to ask for a better way. if i won't find it, umount will be
+>> the solution. so, any other options?
+>
+> i never do that way. i always first "umount" the device and then, i
+> remove the stick, but not the reverse. removable media has to be done
+> that way, to prevent data loss or flash drive damage, or that is what
+> manufacturers say :-?
+
+of course, "umount, then remove" is the normal way to remove usb stick
+(and any other storage). but as far as main idea of automounting is
+"easy (un)plug" (in my opinion at least), we have little weird but
+working principle "sync, then unplug, and udev will carry out
+everything else". as i already said, it's really weirds, but it works.
+
+but all you said made me hard thinking about the way i mount and
+unmount my removable media. maybe i should forget about sync and use
+'umount /mnt/sd[a-z]' instead, or even write little script which will
+ask me which device i want to unmount=e2=80=a6 dunno. but thanks for sharin=
+g
+your thoughts with me!
+
+p.s. camale=c3=b3n, please forgive me for sending previous mail directly to
+you, not to the list. i think it's time to drop gmail web interface
+and switch back to local email client=e2=80=a6
+
+with best regards,
+alexander batischev
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/t2k28c1d5ea1005060804l6bb90152s5ff573e00b58b6ec@mail.csmining.org
+
+

@@ -1,0 +1,27 @@
+clive mcbarton wrote:
+> ron johnson wrote:
+>> never destroy the original until you know the copy works!
+> 
+> in my earlier days i would have avoided mv for exactly that reason. but
+> when copying (including rsync), you cannot easily see that it worked
+> from the emptyness of the original file system. and comparing large
+> filesystem trees (not just 4gb as in this case) is trickier than most
+> people realize. at least a simple "diff -r" will be far from doing it.
+> maybe you have some good way of comparing fs trees?
+> 
+>  [snip]
+
+including rsync?  i'd say that's the exact purpose of rsync.
+
+anyway, there are many filesystem comparison tools if one wants to do it 
+"manually", like dirdiff.  for file contents, just hash and re-hash.
+
+-thib
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bc23ba5.7030406@stammed.net
+
+

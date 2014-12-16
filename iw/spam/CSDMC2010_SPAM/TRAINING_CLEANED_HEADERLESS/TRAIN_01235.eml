@@ -1,0 +1,54 @@
+on tue, 06 apr 2010 12:25:45 -0400, stephen powell wrote:
+
+> on tue, 6 apr 2010 11:52:18 -0400 (edt), jeremy jozwik wrote:
+
+>> 
+>> # /etc/fstab: static file system information. #
+>> #     
+>>   proc                 /proc                 proc         
+>> defaults
+>>          0           0
+>> /dev/sda1         /                        ext3 errors=remount-ro 0    
+>>        1
+>> /dev/sda5         none                 swap          sw
+>>        0           0
+>> /dev/hda          /media/cdrom0    udf,iso9660 user,noauto         0
+>>          0
+>> 
+>> 
+>> so, none of the media that i plug in is listed here. perhaps that is
+>> because i always use the hotplug?
+> 
+> it would be interesting to see what camalen's /etc/fstab file looks
+> like in comparison with yours.  camalen, are you listening?  and would
+> you be willing to post your /etc/fstab file?
+
+yep, here i am.
+
+my "fstab":
+
+***
+sm01@stt008:~$ cat /etc/fstab
+# /etc/fstab: static file system information.
+#
+#      
+proc            /proc           proc    defaults        0       0
+/dev/sda3       /               reiserfs notail          0       1
+/dev/sda1       none            swap    sw              0       0
+/dev/scd0       /media/cdrom0   udf,iso9660 user,noauto     0       0
+/dev/fd0        /media/floppy0  auto    rw,user,noauto  0       0
+/dev/sdb1/data/backupext3acl,user_xattr12
+***
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.06.16.35.08@csmining.org
+
+

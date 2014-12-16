@@ -1,0 +1,42 @@
+i don't get what you're trying to accomplish.
+
+on 2010-05-05 boyd stephen smith jr. wrote:
+> in 4.4, kmail depends on mysql-server in order to send mail. (kmail ->
+> akonadi  -> mysql-server).
+
+so you don't like the dependency to akonadi? too bad. as can be read on many places, akonadi is 
+there to stay. and as you mentioned in another post, the dependency to akonadi has been in place for 
+a while now (korganizer and kaddressbook since 4.2). so there's no way in hell you're going to have 
+(upstream) support for an akonadi-less pim.
+
+or don't you like the akonadi dependency to mysql-server? well, it's not the full mysqld package 
+anymore, but the dependency is to mysql-server-core(-5.1) (see #548419).
+sqlite has been found inappropriate since it lacks proper transaction support.
+postgresql is apparently capable of providing the proper features and tobias koenig has made akonadi 
+working with postgresql since the end of last year (http://tokoe-kde.blogspot.com/2009/12/akonadi-
+and-postgresql.html). that patch was committed to trunk at that time, but apparently didn't make 
+into sc 4.4 (?).
+so if you want to use postgresql, your best bet would be to port/base that patch on 4.4.
+
+> just block the kdepim 4.4 apps from migrating to testing.  the kdepim 4.3 
+> programs already work with the kdebase 4.4 libraries.
+> 
+> heck, just stop kmail from migrating.  korganizer and kaddressbook have 
+> required akonadi since 4.2 or earlier.
+
+yeah right, let's get a combination of 4.3 and 4.4 (and 4.2?) into stable, that surely must be 
+preferable. and good luck getting any upstream support for bugs resulting from that.
+
+as ana indicated the freeze won't wait for sc 4.5, so better make the best out of 4.4.
+if you want the freeze to wait for 4.5, better try to convince the release team. good luck.
+
+
+diederik
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201005060913.06917.didi.debian@cknow.org
+
+

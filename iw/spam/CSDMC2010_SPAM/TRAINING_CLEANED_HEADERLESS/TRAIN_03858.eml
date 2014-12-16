@@ -1,0 +1,38 @@
+on thu, 13 may 2010 11:59:20 +0100, clive standbridge wrote:
+
+> the attachments contain the lines written to /var/log/auth.log and
+> /var/log/mail.log when the attempt to mail via newserver:587 failed,
+> also my /etc/postfix/main.cf (without comments).
+
+i see nothing about the failure. all seems to go fine, postfix 
+establishes a connection with remote server and silently fails :-/
+
+put postfix into a more verbose logging. in "main.cf":
+
+***
+debug_peer_level = 2
+debug_peer_list = newserver
+***
+
+reload postfix and try again.
+
+p.s. 1 - check the more basic here: saslauth mechanisms being used for 
+authenticating and of course, a correct password in "/etc/postfix/
+sasl_passwd" o:-)
+
+p.s. 2 - remember that "535 5.7.3 authentication unsuccessful" is a 
+message coming from exchange server -not postfix- so it would be great if 
+you could review the logs from the ms server side.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.13.12.11.39@csmining.org
+
+

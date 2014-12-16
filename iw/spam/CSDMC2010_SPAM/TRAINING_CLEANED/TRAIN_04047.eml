@@ -1,0 +1,195 @@
+NoneMisc rants about finding jobs, java vs C, what makes a good programmer, etc.
+</snip>
+
+Okay, hmm, I thought twice about this, but what the hey, jobs are hard to
+come by. There's a company hiring in Mountain View, looking for a few good
+hackers, no Java, no GUI, not even C++ -- just C and Linux and networking
+and good old stuff like that. They just raised a wad of money and they're
+looking for a few "really good programmers", says the CTO. I know him --
+very smart guy. Drives too fast, though, for what that's worth.
+
+Joe Bob says "check it out". I'd be happy to pass on your resume, or you can
+send it straight to them. Probably won't matter if I pass it on, since I
+don't know you guys anyway...
+
+http://www.netli.com
+
+-- Sherry.
+
+> -----Original Message-----
+> From: Joseph S. Barrera III [mailto:joe@barrera.org]
+> Sent: Tuesday, August 27, 2002 8:58 AM
+> To: Adam L. Beberg
+> Cc: fork@spamassassin.taint.org
+> Subject: Re: Java is for kiddies
+> 
+> 
+> Adam L. Beberg wrote:
+>  >>> Forwarding me stuff from a list is hardly handing me a job.
+>  >>
+>  >> I was talking about the open reqs at Kana (the company I 
+> work for).
+>  >>  Oh, but programming in Java is beneath you.
+>  >
+>  > Nope just lacking years and years of it. For some silly 
+> reason people
+>  > always want things to be reliable, fast, and 
+> cross-platform so all my
+>  > employers have forced me to code in C :)
+> 
+> C is more reliable than Java??
+> 
+> As for cross-platform, C exists on more platforms, but a Java program
+> is much easier to move from one platform to another. So I'm not sure
+> what you mean.
+> 
+> I'm not trying to fight a language war, but I'm puzzled by the depth
+> of your anti-Java hatred.
+> 
+>  > I know lots of high school
+>  > kiddies with plenty of Java tho, not having to teach people about
+>  > pointers or optimization or anything shaves years off the 
+> coder boot
+>  > time. I'll send them your way when they graduate.
+> 
+> Pointers. So a language has to have pointers to be real? And 
+> references
+> don't count, I gather. What's so great about pointers? Why do you
+> miss them? If your doing embedded stuff, fine, yes, you need the
+> performance and control over memory that C provides. Probably.
+> But if your implementing tier N-1 of a tier N system, and pounding
+> against a database, then Java is OFTEN a very reasonable choice.
+> Especially if you want that system to run without leaking memory.
+> 
+> Optimization. Who says you can't optimize Java? I can and have,
+> and there are good tools that allow you to do it (I use OptimizeIt).
+> But usually I find myself optimizing (reducing) database accesses
+> instead. I sped one part of the system up by a factor of ten by
+> grouping more operations into fewer transactions.
+> 
+> But this is beside the point. If you have decent C++ experience, and
+> have poked around in Java, you should be able to convince most
+> employers that you can be trusted writing Java. That's what I did --
+> I mean, I joined Kana from Microsoft, and I didn't exactly write
+> a lot of Java code at Microsoft.
+> 
+>  > I'm not displeased you're trying to help, just frustrated that
+>  > employers can demand such rediculous combinations of skills with
+>  > insane years of experience.
+> 
+> I don't think I've ever interviewed at a place where I actually
+> met all the prerequisites. Do you just give up when you don't?
+> 
+>  > Interview tommorow with Kodak, doing I have no idea what as the
+>  > recruiter isnt even sure, but cross your fingers it wont require 10
+>  > years of Java and 5 years of Windows/IA-64's device driver 
+> experience
+>  > (both common requirements).
+> 
+> I wish you best of luck, and I apologies for being a bitch.
+> But God DAMN, you piss me off sometimes. My son occasionally
+> displays your "can't-do" attitude and I do my damnest to
+> get him to reverse course.
+> 
+> - Joe
+> 
+> 
+
+re: java is for kiddies
+misc rants about finding jobs, java vs c, what makes a good programmer, etc.
+
+
+okay, hmm, i thought twice about this, but what the hey, jobs are hard to
+come by. there's a company hiring in mountain view, looking for a few good
+hackers, no java, no gui, not even c++ -- just c and linux and networking
+and good old stuff like that. they just raised a wad of money and they're
+looking for a few "really good programmers", says the cto. i know him --
+very smart guy. drives too fast, though, for what that's worth.
+
+joe bob says "check it out". i'd be happy to pass on your resume, or you can
+send it straight to them. probably won't matter if i pass it on, since i
+don't know you guys anyway...
+
+http://www.netli.com
+
+-- sherry.
+
+> -----original message-----
+> from: joseph s. barrera iii [mailto:joe@barrera.org]
+> sent: tuesday, august 27, 2002 8:58 am
+> to: adam l. beberg
+> cc: fork@spamassassin.taint.org
+> subject: re: java is for kiddies
+> 
+> 
+> adam l. beberg wrote:
+>  >>> forwarding me stuff from a list is hardly handing me a job.
+>  >>
+>  >> i was talking about the open reqs at kana (the company i 
+> work for).
+>  >>  oh, but programming in java is beneath you.
+>  >
+>  > nope just lacking years and years of it. for some silly 
+> reason people
+>  > always want things to be reliable, fast, and 
+> cross-platform so all my
+>  > employers have forced me to code in c :)
+> 
+> c is more reliable than java??
+> 
+> as for cross-platform, c exists on more platforms, but a java program
+> is much easier to move from one platform to another. so i'm not sure
+> what you mean.
+> 
+> i'm not trying to fight a language war, but i'm puzzled by the depth
+> of your anti-java hatred.
+> 
+>  > i know lots of high school
+>  > kiddies with plenty of java tho, not having to teach people about
+>  > pointers or optimization or anything shaves years off the 
+> coder boot
+>  > time. i'll send them your way when they graduate.
+> 
+> pointers. so a language has to have pointers to be real? and 
+> references
+> don't count, i gather. what's so great about pointers? why do you
+> miss them? if your doing embedded stuff, fine, yes, you need the
+> performance and control over memory that c provides. probably.
+> but if your implementing tier n-1 of a tier n system, and pounding
+> against a database, then java is often a very reasonable choice.
+> especially if you want that system to run without leaking memory.
+> 
+> optimization. who says you can't optimize java? i can and have,
+> and there are good tools that allow you to do it (i use optimizeit).
+> but usually i find myself optimizing (reducing) database accesses
+> instead. i sped one part of the system up by a factor of ten by
+> grouping more operations into fewer transactions.
+> 
+> but this is beside the point. if you have decent c++ experience, and
+> have poked around in java, you should be able to convince most
+> employers that you can be trusted writing java. that's what i did --
+> i mean, i joined kana from microsoft, and i didn't exactly write
+> a lot of java code at microsoft.
+> 
+>  > i'm not displeased you're trying to help, just frustrated that
+>  > employers can demand such rediculous combinations of skills with
+>  > insane years of experience.
+> 
+> i don't think i've ever interviewed at a place where i actually
+> met all the prerequisites. do you just give up when you don't?
+> 
+>  > interview tommorow with kodak, doing i have no idea what as the
+>  > recruiter isnt even sure, but cross your fingers it wont require 10
+>  > years of java and 5 years of windows/ia-64's device driver 
+> experience
+>  > (both common requirements).
+> 
+> i wish you best of luck, and i apologies for being a bitch.
+> but god damn, you piss me off sometimes. my son occasionally
+> displays your "can't-do" attitude and i do my damnest to
+> get him to reverse course.
+> 
+> - joe
+> 
+> 
+

@@ -1,0 +1,63 @@
+on tue, 04 may 2010 21:46:56 +0200, jonas stein wrote:
+
+> it looks if some devices are mounted automatic (after plugging into usb
+> slot)
+> and some wait until i click on the device name in dolphin/thunar or
+> similar.
+> 
+> i dont understand who mounts when...
+> i suppose some of the "magic" is done by udev, automounter and kde and
+> so on.
+
+yes, in stable, it's a mix between hal/udev and desktop environment mount 
+system. 
+ 
+> i am looking for a set of rules which software is allowed to do mounts
+> and in which hierachy.
+> is there a kind of debian policy about mounting?
+
+i suppose debian follows fhs ("/media" for removable devices and "/mnt" for 
+temporarily mount points) :-?
+ 
+> on a debian stable pc i users are not allowed to umount their usb stick,
+> if its mounted in kde. but it works on console.
+
+on gnome yes, users can mount/umount their own usb devices via nautilus.
+
+> on a debian testing pc i'd like to have some automatic action after
+> inserting my gps device in the usb slot. first it should be mounted
+> somewhere 
+
+it should be automatically mounted anywhere under "/media" as akaik, that 
+is the default action for removable storage.
+
+> and second the latest trackfiles should be moved to /foo
+
+you will need a bit of scripting to achieve this.
+ 
+> is it a good way to use a udev rule for that? 
+
+there must be some pre-made applications to get that but you can also try 
+to get it done with udev rules. a quick example, courtesy of google:
+
+http://www.gradstein.info/hardware/how-to-automatically-run-a-script-after-inserting-a-usb-device-on-ubuntu/
+
+> should i use /media to mount the usb device, or is /media reserved for 
+> the system?
+
+you can use /media, and as boyd already suggested, give the device a 
+label to get a static name so it always get mounted under the 
+same path, i.e., "/media/mygps".
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.05.08.09.47@csmining.org
+
+

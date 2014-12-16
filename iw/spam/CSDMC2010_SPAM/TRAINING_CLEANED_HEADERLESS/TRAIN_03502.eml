@@ -1,0 +1,70 @@
+camalen wrote:
+> on sat, 10 apr 2010 06:50:05 +0200, steef wrote:
+>
+>    
+>> camalen wrote:
+>>      
+>    
+>> here it comes:
+>>
+>> steef@debianlennynw:~$ lspci | grep vga 00:02.0 vga compatible
+>> controller: intel corporation 4 series chipset integrated graphics
+>> controller (rev 03) 04:00.0 vga compatible controller: nvidia
+>> corporation device 0641 (rev a1)
+>>      
+> so, do you have the two vga cards enabled? i also have an intel embedded
+> card but iirc, i disabled it in the bios as soon as i plugged the nvidia
+> card (7600 gs).
+>    
+
+yes, that is correct. with my mobo you have to change by hand i n the 
+bios from 'onboard' to pci &&.
+> otoh, it seems that device id corresponds to nvida 9400 gt.
+that 's correct too.
+>   so i would
+> test with the nvidia debian drivers. if they do not work, you can always
+> come back and activate the intel one.
+>
+>    
+that is what i did when the nvidia drivers from *their site* worked out 
+disastrously
+
+>> i'll look into that wiki (again),
+>>
+>>      
+it is almost like the old days of potato and woody. had to fresh up my 
+old brain again.   so i installed nvidia-glx and the other required 
+packages. that 's nowadays much easier than in the wiki thanks to apt if 
+you start with 
+
+after that i put the appropriate sections in my /etx/x11/xorg.conf. 
+nvidia instead of in tel and i made a module section with load "glx" in it.
+
+i restarted the x-server and now *everything is working like a charm*
+
+he camalen, i really owe you, man! you really helped me out.
+
+many regards,
+
+steef
+
+
+
+
+
+>> it can take some time before i answer again: got to take care of my
+>> family now,
+>>      
+> take your time. family is first :-)
+>
+> saludos,
+>
+>    
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bc02e70.9020904@home.nl
+
+

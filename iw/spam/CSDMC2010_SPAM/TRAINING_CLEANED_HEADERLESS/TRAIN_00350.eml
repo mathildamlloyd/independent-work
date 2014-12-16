@@ -1,0 +1,38 @@
+on 2010-04-08 20:38, cameron hutchison wrote:
+> ron johnson  writes:
+> 
+>> # update-alternatives --install x-www-browser firefox \
+>>                                        /usr/local/firefox/firefox 3
+>> update-alternatives: error: alternative link is not absolute as it 
+>> should be: x-www-browser
+> 
+>> what am i doing wrong?
+> 
+> the easiest way to see how this stuff works is to look at a postinst
+> script that already does it. pick an existing alternative and look at
+> /var/lib/dpkg/info/$package.postinst.
+
+excellent idea.
+
+> i think you want this:
+> 
+> # update-alternatives --install x-www-browser /usr/bin/x-www-browser \
+> /usr/local/firefox/firefox 3
+> 
+> that sets up /usr/local/firefox/firefox as an alternative for
+> /usr/sbin/x-www-browser .
+> 
+
+unfortunately, that's wrong.  peeking into iceape-browser.postinst, 
+though, gave me the answer.
+
+-- 
+dissent is patriotic, remember?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bbe8c22.80008@cox.net
+
+

@@ -1,0 +1,31 @@
+andrei popescu wrote:
+> on sat,15.may.10, 10:32:36, hugo vanwoerkom wrote:
+>> hi,
+>>
+>> (on sid) i pinned grub-legacy, to avoid going to grub2.
+>  
+> [...]
+>  
+>> so why does aptitude pay no attention to my pin?
+> 
+> please post the output of 'apt-cache policy grub'.
+> 
+hugo@debian:~$ apt-cache policy grub
+grub:
+   installed: 0.97-47lenny2
+   candidate: 0.97-61
+   version table:
+      0.97-61 0
+         500 http://ftp.de.debian.org unstable/main packages
+  *** 0.97-47lenny2 0
+         100 /var/lib/dpkg/status
+
+hugo
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hsv4rt$1s4$1@dough.gmane.org
+
+

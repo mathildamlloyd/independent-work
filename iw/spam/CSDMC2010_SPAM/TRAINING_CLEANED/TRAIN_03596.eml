@@ -1,0 +1,64 @@
+NoneI did notice an rpm I made the other day didn't work, and just sat there 
+for ages  seemingly doing nothing, which probably did this :(
+
+Ok, now I get:
+
+
+Fetched 88.1kB in 2m31s (581B/s)
+error: cannot get exclusive lock on /var/lib/rpm/Packages
+error: cannot open Packages index using db3 - Operation not permitted (1)
+E: could not open RPM database:cannot open Packages index using db3 - 
+Operation not permitted (1)
+
+Arrrrg.
+
+--On Tuesday, February 05, 2002 15:06:28 +0100 Roy-Magne Mo 
+<rmo@sunnmore.net> wrote:
+
+> It's not the rpm, it's the rpm-system with you. The cache seems to have
+> rottened. Try removing /var/lib/rpm/__db*
+
+
+
+                                    -- \m/ --
+  "...if I seem super human I have been misunderstood." (c) Dream Theater
+         mark@talios.com - ICQ: 1934853 JID: talios@myjabber.net
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+re: problem with an rpm...do i need to do anything to recreate anything after deleting this?
+
+i did notice an rpm i made the other day didn't work, and just sat there 
+for ages  seemingly doing nothing, which probably did this :(
+
+ok, now i get:
+
+
+fetched 88.1kb in 2m31s (581b/s)
+error: cannot get exclusive lock on /var/lib/rpm/packages
+error: cannot open packages index using db3 - operation not permitted (1)
+e: could not open rpm database:cannot open packages index using db3 - 
+operation not permitted (1)
+
+arrrrg.
+
+--on tuesday, february 05, 2002 15:06:28 +0100 roy-magne mo 
+ wrote:
+
+> it's not the rpm, it's the rpm-system with you. the cache seems to have
+> rottened. try removing /var/lib/rpm/__db*
+
+
+
+                                    -- \m/ --
+  "...if i seem super human i have been misunderstood." (c) dream theater
+         mark@talios.com - icq: 1934853 jid: talios@myjabber.net
+
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

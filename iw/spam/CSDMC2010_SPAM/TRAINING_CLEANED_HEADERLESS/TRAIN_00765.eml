@@ -1,0 +1,21 @@
+i'm trying to use javascript and the quicktime plugin to play a movie 
+on the ipad but keep getting a broken movie icon and 
+getpluginstatus() returns "error: -12939". also, the browser debug 
+console reports: other tip - quicktime - byte_range_error_message
+
+any ideas?
+
+-rolf
+-- 
+rolf howarth
+square box systems ltd
+stratford-upon-avon, uk.
+http://www.squarebox.co.uk
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

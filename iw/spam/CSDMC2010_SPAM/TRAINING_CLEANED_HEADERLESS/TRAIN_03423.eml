@@ -1,0 +1,28 @@
+stephen powell writes:
+> yes, hercules is an ibm mainframe emulator.  but the problem is
+> licensing.  there are some *very old* releases of ibm operating
+> systems that have passed into the public domain that you can run on
+> the hercules emulator.
+
+which should suffice for testing his software with ebcdic.
+
+> these are circa 1975 or so, which is about 35 years ago.  an example
+> is vm/sp release 6.  the problem is that those operating systems don't
+> have a c compiler or a posix interface.
+
+are there any copies of mts (michigan terminal system) around?  it would
+be in the public domain and i know it had a c compiler: i used it to
+teach myself c.
+
+my wife would love to have mts back again (of course, she'd insist on a
+full set of printed manuals...)
+-- 
+john hasler
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87tyrkcmrz.fsf@thumper.dhh.gt.org
+
+

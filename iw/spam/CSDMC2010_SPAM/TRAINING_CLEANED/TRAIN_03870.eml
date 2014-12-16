@@ -1,0 +1,52 @@
+None[ILUG] VPN implementationI need to setup a VPN between a few sites. From what I've read, the the
+choices come down (on the Linux side) to IPsec (using FreeSWAN) or CIPE.
+It seems that FreeSWAN is 'better', being an implementation of IPsec which
+is a standard. However, CIPE does the job as well for Linux clients and is
+somewhat simpler to setup. 
+
+The problem is that it's not a pure Linux situation - a couple of the sites
+run OS-X. I'm pretty sure that I'll be able to find an implementation of
+IPsec for OS-X, but I think CIPE is Linux only.
+
+So, the question is for those of you have have implemented BOTH - is there a
+significant difference in setup time and hassle between CIPE and FreeSWAN ?
+If CIPE is going to be much easier than dealing with FreeSWAN (and whatever
+on the OS-X sites) then I'll simply get a Linux box for each of the remote
+sites - with the low price of hardware, it doesn't take much more complexity
+in software to make buying hardware to use simpler software economic.
+
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+[ilug] vpn implementationi need to setup a vpn between a few sites. from what i've read, the the
+choices come down (on the linux side) to ipsec (using freeswan) or cipe.
+it seems that freeswan is 'better', being an implementation of ipsec which
+is a standard. however, cipe does the job as well for linux clients and is
+somewhat simpler to setup. 
+
+the problem is that it's not a pure linux situation - a couple of the sites
+run os-x. i'm pretty sure that i'll be able to find an implementation of
+ipsec for os-x, but i think cipe is linux only.
+
+so, the question is for those of you have have implemented both - is there a
+significant difference in setup time and hassle between cipe and freeswan ?
+if cipe is going to be much easier than dealing with freeswan (and whatever
+on the os-x sites) then i'll simply get a linux box for each of the remote
+sites - with the low price of hardware, it doesn't take much more complexity
+in software to make buying hardware to use simpler software economic.
+
+
+
+niall
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+

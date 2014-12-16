@@ -1,0 +1,25 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain;
+  charset="utf-8"
+content-transfer-encoding: quoted-printable
+
+on monday, 2010-05-10, dotan cohen wrote:
+> on 10 may 2010 19:33, nate bargmann  wrote:
+
+> > for *my use* i have found kde 4.4 quite pleasant over the past few days,
+> > perhaps aided by moving the old config directories out of the way.
+> > device notifier is now useful for me due to the tip provided by another
+> > list member in that thread.
+>=20
+> yes, 4.2 and now 4.4 seem to behave badly without a clean ~/.kde. i
+> find that very disturbing and unstable.
+
+this might depends somewhat on the actual configuration.
+i have been upgrading this machine since early kde3 times, always using the=
+=20
+same .kde directory and i can't remember having any problems.
+certainly not when upgrading from 4.3.4 to 4.4.3 the past weekend.
+
+cheers,
+kevin
+

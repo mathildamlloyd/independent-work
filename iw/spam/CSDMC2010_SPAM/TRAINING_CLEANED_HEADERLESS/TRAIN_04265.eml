@@ -1,0 +1,30 @@
+
+today's error(received multiple times) was:
+
+jul 23 21:16:39.288680 report[98557]: [ 2]  razor-agents v2.12 starting
+razor-report ./jobspam
+jul 23 21:16:46.597147 report[98558]: [ 1] razor-report error: reportit:
+error 213 while authenticating, aborting.
+
+i really like the concept of razor but i find myself wondering if it's
+really a good idea for the developers to be passing off what appears
+to be alpha-quality software as production-ready....
+
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+                               patrick greenwell
+         asking the wrong questions is the leading cause of wrong answers
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+razor-users mailing list
+razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

@@ -1,0 +1,79 @@
+from nobody tue dec 16 08:46:53 2014
+content-type: text/plain; charset=iso-8859-15
+content-transfer-encoding: quoted-printable
+
+boyd stephen smith jr. wrote:
+> on tuesday 18 may 2010 13:16:27 merciadri luca wrote:
+>  =20
+>> hi,
+>>
+>> i have many media files in some specific directory (folder, call it as=
+
+>> you want). loading the folder takes ~30 sec., even if i am using quite=
+
+>> fast hdds, etc. they're all on the same partition. i have disabled
+>> previewing, or thumbnails.
+>>
+>> how can i do to make this process faster?
+>>    =20
+>
+> slow to ls?  reiserfs, xfs, btrfs, or the dir_index option and hash_alg=
+=20
+> extended option of ext3.
+>
+> is the directory fast to ls, but slow to render in a gui?  problem is l=
+ikely=20
+> with the gui.
+>  =20
+sorry, it is only slow to gui (nautilus).
+> how many files?
+~25,000.
+>  it may be better to convert to a "stepped" directory=20
+> structure.
+>
+> e.g.:
+> instead of:
+> /home/abel
+> /home/alfred
+> /home/ada
+> [...]
+> /home/zelda
+> /home/zola
+> /home/zoolander
+>
+> use:
+> /home/a/abel
+> /home/a/alfred
+> /home/a/ada
+> [...]
+> /home/z/zelda
+> /home/z/zola
+> /home/z/zoolander
+> or: (usually only when names are fixed-length)
+> /home/a/bel
+> /home/a/lfred
+> /home/a/da
+> [...]
+> /home/z/elda
+> /home/z/ola
+> /home/z/oolander
+>
+> i'm most familiar with using this for ascii names, but it can be conver=
+ted to=20
+> work with other names.  japanese can use stroke count of the first char=
+acter=20
+> instead of first character, for example.
+>  =20
+yes. good idea. i am however astonished that nautilus takes ~30 sec. to
+open such a directory.
+
+
+--=20
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+i use pgp. if there is an incompatibility problem with your mail
+client, please contact me.
+
+
+
+

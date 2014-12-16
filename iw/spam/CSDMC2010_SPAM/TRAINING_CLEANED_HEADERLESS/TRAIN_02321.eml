@@ -1,0 +1,14 @@
+shortly after i turn utf-8 on xterm will crash for no apparent reason. =
+it doesn't have to be utf-8 characters. simply turn on utf-8 and do =
+"find /" and there it goes. i can reproduce this 100% of the time.
+
+(if this is not the right list for this, a pointer to the right list =
+would be appreciated.)
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+x11-users mailing list      (x11-users@lists.apple.com)
+help/unsubscribe/update your subscription: http://lists.apple.com/mailman/options/x11-users/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

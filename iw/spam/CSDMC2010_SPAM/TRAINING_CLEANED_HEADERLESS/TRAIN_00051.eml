@@ -1,0 +1,39 @@
+http://www.hughes-family.org/bugzilla/show_bug.cgi?id=828
+
+jm@jmason.org changed:
+
+           what    |removed                     |added
+----------------------------------------------------------------------------
+             status|assigned                    |resolved
+         resolution|                            |fixed
+
+
+
+------- additional comments from jm@jmason.org  2002-09-21 16:35 -------
+ok, this should now be considered fixed, i should think.
+
+   domain name: spamassassin.org
+   name server: ns.peregrinehw.com
+   name server: ns1.rts.com.au
+   name server: ns2.rts.com.au
+   name server: ns3.rts.com.au
+   name server: family.zawodny.com
+
+etc.
+
+
+
+------- you are receiving this mail because: -------
+you are the assignee for the bug, or are watching the assignee.
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+spamassassin-devel mailing list
+spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

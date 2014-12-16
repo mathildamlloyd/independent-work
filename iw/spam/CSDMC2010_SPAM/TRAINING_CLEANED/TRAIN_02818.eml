@@ -1,0 +1,222 @@
+None>
+> I have installed
+> ii =A0samba =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =
+=A0 2:3.2.5-4lenny9 =A0 =A0 =A0 =A0 =A0 =A0a
+> ii =A0samba-common =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A0 =A02:3=
+.2.5-4lenny9
+> On Debian Lenny and i am sharing directories to Windows Users successfull=
+y.
+>
+> I configured it as a PDC with the following configuration.
+> [global]
+> =A0 =A0 =A0 =A0workgroup =3D HIFXNX
+> =A0 =A0 =A0 =A0netbios name =3D HIFXNXDC
+> =A0 =A0 =A0 =A0server string =3D HIFXNX Domain Controller, PHP Developmen=
+t
+> Server, Subversion Server, DNS Server
+> =A0 =A0 =A0 =A0interfaces =3D 172.16.2.0/255.255.255.255
+> =A0 =A0 =A0 =A0bind interfaces only =3D Yes
+> =A0 =A0 =A0 =A0obey pam restrictions =3D Yes
+> =A0 =A0 =A0 =A0passdb backend =3D tdbsam
+> =A0 =A0 =A0 =A0pam password change =3D Yes
+> =A0 =A0 =A0 =A0passwd program =3D /usr/bin/passwd %u
+> =A0 =A0 =A0 =A0passwd chat =3D *Enter\snew\s*\spassword:* %n\n
+> *Retype\snew\s*\spassword:* %n\n *password\supdated\ssuccessfully* .
+> =A0 =A0 =A0 =A0unix password sync =3D Yes
+> =A0 =A0 =A0 =A0syslog =3D 0
+> =A0 =A0 =A0 =A0log file =3D /var/log/samba/log.%m
+> =A0 =A0 =A0 =A0max log size =3D 1000
+> =A0 =A0 =A0 =A0name resolve order =3D lmhosts host wins bcast
+> =A0 =A0 =A0 =A0add user script =3D /usr/sbin/adduser --quiet
+> --disabled-password --gecos "" %u
+> =A0 =A0 =A0 =A0add group script =3D /usr/sbin/addgroup --force-badname %g
+> =A0 =A0 =A0 =A0add machine script =3D /usr/sbin/useradd -g machines -c "%=
+u
+> machine account" -d /var/lib/samba -s /bin/false %u
+> =A0 =A0 =A0 =A0domain logons =3D Yes
+> =A0 =A0 =A0 =A0os level =3D 33
+> =A0 =A0 =A0 =A0preferred master =3D Auto
+> =A0 =A0 =A0 =A0domain master =3D Yes
+> =A0 =A0 =A0 =A0dns proxy =3D No
+> =A0 =A0 =A0 =A0panic action =3D /usr/share/samba/panic-action %d
+> [homes]
+> =A0 =A0 =A0 =A0comment =3D Home Directories
+> =A0 =A0 =A0 =A0valid users =3D %S
+> =A0 =A0 =A0 =A0create mask =3D 0700
+> =A0 =A0 =A0 =A0directory mask =3D 0700
+> =A0 =A0 =A0 =A0browseable =3D No
+> [netlogon]
+> =A0 =A0 =A0 =A0comment =3D Network Logon Service
+> =A0 =A0 =A0 =A0path =3D /home/samba/netlogon
+> =A0 =A0 =A0 =A0guest ok =3D Yes
+> =A0 =A0 =A0 =A0share modes =3D No
+>
+> I can get the domain & domain controller resolved using DNS from the
+> Windows XP machine.
+> But when I try to join the domain from the Windows XP machine.
+> I get the error
+> "A Domain Controller for the domain hifxnx.local could not be contacted"
+> and the debug log file dcdiag.txt contains these details.
+> The following error occurred when DNS was queried for the service
+> location (SRV) resource record used to locate a domain controller for
+> domain hifxnx.local:
+> The error was: "DNS name does not exist."
+> (error code 0x0000232B RCODE_NAME_ERROR)
+> The query was for the SRV record for _ldap._tcp.dc._msdcs.hifxnx.local
+> Common causes of this error include the following:
+> - The DNS SRV record is not registered in DNS.
+> - One or more of the following zones do not include delegation to its
+> child zone:
+> hifxnx.local
+> local
+> . (the root zone)
+
+My Domain SMB knowledge is slightly rusty but here goes...
+
+1. Your Samba server's ip address ends with a 0, which, AFAIK, is
+reserved for network addresses (unless it has some special purpose
+like the the /32 netmask). What is the output of "ifconfig -a"?
+
+2. In your smb.conf:
+
+2.a The following are missing (although they may be the default
+settings for these variables):
+security =3D user
+local master =3D yes
+
+2.b I have forgotten why, but AFAIK "127.0.0.1" should be listed in
+"interfaces =3D".
+
+2.c What does "share modes =3D No" do?
+
+3. If you have not yet created a computer account for the Windows box,
+you have to log on to the domain as root (or as a user with the right
+to add a machine account) the first time that you do so from a Samba
+client for the "add machine script =3D" variable to do its magic.
+
+4. The "_ldap._tcp...." DNS SRV records are needed for an AD domain
+(IIRC there are 6 +-1). I have never set up an AD Samba PDC but your
+smb.conf settings look like those of an NT4 Samba PDC so it may just
+be a misleading error/failure message. Your Windows box seems to be an
+XP VM but just in case the netbios name is misleading, see
+http://wiki.samba.org/index.php/Windows7
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/i2x6d4219cc1004291502n9c747e56ra1b0d48c7ddf2ede@mail.csmining.org
+
+
+re: nslookup from windows resolves domain and pdc correctly but still 
+gets cannot contact on samba 3.2.5-4 on lennyon wed, apr 28, 2010 at 7:50 am, siju george  wrote:
+>
+> i have installed
+> ii =a0samba =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =
+=a0 2:3.2.5-4lenny9 =a0 =a0 =a0 =a0 =a0 =a0a
+> ii =a0samba-common =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a02:3=
+.2.5-4lenny9
+> on debian lenny and i am sharing directories to windows users successfull=
+y.
+>
+> i configured it as a pdc with the following configuration.
+> [global]
+> =a0 =a0 =a0 =a0workgroup =3d hifxnx
+> =a0 =a0 =a0 =a0netbios name =3d hifxnxdc
+> =a0 =a0 =a0 =a0server string =3d hifxnx domain controller, php developmen=
+t
+> server, subversion server, dns server
+> =a0 =a0 =a0 =a0interfaces =3d 172.16.2.0/255.255.255.255
+> =a0 =a0 =a0 =a0bind interfaces only =3d yes
+> =a0 =a0 =a0 =a0obey pam restrictions =3d yes
+> =a0 =a0 =a0 =a0passdb backend =3d tdbsam
+> =a0 =a0 =a0 =a0pam password change =3d yes
+> =a0 =a0 =a0 =a0passwd program =3d /usr/bin/passwd %u
+> =a0 =a0 =a0 =a0passwd chat =3d *enter\snew\s*\spassword:* %n\n
+> *retype\snew\s*\spassword:* %n\n *password\supdated\ssuccessfully* .
+> =a0 =a0 =a0 =a0unix password sync =3d yes
+> =a0 =a0 =a0 =a0syslog =3d 0
+> =a0 =a0 =a0 =a0log file =3d /var/log/samba/log.%m
+> =a0 =a0 =a0 =a0max log size =3d 1000
+> =a0 =a0 =a0 =a0name resolve order =3d lmhosts host wins bcast
+> =a0 =a0 =a0 =a0add user script =3d /usr/sbin/adduser --quiet
+> --disabled-password --gecos "" %u
+> =a0 =a0 =a0 =a0add group script =3d /usr/sbin/addgroup --force-badname %g
+> =a0 =a0 =a0 =a0add machine script =3d /usr/sbin/useradd -g machines -c "%=
+u
+> machine account" -d /var/lib/samba -s /bin/false %u
+> =a0 =a0 =a0 =a0domain logons =3d yes
+> =a0 =a0 =a0 =a0os level =3d 33
+> =a0 =a0 =a0 =a0preferred master =3d auto
+> =a0 =a0 =a0 =a0domain master =3d yes
+> =a0 =a0 =a0 =a0dns proxy =3d no
+> =a0 =a0 =a0 =a0panic action =3d /usr/share/samba/panic-action %d
+> [homes]
+> =a0 =a0 =a0 =a0comment =3d home directories
+> =a0 =a0 =a0 =a0valid users =3d %s
+> =a0 =a0 =a0 =a0create mask =3d 0700
+> =a0 =a0 =a0 =a0directory mask =3d 0700
+> =a0 =a0 =a0 =a0browseable =3d no
+> [netlogon]
+> =a0 =a0 =a0 =a0comment =3d network logon service
+> =a0 =a0 =a0 =a0path =3d /home/samba/netlogon
+> =a0 =a0 =a0 =a0guest ok =3d yes
+> =a0 =a0 =a0 =a0share modes =3d no
+>
+> i can get the domain & domain controller resolved using dns from the
+> windows xp machine.
+> but when i try to join the domain from the windows xp machine.
+> i get the error
+> "a domain controller for the domain hifxnx.local could not be contacted"
+> and the debug log file dcdiag.txt contains these details.
+> the following error occurred when dns was queried for the service
+> location (srv) resource record used to locate a domain controller for
+> domain hifxnx.local:
+> the error was: "dns name does not exist."
+> (error code 0x0000232b rcode_name_error)
+> the query was for the srv record for _ldap._tcp.dc._msdcs.hifxnx.local
+> common causes of this error include the following:
+> - the dns srv record is not registered in dns.
+> - one or more of the following zones do not include delegation to its
+> child zone:
+> hifxnx.local
+> local
+> . (the root zone)
+
+my domain smb knowledge is slightly rusty but here goes...
+
+1. your samba server's ip address ends with a 0, which, afaik, is
+reserved for network addresses (unless it has some special purpose
+like the the /32 netmask). what is the output of "ifconfig -a"?
+
+2. in your smb.conf:
+
+2.a the following are missing (although they may be the default
+settings for these variables):
+security =3d user
+local master =3d yes
+
+2.b i have forgotten why, but afaik "127.0.0.1" should be listed in
+"interfaces =3d".
+
+2.c what does "share modes =3d no" do?
+
+3. if you have not yet created a computer account for the windows box,
+you have to log on to the domain as root (or as a user with the right
+to add a machine account) the first time that you do so from a samba
+client for the "add machine script =3d" variable to do its magic.
+
+4. the "_ldap._tcp...." dns srv records are needed for an ad domain
+(iirc there are 6 +-1). i have never set up an ad samba pdc but your
+smb.conf settings look like those of an nt4 samba pdc so it may just
+be a misleading error/failure message. your windows box seems to be an
+xp vm but just in case the netbios name is misleading, see
+http://wiki.samba.org/index.php/windows7
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/i2x6d4219cc1004291502n9c747e56ra1b0d48c7ddf2ede@mail.csmining.org
+
+

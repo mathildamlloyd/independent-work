@@ -1,0 +1,14 @@
+on 14.04.2010 12:24, paul chany wrote:
+
+> maybe must i use grep to find the file containing 'java_home'?
+> if yes, i dont' know the exact expression of that grep command.
+
+grep -sir 'java_home' /etc/
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bc5a875.502@chello.at
+
+

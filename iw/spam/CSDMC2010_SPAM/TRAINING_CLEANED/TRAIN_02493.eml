@@ -1,0 +1,73 @@
+NoneJay Berkenbilt wrote:
+> Merciadri Luca <Luca.Merciadri@student.ulg.ac.be> wrote:
+>
+>  =20
+>
+> You might use a password if you wanted to provide complete access for
+> some people and no access for others.  For someone who has the password=
+,
+> there is no real protection.  I sent some financial documents to a loan=
+
+> officer once as a password-protected PDF.  I emailed him the PDF and
+> then left the password on his voicemail.  For my purposes, that was
+> sufficient security, and it didn't require any fancy technology or
+> software on his end.
+>
+>  =20
+>
+> Here it is.  I wrote this in response to a question from a user of my
+> PDF software, qpdf, which is in debian, but other than a quick mention
+> of a few specific tools, the response is not related to any particular
+> PDF application.
+>  =20
+Thanks for this really interesting text about this stuff. Really, I
+learnt some things.
+
+--=20
+Merciadri Luca
+See http://www.student.montefiore.ulg.ac.be/~merciadri/
+I use PGP. If there is an incompatibility problem with your mail
+client, please contact me.
+
+
+The weak can never forgive. Forgiveness is the attribute of the strong.
+
+re: pdf is blocked for printing, etc. ok for acroread (it behaves
+ as expected), but kpdf allows me to print it, even if it is protected! why?from nobody tue dec 16 07:55:45 2014
+content-type: text/plain; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+jay berkenbilt wrote:
+> merciadri luca  wrote:
+>
+>  =20
+>
+> you might use a password if you wanted to provide complete access for
+> some people and no access for others.  for someone who has the password=
+,
+> there is no real protection.  i sent some financial documents to a loan=
+
+> officer once as a password-protected pdf.  i emailed him the pdf and
+> then left the password on his voicemail.  for my purposes, that was
+> sufficient security, and it didn't require any fancy technology or
+> software on his end.
+>
+>  =20
+>
+> here it is.  i wrote this in response to a question from a user of my
+> pdf software, qpdf, which is in debian, but other than a quick mention
+> of a few specific tools, the response is not related to any particular
+> pdf application.
+>  =20
+thanks for this really interesting text about this stuff. really, i
+learnt some things.
+
+--=20
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+i use pgp. if there is an incompatibility problem with your mail
+client, please contact me.
+
+
+the weak can never forgive. forgiveness is the attribute of the strong.
+

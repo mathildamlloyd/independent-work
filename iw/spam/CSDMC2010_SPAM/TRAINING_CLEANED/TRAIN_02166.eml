@@ -1,0 +1,112 @@
+NoneWorking My_Mark2CurSeen-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Content-Type: text/plain; charset=us-ascii
+
+After a bit of peeking through the exmh tcl and playing with tcl a bit, I got 
+the "catchup unseen messages before cur" procedure working.  Here's the code 
+for everybody and the list archives in case anyone wants it in the future.  
+Thanks to John R. LoVerso for putting me on the right track.  
+
+proc My_Mark2CurSeen {} {
+    global exmh pick msg
+    set results {}
+    Exmh_Status "Clearing unseen up to cur..." red
+    Mh_SetCur $exmh(folder) $msg(id)
+    set unseen [Mh_Unseen $exmh(folder)]
+    foreach elem $unseen {
+         if { $elem < $msg(id) } {
+            lappend results $elem
+         }
+    }
+    set pick(ids) $results
+    busy PickMarkSeen
+    Exmh_Status ok blue
+}
+
+If you want to use this, stick it in your .tk/exmh directory, run auto_mkindex 
+on it and add the following lines to your .exmh/exmh-defaults:
+*Fops.more.m.uentrylist:        ketchup
+*Fops.more.m.l_ketchup:         Catch-up all before current
+*Fops.more.m.c_ketchup:         My_Mark2CurSeen
+
+- -- 
+Ted Cabeen           http://www.pobox.com/~secabeen            ted@impulse.net 
+Check Website or Keyserver for PGP/GPG Key BA0349D2         secabeen@pobox.com
+"I have taken all knowledge to be my province." -F. Bacon  secabeen@cabeen.org
+"Human kind cannot bear very much reality."-T.S.Eliot        cabeen@netcom.com
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (FreeBSD)
+Comment: Exmh version 2.5 07/13/2001
+
+iD8DBQE9mJ6XoayJfLoDSdIRAkaQAJ9NL83MUU6bJRB19x7MgRaDQhc3ZwCfRK5d
+PXat04+AnSx4tHjn5p8mZVc=
+=sJtk
+-----END PGP SIGNATURE-----
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+
+working my_mark2curseen-----begin pgp signed message-----
+hash: sha1
+
+content-type: text/plain; charset=us-ascii
+
+after a bit of peeking through the exmh tcl and playing with tcl a bit, i got 
+the "catchup unseen messages before cur" procedure working.  here's the code 
+for everybody and the list archives in case anyone wants it in the future.  
+thanks to john r. loverso for putting me on the right track.  
+
+proc my_mark2curseen {} {
+    global exmh pick msg
+    set results {}
+    exmh_status "clearing unseen up to cur..." red
+    mh_setcur $exmh(folder) $msg(id)
+    set unseen [mh_unseen $exmh(folder)]
+    foreach elem $unseen {
+         if { $elem < $msg(id) } {
+            lappend results $elem
+         }
+    }
+    set pick(ids) $results
+    busy pickmarkseen
+    exmh_status ok blue
+}
+
+if you want to use this, stick it in your .tk/exmh directory, run auto_mkindex 
+on it and add the following lines to your .exmh/exmh-defaults:
+*fops.more.m.uentrylist:        ketchup
+*fops.more.m.l_ketchup:         catch-up all before current
+*fops.more.m.c_ketchup:         my_mark2curseen
+
+- -- 
+ted cabeen           http://www.pobox.com/~secabeen            ted@impulse.net 
+check website or keyserver for pgp/gpg key ba0349d2         secabeen@pobox.com
+"i have taken all knowledge to be my province." -f. bacon  secabeen@cabeen.org
+"human kind cannot bear very much reality."-t.s.eliot        cabeen@netcom.com
+
+
+-----begin pgp signature-----
+version: gnupg v1.0.7 (freebsd)
+comment: exmh version 2.5 07/13/2001
+
+id8dbqe9mj6xoayjflodsdirakaqaj9nl83muu6bjrb19x7mgradqhc3zwcfrk5d
+pxat04+ansx4thjn5p8mzvc=
+=sjtk
+-----end pgp signature-----
+
+
+
+_______________________________________________
+exmh-workers mailing list
+exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

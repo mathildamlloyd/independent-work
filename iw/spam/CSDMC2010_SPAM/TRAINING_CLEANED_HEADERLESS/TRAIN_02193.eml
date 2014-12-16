@@ -1,0 +1,73 @@
+on wed, apr 21, 2010 at 05:34:49pm +0000, camalen wrote:
+> on wed, 21 apr 2010 15:27:59 +0200, martin wrote:
+> 
+> > when i tryed to install simutrans game with aptitude i got this error
+> > and was not able to install it:
+> 
+> (...)
+> 
+> > i have original dvds. content of /cdrom/.disk/info is: debian gnu/linux
+> > 5.0.4 "lenny" - official i386 dvd binary-3 20100131-19:16
+> > 
+> > any idea why this is so?
+> 
+> did you check the md5sum of the downloaded iso before burning the image 
+> in a dvd? :-?
+
+oh, my ... was i happy boy ... until now :)
+no, i did not :(
+so i downloaded md5sums file from internet, its content is:
+202b8e90d52b7eb3ed7294211f5aadfe  debian-504-i386-dvd-1.iso
+ad134f6556f8b79d39508a844ff59925  debian-504-i386-dvd-2.iso
+45b9ad2bfaa20547f23471829e2f7d7e  debian-504-i386-dvd-3.iso
+b46ee70c83e4e02107e4a5c271927459  debian-504-i386-dvd-4.iso
+ca1ec6584d9e5df2df958ce5d647fb91  debian-504-i386-dvd-5.iso
+4b07df455905e47f2db772b3715f46ca  debian-update-5.0.4-i386-dvd-1.iso
+
+after that i was inserting my dvds in oredr 1-5 without mounting it
+and issued command 'md5sum /dev/hdc' which produced this output
+(one line for each dvd in turn):
+
+md5sum: /dev/hdc: input/output error
+d6dd905d890c6f94e164f2b6c027c8a4  /dev/hdc
+1b662e97035cce34e1e9fa42223cdfc5  /dev/hdc
+6e0279dcd3dc5ff0dcf6e6188f6df2b3  /dev/hdc
+15462fa19c0c49f517c66fb76e6ce109  /dev/hdc
+
+therefore dvd 1 seems to be seriously damaged (thou i had not any
+problems with it when installing any program - yet), and dvd 2-4 have
+different checksums, but i am not sure if this is proper way to check
+dvds now when they are already burned on disc.
+
+then i inserted dvd 3, mounted it and run 'cd /cdrom; md5sum -c md5sum.txt'
+it printed one line per package and concluded with:
+
+md5sum: warning: 167 of 4996 computed checksums did not match
+
+i did the same for dvd 2,4 and 5 but in now md5sum did not find any
+package with bad checksum! all lines are like this:
+
+./pool/main/z/zvbi/zvbi_0.2.30-1_i386.deb: ok
+./pool/main/z/zzuf/zzuf_0.12-1_i386.deb: ok
+
+while with dvd 3 there were 167 lines like this:
+
+./pool/main/a/asc/asc-data_2.1.0.0-1_all.deb: failed
+./pool/main/b/balazar/balazar_0.3.4.ds1-3_all.deb: failed
+./pool/main/h/hgsvn/hgsvn_0.1.6-2_all.deb: failed
+./pool/main/s/simutrans/simutrans-data_100.0+ds1-4_all.deb: failed
+
+i guess i am doing something wrong as one method showed that dvds 2,4,5
+are bad while other test passed ok. at least i do know that
+packages i was trying to install from dvd 3 are bad.
+
+thank you.
+martin
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100422145935.gb2609@alfa
+
+

@@ -1,0 +1,41 @@
+use perl daily newsletter
+
+in this issue:
+    * perlqt 3 released
+
++--------------------------------------------------------------------+
+| perlqt 3 released                                                  |
+|   posted by ziggy on thursday september 19, @10:41 (tools)         |
+|   http://use.perl.org/article.pl?sid=02/09/19/1443213              |
++--------------------------------------------------------------------+
+
+[0]dom2 writes "as seen on the dot, a new version of [1]perlqt is out!
+apparently sporting a perl version of [2]uic for developing ui's from
+xml. a [3]tutorial is available for those wanting to know more details."
+
+discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/09/19/1443213
+
+links:
+    0. mailto:dom@happygiraffe.net
+    1. http://perlqt.infonium.com/
+    2. http://doc.trolltech.com/3.0/uic.html
+    3. http://perlqt.infonium.com/dist/current/doc/index.html
+
+
+
+copyright 1997-2002 pudge.  all rights reserved.
+
+
+======================================================================
+
+you have received this message because you subscribed to it
+on use perl.  to stop receiving this and other
+messages from use perl, or to add more messages
+or change your preferences, please go to your user page.
+
+http://use.perl.org/my/messages/
+
+you can log in and change your preferences from there.
+
+

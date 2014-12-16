@@ -1,0 +1,38 @@
+-----begin pgp signed message-----
+hash: sha1
+
+with this mornings upgrade to testing there was a new
+version of dash.
+i've been using bash..and tried to switch.
+
+
+frank@squeeze:~$ sudo dpkg-reconfigure dash
+dpkg-divert: mismatch on package
+  when removing `diversion of /bin/sh by dash'
+  found `diversion of /bin/sh to /bin/sh.distrib by bash'
+
+is this a bug or am i mssing something?
+
+thanks
+
+- -- 
+- -- frank --
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+iqecbaebagagbqjl+/r0aaojemedyltvrvhj8dqh/icfr7ycstjpxnun8j9sjdck
+fjdr3k5lsn1hbyow02jm2lhqfyv32vmckqhwlskggyf2gbkfc9cdrmhpcwn1z2gr
+8hkedft/9b7o+35y0mh6ocealaoxopii4yh5/dssmumeghgujpzu30uhcxdjgetp
+mqdjwkc1qdpw6gtkwysvupixho67vtkp/q1pz6ufdanvpj2lqysmqrkfc6rt0xkh
+6w3xcnqgahlddp2gfqcgztl1rs79zgazmtw7dpwwpdjohr4pcqbckzqtnkvhhsvz
+fnxdggaqxohsy86/cp9qxvbv4namuzpts55irsqsybggpiqa6oyr5sqcpwofkqw=
+=e9es
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100525122940.80340113.debianlist@videotron.ca
+
+

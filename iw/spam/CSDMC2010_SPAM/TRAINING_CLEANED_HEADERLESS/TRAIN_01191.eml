@@ -1,0 +1,42 @@
+on 4/26/2010 5:24 pm, clive mcbarton wrote:
+> -----begin pgp signed message-----
+> hash: sha1
+>
+> mark allums wrote:
+>> some people are scared of shared folders as possible attack vectors, thus security risks.
+>
+> what exactly are those risks?
+
+
+(for me, personally, it's theoretical, as i only am repeating things i 
+have picked up.  it may be out of date, now, but if i had to guess, the 
+level of threat has only grown.)
+
+it depends on the mechanism used to share the folders.  if if is through 
+a network interface, then the risks are similar to the risks on any 
+trusted intranet.
+
+if the folders are provided by the vm internals, then the risk is what 
+you can lose by a successful attack on the guest kernel or the host vm. 
+  if the host vm is kernel-based, then the risk is that of a (host) 
+kernel attack.
+
+note: i'm using "risk" as in "what can you lose?"  if you mean attack 
+vectors, then those should be evident; again, i am not a security 
+reseacher.  google joanna rutkowska.  she probably knows as much as 
+anyone about breaking out of a vm to attack the host.
+
+i'm sure others on this list know more than i do about it.
+
+maa
+
+
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bd7a9d3.7040301@allums.com
+
+

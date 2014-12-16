@@ -1,0 +1,38 @@
+on 2010-05-07 23:52:47 -0500, ron johnson wrote:
+>on 05/07/2010 09:48 pm, phil requirements wrote:
+>>on 2010-05-07 18:19:44 +0200, merciadri luca wrote:
+>>>rob owens wrote:
+>>>>avidemux can do it also.  it's a gui, but i think it's more
+>>>>straightforward to do it with ffmpeg, as suggested above
+>>>
+>>>thanks. ffmpeg does actually, exactly what i want. thanks. (for such
+>>>things, people habitually ask for a mere commandline use, at least me.)
+>>
+>>to watch videos, so i have an mplayer recipe to do this same job.  it
+>>goes like this:
+>>
+>>     mplayer myvideo.avi -vc null -vo null -ao pcm:file=myvideo.wav
+>
+>$ mplayer ${i}.mpeg -dumpaudio -dumpfile ${i}.raw_audio
+>$ file ${i}.raw_audio
+>$ mv ${i}.raw_audio ${i}.whatever
+>
+
+yes, another interesting way to use mplayer. you can use the
+-dumpaudio option to get the raw audio data out of the file.  i am
+usually not trying to get the raw audio however, because it might be
+compressed or encoded in weird ways. i usally want to have a nice
+uncompressed wav file that i can work with. and mplayer is pretty
+handy for that...
+
+so many choices!
+
+phil
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100508064633.gb1683@kasploosh.net
+
+

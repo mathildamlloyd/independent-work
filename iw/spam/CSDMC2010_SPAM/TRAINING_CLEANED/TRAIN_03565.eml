@@ -1,0 +1,42 @@
+NoneOn Mon, 10 May 2010 15:36:41 -0500
+Kent West <westk@acu.edu> wrote:
+
+Hello Kent,
+
+> I tried installing hpijs-ppds, but I still don't see the CM3530
+> listed; I do now see a Color Laserjet 3550 (without the CM, and not
+> the 3530), but who knows if that'd work? Not me.
+
+In Testing, the CM3530 is listed.  You might try pulling the hplip-data
+package from there, or wait for it to migrate.
+
+--=20
+ Regards  _
+         / )           "The blindingly obvious is
+        / _)rad        never immediately apparent"
+
+Buy some love at the five and dime
+You Have Placed A Chill In My Heart - Eurythmics
+re: how to find a printer driver?from nobody tue dec 16 07:55:47 2014
+content-type: text/plain; charset=us-ascii
+content-transfer-encoding: quoted-printable
+
+on mon, 10 may 2010 15:36:41 -0500
+kent west  wrote:
+
+hello kent,
+
+> i tried installing hpijs-ppds, but i still don't see the cm3530
+> listed; i do now see a color laserjet 3550 (without the cm, and not
+> the 3530), but who knows if that'd work? not me.
+
+in testing, the cm3530 is listed.  you might try pulling the hplip-data
+package from there, or wait for it to migrate.
+
+--=20
+ regards  _
+         / )           "the blindingly obvious is
+        / _)rad        never immediately apparent"
+
+buy some love at the five and dime
+you have placed a chill in my heart - eurythmics

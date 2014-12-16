@@ -1,0 +1,63 @@
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: text/plain; charset=ISO-8859-1
+
+On Fri, Apr 30, 2010 at 5:44 PM, Boyd Stephen Smith Jr. <
+bss@iguanasuicide.net> wrote:
+
+> On Friday 30 April 2010 06:16:22 James Stuckey wrote:
+> > The unstable/sid doesn't have to be comment out. Setting the default
+> >  release will keep the system tracked to, in this case, testing.
+>
+> Er, mostly.
+>
+> If there is a versioned dependency that can be satisfied from sid but not
+> testing, you will get the package from sid.  This shouldn't happen given
+> the
+> way testing is managed, unless you installed at least one package from sid.
+>
+> > How did the packages  from sid get installed in the first place? If
+> you're
+> > tracking something, you have to give it an explicit "aptitude install -t
+> >  sid <package>" command, right?
+>
+> With the official testing and sid repositories that should be true.  It
+> would
+> only happen if someone manually fixed up testing and did it wrong.
+> --
+>
+
+I installed eclipse from sid, since there isn't eclipse in testing.
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<br><br><div class=3D"gmail_quote">On Fri, Apr 30, 2010 at 5:44 PM, Boyd St=
+ephen Smith Jr. <span dir=3D"ltr">&lt;<a href=3D"mailto:bss@iguanasuicide.n=
+et">bss@iguanasuicide.net</a>&gt;</span> wrote:<br><blockquote class=3D"gma=
+il_quote" style=3D"border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0=
+pt 0pt 0.8ex; padding-left: 1ex;">
+<div class=3D"im">On Friday 30 April 2010 06:16:22 James Stuckey wrote:<br>
+&gt; The unstable/sid doesn&#39;t have to be comment out. Setting the defau=
+lt<br>
+&gt; =A0release will keep the system tracked to, in this case, testing.<br>
+<br>
+</div>Er, mostly.<br>
+<br>
+If there is a versioned dependency that can be satisfied from sid but not<b=
+r>
+testing, you will get the package from sid. =A0This shouldn&#39;t happen gi=
+ven the<br>
+way testing is managed, unless you installed at least one package from sid.=
+<br>
+<div class=3D"im"><br>
+&gt; How did the packages =A0from sid get installed in the first place? If =
+you&#39;re<br>
+&gt; tracking something, you have to give it an explicit &quot;aptitude ins=
+tall -t<br>
+&gt; =A0sid &lt;package&gt;&quot; command, right?<br>
+<br>
+</div>With the official testing and sid repositories that should be true. =
+=A0It would<br>
+only happen if someone manually fixed up testing and did it wrong.<br>
+<font color=3D"#888888">--</font><br></blockquote><div><br>I installed ecli=
+pse from sid, since there isn&#39;t eclipse in testing. <br></div></div>

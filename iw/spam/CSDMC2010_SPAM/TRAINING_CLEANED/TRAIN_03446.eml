@@ -1,0 +1,50 @@
+None> Thanks Tom and Jacob. The above works, but without the double quotes: i.e.
+>
+> sh -c 'for f in `folders -recurse -fast` ; do sortm +"$f" ; done'
+
+I may have a different version of "sh" than you do; the double quotes
+around the backticks work for my "sh".
+
+(In the more-than-you-really-wanted-to-know category, you're probably
+safe without the double quotes.  The only reason I put them in is that
+I have some pathologically-named folders, including folders whose
+names contain spaces.  If all your folders have safe names, you don't
+need special quoting.)
+
+
+ -Jacob
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+
+re: sorting> >  sh -c 'for f in "`folders -recurse -fast`" ; do sortm +"$f" ; done'
+
+> thanks tom and jacob. the above works, but without the double quotes: i.e.
+>
+> sh -c 'for f in `folders -recurse -fast` ; do sortm +"$f" ; done'
+
+i may have a different version of "sh" than you do; the double quotes
+around the backticks work for my "sh".
+
+(in the more-than-you-really-wanted-to-know category, you're probably
+safe without the double quotes.  the only reason i put them in is that
+i have some pathologically-named folders, including folders whose
+names contain spaces.  if all your folders have safe names, you don't
+need special quoting.)
+
+
+ -jacob
+
+
+
+_______________________________________________
+exmh-users mailing list
+exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

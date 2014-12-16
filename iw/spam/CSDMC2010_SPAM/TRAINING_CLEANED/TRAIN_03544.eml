@@ -1,0 +1,40 @@
+NoneOpenGLFirst, thanks for all the rpms, and especially ogle (which comes very close to 
+working perfectly on my Cyrix 333 box!).
+
+Now, I desperately need some games, especially TuxKart and FlightGear, but I 
+forever get stuck on a dependency: everything needs OpenGL. Querying the rpm 
+database for OpenGL gets me nowhere fast. Can anyone point me in the right 
+direction? What, in RedHat, provides OpenGL?
+
+Sorry for the question, but I've just switched from SuSE and I'm used to being 
+able to tell YaST to sort out the dependencies........
+
+Cheers
+
+John
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+
+openglfirst, thanks for all the rpms, and especially ogle (which comes very close to 
+working perfectly on my cyrix 333 box!).
+
+now, i desperately need some games, especially tuxkart and flightgear, but i 
+forever get stuck on a dependency: everything needs opengl. querying the rpm 
+database for opengl gets me nowhere fast. can anyone point me in the right 
+direction? what, in redhat, provides opengl?
+
+sorry for the question, but i've just switched from suse and i'm used to being 
+able to tell yast to sort out the dependencies........
+
+cheers
+
+john
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

@@ -1,0 +1,168 @@
+None[Razor-users] Re: No results from razor-check on known spam?It's got to be razor 2.x...I've never installed razor 1.x <G>
+
+However:
+
+[mburger@burgers mburger]$ razor-report -v
+Razor Agents 2.14, protocol version 3
+
+As to more details...I don't have any...it runs, seems to do its thing, 
+and then gives that error.
+
+On Mon, 12 Aug 2002, Chad Norwood wrote:
+
+>   Can you send more details about the error?
+>   and also do a 'razor-report -v' to make sure 2.x is being called.
+> 
+>   -chad
+> 
+> On 11/08/02 21:09 -0500, Mike Burger wrote:
+> ) Ok...I need to amend this.
+> ) 
+> ) I don't get the error when I check the spam...just when I go to report it.
+> ) 
+> ) On Sun, 11 Aug 2002, Mike Burger wrote:
+> ) 
+> ) > I did...unfortunately, now I get this:
+> ) > 
+> ) > Died at /usr/bin/razor-check line 32, <GEN0> line 1.
+> ) > 
+> ) > Did I need to remove and reinstall, or something.  I just did a make 
+> ) > install over the existing installation.
+> ) > 
+> ) > On Sun, 11 Aug 2002, Vipul Ved Prakash wrote:
+> ) > 
+> ) > > On Sun, Aug 11, 2002 at 07:39:41AM -0500, Mike Burger wrote:
+> ) > > > 
+> ) > > > Any ideas what might have changed, here? I'm running razor-agents-2.12, 
+> ) > > > and razor-agents-sdk-2.0.3.
+> ) > > 
+> ) > > Mike, 
+> ) > > 
+> ) > > Please upgrade to 2.14 as many bugs were fixed between the two releases, and 
+> ) > > see if your problem persists.
+> ) > > 
+> ) > > cheers,
+> ) > > vipul.
+> ) > > 
+> ) > > 
+> ) > 
+> ) > 
+> ) > 
+> ) > -------------------------------------------------------
+> ) > This sf.net email is sponsored by:ThinkGeek
+> ) > Welcome to geek heaven.
+> ) > http://thinkgeek.com/sf
+> ) > _______________________________________________
+> ) > Razor-users mailing list
+> ) > Razor-users@lists.sourceforge.net
+> ) > https://lists.sourceforge.net/lists/listinfo/razor-users
+> ) > 
+> ) 
+> ) 
+> ) 
+> ) -------------------------------------------------------
+> ) This sf.net email is sponsored by:ThinkGeek
+> ) Welcome to geek heaven.
+> ) http://thinkgeek.com/sf
+> ) _______________________________________________
+> ) Razor-users mailing list
+> ) Razor-users@lists.sourceforge.net
+> ) https://lists.sourceforge.net/lists/listinfo/razor-users
+> 
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+
+[razor-users] re: no results from razor-check on known spam?it's got to be razor 2.x...i've never installed razor 1.x 
+
+however:
+
+[mburger@burgers mburger]$ razor-report -v
+razor agents 2.14, protocol version 3
+
+as to more details...i don't have any...it runs, seems to do its thing, 
+and then gives that error.
+
+on mon, 12 aug 2002, chad norwood wrote:
+
+>   can you send more details about the error?
+>   and also do a 'razor-report -v' to make sure 2.x is being called.
+> 
+>   -chad
+> 
+> on 11/08/02 21:09 -0500, mike burger wrote:
+> ) ok...i need to amend this.
+> ) 
+> ) i don't get the error when i check the spam...just when i go to report it.
+> ) 
+> ) on sun, 11 aug 2002, mike burger wrote:
+> ) 
+> ) > i did...unfortunately, now i get this:
+> ) > 
+> ) > died at /usr/bin/razor-check line 32,  line 1.
+> ) > 
+> ) > did i need to remove and reinstall, or something.  i just did a make 
+> ) > install over the existing installation.
+> ) > 
+> ) > on sun, 11 aug 2002, vipul ved prakash wrote:
+> ) > 
+> ) > > on sun, aug 11, 2002 at 07:39:41am -0500, mike burger wrote:
+> ) > > > 
+> ) > > > any ideas what might have changed, here? i'm running razor-agents-2.12, 
+> ) > > > and razor-agents-sdk-2.0.3.
+> ) > > 
+> ) > > mike, 
+> ) > > 
+> ) > > please upgrade to 2.14 as many bugs were fixed between the two releases, and 
+> ) > > see if your problem persists.
+> ) > > 
+> ) > > cheers,
+> ) > > vipul.
+> ) > > 
+> ) > > 
+> ) > 
+> ) > 
+> ) > 
+> ) > -------------------------------------------------------
+> ) > this sf.net email is sponsored by:thinkgeek
+> ) > welcome to geek heaven.
+> ) > http://thinkgeek.com/sf
+> ) > _______________________________________________
+> ) > razor-users mailing list
+> ) > razor-users@lists.sourceforge.net
+> ) > https://lists.sourceforge.net/lists/listinfo/razor-users
+> ) > 
+> ) 
+> ) 
+> ) 
+> ) -------------------------------------------------------
+> ) this sf.net email is sponsored by:thinkgeek
+> ) welcome to geek heaven.
+> ) http://thinkgeek.com/sf
+> ) _______________________________________________
+> ) razor-users mailing list
+> ) razor-users@lists.sourceforge.net
+> ) https://lists.sourceforge.net/lists/listinfo/razor-users
+> 
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: dice - the leading online job board
+for high-tech professionals. search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+razor-users mailing list
+razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

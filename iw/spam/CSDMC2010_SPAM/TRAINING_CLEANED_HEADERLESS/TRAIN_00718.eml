@@ -1,0 +1,82 @@
+there is a known race condition between native background repainting and =
+java drawing in the resize/scrolling case for java applets embedded in =
+the browser process. the reason you don't see this behavior when using =
+the out-of-process plugin is because the applet painting is happening in =
+a seperate process, and the browser is "pulling the pixels" from the =
+java process when the browser thinks it's a good time to repaint.
+
+i'm not clear why unchecking the "64-bit" checkbox in java preferences =
+should enable or disable the out-of-process vs. in-process applet =
+setting. if your macbook is actually 32-bit only, you should never even =
+see the 64-bit jvms.
+
+on may 21, 2010, at 4:42 am, rob dickens wrote:
+
+> have just tested my applet on a 64-bit mac, and it seems,
+>=20
+> * you have to select the 'in their own process' preference, in order
+> to stop the flicker-on-resize
+>=20
+> * unticking the 64-bit java checkbox greys out the radio buttons that
+> let you make the above change.
+>=20
+> ergo, the non-flickering applet container is only available on 64-bit =
+macs.
+>=20
+> if anyone from apple could clarify the situation, i'd be much obliged.
+>=20
+> on wed, may 19, 2010 at 10:41 am, chung-kai chen  =
+wrote:
+>=20
+>> it's really frustrating to see something on mac so bad compared to =
+windows.
+>> i use this page =
+(http://www.javafx.com/samples/tableinsights/index.html) to test
+>> the newly arrived jvm and it still flickers like a hell when =
+scrolling the page.
+>> the same applet run on windows hosted in virtualbox on my mac shows =
+almost
+>> no flickering.
+>>=20
+>>=20
+>> 2010/5/19 rob dickens :
+>>=20
+>>> dear mac-java devs,
+>>>=20
+>>> have just installed the new version of java, hoping that my =
+applets[1]
+>>> (in safari) would stop flickering when i resized the browser
+>>> window--something which the release notes suggest[2] might be the
+>>> case--, but i find that they do still flicker.
+>>>=20
+>>> one thing i note is that the java preferences app won't let me =
+change
+>>> the way applets are run (from 'within the browser process' to 'in
+>>> their own process'), since the radio buttons are greyed out.
+>>>=20
+>>> i'm on a 32-bit macbook, btw.
+>>>=20
+>>> please could somebody help.
+>>>=20
+>>> best regards,
+>>>=20
+>>> rob
+>>>=20
+>>> 1 http://lafros.com/gui
+>>> 2 plugin2 graphics rendering
+>>> =
+
+
+regards,
+mike swingler
+java runtime engineer
+apple inc.
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

@@ -1,0 +1,32 @@
+on thu, apr 29, 2010 at 09:48:41am -0500, boyd stephen smith jr. wrote:
+> on wednesday 28 april 2010 22:11:00 rob owens wrote:
+> > my understanding is that live-helper must build the kernel so that
+> > certain modules necessary to the live system get included.  i confess
+> > that i don't completely understand that answer, but it's what i was told
+> > by the developer.
+> 
+> you should look into the live-helper configuration and adjust where it gets 
+> the kernel source and any (extra?) patches it applies.  it should be able to 
+> work with kernel sources provided from lenny-backports with the proper 
+> configuration, since it already works with both lenny and squeeze kernel 
+> sources.  the bpo kernels are not packaged significantly differently.
+> 
+> if live-helper doesn't have any relevant configuration, looking into how it 
+> receives, patches, compiles, and packages the kernel should give you some 
+> insight into a work-around.  (e.g. repackaging the bpo kernel package to have 
+> the same package name but a higher version than the lenny kernel package.)
+
+thanks.  i think this is the approach i'm going to take.  i just tried
+install barebones squeeze in virtualbox, and i'm running into packaging
+problems when i try to install certain software from lenny (lxde and
+apt-show-versions, for example).
+
+-rob
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100430175523.ga4133@aurora.owens.net
+
+

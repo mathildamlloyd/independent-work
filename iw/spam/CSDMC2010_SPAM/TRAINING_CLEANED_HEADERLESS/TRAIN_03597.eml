@@ -1,0 +1,31 @@
+on 04/27/2010 02:51 pm, boyd stephen smith jr. wrote:
+[snip]
+>
+> for "normal" file operations, taking an lvm snapshot of the mounted filesystem
+> and then making your backup from that should be sufficient.  this should even
+> work for postgresql database files (though, it is not optimal).  mysql has a
+> history of being more flaky, but it might work there as well.
+>
+> if you snapshot a mounted file system, the snapshot will be approximately
+> equivalent to the original file system, uncleanly unmounted at that exact
+> moment (think: power failure).  it's possible to then take backups of an
+> active system with no downtime (although i/o load will certainly go up during
+> the backup).  if you mount the snapshot as part of the backup procedure, a
+> journaled file system will want to replay the journal then.  otherwise, a
+> journal replay will be required at restore time.  postgresql (etc.) will also
+> end up doing a journal replay / recovery at restore time.
+>
+
+a proper rdbms will have a hot-backup feature, so i'd still say that 
+a file-only backup is the way to go.
+
+-- 
+dissent is patriotic, remember?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bd96c86.3060301@cox.net
+
+

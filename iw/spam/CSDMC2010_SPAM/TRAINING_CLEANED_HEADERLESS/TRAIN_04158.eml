@@ -1,0 +1,18 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on sat,22.may.10, 17:16:22, briand@aracnet.com wrote:
+> trying to install windows xp pro
+>=20
+> the installation goes just fine but when i try to run the vm i get
+
+for what purpose do you want to run windows? maybe we can suggest better=20
+alternatives (like virtualbox, package virtualbox-ose).
+
+regards,
+andrei
+--=20
+offtopic discussions among debian users and developers:
+http://lists.alioth.debian.org/mailman/listinfo/d-community-offtopic

@@ -1,0 +1,18 @@
+hi ladies,
+
+i setup a cron job to do a full backup to tape drive there last night, but
+i'm just wondering how i can verify that it actually ran? 
+i suppose that a mail will be sent to root as i ran crontab -e as root. is
+that correct or should i be looking elsewhere?
+
+thanks to everyone who replies in advance. 
+
+best regards
+cw
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

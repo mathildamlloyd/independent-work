@@ -1,0 +1,38 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+mark allums wrote:
+>> andrei popescu wrote:
+>
+>>> probably a good start (whatever technology you end up using) is a
+>>> gnu/linux (preferably debian) machine connected to both internet link=
+s
+>>> and your internal network since consumer gateways don't even have mor=
+e
+>>> than one wan port[2].
+>
+> i would like to point out that cradlepoint makes a few routers that
+> have a port that can be assigned as either a switch port or a 2nd wan
+> port. these cardlepoint routers have load-balancing capabilities.
+>
+> they accept 3g wireless aircards, having a pcmcia or express slot, as
+> well as usb ports (for usb aircards or tethered smartphones).  these
+> routers can also failover from the ethernet wan to aircard.
+>
+> i have a cradlepoint mbr1200 model.  i use it with a blackberry.  i
+> have not experimented extensively with multiple wan connections, howeve=
+r.
+>
+> one big downside is that they are expensive.
+thanks for pointing this out. i didn't know it.
+
+--=20
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+i use pgp. if there is an incompatibility problem with your mail
+client, please contact me.
+
+
+
+

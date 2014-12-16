@@ -1,0 +1,84 @@
+
+--- begin forwarded text
+
+
+date: sun, 11 aug 2002 13:02:48 +0100
+to: usual@espace.net
+from: fearghas mckay 
+subject: fwd: [camram-spam] another framework hashcash related framework
+reply-to: "usual people list" 
+sender: 
+
+
+--- begin forwarded text
+
+
+mailing-list: contact camram-spam-help@camram.org; run by ezmlm
+x-no-archive: yes
+reply-to: camram-spam@camram.org
+delivered-to: mailing list camram-spam@camram.org
+delivered-to: moderator for camram-spam@camram.org
+date: fri, 2 aug 2002 00:42:53 +0100
+from: adam back 
+to: camram 
+cc: adam back 
+subject: [camram-spam] another framework hashcash related framework
+
+there is a framework for using a hashcash like proof of work function
+as a way to frustrate junk mailers in this paper:
+
+"curbing junk e-mail via secure classification"
+
+by e. gabber, m. jakobsson, y. matias, a. mayer bell
+
+in fc98.
+
+online copy here:
+
+http://citeseer.nj.nec.com/27735.html
+
+(look in the view or download section at the top right, it's
+availabile in at least .pdf and .ps formats).
+
+the framework they propose with proxies etc looks a lot like the
+current camram architecture, with a proof of work to get on a white
+list.  they use target revokable email addresses (basically identical
+to the lwpa concept) to implement the white list.
+
+the resulting framework is essentially identical to what i proposed in
+recent message with:
+
+subject: target revokable email addresses, and postage-free tokens
+
+their idea of including the postage free-token in the email address,
+mirrors what is done in lwpa and makes the system exhibit smoother
+migration for non-users.  eg. you can use varied sender addresses and
+it will still work, you can forward the email address to someone else
+and it will still work etc.
+
+they have some software architecture diagrams and suggestions for
+installing some of the proxies on a corporate gateway -- "gatekeeper"
+they call it.
+
+adam
+
+---------------------------------------------------------------------
+to unsubscribe, e-mail: camram-spam-unsubscribe@camram.org
+for additional commands, e-mail: camram-spam-help@camram.org
+
+--- end forwarded text
+
+--- end forwarded text
+
+
+-- 
+-----------------
+r. a. hettinga 
+the internet bearer underwriting corporation 
+44 farquhar street, boston, ma 02131 usa
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- edward gibbon, 'decline and fall of the roman empire'
+http://xent.com/mailman/listinfo/fork
+
+

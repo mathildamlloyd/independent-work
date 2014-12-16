@@ -1,0 +1,66 @@
+on fri, 09 apr 2010 04:40:12 +0200
+godo  wrote:
+
+> ron johnson wrote:
+> > hi,
+> > 
+> > i just locally installed upstream firefox, and of course debian 
+> > alternatives doesn't know about it, so iceweasel, which uses 
+> > x-www-browser loads iceape, which i don't want.
+> > 
+> > "update-alternatives --install" seems to be what i want in order to
+> > add /usr/local/firefox/firefox to the x-www-browser list, but can't
+> > get it to work.
+> > 
+> > # update-alternatives --install x-www-browser firefox \
+> >                                        /usr/local/firefox/firefox 3
+> > update-alternatives: error: alternative link is not absolute as it 
+> > should be: x-www-browser
+> > 
+> > what am i doing wrong?
+> > 
+> > tia
+> > 
+> i think i got it.
+> 
+> update-alternatives --install /usr/bin/x-www-browser x-www-browser 
+> /home/my_username/.firefox/firefox 3
+> 
+> i didn't got any error.
+> 
+
+wouldn't it be better if the syntax was this:
+
+update-alternatives --install /usr/bin/x-www-browser
+x-www-browser /opt/firefox/firefox 3
+
+of course, this would be making use of /opt for what it was
+originally intended, for all the software and add-on packages that are
+not part of the default installation.
+
+reference points:
+http://www.tldp.org/ldp/linux-filesystem-hierarchy/html/opt.html
+http://wiki.debian.org/filesystemhierarchystandard
+
+
+
+
+
+
+-- 
+regards,
+
+chris
+
+"when the people fear their government, there is tyranny; when the
+government fears the people, there is liberty."
+
+           -- thomas jefferson
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100408233853.08eed76f@makeworld.com
+
+

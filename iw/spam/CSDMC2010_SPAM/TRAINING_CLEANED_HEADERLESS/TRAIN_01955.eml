@@ -1,0 +1,9 @@
+i have an application that is designed to do something when the user 
+pauses over it with the mouse, especially when the java application is 
+unfocused.  from what i can tell, on mac os x, unfocused java windows 
+don't get mouse events.  other applications in cocoa seem to get this, 
+so i'm curious: is this a bug?  or was java for mac os x defined this 
+way?  is there a way to get these events?
+
+-- 
+brandon moon

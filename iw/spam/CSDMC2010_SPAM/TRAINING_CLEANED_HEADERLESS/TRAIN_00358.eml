@@ -1,0 +1,450 @@
+rohit was wondering what microsoft's definition of a chief software
+architect is (and, consequently, what microsoft thinks is a roadmap).
+here you go, from mr. ballmer to mr. gillmor to mr. fork...
+architecture is war; love 'em or hate 'em, at least microsoft
+understands that: as chief sa, billg oversees all product strategy.
+
+"there are two things a road map can be. one is just a piece of paper
+that tells what everyone is doing and records a bunch of bottom-up
+plans. or it can be something where we impose more broadly our vision
+from the top. we are not going to try to get everything shared. ...
+that's a path for getting everything stopped up. but at the same time we
+are trying to take the top four or five things we are trying to do in
+the longhorn wave, yukon wave, or the .net wave and really have enough
+time to have some cross-cutting discussions about how we make that happen."
+
+"bill [gates] is dedicated full-time to being chief software
+architect. he also happens to be chairman of the company, but he spends
+most of his time being chief software architect. we have a body now that
+meets every month -- the sltt [senior leadership technical team],
+basically the top people involved in the product-creating strategy --
+and we present and discuss the issues. bill is driving a process for
+each of these waves. for instance, [he will ask] what are the
+cross-cutting scenarios that i want, and then [he will] get all the
+right product groups together and bring these things in front of the sltt."
+
+"people talk about what it takes to be a good manager, and people talk
+about being a good coach and getting people to like you. in a large
+organization those things are important, but at a certain level, ... the
+most important thing you can do for your people to make them better is
+to give them a framework where they can work in harmony with the other
+people in the company. and from bill's perspective, [this framework] is
+the technical road map and the sltt process; it is the scenarios. from
+my perspective, it is the p&l; [profit and loss] structure and the
+multiple businesses because, given how we work, giving people a
+framework that gets them to make the whole bigger than the sum of the
+parts will mean we have better offerings."
+
+
+
+http://www.infoworld.com/articles/pl/xml/02/07/22/020722plballmer.xml
+
+ballmer in charge 
+july 18, 2002 1:01 pm pt
+
+no one knows better than microsoft ceo steve ballmer that, as the .net
+platform evolves, the success of microsoft depends on how well the
+company coordinates its tool, server, and client strategies and how well
+it communicates that vision. in an interview with infoworld test center
+director steve gillmor and infoworld editor at large ed scannell at
+microsoft fusion 2002, ballmer discussed the progress of .net, changes
+in the company's approach to product development, and microsoft's
+efforts to simplify product licensing and inspire trust in customers and
+partners.
+
+> last time we talked was two years ago, at the beginning of the .net
+> era. so where are we now in the .net evolution?
+
+let me start by talking about where i think we are in the xml revolution
+first, and then [i will] talk about where we are with .net. i believe
+that the it industry collectively decided over the last three or four
+years that the world was going to be replatformed with xml as the key
+foundation. it's not like anyone ever got together to decide this, but
+it's like magnetic north, where it's been clearly indicated that
+everyone is rallying around the concept. but i think the degree to which
+[xml] is pervasive might still be underestimated. a lot of partners,
+even at this conference, see it as b-to-b for big companies. but it is
+really about the way software in general is designed. it is all about
+the way security should work. management -- everything is changed.
+
+so to answer your direct question, two years ago i might have said the
+jury is still out about whether [xml] was going to happen. we were
+questioning if it was going to be a legitimate competitor to java. but
+now the world has decided to embrace [xml] as the basis for the next
+generation of technology. and there are a lot of benefits that come with
+it. could it have been something other than xml? sure it could have. it
+wasn't the specific technical implementation; it is merely the fact that
+it comes out of internet standards. it has deeper semantic abilities. it
+is all about interoperability and connection.
+
+so in that context, where are we with .net? i'll say a couple
+things. no. 1, i would say we have some momentum in the market. we have
+customers using the .net product line, like merrill [lynch], credit
+suisse, marks & spencer, citibank, and a variety of others. people who
+are doing some things for real. i feel like the degree we are out front
+is in some ways smaller and in some ways larger.
+
+> how so?
+
+smaller in the sense that everyone is talking the xml talk, even sun;
+bigger in the execution sense: we've delivered. we delivered the first
+batch of products that really were built xml to the core -- visual
+studio .net and biztalk server -- and we are getting traction. so i feel
+good about where our execution is relative to everyone else. that is not
+to say that other people aren't doing some reasonable bolt-on xml
+support for the stuff they have.
+
+> you have some heavy lifting to do to convince your customers and
+> partners to follow along. what do you have to do to set the standard
+> for adoption and upgrading to this next generation?
+
+we have to present the picture that we are behaving consistently within
+the framework of focusing on customer issues and customer satisfaction
+and trustworthy computing, which we have articulated. now there are some
+things i would have done differently, in 20-20 hindsight. i would have
+increased the focus on not just security but deployment, because a lot
+of the security problems are actually deployment problems. we have the
+fix, but sometimes we can't get the tools in their hands to deploy those
+fixes fast enough. licensing -- i know i would have given more time, and
+there are better ways to plan around the kinds of changes we made. we
+are still going to have to get smart about the full ramifications.
+
+> do you expect any changes to be made between now and july 31 to
+> licensing 6.0? there is a lot of push-back on this.
+
+no, there is nothing that will happen between now and july 31. and we
+will continue to learn over time what we need to do to earn our
+customers' trust and earn their business. i think many of the people who
+are pushing back really don't even know the new terms.
+
+> isn't that your fault for not educating them?
+
+yes, it is our fault. but you meet with plenty of customers whose
+companies already have licenses, and they are saying, 'i think there's a
+problem.' i don't deny there are some problems. i am sure there are some
+issues we will have to work on over time.
+
+after july 31 we are going to see what the real issues are. i was
+talking to a customer at the show who was saying he thought there would
+be a problem, and i told him that we just completed a deal with his
+company and that he is now universally licensed and that total costs to
+his company are now lower than they were before. and he said, 'oh really?'
+
+so we'll go through july 31. we have a lot of customers who have signed
+licenses, and i am sure we are going to find some issues. my bigger
+concerns today are probably not in the larger accounts, but there may be
+some issues we need to address among the smaller-size companies, and we will.
+
+> how does the .net initiative change the way in-house client and server
+> developers work together? 
+
+what we are trying to do for the health of .net and the health of the
+company and the sanity of the people who work there and the quality of
+the products we produce is to have a more orchestrated, ber-road map
+of where we are going.
+
+now there are two things a road map can be. one is just a piece of paper
+that tells what everyone is doing and records a bunch of bottom-up
+plans. or it can be something where we impose more broadly our vision
+from the top. we are not going to try to get everything shared. ...
+that's a path for getting everything stopped up. but at the same time we
+are trying to take the top four or five things we are trying to do in
+the longhorn wave, yukon wave, or the .net wave and really have enough
+time to have some cross-cutting discussions about how we make that happen.
+
+bill [gates] is dedicated full-time to being chief software
+architect. he also happens to be chairman of the company, but he spends
+most of his time being chief software architect. we have a body now that
+meets every month -- the sltt [senior leadership technical team],
+basically the top people involved in the product-creating strategy --
+and we present and discuss the issues. bill is driving a process for
+each of these waves. for instance, [he will ask] what are the
+cross-cutting scenarios that i want, and then [he will] get all the
+right product groups together and bring these things in front of the sltt.
+
+people talk about what it takes to be a good manager, and people talk
+about being a good coach and getting people to like you. in a large
+organization those things are important, but at a certain level, ... the
+most important thing you can do for your people to make them better is
+to give them a framework where they can work in harmony with the other
+people in the company. and from bill's perspective, [this framework] is
+the technical road map and the sltt process; it is the scenarios. from
+my perspective, it is the p&l; [profit and loss] structure and the
+multiple businesses because, given how we work, giving people a
+framework that gets them to make the whole bigger than the sum of the
+parts will mean we have better offerings.
+
+> it seems the scenarios construct is really working for you. is this an
+> evolution of the solutions approach? 
+
+i would say it is a pretty direct extrapolation from the solutions
+stuff, only i think we are just getting a little more experience. i
+think we use the word scenarios more often and solutions less, because
+solution sounds more like a fixed thing. at the end of the day, most of
+the things we do are customizable and programmable, and so people make
+them into the solution they want. but they are still scenarios. what
+will software deployment look like? well, that is a scenario because it
+involves windows, office, and other applications.
+
+we are working hard to make sure the whole is bigger than the sum of the
+parts. that's not to say people are always comfortable with this. i
+can't even say we will do it perfectly. all we have to do is do it a lot
+better than we had been doing it. i think that would be a big step
+forward for the customers.
+
+> will this approach cut down on some of the technology civil wars
+> microsoft has had in the past involving who is going to gain control of
+> a project? this seems to be a very democratic approach to development.
+
+i would not use the word democracy to describe it. people have to come
+together and ultimately make some decisions. this is not a voting
+process here, the agenda of what we think is important. we get a lot of
+input. [but] once it is decided, people don't get to vote with their feet.
+
+we try to make a quantum leap here in terms of our ability to improve
+pulling together all the pieces. our customers want us to do
+that. simplifying concepts by unifying them. the customers don't say
+they want us to do that, but when we do do that, they go, 'ahhh, i get
+it. that makes sense.'
+
+i don't want to go to six more meetings where people say, 'is your
+workflow strategy biztalk?' ... or 'what's your office workflow
+strategy?' or 'why is synchronization in some ways better for e-mail and
+outlook than it is for file folders and web pages?'
+
+to get that sort of synchronization sometimes -- to get that high-level
+road map to work -- you have to build something we don't have today. so
+we have been talking about unifying storage. and so the best way to get
+all this stuff to work is to get them all to work just one way. then you
+just keep tuning one set of parameters instead of having a thousand
+flowers blooming.
+
+> in your fusion keynote today, you talked about who your competitors
+> are, and it was the usual suspects. but one you didn't mention is
+> yourself. you are competing against the last generation of your technology.
+
+always. given that our stuff doesn't wear out or break down -- you can
+question whether it breaks or not [ballmer grins] -- but it doesn't
+break down like machinery does. to get anyone to do something new, we
+have to have something interesting and innovative.
+
+people think, ok, should we just do more upgrades or try to sell more
+new product? we decided that users like us to do a level of systems
+integration so they don't have to get involved in that. so take
+sharepoint team services, which we put in office. we could have sold
+team services as a separate product, and we could have introduced a new
+sku [stock keeping unit]. we could have decided if it should work down
+level with the old office or just the new version of office, and we
+could do that with real-time communications. but we tend to like to put
+things together, integrate them, and then release batches?1202?-- which
+are then 'upgrades' -- as a form of introducing our new innovation. but
+no matter how you do it, because our stuff does not wear out, we have to
+convince people that some idea we have is better or more powerful than
+the older idea we had.
+
+and there are two aspects of doing that. one aspect is, on a given
+product or upgrade release, does that make sense? or do we convince you
+that over an nyear period of time we will have enough innovation that
+you will want to be licensed for that innovation. and this is part of
+this whole licensing discussion we are having.
+
+we moved to the new licensing for two reasons, i would say. no. 1, we
+wanted to simplify our licensing. when we look back a year from now, i
+guarantee you that where we are now is simpler than where we
+were. nothing is simpler during a transition because they are learning
+the new and are more familiar with the old, but i think people will
+eventually realize this is simpler. our licensing got pretty complicated
+over the years, and some people came to not understand it all.
+
+the other issue is [the timing of delivering] our innovation. i don't
+want to have a lot of rough questions [from customers]. so when we do
+have new ideas, it's like, ok, should we put it in this upgrade or that
+one or just have a stream of stuff that only our best customers have
+access to under the terms of their contract? i think in the long run we
+have a better chance of satisfying them with the latter than with
+hitting them with six different upgrades. i am a fan of [letting] the
+customer decide, ok, i want that piece or this piece. but they are
+licensed for all of it. so those are the two things we sought to do.
+
+> that gets back to the trust issue, where if you front-load it, that's
+> the big, lumpy upgrade; and if you back-load it with the vision, the
+> .net 2003 servers, you have a long gap in the middle where you have to
+> sell into an untrusting audience.
+
+the truth is, we need to be better at both. there are some things you
+can only do big and lumpy, like a new file system. it's not like some
+sort of small user feature; if you change the file system, then the
+storage, the backup, probaby those things are going to change. probably
+the shell ought to change.the applications ... a lot of things are going
+to change. can you call that lumpy? or you can put out four new features
+in powerpoint, sure -- that would not look lumpy to users.
+
+i think we have to build trust in the model, and we are going to have to
+deliver more over time. it will not come overnight. people will have to
+see that we do a few things, ... that not all of our innovation is
+lumpy, that more of it comes evenly and steadily. people develop a
+confidence and faith; they like both aspects of the model. over time,
+our support needs to become more intimately involved in that story.
+
+we know that, but we don't know exactly what that means yet. and this
+whole notion of software as a service -- this is not a licensing or
+business discussion. it's how does software get rearchitected in the
+world of the internet? i mean, how many software products are
+fundamentally different because of the internet? not many. probably the
+anti-virus guys keep up the best. they are always feeding new virus
+support in. i asked the audience [at fusion] how many use windows
+update. now that's a small piece of software, but it is big. that's the
+consumer market; we've got to get that to really purr in the corporate market.
+
+> the lack of broadband build-out and adoption seems to be holding up
+> the ability for users to take advantage of some new services you're
+> talking about. when bill [gates] invested in comcast cable, it
+> triggered the baby bells to get on board with dsl. what are you doing
+> now to deal with that issue?
+
+the no. 1 thing is, we have to make software that is so compelling that
+people will start saying, 'well, of course i am going to get broadband.'
+
+> and 802.11 is one of those compelling features?
+
+yes, it is. i was in a hotel in sun valley, [utah], this week that was
+not wired. so i turned on my pc, and xp tells me there is a wireless
+network available. so i connect to something called mountaineer. well, i
+don't know what that is. but i have a vpn into microsoft; it worked. i
+don't know whose broadband i used. i didn't see it in bill's room. i
+called him up and said, 'hey, come over to my room.' so soon everyone is
+there and connecting to the internet through my room.
+
+we have to support all the modalities, whether it is gprs [general
+packet radio service] or 802.11. we have to make it easy to provision
+from a software perspective for things that go on with dsl [and] cable
+modems. ... and the software has to want a broadband link. there are not
+many things you do where you say i really care about the performance. if
+i am downloading powerpoint files, then i want broadband. so when you
+can do things with speed that you otherwise can't do without speed, that
+is going to put a lot of pressure on the broadband community.
+
+that's the weird answer. the more normal answer is, yeah, isn't it
+awful: there is not enough broadband, and the prices they charge ... . i
+agree with all that. if you look at what happened in japan recently,
+there was a big drop -- it is now $25 a month for dsl. vroom. they have
+gone from almost no dsl connections a year ago to 1.5 [million] or 1.8
+million [subscribers].
+
+> so how do we make that happen in this country?
+
+i think that is beyond us. if there is enough interest where the
+consumers are looking intensely for broadband, whether it is at today's
+prices or tomorrow's prices, that is going to shake out the
+marketplace. and i think the marketplace will do a good job. we just
+have to make it something obvious that consumers want. now i happen to
+live in a neigborhood where there is no broadband network. no dsl or
+cable modems. well, i have a neighbor, [teledesic chairman and co-ceo]
+craig mccaw, who has a wireless network that i think i can piggyback off
+of [ballmer laughs]. so, yes, broadband is a bottleneck -- but i also
+think we have to look at oursleves as a software industry and say,
+'aren't we, too, some of that bottleneck?' we have not built software
+that makes broadband a must-have.
+
+> microsoft ceo weighs in
+> 
+> ballmer addresses a number of key issues for customers and partners.
+> 
+> on security and trust: "there are some things i would have done
+> differently."
+> 
+> on coordinating product groups: "we are working hard to make sure
+> the whole is bigger than the sum of the parts."  
+>
+> on product licensing: "we are still going to have to get smart
+> about the full ramifications." 
+
+
+----
+adam@xent.com -- long .sig alert!
+
+
+
+i believe it is quite possible to productively apply both supposedly
+incompatible approaches [rest & soap] together.  i'll sketch it out
+below, both in prescriptive form.  note: while this is proscriptive, it
+is expected that local adaptations will be provided.
+
+1. start by modeling the persistent resources that you wish to expose.
+by persistent resources, i am referring to entities that have a typical
+life expectancy of days or greater.  ensure that each instance has a
+unique url.  when possible, assign meaningful names to resources.
+
+2. whenever possible, provide a default xml representation for each
+representation.  unlike traditional object oriented programming
+languages where there is a unique getter per property, typically there
+will be a single representation of the entire instance.  these
+representations will often contain xlinks (a.k.a. pointers or
+references) to other instances.
+
+3. now add high level methods which take care of all composite create,
+update, and delete operations.  a key aspect of the design is that
+messages for these operations need to be self contained - both the
+sender and receiver should be able to make the absolute minimum of
+assumptions as to the other's state, and multiple requests should not be
+required to implement a single logical operation.  all requests should
+provide the appearance of being executed atomically.
+
+4. query operations deserve special consideration.  a general purpose
+xml syntax should be provided in every case.  in addition, when a
+reasonable expectation exists that query parameters will be of a
+relatively short size and not require significant encoding, then a http
+get with the parameters encoded as a query string should also be
+provided.
+
+implications  
+
+the following table emphasizes how this unified approach differs from
+the "pure" (albeit hypothetical) different positions described above.
+
+1. resource -- post operations explicitly have the possibility of
+modifying multiple resources.  put and delete operations are rarely
+used, if ever.  gets may contain query arguments.
+
+2. get -- gets must never be used for operations which observably change
+the state of the recipient.  post should be used instead.
+
+3. message -- do not presume that urls are static, instead presume that
+they identify the resource.  in particular, recognize that urls can be
+dynamically generated.  expect urls of other soap resources in
+responses.  use the soap response mep for pure retrieval operations.
+
+4. procedure -- treat the url itself as the implicit first parameter.
+allow urls to be dynamically generated, and returned in structures.  use
+http get for retrieval operations.
+
+conclusions  
+
+looking to the future, the application level inter-networking protocols
+that emerge today will likely be the application level intra-networking
+protocols of the next decade.  both rest and soap contain features that
+the others lack.  most significantly:
+
+rest - soap = xlink
+
+the key bit of functionality that soap applications miss today is the
+ability to link together resources.  soap 1.2 makes significant progress
+in addressing this.  hopefully wsdl 1.2 will complete this important work.
+
+soap - rest = stored procedures
+
+looking at how other large scale systems cope with updates provides some
+key insights into productive areas for future research with respect to rest.
+
+finally, it bears repeating.  just because a service is using http get,
+doesn't mean that it is rest.  if you are encoding parameters on the
+url, you are probably making an rpc request of a service, not retrieving
+the representation of a resource.  it is worth reading roy fielding's
+ thoughts
+on the subject.  the only exception to this rule that is routinely
+condoned within the rest crowd is queries.
+
+  -- sam ruby, http://radio.weblogs.com/0101679/stories/2002/07/20/restsoap.html
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,30 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=utf-8
+content-transfer-encoding: quoted-printable
+
+that worked, thanks!
+
+if one has to do this every time, why is it that these options aren't liste=
+d
+in /etc/fstab?
+
+on fri, apr 23, 2010 at 9:27 am, =e5=88=98=e5=ae=87=e8=be=89  wrote:
+
+>
+>
+> on 23 april 2010 13:54, james stuckey  wrote:
+> >
+> > i'm not able to read dvds in squeeze. i burned this disc on the same
+> > drive in squeeze. thereafter it worked fine until a week or so ago
+> > (the disc is less than a month old). i tested the disc last week on a
+> > windoze and mac osx and it worked without a problem.
+> >
+> > when i try to mount the cd/dvd rom drive:
+> > stuckey@debian:~$ mount /dev/scd0
+> > mount: block device /dev/sr0 is write-protected, mounting read-only
+> > mount: wrong fs type, bad option, bad superblock on /dev/sr0,
+>
+> try the whole options and arguments
+> mount -o loop -t iso9660 /dev/scd0 /mnt
+>
+>

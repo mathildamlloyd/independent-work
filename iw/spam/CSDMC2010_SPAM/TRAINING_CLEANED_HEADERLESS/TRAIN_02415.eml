@@ -1,0 +1,41 @@
+-----begin pgp signed message-----
+hash: sha1
+
+i may be dense, but why would anyone want to utilize habeus?  to me, it looks 
+like a potential backdoor to anyone's defenses against spam.
+
+if i were a spammer, i'd simply set up a server, send out my spam with the 
+habeus headers and continue till i was reasonably certain i'd been reported.  
+then i'd simply reconfigure the server and reconnect to a different ip.  as 
+long as no one can establish my connection to the web sites my spam is 
+directing people to, i'm home free.
+
+since i can set up spamassassin to i don't "lose" any email, what do i gain 
+by making it easier for spam to get through??
+- -- 
+- ------------------------------------------------------------------------
+robin lynn frank---director of operations---paradigm, omega, llc
+http://paradigm-omega.com              http://paradigm-omega.net
+ 2002.  all rights reserved.  no duplication/dissemination permitted.
+use of pgp/gpg encrypted mail preferred. no html/attachments accepted.
+fingerprint:  08e0 567c 63cc 5642 db6d  d490 0f98 d7d3 77ea 3714
+key server:  http://paradigm-omega.com/keymaster.html
+- ------------------------------------------------------------------------
+-----begin pgp signature-----
+version: gnupg v1.0.7 (gnu/linux)
+
+id8dbqe9brrzd5jx03fqnxqrajqnajse55bzgj0mgzdltubtuzqtgeqlwqcfxpzv
+qfh+nyag+m+zknvli2bcjgi=
+=ysri
+-----end pgp signature-----
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: jabber - the world's fastest growing 
+real-time communications platform! don't just im. build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

@@ -1,0 +1,50 @@
+from nobody tue dec 16 09:15:45 2014
+content-type: text/plain;
+  charset="utf-8"
+content-transfer-encoding: quoted-printable
+
+on tuesday 11 may 2010 21.10:18 dotan cohen wrote:
+> on 11 may 2010 09:15, adrian von bidder  wrote:
+> > on monday 10 may 2010 16.08:40 dotan cohen wrote:
+> >> please tell us what problems, bugs, or issues kde 4 that make it
+> >> difficult to use.
+> >=20
+> > nepomuk / strigi need to improve a *lot*.
+> >=20
+> > * strigi sucks up all disk bandwidth and, given enough time, all memory
+> > to the point where the oom kill kills my session.
+> > * strigi index uses all my disk.  removing folders that were indexed
+> > (either removing these files, or removing them from the strigi
+> > configuration so they're not indexed anymore) didn't seem to have any
+> > effect on index size.
+
+i'll retry, but i think i was already on early 4.4 packages already.  not=20
+sure though.
+
+> > * likewise when i completely disable file
+> > indexing: the database doesn't shrink / isn't removed.
+
+this one certainly is not fixed in 4.4.  on a big database inherited from=20
+earlier strigi, enabling strigi and then disabling strigi and nepomuk=20
+alltogether, the database is still there.  (to be precise: the database=20
+*was* still there.  rm -rf is your friend.)
+
+cheers
+=2d- vbi
+
+=2d-=20
+featured product: vim - http://vim.org
+from nobody tue dec 16 09:15:45 2014
+content-type: application/pgp-signature; name=signature.asc 
+content-description: this is a digitally signed message part.
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+comment: get my key from http://fortytwo.ch/gpg/92082481
+
+ikceabecagcfakvqmdfggmh0dha6ly9mb3j0exr3by5jac9szwdhbc9ncgcvzw1h
+awwumjawmja4mji/dmvyc2lvbj0xljumbwq1c3vtptvkzmy4njhkmte4ndmynzyw
+nzfimjvlyjcwmdzkytnlaaojecqqzti935l6xmuaol8sng6qvl8ufugbkoxzkowh
+gr2xaj4pk5h2jszmiyg5mhtt1v5kaxlxwq==
+=zfgn
+-----end pgp signature-----

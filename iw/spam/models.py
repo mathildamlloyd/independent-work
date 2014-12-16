@@ -4,6 +4,7 @@ from django.db import models
 
 class Word(models.Model):
     word = models.CharField(max_length=255)
-    index = models.IntegerField()
-    is_spam = models.NullBooleanField(blank=True, null=True)
-    email_file = models.CharField(max_length=255)
+    spam_docs = models.IntegerField()
+    spam_count = models.IntegerField()
+    ham_docs = models.IntegerField()
+    ham_count = models.IntegerField()

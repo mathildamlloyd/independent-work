@@ -1,0 +1,16 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=us-ascii
+
+on wed, 21 aug 2002 15:01:07 +0700, robert elz said:
+
+> hmm - i've been using mh for a long time (since well before there were
+> sequences) and i don't think i've ever seen a "pseq" ...
+
+my bad - i had 'previous-sequence: pseq' in my .mh_profile from long ago and
+far away.
+
+-- 
+valdis kletnieks
+computer systems senior engineer
+virginia tech
+

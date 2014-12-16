@@ -1,0 +1,63 @@
+on fri, may 14, 2010 at 3:28 pm, camale=f3n  wrote:
+> on fri, 14 may 2010 07:32:10 -0500, ron johnson wrote:
+>
+>> on 05/14/2010 07:04 am, camale=f3n wrote:
+>
+>>>> http://en.wikipedia.org/wiki/open_specifications
+>>>>
+>>>> "an open specification is not controlled by a single company or
+>>>> individual or by a group with discriminatory membership criteria.
+>>>> copies of open specifications are available free of charge or for a
+>>>> moderate fee and can be implemented under reasonable and non
+>>>> discriminatory licensing (rand) terms by all interested parties."
+>>>
+>>> so that means...?
+>>>
+>>> a/ that i can modify the code of flash without any fear of adobe being
+>>> suing me :-)
+>>
+>> pay attention, for god's sake!
+>>
+>> their *code* is proprietary, their file specs are not.
+>
+> sorry, but ianal. "proprietary code" is what we (linux community) avoid
+> the most, so, what i am missing here?
+>
+> or put in another words, what "code" are you referring to?
+>
+> the question is still unanswered.
+>
+> can we (we=3dpeople) make our own flash implementation by using adobe fla=
+sh
+> specs?
+
+yes. "developers are now free to implement what is documented in the
+specifications without restrictions from adobe."
+
+i think you might separate the description of file format (free) and
+the code itself (proprietary). so you can write your flash player
+using the documentation but you cannot get the code of adobe flash
+player.
+
+>>> sorry, but i do cannot fully trust adobe nor any company behind a
+>>> product with such "terse" license model...
+>>
+>> no one is holding your feet to the fire while simultaneously
+>> waterboarding you, saying "trust adobe!!"
+>
+> oh, no, but... if w3c does not trust "flash" technology to be included as
+> one of their recommended standards, why should i? that is the point.
+
+linux, freebsd, osx and other oss included in that w3c standards? i
+think the answer is no... do you have trust in them?
+
+bye,
+a
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/aanlktil7z7jgyva3eaz5wke1ytufs0ewhtfndwofll_h@mail.csmining.org
+
+

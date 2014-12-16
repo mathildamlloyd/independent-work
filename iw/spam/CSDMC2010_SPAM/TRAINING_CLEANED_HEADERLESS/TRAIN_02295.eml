@@ -1,0 +1,35 @@
+on thu, 8 apr 2010 08:09:09 -0400 (edt)
+stephen powell  wrote:
+
+> on thu, 8 apr 2010 05:56:58 -0400 (edt), lorenzo bettini wrote:
+> > ... 
+> > --revision actually took effect since the 
+> > generated .deb is now (note the 'lore01')
+> > 
+> > linux-image-2.6.32.10+drm33.1-recompiled_lore01_i386.deb
+> > 
+> > but what i need to do is to get rid of '+drm33.1' which seems to be 
+> > automatically added...
+> > 
+> > the kernel sources are from the ubuntu lucid package
+> > 'linux-source-2.6.32'.
+> 
+> i never have this trouble when using official *debian* source
+> packages. if you're running ubuntu, i suggest you seek help from the
+> ubuntu forums. my web page, and my advice, are based on the
+> assumption that you are running *debian*.
+> 
+> btw, does anyone know why ubuntu users seem to want to use the debian
+> forums?  don't they have forums of their own?
+> 
+
+yes they do, and in fact i find them helpful even though i'm running
+debian :-)
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100408065717.697f2861@windy.deldotd.com
+
+

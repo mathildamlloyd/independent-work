@@ -1,0 +1,210 @@
+NoneYour visitor passesFrom nobody Tue Dec 16 07:55:44 2014
+Content-type: text/html;Content-Disposition: inline
+
+<map style="color:white; font-size:0.0%; line-height:0.0px">
+Members Only Showroom<br>
+The #1 Way to Buy Direct for Your Home:<br>
+
+Class2 Class1::func (char* response)
+{
+         printf( response);
+         Class2* d_ = new Class2;
+         d_->func (response);
+         //print response within Class2->func prints the response
+         return d_;
+
+}
+
+Snippet of Class2:
+Class2 {
+//constructor & destructor
+void func(char*);
+
+}; 
+template<class T>
+class base_container
+{
+public:
+  const T* get() const;
+  T* get();
+  void insert(T*);
+  // etc
+
+};
+
+template<class T, class derivedT>
+class base_container_specialized
+{
+public:
+  typedef base_container<T> this_base;
+private:
+  this_base _base;
+public:
+  operator const this_base&() { return _base; }
+
+  const derivedT* get() const { return static_cast<const
+derivedT*>(_base.get()); }
+  derivedT* get() { return static_cast<derivedT*>(_base.get()); }
+  void insert(derivedT* p) { _base.insert(p); }
+  // etc
+
+};
+
+class base{};
+class derived1 : public base {};
+class derived2 : public base {};
+
+base_container_specialized is NOT_A base_container. It offers same,
+but type-safe, interface as base_container. It does so through some
+simple casting (from T to derivedT). It also contains base_container,
+so that you can get a reference to that if need be (operator const
+this_base&). operator is const, to prevent e.g. calling insert with
+base* or derived2*, as that would be bad, as others have shown. So
+that gives you e.g.
+
+void f0(base_container<base>& c) { c.insert(new base); }
+void f0const(const base_container<base>&) {}
+void f1(base_container_specialized<base, derived1>&) {}
+void f2(base_container_specialized<base, derived2>&) {}
+
+void test()
+{
+  base_container_specialized<base, derived1> c1;
+  c1.insert(new derived1); //ok
+  c1.insert(new derived2); //bad
+  c1.insert(new base);     //bad, don't want base among derived1
+  c1.insert(new derived11);//ok
+  const base* b = c1.get();//ok, derived1 IS_A base
+  const derived1* d1 = c1.get();//ok
+  const derived2* d2 = c1.get();//bad, derived1 !IS_A derived2
+  f0const(c1);//ok, conversion operator used
+  f0(c1);//bad, could insert base among derived1
+  f1(c1);//ok, it's us
+  f2(c1);//bad, f2 wants derived2 container
+
+} 
+
+</map>
+</div>
+
+<br><br>
+Direct.Buy<br>
+Members Only Showroom<br>
+The #1 Way to Buy Direct for Your Home:<br>
+@_#megadealsource.com/neqw.html?ne=ykhlg.pzmyhlhnnjlatasykl<br>
+<br><br>
+_____________________________________________________<br>
+<br><br>
+Unsubscribe-Here:<br>
+@_#megadealsource.com/neqw.html?ne=ykhlh.pzmyhlhnnjlatasykl<br>
+or write: DirectBuy IM Network LLC, P.O. Box 1572, Boulder, CO 80306<br>
+<br><br>
+_____________________________________________________<br>
+<br><br>
+Unsubscribe_Here:<br>
+@_#megadealsource.com/us_ylgiolkpzmyhlhnnjlatasykl_xls/<br>
+or write: HS Media, PO Box 105603 #32520 ,Atlanta, GA ,30348-5603<br><br><br>
+your visitor passesfrom nobody tue dec 16 07:55:44 2014
+content-type: text/html;content-disposition: inline
+
+
+members only showroom
+the #1 way to buy direct for your home:
+
+class2 class1::func (char* response)
+{
+         printf( response);
+         class2* d_ = new class2;
+         d_->func (response);
+         //print response within class2->func prints the response
+         return d_;
+
+}
+
+snippet of class2:
+class2 {
+//constructor & destructor
+void func(char*);
+
+}; 
+template
+class base_container
+{
+public:
+  const t* get() const;
+  t* get();
+  void insert(t*);
+  // etc
+
+};
+
+template
+class base_container_specialized
+{
+public:
+  typedef base_container this_base;
+private:
+  this_base _base;
+public:
+  operator const this_base&() { return _base; }
+
+  const derivedt* get() const { return static_cast(_base.get()); }
+  derivedt* get() { return static_cast(_base.get()); }
+  void insert(derivedt* p) { _base.insert(p); }
+  // etc
+
+};
+
+class base{};
+class derived1 : public base {};
+class derived2 : public base {};
+
+base_container_specialized is not_a base_container. it offers same,
+but type-safe, interface as base_container. it does so through some
+simple casting (from t to derivedt). it also contains base_container,
+so that you can get a reference to that if need be (operator const
+this_base&). operator is const, to prevent e.g. calling insert with
+base* or derived2*, as that would be bad, as others have shown. so
+that gives you e.g.
+
+void f0(base_container& c) { c.insert(new base); }
+void f0const(const base_container&) {}
+void f1(base_container_specialized&) {}
+void f2(base_container_specialized&) {}
+
+void test()
+{
+  base_container_specialized c1;
+  c1.insert(new derived1); //ok
+  c1.insert(new derived2); //bad
+  c1.insert(new base);     //bad, don't want base among derived1
+  c1.insert(new derived11);//ok
+  const base* b = c1.get();//ok, derived1 is_a base
+  const derived1* d1 = c1.get();//ok
+  const derived2* d2 = c1.get();//bad, derived1 !is_a derived2
+  f0const(c1);//ok, conversion operator used
+  f0(c1);//bad, could insert base among derived1
+  f1(c1);//ok, it's us
+  f2(c1);//bad, f2 wants derived2 container
+
+} 
+
+
+
+
+direct.buy
+members only showroom
+the #1 way to buy direct for your home:
+@_#megadealsource.com/neqw.html?ne=ykhlg.pzmyhlhnnjlatasykl
+
+_____________________________________________________
+
+unsubscribe-here:
+@_#megadealsource.com/neqw.html?ne=ykhlh.pzmyhlhnnjlatasykl
+or write: directbuy im network llc, p.o. box 1572, boulder, co 80306
+
+_____________________________________________________
+
+unsubscribe_here:
+@_#megadealsource.com/us_ylgiolkpzmyhlhnnjlatasykl_xls/
+or write: hs media, po box 105603 #32520 ,atlanta, ga ,30348-5603

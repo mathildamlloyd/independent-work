@@ -1,0 +1,40 @@
+ i'm trying to wrap zope up behind apache, so i can do virtualhosts for
+zope.
+
+ i've a site on http://ip:8080/mysite.
+
+ i want that to appear as http://mysite.com/ - so:
+
+
+        servername mysite.com
+        documentroot /var/www/mysite
+        rewriteengine                   on
+        rewriterule     ^/(.*)    http://localhost:8080/mysite/$1 [p]
+
+
+ now, what happens is that apache grabs http://localhost:8080/mysite/ and spits
+it out to the browser. lovely. all works.
+
+ except for framed pages (like zope's management interface). it ends up
+looking like:
+
+    
+
+
+
+
+
+
+
+ and of course, that's not what my client should go to. any ideas what i'm
+doing wrong ?
+
+kate
+
+
+
+_______________________________________________
+webdev mailing list
+webdev@linux.ie
+http://www.linux.ie/mailman/listinfo/webdev
+

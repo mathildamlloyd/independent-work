@@ -1,0 +1,39 @@
+jozsi vadkan wrote:
+
+> or maybe in bash..
+> script/"one liner" e.g.: input: http://pastebin.com/raw.php?i=pmzpesmz
+> 
+> i want to make this output from it:
+> http://pastebin.com/raw.php?i=kh8vxt0a
+> 
+> 
+> so from the input, i want to make an ascendant order, how many things
+> are under a "something-xx"
+> 
+> does anyone has any "perl magic" in the pocket, how to do this? :d
+> 
+> thank you very, very much..:\
+
+
+assuming you can rely on the positions of the blank lines, this seems to 
+work. should be easy to change if you want to rely on something being at 
+the beginning.
+
+perl -e '$f=1; while(<>) { chomp; if ($_ eq "") { $f=1 } else { if ($f) 
+{ $x{$_}=[]; $k=$_; $f=0 } else { push @{$x{$k}}, $_ } } } for(sort keys 
+%x) { print $_, "\n", join("\n", @{$x{$_}}), "\n\n" }'
+
+there's probably a perl hacker or two who can do it neater, but as i 
+say, it seems to work ;)
+
+--
+chris jackson
+shadowcat systems ltd.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bf95e41.4020406@shadowcat.co.uk
+
+

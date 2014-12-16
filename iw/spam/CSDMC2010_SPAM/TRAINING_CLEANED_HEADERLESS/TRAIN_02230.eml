@@ -1,0 +1,31 @@
+greetings;
+
+i have looked for ways to fix this problem several times in 
+the passed few months and have had no success.
+
+recently several companies have started displaying a large 
+favicon in the address bar when you go to their site. in 
+several cases it takes up over half of the space in the 
+address bar and makes it extremely difficult to read the url.
+
+one site even claimed that this is a "security feature" as 
+it would enable the users to tell they were really on the 
+bank's site and not some scammer of phisher site. sure! like 
+nobody else could figure out how to do that!
+
+anyway, can anyone tell me how to get rid of these eyesores?
+i have already set browser.chrome.favicons and 
+browser.chrome.site_icons to false and 
+browser.chrome.image_icons.max_size to 0, but no difference!
+
+tia for any help!
+
+dennis
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4be2e2df.7070307@mgssub.com
+
+

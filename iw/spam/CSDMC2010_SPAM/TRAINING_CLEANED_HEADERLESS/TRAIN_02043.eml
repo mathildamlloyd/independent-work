@@ -1,0 +1,36 @@
+on 5/13/2010 1:51 am, sven joachim wrote:
+> on 2010-05-12 23:24 +0200, chris austin wrote:
+>
+>> i've learned today that when there are circular conflicts while upgrading, e.g.
+>> libcairo2 has to be upgraded to install xulrunner-1.9.1, but upgrading
+>> libcairo2 breaks xulrunner-1.9, it helps to use the dpkg --auto-deconfigure
+>> option before the -i action-parameter, e.g.
+>>
+>> dpkg --auto-deconfigure -i libcairo2_1.8.10-4_i386.deb
+>>
+>> then dpkg gives a nice message about considering deconfiguration of
+>> xulrunner-1.9, then decides to do it, and it works, or at least, it has done,
+>> the two or three times i have tried it today.
+>
+> this is indeed a nice trick to know, but apt would do this for you
+> automatically.
+
+
+not always.  apt depends on the dependency graph being consistent, other 
+than perhaps containing a cycle or two.  if the debian maintainers slip 
+up and screw up the dependencies (or the user is switching back and 
+forth between distributions, say among stable, testing, and unstable), 
+apt can get confused.  it has happened to me several times.  in such 
+cases, using aptitude sometimes helps.  i have also resorted to 
+installing by hand, though this may not have been strictly necessary.
+
+maa
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bed2a89.4000902@allums.com
+
+

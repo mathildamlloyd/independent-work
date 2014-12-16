@@ -1,0 +1,36 @@
+this is slightly off-topic, as nothing about this is apple-specific...=20=
+
+
+but anyway: i think you are wrong. the "name" attribute is only =
+deprecated for certain elements, where "id" is a better match. it's =
+still the correct way to name "input", "textarea", "button" and other =
+form-elements (controls). see: =
+http://www.w3.org/tr/rec-html40/interact/forms.html#control-name
+
+
+best regards,
+
+--=20
+harald k
+
+
+on 12. apr. 2010, at 15.41, mb wrote:
+
+> the servlet engine, inlcuding jsp and expression language (el) as used
+> in the tomcat 6 container server for example makes use of the =
+deprecated
+> html attribute "name" via different built-in mechanism in order to tie
+> indiviudal elements of a html form to server-side variables. this =
+means
+> that in order to produce working jsp-pages one has to make pages =
+invalid
+> according to the html 4.01 strict spec.
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

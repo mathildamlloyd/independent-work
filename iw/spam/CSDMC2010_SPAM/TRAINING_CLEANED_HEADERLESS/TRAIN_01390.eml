@@ -1,0 +1,32 @@
+on sun, 15 sep 2002, vernon webb wrote:
+
+> i'm getting these messages and i'm not sure what they mean. can anyone clear 
+> this up for me? thanks.
+> 
+> sep 15 11:45:09 linux mailscanner[6128]: rbl check ordb-rbl timed out and 
+> was killed, consecutive failure 3 of 7
+> sep 15 11:45:24 linux mailscanner[6128]: spamassassin timed out and was 
+> killed
+
+your running mailscanner and the timeout used got to check ordb-rbl is too 
+low and your timing out.  mailscanner will count up to seven timeouts and 
+then automatically disable these checks until it restarts itself (within 4 
+hours).
+
+-- 
+gerry
+
+"the lyfe so short, the craft so long to learne"  chaucer
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

@@ -1,0 +1,63 @@
+None> KS wrote:
+> 
+> could you also post the xorg log file?
+> 
+> regards
+> 
+> 
+Here it is: http://pastebin.com/ihVCH4Ek
+
+I have been able to login to KDE after the upgrade. Somehow
+plasma-desktop was uninstalled during the process :(
+
+I was able to set the TV on the right of my monitor with proper
+resolution. I haven't checked yet if this settings stay after I relogin
+or not (should have been in bed half an hour ago). One thin which still
+happens is that the KDE panel goes to the TV screen (HDMI signal). How
+can I set it to stay on the LCD monitor?
+
+One more quirk: even with the TV screen disabled, the mouse is able to
+travel beyond the right edge of the LCD monitor display!
+
+Thanks,
+KS
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/4BDE3AA9.2010204@fastmail.fm
+
+
+re: multiple graphics cards and hdmi: how to?deloptes wrote:
+> ks wrote:
+> 
+> could you also post the xorg log file?
+> 
+> regards
+> 
+> 
+here it is: http://pastebin.com/ihvch4ek
+
+i have been able to login to kde after the upgrade. somehow
+plasma-desktop was uninstalled during the process :(
+
+i was able to set the tv on the right of my monitor with proper
+resolution. i haven't checked yet if this settings stay after i relogin
+or not (should have been in bed half an hour ago). one thin which still
+happens is that the kde panel goes to the tv screen (hdmi signal). how
+can i set it to stay on the lcd monitor?
+
+one more quirk: even with the tv screen disabled, the mouse is able to
+travel beyond the right edge of the lcd monitor display!
+
+thanks,
+ks
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bde3aa9.2010204@fastmail.fm
+
+

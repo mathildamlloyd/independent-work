@@ -1,0 +1,22 @@
+on 0020 +0100 %{!sat, aug 10, 2002 at 12:11:50pm +0100}, frlinux wrote:
+> hello,
+> 
+> i have been using 2.4.19 since a couple of days on a mandrake 8.2 with
+> standard rpms for cdrecord and it didn't give any hard locks on it at
+> all, i've already burnt a couple of cds.
+thanks for that.  i'd sort of suspected that if it was a widespread
+problem it would have already been fixed.  starting to look more likely
+it is a mistake/misconfiguration on my part, though i still don't know
+where to look for the mistake/misconfiguration.
+m
+
+-- 
+michael conry   ph.:+353-1-7161987, web: http://www.acronymchile.com
+key fingerprint = 5508 b563 6791 5c84 a947  cb01 997b 3598 09de 502c
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

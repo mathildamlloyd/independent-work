@@ -1,0 +1,73 @@
+on 04/23/2010 06:31 pm, richard lawrence wrote:
+> hi all,
+>
+> i am looking to run some virtual machines for personal use: i'd like
+> to (attempt to) try out some alternative oses from within my lenny
+> host.  my goals are to be able to get a taste of some more "exotic"
+> systems (maybe: bsd, plan 9, open genera) without threatening my
+> stable environment, and with easy cleanup.  my understanding is that
+> the easiest way to do this is to run these systems as virtual
+> machines, though if others have different suggestions, please let me
+> know.
+>
+> i would also just like to learn more about running a vm, since i'd
+> like to be able to help my dad out. he has a windows development
+> machine that is choking to death on anti-virus software.  it would be
+> nice to be able to help him convert that into a vm inside gnu/linux,
+> so the machine will become usable again for things other that don't
+> require windows.
+>
+> i am wondering if others have recommendations for where to start with
+> this project.  i am pretty much a complete newb with respect to
+> virtual machine technology; i don't really know how to assess whether
+> xen, virtualbox, qemu, kvm, or something else would be the best
+> software for me to start learning.
+>
+> i value:
+> - free over non-free
+> - ease of use and good documentation over performance
+> - installation via apt and reasonable default configuration
+> - simple networking on commodity hardware
+> - other basic integration with host os services (perhaps file sharing,
+> usb, printing)
+>
+> i realize that these things may not all come in the same package. but
+> if they do, or if someone could give me some guidance about how to
+> sort out the tradeoffs, i'd be most appreciative!
+>
+> thanks,
+>
+> richard
+>
+> p.s.  apologies if this question seems too far off-topic for
+> debian-user.  if there's a better place to ask this question, i'd like
+> to know that, too.
+>
+>
+hi,
+i have sun virtualbox. it's easy to use and install.
+the guests os that i tried and work: debian, mepis, opensolaris, 
+opensuse, solaris 10, xp and some other linux distros. desktopbsd and 
+freebsd work but can't get gui -that can be lack of my knowledge.
+
+same with open virtualbox except i think that there is no usb support.
+
+aqemu (qemu) easy to use and install -desktopbsd work's with gui.
+
+i think that all vm have file sharing, printing depends on usb if you 
+have usb printer.
+
+-- 
+bye,
+goran dobosevic
+hrvatski: www.dobosevic.com
+  english: www.dobosevic.com/en/
+registered linux user #503414
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bd260c5.1020600@dobosevic.com
+
+

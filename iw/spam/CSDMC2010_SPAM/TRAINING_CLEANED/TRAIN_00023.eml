@@ -1,0 +1,188 @@
+None> Nothing I've seen in dmesg has ever led me to think that the r8169
+> driver in my Sid linux-source-2.6.31 kernel (yes, it's old; .32 and 33
+> fail to build) loads a blob.
+
+Almost all NICs load firmware blobs.  It's in dmesg somewhere.  When the
+firmware doesn't load you get something like this in dmesg:
+
+eth1: RTL8168d/8111d at 0xffffc90000c4e000,xx:xx:xx:xx:xx:xx, XID 083000c0
+IRQ 32
+eth1: unable to apply firmware patch
+
+That's a paste from one of the OPs here who was bitten by the 2.6.32-trunk
+upgrade which IIRC is the one that ripped out the RTL firmware blob.
+
+I can't find via Google a dmesg snippet of a successful RTL firmware load.
+Here's what it looks like for Intel 8255X using the e100 driver, with the
+firmware blobs all compiled into the kernel:
+
+e100 0000:00:0d.0: firmware: using built-in firmware e100/d101m_ucode.bin
+
+"built-in" signifies that the firmware blob has been included in the kernel
+at compile time.  I do this to avoid issues such as this RTL problem.  It
+only adds a couple hundred K to the kernel image.  And I use the vanilla
+kernel.org sources to avoid any Debian "non-free" issues.
+
+Just about every NIC on the planet uses a firmware blob.  There are, IIRC, 3
+ways to load the device firmware into the Linux kernel.  This applies to all
+devices that require soft firmware, not just NICs:
+
+1.  Compile all device firmware blobs into the kernel
+2.  Compile the individual blob into the driver, use initrd
+3.  Put firmware file in root filesystem, tell kernel the path
+
+#3 won't work with drivers that are needed during the boot process such as
+block device drivers.  Those require method 1 or 2.  NICs should be able to
+use 1-3.
+
+There are 3 different dmesg statements and 3 different errors depending on
+which method 1-3 above that you're using.
+
+>> At least a couple of people on this list went out and bought
+>> non-RealTek PCI
+>> NICs to fix the problem instead of reverting to the older kernel.
+> 
+> I sort of remember that.
+
+Yeah, I just pulled the mails.  One upgraded to 2.6.32-trunk on his
+firewall, bricking it until he disabled the onboard RTL and installed an
+Intel e100 IIRC.  They thought it was a udev issue til I noticed the
+firmware load failure message referenced up above in this email.  The other
+had an RTL wireless that failed for the same reason.  I can't recall how
+they fixed that one.  IIRC the OP didn't swap hardware to achieve the fix,
+so they did something with the kernel/driver/firmware.
+
+> I'm not surprised.  Since I'm only connected to a small 100Mbps LAN
+> which then connects to a 12Mbps cable modem, it doesn't really affect me.
+
+Do some FTP or SCP tests back and forth to another LAN machine and see what
+transfers rates you get out of that RTL chip.  I bet you get 1/3rd wire
+speed at best, about 30MB/s, if even that.  The machines themselves need to
+be modern to saturate the link--no slow CPUs or disks.  Any ~2GHz CPU with
+512MB RAM and a decent 7.2K RPM SATA disk should be able to push/pull 50MB/s
+across the wire.  For that matter, eliminate the disk by creating a 200MB
+RAM disk on each machine.  Create a test file with dd and FTP/SCP it back
+and forth between the RAM disks.  If your RTL chip can peak the wire it'll
+be a 2-3 second transfer if your network chips and Linux TCP stacks are up
+to the task.
+
+> Maybe if I ever get .32 or .33 I'll squeal in anger.  Until then...
+
+It's looking like the RTL firmware blob issue may have been limited to the
+trunk kernel.  You may get lucky.  Then again, if you roll your own and put
+the firmware blobs in the kernel itself as I do, you shouldn't have a
+problem.  That is, if the Debian kernel source doesn't have the blob ripped
+out for being "non-free".
+
+You mentioned you had problems building 2.6.32 and .33 kernel source.  Do
+you use the Debian kernel source or kernel.org source?  I've been using the
+kernel.org source for quite some time and have never had any real problems
+with it (knocks on wood).  I had a build problem with .33 a while back but
+that turned out to be due to a slight bit too much overclock on my machine
+in this warmer weather.  ;)
+
+-- 
+Stan
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/4BC6960E.7020202@hardwarefreak.com
+
+
+re: realtek ethernet (was re: recent mobo recommendation)ron johnson put forth on 4/14/2010 10:14 pm:
+
+> nothing i've seen in dmesg has ever led me to think that the r8169
+> driver in my sid linux-source-2.6.31 kernel (yes, it's old; .32 and 33
+> fail to build) loads a blob.
+
+almost all nics load firmware blobs.  it's in dmesg somewhere.  when the
+firmware doesn't load you get something like this in dmesg:
+
+eth1: rtl8168d/8111d at 0xffffc90000c4e000,xx:xx:xx:xx:xx:xx, xid 083000c0
+irq 32
+eth1: unable to apply firmware patch
+
+that's a paste from one of the ops here who was bitten by the 2.6.32-trunk
+upgrade which iirc is the one that ripped out the rtl firmware blob.
+
+i can't find via google a dmesg snippet of a successful rtl firmware load.
+here's what it looks like for intel 8255x using the e100 driver, with the
+firmware blobs all compiled into the kernel:
+
+e100 0000:00:0d.0: firmware: using built-in firmware e100/d101m_ucode.bin
+
+"built-in" signifies that the firmware blob has been included in the kernel
+at compile time.  i do this to avoid issues such as this rtl problem.  it
+only adds a couple hundred k to the kernel image.  and i use the vanilla
+kernel.org sources to avoid any debian "non-free" issues.
+
+just about every nic on the planet uses a firmware blob.  there are, iirc, 3
+ways to load the device firmware into the linux kernel.  this applies to all
+devices that require soft firmware, not just nics:
+
+1.  compile all device firmware blobs into the kernel
+2.  compile the individual blob into the driver, use initrd
+3.  put firmware file in root filesystem, tell kernel the path
+
+#3 won't work with drivers that are needed during the boot process such as
+block device drivers.  those require method 1 or 2.  nics should be able to
+use 1-3.
+
+there are 3 different dmesg statements and 3 different errors depending on
+which method 1-3 above that you're using.
+
+>> at least a couple of people on this list went out and bought
+>> non-realtek pci
+>> nics to fix the problem instead of reverting to the older kernel.
+> 
+> i sort of remember that.
+
+yeah, i just pulled the mails.  one upgraded to 2.6.32-trunk on his
+firewall, bricking it until he disabled the onboard rtl and installed an
+intel e100 iirc.  they thought it was a udev issue til i noticed the
+firmware load failure message referenced up above in this email.  the other
+had an rtl wireless that failed for the same reason.  i can't recall how
+they fixed that one.  iirc the op didn't swap hardware to achieve the fix,
+so they did something with the kernel/driver/firmware.
+
+> i'm not surprised.  since i'm only connected to a small 100mbps lan
+> which then connects to a 12mbps cable modem, it doesn't really affect me.
+
+do some ftp or scp tests back and forth to another lan machine and see what
+transfers rates you get out of that rtl chip.  i bet you get 1/3rd wire
+speed at best, about 30mb/s, if even that.  the machines themselves need to
+be modern to saturate the link--no slow cpus or disks.  any ~2ghz cpu with
+512mb ram and a decent 7.2k rpm sata disk should be able to push/pull 50mb/s
+across the wire.  for that matter, eliminate the disk by creating a 200mb
+ram disk on each machine.  create a test file with dd and ftp/scp it back
+and forth between the ram disks.  if your rtl chip can peak the wire it'll
+be a 2-3 second transfer if your network chips and linux tcp stacks are up
+to the task.
+
+> maybe if i ever get .32 or .33 i'll squeal in anger.  until then...
+
+it's looking like the rtl firmware blob issue may have been limited to the
+trunk kernel.  you may get lucky.  then again, if you roll your own and put
+the firmware blobs in the kernel itself as i do, you shouldn't have a
+problem.  that is, if the debian kernel source doesn't have the blob ripped
+out for being "non-free".
+
+you mentioned you had problems building 2.6.32 and .33 kernel source.  do
+you use the debian kernel source or kernel.org source?  i've been using the
+kernel.org source for quite some time and have never had any real problems
+with it (knocks on wood).  i had a build problem with .33 a while back but
+that turned out to be due to a slight bit too much overclock on my machine
+in this warmer weather.  ;)
+
+-- 
+stan
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bc6960e.7020202@hardwarefreak.com
+
+

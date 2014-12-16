@@ -1,0 +1,49 @@
+-----begin pgp signed message-----
+hash: sha1
+
+merciadri luca wrote:
+> johannes wiedersich wrote:
+>> just use a grey-by-dotting watermark for black text, merge the layers
+>> and it will
+>> be rather difficult to remove the watermark.
+> i did not merge the layers before sending it to them. problematic?
+
+difficult to judge, since i somehow lost track of what exactly you tried
+to achieve and what is the nature of the document.
+
+if you are simply afraid, that someone would use this document as
+her/his own work you could watermark the pdf and convert it to a low
+resolution bitmap (as others have already suggested). if the document
+was later misused, you could just show your nice, high quality printout
+without watermarks to prove that you are the real author.
+
+another way might be to hand out that bad quality printout on some
+special paper, either coloured or with rules and keep the pdf version to
+yourself. it will be about as difficult to retype/recreate such a
+document from paper as from retyping it from screen, which was your
+first choice (disallow printing, allow screen viewing).
+
+i think you might have gotten better replies in shorter time, if you had
+been more explicit and clear about what you try to achieve.
+
+- --
+johannes
+
+in questions of science, the authority of a thousand is not worth the
+humble reasoning of a single individual.
+- - galileo galilei, physicist and astronomer (1564-1642)
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+
+ieyearecaayfakvossiacgkqc1nzprl9qevfsgcfvrlkyywkvwpviekl1j1mwovj
+7guan2knzwl/41ciugk7hrdfxvmkgi62
+=18lf
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bceb2c2.6050004@physik.blm.tu-muenchen.de
+
+

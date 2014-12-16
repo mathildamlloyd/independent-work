@@ -1,0 +1,36 @@
+on mon, 22 jul 2002 the voices made marc perkel write:
+
+> i've been working on adding low scoring spam messages to my spam corpus
+> which means i'm tapping email that scores 5-18 points now and hand
+> sorting it. some of these messages are newsletters and other mail that's
+> not spam - but they contain an ad for something that is spam.
+>
+> so - i don't see how i can classify these messages because catching spam
+> within a newsletter or yahoo message is not a false positive.
+
+ i don't really see the problem... either the whole message is unwanted spam
+which you, one way or another, didn't agree to reciving, or it's something that
+you, one way or another, said that you'd accept... if you said you'd accept it,
+like mailinglists, then it isn't spam and shouldn't be caught as spam, no
+matter if there's ads in it or not...
+
+
+/tony
+-- 
+# per scientiam ad libertatem! // through knowledge towards freedom! #
+# genom kunskap mot frihet! =*= (c) 1999-2002 tony@svanstrom.com =*= #
+
+    perl -e'print$_{$_} for sort%_=`lynx -source svanstrom.com/t`'
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+spamassassin-devel mailing list
+spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

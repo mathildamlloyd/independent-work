@@ -1,0 +1,79 @@
+hi  thorston
+
+thanks for the quick response.
+
+i just got it to work another way by having quicktime player 7 open  
+before i click the link on the web page which has the embed attribute  
+of target="quicktimeplayer".  quicktime 7 player then displays the  
+authorization dialog and that works correctly.
+
+martin koob
+
+on 7-may-10, at 2:33 pm, thorsten philipp wrote:
+
+> hi martin,
+>
+> i filed a bug report some months ago. unfortunately it was closed  
+> (duplicate). the duplicate (id: 7275187 ) radar entry is not  
+> viewable by me.
+>
+> a workaround (also nasty...). open the url in safari and store the  
+> password. therefore it is in the keychain. quicktime x can now  
+> access the resource.
+>
+> if you find another solution or here anything from apple.. please  
+> let me know.
+>
+>
+> thorsten
+>
+> on 07.05.2010, at 20:25, martin koob wrote:
+>
+>> hi.
+>>
+>> i have some movies on a website in a protected directory on the  
+>> server.  when i open them in quicktime player 7 i  get the dialog  
+>> for the username and password and i can enter the and then the  
+>> movie will load.  if i embed these movies in a web page the  
+>> password authorization  will also work correctly on snow leopard.
+>>
+>> when try to open the url in quicktime player x  i get an error  
+>> osstatus error -128.
+>>
+>> if i set the target in the embed tags for the movie to  
+>> quicktimeplayer  i will also get the same error and the movie will  
+>> not open.
+>>
+>> if i turn off the folder protection on the folder on the server  
+>> then the movie will open correctly,  so it seems it is the  
+>> authorization that is not working.
+>>
+>> is this a known problem?   has it been reported as a bug?
+>>
+>> martin
+>> _______________________________________________
+>> do not post admin requests to the list. they will be ignored.
+>> quicktime-users mailing list      (quicktime-users@lists.apple.com)
+>> help/unsubscribe/update your subscription:
+>> http://lists.apple.com/mailman/options/quicktime-users/kyrios% 
+>> 40csmining.org
+>>
+>> this email sent to kyrios@csmining.org
+>
+>  _______________________________________________
+> do not post admin requests to the list. they will be ignored.
+> quicktime-users mailing list      (quicktime-users@lists.apple.com)
+> help/unsubscribe/update your subscription:
+> http://lists.apple.com/mailman/options/quicktime-users/mkoob% 
+> 40rogers.com
+>
+> this email sent to mkoob@rogers.com
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-users mailing list      (quicktime-users@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-users/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

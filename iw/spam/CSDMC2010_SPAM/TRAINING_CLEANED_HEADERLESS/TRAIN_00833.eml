@@ -1,0 +1,26 @@
+>>> if you're going to buy two drives, you'd be stupid to not use
+>>> mirroring for fault tolerance and a little added read performance
+>>> here and there (depends on application).
+>> i disagree.  mirroring only protects you against drive failures and not
+>> human error.
+> and i disagree with that.
+
+with the fact that it's not necessarily stupid to not use mirroring?
+
+> mirroring *definitely* makes both reads and writes go faster, due
+> to parallelism.
+
+afaik that's not true for writes (they may even slow down slightly).
+but in any case, this does not contradict the fact that the kind of
+protection it offers is different from the one offered by using backup.
+
+
+        stefan
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/jwvtyrdlw3c.fsf-monnier+gmane.linux.debian.user@gnu.org
+
+

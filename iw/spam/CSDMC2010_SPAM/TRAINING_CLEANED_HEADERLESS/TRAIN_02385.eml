@@ -1,0 +1,42 @@
+thanks dan. and the changes were very clever. some of his rule changes 
+actually did make thing more readable and he is highly skilled at 
+regular expressions.  i have found that readability and 
+understandability is important in maintaining code. i think in a group 
+project that it's more important.
+
+daniel quinlan wrote:
+
+>this is not a big deal, but i think marc has a good point.  the
+>performance difference is probably insignificant.  on the other hand, we
+>continually have errors in regular expressions, often when "excessive
+>cleverness" has been applied.
+>
+>this seems like a pretty good example of premature/excessive
+>optimization.  there is no data showing that the relevant code is run
+>for any significant period of time or that these changes produce a
+>measurable improvement in performance.  maybe they do, but it would be
+>nice to know before we complicate every regular expression.
+>
+>in contrast, your changes to the eval loops in permsgstatus.pm were
+>great.  the code was responsible for a lot of our execution time and
+>there was a huge speed improvement.  even better, the code was just as
+>easy to understand as the original.
+>
+>dan
+>
+>  
+>
+
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+spamassassin-devel mailing list
+spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

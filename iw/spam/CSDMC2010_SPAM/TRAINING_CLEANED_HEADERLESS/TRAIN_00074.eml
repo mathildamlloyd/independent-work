@@ -1,0 +1,40 @@
+on fri, apr 30, 2010 at 21:14, boyd stephen smith jr.
+ wrote:
+> on friday 30 april 2010 06:16:22 james stuckey wrote:
+>> the unstable/sid doesn't have to be comment out. setting the default
+>> =a0release will keep the system tracked to, in this case, testing.
+>
+> er, mostly.
+>
+> if there is a versioned dependency that can be satisfied from sid but not
+> testing, you will get the package from sid. =a0this shouldn't happen give=
+n the
+> way testing is managed, unless you installed at least one package from si=
+d.
+>
+>> how did the packages =a0from sid get installed in the first place? if yo=
+u're
+>> tracking something, you have to give it an explicit "aptitude install -t
+>> =a0sid " command, right?
+>
+> with the official testing and sid repositories that should be true. =a0it=
+ would
+> only happen if someone manually fixed up testing and did it wrong.
+> --
+> boyd stephen smith jr. =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 ,=3d ,-_-. =3d=
+.
+> bss@iguanasuicide.net =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 ((_/)o o(\_))
+> icq: 514984 ym/aim: datwinkdaddy =a0 =a0 =a0 =a0 `-'(. .)`-'
+> http://iguanasuicide.net/ =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0 =a0\_/
+>
+
+you could find what all packages from sid are installed in your system by
+apt-show-versions |  grep unstable
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/g2kd0bf7b0b1004301018p3fb45806we1fd29cf33c2119d@mail.csmining.org
+
+

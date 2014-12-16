@@ -1,0 +1,24 @@
+on 2010-04-08 20:48, kaicheng zhang wrote:
+> hi there,
+>     i have to ssh to a server a and then ssh to server b where i do my
+> job. therefore scp cannot work well when i want transfer files between
+> remote and host machine.
+>     i used securecrt in windows, and its feature allow me to type "rz"
+> in the remote machine and select the file i would like to transfer in
+> a pop up window.
+>     i would like to switch to linux as my host enviornment which is
+> now debian sid. i am wondering is there any tools for such multiple
+> jumps of ssh connection file transfer?
+
+googling "scp multiple hop" returns some interesting links.
+
+-- 
+dissent is patriotic, remember?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bbe8fa3.3040800@cox.net
+
+

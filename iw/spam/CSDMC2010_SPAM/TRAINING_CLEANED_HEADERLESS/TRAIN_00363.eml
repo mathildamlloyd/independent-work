@@ -1,0 +1,25 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on thu, may 06, 2010 at 08:52:39am +0800, jidanni@jidanni.org wrote:
+> in /etc/grub.d/00_header we see
+>=20
+>   transform=3d"s,x,x,"
+>   grub_prefix=3d`echo /boot/grub | sed ${transform}`
+>   locale_dir=3d`echo /boot/grub/locale | sed ${transform}`
+>=20
+> isn't that sed line one big no-op?
+
+looks like it to me.=20
+
+> should i file a bug to have it removed or at least have a comment added
+> as to its purpose, or have them use a better way to achieve what they
+> are trying to do?
+
+maybe a question is better than a bug report. i imagine it's just a
+convenience variable in case someone needs to transform paths for some
+reason.
+
+a

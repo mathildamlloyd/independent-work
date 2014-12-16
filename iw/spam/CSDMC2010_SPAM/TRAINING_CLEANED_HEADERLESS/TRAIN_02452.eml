@@ -1,0 +1,31 @@
+well, as many have said, it's non-trivial and not smart enough.
+
+i did try just cvs'ing over the existing sources, but cvs complained that my 
+files were in the way.
+
+then i thought that i'd only need the dri stuff, that took about 1.5 hours to 
+fetch 116m. unfortunately i still need the xfree86 cvs stuff as well :-( at 
+339m that took almost 3 hours.
+
+now i can start building the xfree86 cvs and dri cvs stuff for testing the 3d 
+patches for my gvx1 card. i just hope i don't completely trash my system in 
+the process. 
+
+think i'll wait until morning to start building, though. i've been building a 
+new box from source this week. a 200mhz pentiummmx with 96m. it took a full 
+day to build xfree86 4.2.0 and 2.5 days each to build qtlibs and kdelibs. 
+kdebase took just under 46 hours. i've got lots of grief from the wife for 
+the computer running 'round the clock this week. the rest of kde should build 
+in under 20 hour increments.
+
+cheers,
+
+john gay
+
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

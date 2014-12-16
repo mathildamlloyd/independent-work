@@ -1,0 +1,76 @@
+1. here is my cpuinfo:
+
+root@ni:/home/franx# cat /proc/cpuinfo 
+processor: 0
+vendor_id: genuineintel
+cpu family: 6
+model: 15
+model name: intel(r) core(tm)2 duo cpu     e6550  @ 2.33ghz
+stepping: 11
+cpu mhz: 1998.000
+cache size: 4096 kb
+physical id: 0
+siblings: 2
+core id: 0
+cpu cores: 2
+apicid: 0
+initial apicid: 0
+fdiv_bug: no
+hlt_bug: no
+f00f_bug: no
+coma_bug: no
+fpu: yes
+fpu_exception: yes
+cpuid level: 10
+wp: yes
+flags: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov
+pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx lm
+constant_tsc arch_perfmon pebs bts pni monitor ds_cpl vmx smx est tm2
+ssse3 cx16 xtpr lahf_lm
+bogomips: 4664.29
+clflush size: 64
+power management:
+
+processor: 1
+vendor_id: genuineintel
+cpu family: 6
+model: 15
+model name: intel(r) core(tm)2 duo cpu     e6550  @ 2.33ghz
+stepping: 11
+cpu mhz: 1998.000
+cache size: 4096 kb
+physical id: 0
+siblings: 2
+core id: 1
+cpu cores: 2
+apicid: 1
+initial apicid: 1
+fdiv_bug: no
+hlt_bug: no
+f00f_bug: no
+coma_bug: no
+fpu: yes
+fpu_exception: yes
+cpuid level: 10
+wp: yes
+flags: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov
+pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx lm
+constant_tsc arch_perfmon pebs bts pni monitor ds_cpl vmx smx est tm2
+ssse3 cx16 xtpr lahf_lm
+bogomips: 4660.87
+clflush size: 64
+power management:
+
+2. it looks like amd64 will run; if i burn an amd64 install cd-rom
+and try to boot it on a 32-bit processor, do i get a
+"don't be a smartarse" type error message, or does it crash???
+
+tia, fcg.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/1271922217.3108.7.camel@ni.bigpond
+
+

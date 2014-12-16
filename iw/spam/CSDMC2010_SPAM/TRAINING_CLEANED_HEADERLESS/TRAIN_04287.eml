@@ -1,0 +1,55 @@
+-----begin pgp signed message-----
+hash: sha1
+
+on wednesday 28 august 2002 01:34 pm, brian mcnett wrote:
+
+>
+> uh... the reason is simple. habeas runs something called the
+> "habeas infringers list", and if you use their trademark without
+> their permission, you'll end up on it.  then, when you send spam
+> with the misappropriated header, users of sa (2.40 supports
+> this) will tag your mail as spam, rather than let it through.
+> this may be done independantly of your ip address, so be
+> prepared to constantly change domain names, and move your
+> servers as fast as you send spam.
+>
+> also, that little haiku is a copyrighted work, so not only can
+> habeas sue, they must sue to protect their copyright. and since
+> it's a trademark as well, that's a double-whammy. habeas has
+> some pretty high-powered legal people, who will gladly go to
+> town on violators.
+>
+> the whole point here is to give them the legal leverage they
+> need to put spammers out of business, and not only block mail
+> from them, but allow through the things that really aren't spam.
+>
+> --b
+>
+and if a spammer forges headers???
+- -- 
+- ------------------------------------------------------------------------
+robin lynn frank---director of operations---paradigm, omega, llc
+http://paradigm-omega.com              http://paradigm-omega.net
+ 2002.  all rights reserved.  no duplication/dissemination permitted.
+use of pgp/gpg encrypted mail preferred. no html/attachments accepted.
+fingerprint:  08e0 567c 63cc 5642 db6d  d490 0f98 d7d3 77ea 3714
+key server:  http://paradigm-omega.com/keymaster.html
+- ------------------------------------------------------------------------
+-----begin pgp signature-----
+version: gnupg v1.0.7 (gnu/linux)
+
+id8dbqe9btehd5jx03fqnxqrarmeaj4l1p6torvag4j+dy3r2tzfd9fnvgcfrhu3
+kzo/mbybslyi/m1vsn4zymm=
+=mijb
+-----end pgp signature-----
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: jabber - the world's fastest growing 
+real-time communications platform! don't just im. build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

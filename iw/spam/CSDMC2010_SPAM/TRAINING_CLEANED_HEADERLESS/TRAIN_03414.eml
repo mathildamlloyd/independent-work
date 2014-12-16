@@ -1,0 +1,30 @@
+this msdn mail thing reminds me of how i've documented this feature of
+spamassassin here so that our users understand it.
+
+i define "solicited commercial email" vs "unsolicited commercial email" -
+the latter being spam. as spamassassin basically looks for "commercial
+email", both get hit, and that's something they must understand.
+
+our sa documentation further tells users to filter off their sce before
+applying a sa rule - gets rid of 100% of the problem as the users know who
+is sending them sce.
+
+-- 
+cheers
+
+jason haar
+information security manager, trimble navigation ltd.
+phone: +64 3 9635 377 fax: +64 3 9635 417
+pgp fingerprint: 7a2e 0407 c9a6 caf6 2b9f 8422 c063 5ebb fe1d 66d1
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

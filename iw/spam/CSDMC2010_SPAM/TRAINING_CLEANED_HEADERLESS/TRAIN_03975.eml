@@ -1,0 +1,32 @@
+> on fri, apr 23, 2010 at 2:34 pm, eugen dedu
+>  wrote:
+>>> on fri, apr 23, 2010 at 11:25 am, eugen dedu
+>>>  wrote:
+>>>
+>>> what is the filesystem of /boot?
+>>>
+>>> it should not be btrfs.
+>>
+>> well, /boot is on the same filesystem as / (only one fs), so it is
+>> btrfs.  does not grub2 boot linux from btrfs?  i have seen web pages
+>> saying that it boots...
+> 
+> it is unlikely because /boot/grub contains ext2.mod, jfs.mod,
+> ntfs.mod, ufs1.mod, ufs2.mod, xfs.mod, zfs.mod but not btrfs.mod.
+
+indeed, i see in sources that fs/ does not contain btrfs.c...  so it
+seems that /boot must use another fs for the moment...
+
+well, i will wait...
+
+thank you very much for help,
+-- 
+eugen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bd1fd3e.3000803@pu-pm.univ-fcomte.fr
+
+

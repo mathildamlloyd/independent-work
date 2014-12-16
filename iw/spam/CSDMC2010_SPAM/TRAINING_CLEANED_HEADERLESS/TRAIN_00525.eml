@@ -1,0 +1,66 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=iso-8859-1
+
+@merciadri luca
+
+[quote]
+i have no answer to your question, but i am wondering... what does 'lol'
+mean here? is it some version of something, or did you simply put this over
+there because you have some sense of humor and you like to make your
+(somewhat old) config appear less depressing to the others' eyes?
+[/quote]
+
+
+... it's the hostname, but it is funny! i don't give a damn about what
+others might think anyway, i'm just having fun with it, making some tests,
+pushing my knowledge...
+
+@stefan
+
+[quote]
+486 will work.  686 may work.
+[/quote]
+
+
+my impression exactly, but i'd like to be sure : if i scrape this install,
+i'll have a hard time recovering it...
+
+@bob
+
+[quote]
+ionreflex@lol:~$ cat /proc/cpuinfo
+processor: 0
+vendor_id: genuineintel
+cpu family: 5
+model: 4
+model name: pentium mmx
+stepping: 4
+cpu mhz: 165.791
+fdiv_bug: no
+hlt_bug: no
+f00f_bug: yes
+coma_bug: no
+fpu: yes
+fpu_exception: yes
+cpuid level: 1
+wp: yes
+flags: fpu vme de pse tsc msr mce cx8 mmx
+bogomips: 330.95
+[/quote]
+
+[quote]
+ionreflex@lol:~$ cat /etc/debian_version
+4.0
+[/quote]
+
+
+i had to doublecheck to make sure i wasn't jumping any major, thanks for
+that insight; i already knew what chip was inside the laptop, i'm just not
+sure what and where to look for to know which kernel to choose. if you can
+point me in the right direction, i would really appreciate it!
+
+tankiou all! :o)
+
+
+
+ion

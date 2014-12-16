@@ -1,0 +1,21 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on fri,21.may.10, 12:22:22, peasthope@shaw.ca wrote:
+> from:andrei popescu 
+> date:fri, 21 may 2010 22:03:19 +0300
+> > # echo 'apt::default-release "squeeze";' >> /etc/apt/apt.conf
+>=20
+> somehow i had the impression that the order of the=20
+> sources would prioritize them.
+
+yes (or at least that's what the manpage says), but only when you have=20
+the same version of a package.
+
+regards,
+andrei
+--=20
+offtopic discussions among debian users and developers:
+http://lists.alioth.debian.org/mailman/listinfo/d-community-offtopic

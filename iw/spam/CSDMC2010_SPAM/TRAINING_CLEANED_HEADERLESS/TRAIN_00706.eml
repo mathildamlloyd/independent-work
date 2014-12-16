@@ -1,0 +1,14 @@
+~$ sudo /etc/init.d/clamav-daemon start
+starting clamav daemon: clamd error: unknown group 20 incorrect number of 
+arguments
+ failed!
+
+after latest upgrade. anyone have a quick fix?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201004131924.30567.d_baron@012.net.il
+
+

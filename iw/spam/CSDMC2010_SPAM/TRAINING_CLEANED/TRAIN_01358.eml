@@ -1,0 +1,47 @@
+None"John A. Sullivan III" <jsullivan@opensourcedevel.com> dijo:
+
+>Hello, all.  We've installed acroread 8.1.7-0.1 from debian-multimedia.
+>It is not seeing any of the printers on our cups print server.  It just
+>shows the custom lpr printer.  How do we get it to see our printers
+>like all the other applications in our KDE setup do? We are running
+>Lenny + backports.  Thanks - John
+
+I had this problem with 64-bit Ubuntu for a long time. Finally, when
+Adobe was working on the 9.x release I inquired directly to Adobe. The
+result was that I became a beta tester. And the outcome was that Adobe
+fixed Reader 9.1 so that I could see my printers.
+
+I have not had the problem since. I suggest getting the latest version
+of Reader. Version 8.1.7 is really old anyway.
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/20100415080540.5ea5b90b@mailhost.pdx.edu
+
+
+re: acroread not seeing printerson thu, 15 apr 2010 05:56:44 -0400
+"john a. sullivan iii"  dijo:
+
+>hello, all.  we've installed acroread 8.1.7-0.1 from debian-multimedia.
+>it is not seeing any of the printers on our cups print server.  it just
+>shows the custom lpr printer.  how do we get it to see our printers
+>like all the other applications in our kde setup do? we are running
+>lenny + backports.  thanks - john
+
+i had this problem with 64-bit ubuntu for a long time. finally, when
+adobe was working on the 9.x release i inquired directly to adobe. the
+result was that i became a beta tester. and the outcome was that adobe
+fixed reader 9.1 so that i could see my printers.
+
+i have not had the problem since. i suggest getting the latest version
+of reader. version 8.1.7 is really old anyway.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100415080540.5ea5b90b@mailhost.pdx.edu
+
+

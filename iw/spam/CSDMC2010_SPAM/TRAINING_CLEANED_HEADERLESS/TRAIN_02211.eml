@@ -1,0 +1,48 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=us-ascii
+
+> from:  anders eriksson 
+> date:  thu, 22 aug 2002 23:14:20 +0200
+>
+> 
+> >>>>> on thu, 22 aug 2002, "chris" == chris garrigues wrote:
+> 
+>   chris> --==_exmh_267413022p content-type: text/plain;
+>   chris> charset=us-ascii
+> 
+>   +> from:  anders eriksson  date:  thu, 22 aug
+>   +> 2002 20:23:17 +0200
+> 
+>   +> oooops!
+> 
+>   +> doesn't work at all. got this on startup and on any attempt to
+>   +> change folde r (which fail)
+> 
+>   chris> ~sigh~ i'd already found that and checked it in....apparently
+>   chris> i did so after you checked it out and before you sent this
+>   chris> mail...i hoped i was fast enough that you wouldn't see it.
+> 
+>   chris> try again!
+> 
+> 
+> works like a charm. it's like the box was on drugs or something. 
+> 
+> however, while testing it a selected my favourite folder (l-k) and 
+> marked ~400 messages unread. that took forever, or about as long as 
+> catch-up unseen did before. any suggestions?
+
+that's fixed now.  i thought i'd caught all the occurrences of that particular 
+coding stupidity.
+
+chris
+
+-- 
+chris garrigues                 http://www.deepeddy.com/~cwg/
+vircio                          http://www.vircio.com
+716 congress, suite 200
+austin, tx  78701+1 512 374 0500
+
+  world war iii:  the wrong-doers vs. the evil-doers.
+
+
+

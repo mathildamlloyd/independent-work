@@ -1,0 +1,49 @@
+
+
+> quoting paul o'neil :
+> 
+> > excuse me for asking an old question here but ive been running suse 
+with a
+> > cable modem for a couple months. about 5-6 weeks ago the internet 
+access
+> > was
+> > not working and i rebooted noticing i came up with a new ip 
+address, and it
+> > worked fine. how does it work exactly when the cable company 
+releases and
+> > renews an ip address. do they merely setup their system to issue 
+new ip
+> > addresses when cusomters reboot their computer or does it take 
+affect
+> > immediately and it caused the internet disruption that required a 
+reboot or
+> > at least a network reload? if so, can this be detected 
+automatically and
+> > taken care of or is that just how it works?
+> 
+> a dhcp client daemon (dhcpcd, pump) can do this automatically.  some 
+cable
+> companies apparently reassign the same address over and over when the 
+leases run
+> out, so you get away without a daemon for long enough to make you 
+think you
+> don't need one. :-)
+> 
+> ronan
+> 
+> 
+
+is what your talking about, this process is running all the time. 
+
+root       422  0.0  0.4  1332  500 ?        s    03:18   
+0:00 /sbin/dhcpcd -d -n -y -t 999999 -h cable-modem-1 eth0
+
+if alright then maybe coincidence, i'll wait and see when i get another 
+address.
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

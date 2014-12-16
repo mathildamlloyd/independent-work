@@ -1,0 +1,63 @@
+None"Craig R.Hughes" said:
+
+> Seems like a good idea.  We might get one of two other issues 
+> raised tomorrow too once US people get back to work tomorrow and 
+> start downloading 2.40 in earnest.
+
+yep, I reckon that's likely.
+
+BTW I'm hearing reports about problems resolving spamassassin.org.
+Anyone else noticing this?  if it's serious I'll see if I can get
+Mark Reynolds to add a 2ndary in the US, to go with the primaries
+in Oz.
+
+> >    - looks like there may be a razor2 issue
+
+I think this is a Razor bug/glitch triggered when file permissions
+don't allow its own log system to work.  At least that's the report
+I heard on the Razor list in the past...
+
+Theo, does it work now that you /dev/null'd the logfile?
+
+> >    - version number (says "cvs")
+> >    - tag tree as "Rel" this time too
+
+I won't bother tagging with Rel, IMO; I don't think we should
+rely on the version control system inside our code, so I've just
+put a line in Mail/SpamAssassin.pm instead.   I will of course
+tag with a release *label* though.
+
+--j.
+
+re: [sadev] 2.41 release? 
+"craig r.hughes" said:
+
+> seems like a good idea.  we might get one of two other issues 
+> raised tomorrow too once us people get back to work tomorrow and 
+> start downloading 2.40 in earnest.
+
+yep, i reckon that's likely.
+
+btw i'm hearing reports about problems resolving spamassassin.org.
+anyone else noticing this?  if it's serious i'll see if i can get
+mark reynolds to add a 2ndary in the us, to go with the primaries
+in oz.
+
+> >    - looks like there may be a razor2 issue
+
+i think this is a razor bug/glitch triggered when file permissions
+don't allow its own log system to work.  at least that's the report
+i heard on the razor list in the past...
+
+theo, does it work now that you /dev/null'd the logfile?
+
+> >    - version number (says "cvs")
+> >    - tag tree as "rel" this time too
+
+i won't bother tagging with rel, imo; i don't think we should
+rely on the version control system inside our code, so i've just
+put a line in mail/spamassassin.pm instead.   i will of course
+tag with a release *label* though.
+
+--j.
+

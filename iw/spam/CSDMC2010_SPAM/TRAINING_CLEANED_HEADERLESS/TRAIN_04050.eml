@@ -1,0 +1,24 @@
+on fri, 07 may 2010 18:40:46 +0200, merciadri luca wrote:
+
+> now that i know that my calculator is connected through ttyusb0, i have
+> configured hptalx. nice, i clicked `save' and it directly bugged (i had
+> the bug-buddy tool which popped up). 'was too good to be true, wasn't
+> it?
+
+(...)
+
+just a wild guess, but try to launch the application as "root" user. 
+maybe it's a device permissions issue :-?
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.07.16.51.41@csmining.org
+
+

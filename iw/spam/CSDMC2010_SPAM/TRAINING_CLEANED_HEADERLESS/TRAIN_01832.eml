@@ -1,0 +1,47 @@
+hello l7-filter members.
+
+this is just an update on how things are moving along with the l7-filter 
+project changes.
+
+svn import
+----------
+
+the l7-filter source code has been imported into svn.  darryl took the 
+time and effort to create the repository with change history intact.
+feel free to take a look at the results:
+
+http://code.clearfoundation.com/svn/listing.php?repname=l7-filter
+
+
+bug tracker
+-----------
+
+the new bug tracker is also online.  the tracker is integrated with the 
+svn system.  it will also be integrated with build system and ci 
+infrastructure at some point in the future.  please let me know if you 
+would like an account created!
+
+http://l7-filter.clearfoundation.com/tracker/roadmap_page.php
+
+
+documentation
+-------------
+
+we are slowly be surely making some progress on migrating and updating 
+the documentation.
+
+http://l7-filter.clearfoundation.com/docs/
+
+
+that's all for now.  we're making progress and you should see some 
+l7-filter updates rolling out in june/july.
+
+peter baldwin
+clearfoundation
+
+------------------------------------------------------------------------------
+_______________________________________________
+l7-filter-developers mailing list
+l7-filter-developers@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/l7-filter-developers
+

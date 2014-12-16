@@ -1,0 +1,25 @@
+jimmy johnson wrote:
+> here we go, currently i have only done the safe upgrade, still 176 
+> packages to upgrade, i can remove yawp (yet another weather plasma) and 
+> get a full upgrade or keep yawp, do the upgrade and break kde, i will 
+> stick with the safe upgrade for awhile, cause i don't want to lose yawp 
+> or break kde.
+
+> hopefully it won't be the last minute when yawp gets upgraded.
+
+
+"yawp" will be fixed in a few days 
+http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=580002
+-- 
+jimmy johnson
+
+debian-live installed at sda14
+registered linux user #380263
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bdf1bb1.7000209@csmining.org
+
+

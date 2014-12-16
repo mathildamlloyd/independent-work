@@ -1,0 +1,40 @@
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hi, List!
+
+I have a few simple questions for you:
+
+1 - I there a better place to get help with dash
+2 - Is there way to detect that a script is running as dash, instead of a
+shell like Solaris' /bin/sh
+3 - Corollary to #2, can I expect dash-as-sh to by a hard link or a sym
+link?   (I would think not, but don't know Debian's policy here)
+4 - Reason for #2, is there a way to list all functions declared in a script
+with dash?  Under Solaris' shell, bash, or the korn shell I can use
+"typeset" -- I've searched POSIX and don't see a way that doesn't involve
+parsing the script.
+
+Thanks,
+Wes
+
+-- 
+Wesley W. Garland
+Director, Product Development
+PageMail, Inc.
++1 613 542 2787 x 102
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hi, List!<br><br>I have a few simple questions for you:<br><br>1 - I there =
+a better place to get help with dash<br>2 - Is there way to detect that a s=
+cript is running as dash, instead of a shell like Solaris&#39; /bin/sh<br>
+3 - Corollary to #2, can I expect dash-as-sh to by a hard link or a sym lin=
+k?=A0=A0 (I would think not, but don&#39;t know Debian&#39;s policy here)<b=
+r>4 - Reason for #2, is there a way to list all functions declared in a scr=
+ipt with dash?=A0 Under Solaris&#39; shell, bash, or the korn shell I can u=
+se &quot;typeset&quot; -- I&#39;ve searched POSIX and don&#39;t see a way t=
+hat doesn&#39;t involve parsing the script.<br>
+<br>Thanks,<br>Wes<br clear=3D"all"><br>-- <br>Wesley W. Garland<br>Directo=
+r, Product Development<br>PageMail, Inc.<br>+1 613 542 2787 x 102<br>

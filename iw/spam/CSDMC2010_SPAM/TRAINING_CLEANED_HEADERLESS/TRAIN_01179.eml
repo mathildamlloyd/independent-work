@@ -1,0 +1,49 @@
+on wed, may 12, 2010 at 06:58:57pm +0200, jozsi vadkan wrote:
+> i have a file:
+
+[snip]
+
+> and i want to only output the first, second, and fourth line to another
+> file.
+> 
+> the:
+> 
+> sed -n '1,2p;4p' file.txt
+> 
+> doesn't work.
+> 
+> what magic do i need for it? :d
+> 
+> thanks..:\
+
+works just fine here:
+
+$ nl /etc/fstab | sed -n '1,2p;4p'
+     1  # /etc/fstab: static file system information.
+     2  #
+     4  proc            /proc           proc    defaults        0
+0
+$ nl /etc/fstab | busybox sed -n '1,2p;4p'
+     1  # /etc/fstab: static file system information.
+     2  #
+     4  proc            /proc           proc    defaults        0
+0
+
+
+so please give some more details about your system (version of debian,
+version of sed, etc.). also please tell us what actually happens when
+you try to run it.
+
+-- 
+tzafrir cohen         | tzafrir@jabber.org | vim is
+http://tzafrir.org.il |                    | a mutt's
+tzafrir@cohens.org.il |                    |  best
+tzafrir@debian.org    |                    | friend
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100512171549.gu16560@pear.tzafrir.org.il
+
+

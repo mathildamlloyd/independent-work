@@ -1,0 +1,41 @@
+None<mart.frauenlob@chello.at> wrote:
+>
+> mysql .... | while read; do
+> =A0 =A0 =A0 =A0mysqldump -e "$REPLY" > ...
+> done
+>
+
+Thanks a million :-)
+
+It is working!!!
+
+--Siju
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/t2rb713df2c1004210239gbb5a32b7te508b158bce44775@mail.csmining.org
+
+
+re: hi how to escaping under ` ` in shon wed, apr 21, 2010 at 2:46 pm, mart frauenlob
+ wrote:
+>
+> mysql .... | while read; do
+> =a0 =a0 =a0 =a0mysqldump -e "$reply" > ...
+> done
+>
+
+thanks a million :-)
+
+it is working!!!
+
+--siju
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/t2rb713df2c1004210239gbb5a32b7te508b158bce44775@mail.csmining.org
+
+

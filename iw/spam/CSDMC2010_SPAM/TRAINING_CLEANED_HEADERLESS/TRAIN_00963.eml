@@ -1,0 +1,43 @@
+
+
+> -----original message-----
+> from: matthias saou [mailto:matthias@egwn.net]
+> sent: monday, august 19, 2002 5:25 pm
+> to: rpm-zzzlist@freshrpms.net
+> subject: re: when building a rpm i386-redhat-linux- is appended to man
+> page
+> 
+> 
+> once upon a time, harig, wrote :
+> 
+> > > 
+> > > the workaround is to pass an extra argument to configure 
+> as follows :
+> > > 
+> > > %configure --program-prefix=%{?_program_prefix:%{_program_prefix}}
+> > > 
+> > 
+> > this works when you are defining a switch that %configure
+> > does not already define, but how can we override an
+> > existing switch?
+> 
+> well, %configure doesn't define "--program-prefix=", so that's why it
+> works. maybe you thought that was an example, but no, it's 
+> the exact syntax
+> to use as a workaround ;-)
+> 
+> matthias
+> 
+
+actually, i was hoping that you could answer the question "how can we 
+override an existing switch?"  for example, %configure uses the command-
+line switch '--prefix'.  how can we override that value?
+
+  %configure ???
+
+---
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

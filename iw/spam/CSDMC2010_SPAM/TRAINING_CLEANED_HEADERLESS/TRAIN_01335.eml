@@ -1,0 +1,27 @@
+on tue, 27 apr 2010 13:44:27 +0100
+chris davies  wrote:
+
+...
+
+> lvm provides a snapshot mode for this kind of requirement. it's not
+> stunning but it's usually sufficient.
+
+perhaps usually, but in my use-case (and that of others) it's badly
+broken (i've mentioned this elsewhere in the thread, but i really need
+to vent about this badly documented, frustrating mess:
+
+http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=549691
+
+celejar
+-- 
+foffl.sourceforge.net - feeds offline, an offline rss/atom aggregator
+mailmin.sourceforge.net - remote access via secure (openpgp) email
+ssuds.sourceforge.net - a simple sudoku solver and generator
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100427171023.540fe533.celejar@csmining.org
+
+

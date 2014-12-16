@@ -1,0 +1,112 @@
+"spamassassin killed my independence day party"
+
+with all the spam that gets through, i had no idea
+a filter was in effect at the fork listserv. 
+
+turn it off! it not only risks silent false 
+positives, but suffers them in such a way that 
+individuals cannot adjust/detect/remedy them. 
+
+also, anti-spam startups need end-users. 
+centralized spam fighting takes food out
+of those coders' mouths!
+
+i still think self-add whitelists are underrated. 
+a fork whitelist would presumably start with
+all subscribers, and grow from there. bouncing
+problem mail, in a way that humans can understand
+how to whitelist themselves for a resend, avoids 
+the problem of silent failures without opening the 
+door to lazy, forged-"from" spammers. 
+
+- gordon
+
+----- original message ----- 
+from: "rohit khare" 
+to: 
+sent: tuesday, july 23, 2002 12:25 pm
+subject: re: hd/id: high-def independence day
+
+
+> on sunday, june 30, 2002, at 12:18 am, rohit khare wrote:
+> > you're all invited to join me for a south bay hi-def spectacle at my 
+> > apartment in sunnyvale on the fourth!
+> 
+> so here's the final report on the hd/id party. as no less than ten 
+> forkers pointed out, the invitation, while sent on sunday 6/30, was only 
+> delivered ten days later on 7/9.
+> 
+> it got flagged as spam.
+> 
+> yes, on a mailing list awash in crap -- and some it is even unsolicited 
+> commercial email, heavens! -- our trusty mailman filters captured and 
+> quarantined just two posts that week, one from me that was > 100k (the 
+> fat articles) and one that was bcc:d (the invite).
+> 
+> now, it was a little difficult to recalibrate self-esteem, which as you 
+> can imagine was proportional to the two-digit attendance  -- in binary!
+> 
+> according to the george washington documentary, i almost had as much 
+> alcohol on hand than he did -- virginia tradition being to copiously 
+> lubricate each voter. election day was a public festival day, and it 
+> cost poor george an average of sixty-four shots of hard liquor per voter 
+> that day...
+> 
+> so, herewith is the prize for most appropriate flame my delayed invite 
+> got:
+> 
+> > i unfortunately will have had other plans and thus will
+> > not be able to have made it.  yes.
+> >
+> > -faisal
+> 
+> one of our competitors added:
+> > wow - i just got this now - i guess that was knowlate!
+> 
+> and there is no prize for guessing which cold, dark forks emitted these 
+> two plaints:
+> 
+>  from whiny dwarf:
+> > fix your mail server! just a bit late!
+> 
+> and angry dwarf:
+> > god daaaaammmmmnnnnn iiiiittt! i didn't see your message until now! 
+> > fuck! fuck! fuck!
+> >
+> > we would have been there if i had seen the message before. kuso! (as 
+> > the japanese would say).
+> >
+> > fuck.
+> > fuck.
+> > fuck.
+> > fuck.
+> > fuck.
+> > fuck.
+> 
+> perhaps i should remind the latter gently that it was not in any way his 
+> fault. the universe *was* out to get him!
+> 
+> and finally, here's an object lesson for all ye of little faith to learn 
+> from my sins:
+> 
+> > spamassassin rated it spam (barely). gotta stop
+> > using those "words and phrases which indicate porn" :-)
+> 
+> yes, boys and girls, mr. assassin, like mr. lott, gets very annoyed if 
+> you call the great american shrine a... "boob tube"
+> 
+> :-)
+>    rohit
+> 
+> ps. this is the obscure footnote where i actually hide the bits in this 
+> post. what we just encountered here is that an event-processing system 
+> with a 10-day rtt cannot be used to reliably handle events more often 
+> than once every 20 days. that's why i waited to reply. six bonus points 
+> to anyone who can prove this hunch of mine. hint: try analyzing the 
+> problem in frequency-domain.
+> 
+> http://xent.com/mailman/listinfo/fork
+
+http://xent.com/mailman/listinfo/fork
+
+

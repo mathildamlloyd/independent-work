@@ -1,0 +1,55 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain;
+  charset="iso-8859-1"
+content-transfer-encoding: quoted-printable
+
+on wednesday 28 april 2010 20:26:46 rob owens wrote:
+> on mon, apr 26, 2010 at 08:28:37am -0500, stan hoeppner wrote:
+> > javier barroso put forth on 4/26/2010 6:56 am:
+> > > why debian installer doesn't change its default filesystem to xfs if
+> > > it is better than ext3 / ext4? i think always is better stick to
+> > > defaults if it is possible
+> >
+> > if one disk filesystem was better than all the others in all ways, then
+> > linus would only allow one fs in the kernel tree.  as of 2.6.33 there a=
+re
+> > no less than 7 stable primary disk filesystems offered in the kernel.=20
+> > your question is a bit simplistic, and not really valid.  there is no
+> > single "perfect" filesystem.  imo, for servers anyway, xfs is pretty
+> > close.
+> >
+> > newbies _should_ always stick to defaults.  experts install with expert
+> > mode, and choose exactly what they want/need.
+> >
+> > i didn't write the debian installer so i can't tell you why ext is the
+> > default.  i can only speculate.  thankfully the installer offers us
+> > expert mode so we can do whatever we want.  in this regard, i guess the
+> > debian team considers ext the best choice for non-experts.
+>=20
+> if i'm right that ext3 has superior resilience to power loss (see my
+> othe post in this thread) , then that
+> fact alone makes it a good choice for default filesystem.
+
+ext3 basically syncs to disk every 5 seconds or so.  ext4 didn't, but it's=
+=20
+possible that has been / will be put back.  xfs uses longer gaps between di=
+sk=20
+syncs by default, but it is tunable.
+
+you could always use the "sync" file system option to avoid the whole issue=
+=2e =20
+if that's no good enough, a simple shell script (while sleep 5; do sync; do=
+ne)=20
+running as root (perhaps started from init) will fill basically the same ro=
+le.
+
+both xfs and ext3/4 recover through journal replay, and it is usually enoug=
+h. =20
+rarely, a manual filesystem check will be required, and xfs_check is usuall=
+y=20
+much faster than fsck.ext3 or even fsck.ext4.
+=2d-=20
+boyd stephen smith jr.            ,=3d ,-_-. =3d.
+bss@iguanasuicide.net            ((_/)o o(\_))
+icq: 514984 ym/aim: datwinkdaddy  `-'(. .)`-'
+http://iguanasuicide.net/             \_/

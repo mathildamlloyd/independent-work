@@ -1,0 +1,50 @@
+hello list,
+
+i like my audible bell very much. i really really like it =e2=80=93
+unfortunately, metacity (from current testing) blocks it in the
+following way:
+
+* "beep" works fine
+* "xkbbell -force" works, but it doesn't w/o the "-force"
+* gnome-terminal and all the other applications can only bell
+  "visible", i. e. i get a flash when enabling the visible bell in
+  metacity's gconf-preferences but no audible bell if i disable it
+  (and leave "audible bell" enabled).
+* the module pcspkr is compiled into the kernel and works fine, as
+  proven above.
+* the volume of the "bell"-output is at 50% in alsamixer, and as
+  proven above, ok this way.
+
+i assume this is the same bug as described in
+https://bugs.launchpad.net/ubuntu/+source/metacity/+bug/486154/
+
+and comment 50 seems to provide a solution i didn't test yet =e2=80=93 my
+question is, wether or not there is a debian-way to enable the bell
+in metacity or if i have to switch window managers as piotr engelking
+did here: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3d551590
+
+the hints he gave in this bug report unfortunately don't work for me
+=e2=80=93 i enabled the corresponding keys, but still can't hear a bell,
+probably because i don't use esd (is there any reason why i should
+install this? alsa works just fine for me=e2=80=a6)
+
+best regards,
+
+claudius
+
+ii  metacity 1:2.28.0-3lightweight gtk+ window manager
+ii  gnome-core1:2.28+7the gnome desktop environment -- ess=e2=80=a6
+
+--=20
+home on the range was originally written in beef-flat.
+
+http://chubig.net/
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hqvl2k$soo$1@dough.gmane.org
+
+

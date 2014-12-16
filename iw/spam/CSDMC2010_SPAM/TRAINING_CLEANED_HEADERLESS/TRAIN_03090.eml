@@ -1,0 +1,35 @@
+urban boquist wrote:
+
+> it seems to hang. memory usage goes up to 73mb and stays there. i have
+> let it run for an hour before i killed it. this was on a
+> pentium-ii-366. yes, i know, a bit slow, but still...
+> 
+> can anyone else confirm this hang? maybe i should just upgrade...
+> 
+> my environment is: sa-2.31, perl-5.6 running on netbsd-1.6f.
+
+version 2.40-cvs (from today) on netbsd/i386 1.5.2 (athlon 1500):
+
+  aug 29 17:55:53 silence spamd[2052]: processing message
+  <20020829093613.6a00319300@groda.boquist.net> for kh:1234, expecting
+  1744014 bytes. 
+  aug 29 17:57:10 silence spamd[2052]: clean message (2.5/5.0) for
+  kh:1234 in  77 seconds, 1744014 bytes. 
+
+resident size about 75mb, according to top.
+
+ciao
+     klaus
+
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

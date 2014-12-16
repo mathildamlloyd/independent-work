@@ -1,0 +1,23 @@
+i bought a webcam:
+
+bus 006 device 004: id 093a:2622 pixart imaging, inc. 
+
+what should i do, to bring it to life?
+
+i installed cheese, but it doesn't gives any video.
+
+/dev/video doesn't exists.
+
+is there a script that installs all the webcam drivers?
+
+or how to find out, what drivers does it need?
+
+thank you.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/1271187226.4881.1.camel@localhost
+
+

@@ -1,0 +1,41 @@
+From nobody Tue Dec 16 09:15:47 2014
+Content-Type: Text/Plain;
+  charset="iso-8859-15"
+Content-Transfer-Encoding: quoted-printable
+
+Am Donnerstag, 8. April 2010 schrieb Adrian von Bidder:
+
+> Given a Debian package (kmail, in this case, with installed kdepim-dbg
+> package) and an extracted source package: how do I properly start gdb (or
+> ddd or ...) so that it finds both the debugging symbols and the source
+> code?
+>=20
+> Just gdb -p <pid> /usr/bin/kmail doesn't work :-(
+>=20
+> (I've only ever used gdb on locally compiled simple projects, I've never
+> worked with the separate symbol files as delivered in -dbg packages.)
+
+Not sure if this is the same as your example, but I usually used
+
+gdb kmail
+attach <pid>
+
+But check the output of ps aux | grep kmail -- if kmail is launched via=20
+kdeinit or kdeinit4, you need to run "gdb kdeinit" or kdeinit4.
+
+Cheers,
+Carsten
+From nobody Tue Dec 16 09:15:47 2014
+Content-Type: application/pgp-signature; name=signature.asc 
+Content-Description: This is a digitally signed message part.
+
+-----BEGIN PGP SIGNATURE-----
+
+iQEVAwUAS73id6WgYMJuwmZtAQLgNAf/QfTqq+5KWtI1OBAF59zXLSQZVOJ5QfvG
+TaiUkjS1gvLvT4oix6kBWFyN77Q9GI+ydJ2raWQ7J5lPcfAokmuNj9Gh3GHIgUJK
+QriKnGNBCQ7Xz6t2ocPt4bhI/sOqq9h0YJcVvpZoV3FiMA8S6DwORRZ7MVGENNvx
+Wt1YME/DQuxMWtzqN4sY9n3BHhPoSX4n+ol/9R/JxpPICuYpnRRoehhsmRqRsYNw
+gElwCGxuZXThLmc/CZQFnMMIh0phBsBYTKABJxh0ie6m0JKxOAgw77V4Y/xxAnvu
+ZzOUI78tJkAmGMOZgiPNCnxhEqX+swK5o7SeAJpUTb5itVtyQ81vhw==
+=rqAC
+-----END PGP SIGNATURE-----

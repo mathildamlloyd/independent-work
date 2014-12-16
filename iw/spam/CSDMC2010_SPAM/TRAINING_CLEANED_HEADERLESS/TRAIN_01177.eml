@@ -1,0 +1,61 @@
+on fri, 14 may 2010 20:39:58 +0200, artifex maximus wrote:
+
+> on fri, may 14, 2010 at 4:58 pm, camalen wrote:
+>> on fri, 14 may 2010 15:45:36 +0200, artifex maximus wrote:
+>>
+>>> on fri, may 14, 2010 at 3:28 pm, camalen wrote:
+>>
+>>>> oh, no, but... if w3c does not trust "flash" technology to be
+>>>> included as one of their recommended standards, why should i? that is
+>>>> the point.
+>>>
+>>> linux, freebsd, osx and other oss included in that w3c standards? i
+>>> think the answer is no... do you have trust in them?
+>>
+>> "linux, freebsd, osx and other oss" all of them include their own
+>> licencing model, whatever it is (closed or open sourced), so i can use
+>> the software knowing beforehand what i can (or can't) do with it.
+> 
+> you've talked about w3c recommended standards and not about licenses.
+
+"license" and/or patents are very important if you want to distribute 
+your work and w3c should care about recommending a technology or 
+specification that may have a non-clear license or make use of hidden 
+patended software.
+
+i still remember the eolas issue that hit internet explorer ;-)
+
+>> do not get me wrong, i'm only saying that if i were a developer, i
+>> would have many doubts in choosing a flash format for any of my works.
+> 
+> developers never forced to use flash/swf or any other standards. if you
+> have any doubts in swf just use other format.
+
+what i wanted to say is that in the event i had to choose a format for 
+delivering my work, i -for sure- wouldn't go for flash, although adobe 
+claims is "open".
+
+otoh, as many others have pointed out, flash format maybe now open, but 
+"players" are still in a very bad shape (and i am not talking about gnash/
+swfdec, but adobe's own flash player for linux). it's crappy and buggy.
+
+so the reality is that anyone wanting to view a flash based site has to 
+have adobe flash player installed as is the only one able to fully 
+support all the features listed in their "open" specs.
+
+and the same situation goes for adobe reader for linux. i dunno what is 
+going on with adobe but true is that i dislike the path is taking that 
+company :-/
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.14.19.06.05@csmining.org
+
+

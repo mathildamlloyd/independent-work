@@ -1,0 +1,16 @@
+None> So then why does my webhost _still_ only give me 200MB?
+
+Because ~10 krpm server SCSII doesn't follow the curve. Most rackspace is
+ridiculously expensive/unit, so people don't use low end EIDE hardware 
+there.
+
+
+re: storage bitson 11 sep 2002, gary lawrence murphy wrote:
+
+> so then why does my webhost _still_ only give me 200mb?
+
+because ~10 krpm server scsii doesn't follow the curve. most rackspace is
+ridiculously expensive/unit, so people don't use low end eide hardware 
+there.
+
+

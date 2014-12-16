@@ -1,0 +1,133 @@
+NoneOn Friday 14 May 2010 12:52:45 Merciadri Luca wrote:
+> "Boyd Stephen Smith Jr." <bss@iguanasuicide.net> writes:
+> > On Friday 14 May 2010 12:04:42 Merciadri Luca wrote:
+> >> I have many text files (actually .tex files) which contain some
+> >> sequence or regexp (it depends on the files) that I would like to
+> >> remove. Is there a commandline/GUI for doing this massive edit?
+> >
+> > (sed -i -e "s/$regexp//" "$file") for a single file.  (GNU sed only.)
+> >
+> > (find $dir -type f -exec sed -i -e "s/$regexp//" {} \;) for all files in
+> > a directory.
+>=20
+> I am using the second command. The problem is that, for one set of
+> files (that I have selected, no problem for this), I have to use a
+> really simple expression: I need to find all the occurences of
+> `\paragraph{}' and replace them with nothing (i.e. with `'). I know
+> regexps, but replacing `$regexp' with `\paragraph{}' gives error
+> messages. Any idea? Thanks.
+
+=46irst you need a (basic) regular expression (BRE) that matches "\paragrap=
+h{}". =20
+The '\' is a BRE special character, so it needs to be escaped.  Also, the "=
+{}"=20
+is a bit troublesome with find/-exec, so we will match it using the constru=
+ct=20
+"[{][}]".
+
+The definitive documentation for regular expression is the Single UNIX=20
+Specification, Version 3 -- Base Definitions, Chapter 9.  I don't actually=
+=20
+like (man 7 regex) for this.
+
+This gives us the regex "\\paragraph[{][}]".  Now, we need to get that regu=
+lar=20
+expression to sed.  (find $dir -type f -exec sed -i -e "s/\\paragraph[{][}]=
+//"=20
+{} \;) won't work, since during Quote Removal, one of the '\'s are dropped =
+and=20
+neither find nor sed "sees" it.
+
+The shell does a *lot* of processing to the text you type before it reaches=
+=20
+the command you are invoking.  Single UNIX Specification, Version 3 -- Shel=
+l=20
+and Utilities, Chapter 2 is the core documentation, but some shells are muc=
+h=20
+more featureful.
+
+We can either use (find $dir -type f -exec sed -i -e 's/\\paragraph[{][}]//=
+'=20
+{} \;) OR--my preference--(regex=3D'\\paragraph[{][}]'; find $dir -type f -=
+exec=20
+sed -i -e "s/$regex//" {} \;) to make sure sed gets that important '\'.
+
+Also, I left it out, but you may want the "g" flag to the "s"ubstitute comm=
+and=20
+in sed.  Otherwise, only one occurrence of the regex will get eliminated pe=
+r=20
+line.
+=2D-=20
+Boyd Stephen Smith Jr.           	 ,=3D ,-_-. =3D.
+bss@iguanasuicide.net            	((_/)o o(\_))
+ICQ: 514984 YM/AIM: DaTwinkDaddy 	 `-'(. .)`-'
+http://iguanasuicide.net/        	     \_/
+re: deleting some regexp/simple expression from lots of files in a secure wayfrom nobody tue dec 16 07:55:44 2014
+content-type: text/plain;
+  charset="iso-8859-1"
+content-transfer-encoding: quoted-printable
+
+on friday 14 may 2010 12:52:45 merciadri luca wrote:
+> "boyd stephen smith jr."  writes:
+> > on friday 14 may 2010 12:04:42 merciadri luca wrote:
+> >> i have many text files (actually .tex files) which contain some
+> >> sequence or regexp (it depends on the files) that i would like to
+> >> remove. is there a commandline/gui for doing this massive edit?
+> >
+> > (sed -i -e "s/$regexp//" "$file") for a single file.  (gnu sed only.)
+> >
+> > (find $dir -type f -exec sed -i -e "s/$regexp//" {} \;) for all files in
+> > a directory.
+>=20
+> i am using the second command. the problem is that, for one set of
+> files (that i have selected, no problem for this), i have to use a
+> really simple expression: i need to find all the occurences of
+> `\paragraph{}' and replace them with nothing (i.e. with `'). i know
+> regexps, but replacing `$regexp' with `\paragraph{}' gives error
+> messages. any idea? thanks.
+
+=46irst you need a (basic) regular expression (bre) that matches "\paragrap=
+h{}". =20
+the '\' is a bre special character, so it needs to be escaped.  also, the "=
+{}"=20
+is a bit troublesome with find/-exec, so we will match it using the constru=
+ct=20
+"[{][}]".
+
+the definitive documentation for regular expression is the single unix=20
+specification, version 3 -- base definitions, chapter 9.  i don't actually=
+=20
+like (man 7 regex) for this.
+
+this gives us the regex "\\paragraph[{][}]".  now, we need to get that regu=
+lar=20
+expression to sed.  (find $dir -type f -exec sed -i -e "s/\\paragraph[{][}]=
+//"=20
+{} \;) won't work, since during quote removal, one of the '\'s are dropped =
+and=20
+neither find nor sed "sees" it.
+
+the shell does a *lot* of processing to the text you type before it reaches=
+=20
+the command you are invoking.  single unix specification, version 3 -- shel=
+l=20
+and utilities, chapter 2 is the core documentation, but some shells are muc=
+h=20
+more featureful.
+
+we can either use (find $dir -type f -exec sed -i -e 's/\\paragraph[{][}]//=
+'=20
+{} \;) or--my preference--(regex=3d'\\paragraph[{][}]'; find $dir -type f -=
+exec=20
+sed -i -e "s/$regex//" {} \;) to make sure sed gets that important '\'.
+
+also, i left it out, but you may want the "g" flag to the "s"ubstitute comm=
+and=20
+in sed.  otherwise, only one occurrence of the regex will get eliminated pe=
+r=20
+line.
+=2d-=20
+boyd stephen smith jr.            ,=3d ,-_-. =3d.
+bss@iguanasuicide.net            ((_/)o o(\_))
+icq: 514984 ym/aim: datwinkdaddy  `-'(. .)`-'
+http://iguanasuicide.net/             \_/

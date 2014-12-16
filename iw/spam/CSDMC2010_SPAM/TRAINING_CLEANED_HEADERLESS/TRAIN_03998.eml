@@ -1,0 +1,37 @@
+on sun, 23 may 2010 15:56:13 -0700
+"todd a. jacobs"  wrote:
+
+> when one has multiple kernels installed, where is one supposed to
+> configure the option to always boot the last-selected kernel? i can't
+> make sense of all the automatic over-writing that the grub scripts are
+> doing on debian, and the /etc/default/grub file doesn't have an example
+> of what the scripts are looking for.
+> 
+> i just want to be able to select a kernel at boot, and have that be the
+> default until a new kernel is installed or i manually select something
+> else.
+
+what seems to work for me (and i agree, it's pretty confusing,
+especially when you add 'man grub-set-default' to the mix) is to
+include these three lines in menu.lst:
+
+defaultsaved
+# updatedefaultentry=true
+# savedefault=true
+
+i'm not quite certain which are necessary, but as i've said, this seems
+to give me the behavior that i (and, iiuc, you) want.
+
+celejar
+-- 
+foffl.sourceforge.net - feeds offline, an offline rss/atom aggregator
+mailmin.sourceforge.net - remote access via secure (openpgp) email
+ssuds.sourceforge.net - a simple sudoku solver and generator
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100523195217.e0c41898.celejar@csmining.org
+
+

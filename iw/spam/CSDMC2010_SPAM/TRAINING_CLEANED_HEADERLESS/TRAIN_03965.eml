@@ -1,0 +1,20 @@
+today's run of 'aptitude -s safe-upgrade' had been running for over an
+hour and was using half my memory when i killed it. the status line was:
+
+open: 107756; closed: 119093; defer: 107181; conflict: 167
+
+there's evidently some situation it can't resolve. how can i figure out
+what package(s) cause the problem?
+
+-- 
+if tyranny and oppression come to this land, it will be in the guise
+of fighting a foreign enemy. -- james madison
+    rick pasotto    rick@niof.net    http://www.niof.net
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100430133128.ga30106@niof.net
+
+

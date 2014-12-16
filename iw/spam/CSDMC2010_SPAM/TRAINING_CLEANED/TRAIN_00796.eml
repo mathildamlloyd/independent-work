@@ -1,0 +1,60 @@
+NoneHas anyone made a working source RPM for dvd::rip for Red Hat 8.0?
+Matthias has a spec file on the site for 0.46, and there are a couple of
+spec files lying around on the dvd::rip website, including one I patched
+a while ago, but it appears that the Makefile automatically generated is
+trying to install the Perl libraries into the system's, and also at the
+moment dvd::rip needs to be called with PERLIO=stdio as it seems to not
+work with PerlIO on RH8's Perl.
+
+Not too sure what the cleanest way to fix this is - anyone working on
+this?
+
+Thanks,
+
+-- 
+Michèl Alexandre Salim
+Web:		http://salimma.freeshell.org
+GPG/PGP key:	http://salimma.freeshell.org/files/crypto/publickey.asc
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+
+dvd::rip on red hat 8.0?hello,
+
+has anyone made a working source rpm for dvd::rip for red hat 8.0?
+matthias has a spec file on the site for 0.46, and there are a couple of
+spec files lying around on the dvd::rip website, including one i patched
+a while ago, but it appears that the makefile automatically generated is
+trying to install the perl libraries into the system's, and also at the
+moment dvd::rip needs to be called with perlio=stdio as it seems to not
+work with perlio on rh8's perl.
+
+not too sure what the cleanest way to fix this is - anyone working on
+this?
+
+thanks,
+
+-- 
+michl alexandre salim
+web:http://salimma.freeshell.org
+gpg/pgp key:http://salimma.freeshell.org/files/crypto/publickey.asc
+
+__________________________________________________
+do you yahoo!?
+everything you'll ever need on one web page
+from news and sport to email and music charts
+http://uk.my.yahoo.com
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

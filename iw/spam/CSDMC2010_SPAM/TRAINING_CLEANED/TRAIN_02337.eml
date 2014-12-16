@@ -1,0 +1,37 @@
+NoneHarlan Feinstein wrote:
+> Exmh keeps turning the folder indicator blue for one folder, and
+> I've read all the messages in the folder.  Driving me nuts.  I've
+> packed the folder, I've deleted the .mh_sequences file there,
+> keeps doing it.  Help!  
+> 
+
+I would rescan then do 'First Unseen', and see what happens ..
+
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+re: v2.4 keeps incorrectly blue-ing folders
+harlan feinstein wrote:
+> exmh keeps turning the folder indicator blue for one folder, and
+> i've read all the messages in the folder.  driving me nuts.  i've
+> packed the folder, i've deleted the .mh_sequences file there,
+> keeps doing it.  help!  
+> 
+
+i would rescan then do 'first unseen', and see what happens ..
+
+
+
+
+
+_______________________________________________
+exmh-users mailing list
+exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+

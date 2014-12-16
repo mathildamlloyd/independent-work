@@ -1,0 +1,62 @@
+on may 5, 2010, at 9:12 pm, ext dominic giampaolo wrote:
+
+>> - i create a fseventstream with the right directories to watch
+>> - if the user adds or removes a directory, i delete the current fsevents=
+tream and create a new one with the right values
+>>=20
+> are you sure that you're properly tearing down and
+> releasing the old fsevent stream before creating=20
+> the new one?=20
+>=20
+
+yes, i am sure of that.
+i printed all the steps on the output to check:
+
+# create stream=20
+## schedule stream=20
+### start stream=20
+[stuff happens]
+#### stop stream=20
+##### invalidate stream=20
+###### release stream=20
+# create stream=20
+## schedule stream=20
+### start stream=20
+[...]
+#### stop stream=20
+##### invalidate stream=20
+###### release stream=20
+
+i don't unschedule the stream from the run loop since i invalidate it.
+
+> also, is it possible that one fseventstream gets=20
+> deleted on one thread and another is created on
+> another thread at the same time?  can you see if
+> putting all fseventstream creation/deletion on=20
+> the same thread makes the problem go away?
+>=20
+
+
+all the stream related stuff is happening on the same thread (at least for =
+now).
+plus, in my example, i don't create a new stream after deleting the first o=
+ne (since i have nothing left to watch).
+
+it seems to me the stream may not be properly closed, or it is trying to ac=
+cess something that doesn't exist anymore.
+but i am following all the steps for properly stopping and releasing the st=
+ream.
+
+--=20
+fabien freling
+software engineer, platform team
+nokia, qt development frameworks
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+filesystem-dev mailing list      (filesystem-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/filesystem-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

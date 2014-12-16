@@ -1,0 +1,19 @@
+alexander batischev wrote:
+> but all you said made me hard thinking about the way i mount and
+> unmount my removable media. maybe i should forget about sync and use
+> 'umount /mnt/sd[a-z]' instead, or even write little script which will
+> ask me which device i want to unmount [snip]
+
+which is what eject(1) is.  it will search mountpoints in /dev, /media and 
+/mnt by default btw, so it's just "eject sd[a-z]" for your example.  you 
+might want to use /media and volume names instead.
+
+-thib
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4be473cc.1040808@stammed.net
+
+

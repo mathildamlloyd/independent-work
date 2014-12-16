@@ -1,0 +1,92 @@
+hello people,
+
+i am new to sa but (2) problems i do have.
+
+i run sa from my own home for personal use and it seems to work but i see this
+in my procmail log:
+
+
+
+procmail: executing " ~/bin/spamassassin/spamassassin -p -c ~/bin/spamassassin/rules"
+dccproc: not found
+dccproc: not found
+
+
+can someone enlighten me on why i get that? freebsd 4.6-stable, sa-2.3.0
+
+
+
+secondly, i've tested (now on three boxes) sa for site-wide usage but i believe i am
+missing something major because i've also had my setting checked/verified.
+
+the problem is that the site-wide setup does not seem to work. why?
+
+1. i have my local.cf in /etc/mail/spamassassin
+2. i have spamd running, and mail delivery logs show that all e-mails are
+   being passed thro sa.
+
+my local.cf contains:
+
+enabled=1
+options="-f 0"
+
+#
+rewrite_subject         0
+report_header           1  
+defang_mime             0
+required_hits           7.0
+report_header           1
+use_terse_report        1
+subject_tag             **spam**
+
+
+
+wash ('tty') ~ 337 -> exim -bt engingwarez@runjiri.co.ke
+eng.ngware@runji.co.ke
+  deliver to enginngware in domain runjiri.co.ke
+  director = spamcheck_director, transport = spamcheck
+
+
+however when i check the mail delivered to this mailbox, sa has _not_ added any headers
+to it.
+
+pertinent: i also run a virus scanner called drweb via exim's system filter and the rules
+that i have applied are:
+
+if not first_delivery or
+    $received_protocol is "drweb-scanned" or
+    $received_protocol is "spam-scanned"
+then
+  finish
+endif
+
+
+some enlightenment would bail me out, i believe.
+
+thanks
+
+
+
+-wash
+
+-- 
+odhiambo washington      "the box said 'requires
+wananchi online ltd.  www.wananchi.com      windows 95, nt, or better,'
+tel: 254 2 313985-9   fax: 254 2 313922     so i installed freebsd."   
+gsm: 254 72 743 223   gsm: 254 733 744 121  this sig is mcq!  :-)
+
+
+"we demand rigidly defined areas of doubt and uncertainty!"
+-- vroomfondel
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

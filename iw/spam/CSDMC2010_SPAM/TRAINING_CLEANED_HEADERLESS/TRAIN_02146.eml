@@ -1,0 +1,38 @@
+on tue, 20 apr 2010 19:51:47 -0400 (edt), andrew malcolmson wrote:
+> on mon, apr 19, 2010 at 10:00 pm, stephen powell wrote:
+>> on mon, 19 apr 2010 21:01:41 -0400 (edt), andrew malcolmson wrote:
+>>> couldn't say why they switched, but i find pages in epiphany 2.29 in
+>>> squeeze look vivid compared with the gecko version.
+>>
+>> i have switched back and forth between epiphany and iceweasel several
+>> times, on the same computer and monitor, and i have not noticed any
+>> difference in image quality between iceweasel, which is based on
+>> gecko (xulrunner-1.9.1) and epiphany-browser, which is based on webkit
+>> (libwebkit-1.0-2).
+>>
+> 
+> well, i could be hallucinating, but fyi i tested this by comparing the
+> two epiphany versions side by side.  version 2.29 was running in a sid
+> chroot (schroot -p).  the new version looked brighter and a wee bit
+> clearer. i first noticed this improvement on another computer i'd just
+> upgraded to squeeze.  however, maybe the difference is something to do
+> with x.org?
+
+even if there is a measurable difference in image brightness or sharpness,
+it's a moot point for me.  if i can't download files or reply to e-mails,
+the squeeze version is useless to me.  i'll check things out again once
+the sid version migrates to squeeze.
+
+-- 
+  .''`.     stephen powell    
+ : :'  :
+ `. `'`
+   `-
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/1905300792.199120.1271856145572.javamail.root@md01.wow.synacor.com
+
+

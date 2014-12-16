@@ -1,0 +1,46 @@
+hi everyone,
+
+we are struggling with an offset issue in trying to sync a movie
+playing in the background with the start of a sequence grabber record.
+ the end result of the capture always seems to be ahead of the actual
+movie that is playing back.  we are trying to pipe the end result into
+an audio echo cancellation library and this offset is causing pain.
+
+here is the issue.
+
+- we use sgdataproc callback for the recording and preview.
+- we start by calling sgstartrecord() for the preview.
+- we then preroll() the movie and set up all the capture movies.
+- we share the sg soundchannel clock with the movie, and the videochannel.
+- after this is all complete we call setmovierate() to start the
+movie.  and then log a time stamp from the clock for recording.  this
+happens about 5 seconds after previewing.
+- we call addmediasample() when the time stamps (adjusted for scale)
+passed into the proc are greater than the time set for recording.  we
+adjust the audio buffer and sample input so this is cut at the right
+time based on the time stamp.
+- we are using a usb audio mic and a usb video camera.
+- we have good a/v sync (lip sync)
+- when we compare the recorded track to the background track the
+recorded echo starts before the echo in the movie.  this is by about
+0.1 seconds give or take.  one would expect the echo to happen after
+not before.
+
+we have tried to manually offset the time stamp for start time.  but
+this then produces a/v sync (lip sync) issues.  i assume this is
+because our
+video frame is getting there faster than our audio frame.  as one would expect.
+
+is there any reason why these frames are getting dropped in the
+recording?  does anyone have any ideas to get these 2 in sync.
+
+thx for your time,
+matt
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

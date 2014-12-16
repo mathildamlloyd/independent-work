@@ -1,0 +1,43 @@
+From nobody Tue Dec 16 09:15:45 2014
+Content-Type: text/plain; charset=UTF-8
+
+At inkscape wiki, it says that we can open .eps file if ghostscript is
+installed
+http://wiki.inkscape.org/wiki/index.php/FAQ#What_formats_can_Inkscape_import.2Fexport.3F
+
+# aptitude search ghostscript
+i A ghostscript                     - The GPL Ghostscript PostScript/PDF
+interpr
+p   ghostscript-doc                 - The GPL Ghostscript PostScript/PDF
+interpr
+i A ghostscript-x                   - The GPL Ghostscript PostScript/PDF
+interpr
+
+or does it meant other ghostscript?
+
+-- 
+Regards,
+
+Umarzuki Mochlis
+http://debmal.my
+From nobody Tue Dec 16 09:15:45 2014
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3Dutf-8"><d=
+iv>At inkscape wiki, it says that we can open .eps file if ghostscript is i=
+nstalled</div><a href=3D"http://wiki.inkscape.org/wiki/index.php/FAQ#What_f=
+ormats_can_Inkscape_import.2Fexport.3F">http://wiki.inkscape.org/wiki/index=
+.php/FAQ#What_formats_can_Inkscape_import.2Fexport.3F</a><br clear=3D"all">
+<br><div><div># aptitude search ghostscript</div><div>i A ghostscript =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 - The GP=
+L Ghostscript PostScript/PDF interpr</div><div>p =C2=A0 ghostscript-doc =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 - The GPL Ghostscript =
+PostScript/PDF interpr</div>
+<div>i A ghostscript-x =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 - The GPL Ghostscript PostScript/PDF interpr</div></div><div><br=
+></div><div>or does it meant other ghostscript?</div><div><br>-- <br>Regard=
+s,<br><br>Umarzuki Mochlis<br><a href=3D"http://debmal.my">http://debmal.my=
+</a><br>
+
+</div>

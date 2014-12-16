@@ -1,0 +1,28 @@
+on fri, may 21, 2010 at 08:23, steve fishpaste
+ wrote:
+> good morning folks.
+>
+> why is the chromium-browser in sid so old? chromium has been on the
+> 6.x branch for a couple of weeks now and debian is still using the 5.x
+> branch.
+>
+> in my opinion we should keep up with the new releases at least weekly.
+> is this on the agenda to do?
+
+what's wrong with google's repo?
+deb http://dl.google.com/linux/deb/ testing non-free
+
+it works fine on my sid, and "google-chrome-unstable" has been at 6.0.x for
+some time.
+
+
+cheers,
+kelly clowers
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/aanlktinwgd-t-wfc92k2rvkihta4psfyrnr-stzogxj3@mail.csmining.org
+
+

@@ -1,0 +1,39 @@
+camalen wrote:
+> on sat, 10 apr 2010 12:25:32 +0200, steef wrote:
+>
+>    
+>> camalen wrote:
+>>      
+> (...)
+>
+>    
+>> <.............>
+>>
+>> please! some further suggestions??
+>>      
+> try to load "nv" driver and see what happens.
+>
+> greetings,
+>
+>    
+............and that is what i did. kaffeine is still giving trouble 
+with mpeg4-files &&. so i loaded again the intel-driver. this driver or 
+chip (x4500) is definitely of better quality than the combination 
+geforce 9400 & and the nv-driver. my conclusion: no hardware-problem, 
+just a disastrous by-effect of the latest nvidia-driver from their site 
+on the hardware-combination (?)of my machine.
+
+so be it till another nvidia-driver will come up or another pci-express 
+card.
+
+thank you very much, you all have illuminated me!
+
+steef
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bbff50c.8010308@home.nl
+
+

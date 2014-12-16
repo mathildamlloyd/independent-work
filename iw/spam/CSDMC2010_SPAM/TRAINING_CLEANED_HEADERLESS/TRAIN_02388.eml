@@ -1,0 +1,24 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on fri,21.may.10, 19:19:13, mark allums wrote:
+=20
+> does touch /forcefsck (as root) work?
+
+$ grep forcefsck /etc/init.d/*
+/etc/init.d/checkfs.sh:if [ -f /forcefsck ] || grep -s -w -i "forcefsck" =
+/proc/cmdline
+/etc/init.d/checkfs.sh:rm -f /fastboot /forcefsck 2>/dev/null
+/etc/init.d/checkroot.sh:if [ -f /forcefsck ] || grep -s -w -i "forcefsck=
+" /proc/cmdline
+
+both scripts don't seem generic enough to me. fscking for xfs should=20
+work as long as you have the relevant tools installed.
+
+regards,
+andrei
+--=20
+offtopic discussions among debian users and developers:
+http://lists.alioth.debian.org/mailman/listinfo/d-community-offtopic

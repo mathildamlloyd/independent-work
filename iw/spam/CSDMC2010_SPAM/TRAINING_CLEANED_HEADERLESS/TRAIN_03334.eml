@@ -1,0 +1,34 @@
+boyd stephen smith jr. wrote:
+> on wednesday 28 april 2010 20:35:29 rob owens wrote:
+>> if i were to install a bare-bones squeeze system, then add lenny
+>> repositories and declare lenny to be the default-release in apt.conf,
+>> can i expect to have many problems installing a full desktop environment
+>> from the lenny repos?  (gnome, lxde, or fluxbox, most likely).
+
+
+> this type of setup is neither tested nor supported.  since a number of library 
+> transitions have already gone into squeeze, i would expect issues, though i 
+> don't know what.
+
+
+i'm using the squeeze+kde4 version of debian live installed and it seems
+to be lenny upgraded to squeeze, it's definitely broken because the
+weather widgets will not config, i've seen the problem before on every
+lenny upgrade and it's the only problem i can find, on that system i've
+been able to upgrade the kernel with no problem.
+
+i would not recommend debian live to anyone looking for a usable system.
+-- 
+jimmy johnson
+
+simplymepis 8.5 at sda9
+registered linux user #380263
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bda3506.8010303@csmining.org
+
+

@@ -1,0 +1,77 @@
+NoneOn Thursday 13 May 2010 10:49:22 Jozsi Vadkan wrote:
+> 2010. 05. 12, szerda keltez=C3=A9ssel 12.25-kor Hugo Vanwoerkom ezt =C3=
+=ADrta:
+> > Jozsi Vadkan wrote:
+> > > I have a file:
+> > > And i want to only output the first, second, and fourth line to anoth=
+er
+> > > file.
+> >
+> > hugo@debian:~$ sed -n '1,2p;4p' file.txt
+>=20
+> yes, that's the problem, it only outputs the first, second, and fourth
+> line!
+
+I think that perhaps there is some language barrier.
+
+Your original post indicates that you want lines 1, 2, 4 and no others outp=
+ut. =20
+"i want only output the first, second, and fourth line"
+
+Your most recent post says that is "the problem".  Which I infer means=20
+something you don't want.
+
+Could you maybe rephrase the question, or at least be a bit more verbose?
+
+=2E..
+
+If you want the output to go to a file try something like (sed -ne '1,2p;4p=
+'=20
+"$input" > "$output").
+
+=2D-=20
+Boyd Stephen Smith Jr.           	 ,=3D ,-_-. =3D.
+bss@iguanasuicide.net            	((_/)o o(\_))
+ICQ: 514984 YM/AIM: DaTwinkDaddy 	 `-'(. .)`-'
+http://iguanasuicide.net/        	     \_/
+re: only output the nth linefrom nobody tue dec 16 07:55:45 2014
+content-type: text/plain;
+  charset="utf-8"
+content-transfer-encoding: quoted-printable
+
+on thursday 13 may 2010 10:49:22 jozsi vadkan wrote:
+> 2010. 05. 12, szerda keltez=c3=a9ssel 12.25-kor hugo vanwoerkom ezt =c3=
+=adrta:
+> > jozsi vadkan wrote:
+> > > i have a file:
+> > > and i want to only output the first, second, and fourth line to anoth=
+er
+> > > file.
+> >
+> > hugo@debian:~$ sed -n '1,2p;4p' file.txt
+>=20
+> yes, that's the problem, it only outputs the first, second, and fourth
+> line!
+
+i think that perhaps there is some language barrier.
+
+your original post indicates that you want lines 1, 2, 4 and no others outp=
+ut. =20
+"i want only output the first, second, and fourth line"
+
+your most recent post says that is "the problem".  which i infer means=20
+something you don't want.
+
+could you maybe rephrase the question, or at least be a bit more verbose?
+
+=2e..
+
+if you want the output to go to a file try something like (sed -ne '1,2p;4p=
+'=20
+"$input" > "$output").
+
+=2d-=20
+boyd stephen smith jr.            ,=3d ,-_-. =3d.
+bss@iguanasuicide.net            ((_/)o o(\_))
+icq: 514984 ym/aim: datwinkdaddy  `-'(. .)`-'
+http://iguanasuicide.net/             \_/

@@ -1,0 +1,66 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=us-ascii
+
+> from:  scott lipcon 
+> date:  sun, 22 sep 2002 22:58:16 -0400
+>
+> i just updated to the latest cvs - i had been running a build from june.  
+> hitting the flist button gives the following traceback:
+> 
+> syntax error in expression "int(17+1+(222-)*(19-17-2)/(224-))"
+>     while executing
+> "expr int($minline+1+($msgid-$minmsg)*($maxline-$minline-2)/($maxmsg-$minms
+> g))"
+>     (procedure "ftoc_findmsg" line 57)
+>     invoked from within
+> "ftoc_findmsg $i"
+>     (procedure "ftoc_showsequences" line 16)
+>     invoked from within
+> "ftoc_showsequences $f"
+>     (procedure "scanfolder" line 81)
+>     invoked from within
+> "scanfolder inbox 0"
+>     invoked from within
+> "time [list scanfolder $f $adjustdisplay"
+>     (procedure "scan_folder" line 2)
+>     invoked from within
+> "scan_folder $exmh(folder) $ftoc(shownew)"
+>     (procedure "inc_presortfinish" line 7)
+>     invoked from within
+> "inc_presortfinish"
+>     invoked from within
+> ".fops.flist invoke"
+>     ("uplevel" body line 1)
+>     invoked from within
+> "uplevel #0 [list $w invoke]"
+>     (procedure "tkbuttonup" line 7)
+>     invoked from within
+> "tkbuttonup .fops.flist
+> "
+>     (command bound to event)
+> 
+> 
+> it seems to only happen in a folder with no unseen messages.
+> 
+> chris, is this related to your recent changes?
+
+curious.  i changed the arguments to ftoc_showsequences to drop the folder 
+argument and instead have an optional msgids argument.  somehow your version 
+of scanfolder is still trying to pass $f.  you seem to have the latest 
+ftoc.tcl (1.36), but not the latest scan.tcl (1.27).
+
+i don't know how that happened, but try getting your source tree completely 
+up to date.
+
+chris
+
+-- 
+chris garrigues                 http://www.deepeddy.com/~cwg/
+vircio                          http://www.vircio.com
+716 congress, suite 200
+austin, tx  78701+1 512 374 0500
+
+  world war iii:  the wrong-doers vs. the evil-doers.
+
+
+

@@ -1,0 +1,23 @@
+el jueves 06 mayo 2010 12:50:52 facundo aguilera =20
+escribi=f3:
+>=20
+> just for add a good comment, i'm testing 4.4.3 and it working very good!!
+> thanks!!
+>=20
+>=20
+> the only problem i'm having is that kmail is not searching in the full
+> address list when writing a new message. but i can drag from kaddressbook
+> for now...
+
+
+solved, i just create again the akonadi resource in systemsettings... the o=
+ld=20
+setting was removed in the upgrade.
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201005061259.42306.budinero@csmining.org
+
+

@@ -1,0 +1,119 @@
+NoneAm Freitag 07 Mai 2010 schrieb Boyd Stephen Smith Jr.:
+> On Friday 07 May 2010 05:42:55 Martin Steigerwald wrote:
+> > Am Donnerstag 06 Mai 2010 schrieb Boyd Stephen Smith Jr.:
+> > > On Thursday 06 May 2010 04:59:35 Martin Steigerwald wrote:
+> > > > Am Donnerstag 06 Mai 2010 schrieb Boyd Stephen Smith Jr.:
+> > > > > Heck, just stop kmail from migrating.  Korganizer and
+> > > > > KAddressBook have  required Akonadi since 4.2 or earlier.
+> > > >=20
+> > > > Again, AFAIK, kmail does not use Akonadi in KDE 4.4.
+> > >=20
+> > > Have you installed and tried it?  I have.  It does require Akonadi
+> > > in KDE 4.4.3.
+> >=20
+> > Again, no. KAddressBook does. And KMail uses KAddressBook for address
+> > completion.
+>=20
+> KMail did not hang during address completion.  I composed a reply
+> without having keyboard focus enter any of the address fields.  Once I
+> hit the "[Send]" button, the UI froze for both the composer and the
+> main (Kontact) window.
+>=20
+> Closing either stalled and then KWin asked if I wanted to forcefully
+> terminate the application.  After doing so, I restarted contact from a
+> shell in order to watch the various messages printed.
+>=20
+> Kontact started normally and my message was in my drafts folder.  I
+> opened the message from there and clicked "[Send]".  Again, the UI
+> froze in both the composer and the main windows.  On the console,
+> about once every .5 sec. or so, an error message was printing
+> indicating that the application could not connect to the local Akonadi
+> server (or maybe it was that Akonadi couldn't connect to the local
+> DB).
+>=20
+> In either case, KMail 4.4.3 will not send mail unless I have Akonadi
+> and MySQL installed.  I do not have KAddressBook or KOrganizer
+> installed, since even the versions from testing have a indirect
+> Depends relationship on MySQL.
+
+Hmmm, strange. Well maybe KMail does address completion more directly than=
+=20
+via KAddressBook. There might be a component in KDEPIM libs doing that for=
+=20
+KMail. For - just for looking up email address - KMail really calls into=20
+Akonadi.
+
+But AFAIK it doesn't use Akonadi - through what ways ever - for anything=20
+other than retrieving contact data. Thus the use of Akonadi could not be=20
+that wide-spread in KMail.
+
+However, KDEPIM will use Akonadi more and more, so IMHO its better to have=
+=20
+Akonadi improved and fixed than to remove the Akonadi dependency in KMail=20
+temporarily.
+
+=2D-=20
+Martin 'Helios' Steigerwald - http://www.Lichtvoll.de
+GPG: 03B0 0D6C 0040 0710 4AFA  B82F 991B EAAC A599 84C7
+re: kde 4.4.3 in unstablefrom nobody tue dec 16 07:55:44 2014
+content-type: text/plain;
+  charset="iso-8859-15"
+content-transfer-encoding: quoted-printable
+
+am freitag 07 mai 2010 schrieb boyd stephen smith jr.:
+> on friday 07 may 2010 05:42:55 martin steigerwald wrote:
+> > am donnerstag 06 mai 2010 schrieb boyd stephen smith jr.:
+> > > on thursday 06 may 2010 04:59:35 martin steigerwald wrote:
+> > > > am donnerstag 06 mai 2010 schrieb boyd stephen smith jr.:
+> > > > > heck, just stop kmail from migrating.  korganizer and
+> > > > > kaddressbook have  required akonadi since 4.2 or earlier.
+> > > >=20
+> > > > again, afaik, kmail does not use akonadi in kde 4.4.
+> > >=20
+> > > have you installed and tried it?  i have.  it does require akonadi
+> > > in kde 4.4.3.
+> >=20
+> > again, no. kaddressbook does. and kmail uses kaddressbook for address
+> > completion.
+>=20
+> kmail did not hang during address completion.  i composed a reply
+> without having keyboard focus enter any of the address fields.  once i
+> hit the "[send]" button, the ui froze for both the composer and the
+> main (kontact) window.
+>=20
+> closing either stalled and then kwin asked if i wanted to forcefully
+> terminate the application.  after doing so, i restarted contact from a
+> shell in order to watch the various messages printed.
+>=20
+> kontact started normally and my message was in my drafts folder.  i
+> opened the message from there and clicked "[send]".  again, the ui
+> froze in both the composer and the main windows.  on the console,
+> about once every .5 sec. or so, an error message was printing
+> indicating that the application could not connect to the local akonadi
+> server (or maybe it was that akonadi couldn't connect to the local
+> db).
+>=20
+> in either case, kmail 4.4.3 will not send mail unless i have akonadi
+> and mysql installed.  i do not have kaddressbook or korganizer
+> installed, since even the versions from testing have a indirect
+> depends relationship on mysql.
+
+hmmm, strange. well maybe kmail does address completion more directly than=
+=20
+via kaddressbook. there might be a component in kdepim libs doing that for=
+=20
+kmail. for - just for looking up email address - kmail really calls into=20
+akonadi.
+
+but afaik it doesn't use akonadi - through what ways ever - for anything=20
+other than retrieving contact data. thus the use of akonadi could not be=20
+that wide-spread in kmail.
+
+however, kdepim will use akonadi more and more, so imho its better to have=
+=20
+akonadi improved and fixed than to remove the akonadi dependency in kmail=20
+temporarily.
+
+=2d-=20
+martin 'helios' steigerwald - http://www.lichtvoll.de
+gpg: 03b0 0d6c 0040 0710 4afa  b82f 991b eaac a599 84c7

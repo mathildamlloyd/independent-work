@@ -1,0 +1,34 @@
+chris hiestand wrote:
+> on apr 7, 2010, at 12:27 pm, ron johnson wrote:
+> 
+>> on 2010-04-07 13:52, jozsi vadkan wrote:
+>>> [snip]
+>> that's a foolish thing to do, since blind acceptance can lead to a broken system.
+> 
+> maybe so, but i've been using automatic upgrades for the last 2-3 years on many stable systems without a problem. the nice thing about staying within the stable distribution is that typically the only updates are security updates which are generally very small changes.
+> 
+> when you get to the scale of managing tens or hundreds of debian systems it's easier to automatically upgrade and fix any problems in the off-chance they happen. if you wanted to be more careful, one solution is to setup your systems in such a way that a small group of computers get updated before the rest, as an early warning system.
+> 
+> the major package changes happen between inter-distribution (eg etch -> lenny), which always need a human supervisor. this is acceptable on a larger scale because that only happens every 1.5 - 2 years.
+> 
+> also if you have other management software (eg cfengine, puppet) in place, it helps mitigate problems when upgrading debian packages or distributions - decreasing the cost of a package upgrade mishap across many systems.
+
+as nicely put in the reference (2.7.5):
+
+"if the risk of breaking an existing stable system by the automatic upgrade 
+is smaller than that of the system broken by the intruder using its security 
+hole which has been closed by the security update, you should consider using 
+[the] automatic upgrade [...]"
+
+in other words, use automatic security upgrades if you can't maintain the 
+system actively and have enemies.
+
+-thib
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bbfcf53.4050901@stammed.net
+
+

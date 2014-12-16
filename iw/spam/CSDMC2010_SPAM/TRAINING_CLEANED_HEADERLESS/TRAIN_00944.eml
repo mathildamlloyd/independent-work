@@ -1,0 +1,33 @@
+on tue, jul 23, 2002 at 06:16:02pm -0400, tabor j. wells wrote:
+> it's there. scroll down on the downloads page. however you might
+> consider going the other way and installing spamassassin's 2.40
+> bleeding-edge code as razor v2 has a lot of nice features over v1.
+
+to paraphrase something i heard once:
+unless you like looking for a new job, never install a non-released or
+development-only version of software anywhere where the results of such
+code are important.
+
+ie: don't run development code on a production machine. :)
+
+
+the problem isn't sa anyway, it looks for razor1 and just keeps on
+going if it can't find it.  something came up about amavis on the sa
+list where it looks for razor itself...
+
+-- 
+randomly generated tagline:
+"duct tape is like the force; it has a light side & a dark side, and it
+ holds the universe together." - zen musings
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+razor-users mailing list
+razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

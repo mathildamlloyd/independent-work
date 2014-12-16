@@ -1,0 +1,32 @@
+i'm helping a fella in the uk with a debian build (tiny web) on a small vm
+machine in a data center.  i am trying to compile some c++ code, i have the
+libs and binaries installed and the compile "works", except for this line...
+
+i have a php file used to make the build, and the file contains these
+lines..
+
+
+system("g++ $files $incl $libs >& build.log");
+#system("g++ $files $incl $libs");
+
+the first line fails with an error "sh: syntax error: bad fd number".
+
+if i comment out the first line, and uncomment the second line, i do get my
+"a.out" file but the errors/warnings go to the screen...  how can i make
+them go to the 'build.log' file?
+
+i have done full package updates on the system using webmin, and everything
+as of this morning is current.
+
+thanks kindly for any assistance you can provide. :)
+
+gary
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/aneajgkdlnaapmpgonlkkeagcbaa.gary.mccallum@shaw.ca
+
+

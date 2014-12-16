@@ -1,0 +1,60 @@
+-----begin pgp signed message-----
+hash: sha1
+
+
+on may 17, 2010, at 9:15 am, chas emerick wrote:
+
+> i see that a new java update is in the wings, but i don't see  
+> anything in the release notes that might be related to the problem  
+> described in the noted radar report.
+>
+> i thought i'd post here and see if anyone in the know could comment  
+> on that report.  i'm about to start downgrading and attempting to  
+> get back to a stable environment (the crashes are getting too  
+> frequent to bear), but if there's any chance a fix can get into  
+> update 7, then i'd hold off.
+>
+can't comment to that. as far as i know 'anyone in the know' would  
+have to be apple or the originator to view that radar.
+you don't indicate the situation where you run into the bug. have you  
+considered using anything besides sun java.util.zip?
+this for one turned up quickly looking for (googling)
+java.util.zipfile compatible
+
+a pure java implementation of the java.util.zip library
+
+http://jazzlib.sourceforge.net/
+
+which in turns mentions jzlib which i think i looked at before.
+
+i support some of my own zip related code but not really compatible  
+to zipfile. not doing much with it. plan to probably return to it  
+sometime after 1.7 provides the long awaited pluggable filesystems.
+
+
+
+mike hall        hallmike at att dot net
+http://www195.pair.com/mik3hall
+http://www195.pair.com/mik3hall/home.html
+http://sourceforge.net/projects/macnative
+
+
+
+
+-----begin pgp signature-----
+version: gnupg/macgpg2 v2.0.14 (darwin)
+
+ijweaqecaayfakvxrnoacgkquvk/zsathtjfngqaoxt26slpgycwm4gw9wejczjm
+qaiojbngbp0+sq+ovresbauttjygxzce9uzl0ety4bcejvftyy2mdf5qsevfwqjd
+jolvzmjl9lsbicbe4vra3dst32tfkgvgzfitcxf6ryioduclbjeaw2dbsh2miwh6
+5txgk5+gcs96vwavfhm=
+=9uwl
+-----end pgp signature-----
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

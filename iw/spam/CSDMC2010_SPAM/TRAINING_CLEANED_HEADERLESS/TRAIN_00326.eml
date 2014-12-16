@@ -1,0 +1,60 @@
+this automatic mail gives an overview over security issues that were recently 
+fixed in debian testing. the majority of fixed packages migrate to testing 
+from unstable. if this would take too long, fixed packages are uploaded to the 
+testing-security repository instead. it can also happen that vulnerable 
+packages are removed from debian testing.
+
+migrated from unstable:
+=======================
+gnu-smalltalk 3.1-6:
+cve-2009-3736: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3736
+               http://bugs.debian.org/559809
+
+removed from testing:
+=====================
+the following issues have been "fixed" by removing the (source) packages from 
+testing. this probably means that you have to manually uninstall the 
+corresponding binary packages to fix the issues.
+it can also mean that the packages have been replaced, or that they have been 
+temporarily removed by the release team to make transitions from unstable 
+easier.
+
+webcalendar:
+cve-2010-0636: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0636
+cve-2010-0637: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0637
+cve-2010-0638: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0638
+
+
+
+how to update:
+--------------
+make sure the line
+
+deb http://security.debian.org squeeze/updates main contrib non-free
+
+is present in your /etc/apt/sources.list. of course, you also need the line
+pointing to your normal squeeze mirror. you can use
+
+aptitude update && aptitude dist-upgrade
+
+to install the updates.
+
+
+more information:
+-----------------
+more information about which security issues affect debian can be found in the 
+security tracker:
+
+http://security-tracker.debian.org/tracker/
+
+a list of all known unfixed security issues is at
+
+http://security-tracker.debian.org/tracker/status/release/testing
+
+
+-- 
+to unsubscribe, email to debian-testing-security-announce-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/e1oabzw-0003yb-6d@soler.debian.org
+
+

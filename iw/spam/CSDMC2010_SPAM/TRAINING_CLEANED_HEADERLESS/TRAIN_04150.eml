@@ -1,0 +1,78 @@
+on thu, 20 may 2010 12:40:01 +0200, schelstraete bart =20
+ wrote:
+
+>> also, is it just me or do other folk here also find that kde seems to =
+be
+>> pulling in loads of dependencies ... databases, nepomuk (which wants
+>> virtuoso soprano), etc. just to operate? seems like a lot of overhead =
+is
+>> required to prop up kde4.* these days.
+>
+> =a0
+>
+> =a0
+>
+> who says that=a0 you need virtuoso to run kde4?
+
+kde4 when it starts...
+
+> if you don't need it, you don't install it.
+
+nepomukserver is contained in kdebase-runtime. there is a dependency on =20
+kdebase-runtime in almost every kde4 package.
+
+> it's like installing debian with oracle, and afterwards complain that =20
+> debian needs oracle... sigh...
+
+except for the dependency and stuff, yes. and your post is like sticking =
+=20
+your head in the sand and then telling us what you've read.
+
+ji=f8=ed pale=e8ek
+> =a0
+> =a0
+> -----original message-----
+> from: ag 
+> sent: thu 20-05-2010 10:30
+> to: debian user ;
+> subject: nepomuk wants virtuoso soprano
+>
+> hi all
+>
+> although i am logging into gnome de on an up-to-date squeeze system, i
+> receive a message at login that declares nepomuk requires virtuoso
+> soprano to work. =a0having looked nepomuk up via google, it seems like =
+it
+> is something from our kde friends, but using apt-cache search i don't
+> see anything called virtuoso soprano to draw down to satisfy nepomuk.
+>
+> my question is: how does one satisfy nepomuk and/ or is nepomuk even
+> necessary?
+>
+> also, is it just me or do other folk here also find that kde seems to b=
+e
+> pulling in loads of dependencies ... databases, nepomuk (which wants
+> virtuoso soprano), etc. just to operate? seems like a lot of overhead i=
+s
+> required to prop up kde4.* these days.
+>
+> anyway, any suggestions re: the nepomuk issue?
+>
+> cheers
+>
+> ag
+>
+>
+
+
+
+--=20
+using opera's revolutionary e-mail client: http://www.opera.com/mail/
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/op.vcz5enwgu2flwt@debian
+
+

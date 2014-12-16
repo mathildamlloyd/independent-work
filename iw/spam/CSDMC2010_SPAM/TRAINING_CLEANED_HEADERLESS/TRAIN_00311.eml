@@ -1,0 +1,44 @@
+on sat, 10 apr 2010 06:50:05 +0200, steef wrote:
+
+> camalen wrote:
+
+>> just another thing to try.
+>>
+>> issue "lspci | grep vga" and put here the output.
+
+(...)
+
+> here it comes:
+> 
+> steef@debianlennynw:~$ lspci | grep vga 00:02.0 vga compatible
+> controller: intel corporation 4 series chipset integrated graphics
+> controller (rev 03) 04:00.0 vga compatible controller: nvidia
+> corporation device 0641 (rev a1) 
+
+so, do you have the two vga cards enabled? i also have an intel embedded 
+card but iirc, i disabled it in the bios as soon as i plugged the nvidia 
+card (7600 gs).
+
+otoh, it seems that device id corresponds to nvida 9400 gt. so i would 
+test with the nvidia debian drivers. if they do not work, you can always 
+come back and activate the intel one.
+
+> i'll look into that wiki (again),
+> 
+> it can take some time before i answer again: got to take care of my
+> family now,
+
+take your time. family is first :-)
+
+saludos,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.10.17.22.47@csmining.org
+
+

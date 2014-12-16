@@ -1,0 +1,27 @@
+> from: ron johnson [mailto:ron.l.johnson@cox.net]
+> sent: saturday, april 24, 2010 3:49 pm
+>=20
+> on 04/24/2010 05:31 pm, b. alexander wrote:
+> >
+> > define "hates sudden power outages"...is it recoverable?
+> >
+>=20
+> they got pretty corrupted.  maybe it's been robustified in the
+> intervening years.
+
+apparently, it has been "robustified".
+
+http://old.nabble.com/xfs-data-loss,-and-a-fix-td15876910.html
+
+http://xfs.org/index.php/xfs_faq#q:_why_do_i_see_binary_nulls_in_some_fil=
+es_after_recovery_when_i_unplugged_the_power.3f
+
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/00ac01cae7dc$0242e400$06c8ac00$@net
+
+

@@ -1,0 +1,84 @@
+NoneAutomated forwarding
+Hi Folks,
+
+I've been trying to set a button called which automatically
+forwards mail using a '-form mycomps' without going through
+the editor, but so far haven't got the right recipe.
+
+I currently have in my .exmh-defaults:
+
+*Mops.spam.text:        Spam
+*Mops.spam.command:     Msg_Forward -form spamcomps -noedit -nowhatnowproc ; Msg
+_Remove
+
+
+I've also tried with "SeditSend {$draft $t 0}" after the forward command.
+It should forward to a spam address (where filters get adjusted) and then
+delete.  It does so, but not without producing the edit window.
+
+Any help appreciated.
+
+Wendy Roberts
+
+
+
+===========================================
+Wendy Roberts          
+HEAD System Administrator                             
+High Energy Astrophsics Division
+Harvard-Smithsonian Center for Astrophysics
+Cambridge, MA USA 02138
+wendy@cfa.harvard.edu  
+Phone:  617-495-7153  
+===========================================
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+
+automated forwarding
+hi folks,
+
+i've been trying to set a button called which automatically
+forwards mail using a '-form mycomps' without going through
+the editor, but so far haven't got the right recipe.
+
+i currently have in my .exmh-defaults:
+
+*mops.spam.text:        spam
+*mops.spam.command:     msg_forward -form spamcomps -noedit -nowhatnowproc ; msg
+_remove
+
+
+i've also tried with "seditsend {$draft $t 0}" after the forward command.
+it should forward to a spam address (where filters get adjusted) and then
+delete.  it does so, but not without producing the edit window.
+
+any help appreciated.
+
+wendy roberts
+
+
+
+===========================================
+wendy roberts          
+head system administrator                             
+high energy astrophsics division
+harvard-smithsonian center for astrophysics
+cambridge, ma usa 02138
+wendy@cfa.harvard.edu  
+phone:  617-495-7153  
+===========================================
+
+
+
+_______________________________________________
+exmh-users mailing list
+exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

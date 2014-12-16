@@ -1,0 +1,31 @@
+None> Yeah, that's pretty much what I thought. =A0Well, I think that I'm going
+> to code something like this, unless someone else will point out that
+> it's already been done.
+
+I don't know anything like this, but another approch to to this might
+be to use LD_PRELOAD and/or PTRACE to hook connect(), write() and
+read().
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/v2xf67028d41005090020kebdb09a5zfe49825b5bfd4c3f@mail.csmining.org
+
+
+re: bandwidth measurement by processon sun, may 9, 2010 at 9:03 am, celejar  wrote:
+> yeah, that's pretty much what i thought. =a0well, i think that i'm going
+> to code something like this, unless someone else will point out that
+> it's already been done.
+
+i don't know anything like this, but another approch to to this might
+be to use ld_preload and/or ptrace to hook connect(), write() and
+read().
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/v2xf67028d41005090020kebdb09a5zfe49825b5bfd4c3f@mail.csmining.org
+
+

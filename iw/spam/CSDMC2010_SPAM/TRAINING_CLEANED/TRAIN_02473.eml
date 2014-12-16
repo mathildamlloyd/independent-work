@@ -1,0 +1,43 @@
+NoneHello,
+
+On antradienis 18 Gegu=C5=BE=C4=97 2010 18:02:53 B. Alexander wrote:
+> On both systems, clicking either on the desktop or the cashew and selecti=
+ng
+> Desktop Activity Settings causes the panel and the desktop background to
+> disappear. I no longer get a menu when right clicking on the (black)
+> desktop. I am also no longer able to change desktops, but I can still
+> access the windows on the current (only) desktop.
+
+That's symptoms of plasma-desktop crashing.
+
+> The only way to recover
+> from this is to go into a terminal window and restart kdm or reboot.
+
+Run plasma-desktop from krunner or X terminal.
+
+=2D-=20
+Modestas Vainius <modestas@vainius.eu>
+re: what needs to improve in kde 4?from nobody tue dec 16 07:55:46 2014
+content-type: text/plain;
+  charset="utf-8"
+content-transfer-encoding: quoted-printable
+
+hello,
+
+on antradienis 18 gegu=c5=be=c4=97 2010 18:02:53 b. alexander wrote:
+> on both systems, clicking either on the desktop or the cashew and selecti=
+ng
+> desktop activity settings causes the panel and the desktop background to
+> disappear. i no longer get a menu when right clicking on the (black)
+> desktop. i am also no longer able to change desktops, but i can still
+> access the windows on the current (only) desktop.
+
+that's symptoms of plasma-desktop crashing.
+
+> the only way to recover
+> from this is to go into a terminal window and restart kdm or reboot.
+
+run plasma-desktop from krunner or x terminal.
+
+=2d-=20
+modestas vainius 

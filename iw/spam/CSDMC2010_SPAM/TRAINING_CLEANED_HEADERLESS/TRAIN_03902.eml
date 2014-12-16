@@ -1,0 +1,72 @@
+hi guy,
+                the problem is caused by an npe in the swing =
+accessibility code when a jlist subclass overrides the =
+getaccessiblecontext() method and returns null. you can hit this crash =
+when using a tool that scans the intellij ui using the accessibility =
+api. we believe we have a fix for it, but as a workaround if you avoid =
+using tools that use accessibility with intellij, you can avoid the =
+crash.
+
+thanks,
+bino george,
+java runtime engineer,
+apple inc.
+
+
+
+on may 25, 2010, at 8:29 am, guy gascoigne-piggford wrote:
+
+> is there any update on this?  i use idea all day and every day so this
+> is a complete blocker to me upgrading.
+>=20
+> is there any way for anyone other than the bug reporter to see the
+> status of a specific bug?  apple's bug parade doesn't appear to be as
+> open as say sun's was.
+>=20
+> guy
+>=20
+> on wed, may 19, 2010 at 11:06 pm, phillip ashworth =
+ wrote:
+>> thanks - i've filed bug report id: 8002471
+>> i've discovered that the crash occurs when the pasted code includes =
+class name that are not already imported in the current document, idea =
+then pops-up a window to select the class to import and crashes =
+instantly and every time.
+>> i've not got any screen reader or accessibility software running but =
+i do have launchbar and textexpander.. not sure if these count.
+>> -phill
+>>=20
+>>=20
+>> on 20/mag/2010, at 07.07, bino george wrote:
+>>=20
+>>> hi phillip,
+>>>                    can you please file a bug at =
+http://bugreporter.apple.com with the crash log attached to it ? i tried =
+to reproduce this myself but could not, can you also include the exact =
+steps to reproduce. please mention any screen readers or other =
+accessibility tools you may have running.
+>>>=20
+>>> thanks,
+>>> bino george,
+>>> java runtime engineer,
+>>> apple inc.
+>>>=20
+>>> on may 19, 2010, at 9:15 pm, phillip ashworth wrote:
+>>>=20
+>>>> since updating to 10.6 update 2 intellij idea crashes when i paste =
+code from one class into another in the main editor - see exception =
+below.
+>>>> jetbrains support say this is an apple problem, anything i can do =
+about it or is it a bug in this java version?
+>>>>=20
+>>>> regards
+>>>> phill
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

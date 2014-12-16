@@ -1,0 +1,695 @@
+
+
+
+
+core java technologies technical tips
+
+
+
+code {color: #333333; font-family: verdana, courier, monospace; font-size: 10pt}
+pre {color: #333333; font-family: verdana, courier, monospace; font-size: 10pt}
+body, div, span {color: #333333; font-family: arial, helvetica, sans-serif; font-size: 10pt}
+td, th {color: #333333; font-family: arial, helvetica, sans-serif; font-size: 10pt}
+tr {color: #333333; font-family: arial, helvetica, sans-serif; font-size: 10pt}
+table {font-family: arial, helvetica, sans-serif; font-size: 10pt}
+p {color: #333333; font-family: arial,helvetica,sans-serif; font-size: 10pt}
+li {color: #333333; font-family: arial, helvetica, sans-serif; font-size: 10pt}
+br {color: #333333; font-family: arial, helvetica, sans-serif; font-size: 10pt}
+div {color: #666699; font-family: arial, helvetica, sans-serif; font-size: 10pt}
+sup {font-family: arial, helvetica, sans-serif; font-size: 5pt}
+h3 {color: #666699; font-family: arial, helvetica, sans-serif; font-size: 11pt}
+h4, h5, h6 {color: #333333; font-family: arial, helvetica, sans-serif; font-size: 10pt}
+blockquote, input, select {color: #333333; font-family: arial, helvetica, sans-serif; font-size: 10pt}
+ul, ol, font {color: #333333; font-family: arial, helvetica, sans-serif; font-size: 10pt}
+a:link {font-size: 10pt; font-family: arial, helvetica, sans-serif; color:#666699 }
+span.purple {font-weight: bold; color: #666699; font-family: arial, helvetica, sans-serif; font-size: 10pt}
+span.small {font-size: 8pt; font-family: arial, helvetica, sans-serif; color:#333333 }
+span.link {font-size: 8pt; font-family: arial, helvetica, sans-serif; color:#666699 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+view this issue as simple text
+september 10, 2002
+
+
+
+
+
+
+
+
+in this issue
+
+
+
+
+
+
+
+
+
+welcome to the core javatm technologies tech tips, september 10, 2002. here you'll get tips on using core java technologies and apis, such as those in java 2 platform, standard edition (j2setm).
+
+
+using arraylist and linkedlist
+
+using zero-length arrays
+
+
+these tips were developed using java 2 sdk, standard edition, v 1.4.
+
+
+this issue of the jdc tech tips is written by glen mccluskey.
+
+
+
+
+
+
+
+
+
+using arraylist and linkedlist
+
+arraylist and linkedlist are two collections classes used for storing lists of object references. for example, you could have an arraylist of strings, or a linkedlist of integers. this tip compares the performance of arraylist and linkedlist, and offers some suggestions about which of these classes is the right choice in a given situation.
+
+
+the first key point is that an arraylist is backed by a primitive object array. because of that, an arraylist is much faster than a linkedlist for random access, that is, when accessing arbitrary list elements using the get method. note that the get method is implemented for linkedlists, but it requires a sequential scan from the front or back of the list. this scan is very slow. for a linkedlist, there's no fast way to access the nth element of the list.
+
+
+consider the following example. suppose you have a large list of sorted elements, either an arraylist or a linkedlist. suppose too that you do a binary search on the list. the standard binary search algorithm starts by checking the search key against the value in the middle of the list. if the middle value is too high, then the upper half of the list is eliminated. however, if the middle value is too low, then the lower half of the list is ignored. this process continues until the key is found in the list, or until the lower bound of the search becomes greater than the upper bound.
+
+
+here's a program that does a binary search on all the elements in an arraylist or a linkedlist:
+
+
+    import java.util.*;
+
+    public class listdemo1 {
+        static final int n = 10000;
+
+        static list values;
+
+        // make list of increasing integer values
+
+        static {
+           integer vals[] = new integer[n];
+
+           random rn = new random();
+
+           for (int i = 0, currval = 0; i < n; i++) {
+               vals[i] = new integer(currval);
+               currval += rn.nextint(100) + 1;
+           }
+
+           values = arrays.aslist(vals);
+        }
+        
+        // iterate across a list and look up every
+        // value in the list using binary search
+
+        static long timelist(list lst) {
+            long start = system.currenttimemillis();
+
+            for (int i = 0; i < n; i++) {
+
+               // look up a value in the list 
+               // using binary search
+
+               int indx = collections.binarysearch(
+                                   lst, values.get(i));
+
+               // sanity check for result 
+               // of binary search
+
+               if (indx != i) {
+                   system.out.println(
+                                    "*** error ***\n");
+               }
+           }
+
+           return system.currenttimemillis() - start;
+       }
+
+       public static void main(string args[]) {
+
+           // do lookups in an arraylist 
+
+           system.out.println("time for arraylist = " +
+               timelist(new arraylist(values)));
+
+           // do lookups in a linkedlist
+
+           system.out.println(
+               "time for linkedlist = " +
+               timelist(new linkedlist(values)));
+       }
+    }
+
+
+the listdemo1 program sets up a list of sorted integer values. it then adds the values to an arraylist or a linkedlist. then collections.binarysearch is used to search for each value in the 
+list.
+
+
+when you run this program, you should see a result that looks something like this:
+
+
+    time for arraylist = 31
+
+    time for linkedlist = 4640
+
+
+arraylist is about 150 times faster than linkedlist. (your results might differ depending on your machine characteristics, but you should see a distinct difference in the result for arraylist as compared to that for linkedlist. the same is true for the other programs in this tip.) clearly, linkedlist is a bad choice in this situation. the binary search algorithm inherently uses random access, and linkedlist does not support fast random access. the time to do a random access in a linkedlist is proportional to the size of the list. by comparison, random access in an arraylist has a fixed time.
+
+
+you can use the randomaccess marker interface to check whether a list supports fast random access:
+
+
+    void f(list lst) {
+        if (lst instanceof randomaccess) {
+            // supports fast random access
+        }
+    }
+
+
+arraylist implements the randomaccess interface, and linkedlist. does not. note that collections.binarysearch does take advantage of the randomaccess property, to optimize searches.
+
+
+do these results prove that arraylist is always a better choice? not necessarily. there are many cases where linkedlist does better. also note that there are many situations where an algorithm can be implemented efficiently for linkedlist. an example is reversing a linkedlist using collections.reverse. the internal algorithm does this, and gets reasonable performance, by using forward and backward iterators.
+
+
+let's look at another example. suppose you have a list of elements, and you do a lot of element inserting and deleting to the list. in this case, linkedlist is the better choice. to demonstrate that, consider the following "worst case" scenario. in this demo, a program repeatedly inserts elements at the beginning of a list. the code looks like this:
+
+
+    import java.util.*;
+
+    public class listdemo2 {
+        static final int n = 50000;
+
+        // time how long it takes to add 
+        // n objects to a list
+
+        static long timelist(list lst) {
+            long start = system.currenttimemillis();
+
+            object obj = new object();
+
+            for (int i = 0; i < n; i++) {
+                lst.add(0, obj);
+            }
+
+            return system.currenttimemillis() - start;
+        }
+
+        public static void main(string args[]) {
+
+            // do timing for arraylist
+
+            system.out.println(
+                "time for arraylist = " +
+                timelist(new arraylist()));
+
+            // do timing for linkedlist
+
+            system.out.println(
+                "time for linkedlist = " +
+                timelist(new linkedlist()));
+        }
+    } 
+
+
+when you run this program, the result should look something like this:
+
+
+    time for arraylist = 4859
+
+    time for linkedlist = 125
+
+
+these results are pretty much the reverse of the previous example.
+
+
+when an element is added to the beginning of an arraylist, all of the existing elements must be pushed back, which means a lot of expensive data movement and copying. by contrast, adding an element to the beginning of a linkedlist simply means allocating an internal record for the element and then adjusting a couple of links. adding to the beginning of a linkedlist has fixed cost, but adding to the beginning of an arraylist has a cost that's proportional to the list size.
+
+
+so far, this tip has looked at speed issues, but what about space? let's look at some internal details of how arraylist and linkedlist are implemented in java 2 sdk, standard edition v 1.4. these details are not part of the external specification of these classes, but are illustrative of how such classes work internally.
+
+
+the linkedlist class has a private internal class defined like this:
+
+
+    private static class entry {
+        object element;
+        entry next;
+        entry previous;
+    } 
+
+
+each entry object references a list element, along with the next and previous elements in the linkedlist -- in other words, a doubly-linked list. a linkedlist of 1000 elements will have 1000 entry objects linked together, referencing the actual list elements. there is significant space overhead in a linkedlist structure, given all these entry objects.
+
+
+an arraylist has a backing object array to store the elements. this array starts with a capacity of 10. when the array needs to grow, the new capacity is computed as:
+
+
+    newcapacity = (oldcapacity * 3) / 2 + 1;
+
+
+notice that the array capacity grows each time by about 50%. this means that if you have an arraylist with a large number of elements, there will be a significant amount of space wasted at the end. this waste is intrinsic to the way arraylist works. if there was no spare capacity, the array would have to be reallocated for each new element, and performance would suffer dramatically. changing the growth strategy to be more aggressive (such as doubling the size at each reallocation) would result in slightly better performance, but it would waste more space.
+
+
+if you know how many elements will be in an arraylist, you can specify the capacity to the constructor. you can also call the trimtosize method after the fact to reallocate the internal array. this gets rid of the wasted space.
+
+
+so far, this discussion has assumed that either an arraylist or a linkedlist is "right" for a given application. but sometimes, other choices make more sense. for example, consider the very common situation where you have a list of key/value pairs, and you would like to retrieve a value for a given key.
+
+
+you could store the pairs in an n x 2 object array. to find the right pair, you could do a sequential search on the key values. this approach works, and is a useful choice for very small lists (say 10 elements or less), but it doesn't scale to big lists.
+
+
+another approach is to sort the key/value pairs by ascending key value, store the result in a pair of arraylists, and then do a binary search on the keys list. this approach also works, and is very fast. yet another approach is to not use a list structure at all, but instead use a map structure (hash table), in the form of a hashmap.
+
+
+which is faster, a binary search on an arraylist, or a hashmap? here's a final example that compares these two:
+
+
+    import java.util.*;
+
+    public class listdemo3 {
+        static final int n = 500000;
+
+        // lists of keys and values
+
+        static list keys;
+        static list values;
+
+        // fill the keys list with ascending order key 
+        // values and fill the values list with
+        // corresponding values (-key)
+
+        static {
+            integer keyvec[] = new integer[n];
+            integer valuevec[] = new integer[n];
+
+            random rn = new random();
+
+            for (int i = 0, currval = 0; i < n; i++) {
+                keyvec[i] = new integer(currval);
+                valuevec[i] = new integer(-currval);
+                currval += rn.nextint(100) + 1;
+            }
+
+            keys = arrays.aslist(keyvec);
+            values = arrays.aslist(valuevec);
+        }
+
+        // fill a map with key/value pairs
+
+        static map map = new hashmap();
+
+        static {
+            for (int i = 0; i < n; i++) {
+                map.put(keys.get(i), values.get(i));
+            }
+        }
+
+        // do binary search lookup of all keys
+
+        static long timelist() {
+            long start = system.currenttimemillis();
+
+            for (int i = 0; i < n; i++) {
+                int indx = collections.binarysearch(
+                                    keys, keys.get(i));
+
+                // sanity check of returned value 
+                // from binary search
+
+                if (indx != i) {
+                    system.out.println(
+                                    "*** error ***\n");
+                }
+            }
+
+            return system.currenttimemillis() - start;
+        }
+
+        // do map lookup of all keys
+
+        static long timemap() {
+            long start = system.currenttimemillis();
+
+            for (int i = 0; i < n; i++) {
+                integer value = (integer)map.get(
+                                          keys.get(i));
+
+                // sanity check of value returned 
+                // from map lookup
+
+                if (value != values.get(i)) {
+                    system.out.println(
+                                    "*** error ***\n");
+                }
+            }
+
+            return system.currenttimemillis() - start;
+        }
+
+        public static void main(string args[]) {
+
+            // do timing for list implementation
+
+            system.out.println("list time = " + 
+                                           timelist());
+
+            // do timing for map implementation
+
+            system.out.println("map time = " + 
+                                            timemap());
+        }
+    }
+
+
+the program sets up lists of keys and values, and then uses two different techniques to map keys to values. one approach uses a binary search on a list, the other a hash table.
+
+
+when you run the listdemo3 program, you should get a result that looks something like this:
+
+
+    arraylist time = 1000
+
+    hashmap time = 281
+
+
+in this example, n has a value of 500000. approximately, log2(n) - 1 comparisons are required in an average successful binary search, so each binary search lookup in the arraylist will take about 18 comparisons. by contrast, a properly implemented hash table typically requires only 1-3 comparisons. so you should expect the hash table to be faster in this case.
+
+
+however, binary search is still useful. for example, you might want to do a lookup in a sorted list and then find keys that are close in value to the key used for the lookup. doing this is easy with binary search, but impossible in a hash table. keys in a hash table are stored in apparent random order. also, if you are concerned with worst-case performance, the binary search algorithm offers a much stronger performance guarantee than a hash table scheme. you might also consider using treemap for doing lookups in sorted collections of key/value pairs.
+
+
+let's summarize the key points presented in this tip:
+
+
+appending elements to the end of a list has a fixed averaged cost for both arraylist and linkedlist. for arraylist, appending typically involves setting an internal array location to the element reference, but occasionally results in the array being reallocated. for linkedlist, the cost is uniform and involves allocating an internal entry object.
+inserting or deleting elements in the middle of an arraylist implies that the rest of the list must be moved. inserting or deleting elements in the middle of a linkedlist has fixed cost.
+a linkedlist does not support efficient random access
+an arraylist has space overhead in the form of reserve capacity at the end of the list. a linkedlist has significant space overhead per element.
+sometimes a map structure is a better choice than a list.
+
+
+for more information about using arraylist and linkedlists, see section 16.6, list, and section 16.7, map and sortedmap, in "the javatm programming language third edition" by arnold, gosling, and holmes. also see the collections trail in the java tutorial, third edition.
+
+
+
+
+
+back to top
+
+
+
+
+
+
+
+
+
+
+using zero-length arrays
+
+suppose that you are writing a java application that involves some sort of data filtering. you have some raw data that you want to clean up and process in various ways. one of the methods you've written takes an array of integers, along with minimum and maximum values. the method goes through the array and eliminates "outliers," that is, values that are too small or too big. the result of the filtering process is a new array of cleaned-up data.
+
+
+how could you implement this kind of filtering method? here's one approach:
+
+
+    import java.util.*;
+    
+    public class zerodemo1 {
+    
+        // filter input array and throw away values 
+        // that are less than minval or greater than 
+        // maxval
+    
+        static int[] filterdata(
+                int indata[], int minval, int maxval) {
+    
+            // check parameters for errors 
+    
+            if (indata == null) {
+                throw new nullpointerexception(
+                                     "indata is null");
+            }
+            if (maxval < minval) {
+                throw new illegalargumentexception(
+                "maxval < minval");
+            }
+    
+            // count number of valid values 
+            // in input array
+    
+            int validcnt = 0;
+            for (int i = 0; i < indata.length; i++) {
+                if (indata[i] >= minval && indata[i] 
+                                         <= maxval) {
+                    validcnt++;
+                }
+            }
+    
+            // if no valid values, return null
+    
+            if (validcnt == 0) {
+                return null;
+            }
+    
+            // copy valid values to new array 
+            // and return it
+    
+            int outdata[] = new int[validcnt];
+            for (int i = 0, j = 0; 
+                              i < indata.length; i++) {
+                if (indata[i] >= minval && indata[i] 
+                                           <= maxval) {
+                    outdata[j++] = indata[i];
+                }
+            }
+            return outdata;
+        }
+    
+        public static void main(string args[]) {
+    
+            // set up test array of integers
+    
+            int indata[] = new int[]{1, 3, -17, 8, 59};
+    
+            // filter out values not in the range 1-10
+    
+            int outdata1[] = filterdata(indata, 1, 10);
+            for (int i = 0; i < outdata1.length; i++) {
+                system.out.println(outdata1[i]);
+            }
+    
+            // filter out values not 
+            // in the range 100-200
+    
+            int outdata2[] = filterdata(
+                                     indata, 100, 200);
+            for (int i = 0; i < outdata2.length; i++) {
+                system.out.println(outdata2[i]);
+            }
+        }
+    }
+
+
+the filterdata method does two scans of the input array. the first scan counts the number of valid data values. then the method allocates a new array of the appropriate size, and copies the good values to it. if there are no good values, the method returns a null value for the array reference.
+
+
+the result of running the zerodemo1 program is:
+
+
+    1
+    3
+    8
+    exception in thread "main"
+    java.lang.nullpointerexception
+        at zerodemo1.main(zerodemo1.java:72)
+
+
+the problem with this program is a rather basic one. the second call of filterdata returns a null value, and the program fails to take this possibility into account.
+
+
+a better approach in this example would be to comment out the block of code that tests for the possibility of no valid data values:
+
+
+    /*
+    if (validcnt == 0) {
+        return null;
+    }
+    */
+
+
+when there is no valid data, the code will fall through to the next line, where a zero-length array is allocated:
+
+
+    int outdata[] = new int[0];
+
+
+this is perfectly legal java usage. the representation of java arrays includes the length of the array, and it's therefore possible to tell if an array has zero length.
+
+
+for the zerodemo1 example, if you anticipate that validcnt will often be zero, that is, data filtering will often eliminate all values from the input, then you could optimize away the second input scan by adding code like this:
+
+
+    int outdata[] = new int[validcnt];
+    if (validcnt == 0) {
+        return outdata;
+    }
+
+
+note that usage such as:
+
+
+    int outdata[] = new int[]{};
+
+
+is also legal, to initialize an array with a zero-length set of integer constants.
+
+
+in general, it's best not to return null from a method that returns an array type. always returning an array, even if the array has zero length, greatly improves the generality of algorithms. if you anticipate that your methods will often return zero-length arrays, you might be concerned about the performance implications of allocating many such arrays. in this case, you can allocate a single array, and always return the same one, as follows:
+
+
+    private static final int zero_length_array[] = 
+                                            new int[0];
+
+
+this array is immutable (it can't be changed), and can be shared throughout your application.
+
+
+there's another way that zero-length arrays are used, as illustrated in the following example:
+
+
+    import java.util.*;
+    
+    public class zerodemo2 {
+        public static void main(string args[]) {
+    
+            // set up arraylist and add strings to it
+    
+            list stringlist = new arraylist();
+            stringlist.add("string 1");
+            stringlist.add("string 2");
+            stringlist.add("string 3");
+    
+            // convert to string array
+    
+            string out[] = (
+                          string[])stringlist.toarray(
+            new string[0]);
+            for (int i = 0; i < out.length; i++) {
+                system.out.println(out[i]);
+            }
+        }
+    }
+
+
+the result of running the zerodemo2 program is:
+
+
+    string 1
+    string 2
+    string 3
+
+
+the zerodemo2 program sets up an arraylist, and adds three strings to it. then the program calls toarray to get a string array of the three elements in the arraylist. in this example, the argument to toarray is "new string[0]". this argument serves a couple of purposes. first, if you have a string array that's big enough to hold the elements of the arraylist, you can specify it as the argument to toarray. the method will use the string array.
+
+
+but if your array is not big enough, then the toarray method allocates an array to return the elements. it uses the type of the array that was passed in to determine the type of the allocated array. arraylist stores its element references in an object array. the toarray method needs to be told if there is some other type (such as string) to be used for returning the array of elements. the method uses reflection (java.lang.reflect.array.newinstance) to create an array of the appropriate type.
+
+
+for more information about using zero-length arrays, see item 27 "return zero-length arrays, not nulls" in "effective java programming language guide" by joshua bloch.
+
+
+
+
+
+back to top
+
+
+
+
+
+
+
+
+
+
+important: please read our terms of use, privacy, and licensing policies:
+http://www.sun.com/share/text/termsofuse.html
+http://www.sun.com/privacy/
+http://developer.java.sun.com/berkeley_license.html
+
+
+comments? send your feedback on the javatm technology fundamentals newsletter to: jdc-webmaster@sun.com
+
+
+subscribe to the following newsletters for the latest information about technologies and products in other java platforms:
+
+
+  - enterprise java technologies tech tips. get tips on using
+    enterprise java technologies and apis, such as those in the
+    java 2 platform, enterprise edition (j2eetm).
+  - wireless developer tech tips. get tips on using wireless
+    java technologies and apis, such as those in the java 2 
+    platform, micro edition (j2metm).
+
+
+  to subscribe to these and other jdc publications:
+  - go to the jdc newsletters and publications page, 
+    choose the newsletters you want to subscribe to and click "update".
+  - to unsubscribe, go to the subscriptions page, uncheck the appropriate checkbox, and click "update".
+
+archives: you'll find the core java technologies tech tips archives at:
+http://java.sun.com/jdc/techtips/index.html
+
+copyright 2002 sun microsystems, inc. all rights reserved. 901 san antonio road, palo alto, california 94303 usa.
+
+sun, sun microsystems, java, java developer connection, j2se, j2ee, and j2me are trademarks or registered trademarks of sun microsystems, inc. in the united states and other countries.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+please send me newsletters in text.please unsubscribe me from this newsletter.
+

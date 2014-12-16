@@ -1,0 +1,46 @@
+on sat, 24 apr 2010 03:03:57 -0500, ron johnson wrote:
+
+> on 04/23/2010 11:13 pm, siju george wrote:
+
+>> ext3 can have only 32000 files/folders under a folder and i hit that
+>> limit. which file system can i use to over come it? i am planning for
+>> jfs
+>>
+>> does anybody has any recommendations?
+>>
+>>
+> since mike bird has demonstrated your erroneous claim, plz show us the
+> real error message.
+
+is wikipedia ext3 article wrong then? :-?
+
+***
+limits
+
+max number of files variable, allocated at creation time[1]
+
+[1] the maximum number of inodes (and hence the maximum number of files 
+and directories) is set when the file system is created. if v is the 
+volume size in bytes, then the default number of inodes is given by v/213 
+(or the number of blocks, whichever is less), and the minimum by v/223. 
+the default was deemed sufficient for most applications. the max number 
+of subdirectories in one directory is fixed to 32000.
+***
+
+note that "the max number of subdirectories in one directory is fixed to 
+32000."
+
+ http://en.wikipedia.org/wiki/ext3
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.24.08.16.45@csmining.org
+
+

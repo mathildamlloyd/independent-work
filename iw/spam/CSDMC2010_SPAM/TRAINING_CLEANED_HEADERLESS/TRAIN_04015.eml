@@ -1,0 +1,24 @@
+on 2010-04-25, disc magnet  wrote:
+---snip---
+> i was just experimenting to see if i can
+> put any startup commands which will run everytime i log into gnome. in
+> both trials, gnome crashed.
+
+put the commands in .gnomerc (for gnome only) or .xsessionrc (for all x
+sessions). if you want to start graphical applications, put the
+appropriate .desktop files in ~/.config/autostart, or use the gnome
+session manager for the purpose. as others have pointed out, the file
+.xsession should be reserved for starting an x session.
+
+-- 
+liam o'toole
+birmingham, united kingdom
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/slrnhtamr5.bu7.liam.p.otoole@dipsy.selfip.org
+
+

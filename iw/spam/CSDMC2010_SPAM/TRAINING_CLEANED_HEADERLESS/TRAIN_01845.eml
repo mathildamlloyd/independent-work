@@ -1,0 +1,54 @@
+on 2010-04-22, dotan cohen  wrote:
+>> i don't know of any backported binaries, so you would have to compile it
+>> yourself. that, however, would be a major undertaking, and presupposes
+>> that the latest kde4 even compiles against the versions of the various
+>> libraries included in lenny.
+>>
+>
+> yes, compiling kde is not a hassle that i want to take.
+>
+>
+>> an alternative is to upgrade to testing/unstable, but then you would no
+>> longer have the uncomplicated life of a lenny user :-)
+>>
+>
+> exactly, i need a stable distro.
+>
+>
+>> or you could wait for the next stable release, or at least for the
+>> freeze announcement.
+>>
+>
+> that is not really an option, as i want the _latest_ kde, not simply
+> 4.4. i contribute to kde and it is important for me to be on the
+> latest version. i cannot be on a distro that is perpetually a few
+> point releases behind.
+
+unfortunately, the goals of always having the latest kde and a stable distro
+are not compatible.
+
+>
+> thanks, liam! i am still weighing my options, including debian-based
+> distros that may be more up to date. i am currently on kubuntu, but
+> the 10.04 release is simply terrible and i'm looking for a new distro.
+> suse would be my next choice, but i prefer debian-based.
+>
+
+another thing you could consider: run testing/unstable in a virtual
+machine or a chroot on your lenny system. beware, though, that even in
+unstable the upload of major packages can be delayed.
+
+have you asked other kde contributors about their setups?
+
+-- 
+liam o'toole
+birmingham, united kingdom
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/slrnht0gta.bu7.liam.p.otoole@dipsy.selfip.org
+
+

@@ -1,0 +1,37 @@
+From nobody Tue Dec 16 09:15:47 2014
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+> As a Debian Maintainer, I can't upload to Volatile. The current Klamav from Testing should work fine if someone cares to upload it.
+>
+
+[...]
+
+Scott, we'll need to bump the version number; if you keep the package in some
+VCS it might make sense if you prepare an updated package; otherwise I can take
+care of that.
+
+Best,
+Michael
+
+From nobody Tue Dec 16 09:15:47 2014
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (Darwin)
+
+iQIcBAEBCAAGBQJLxLi2AAoJEKjvEonjOGdBn/kP+gNdaFc1eOaKW/A/UgV6t8wy
+R1eGZqglKHn96+sTqHpEsuwjy3MxqiSI87x9UYlYTvx2d31u5sseDB2Ya6rTDvvl
+JNqGuHTbTOOyj4qvbinci5PvS2PIh5JvFAa+8VmnYLUYf8m7C3AD66MMQa8EHjf0
+8r67r376b+PwsYfE0DFPmzBjN+gEEUMwOJSG4gKMuPVR8vnLTUSLR5C7hbyCjgbs
+Wj5GpiQ7WYN7oiuPacqBmKOrcwt8o/+A/t+Yx5/Az5dxCrLnS8IPuVALOOFQWF2i
+UZlXGosaLJuN4R5wYzVe37gHnoAdh/3036uToowzuxd4T2/KotvMgEAP2fnDEANd
+G4kXd7dSGlsKRmCUiy8k6O7wEhA1ZVmDSi5Fnc9PuM+YkT4JX8SonJyYfuqK4Mmc
+sFX0NcYOxI1GVR2NDhS0Ty654ik2vaFQeXDgpHaJKX/DjIB4apG1TQvTGf3IiFsi
+fSy6IVQiCDYcWX0Kbz98KMid/dnCpp+AF7R+Wx1cA8Cs38D72UCh6oDGKkTEXTq8
+A1lmq2r9Zt2QffQTFdfn7kdaP7oFdbEjOmMyMbyEzaSPx2WNo+Sm7ReY7dcLDsuj
+gZzVIj8VHKQlNQlqZJWdERgvk9HtEBmZCBRAQEJXygCBv8HuRKpvr/YlYz0C6Bnx
+5bVBBB2W16AW1T0Ysthc
+=eVRr
+-----END PGP SIGNATURE-----

@@ -1,0 +1,39 @@
+on 04/08/2010 12:06 pm, jochen schulz wrote:
+> lorenzo bettini:
+>>
+>> sorry i pasted the wrong name: --revision actually took effect since the
+>> generated .deb is now (note the 'lore01')
+>>
+>> linux-image-2.6.32.10+drm33.1-recompiled_lore01_i386.deb
+>>
+>> but what i need to do is to get rid of '+drm33.1' which seems to be
+>> automatically added...
+>
+> take a look at the first few lines of the makefile in the top-level
+> directory of your kernel sources. it might be defined in there (for a
+> reason).
+>
+> j.
+
+found it:
+
+extraversion
+
+i changed it and now it works fine :)
+
+thanks
+lorenzo
+
+-- 
+lorenzo bettini, phd in computer science, di, univ. torino
+home: http://www.lorenzobettini.it music: http://www.purplesucker.com
+blogs: http://tronprog.blogspot.com  http://longlivemusic.blogspot.com
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hpkj0o$qdj$1@dough.gmane.org
+
+

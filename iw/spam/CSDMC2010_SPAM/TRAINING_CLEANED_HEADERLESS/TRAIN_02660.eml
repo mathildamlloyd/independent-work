@@ -1,0 +1,40 @@
+craig r.hughes wrote:
+ >
+ > on thursday, august 8, 2002, at 11:15  am, mika hirvonen wrote:
+ >
+ >> i do not know the algorithms used to calculate confidence values, but it
+ >> probably penalizes heavily when someone revokes spam that everyone else
+ >> considers as spam. or at least it should.
+ >
+ >
+ > the problem with that is that invariably, there are "gray" mails.  some
+ > people will vote "spam", others will vote "nonspam" -- under your
+ > proposed system, anyone who ever calls "gray" mail nonspam will have a
+ > shitty trust score.  and once you have a shitty trust score, your own
+ > submissions won't even be used to flag your own spam as spam.  that's
+ > bound to confuse a lot of people.  "but i just marked that exact message
+ > as spam.  why is it not being considered spam?  i'm an honest submitter."
+
+i assume that how much the trust goes down depends of the proportion of
+report vs revoke. if everybody except one says that a mail is spam, the
+one guy will see his trust go down dramatically. if you are with the
+majority, your trust goes up. if you are against the majority, your
+trust goes down. if people 50-50, whatever you vote, your neither
+against the majority nor with it, so your trust won't change. so your
+"gray" mail won't have much influence on your trust (neither good nor
+bad, just... gray)
+
+
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+razor-users mailing list
+razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

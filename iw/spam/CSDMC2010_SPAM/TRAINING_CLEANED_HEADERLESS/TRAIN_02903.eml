@@ -1,0 +1,38 @@
+on fri, 14 may 2010 04:12:03 -0500, ron johnson wrote:
+
+> on 05/14/2010 02:42 am, camalen wrote:
+
+>> then, there must be an error in wikipedia "adobe flash" page.
+> 
+> not at all.
+> 
+>> it says: "licence: proprietary eula">:-)
+>>
+>>  http://en.wikipedia.org/wiki/adobe_flash
+>>
+>>
+> you seems to be conflating 3 different entities: 
+> 1. adobe flash 
+> 2. adobe flash player
+> 3. swf file format
+
+afaik:
+
+#1 as per wikipedia  licence: proprietary eula (it can be wrong, though)
+#2 adobe flash player is closed source, non freely distributable, etc...
+#3 falls into #1 (is just a "container")
+
+so, what is the current status of flash technology, which license uses...?
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.14.09.32.06@csmining.org
+
+

@@ -1,0 +1,29 @@
+on thu, aug 08, 2002 at 03:26:38pm -0700, chip paswater wrote:
+> 
+> perhaps a feature can be added to razor-report, so that it checks whether a
+> message is spam before it submits it.  if it is spam, then don't send the
+> body, 4 signatures, etc, just up the "rating" for that individual spam.
+
+yep, that how razor-agents currently work.
+
+cheers,
+vipul.
+
+-- 
+
+vipul ved prakash          |   "the future is here, it's just not 
+software design artist     |    widely distributed."
+http://vipul.net/          |              -- william gibson
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+razor-users mailing list
+razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

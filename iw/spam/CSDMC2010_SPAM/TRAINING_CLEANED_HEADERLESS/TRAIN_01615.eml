@@ -1,0 +1,30 @@
+on thu, 2010-05-06 at 16:52 -0700, kelly clowers wrote:
+> on thu, may 6, 2010 at 16:38, john a. sullivan iii
+>  wrote:
+> >> >
+> >>
+> >> fixed for kde 4.5:
+> >> https://bugs.kde.org/show_bug.cgi?id=172766
+> > 
+> > is 4.5 or even 4.4 even making into squeeze?
+> 
+> 4.4 is in sid now, and we aren't frozen or anything, so i don't know why
+> it wouldn't be in squeeze. for future versions, i imagine it just depends
+> on when debian decides to freeze.
+> 
+> 
+thanks.  i had misinterpreted one of the debian blog postings about 4.4.
+i see now that it is expected the next stable will ship with 4.4.4.  has
+there been any word about when 4.4.x will be moved to testing? i'm
+really hesitant to introduce all the libraries that will be dragged in
+if i install kde from unstable into a production environment.  i even
+hesitate with testing but we are so desperate to make kontact work with
+zimbra that we would take a chance - john
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/1273198085.21138.16.camel@family.pacifera.com
+
+

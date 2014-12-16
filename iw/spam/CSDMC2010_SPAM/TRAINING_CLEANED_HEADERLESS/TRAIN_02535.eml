@@ -1,0 +1,42 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=utf-8
+content-transfer-encoding: quoted-printable
+
+gunnar wolf wrote:
+> merciadri luca dijo [mon, apr 19, 2010 at 05:32:51pm +0200]:
+>  =20
+>
+> thing is, pdf is a printing-oriented format. it is a close descendent
+> of postscript, a full-fledged programming language, but geared towards
+> printers. the main point that makes pdf a more convenient format is
+> that acrobat made a big campaign to distribute its pdf reader program.
+>  =20
+as you say.
+> as you quote, others have told you the pdf-provided security is
+> fake. it is just a flag flipped to tell the reader program to pretty
+> please make life miserable for the user.
+>  =20
+yes, but it is often sufficient to prevent _beginners_ from hacking the
+whole stuff.
+> what do you want to achieve with this _real_ protection you say?
+>  =20
+see my other messages. i am/was encountering a special situation.
+> whatever can be displayed on screen can be captured (i.e. with the
+> common "prtscr" keybinding in many environments). if you want to
+> distribute material and make it hellish to your users to print it,
+> copy from it or use it in any useful way, why don't you send the
+> document as a .jpg file?
+>  =20
+with such files (.jpg ones) they can print it directly, can't they?
+
+
+--=20
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+i use pgp. if there is an incompatibility problem with your mail
+client, please contact me.
+
+
+when making your choices in life, do not forget to live. (samuel johnson)=
+
+

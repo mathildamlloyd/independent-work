@@ -1,0 +1,33 @@
+on mon, 26 aug 2002 19:14:54 +0200, matthias saou  wrote:
+
+> hi all,
+> 
+> i've repackaged the new gkrellm 2.0.0 which is now ported to gtk2
+> (woohoo!). unfortunately, the plugins are incompatible with the previous
+> 1.2.x ones, and since not many/all have been ported yet, i prefer not to
+> release the package on the main freshrpms.net site for now.
+> 
+> for those of you who'd like to try it out, you can grab it here :
+> http://ftp.freshrpms.net/pub/freshrpms/testing/gkrellm/
+> 
+> i think the themes are still compatible, but haven't tried to install some
+> with 2.0.0 yet.
+> last note, the above packages are for valhalla. and yes, although gnome 2
+> is not in valhalla, gtk2 and glib2 have been from the very beginning! ;-)
+
+    sweet, dude- i was really hoping it'd be out sooner or later; thanks a bunch!
+
+------------------------------------------------------------------------
+brian fahrlnder              linux zealot, conservative, and technomad
+evansville, in                    my voyage: http://www.countermoon.com
+icq  5119262
+------------------------------------------------------------------------
+i've been complaining for years, and almost no one listened. "windows is
+just easier" you said. "i don't want to learn anything new", you said.
+tell me how easy this is:
+http://www.guardian.co.uk/archive/article/0,4273,4477138,00.html
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

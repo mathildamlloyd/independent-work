@@ -1,0 +1,68 @@
+on mon, apr 26, 2010 at 01:56:21pm +0200, javier barroso wrote:
+> on mon, apr 26, 2010 at 11:53 am, stan hoeppner  wrote:
+> > mark allums put forth on 4/26/2010 3:22 am:
+> >> on 4/26/2010 2:14 am, stan hoeppner wrote:
+> >>> mark allums put forth on 4/25/2010 1:19 am:
+> >>
+> >> sorry stan, your defense of xfs has put me into troll mode. it's a
+> >> reflex. i don't buy it, but i shouldn't troll.
+> >>
+> >> i think you are confusing what is with what should be.
+> >
+> > a'ight, you forced me to pull out the big gun. choke on it. the master
+> > penguin himself, kernel.org, has run on xfs since 2008. sorry for the body
+> > slam. is your back ok mark? ;) pretty sure i just "won" this discussion.
+> > err, actually, xfs wins. ;) btw, the main debian mirror in the u.s. is
+> > actually housed in kernel.org last i checked. thus, the files on your
+> > system were very likely originally served from xfs.
+> >
+> > the linux kernel archives
+> >
+> > "a bit more than a year ago (as of october 2008) kernel.org, in an ever
+> > increasing need to squeeze more performance out of it's machines, made the
+> > leap of migrating the primary mirror machines (mirrors.kernel.org) to xfs.
+> > we site a number of reasons including fscking 5.5t of disk is long and
+> > painful, we were hitting various cache issues, and we were seeking better
+> > performance out of our file system."
+> >
+> > "after initial tests looked positive we made the jump, and have been quite
+> > happy with the results. with an instant increase in performance and
+> > throughput, as well as the worst xfs_check we've ever seen taking 10
+> > minutes, we were quite happy. subsequently we've moved all primary mirroring
+> > file-systems to xfs, including www.kernel.org , and mirrors.kernel.org. with
+> > an average constant movement of about 400mbps around the world, and with
+> > peaks into the 3.1gbps range serving thousands of users simultaneously it's
+> > been a file system that has taken the brunt we can throw at it and held up
+> > spectacularly."
+> >
+> > http://www.xfs.org/index.php/xfs_companies#the_linux_kernel_archives
+> hello stan,
+> 
+> why debian installer doesn't change its default filesystem to xfs if
+> it is better than ext3 / ext4? i think always is better stick to
+> defaults if it is possible
+> 
+i've read articles which state that ext3 has superior resilience to
+sudden power loss.  that sentiment has been echoed in this thread, by
+stan i think, with statements like (paraphrasing):  xfs is good for
+production servers which have uninterruptible power supplies.
+
+the resilience is due to the way the journal is written, if i
+understand correctly.  maybe somebody on this list who understands it
+better can confirm or deny.  there is a journal_data_writeback option
+for ext3 which will speed up writes to the filesystem, but reduce its
+resilience to power loss.  with this option enabled, i recall reading
+that the ext3 benchmarks are pretty similar to xfs.
+
+i'm not an expert, so don't take my word for it.  do some research on it
+yourself, or wait for the real experts to chime in and correct me :)
+
+-rob
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100429012405.ga8530@aurora.owens.net
+
+

@@ -1,0 +1,59 @@
+None> 2010/4/23 Carlos Bergero <rak@fcien.edu.uy>:
+>   
+>> I copied the old files, but also try to run with the original files of the
+>> install, in both cases i have the same problema and files dont differ much.
+>>
+>>     
+>
+> did You copy cyrus database between servers too ?
+>
+> regards
+>
+>
+>   
+Yup I copied the mail directories and other cyrus directories 
+/var/lib/cyrus and /var/run/cyrus , plus config files /etc/cyrus.conf 
+/etc/imapd.conf
+
+think thats all?
+
+Cheers,
+            Carlos
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/4BD21384.20607@fcien.edu.uy
+
+
+re: cyrus 2.2 imapd in amd64wojciech ziniewicz escribi:
+> 2010/4/23 carlos bergero :
+>   
+>> i copied the old files, but also try to run with the original files of the
+>> install, in both cases i have the same problema and files dont differ much.
+>>
+>>     
+>
+> did you copy cyrus database between servers too ?
+>
+> regards
+>
+>
+>   
+yup i copied the mail directories and other cyrus directories 
+/var/lib/cyrus and /var/run/cyrus , plus config files /etc/cyrus.conf 
+/etc/imapd.conf
+
+think thats all?
+
+cheers,
+            carlos
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bd21384.20607@fcien.edu.uy
+
+

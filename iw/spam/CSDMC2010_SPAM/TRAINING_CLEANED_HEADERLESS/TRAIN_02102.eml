@@ -1,0 +1,28 @@
+i've got a java application that contains a -panel within a frame and
+i want to draw into the panel and the method works on windows (with os
+specific modification).
+however, when i execute the program on a mac it would appear that
+nsview *view = dsi_mac->cocoaviewref; returns the parent window, which
+in this case is the frame.
+
+is there anyway i can modify the code below to ensure that i always
+have the panel as my windows context rather the frame?
+
+david
+
+
+        // get the corresponding peer from the caller canvas
+        nsview *view = dsi_mac->cocoaviewref;
+        
+        nswindow *window = [view window];
+        nsgraphicscontext *ctxt = [nsgraphicscontext
+graphicscontextwithwindow:window];
+        cgcontextref cg = [ctxt graphicsport];
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

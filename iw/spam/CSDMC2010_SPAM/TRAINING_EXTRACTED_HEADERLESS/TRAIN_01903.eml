@@ -1,0 +1,134 @@
+From nobody Tue Dec 16 09:15:47 2014
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+On Fri, Apr 23, 2010 at 11:44 PM, Camale=C3=B3n <noelamac@csmining.org> wrote:
+
+> On Fri, 23 Apr 2010 23:39:08 +0800, Umarzuki Mochlis wrote:
+>
+> > On Fri, Apr 23, 2010 at 10:50 PM, Camale=C3=B3n wrote:
+>
+> >> Have you tested with "File/Import" and it fails?
+> >>
+> >>
+> > i cannot import it and it is not detected as inkscape file
+>
+> Are you getting any warning message?
+>
+
+when i tried to open it from command line
+$ inkscape T-SHIRTMODELS-by_APEstar.eps
+T-SHIRTMODELS-by_APEstar.eps:1: parser error : Start tag expected, '<' not
+found
+=EF=BF=BD=EF=BF=BD=EF=BF=BD=EF=BF=BD
+^
+
+and there's a pop-up with message "Failed to load the requested file
+T-SHIRTMODELS-by_APEstar.eps"
+
+
+>
+> >> It seems to need "ps2pdf" so check if you have it installed with
+> >> "whereis ps2pf".
+> >>
+> >>
+> > i have ps2pdf
+> >
+> > $ whereis ps2pdf
+> > ps2pdf: /usr/bin/ps2pdf /usr/share/man/man1/ps2pdf.1.gz
+> >
+> > have i missed something else?
+>
+> Not sure... maybe you are facing this bug:
+>
+> ***
+> inkscape: EPS import broken
+> http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D366797
+> ***
+>
+> Greetings,
+>
+> --
+> Camale=C3=B3n
+>
+>
+> --
+> To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org
+> with a subject of "unsubscribe". Trouble? Contact
+> listmaster@lists.debian.org
+> Archive: http://lists.debian.org/pan.2010.04.23.15.43.59@csmining.org
+>
+>
+
+
+--=20
+Regards,
+
+Umarzuki Mochlis
+http://debmal.my
+From nobody Tue Dec 16 09:15:47 2014
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<br><br><div class=3D"gmail_quote">On Fri, Apr 23, 2010 at 11:44 PM, Camale=
+=C3=B3n <span dir=3D"ltr">&lt;<a href=3D"mailto:noelamac@csmining.org">noelama=
+c@csmining.org</a>&gt;</span> wrote:<br><blockquote class=3D"gmail_quote" styl=
+e=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex;">
+On Fri, 23 Apr 2010 23:39:08 +0800, Umarzuki Mochlis wrote:<br>
+<div class=3D"im"><br>
+&gt; On Fri, Apr 23, 2010 at 10:50 PM, Camale=C3=B3n wrote:<br>
+<br>
+&gt;&gt; Have you tested with &quot;File/Import&quot; and it fails?<br>
+&gt;&gt;<br>
+&gt;&gt;<br>
+&gt; i cannot import it and it is not detected as inkscape file<br>
+<br>
+</div>Are you getting any warning message?<br></blockquote><div><br></div><=
+div>when i tried to open it from command line</div><div><div>$ inkscape T-S=
+HIRTMODELS-by_APEstar.eps=C2=A0</div><div>T-SHIRTMODELS-by_APEstar.eps:1: p=
+arser error : Start tag expected, &#39;&lt;&#39; not found</div>
+<div>=EF=BF=BD=EF=BF=BD=EF=BF=BD=EF=BF=BD=C2=A0</div><div>^</div></div><div=
+><br></div><div>and there&#39;s a pop-up with message &quot;Failed to load =
+the requested file T-SHIRTMODELS-by_APEstar.eps&quot;</div><div>=C2=A0</div=
+><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1=
+px #ccc solid;padding-left:1ex;">
+
+<div class=3D"im"><br>
+&gt;&gt; It seems to need &quot;ps2pdf&quot; so check if you have it instal=
+led with<br>
+&gt;&gt; &quot;whereis ps2pf&quot;.<br>
+&gt;&gt;<br>
+&gt;&gt;<br>
+&gt; i have ps2pdf<br>
+&gt;<br>
+&gt; $ whereis ps2pdf<br>
+&gt; ps2pdf: /usr/bin/ps2pdf /usr/share/man/man1/ps2pdf.1.gz<br>
+&gt;<br>
+&gt; have i missed something else?<br>
+<br>
+</div>Not sure... maybe you are facing this bug:<br>
+<br>
+***<br>
+inkscape: EPS import broken<br>
+<a href=3D"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D366797" targe=
+t=3D"_blank">http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D366797</a><=
+br>
+***<br>
+<div class=3D"im"><br>
+Greetings,<br>
+<br>
+--<br>
+Camale=C3=B3n<br>
+<br>
+<br>
+--<br>
+To UNSUBSCRIBE, email to <a href=3D"mailto:debian-user-REQUEST@lists.debian=
+.org">debian-user-REQUEST@lists.debian.org</a><br>
+with a subject of &quot;unsubscribe&quot;. Trouble? Contact <a href=3D"mail=
+to:listmaster@lists.debian.org">listmaster@lists.debian.org</a><br>
+</div>Archive: <a href=3D"http://lists.debian.org/pan.2010.04.23.15.43.59@g=
+mail.com" target=3D"_blank">http://lists.debian.org/pan.2010.04.23.15.43.59=
+@csmining.org</a><br>
+<br>
+</blockquote></div><br><br clear=3D"all"><br>-- <br>Regards,<br><br>Umarzuk=
+i Mochlis<br><a href=3D"http://debmal.my">http://debmal.my</a><br>

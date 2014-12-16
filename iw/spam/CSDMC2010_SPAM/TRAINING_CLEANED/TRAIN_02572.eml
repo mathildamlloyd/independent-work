@@ -1,0 +1,57 @@
+None> I am now slapping myself on the head for being so STUPID!  Automount is 
+> working just fine, and has been all along.  Automount does its thing as 
+> soon as a device is ACCESSED, not plugged in.  I was plugging the flash 
+> drives in and looking in /mnt to see if they were showing up.  The 
+> weren't.  The weren't supposed to, either.  As soon as I executed "ls 
+> /mnt/lexar" lo and behold, there was the listing and everything was 
+> working just fine.
+> 
+> I think I'll slap myself on the head, again.
+
+Not so fast! :) How are you supposed to access them if you don't know
+what they will be labelled as?
+
+What does "ls /mnt/<TAB><TAB>" do?
+
+Are you supposed to carry round a scrap of paper with the mount labels
+written down?
+
+-- 
+Chris.
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/20100512095518.GC18235@fischer
+
+
+re: automounting problems.on tue, may 11, 2010 at 10:54:47pm -0700, marc shapiro wrote:
+> i am now slapping myself on the head for being so stupid!  automount is 
+> working just fine, and has been all along.  automount does its thing as 
+> soon as a device is accessed, not plugged in.  i was plugging the flash 
+> drives in and looking in /mnt to see if they were showing up.  the 
+> weren't.  the weren't supposed to, either.  as soon as i executed "ls 
+> /mnt/lexar" lo and behold, there was the listing and everything was 
+> working just fine.
+> 
+> i think i'll slap myself on the head, again.
+
+not so fast! :) how are you supposed to access them if you don't know
+what they will be labelled as?
+
+what does "ls /mnt/" do?
+
+are you supposed to carry round a scrap of paper with the mount labels
+written down?
+
+-- 
+chris.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100512095518.gc18235@fischer
+
+

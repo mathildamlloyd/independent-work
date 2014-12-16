@@ -1,0 +1,32 @@
+> the problem with postfix is that it runs chrooted and the ca
+> certificates are not copied into the chroot.  see #287795.
+> 
+> sven
+> 
+>  http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=287795
+
+hi sven,
+
+thanks for that suggestion. i had seen that bug and discounted it
+because the patch is only effective if smtp_tls_capath is set, and
+mine wasn't set. but your mail prompted another look, and with both
+smtp_tls_capath = /etc/ssl/certs and applying the patch from #287795,
+it banished the "certificate verification failed" and changed
+"untrusted tls connection established" to "trusted tls connection
+established".
+
+so that's progress :-)
+
+unfortunately it's still failing to authenticate. from mail.log:
+may  9 21:49:18 rimmer postfix/smtp[8121]: 5de243a66: to=, relay=newserver[newserver-ipaddr]:587, delay=5.5, delays=0.02/0.03/5.4/0, dsn=4.7.3, status=deferred (sasl authentication failed; server newserver[newserver-ipaddr] said: 535 5.7.3 authentication unsuccessful)
+
+thanks,
+clive
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100509223356.ga13107@rimmer.esmertec.com
+
+

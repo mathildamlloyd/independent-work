@@ -1,0 +1,21 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=iso-8859-1; format=flowed
+content-transfer-encoding: 7bit
+
+on 05/11/2010 04:40 pm, oscar corte wrote:
+> hi:
+>
+> i would like to test debian on a new pc.
+>
+> it's a dell xps inspiron 8100 with a core i5 64 bits processor.
+>
+> what would it be the recommended architecture/versioin to choose for 
+> download an install?
+>
+> could intel ia-64 work right?
+>
+> regards
+> ------------------------------------------------------------------------
+> hotmail: free, trusted and rich email service. get it now. 
+> 
+not ia64 , that's itanium; amd64 will work for you.

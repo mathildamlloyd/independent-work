@@ -1,0 +1,145 @@
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+How about single user mode?  Are you able to get virtual console there.
+Also try to disable gdm/kdm, see whether virtual consoles are working.
+
+On Tue, Apr 27, 2010 at 16:08, rudu <rudu@cegetel.net> wrote:
+
+> Le 27/04/2010 03:48, Hugo Vanwoerkom a =E9crit :
+>
+>>
+>> rudu wrote:
+>>
+>>> Le 26/04/2010 20:55, Hugo Vanwoerkom a =E9crit :
+>>>
+>>>>
+>>>> So are you still running nv?
+>>>>
+>>> Yes
+>>>
+>>>  and what was the driver that wouldn't compile?
+>>>> I run x86-195.36.15 on the latest Sid kernel and it compiles just
+>>>> fine, but I don't (yet) have a AMD64 system.
+>>>>
+>>>
+>>> Excerpt from /var/log/nvidia-installer.log :
+>>>
+>>>> Using: nvidia-installer ncurses user interface
+>>>> WARNING: Skipping the runlevel check (the utility `runlevel` failed
+>>>> to run).
+>>>> -> License accepted.
+>>>> -> Installing NVIDIA driver version 195.36.15.
+>>>> -> Performing CC sanity check with CC=3D"cc".
+>>>> -> Performing CC version check with CC=3D"cc".
+>>>> -> The CC version check failed:
+>>>>
+>>>>   [...]
+>>>>
+>>>
+>>>
+>> Indeed. Forget this if it is beating a dead horse, but did you have
+>> gcc-4.3 + gcc-4.4 both installed? I did and I set the symlink gcc to
+>> gcc-4.3 and that got rid of the message.
+>>
+>
+> Thank you Hugo, I managed to compile the proprietary driver.
+> Now every ctrl+alt+Fn leads to a complete black screen, with no prompt or
+> cursor or anything.
+> Ctrl+alt+F7 works as expected.
+> Could it be that my system stopped creating the consoles at boot time ?
+> What should I check and where ?
+>
+> TIA,
+> Jean-Marc
+>
+>
+>
+>
+>
+> --
+> To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org with a
+> subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+> Archive: http://lists.debian.org/4BD6BEA3.3060705@cegetel.net
+>
+>
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+How about single user mode? =A0Are you able to get virtual console there.<d=
+iv>Also try to disable gdm/kdm, see whether virtual consoles are working.<b=
+r><br><div class=3D"gmail_quote">On Tue, Apr 27, 2010 at 16:08, rudu <span =
+dir=3D"ltr">&lt;<a href=3D"mailto:rudu@cegetel.net">rudu@cegetel.net</a>&gt=
+;</span> wrote:<br>
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex;">Le 27/04/2010 03:48, Hugo Vanwoerkom a =E9c=
+rit :<br>
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex">
+<br>
+rudu wrote:<br>
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex"><div class=3D"im">
+Le 26/04/2010 20:55, Hugo Vanwoerkom a =E9crit :<br>
+</div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-l=
+eft:1px #ccc solid;padding-left:1ex">
+<br><div class=3D"im">
+So are you still running nv?<br>
+</div></blockquote><div class=3D"im">
+Yes<br>
+<br>
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex">
+and what was the driver that wouldn&#39;t compile?<br>
+I run x86-195.36.15 on the latest Sid kernel and it compiles just<br>
+fine, but I don&#39;t (yet) have a AMD64 system.<br>
+</blockquote>
+<br>
+Excerpt from /var/log/nvidia-installer.log :<br>
+</div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-l=
+eft:1px #ccc solid;padding-left:1ex"><div class=3D"im">
+Using: nvidia-installer ncurses user interface<br>
+WARNING: Skipping the runlevel check (the utility `runlevel` failed<br>
+to run).<br>
+-&gt; License accepted.<br>
+-&gt; Installing NVIDIA driver version 195.36.15.<br>
+-&gt; Performing CC sanity check with CC=3D&quot;cc&quot;.<br>
+-&gt; Performing CC version check with CC=3D&quot;cc&quot;.<br>
+-&gt; The CC version check failed:<br>
+<br></div>
+ =A0 [...]<br>
+</blockquote>
+<br>
+</blockquote><div class=3D"im">
+<br>
+Indeed. Forget this if it is beating a dead horse, but did you have<br>
+gcc-4.3 + gcc-4.4 both installed? I did and I set the symlink gcc to<br>
+gcc-4.3 and that got rid of the message.<br>
+</div></blockquote>
+<br>
+Thank you Hugo, I managed to compile the proprietary driver.<br>
+Now every ctrl+alt+Fn leads to a complete black screen, with no prompt or c=
+ursor or anything.<br>
+Ctrl+alt+F7 works as expected.<br>
+Could it be that my system stopped creating the consoles at boot time ?<br>
+What should I check and where ?<br>
+<br>
+TIA,<br>
+Jean-Marc<div class=3D"im"><br>
+<br>
+<br>
+<br>
+<br>
+-- <br>
+To UNSUBSCRIBE, email to <a href=3D"mailto:debian-user-REQUEST@lists.debian=
+.org" target=3D"_blank">debian-user-REQUEST@lists.debian.org</a> with a sub=
+ject of &quot;unsubscribe&quot;. Trouble? Contact <a href=3D"mailto:listmas=
+ter@lists.debian.org" target=3D"_blank">listmaster@lists.debian.org</a><br>
+</div>
+Archive: <a href=3D"http://lists.debian.org/4BD6BEA3.3060705@cegetel.net" t=
+arget=3D"_blank">http://lists.debian.org/4BD6BEA3.3060705@cegetel.net</a><b=
+r>
+<br>
+</blockquote></div><br></div>

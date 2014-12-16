@@ -1,0 +1,35 @@
+on 2010-05-12 10:06 +0200, rick thomas wrote:
+
+> in lenny, "ls -ld /dev/audio" gives
+>
+>> lenny:~$ ls -ld /dev/rtc0
+>> crw-rw---- 1 root audio 254, 0 may  2 15:25 /dev/rtc0
+
+ugh.  this is not really desirable.
+
+> but in sid, it gives
+>
+>> sid:~$ ls -ld /dev/rtc0
+>> crw-rw---- 1 root root 254, 0 may 10 23:51 /dev/rtc0
+>>
+>
+> anybody know why?
+
+,----[ /usr/share/doc/udev/changelog.debian.gz ]
+| udev (0.140-1) unstable; urgency=low
+| [...] 
+|   * permissions.rules: removed rtc group audio.
+| [...]
+|  -- marco d'itri   mon, 23 mar 2009 13:16:50 +0100
+`----
+
+hth,
+    sven
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87ljbp7c5y.fsf@turtle.gmx.de
+
+

@@ -1,0 +1,30 @@
+None[Spambayes] deleting "duplicate" spam before training?  good idea or
+	bad?
+Because I get mail through several different email addresses, I frequently
+get duplicates (or triplicates or more-plicates) of various spam messages.
+In saving spam for later analysis I haven't always been careful to avoid
+saving such duplicates.
+
+I wrote a script some time ago to try an minimize the duplicates I see by
+calculating a loose checksum, but I still have some duplicates.  Should I
+delete the duplicates before training or not?  Would people be interested in
+the script?  I'd be happy to extricate it from my local modules and check it
+into CVS.
+
+Skip
+
+[spambayes] deleting "duplicate" spam before training?  good idea or
+bad?
+because i get mail through several different email addresses, i frequently
+get duplicates (or triplicates or more-plicates) of various spam messages.
+in saving spam for later analysis i haven't always been careful to avoid
+saving such duplicates.
+
+i wrote a script some time ago to try an minimize the duplicates i see by
+calculating a loose checksum, but i still have some duplicates.  should i
+delete the duplicates before training or not?  would people be interested in
+the script?  i'd be happy to extricate it from my local modules and check it
+into cvs.
+
+skip
+

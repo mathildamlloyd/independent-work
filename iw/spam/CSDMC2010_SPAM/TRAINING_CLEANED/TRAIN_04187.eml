@@ -1,0 +1,46 @@
+None> Здравствуйте.
+
+  Hi. You can use debian-russian@lists.debian.org for russian speaking
+  mailing list. This list use only english.
+
+> В организации стоит сервер спроцессором Intel(R) Xeon(TM). ОС: Red Hat Ent. Lic.5 x86_64.
+> Требуется перевести его на Debian.
+> Какой дистрибутив выбирать - x86 или AMD64? Какой из них установится на сервак ?
+> Спасибо.
+
+  You can use ia64 debian for Xeon 64bit. i386 will work too.
+
+  [ru]Используйте ia64 для 64 разрядного Xeon'а. Дистрибутив i386 тоже будет
+  работать[/ru]
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/20100506063615.GA19902@debian
+
+
+re: =?koi8-r?b?9dpuwc7p18vbierlymlhbido?=
+=?koi8-r?q?=c1?= x86_64on thu, may 06, 2010 at 09:37:18am +0400,  wrote:
+> .
+
+  hi. you can use debian-russian@lists.debian.org for russian speaking
+  mailing list. this list use only english.
+
+>      intel(r) xeon(tm). : red hat ent. lic.5 x86_64.
+>     debian.
+>    - x86  amd64?       ?
+> .
+
+  you can use ia64 debian for xeon 64bit. i386 will work too.
+
+  [ru] ia64  64  xeon'.  i386  
+  [/ru]
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100506063615.ga19902@debian
+
+

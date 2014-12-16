@@ -1,0 +1,15 @@
+Nonehi,
+
+nscd was the problem. He cached the local passwd ...
+
+cu denny
+re: nis: /etc/nsswitch seems (a bit) ignored from /usr/bin/passwd
+ *solved*from nobody tue dec 16 07:55:46 2014
+content-type: text/plain
+content-transfer-encoding: quoted-printable
+
+hi,
+
+nscd was the problem. he cached the local passwd ...
+
+cu denny

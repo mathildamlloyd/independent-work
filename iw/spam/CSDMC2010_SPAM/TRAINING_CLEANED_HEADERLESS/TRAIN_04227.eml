@@ -1,0 +1,41 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on wed, may 12, 2010 at 04:44:12pm -0500, boyd stephen smith jr. wrote:
+> on wednesday 12 may 2010 16:27:08 nick douma wrote:
+> > on wed, may 12, 2010 at 04:24:05pm -0500, ron johnson wrote:
+> > > on 05/12/2010 04:16 pm, boyd stephen smith jr. wrote:
+> > >> on wednesday 12 may 2010 16:04:07 jordan metzmeier wrote:
+> > >>> this issue is because the new udev requires a>  .31 kernel with
+> > >>> sysrq_deprecated=3dn (i am going off memory here so don't quote me)=
+=2e this
+> > >>> means you need to first upgrade to the squeeze kernel, reboot, then
+> > >>> upgrade udev and proceed with the "updgrade".
+> > >>
+> > >> added tag: needs-to-be-in-release-notes
+> > >
+> > > to heck with the release notes!  this needs to be front and center wh=
+en
+> > > you when you do the "apt-get update".
+> >=20
+> > it does appear when you do the aptitude full-upgrade, but it doesn't bl=
+ock
+> >  the output, it just shoots by.
+> >=20
+> > i do wonder how they will handle this when squeeze gets stable. the who=
+le
+> >  update your kernel, reboot, update the rest is a bit too easy to fuck =
+up
+> >  for my taste. i completely assumed that i could just change the apt
+> >  sources.list and do the full-upgrade.
+>=20
+> you should *always* read the release notes first.  it is actually rather =
+rare=20
+> that a release just needs an 'aptitude full-upgrade'.  usually, perl, apt=
+,=20
+> aptitude, or dpkg should be updated first.
+
+well, i did try to look for release notes, but i did not find any for squee=
+ze.

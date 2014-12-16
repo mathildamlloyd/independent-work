@@ -1,0 +1,36 @@
+on mon, 19 apr 2010 22:28:37 -0400, john a. sullivan iii wrote:
+
+> ah, this is so deeply frustrating! kde 4.4 sounds great but it is
+> nowhere to be found in debian but in experimental and it sounds like it
+> is nowhere near ready for production.  3.5.10 is truly and completely,
+> unusably broken for calendaring other than in a standalone world.
+
+if you are using lenny then you are stuck. unless you compile kde sc 4.4 
+from sources which i don't recommed unless you know what are you doing :-/
+
+for squeeze and sid there are kde sc 4.3 and 4.4, respectively:
+
+http://pkg-kde.alioth.debian.org/
+
+> it looks like evolution has introduced webdav support for contacts in
+> 2.24 and we can grab 2.28 from testing.  that sounds better than
+> experimental so maybe we need to abandon kmail (sigh) and think about
+> evolution instead.  thanks, all - john
+
+not sure if you already tested, but thunderbird+lightning (icedove
++iceowl) have also support for webdav calendars :-?
+
+btw, i agree. i miss some of the kmail/kontact features :-)
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.03.06.08.01@csmining.org
+
+

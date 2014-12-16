@@ -1,0 +1,34 @@
+on wed, jul 31, 2002 at 02:40:26pm +0100 or so it is rumoured hereabouts, 
+liam bedford thought:
+> on wed, 31 jul 2002 14:30:01 +0100
+> jac1 claiming to think:
+> 
+> > hi,
+> > i recently had to wipe linux from my pc but forgot to restore the original
+> > mbr (nt). anyone know how i can do this? linux is entirely gone and no boot
+> > floppy. formatting the entire disk doesn't do it either.
+> > 
+> boot from dos and fdisk /mbr?
+> boot from an nt cd, choose repair, and make it check the mbr
+                             ^^^^^^
+
+nice how nt "repair"s a hard disk by removing other oss.  could we call it
+that on linux install disks too?
+
+conor 
+-- 
+conor daly 
+
+domestic sysadmin :-)
+---------------------
+faenor.cod.ie
+  5:37pm  up 69 days,  2:54,  0 users,  load average: 0.08, 0.02, 0.01
+hobbiton.cod.ie
+  5:22pm  up 12 days, 0 min,  1 user,  load average: 0.03, 0.03, 0.00
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

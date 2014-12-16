@@ -1,0 +1,65 @@
+None> In a nutshell - Solaris is Suns own flavour of UNIX.
+
+ Though I'm sure that this nice person would like a bit more detail.
+
+ Solaris is quite different to Linux, though these days you can make
+solaris act a lot like linux with an extra CD of GNU tools Sun ship with
+solaris. It is based on the SysV unix family, so it's quite similar to
+other unixen like HPUX and SCO.
+
+ Sun's hardware in general is more reliable, and a lot more expensive. One
+of the main bonuses you get by buying Sun is that you are getting your
+hardware and software from one company, so if you have a support contract,
+they have to fix it. They can't fob you off with 'that's a software
+problem, talk to the software vendor.' etc.
+
+ If you are set on Linux, you most likely can do your own support. There
+is then a world of different hardware options. You can run Linux on Sparc,
+though some companies like RedHat don't maintain a sparc port anymore.
+
+ You can also buy your machine from linux-oriented companies like DNUK,
+who do machines designed to run linux, and their own version of linux,
+that has a few extras for their machines. Or, you can get a machine from a
+cheaper company like Dell, and it'll most likely work, most of the time.
+
+John
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+re: [ilug] sun solaris..on thu, aug 22, 2002 at 05:13:01pm +0100, fergal moran mentioned:
+> in a nutshell - solaris is suns own flavour of unix.
+
+ though i'm sure that this nice person would like a bit more detail.
+
+ solaris is quite different to linux, though these days you can make
+solaris act a lot like linux with an extra cd of gnu tools sun ship with
+solaris. it is based on the sysv unix family, so it's quite similar to
+other unixen like hpux and sco.
+
+ sun's hardware in general is more reliable, and a lot more expensive. one
+of the main bonuses you get by buying sun is that you are getting your
+hardware and software from one company, so if you have a support contract,
+they have to fix it. they can't fob you off with 'that's a software
+problem, talk to the software vendor.' etc.
+
+ if you are set on linux, you most likely can do your own support. there
+is then a world of different hardware options. you can run linux on sparc,
+though some companies like redhat don't maintain a sparc port anymore.
+
+ you can also buy your machine from linux-oriented companies like dnuk,
+who do machines designed to run linux, and their own version of linux,
+that has a few extras for their machines. or, you can get a machine from a
+cheaper company like dell, and it'll most likely work, most of the time.
+
+john
+
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+

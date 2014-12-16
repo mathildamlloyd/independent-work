@@ -1,0 +1,28 @@
+None> As a Debian Maintainer, I can't upload to Volatile. The current Klamav from Testing should work fine if someone cares to upload it.
+>
+
+[...]
+
+Scott, we'll need to bump the version number; if you keep the package in some
+VCS it might make sense if you prepare an updated package; otherwise I can take
+care of that.
+
+Best,
+Michael
+
+re: lenny-volatile updates for clamav-related packagesfrom nobody tue dec 16 07:55:47 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+
+> as a debian maintainer, i can't upload to volatile. the current klamav from testing should work fine if someone cares to upload it.
+>
+
+[...]
+
+scott, we'll need to bump the version number; if you keep the package in some
+vcs it might make sense if you prepare an updated package; otherwise i can take
+care of that.
+
+best,
+michael
+

@@ -1,0 +1,48 @@
+on thu, 29 apr 2010 18:26:26 -0400 (edt), redalert commander wrote:
+> on thu, 2010-04-29 at 14:43 -0700, alan ianson wrote:
+>> on thu, 2010-04-29 at 17:35 -0400, stephen powell wrote:
+>>> 
+>>> then, in theory, restarting the x server again
+>>> (such as with /etc/init.d/gdm restart) should cause the x server
+>>> to restart on vt 7.  this used to work, but the last time i tried
+>>> it i ended up with two x servers, one on vt 7 and one on vt 8!
+>>> i had to reboot to clean things up.  this situation is a mess and
+>>> seems to be getting worse.  as long as you login to gnome only once
+>>> per boot and shutdown the system from gnome you won't have this
+>>> problem.  the initial allocation of vt 7 after a reboot works fine.
+>>> but if you logout of gnome after logging in, you're likely to have
+>>> this problem.  it doesn't seem to fail all the time, though.  perhaps
+>>> it is a timing-related problem.
+>> 
+>> i've noticed this too lately, although i use the nvidia driver created
+>> by module assistant.
+>> 
+>> i wonder if anyone not using the nv or nvidia driver also see this?
+> 
+> i seem to have this all the time, even right after booting, although...
+> i have 3 displays, and 2 ports on my gpu, so i often switch them, after
+> doing so, i copy the relevant xorg.conf to it's proper location, and
+> restart gdm. in doing so, i only log in into the first console, using
+> ctrl+alt+f1, do the copy and /etc/init.d/gdm restart, at this point x is
+> running in vt8, not 7. up till this point, i haven't logged in to gnome.
+
+but the key is restarting the x server, not necessarily a logout and
+login to the gnome desktop.  a login/logout sequence is simply the most
+common way to restart the x server.  the x server can only start once
+safely.  after that, who knows what vt it will end up on, and what parts
+of the old instance of the server will get terminated.  has anyone seen
+something like this on a non-nvidia driver (not nv and not nvidia)?
+
+-- 
+  .''`.     stephen powell    
+ : :'  :
+ `. `'`
+   `-
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/489890958.104820.1272593228318.javamail.root@md01.wow.synacor.com
+
+

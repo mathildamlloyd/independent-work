@@ -1,0 +1,32 @@
+on thu, 22 apr 2010 18:13:49 +0300, dotan cohen wrote:
+
+>> it's hard for distributions to include the latest kde sc available
+>> *and* deliver it as "stable". rolling distros (such arch linux), which
+>> are always up-to-date, may fit better into this schema.
+>>
+>>
+> that is where a third-party repo would come in, such as backports.
+> kubuntu, for all it's flaws, does this quite well. i understand that so
+> does suse.
+
+as per opensuse, yes, they have the obs (build service) with many 
+packages up-to-date and available (backported or not) for the current 
+supported releases *but* remember that packages that fall in there are 
+not "officialy" supported nor included into security patches (they follow 
+their own path to solve any issue that can arise). 
+
+anyway, i agree their kde repos are of very good quality and so very 
+useful for users.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.22.15.40.50@csmining.org
+
+

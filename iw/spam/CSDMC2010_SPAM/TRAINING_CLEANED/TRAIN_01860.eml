@@ -1,0 +1,40 @@
+None  | Any hints ?
+
+Probably a private sequence has gotten set, the highlighting only
+works for public ones.
+
+If "scan unseen" works as you'd expect, but highlighting doesn't,
+that's the usual explanation.
+
+kre
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+
+re: inbox mail notification broken    date:        tue, 06 aug 2002 09:04:58 +0100
+    from:        marc baaden 
+    message-id:  
+
+  | any hints ?
+
+probably a private sequence has gotten set, the highlighting only
+works for public ones.
+
+if "scan unseen" works as you'd expect, but highlighting doesn't,
+that's the usual explanation.
+
+kre
+
+
+
+_______________________________________________
+exmh-users mailing list
+exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

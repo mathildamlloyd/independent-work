@@ -1,0 +1,16 @@
+> please see [1]. you probably want sucrose-0.86 for now; sucrose-0.88 still
+> has a few problems [2,3] (the fixes got delayed by the recent
+> ries.debian.org outage).
+
+thanks, sucrose-0.86 indeed seems to install properly.
+
+
+        stefan
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/jwv1vepbfeq.fsf-monnier+inbox@gnu.org
+
+

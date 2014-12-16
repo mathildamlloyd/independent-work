@@ -1,0 +1,67 @@
+NoneDotan Cohen:
+>>>
+>>> A neighbor with an old Debian (probably etch but could be sarge)
+>>> machine needs to know where a USB smart card reader attached via RS232
+>>> adaptor
+>>=20
+>> Huh???
+>=20
+> He's got a few of these connected via serial adaptors:
+> http://www.infinityusb.com/default.asp?show=3Dproductsdetail&ProductID=3D=
+12
+>=20
+> Why aren't they on real USB, I don't know. I am going over there to
+> help him tomorrow, so to come prepared I started googling today.
+> Although the USB-serial adaptors seem to be popular, I find nothing
+> about how to mount devices attached to them. I am assuming that, being
+> a card reader, I will be able to mount the media (card).
+
+It might just be me, but when I head "USB-serial adaptor" I think of
+something like a PL2303 which can be used to attach devices with a
+serial connector to a PC that lacks a serial port. It would be news to
+me if these adaptors worked the other way round, too.
+
+But if it actually works, you should be able to talk to the device using
+the regular /dev/ttyS0.
+
+J.
+--=20
+Watching television is more hip than actually speaking to anyone.
+[Agree]   [Disagree]
+                 <http://www.slowlydownward.com/NODATA/data_enter2.html>
+re: usb device attached via rs232 adaptorfrom nobody tue dec 16 07:55:46 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+dotan cohen:
+>>>
+>>> a neighbor with an old debian (probably etch but could be sarge)
+>>> machine needs to know where a usb smart card reader attached via rs232
+>>> adaptor
+>>=20
+>> huh???
+>=20
+> he's got a few of these connected via serial adaptors:
+> http://www.infinityusb.com/default.asp?show=3dproductsdetail&productid;=3d=
+12
+>=20
+> why aren't they on real usb, i don't know. i am going over there to
+> help him tomorrow, so to come prepared i started googling today.
+> although the usb-serial adaptors seem to be popular, i find nothing
+> about how to mount devices attached to them. i am assuming that, being
+> a card reader, i will be able to mount the media (card).
+
+it might just be me, but when i head "usb-serial adaptor" i think of
+something like a pl2303 which can be used to attach devices with a
+serial connector to a pc that lacks a serial port. it would be news to
+me if these adaptors worked the other way round, too.
+
+but if it actually works, you should be able to talk to the device using
+the regular /dev/ttys0.
+
+j.
+--=20
+watching television is more hip than actually speaking to anyone.
+[agree]   [disagree]
+                 

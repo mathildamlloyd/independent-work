@@ -1,0 +1,26 @@
+i'll always be slowly catching up on comp tech. 
+
+i was using knoppix and clamav to remove a virus for a friend when the
+futility of it all hit me.  the free anti-virus hopscotch game that windows
+users play to feel safe.  what wasted energy--over an os i boot into maybe
+7% of the time.  they screw up half the time.
+
+there isn't a big demand for clamav on the debian partitions of a
+laptop/desktop.  but i'll be scheduling scans of the xp partition from
+debian.  doh!
+
+there is even a clamav *win32* for the unlucky.
+ 
+-- 
+kind regards,
+freeman
+
+http://bugs.debian.org/release-critical/
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100407075120.gb8987@europa.office
+
+

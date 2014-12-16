@@ -1,0 +1,46 @@
+there are some cases like this with "incomplete ftoc".  these are surely old
+bugs that appeared after i added the ability to only scan the tail of the ftoc
+if for some reason the scan module decides it cannot easily merge the newly
+scanned (scan unseen) into the tail of the cached scan listing.  hmm - i poked
+around a bit. glimpse.tcl uses msg_change, which has code in it to try and
+deal with showing a message that isn't in the ftoc:
+        exmh_status "cannot find msg $msgid - rescan?"
+is that message hiding in your log?  perhaps there should be a return from
+msg_change that glimpse.tcl can use to decide what to do next.
+
+>>>valdis.kletnieks@vt.edu said:
+ > scenario:
+ > 
+ > inbox has a "dirty" ftoc, only the last 100 entries (3500-last or so).
+ > 
+ > go to search... glimpse.   glimpse finds a hit in inbox/3448 (which
+ > isn't
+ > in the ftoc).  clicking on that one results in a find tool being
+ > launched
+ > *on the current item* (which of course misses, since the search string
+ > isn't in that item - i wasn't even in 'inbox' at the time.  we don't
+ > change
+ > folders to inbox or display the message that got hit.
+ > 
+ > clicking on another 'glimpse' hit that was an item that was in a
+ > non-dirty
+ > ftoc worked as expected - folder changed and that mail displayed, and
+ > the search tool found the hit.
+ > 
+ > /valdis
+
+--
+brent welch
+software architect, panasas inc
+pioneering the world's most scalable and agile storage network
+www.panasas.com
+welch@panasas.com
+
+
+
+_______________________________________________
+exmh-workers mailing list
+exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

@@ -1,0 +1,25 @@
+    date:        fri, 13 sep 2002 11:26:30 +1000
+    from:        tony nugent 
+    message-id:  <200209130126.g8d1quf21470@hobbit.linuxworks.com.au.nospam>
+
+  | i can cut'n'paste from exmh's message display window into spawned
+  | gvim processes, but not into anything else.
+
+that's odd.  i cut & paste between all kinds of windows (exmh into
+mozilla, xterm, another wish script of mine i use for dns tasks (but
+that one i guess is to be expected) netscape (when i used to use it,
+but i suppose it and mozilla are the same codebase, approx) - in fact
+i can't thing of anything it fails for, that i have noticed.
+
+what is an example of an "anything else" that it fails for for you?
+
+kre
+
+
+
+_______________________________________________
+exmh-users mailing list
+exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

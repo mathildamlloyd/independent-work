@@ -1,0 +1,65 @@
+NoneOn Fri, May 21, 2010 at 11:04 PM, John L Fjellstad <
+john-debian@fjellstad.org> wrote:
+
+> Javier Barroso <javibarroso@csmining.org> writes:
+>
+> > What would be wrong if every app would have its own repository ?
+>
+> Nothing
+>
+
+> > There is the problem, isn't it ?
+>
+> No
+>
+So, if you have 1480 packages, is it fine for you having 1480 repositories ?
+With this mechanism, apt would lost its super cow powers !
+
+I can find many many advantages trusting debian repositories, so I can
+search, install and update in a trusted world. No need searching
+repositories for each app that I would like to have.
+
+
+> > Having an unique repo have many advantages (not need to add / remove
+> > repositories when they start / die)
+>
+> Having an unique repository for packages that you absolutely have to
+> have the latest at the moment upstream makes it available is an
+> advantage.  Especially if you disagree with the choices or patches that
+> the maintainer added to package.
+>
+I agree with you here
+re: chromium in sidfrom nobody tue dec 16 07:55:46 2014
+content-type: text/plain; charset=iso-8859-1
+
+on fri, may 21, 2010 at 11:04 pm, john l fjellstad <
+john-debian@fjellstad.org> wrote:
+
+> javier barroso  writes:
+>
+> > what would be wrong if every app would have its own repository ?
+>
+> nothing
+>
+
+> > there is the problem, isn't it ?
+>
+> no
+>
+so, if you have 1480 packages, is it fine for you having 1480 repositories ?
+with this mechanism, apt would lost its super cow powers !
+
+i can find many many advantages trusting debian repositories, so i can
+search, install and update in a trusted world. no need searching
+repositories for each app that i would like to have.
+
+
+> > having an unique repo have many advantages (not need to add / remove
+> > repositories when they start / die)
+>
+> having an unique repository for packages that you absolutely have to
+> have the latest at the moment upstream makes it available is an
+> advantage.  especially if you disagree with the choices or patches that
+> the maintainer added to package.
+>
+i agree with you here

@@ -1,0 +1,32 @@
+on fri, may 21, 2010 at 11:41:38am -0500, john hasler uttered:
+> johnrchamplin writes:
+> > ...which used to be available from unstable, but which i have heard is
+> > now in sid.
+> 
+> unstable _is_ sid.
+> 
+> in any case, a few weeks is not old.
+
+it is on a fast moving target, and especially in the case of a major
+release. many improvements are rolled into the recent 6.x release.
+
+if debian isn't going to keep up with the current trunk; then there
+really is no point in packaging it here. as it stands i'm not going to
+go backwards a full version, so i have reverted to the ppa builds.
+
+i don't feel that it's necessary to package it daily, but
+weekly should be done as that's the release cycle that google-chrome
+developer version usually follows.
+
+for those of use that also use debian on a desktop/laptop besides a
+server; using old versions isn't usually desireable on the
+workstations where stability isn't as necessary as that of a
+production server.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100522170838.gc8488@google.com
+
+

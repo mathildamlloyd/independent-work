@@ -1,0 +1,22 @@
+on sat, 22 may 2010 11:33:36 +0200, danny wrote:
+
+> i have debian 5.04 and have a little trouble with jre. i downloaded the
+> new jre from sun and installed it. but how do i tell firefox how to use
+> the jre ?
+
+you can read (and follow) the instructions provided by oracle:
+
+http://www.java.com/en/download/help/linux_install.xml#enable
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.22.11.22.35@csmining.org
+
+

@@ -1,0 +1,183 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=utf-8
+content-transfer-encoding: quoted-printable
+
+on sun, apr 25, 2010 at 7:06 pm, andrew m.a. cater <
+amacater@galactic.demon.co.uk> wrote:
+
+> on sun, apr 25, 2010 at 12:11:57pm +0200, james stuckey wrote:
+> > stuckey@debian:~$ cat /etc/fstab
+> > # /etc/fstab: static file system information.
+> > #
+> > # use 'vol_id --uuid' to print the universally unique identifier for a
+> > # device; this may be used with uuid=3d as a more robust way to name
+> devices
+> > # that works even if disks are added and removed. see fstab(5).
+> > #
+> > #      
+> > proc            /proc           proc    defaults        0       0
+> > # / was on /dev/sda1 during installation
+> > uuid=3dcca7add1-981f-469f-9285-ae17722e24bd /               ext3
+> > errors=3dremount-ro 0       1
+> > # swap was on /dev/sda5 during installation
+> > uuid=3d334c0de5-c6b2-4990-a49b-83f4dd0c0a0d none            swap
+> > sw              0       0
+> > /dev/scd0       /media/cdrom0   udf,iso9660 user,noauto     0       0
+> > /dev/fd0        /media/floppy0  auto    rw,user,noauto  0       0
+> >
+> > by the way, how do i reply to the list on gmail?
+> >
+> >
+> > on sun, apr 25, 2010 at 10:55 am, andrew m.a. cater <
+> > amacater@galactic.demon.co.uk> wrote:
+> >
+> > > on fri, apr 23, 2010 at 11:21:33am +0200, james stuckey wrote:
+> > > > that worked, thanks!
+> > > >
+> > > > if one has to do this every time, why is it that these options aren=
+'t
+> > > listed
+> > > > in /etc/fstab?
+> > > >
+> > > > on fri, apr 23, 2010 at 9:27 am, =e5=88=98=e5=ae=87=e8=be=89  wrote:
+> > > >
+> > > > >
+> > > > >
+> > > > > on 23 april 2010 13:54, james stuckey  wrote=
+:
+> > > > > >
+> > > > > > i'm not able to read dvds in squeeze. i burned this disc on the
+> same
+> > > > > > drive in squeeze. thereafter it worked fine until a week or so
+> ago
+> > > > > > (the disc is less than a month old). i tested the disc last wee=
+k
+> on a
+> > > > > > windoze and mac osx and it worked without a problem.
+> > > > > >
+> > > > > > when i try to mount the cd/dvd rom drive:
+> > > > > > stuckey@debian:~$ mount /dev/scd0
+> > > > > > mount: block device /dev/sr0 is write-protected, mounting
+> read-only
+> > > > > > mount: wrong fs type, bad option, bad superblock on /dev/sr0,
+> > > > >
+> > > > > try the whole options and arguments
+> > > > > mount -o loop -t iso9660 /dev/scd0 /mnt
+> > > > >
+> > > > >
+> > >
+> > > mount /cdrom usually works - what does your fstab say for /dev/sr0 ?
+> > >
+> > >
+> if you look at the /etc/fstab -
+>
+> you have something that will read cd (iso9660) and dvd (udf) format for
+> a device mounted at /media/cdrom0 in this case.
+>
+> gnome automount daemon or equivalent would find it there and offer to
+> open it for you.
+>
+> in root ( /)
+> =3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d
+>
+> in /, you may have a symlink which points cdrom -> /media/cdrom
+>
+> further down in the filesystem, under /dev, udev or its equivalent
+> normally points an alias to the same physical device during the
+> installation process.
+>
+> in /dev
+> =3d=3d=3d=3d=3d=3d=3d=3d
+> in my case /dev/hda is the physical device, so in /dev, cdrom is linked
+> to hda as is cdrw - all pointing back ot /dev/hda
+>
+> ls -al cdrom gives
+>
+> cdrom -> hda
+>
+> same for dvd. [dvd, dvdrw]
+>
+> if you want to mount something temporarily e.g. to copy something off an
+> .iso image (it's also worth looking at and learning how to loop mount an
+> .iso image), something like the following as root where /tmp/tempcd is a
+> temporary mountpoint you'll remove later.
+>
+> mkdir /tmp/tempcd
+>
+> mount -t iso9660 /dev/hda /tmp/tempcd
+>
+> cp /tmp/tempcd/* /home/
+> so the second line is the equivalent of the mount command you normally
+> have in your /etc/fstab
+>
+> reply to list on gmail - add as a secondary addressee?
+> hth,
+>
+> andyc
+>
+>
+i'm not using a de.
+
+root@debian:/home/stuckey# mount -t iso9660 /dev/scd0 /media/cdrom0/
+
+mount: block device /dev/sr0 is write-protected, mounting read-only
+mount: wrong fs type, bad option, bad superblock on /dev/sr0,
+       missing codepage or helper program, or other error
+       in some cases useful info is found in syslog - try
+       dmesg | tail  or so
+
+root@debian:/home/stuckey#
+
+root@debian:/dev# ls -al cdrom
+lrwxrwxrwx 1 root root 3 2010-04-25 20:05 cdrom -> sr0
+
+i don't know but this might be relevant:
+[43045.166624] sr 2:0:0:0: [sr0] result: hostbyte=3ddid_ok
+driverbyte=3ddriver_sense
+[43045.166629] sr 2:0:0:0: [sr0] sense key : illegal request [current]
+[43045.166633] sr 2:0:0:0: [sr0] add. sense: illegal mode for this track
+[43045.166638] sr 2:0:0:0: [sr0] cdb: read(10): 28 00 00 00 00 00 00 00 40
+00
+[43045.166646] end_request: i/o error, dev sr0, sector 0
+[43045.166649] buffer i/o error on device sr0, logical block 0
+[43045.166653] buffer i/o error on device sr0, logical block 1
+[43045.166656] buffer i/o error on device sr0, logical block 2
+[43045.166659] buffer i/o error on device sr0, logical block 3
+[43045.166661] buffer i/o error on device sr0, logical block 4
+[43045.166664] buffer i/o error on device sr0, logical block 5
+[43045.166666] buffer i/o error on device sr0, logical block 6
+[43045.166669] buffer i/o error on device sr0, logical block 7
+[43045.166671] buffer i/o error on device sr0, logical block 8
+[43045.166674] buffer i/o error on device sr0, logical block 9
+[43045.169471] sr 2:0:0:0: [sr0] result: hostbyte=3ddid_ok
+driverbyte=3ddriver_sense
+[43045.169474] sr 2:0:0:0: [sr0] sense key : illegal request [current]
+[43045.169476] sr 2:0:0:0: [sr0] add. sense: illegal mode for this track
+[43045.169479] sr 2:0:0:0: [sr0] cdb: read(10): 28 00 00 00 00 00 00 00 02
+00
+[43045.169483] end_request: i/o error, dev sr0, sector 0
+[43045.237078] sr 2:0:0:0: [sr0] result: hostbyte=3ddid_ok
+driverbyte=3ddriver_sense
+[43045.237082] sr 2:0:0:0: [sr0] sense key : illegal request [current]
+[43045.237085] sr 2:0:0:0: [sr0] add. sense: illegal mode for this track
+[43045.237089] sr 2:0:0:0: [sr0] cdb: read(10): 28 00 00 00 00 00 00 00 02
+00
+[43045.237096] end_request: i/o error, dev sr0, sector 0
+[43045.237943] sr 2:0:0:0: [sr0] result: hostbyte=3ddid_ok
+driverbyte=3ddriver_sense
+[43045.237946] sr 2:0:0:0: [sr0] sense key : illegal request [current]
+[43045.237949] sr 2:0:0:0: [sr0] add. sense: illegal mode for this track
+[43045.237953] sr 2:0:0:0: [sr0] cdb: read(10): 28 00 00 00 00 00 00 00 02
+00
+[43045.237960] end_request: i/o error, dev sr0, sector 0
+[43094.764257] sr 2:0:0:0: [sr0] result: hostbyte=3ddid_ok
+driverbyte=3ddriver_sense
+[43094.764262] sr 2:0:0:0: [sr0] sense key : illegal request [current]
+[43094.764266] sr 2:0:0:0: [sr0] add. sense: illegal mode for this track
+[43094.764271] sr 2:0:0:0: [sr0] cdb: read(10): 28 00 00 00 00 10 00 00 01
+00
+[43094.764279] end_request: i/o error, dev sr0, sector 64
+[43094.764353] isofs_fill_super: bread failed, dev=3dsr0, iso_blknum=3d16,
+block=3d16
+
+i always see that in dmesg when i insert a cd/dvd.

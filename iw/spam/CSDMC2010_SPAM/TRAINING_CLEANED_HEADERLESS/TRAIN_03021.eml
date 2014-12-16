@@ -1,0 +1,37 @@
+on sat april 24 2010 07:00:37 camale=c3=b3n wrote:
+> well, i admit my english is not the very best it could be, but for sure
+> the op concern was "32000 files/folders under a folder" and if i read
+>                                 ^^^^^^^^^^^^^^^^^^^^^^
+> that in a correctly manner, it says something about *folders under a
+> folder*... i hope "subdirectories =3d folders" is still valid.
+
+hi camale=c3=b3n,
+
+in english the slash is understood to mean "or".  there is no limit of
+32000 files or folders under a folder in ext3.
+
+there is a limit of 31998 directories under a directory.  this is caused by
+the ext3 hard link count limit being 32000.  two links are needed for the
+parent directory entry and the current directory's ".", leaving only
+31998 links available for ".." links from subdirectories.
+
+this limit is rarely encountered in practice because it is so much more
+efficient to use multiple directory levels, e.g.:
+
+parent-
+  a-
+    able
+    alf
+  b-
+    beta
+    bravo
+
+=2d-mike bird
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201004240717.24641.mgb-debian@yosemite.net
+
+

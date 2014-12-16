@@ -1,0 +1,23 @@
+godo wrote:
+> on 04/27/2010 06:36 pm, john o laoi wrote:
+>>> does some of this errors sad something like "there is no network"?
+>>
+>> yes, they always say
+>> "unable to load resource:"
+>>
+>>
+> cat /proc/sys/net/ipv6/bindv6only
+> if output is 1 then:
+> echo 0 > /proc/sys/net/ipv6/bindv6only
+
+that's not bad either ;-)
+
+hugo
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hr7gao$sde$2@dough.gmane.org
+
+

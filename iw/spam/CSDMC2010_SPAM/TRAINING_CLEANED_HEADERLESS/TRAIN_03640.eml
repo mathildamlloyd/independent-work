@@ -1,0 +1,21 @@
+on 2010-05-08 leonardo meira wrote:
+>> dolphin does not mount my other hard drives. they appear in "places" but
+>> when i click i get a message
+>> ""org.freedesktop.hal.device.volume.permissiondenied: refusing to mount
+>> device /dev/sdax for uid = 1000"". i tried, as read in other forums, create
+>> a configuration file for polkit but in vain.
+>> i also saw that this is a common problem in other distros, possibly a
+>> problem with kde 4.4.
+>>
+>>      
+the upstream bug report is at 
+https://bugs.kde.org/show_bug.cgi?id=219996 in case you want to vote for 
+it :)
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4be5c3e2.7070403@gmx.de
+
+

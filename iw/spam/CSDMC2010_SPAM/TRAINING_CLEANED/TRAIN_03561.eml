@@ -1,0 +1,124 @@
+NoneHow do I get the mbr package to do its job quietly?I have been experimenting with the mbr package.  (mbr is a dependency for
+the lilo package; so if you have lilo installed you have mbr package installed
+too.)  I usually install lilo to the master boot record (boot=/dev/hda
+specified in /etc/lilo.conf).  But in certain situations it is advantageous to
+install lilo to the boot sector of a primary partition (boot=/dev/hda1) and
+install a DOS-like master boot record program in the master boot record,
+making the partition containing the lilo boot loader the active partition.
+
+For example, on some of our Dell servers one can bring up a "boot menu" via
+the BIOS setup program by pressing F12 during the POST process.  (This is during
+POST and before the actual boot process.)  Upon completion of POST, the "BIOS
+boot menu" (not to be confused with the boot menu of any boot loader) will
+be displayed.  One of the choices in this BIOS boot menu is "Boot to Utility
+Partition", or something like that.  This boots a maintenance partition
+containing some hardware testing programs supplied by Dell.  This works fine
+if the master boot record is a standard DOS/Windows-style master boot record,
+but does not work with Linux-style boot loaders, such as grub or lilo.
+Of course, I can always add the maintenance partition to the lilo boot
+menu, but our non-Linux-proficient technicians aren't used to this.  I
+want a Linux box to look just like a Windows box as viewed by a service
+technician.
+
+I could use DOS or Windows to install its master boot record program
+with "fdisk /mbr" or fixmbr, or whatever, depending on the release of
+DOS or Windows, and set the Linux partition active, and that works.  But
+Microsoft may claim that this means that our box requires a license
+for DOS or Windows.  I'd hate to burn a Windows license just to get its
+master boot record installed, when that's all I'm using.  It would seem that
+the mbr package in Debian GNU/Linux is just the ticket for this sort of
+problem.  I have run the "install-mbr" program, and it works just as
+expected.  There is just one little nit left that I would like to take
+care of.  lilo advertises itself by printing out "LILO" on the screen
+prior to booting the Linux kernel.  That's fine.  I want to see that.
+mbr also advertises itself by printing out "MBR" on the screen when it
+boots.  So what I see at boot time is something like this:
+
+   MBR
+
+   LILO 22.8 Loading Linux
+   BIOS data check successful
+
+and then the Linux kernel boot messages.  That's tolerable, but I'd
+like that "MBR" advertisement to be eliminated.  I read the man page
+for install-mbr, and I can see how to eliminate the boot prompt,
+which I have done, but I couldn't find a way to suppress the MBR
+advertisement.  The DOS/Windows mbr program is totally silent, a trick
+that I would like to teach this program.  Does anyone know of a way
+to accomplish this?  Or is this just something I have to live with?
+
+-- 
+  .''`.     Stephen Powell    <zlinuxman@wowway.com>
+ : :'  :
+ `. `'`
+   `-
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/1287129746.1654901270657281956.JavaMail.root@md01.wow.synacor.com
+
+
+how do i get the mbr package to do its job quietly?i have been experimenting with the mbr package.  (mbr is a dependency for
+the lilo package; so if you have lilo installed you have mbr package installed
+too.)  i usually install lilo to the master boot record (boot=/dev/hda
+specified in /etc/lilo.conf).  but in certain situations it is advantageous to
+install lilo to the boot sector of a primary partition (boot=/dev/hda1) and
+install a dos-like master boot record program in the master boot record,
+making the partition containing the lilo boot loader the active partition.
+
+for example, on some of our dell servers one can bring up a "boot menu" via
+the bios setup program by pressing f12 during the post process.  (this is during
+post and before the actual boot process.)  upon completion of post, the "bios
+boot menu" (not to be confused with the boot menu of any boot loader) will
+be displayed.  one of the choices in this bios boot menu is "boot to utility
+partition", or something like that.  this boots a maintenance partition
+containing some hardware testing programs supplied by dell.  this works fine
+if the master boot record is a standard dos/windows-style master boot record,
+but does not work with linux-style boot loaders, such as grub or lilo.
+of course, i can always add the maintenance partition to the lilo boot
+menu, but our non-linux-proficient technicians aren't used to this.  i
+want a linux box to look just like a windows box as viewed by a service
+technician.
+
+i could use dos or windows to install its master boot record program
+with "fdisk /mbr" or fixmbr, or whatever, depending on the release of
+dos or windows, and set the linux partition active, and that works.  but
+microsoft may claim that this means that our box requires a license
+for dos or windows.  i'd hate to burn a windows license just to get its
+master boot record installed, when that's all i'm using.  it would seem that
+the mbr package in debian gnu/linux is just the ticket for this sort of
+problem.  i have run the "install-mbr" program, and it works just as
+expected.  there is just one little nit left that i would like to take
+care of.  lilo advertises itself by printing out "lilo" on the screen
+prior to booting the linux kernel.  that's fine.  i want to see that.
+mbr also advertises itself by printing out "mbr" on the screen when it
+boots.  so what i see at boot time is something like this:
+
+   mbr
+
+   lilo 22.8 loading linux
+   bios data check successful
+
+and then the linux kernel boot messages.  that's tolerable, but i'd
+like that "mbr" advertisement to be eliminated.  i read the man page
+for install-mbr, and i can see how to eliminate the boot prompt,
+which i have done, but i couldn't find a way to suppress the mbr
+advertisement.  the dos/windows mbr program is totally silent, a trick
+that i would like to teach this program.  does anyone know of a way
+to accomplish this?  or is this just something i have to live with?
+
+-- 
+  .''`.     stephen powell    
+ : :'  :
+ `. `'`
+   `-
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/1287129746.1654901270657281956.javamail.root@md01.wow.synacor.com
+
+

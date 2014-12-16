@@ -1,0 +1,59 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain;
+  charset="utf-8"
+content-transfer-encoding: quoted-printable
+
+
+hi mike!
+
+am montag 10 mai 2010 schrieb mike bird:
+> on mon may 10 2010 05:47:08 dotan cohen wrote:
+> > just let them go, adrian. when i to to fix kde 4 for these two, i am
+> > "obstructing kde 3.5 at every opportunity". let them troll themselves
+> > into obscurity. at least they cannot complain that nobody tried to
+> > help them get the features they need into kde 4. well, they will
+> > complain about that because apparently i "ordered" them to tell me
+> > what is wrong with kde 4, instead of simply deducing that out of thin
+> > air.
+>=20
+> please note the subject of this thread.  this thread is about
+> how users can best continue using kde 3.5, or alternatively
+> where to migrate when lenny is eol'd.
+
+what do you want to achieve in this thread on this debian-kde user support=
+=20
+mailinglist?
+
+resurrecting kde 3.5 for debian?
+
+well did you?
+
+if not, i suggest you to try it elsewhere.
+
+possible places are:
+
+=2d debian-qt-kde@lists.debian.org since that is where development of debia=
+n=20
+kde packages is coordinated
+
+=2d trinity desktop environment / vector linux
+
+this is for kde user support. kde 3.5 in lenny. kde 4 in squeeze unless=20
+someone - except the current debian kde / qt developer team - does and=20
+maintains kde 3.5 packages that are co-installable and meet debians high=20
+packaging standards.
+
+this list is not for development issues like developing / maintaining kde=20
+3.5 packages for squeeze.
+
+so imho any further request for kde 3.5 in squeeze is off topic on this=20
+list as debian kde/qt maintainers repeatedly said they won't.
+
+you want kde 3.5 for squeeze? spend your energy towards that goal. here it=
+=20
+apparently does not change the situation.
+
+ciao,
+=2d-=20
+martin 'helios' steigerwald - http://www.lichtvoll.de
+gpg: 03b0 0d6c 0040 0710 4afa  b82f 991b eaac a599 84c7

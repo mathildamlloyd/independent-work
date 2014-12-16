@@ -1,0 +1,31 @@
+on 20100414_113944, paul chany wrote:
+> hi,
+> 
+> i have setup somewhere the java_home environment variable, but don't
+> know where?
+
+...snip
+
+when i am reading this thread there are already two search suggestions
+that are better than what i might have come up with. my post is to
+find out where the setting was actually done. i would have thought it
+could only be in /etc or /home --- but wierd things can happen. where
+is it? how long did the search command take to run? and some idea of
+the size of your working environment?
+
+if the cause for that particular location appears to be something that
+involved user volition, it could still be useful to know what mistakes
+can be made. better than learning from ones mistakes is learning from
+others experience. tia
+
+-- 
+paul e condon           
+pecondon@mesanetworks.net
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100414141130.ga22738@big.lan.gnu
+
+

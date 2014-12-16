@@ -1,0 +1,33 @@
+anand sivaram wrote:
+>
+> on thu, may 6, 2010 at 06:36, miles fidelman 
+> > wrote:
+>
+>
+
+>
+>     
+>
+>
+>
+> are you using static ip or using dhcp?  if you are using static, then 
+> you could try your local netmask from 255.255.255.224 (/27) to 
+> 255.255.255.0 (/24) or so in such a way that it encompasses both 
+> networks.   i think this is the simplest to start with.  if this has 
+> problem, you could always alter the packet using iptables to send it 
+> though your second network connection.
+>
+static.  and thanks.
+
+-- 
+in theory, there is no difference between theory and practice.
+in  practice, there is.   .... yogi berra
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4be2b0d3.8060007@meetinghouse.net
+
+

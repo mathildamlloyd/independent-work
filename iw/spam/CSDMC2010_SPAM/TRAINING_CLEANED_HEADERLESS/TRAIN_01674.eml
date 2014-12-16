@@ -1,0 +1,54 @@
+on 26 april 2010 17:30, christian simo  wrote:
+> hi
+>
+> thank you for your response.
+> before try all this solution.
+> please found attach all following command shell:
+>
+> script started on sun 25 apr 2010 23:25:36 sast
+> gaelle:/media/tux-for-kom# lsusb
+> bus 005 device 001: id 1d6b:0002 linux foundation 2.0 root hub
+> bus 004 device 001: id 1d6b:0001 linux foundation 1.1 root hub
+> bus 003 device 001: id 1d6b:0001 linux foundation 1.1 root hub
+> bus 002 device 003: id 1267:0103 logic3 / spectravideo plc g-720 keyboard
+> bus 002 device 002: id 045e:001e microsoft corp. intellimouse explorer
+> bus 002 device 001: id 1d6b:0001 linux foundation 1.1 root hub
+> bus 001 device 005: id 12d1:1446 huawei technologies co., ltd. e1552
+> (hspa modem)
+> bus 001 device 003: id 058f:6387 alcor micro corp. transcend jetflash
+> flash drive
+> bus 001 device 001: id 1d6b:0001 linux foundation 1.1 root hub
+> gaelle:/media/tux-for-kom# exit
+> exit
+>
+
+hi,
+
+your usbids look totally different to mine for e1762. maybe yours has
+different chipset?
+
+# lsusb
+....
+bus 001 device 042: id 12d1:1003 huawei technologies co., ltd. e220
+hsdpa modem / e270 hsdpa/hsupa modem
+....
+
+also a quick google[1] of the usbids for your dongle resulted in some
+interesting howtos
+
+regards
+dale
+
+[1] http://www.google.com/search?q=12d1%3a1446&ie;=utf-8&oe;=utf-8&aq;=t&rls;=org.mozilla:en-us:unofficial&client;=iceweasel-a
+-- 
+[www] http://quail.southernvaleslug.org/
+"the significant problems we face cannot be solved at the same level
+of thinking we were at when we created them" - albert einstein
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/l2p9b3004971004261753j2711a79ap35e26c7ea402d421@mail.csmining.org
+
+

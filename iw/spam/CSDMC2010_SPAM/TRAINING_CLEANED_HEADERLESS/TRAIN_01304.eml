@@ -1,0 +1,60 @@
+on 11 may 2010 09:11, adrian von bidder  wrote:
+> dotan,
+>
+> on monday 10 may 2010 18.12:46 dotan cohen wrote:
+>> i started 4.4 on a new ~/.kde
+>> folder, can you try in a new user profile and report back?
+>
+> i hate it when this shows up. =c2=a0yes, it's probably easier to debug, b=
+ut often
+> bugs *do* show up that don't happen anymore when i remove my ~/.kde
+> directory, but this doesn't really help the user who has the bug.
+> unfortunately, the end result is very often that removing ~/.kde and
+> starting from scratch becomes the only solution that is "officially"
+> recommended.
+>
+
+i know, but it helps to know if the bug is in the config file or the
+software package. the config file _should_ have been updated when the
+kde version was, and i need to know that.
+
+
+> fine. =c2=a0except that reconfiguring my desktop to how i want it takes a=
+ges. =c2=a0i
+> use offline imap and have 100s of mb of email in my ~/.kde that will need=
+ to
+> be re-downloaded. =c2=a0and stuff like the calendar etc. is in there, too=
+. =c2=a0and
+> the nepomuk database etc.
+>
+
+you can copy those parts right back over!
+
+
+> so yes, kde people may well want to know if a bug happens on old
+> configurations only or if it happens on new configurations, but i think
+> there's an attitude problem here: kde needs to become much better at deal=
+ing
+> with unexpected input from its configuration. =c2=a0(i don't have a preci=
+se
+> example right now; i'll try to report this kind of issue when i see it ne=
+xt.
+> admittedly, kde has improved in this area as well.)
+>
+
+i agree with you 100%. i really do.
+
+
+--=20
+dotan cohen
+
+http://bido.com
+http://what-is-what.com
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/aanlktik1gl9dfwldahoyuopd6kadgntixl6hllkwdr1n@mail.csmining.org
+
+

@@ -1,0 +1,83 @@
+None> From:  Chris Garrigues <cwg-exmh@DeepEddy.Com>
+> Date:  Mon, 22 Jul 2002 13:33:13 -0500
+>
+> > From:  Anders Eriksson <aeriksson@fastmail.fm>
+> > Date:  Mon, 22 Jul 2002 20:15:11 +0200
+> >
+> > My feeling of this is that we really do not want to have a 
+> > Ftoc_ClearCurrent, but rather just a RescanLine and the caller had 
+> > better know the line or msgid. That routine shoud just put in the '+' 
+> > if the line/msg in question happened to be the cur msg. Thoughts?
+> 
+> Intuitively, that sounds right to me.  It does also call "tag remove", so 
+> you'll have to make sure that gets set correctly as well.
+> 
+> I think any changes that make it behave more intuitively are a good thing even 
+> if they mean we have something else to fix.  Of course, that attitude is why 
+> I've been fixing exmh bugs for 3 weeks.
+
+I just checked in a code cleanup which doesn't address this issue, but does 
+take a machete to code right around it.  You ought to 'cvs update' and see if 
+your issue becomes any clearer with all the brush removed.
+
+My patch notes that 'msgid' and 'line' are redundant with one another and removes 
+one or the other from functions which takes both.  The callers are then 
+changed to pass what the function expects.  In the case of Msg_Change, the 
+'line' argument is removed and we only have the msgid argument.  Ftoc_ClearCurrent
+is now the first line of MsgChange.
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+re: another bugfrom nobody tue dec 16 07:55:47 2014
+content-type: text/plain; charset=us-ascii
+
+> from:  chris garrigues 
+> date:  mon, 22 jul 2002 13:33:13 -0500
+>
+> > from:  anders eriksson 
+> > date:  mon, 22 jul 2002 20:15:11 +0200
+> >
+> > my feeling of this is that we really do not want to have a 
+> > ftoc_clearcurrent, but rather just a rescanline and the caller had 
+> > better know the line or msgid. that routine shoud just put in the '+' 
+> > if the line/msg in question happened to be the cur msg. thoughts?
+> 
+> intuitively, that sounds right to me.  it does also call "tag remove", so 
+> you'll have to make sure that gets set correctly as well.
+> 
+> i think any changes that make it behave more intuitively are a good thing even 
+> if they mean we have something else to fix.  of course, that attitude is why 
+> i've been fixing exmh bugs for 3 weeks.
+
+i just checked in a code cleanup which doesn't address this issue, but does 
+take a machete to code right around it.  you ought to 'cvs update' and see if 
+your issue becomes any clearer with all the brush removed.
+
+my patch notes that 'msgid' and 'line' are redundant with one another and removes 
+one or the other from functions which takes both.  the callers are then 
+changed to pass what the function expects.  in the case of msg_change, the 
+'line' argument is removed and we only have the msgid argument.  ftoc_clearcurrent
+is now the first line of msgchange.
+
+chris
+
+-- 
+chris garrigues                 http://www.deepeddy.com/~cwg/
+vircio                          http://www.vircio.com
+716 congress, suite 200
+austin, tx  78701+1 512 374 0500
+
+  world war iii:  the wrong-doers vs. the evil-doers.
+
+
+

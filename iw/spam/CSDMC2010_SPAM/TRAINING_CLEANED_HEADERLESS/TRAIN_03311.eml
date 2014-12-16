@@ -1,0 +1,23 @@
+on sat, apr 10, 2010 at 01:09:58pm +0300, andrei popescu wrote:
+> on sat,10.apr.10, 11:38:08, merciadri luca wrote:
+> > andrei popescu wrote:
+> > >
+> > > it doesn't matter. mixing apt-get and aptitude is not a problem anymore.
+> > >   
+> > sure? how can you state this? any proof? i always thought that they were
+> > incompatible.
+> 
+> i'm not sure what i can do to prove that something doesn't exist. i 
+> could for example post the console output of:
+
+i guess this was the big headach
+ http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=411123
+ 
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100410104329.ga366@osamu.debian.net
+
+

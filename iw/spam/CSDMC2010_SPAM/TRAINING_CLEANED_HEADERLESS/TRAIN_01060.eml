@@ -1,0 +1,22 @@
+on tue, 8 oct 2002, john moylan wrote:
+> hmm, speaking of cheap machines etc, has anyone tried this sort of
+> thing: http://www.mini-itx.com/projects/humidor64/ ? or more importantly
+> has anyone had any positive/negative experiences with the via mini-itx
+> boards/via c3 processors.
+
+my laptop has a via c3 processor. i use debian with a self-compiled
+2.4.19 kernel, and have had absolutely no problems with the chip at all
+(quite the opposite, in fact).
+
+i had to compile for "686" in order for 3d acceleration to work (the
+kernel has an option specifically for the via c3), but i assume that was
+a kernel problem rather than a hardware problem.
+
+trevor johnston
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

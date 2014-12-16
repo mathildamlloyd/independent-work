@@ -1,0 +1,24 @@
+nfs as a protocol is not known for its speediness but this is absurd. i did an 
+nfs install of a box this morning (that would be the box which won't boot 
+from cd for those who were in irc) and it was rather slow but i just left it 
+to it. having got it up, i want to copy the dvd to a disk on it so i have it 
+handy for installing any further bits i might require. so i simply mounted 
+the nfs exported dvd on the new box and started copying. 
+
+after a couple of minutes i looked - it was transferring about 8mb a minute. 
+so i killed that and used rsync instead which is ticking away now at about 
+100 mb/min - still not exactly turbo charged but a lot better than the nfs 
+rate. any ideas as to what's making it so slow ? there's really no point in 
+running more nfsd processes, as there is exactly one client, so i'm a little 
+at a loss i must say.
+
+
+
+niall
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

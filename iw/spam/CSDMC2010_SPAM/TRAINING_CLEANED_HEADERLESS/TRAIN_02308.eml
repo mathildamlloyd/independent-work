@@ -1,0 +1,16 @@
+i just upgraded apt and aptitude to the latest testing version. although
+'aptitude -s safe-upgrade' tells me that '172 not upgraded' it no longer
+lists them. is this a bug or an intentional change?
+
+-- 
+"pay less attention to what men say. just watch what they do."
+-- dale carnegie
+    rick pasotto    rick@niof.net    http://www.niof.net
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100426142906.gl17245@niof.net
+
+

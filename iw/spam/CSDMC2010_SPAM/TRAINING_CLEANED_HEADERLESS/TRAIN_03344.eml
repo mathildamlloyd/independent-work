@@ -1,0 +1,31 @@
+on tue, apr 27, 2010 at 12:01:45pm -0500, boyd stephen smith jr. wrote:
+> on tuesday 27 april 2010 11:51:35 john o laoi wrote:
+> > > cat /proc/sys/net/ipv6/bindv6only
+> > > if output is 1 then:
+> > > echo 0 > /proc/sys/net/ipv6/bindv6only
+> > 
+> > that fixed it.
+> > 
+> > anybody know what was the problem?
+> 
+> default kernel settings where changed.  java applications and some other 
+> applications are now binding to ipv6 only, instead of ipv4 and ipv6.  there's 
+> an open bug about it, iirc.
+> 
+> i think it was changed in order to allow communication to/from ipv4-embedded-
+> in-ipv6 addresses over ipv6, which might be required from some environments to 
+> function correctly / optimally.  i'm very sketchy on the details because i 
+> haven't hit the bug myself.
+
+http://lists.debian.org/debian-devel/2010/04/threads.html#00422
+
+-- 
+chris.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100428112749.gb18522@fischer
+
+

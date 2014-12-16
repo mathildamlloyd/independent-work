@@ -1,0 +1,61 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on sat,15.may.10, 16:47:07, merciadri luca wrote:
+> >
+> > but will probably not work in you case, as it was meant to combine two=
+=20
+> > (or more?) network ports from the same computer connected to the same=
+=20
+> > switch.
+> >  =20
+> the description says
+>=20
+> =3d=3d
+> the linux bonding driver provides a method for aggregating
+> multiple network interfaces into a single logical
+> bonded  interface.
+> =3d=3d
+>=20
+> strictly speaking, this is what i want. now, your interpretation seems
+> to be based on the definition of a link aggregation, which i am not
+> really familiar with. basically, i want to merge connections into one,
+> or at least divide and use them separately, in an easy way. this is not
+> a so-rare situation, is it? e.g. you might be wandering in some zone
+> where you can use the wifi, but where it is sometimes unavailable, say
+> at specific regions. if you manage to use another connection, for
+> example the one that is given by your mobile phone/smartphone /via/
+> bluetooth (which is then connected to the internet through other
+> protocols), it should be possible to switch between these two
+> connections, or to use them simultaneously, if, say, wifi 's range is
+> too small or wifi's bandwidth too small compared to the smartphone's
+> one. (okay, this is not a really realistic example.)
+>=20
+> you might also share an internet connection with your neighbour,
+> legally, and use it a lot when he does not need it. then, if you already
+> use ethernet, you can use both connections. but how?
+
+bonding is not suitable for you because it works too low-level (it is=20
+layer 2), unless you have two links from the same provider, using some=20
+technology that can be bonded (like adsl).
+
+afaiu what you need is bgp[1], but i can't give you any tips as this is=20
+way out of my league ;)
+
+probably a good start (whatever technology you end up using) is a=20
+gnu/linux (preferably debian) machine connected to both internet links=20
+and your internal network since consumer gateways don't even have more=20
+than one wan port[2].
+
+[1] http://en.wikipedia.org/wiki/border_gateway_protocol
+[2] some of them could be used for this with custom firmware, but this=20
+is off-topic
+
+regards,
+andrei
+p.s. there is no need to cc me as i am subscribed to the list ;)
+--=20
+offtopic discussions among debian users and developers:
+http://lists.alioth.debian.org/mailman/listinfo/d-community-offtopic

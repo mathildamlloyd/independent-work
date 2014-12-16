@@ -1,0 +1,22 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=us-ascii
+
+chris,
+
+i think you are referring to a problem i noticed last october (see 
+attached email). if i remember correctly, the binding for seditbeautify
+is being applied outside of the sedit window and that results in the 
+behavior observed.
+
+kevin
+
+in message <1027546301.610.tmda@deepeddy.vircio.com>, chris garrigues writes:
+> 
+> am i the only one for whom typing control-l to the main window causes this 
+> error?
+> 
+> i can't figure out why it occurs.
+> 
+> chris
+> 
+

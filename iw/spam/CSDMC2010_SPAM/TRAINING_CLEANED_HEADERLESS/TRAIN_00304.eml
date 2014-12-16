@@ -1,0 +1,37 @@
+on wed, may 19, 2010 at 4:13 am, jason t. slack-moehrle
+ wrote:
+> it is not true, i am not looking for a free ride, i am looking to learn. i
+> think i get confused because of all the possiblities (view, datasource,
+> delegate, controller, etc) i dont have a strong mvc background.
+
+i think you should pick up a book that covers mvc in the iphone world.
+"beginning iphone 3 development" by dave mark and jefflamarche is
+probably your best bet.
+
+> i actually attended the big nerd ranch with aaron many years ago in 2002 in
+> whitesburg georgia. it was a fabulous week, but i made the mistake of never
+> using what i learned after that my job changed, had 3 kids ugh the list goes
+> on.
+> i was considering going again this summer as i have between semesters off.
+
+that may be worthwhile.  even if you had retained your 2002-era bnr
+knowledge, the prevailing use of framework-provided view controllers
+in uikit is a pretty significant change with lots of interesting (and
+mostly very positive) consequences.  even some cocoa old-timers had a
+hard time grasping it at first--i'm living proof!  that being said, i
+don't know if bnr is covering a lot of iphone material now (though i
+assume that's the case) or if they're still more mac-focused, so check
+first.
+
+-- 
+// jack
+// http://nuthole.com
+// http://learncocoa.org
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+objc-language mailing list      (objc-language@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/objc-language/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

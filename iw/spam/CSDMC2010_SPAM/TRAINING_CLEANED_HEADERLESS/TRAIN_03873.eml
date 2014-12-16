@@ -1,0 +1,490 @@
+------------------------------------------------------------------------
+the debian project                                http://www.debian.org/
+debian project news                    debian-publicity@lists.debian.org
+may 18th, 2010                   http://debian.org/news/project/2010/03/
+------------------------------------------------------------------------
+
+welcome to this year's third issue of dpn, the newsletter for the debian
+community. topics covered in this issue include:
+
+  * debconf10 update
+  * squeeze freeze
+  * debian-ubuntu relationship
+  * debian installation media and non-free firmware
+  * ... and much more.
+
+
+debconf10 update
+----------------
+
+deadlines are looming for debconf10 - some have already passed. for
+example, the last day to submit a bof (birds of a feather) talk has come
+and gone. there is still lots you can do for debconf10 however including
+volunteering time, lending equipment, and even donating money. sponsors
+and donors are needed to help defray the costs of holding debconf10 as
+raphael geissert wrote on his blog [6].
+
+   6 : http://my.opera.com/atomo64/blog/2010/05/04/debconf10-needs-your-help
+
+joey hess also blogged about debconf10 [7] saying "let us get you to
+debconf -- i promise you won't regret it!" there is still time (you have
+until the 15th of may) to contact joey about this year's special funding
+to get you to debconf10.
+
+   7 : http://kitenet.net/~joey/blog/entry/sponsoring_non-regulars_for_debconf10/
+
+
+squeeze freeze
+--------------
+
+adam barratt and the release team sent out an update on the status of
+transitions, release critical bugs and a timeline of the squeeze freeze.
+in short, we have a way to go before squeeze is frozen and it is
+difficult for the release team to estimate when squeeze will get frozen.
+adam writes "in order to help us keep a clearer picture of which changes
+still need to occur before we can freeze, we will be introducing a
+'transition freeze' before the end of this month. if you have not yet
+discussed your transition with the release team, please ensure that you
+have done so before may 21st."
+
+the release team is already working on some transitions now, like qt4
+and gnome-desktop, which are finished. the kde team is working on kde
+4.4 with the goal of having as up-to-date and stable version of the kde
+suite as is possible. to quote adam: "we're also close to completing the
+evince / totem-pl-parser transition, which means we're well on the way
+to have gnome 2.30 in squeeze."
+
+"even though the descending slope of therc bug graph [8] is pretty
+impressive [2], we still have about 400 rc bugs in squeeze. some of them
+are waiting for packages to transition from unstable to testing, but
+there's still a large number which need working on. on this every dd can
+help out by nmuing packages which are currently affected by rc bugs.
+please remember that releasing is a collective effort and it is not
+enough to just have your own packages rc-bug free (although it's a good
+start) to be able to release. so, if you can help, please choose an rc
+bug [9], fix it :-) and nmu it, possibly to the delayed queue so that
+the maintainer can react if needed."
+
+   8 : http://bugs.debian.org/release-critical/
+   9 : http://bugs.debian.org/release-critical/debian/all.html
+
+
+debian-ubuntu relationship
+--------------------------
+
+being invited to the recent ubuntu developer summit, debian project
+leader stefano zacchiroli gathered feedback [10] and examples about the
+relationship between the two projects. most interesting where of course
+success stories, "epic fails" and requests from the debian project at
+large to the ubuntu community. later he posted a link to his slided [11]
+(a video is also available [12]) also containing some figures, e.g. that
+roughly 75% of all packages in ubuntu are taken without further patches
+directly from debian. stefano later posted a summary of his talk [13]
+and the feedback he got.
+
+   10 : http://lists.debian.org/debian-project/2010/05/msg00083.html
+   11 : http://upsilon.cc/~zack/stuff/debian-uds-m.pdf
+   12 : http://blip.tv/file/3622104
+   13 : http://lists.debian.org/debian-project/2010/05/msg00084.html
+
+
+debian installation media and non-free firmware
+-----------------------------------------------
+
+with debian's kernel team moving firmware files (binary data needed for
+some hardware like network interface cards) in separate packages in
+debian's non-free section, kurt roeckx wondered [14], if that approach
+could lead to usage problems especially during installation and if these
+files should be added to the installation media. several people pointed
+out, that the debian installation system already supports loading
+firmware [15] from a separate installation media, e.g. a usb stick. that
+however would still be to complicate for many users or use cases (e.g.
+remote installation). in the end steve langasek proposed [16] to offer
+normal installation media without non-free firmware files and an easy to
+use tool, which would add the distributable non-free firmware files to
+the installation media image.
+
+   14 : http://lists.debian.org/20100505162955.ga17250@roeckx.be
+   15 : http://www.debian.org/releases/lenny/i386/ch06s04.html
+   16 : http://lists.debian.org/debian-project/2010/05/msg00081.html
+
+
+other news
+----------
+
+the 22nd issue of the miscellaneous news for developers [17] has been
+released and covers the following topics:
+
+   17 : http://lists.debian.org/debian-devel-announce/2010/05/msg00006.html
+
+
+  * lwn subscriptions
+  * ubuntudiff.debian.net
+  * txt records on debian.net
+  * debian sysadmin team seeks for help
+  * receive ubuntu bugs by mail via pts
+
+mips* porter andreas barth gave a status update [18] about the mips and
+mipsel ports [19]. while the situation for mipsel have been improved
+dramatically, the situation for mips remains unchanged [20].
+
+   18 : http://lists.debian.org/debian-devel-announce/2010/05/msg00005.html
+   19 : http://www.debian.org/ports/mips/
+   20 : http://lists.debian.org/debian-devel-announce/2010/04/msg00010.html
+
+debian system administrator martin zobel-helas announced [21] a new
+version of the "debian machine usage policies" becoming effective on
+july 04th, 2010.  the dmup basically covers what debian developers may
+or may not do with their accounts on debian.org hardware. the change was
+necessary to clarify responsibilities between the debian system
+administrators and the debian account managers.
+
+   21 : http://lists.debian.org/debian-devel-announce/2010/05/msg00001.html
+
+debian new maintainer frontdesk member enrico zini reminded [22]
+developers on how to properly advocate applicants for the new maintainer
+process. while advocation message don't need to be cumbersome and long,
+he highlights that only persons, who already have actively contributed
+to debian should be advocated.
+
+   22 : http://lists.debian.org/debian-devel-announce/2010/05/msg00003.html
+
+debian system administrator peter palfrader welcomed some volunteers for
+maintaining porter chroot environments [23] on different architectures.
+he also gave some guidelines on how developers should request
+installation of packages in these chroot environments.
+
+   23 : http://lists.debian.org/debian-devel-announce/2010/05/msg00002.html
+
+bdale garbee bloged about sponsored lwn subscriptions [24] where hp [25]
+sponsors the subscription fee to access lwn.net [26] for debian
+developers and - just recently introduced - for debian maintainers. he
+also noted, that currently 571 debian contributors use this service.
+
+   24 : http://www.gag.com/bdale/blog/posts/debian_and_lwn.html
+   25 : http://www.hp.com/go/linux
+   26 : http://lwn.net/
+
+debian system administrator peter palfrader asked [27] that all bug
+reports concerning the removal of undistributable packages should also
+be sent to the maintainers of the snapshot.debian.org [28] service.
+
+   27 : http://lists.debian.org/debian-devel-announce/2010/05/msg00004.html
+   28 : http://snapshot.debian.org/
+
+sune vuorela, member of the kde package maintenance team, wondered if
+distribution specific tools [29] are missing for debian.
+
+   29 : http://pusling.com/blog/?p=163
+
+martin michlmayr announced the availability of a debian 5.0 [30] "lenny"
+installation system for marvell's kirkwood based systems like
+the sheevaplug [31] or the qnap ts-11x/ts-21x [32].
+
+   30 : http://www.cyrius.com/journal/debian/kirkwood/lenny-installer
+   31 : http://www.cyrius.com/debian/kirkwood/sheevaplug/
+   32 : http://www.cyrius.com/debian/kirkwood/qnap/
+
+jan dittberner added [33] links to ubuntudiff, piuparts and patch
+tracker to the debian developer portfolio service [34].
+
+   33 : http://www.dittberner.info/en/content/small-update-debian-developer-portfolio-service
+   34 : http://ddportfolio.debian.net/
+
+stefano zacchiroli co-authored a paper introducing the the ultimate
+debian database [35] a collection of several data sources to scientists
+doing data mining on software repositories.
+
+   35 : http://upsilon.cc/~zack/blog/posts/2010/05/udd_-_consolidating_bazaar_metadata_for_qa_and_data_mining/
+
+
+new developers and maintainers
+------------------------------
+
+9 applicants have been accepted [36] as debian developers and 6
+applicants have been [37] accepted [38] as debian maintainer since the
+previous issue of the debian project news. please welcome deepak
+tripathi, daniel nurmi, paul gevers, thomas goirand, pino toscano, johan
+euphrosine, kanru chen, mikhail gusarov, obey arthur liu, thierry
+soloniaina randrianiriana, ritesh sarraf, tommi vainikainen, thomas
+weber, hideki yamane and serafeim zanikolas into our project!
+
+   36 : http://lists.debian.org/e1obglq-0004fc-16@merkel.debian.org
+   37 : http://lists.debian.org/e1oe0zh-0008py-vz@ries.debian.org
+   38 : http://lists.debian.org/e1odk88-0001je-3q@ries.debian.org
+
+
+release-critical bugs statistics for the upcoming release
+---------------------------------------------------------
+
+according to the unofficial rc-bugs count [39], the upcoming release,
+debian 6.0 "squeeze", is currently affected by 370 release critical
+bugs. 72 of them have already been fixed in debian's "unstable" branch.
+of the remaining 298 release critical bugs, 37 already have a patch
+(which might need testing) and 20 are marked as pending.
+
+   39 : http://bts.turmzimmer.net/details.php
+
+ignoring these bugs as well as release critical bugs for packages in
+contrib or non-free, 180 release critical bugs remain to be solved for
+the release to happen.
+
+
+
+important debian security advisories
+------------------------------------
+
+debian's security team recently released advisories for these packages
+(among others): mediawiki [40], iscsitarget [41], vlc [42], mplayer [43]
+and phpgroupware [44]. please read them carefully and take the proper
+measures.
+
+   40 : http://www.debian.org/security/2010/dsa-2041
+   41 : http://www.debian.org/security/2010/dsa-2042
+   42 : http://www.debian.org/security/2010/dsa-2043
+   43 : http://www.debian.org/security/2010/dsa-2044
+   44 : http://www.debian.org/security/2010/dsa-2046
+
+please note that these are a selection of the more important security
+advisories of the last weeks. if you need to be kept up to date about
+security advisories released by the debian security team, please
+subscribe to the security mailing list [45] for announcements.
+
+   45 : http://lists.debian.org/debian-security-announce/
+
+
+new and noteworthy packages
+---------------------------
+
+the following packages were added to the unstable debian archive
+recently (among others [46]):
+
+   46 : http://packages.debian.org/unstable/main/newpkg
+
+  * akonadiconsole -- the management and debugging console for akonadi [47]
+  * asciio -- dynamically create ascii charts and graphs with gtk+2 [48]
+  * astk -- code_aster build/control system and front-end -- tcl client [49]
+  * blogilo -- blogging client based on the kde platform [50]
+  * cantor -- interface for mathematical applications [51]
+  * chordii -- text file (chordpro format) to music sheet converter [52]
+  * chromium-browser -- chromium browser [53]
+  * cmospwd -- decrypt bios passwords from cmos [54]
+  * coffeescript -- interpreter and compiler for the coffeescript language [55]
+  * dh-autoreconf -- debhelper add-on to call autoreconf and clean up after the build [56]
+  * ditaa -- convert ascii diagrams into proper bitmap graphics [57]
+  * ecm -- prepares cd image files so they compress better [58]
+  * eiskaltdcpp -- eiskaltdc++ is graphical client for direct connect [59]
+  * emerillon -- map viewer for the gnome desktop [60]
+  * etsf-io -- binary tools to check, merge and read etsf files [61]
+  * fso-specs -- freesmartphone.org dbus xml specification & documentation [62]
+  * gnome-color-manager -- color management integration for the gnome desktop environment [63]
+  * gnome-icon-theme-extras -- gnome desktop icon theme (additional icons) [64]
+  * google-mock -- google's framework for writing and using c++ mock classes [65]
+  * granatier -- bomberman clone [66]
+  * iputils-clockdiff -- measure the time difference between networked computers [67]
+  * jbig2dec -- jbig2 decoder library - tools [68]
+  * jedit -- a plugin-based editor for programmers [69]
+  * kbluetooth -- kde bluetooth framework [70]
+  * kde-config-cddb -- kde cddb retrieval configuration [71]
+  * kde-config-cron -- program scheduler frontend [72]
+  * kde-config-phonon-xine -- advanced phonon xine configuration [73]
+  * kde-l10n-cavalencia -- southern catalan (valencian) (ca@valencia) files for kde [74]
+  * kde-l10n-eo -- esperanto (eo) localization files for kde [75]
+  * kde-l10n-id -- indonesian (id) localization files for kde [76]
+  * kde-l10n-si -- sinhala (si) localization files for kde [77]
+  * kdelibs5-plugins -- core plugins for kde applications [78]
+  * kdevelop-l10n-cavalencia -- southern catalan (valencian) (ca@valencia) files for the kdevelop ide [79]
+  * kdevelop-l10n-da -- danish (da) localization files for the kdevelop ide [80]
+  * kdevelop-l10n-de -- german (de) localization files for the kdevelop ide [81]
+  * kdevelop-l10n-engb -- british english (en_gb) localization files for the kdevelop ide [82]
+  * kdevelop-l10n-es -- spanish (es) localization files for the kdevelop ide [83]
+  * kdevelop-l10n-et -- estonian (et) localization files for the kdevelop ide [84]
+  * kdevelop-l10n-fr -- french (fr) localization files for the kdevelop ide [85]
+  * kdevelop-l10n-gl -- galician (gl) localization files for the kdevelop ide [86]
+  * kdevelop-l10n-it -- italian (it) localization files for the kdevelop ide [87]
+  * kdevelop-l10n-nds -- low saxon (nds) localization files for the kdevelop ide [88]
+  * kdevelop-l10n-ptbr -- brazilian portugese (pt_br) localization files for the kdevelop ide [89]
+  * kdevelop-l10n-pt -- portugese (pt) localization files for the kdevelop ide [90]
+  * kdevelop-l10n-sv -- swedish (sv) localization files for the kdevelop ide [91]
+  * kdevelop-l10n-tr -- turkish (tr) localization files for the kdevelop ide [92]
+  * kdevelop-l10n-uk -- ukrainian (uk) localization files for the kdevelop ide [93]
+  * kdevelop-l10n-zhcn -- chinese simplified (zh_cn) localization files for the kdevelop ide [94]
+  * kdevelop-l10n-zhtw -- chinese traditional (zh_tw) localization files for the kdevelop ide [95]
+  * kdoctools -- various tools for accessing application documentation [96]
+  * kigo -- open-source implementation of the popular go game [97]
+  * llvm-2.7 -- low-level virtual machine (llvm) [98]
+  * mailavenger -- highly configurable, mta-independent smtp filter server [99]
+  * marble-plugins -- plugins for marble [100]
+  * mongodb-clients -- an object/document-oriented database (client apps) [101]
+  * mongodb-server -- an object/document-oriented database (server package) [102]
+  * ojs -- journal management and publishing system [103]
+  * olpc-kbdshim -- olpc xo keyboard support daemon [104]
+  * olpc-powerd -- olpc xo power management support daemon [105]
+  * opticalraytracer -- a virtual lens design workshop [106]
+  * php-textile -- php parser for the textile markup [107]
+  * plasma-desktop -- the kde plasma workspace for desktop and laptop computers [108]
+  * plasma-netbook -- the kde plasma workspace for netbook computers [109]
+  * ploader -- application to upload your pictures to your piwigo gallery [110]
+  * posterazor -- splits an image into multiple sheets for assembly into a poster [111]
+  * psi-plus-icons -- icons for psi+ [112]
+  * psi-plus-skins -- skins for psi+ [113]
+  * python-django-countries -- provides a country field for django models [114]
+  * python-django-djblets -- re-usable components for django projects [115]
+  * python-django-markupfield -- custom django field for easy use of markup in text fields [116]
+  * python-flask -- micro web framework based on werkzeug, jinja2 and good intentions [117]
+  * python-nids -- python binding for libnids (aka pynids) [118]
+  * python-prctl -- python interface to the prctl() syscall [119]
+  * python-prctl -- python interface to the prctl() syscall [120]
+  * python-xklavier -- python binding for libxklavier, a x keyboard extension api [121]
+  * rabbitvcs-cli -- command line interface for rabbitvcs [122]
+  * rabbitvcs-gedit -- gedit extension for rabbitvcs [123]
+  * rabbitvcs-nautilus -- nautilus extension for rabbitvcs [124]
+  * rocs -- graph theory ide [125]
+  * shiboken -- cpython bindings generator for c++ libraries [126]
+  * skrooge -- personal finance manager for kde [127]
+  * sylph-searcher -- full-text search program for sylpheed or mh folders [128]
+  * tempest-for-eliza -- demostrate electromagnetic emissions from computer systems [129]
+  * torque-client -- command line interface to torque server [130]
+  * torque-client-x11 -- gui for torque clients [131]
+  * torque-scheduler -- scheduler part of torque [132]
+  * torque-server -- pbs-derived batch processing server [133]
+  * totem-plugin-arte -- a totem plugin to watch streams from arte.tv [134]
+  * trac-icalviewplugin -- provides icalendar feeds for ticket queries [135]
+  * vala-dbus-binding-tool -- vala binding-generator for xml introspection files [136]
+  * vowpal-wabbit -- fast and scalable online learning algorithm [137]
+  * xul-ext-monkeysphere -- iceweasel/firefox extension for using monkeysphere on the web [138]
+  * yorick-mira -- optical intreferometry image reconstruction within yorick [139]
+
+   47 : http://packages.debian.org/unstable/main/akonadiconsole
+   48 : http://packages.debian.org/unstable/main/asciio
+   49 : http://packages.debian.org/unstable/main/astk
+   50 : http://packages.debian.org/unstable/main/blogilo
+   51 : http://packages.debian.org/unstable/main/cantor
+   52 : http://packages.debian.org/unstable/main/chordii
+   53 : http://packages.debian.org/unstable/main/chromium-browser
+   54 : http://packages.debian.org/unstable/main/cmospwd
+   55 : http://packages.debian.org/unstable/main/coffeescript
+   56 : http://packages.debian.org/unstable/main/dh-autoreconf
+   57 : http://packages.debian.org/unstable/main/ditaa
+   58 : http://packages.debian.org/unstable/main/ecm
+   59 : http://packages.debian.org/unstable/main/eiskaltdcpp
+   60 : http://packages.debian.org/unstable/main/emerillon
+   61 : http://packages.debian.org/unstable/main/etsf-io
+   62 : http://packages.debian.org/unstable/main/fso-specs
+   63 : http://packages.debian.org/unstable/main/gnome-color-manager
+   64 : http://packages.debian.org/unstable/main/gnome-icon-theme-extras
+   65 : http://packages.debian.org/unstable/main/google-mock
+   66 : http://packages.debian.org/unstable/main/granatier
+   67 : http://packages.debian.org/unstable/main/iputils-clockdiff
+   68 : http://packages.debian.org/unstable/main/jbig2dec
+   69 : http://packages.debian.org/unstable/main/jedit
+   70 : http://packages.debian.org/unstable/main/kbluetooth
+   71 : http://packages.debian.org/unstable/main/kde-config-cddb
+   72 : http://packages.debian.org/unstable/main/kde-config-cron
+   73 : http://packages.debian.org/unstable/main/kde-config-phonon-xine
+   74 : http://packages.debian.org/unstable/main/kde-l10n-cavalencia
+   75 : http://packages.debian.org/unstable/main/kde-l10n-eo
+   76 : http://packages.debian.org/unstable/main/kde-l10n-id
+   77 : http://packages.debian.org/unstable/main/kde-l10n-si
+   78 : http://packages.debian.org/unstable/main/kdelibs5-plugins
+   79 : http://packages.debian.org/unstable/main/kdevelop-l10n-cavalencia
+   80 : http://packages.debian.org/unstable/main/kdevelop-l10n-da
+   81 : http://packages.debian.org/unstable/main/kdevelop-l10n-de
+   82 : http://packages.debian.org/unstable/main/kdevelop-l10n-engb
+   83 : http://packages.debian.org/unstable/main/kdevelop-l10n-es
+   84 : http://packages.debian.org/unstable/main/kdevelop-l10n-et
+   85 : http://packages.debian.org/unstable/main/kdevelop-l10n-fr
+   86 : http://packages.debian.org/unstable/main/kdevelop-l10n-gl
+   87 : http://packages.debian.org/unstable/main/kdevelop-l10n-it
+   88 : http://packages.debian.org/unstable/main/kdevelop-l10n-nds
+   89 : http://packages.debian.org/unstable/main/kdevelop-l10n-ptbr
+   90 : http://packages.debian.org/unstable/main/kdevelop-l10n-pt
+   91 : http://packages.debian.org/unstable/main/kdevelop-l10n-sv
+   92 : http://packages.debian.org/unstable/main/kdevelop-l10n-tr
+   93 : http://packages.debian.org/unstable/main/kdevelop-l10n-uk
+   94 : http://packages.debian.org/unstable/main/kdevelop-l10n-zhcn
+   95 : http://packages.debian.org/unstable/main/kdevelop-l10n-zhtw
+   96 : http://packages.debian.org/unstable/main/kdoctools
+   97 : http://packages.debian.org/unstable/main/kigo
+   98 : http://packages.debian.org/unstable/main/llvm-2.7
+   99 : http://packages.debian.org/unstable/main/mailavenger
+   100 : http://packages.debian.org/unstable/main/marble-plugins
+   101 : http://packages.debian.org/unstable/main/mongodb-clients
+   102 : http://packages.debian.org/unstable/main/mongodb-server
+   103 : http://packages.debian.org/unstable/main/ojs
+   104 : http://packages.debian.org/unstable/main/olpc-kbdshim
+   105 : http://packages.debian.org/unstable/main/olpc-powerd
+   106 : http://packages.debian.org/unstable/main/opticalraytracer
+   107 : http://packages.debian.org/unstable/main/php-textile
+   108 : http://packages.debian.org/unstable/main/plasma-desktop
+   109 : http://packages.debian.org/unstable/main/plasma-netbook
+   110 : http://packages.debian.org/unstable/main/ploader
+   111 : http://packages.debian.org/unstable/main/posterazor
+   112 : http://packages.debian.org/unstable/main/psi-plus-icons
+   113 : http://packages.debian.org/unstable/main/psi-plus-skins
+   114 : http://packages.debian.org/unstable/main/python-django-countries
+   115 : http://packages.debian.org/unstable/main/python-django-djblets
+   116 : http://packages.debian.org/unstable/main/python-django-markupfield
+   117 : http://packages.debian.org/unstable/main/python-flask
+   118 : http://packages.debian.org/unstable/main/python-nids
+   119 : http://packages.debian.org/unstable/main/python-prctl
+   120 : http://packages.debian.org/unstable/main/python-prctl
+   121 : http://packages.debian.org/unstable/main/python-xklavier
+   122 : http://packages.debian.org/unstable/main/rabbitvcs-cli
+   123 : http://packages.debian.org/unstable/main/rabbitvcs-gedit
+   124 : http://packages.debian.org/unstable/main/rabbitvcs-nautilus
+   125 : http://packages.debian.org/unstable/main/rocs
+   126 : http://packages.debian.org/unstable/main/shiboken
+   127 : http://packages.debian.org/unstable/main/skrooge
+   128 : http://packages.debian.org/unstable/main/sylph-searcher
+   129 : http://packages.debian.org/unstable/main/tempest-for-eliza
+   130 : http://packages.debian.org/unstable/main/torque-client
+   131 : http://packages.debian.org/unstable/main/torque-client-x11
+   132 : http://packages.debian.org/unstable/main/torque-scheduler
+   133 : http://packages.debian.org/unstable/main/torque-server
+   134 : http://packages.debian.org/unstable/main/totem-plugin-arte
+   135 : http://packages.debian.org/unstable/main/trac-icalviewplugin
+   136 : http://packages.debian.org/unstable/main/vala-dbus-binding-tool
+   137 : http://packages.debian.org/unstable/main/vowpal-wabbit
+   138 : http://packages.debian.org/unstable/main/xul-ext-monkeysphere
+   139 : http://packages.debian.org/unstable/main/yorick-mira
+
+work-needing packages
+---------------------
+
+currently 607 packages are orphaned and 120 packages are up for
+adoption.  please take a look at the recent [140] reports [141] to see
+if there are packages you are interested in or view the complete list of
+packages which need your help [142].
+
+   140 : http://lists.debian.org/e1ocila-0001ft-me@merkel.debian.org
+   141 : http://lists.debian.org/e1oabqp-0004lu-nq@merkel.debian.org
+   142 : http://www.debian.org/devel/wnpp/help_requested
+
+
+want to continue reading dpn?
+-----------------------------
+
+please help us create this newsletter. we still need more volunteer
+writers to watch the debian community and report about what is going on.
+please see the contributing page [143] to find out how to help. we're
+looking forward to receiving your mail at
+debian-publicity@lists.debian.org [144].
+
+   143 : http://wiki.debian.org/projectnews/howtocontribute
+   144 : mailto:debian-publicity@lists.debian.org
+
+
+
+this issue of debian project news was edited by jeremiah c. foster and
+alexander reichle-schmehl [145].
+
+   145 : mailto:debian-publicity@lists.debian.org
+
+
+-- 
+to unsubscribe, email to debian-news-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100518185336.gx3233@melusine.alphascorpii.net
+
+

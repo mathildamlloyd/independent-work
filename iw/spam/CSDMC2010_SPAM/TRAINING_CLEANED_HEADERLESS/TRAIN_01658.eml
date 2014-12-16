@@ -1,0 +1,45 @@
+boyd stephen smith jr. wrote:
+> on wednesday 19 may 2010 13:35:13 hugo vanwoerkom wrote:
+>> sven joachim wrote:
+>>> on 2010-05-19 20:00 +0200, hugo vanwoerkom wrote:
+>>>> i have my own kernel installed:
+>>>>
+>>>> hugo@debian:~/.fvwm$ dpkg -l | grep linux-image
+>>>> ii  linux-image-2.6.33.3-hvw             1       linux kernel binary
+>>>> image for version 2.6.33.3-hvw
+>>>> ii  linux-image-2.6.33.4-hvw             1       linux kernel binary
+>>>> image for version 2.6.33.4-hvw
+>>>>
+>>>> no headers and no other debian images.
+>>>>
+>>>> when i do a apt-get dist-upgrade though i see:
+>>>>
+>>>> the following new packages will be installed:
+>>>> ...linux-image-2.6-486 linux-image-2.6.32-5-486...
+>>> do you have mindi installed?  otherwise i cannot see a package in
+>>> sid/experimental that would pull in linux-image-2.6-486.
+>> bingo. it's mindi. the funny thing is i install mondo(with mindi) from
+>> upstream because its support on debian has fallen by the wayside:
+>> current is 2.2.9.3-1 and debian still has 1:2.2.7-2.1.
+> 
+> two patch levels (2.2.9 vs. 2.2.7) is fallen by the wayside?  really?  it 
+> looks like some of those changes even got integrated into the package -- there 
+> was an nmu for it (debian revision 2.1).
+> 
+> depending on the scope of patch level changes on this project (x.y.z -> x = 
+> major, y = minor, z = patch level), i don't think missing a few is a big deal.
+
+  -- rogrio brito   sat, 29 aug 2009 03:45:43 -0300
+is the last debian update from upstream.
+2.2.9.3-1 was announced april 16, 2010, which i use. that is 7.5 months 
+without activity. depending on what the change is from 2.2.7 to 2.2.9 
+that might be a big deal.
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/ht444f$gl5$1@dough.gmane.org
+
+

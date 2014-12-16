@@ -1,0 +1,56 @@
+on thu, may 13, 2010 at 06:49:35pm +0300, jason filippou wrote:
+> hi,
+> 
+> i've been trying to set my path and classpath environment variables so that
+> they point to my jdk's bin and some java source files respectively and this
+> is what i've written in my .profile file:
+> 
+> # path should also include the latest jdk "bin" directory
+> path="/usr/lib/jvm/java-6-sun-1.6.0.20/bin:$path"
+> 
+>  # set the classpath variable to include anything i do with java
+>  classpath="/home/jason/code/java:$classpath"
+> 
+> yet i don't seem to have much luck, since "echoing" both environment
+> variables gives me the old value of path for path and nothing for classpath:
+> 
+> jason@debian:~$ echo $path
+> /usr/lib/eclipse6.0/bin/i386_linux:/home/jason/bin:/usr/local/bin:/usr/bin:/bin:/usr/games
+> jason@debian:~$ echo $classpath
+> 
+> jason@debian:~$
+> 
+> this is strange, especially for path, because earlier in my .profile i've
+> written:
+> 
+> # set path so it includes the eclipse bin directory
+>   path="/usr/lib/eclipse6.0/bin/i386_linux:$path"
+> 
+> and if you notice the output produced by "echo", this directory is well
+> under the scope of path.
+
+perhaps the eclipse directory is added to path elsewhere (eg, in 
+.profile in your home directory) or there is a separate "export" line 
+in /etc/profile.
+
+> 
+> what am i doing wrong? do i need to "export" something?
+
+certainly.  
+
+export path=...
+export classpath=...
+
+> 
+> thanks.
+
+cheers,
+david
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100513201922.ga1830@gennes.augarten
+
+

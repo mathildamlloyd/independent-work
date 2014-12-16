@@ -1,0 +1,51 @@
+> on wed, 24 jul 2002, patrick wrote:
+> >on wed, 24 jul 2002, rodbegbie wrote:
+> >
+> > >rodbegbie wrote:
+> > > >i get the impression that vipul & co are deliberately trying to
+> > > >mislead users into downloading the dev code in order to get more
+> > > >unwitting test sites.
+> >
+> > >apologies to all.  in re-reading, that sentence sounds a lot harsher
+than i
+> > >intended.
+> >
+> >the question i have is: what needs to be done/help needs to be provided
+to
+> >make the system suck less? it's obviously a great idea, it just needs
+some
+> >work...
+
+that's simple.  the same thing that any beta project needs to improve.
+continuous
+end-user testing, constructive feedback, and suggestions on how to improve
+the
+system.  upgrade each time a new beta version comes out, so everyone is
+testing
+on the same version of the code, and old bugs don't get reported as being in
+the
+new version, thus slowing down the debugging process.
+
+report any installation issues, bugs, errors, etc., to the v2 beta list
+(http://lists.sourceforge.net/lists/listinfo/razor-testers) so that they can
+be quickly
+looked at, etc.  provide detailed description of issues, include logs if
+possible,
+as well as any "captured" spam that generated the error(s).
+
+
+thank you, please drive through,
+- aa -
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+razor-users mailing list
+razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

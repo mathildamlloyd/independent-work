@@ -1,0 +1,78 @@
+http://www.hughes-family.org/bugzilla/show_bug.cgi?id=1046
+
+
+
+
+
+------- additional comments from spamassassin-contrib@msquadrat.de  2002-10-03 13:57 -------
+> i've thought about this and pm_filter needs to die. i've now tried  
+> multiple ways to make it just transparently work on 5.00503 and failed.  
+> if anyone has any bright ideas please jump in. 
+>  
+> you see anyone upgrading from the cpan shell will get a failure on the line: 
+>  
+>    use extutils::makemaker 5.45; 
+ 
+quite some modules from cpan do have a line like this nowadays (i think or 
+read so somewhere, respectively). and the perl error message is very clear: 
+"extutils::makemaker version 5.45 required--this is only version 5.4302 at 
+makefile.pl line 2." 
+ 
+> because it never gets chance to reach a "writemakefile" line with a  
+> prereq_pm => { extutils::makemaker => 5.45 } option. so the cpan shell  
+> can't automatically upgrade this module. i cannot think of any way  
+> around this. 
+ 
+i could think of a solution: we could remove the "use" line and add the 
+version to prereq_pm. after writemakefile() we could add the lines 
+  require extutils::makemaker; 
+  extutils::makemaker->version(5.45); 
+to do per hand what 'use extutils::makemaker 5.45' does automagically; `perl 
+makefile.pl` will die with a "uncaught exception from user code: 
+extutils::makemaker version 5.45 required--this is only version 5.4302 at 
+makefile.pl line 103." there but we've got a makefile. but i don't know if 
+cpan will run the make anyway... 
+ 
+> to add insult to injury, the pm_filter part gets run during pm_to_blib,  
+> which would be fine, except extutils::makemaker doesn't let you write a  
+> my::pm_to_blib - it's non-overridable! so even though we could  
+> potentially copy the 5.45 extutils::install::pm_to_blib code somewhere  
+> into the spamassassin codebase (i tried that first), we can't cause the  
+> makefile to call our code :-( 
+ 
+we could call the preprocessor on install time. that's not a very clean 
+approach but could work. 
+ 
+we can also overwrite pm_to_blib in the makefile directly per postamble. we 
+already have a useless line "pm_to_blib: spamassassin doc/.made" there. adding 
+some commands in this section gives some make warnings ("makefile:933: 
+warning: overriding commands for target `pm_to_blib' makefile:877: warning: 
+ignoring old commands for target `pm_to_blib'") but does work. not a very good 
+solution either. 
+ 
+> so i'm *strongly* against the current use of extutils::makemaker 5.45  
+> usage (if this were an apache project this would be my veto vote), and  
+> really hope we can find another way. 
+ 
+the "use makemaker::..." error message is imho quite clear, so i think it's ok 
+to require the user to do a manual update of extutils::makemaker before the sa 
+installation. but that's just my opinion ;-) 
+ 
+i'll ask on makemaker@perl.org for the best solution. they should know. 
+
+
+
+------- you are receiving this mail because: -------
+you are on the cc list for the bug, or are watching someone who is.
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+spamassassin-devel mailing list
+spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

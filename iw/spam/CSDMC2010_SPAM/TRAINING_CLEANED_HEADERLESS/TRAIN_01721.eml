@@ -1,0 +1,28 @@
+on 05/18/2010 04:50 am, alan chandler wrote:
+> on 18/05/10 06:03, ron johnson wrote:
+>
+>> hmmm. just occurred to me that maybe i don't have fam installed. 
+>> yup, not installed. gamin 0.1.10-2+b1 is, though.
+>>
+>
+>
+> bingo
+>
+> libfam0 had been installed automatically by courier-imap and/or
+> courier-base
+>
+> i manually switched over the libgamin0 and the problem has gone away.
+>
+
+you should add that work-around to the bug report...
+
+-- 
+dissent is patriotic, remember?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bf2703e.5030802@cox.net
+
+

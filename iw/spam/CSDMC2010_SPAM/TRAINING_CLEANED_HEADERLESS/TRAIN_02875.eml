@@ -1,0 +1,28 @@
+there have been a number of releases since march 2009 so i'd like to =
+know if the information on that page regarding the possible values of =
+"jvmversion" is still relevant:
+
+=
+http://developer.apple.com/mac/library/documentation/java/reference/java_i=
+nfoplistref/articles/javadictionaryinfo.plistkeys.html
+
+especially the part where it is written that the "1.n*" values are not =
+recommended.
+
+thanks in advance.
+
+
+jean-christophe helary
+----------------------------------------
+fun: http://mac4translators.blogspot.com
+work: http://www.doublet.jp (ja/en > fr)
+tweets: http://twitter.com/brandelune
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

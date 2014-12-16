@@ -1,0 +1,96 @@
+hi, i'm trying to build sa under digital unix 4.0f and am receiving a
+compile error (and many warnings) for spamc.  the "perl makefile.pl"
+does ok, but when i do the make, i get this:
+
+cc -std -fprm d -ieee -d_intrinsics -i/usr/local/include -dlanguage_c
+-o4 spamd
+/spamc.c  -o spamd/spamc -l/usr/local/lib -lbind -ldbm -ldb -lm -liconv
+-lutil
+cc: error: spamd/spamc.c, line 50: in this declaration, "in_addr_t" has
+no linkage and has a prior declaration in this scope at line number 592 in file
+/usr/include/sys/types.h. (nolinkage)
+typedef unsigned long   in_addr_t;      /* base type for internet
+address */
+------------------------^
+cc: warning: spamd/spamc.c, line 169: in this statement, the referenced
+type of
+the pointer value "msg_buf" is "char", which is not compatible with
+"unsigned char". (ptrmismatch)
+  if((bytes = full_read (in, msg_buf, max_size+1024, max_size+1024)) >
+max_size)
+-----------------------------^
+cc: warning: spamd/spamc.c, line 174: in this statement, the referenced
+type of
+the pointer value "header_buf" is "char", which is not compatible with
+"const unsigned char". (ptrmismatch)
+    full_write (out,header_buf,bytes2);
+--------------------^
+cc: warning: spamd/spamc.c, line 202: in this statement, the referenced
+type of
+the pointer value "header_buf" is "char", which is not compatible with
+"const unsigned char". (ptrmismatch)
+    full_write (out,header_buf,bytes2);
+--------------------^
+cc: warning: spamd/spamc.c, line 203: in this statement, the referenced
+type of the pointer value "msg_buf" is "char", which is not compatible
+with "const unsigned char". (ptrmismatch)
+    full_write (out,msg_buf,bytes);
+--------------------^
+cc: warning: spamd/spamc.c, line 306: in this statement, the referenced
+type of the pointer value "buf" is "char", which is not compatible with
+"unsigned char".
+ (ptrmismatch)
+          if(full_read (in,buf,2,2) != 2 || !('\r' == buf[0] && '\n' ==
+buf[1]))
+---------------------------^
+cc: warning: spamd/spamc.c, line 321: in this statement, the referenced
+type of
+the pointer value "buf" is "char", which is not compatible with
+"unsigned char".
+ (ptrmismatch)
+    while((bytes=full_read (in,buf,8192, 8192)) > 0)
+-------------------------------^
+cc: warning: spamd/spamc.c, line 348: in this statement, the referenced
+type of
+the pointer value "out_buf" is "char", which is not compatible with
+"const unsigned char". (ptrmismatch)
+      full_write (out, out_buf, out_index);
+-----------------------^
+cc: warning: spamd/spamc.c, line 497: in this statement, the referenced
+type of
+the pointer value "msg_buf" is "char", which is not compatible with
+"const unsigned char". (ptrmismatch)
+      full_write (stdout_fileno,msg_buf,amount_read);
+--------------------------------^
+cc: warning: spamd/spamc.c, line 512: in this statement, the referenced
+type of
+the pointer value "msg_buf" is "char", which is not compatible with
+"const unsigned char". (ptrmismatch)
+      full_write(stdout_fileno,msg_buf,amount_read);
+-------------------------------^
+*** exit 1
+stop.
+
+can anyone suggest a way to get around this?   tia...
+
+jim
+*-------------------------------------------------------------------------*
+* james h. mccullars                 i phone: (256) 824-2610              *
+* director of systems & operations   i fax:   (256) 824-6643              *
+* computer & network services        i internet: mccullj@email.uah.edu    *
+* the university of alabama          i -----------------------------------*
+*    in huntsville                   i                                    *
+* huntsville, al 35899               i this space for rent - cheap!       *
+*-------------------------------------------------------------------------*
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: jabber - the world's fastest growing 
+real-time communications platform! don't just im. build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

@@ -1,0 +1,19 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on fri,07.may.10, 15:49:27, ron johnson wrote:
+
+> >i just set up getmail do do this.
+> >that seemed a lot simpler than fetchmail withh the certificates.
+>=20
+> maybe the certificates are already somewhere in /usr/share?
+
+iiuc getmail doesn't check the certificates.
+
+regards,
+andrei
+--=20
+offtopic discussions among debian users and developers:
+http://lists.alioth.debian.org/mailman/listinfo/d-community-offtopic

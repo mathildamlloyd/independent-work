@@ -1,0 +1,44 @@
+None> i recently had to wipe linux from my pc but forgot to restore the original
+> MBR (NT). Anyone know how i can do this? linux is entirely gone and no boot
+> floppy. formatting the entire disk doesn't do it either.
+
+The easy way is just to install whatever Microsoft or whatever OS you
+have in mind:  It should overwrite the MBR.  Indeed, the problem is
+usually _preventing_ this from happening, as Microsoft Corporation's
+installers seem to forever be overwriting your MBRs when you least wish
+it, without asking your permission.
+
+-- 
+Cheers,               "We're sorry; you have reached an imaginary number.
+Rick Moen             Please rotate your 'phone ninety degrees and try again."
+rick@linuxmafia.com
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+re: [ilug] removing liloquoting jac1 (jac1@student.cs.ucc.ie):
+
+> i recently had to wipe linux from my pc but forgot to restore the original
+> mbr (nt). anyone know how i can do this? linux is entirely gone and no boot
+> floppy. formatting the entire disk doesn't do it either.
+
+the easy way is just to install whatever microsoft or whatever os you
+have in mind:  it should overwrite the mbr.  indeed, the problem is
+usually _preventing_ this from happening, as microsoft corporation's
+installers seem to forever be overwriting your mbrs when you least wish
+it, without asking your permission.
+
+-- 
+cheers,               "we're sorry; you have reached an imaginary number.
+rick moen             please rotate your 'phone ninety degrees and try again."
+rick@linuxmafia.com
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

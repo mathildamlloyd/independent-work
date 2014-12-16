@@ -1,0 +1,28 @@
+1st of all, thanks everyone that responded. 
+
+on fri, 09 apr 2010 16:16:57 +0200, wolodja wentland wrote:
+
+> check http://wiki.debian.org/wifi/howtouse
+> 
+> i am particularly fond of wpa_supplicant in roaming mode [1] but you
+> might want to take a look at wicd or network-mangler as well.
+
+i've read many good words about wicd, an am planning to go for it. 
+
+just to be 100% sure, with wpa_supplicant (from the wpasupplicant 
+package) in roaming mode, one doesn't necessarily need wicd, correct?
+
+thanks
+
+-- 
+tong (remove underscore(s) to reply)
+  http://xpt.sourceforge.net/techdocs/
+  http://xpt.sourceforge.net/tools/
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hpnfir$gon$1@dough.gmane.org
+
+

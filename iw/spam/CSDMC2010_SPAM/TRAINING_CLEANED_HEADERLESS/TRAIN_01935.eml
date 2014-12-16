@@ -1,0 +1,54 @@
+-----begin pgp signed message-----
+hash: sha1
+
+on thursday 06 may 2010, mike bird was heard to say:
+> debian is the sole remaining major
+> distro that cared enough for its users to ship kde 3.5.
+
+when lenny was released, kde4 was just plain broken. since then, it 
+has matured such that other distributions which have released with 
+it.
+
+i do not believe the decision to stay with kde3 in lenny was anything 
+other than the simple pragmatic fact that lenny was being released at 
+that time.
+
+> i guess this discussion is about trying to figure
+> out what kde end users can do when debian pulls the plug on us.
+
+as much as i prefer kde3, i agree that there is nothing else the 
+debian developers can do, since to take up kde3 would require 
+effectively duplicating the entire kde development team.
+
+the dropping of kde3 is a simple fact of life because it is no longer 
+maintained upstream. i hope the pain will be worth it in the long 
+run.
+
+what i do not appreciate is that the attitude has been not "we have to 
+do this", but "we're doing it, must suck to be you."
+
+curt-
+
+
+- -- 
+those who torment us for our own good will torment us without end,
+for they do so with the approval of their consciences.
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+
+iqevawubs+nb3s9y35yitigbaqlhgqf/xf1hbacgc/bxpdjv2yrsj/poo+b6w/gj
+zpvbojx6zlmr98zecphpdzlbrmykffmsbxhrfsf43x/b3pvqxegerfvdbkcvqh+/
+lxrczyaxdbcyhcgds6ntmw2zbsxra4xnngew5feqpoazi73ktu7thq0kocz4fepi
+a7y3h/ssgxuwxmwleq4ij8ivkkg4ajnw460j11vcesxueh9xyf1knkzxpquc0fzu
+2uysjbqvrrhxo+be1desnkdtuxjtwtskxrex8juyes38y1ikrxmops2whxryztwo
+votpsgs3xpzgcxy1i4snvffwa4rtk42v5xenuggfd9yh8oghjjl4+q==
+=8pv7
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201005062016.34977.howland@priss.com
+
+

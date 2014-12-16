@@ -1,0 +1,43 @@
+From nobody Tue Dec 16 09:15:47 2014
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+> On Thu, Apr 15, 2010 at 23:27:41 +0200, Sjoerd Hardeman wrote:
+>=20
+> [...]
+>=20
+>> Hal is certainly no longer working, see #567389. Yet, udev now also
+>> stopped working...
+>=20
+> OK, I think I understand a little bit better how this is supposed to be=
+
+> working now. Try to add your touchpad options to the InputClass section=
+
+> of the file /usr/lib/X11/xorg.conf.d/10-synaptics.conf as a first test.=
+
+>=20
+> [...]
+>=20
+> I am curious to hear if this actually works because I cannot try it
+> myself. (My up-to-date Sid desktop does not have a touchpad.)
+Hi Florian,
+
+The new xorg version migrated to testing today, and indeed contains the
+file /usr/share/X11/xorg.conf.d/50-synaptics.conf. Setting the options
+there enabled my special touchpad-tricks again. Thanks!
+
+Sjoerd
+
+From nobody Tue Dec 16 09:15:47 2014
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.14 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org/
+
+iEYEARECAAYFAkvcCncACgkQHKEdNPY5OOXYbACfSoNK0gQJMjwRRCBcaQ8YzzM0
+BmkAn3uAxG60tIH9awXte62N+CYigrtb
+=Tj3B
+-----END PGP SIGNATURE-----

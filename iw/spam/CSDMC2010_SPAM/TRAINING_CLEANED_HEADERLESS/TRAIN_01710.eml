@@ -1,0 +1,31 @@
+peter tenenbaum  writes:
+
+> first, i intend to build a home computer which will run linux, and
+> it will be 64-bit; since i'm quite new to maintaining my own linux
+> computers, i'd rather limit the number of differences between the
+> home machine and my portable.
+
+hi pt,
+
+in regards to debian, don't let this be a discriminator.
+
+if you had a 64-bit and 32-bit system, it would only mean that you'd
+have to burn two installation cds. once those cds were installed, your
+installations would be mostly indistinguishable. after the initial
+install, debian grabs the right bits for your system.
+
+when i switched from 32-bit to 64-bit, the only difference i saw
+besides a different installation image was a different kernel.
+
+-- 
+bill wohler  aka 
+http://www.newt.com/wohler/
+gnupg id:610bd9ad
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/871vdgqt4k.fsf@olgas.newt.com
+
+

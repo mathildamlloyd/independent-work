@@ -1,0 +1,91 @@
+NoneOn Wed, Feb 06, 2002 at 04:29:53PM +0200, Peter Peltonen wrote:
+> Two issues:
+>=20
+> --<snip>--
+> Sorry, but the following packages have unmet dependencies:
+>   openssh: Depends: openssl (=3D 0.9.5a) but 0.9.6b-8 is installed
+>   php-pgsql: Depends: postgresql but it is not installed
+>              Depends: libpq.so.2
+> E: Unmet dependencies. Try using -f.
+> --</snip>--
+>=20
+> 1. I have the following openssl packages installed:
+>=20
+> --<snip>--
+> openssl-perl-0.9.6b-8
+> openssl-0.9.6b-8
+> openssl095a-0.9.5a-11
+> openssl-devel-0.9.6b-8
+> --</snip>--
+>=20
+> The openssl095a package should provide the openssl-0.9.5a compatibility=
+=20
+> but apt doesn't think so?=20
+
+I believe that's just a matter of string parsing. If someone were to fix
+the openssh package, removing the explicit Requires:, I believe the
+automagic binary handler would figure the right libraries to use and
+install. I haven't met an openssh like that and in worst case I've had 3
+different openssl libraries (WTF can't they just bump a major version if
+it's incompatible?!?).
+
+> 2. I have postgresql installed from the source. So that's why I need=20
+> php-pgsql. Is there a way to tell apt about packages I don't want it to=
+=20
+> complain about?
+
+I have a few such things (with jdk, imlib, kernel DRI version..
+something) and Ive just made dummy packages (with verbose warning
+attached ;) that explicitly provide those capabilities. (or claim to,
+that is).
+
+--=20
+If you only want to go 500 miles, can you begin with a halfstep?
+re: apt problemsfrom nobody tue dec 16 07:55:46 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on wed, feb 06, 2002 at 04:29:53pm +0200, peter peltonen wrote:
+> two issues:
+>=20
+> ----
+> sorry, but the following packages have unmet dependencies:
+>   openssh: depends: openssl (=3d 0.9.5a) but 0.9.6b-8 is installed
+>   php-pgsql: depends: postgresql but it is not installed
+>              depends: libpq.so.2
+> e: unmet dependencies. try using -f.
+> ----
+>=20
+> 1. i have the following openssl packages installed:
+>=20
+> ----
+> openssl-perl-0.9.6b-8
+> openssl-0.9.6b-8
+> openssl095a-0.9.5a-11
+> openssl-devel-0.9.6b-8
+> ----
+>=20
+> the openssl095a package should provide the openssl-0.9.5a compatibility=
+=20
+> but apt doesn't think so?=20
+
+i believe that's just a matter of string parsing. if someone were to fix
+the openssh package, removing the explicit requires:, i believe the
+automagic binary handler would figure the right libraries to use and
+install. i haven't met an openssh like that and in worst case i've had 3
+different openssl libraries (wtf can't they just bump a major version if
+it's incompatible?!?).
+
+> 2. i have postgresql installed from the source. so that's why i need=20
+> php-pgsql. is there a way to tell apt about packages i don't want it to=
+=20
+> complain about?
+
+i have a few such things (with jdk, imlib, kernel dri version..
+something) and ive just made dummy packages (with verbose warning
+attached ;) that explicitly provide those capabilities. (or claim to,
+that is).
+
+--=20
+if you only want to go 500 miles, can you begin with a halfstep?

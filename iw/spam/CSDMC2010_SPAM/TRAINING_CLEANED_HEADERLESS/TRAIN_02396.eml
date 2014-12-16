@@ -1,0 +1,37 @@
+sune vuorela wrote:
+
+> on 2010-04-25, lrhorer  wrote:
+>>         first of all, akonadi will not run, but i also can't seem to
+>>         get rid of
+>> it.  is there a way to keep kde, yet get rid of akonadi?  if not,
+>> i'll post the logs and backtraces.
+> 
+> no. there is no way to keep all of kde and get rid of akonadi. it is a
+> essential part of kdepim.
+
+        i don't particularly want pim, either.  kpackage, iceweasel, ksensors,
+nut, wine, and wireshark are all i really care about.  only ksensors
+and kpackage require kde.  you say, "no way to keep all of kde..".  i
+don't care about all of kde.  i only want kdm and the utilities i
+listed above, plus of course the terminal servers.
+
+>>         secondly, kpackage is badly broken.  it only shows a handful
+>>         of
+>> applications installed or available.  synaptic or aptitude show
+>> thousands available and hundreds installed, of course.  what's more,
+>> i no longer see how one can manage the sources in the new kde4
+>> kpackage.
+> 
+> kpackage is being removed very soon and is already gone in
+> experimental.
+
+        that's really bad news.  without kpackage, there really isn't much
+reason to run kde.
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/r72dnstskbqww0hwnz2dnuvz_qkaaaaa@giganews.com
+
+

@@ -1,0 +1,222 @@
+NoneSMTP-Error 451 while using smarthost for mail deliveryHello alltogether
+
+Currently I am trying to set up a Debian Lenny Server, but I am stuck at
+mail delivery. The server I am trying to set up, has no FQDN, so I used
+my ISP-Mailserver as a smarthost (I enabled the proper SMTP
+authentication in exim4).
+This setup worked a few days, before I suddenly received 451 errors.
+At first I thought it to be a problem with Exim4, so I switched to
+postfix. But postfix also gives me the 451 error:
+
+Apr 22 15:53:31 openshoolproxy postfix/smtp[24368]: 413CF26EF9:
+to=<webservice@b1online.de>, orig_to=<root@openshoolproxy>,
+relay=smtp.strato.com[81.169.145.132]:25, delay=2137,
+delays=2136/0.05/0.33/0.12, dsn=4.0.0, status=deferred (host
+smtp.strato.com[81.169.145.132] said: 451 Local Error (in reply to end
+of DATA command))
+
+To further troubleshoot my problem I used telnet to connect to
+smtp.strato.com and to send a mail manually.
+
+This is what I did:
+
+telnet smtp.strato.de 25
+Trying 81.169.145.133...
+Connected to smtp.strato.de.
+Escape character is '^]'.
+220 smtp.passthru
+EHLO openshoolproxy
+250-smtp.passthru
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DELIVERBY
+250-SIZE 104857600
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 HELP
+AUTH LOGIN
+334 VXNlcm5hbWU6
+d2Vic2VydmljZUBiMW9ubGluZS5kZQ==
+334 UGFzc3dvcmQ6
+xxxxMYPASSWORD_IN_BASE64xxxx
+235 2.0.0 OK Authenticated
+mail from: webservice@b1online.de
+250 2.1.0 <webservice@b1online.de> Sender ok
+rcpt to: benedikt@b1online.de
+250 2.1.5 <benedikt@b1online.de> Recipient ok
+DATA
+354 Start mail input; end with <CRLF>.<CRLF>
+test
+.
+451 Local Error
+
+
+
+
+Very odd. After this fail I tried the same procedure from my arch linux
+box at home. It succeeded:
+
+
+
+
+telnet smtp.strato.com 25
+Trying 81.169.145.132...
+Connected to smtp.strato.com.
+Escape character is '^]'.
+220 post.strato.de [fruni mo3] ESMTP RZmta 23.0 ready; Thu, 22 Apr 2010
+15:55:55 +0200 (MEST)
+EHLO openshoolproxy
+250-post.strato.de [fruni mo3] greets 79.230.91.82
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-PIPELINING
+250-DELIVERBY
+250-SIZE 104857600
+250-AUTH PLAIN LOGIN CRAM-MD5
+250-STARTTLS
+250 HELP
+AUTH LOGIN
+334 VXNlcm5hbWU6
+d2Vic2VydmljZUBiMW9ubGluZS5kZQ==
+334 UGFzc3dvcmQ6
+xxxxMYPASSWORD_IN_BASE64xxxx
+235 2.0.0 OK Authenticated
+mail from: webservice@b1online.de
+250 2.1.0 <webservice@b1online.de> Sender ok
+rcpt to: benedikt@b1online.de
+250 2.1.5 <benedikt@b1online.de> Recipient ok
+DATA
+354 Enter data for mail with id g0718am3MD7AJw
+test mich
+.
+250 queued as g0718am3MD7AJw
+
+
+This looks very strange to me. Independently from my mailserver the
+telnet command should have succeeded on both machines. But it failed on
+my debian box. What could be wrong? Is this a problem of my setup, or is
+my ISP blocking something?
+
+Thanks in advance
+
+Benedikt
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/1271946001.11753.18.camel@localhost.localdomain
+
+
+smtp-error 451 while using smarthost for mail deliveryhello alltogether
+
+currently i am trying to set up a debian lenny server, but i am stuck at
+mail delivery. the server i am trying to set up, has no fqdn, so i used
+my isp-mailserver as a smarthost (i enabled the proper smtp
+authentication in exim4).
+this setup worked a few days, before i suddenly received 451 errors.
+at first i thought it to be a problem with exim4, so i switched to
+postfix. but postfix also gives me the 451 error:
+
+apr 22 15:53:31 openshoolproxy postfix/smtp[24368]: 413cf26ef9:
+to=, orig_to=,
+relay=smtp.strato.com[81.169.145.132]:25, delay=2137,
+delays=2136/0.05/0.33/0.12, dsn=4.0.0, status=deferred (host
+smtp.strato.com[81.169.145.132] said: 451 local error (in reply to end
+of data command))
+
+to further troubleshoot my problem i used telnet to connect to
+smtp.strato.com and to send a mail manually.
+
+this is what i did:
+
+telnet smtp.strato.de 25
+trying 81.169.145.133...
+connected to smtp.strato.de.
+escape character is '^]'.
+220 smtp.passthru
+ehlo openshoolproxy
+250-smtp.passthru
+250-enhancedstatuscodes
+250-8bitmime
+250-deliverby
+250-size 104857600
+250-auth plain login cram-md5
+250 help
+auth login
+334 vxnlcm5hbwu6
+d2vic2vydmljzubimw9ubgluzs5kzq==
+334 ugfzc3dvcmq6
+xxxxmypassword_in_base64xxxx
+235 2.0.0 ok authenticated
+mail from: webservice@b1online.de
+250 2.1.0  sender ok
+rcpt to: benedikt@b1online.de
+250 2.1.5  recipient ok
+data
+354 start mail input; end with .
+test
+.
+451 local error
+
+
+
+
+very odd. after this fail i tried the same procedure from my arch linux
+box at home. it succeeded:
+
+
+
+
+telnet smtp.strato.com 25
+trying 81.169.145.132...
+connected to smtp.strato.com.
+escape character is '^]'.
+220 post.strato.de [fruni mo3] esmtp rzmta 23.0 ready; thu, 22 apr 2010
+15:55:55 +0200 (mest)
+ehlo openshoolproxy
+250-post.strato.de [fruni mo3] greets 79.230.91.82
+250-enhancedstatuscodes
+250-8bitmime
+250-pipelining
+250-deliverby
+250-size 104857600
+250-auth plain login cram-md5
+250-starttls
+250 help
+auth login
+334 vxnlcm5hbwu6
+d2vic2vydmljzubimw9ubgluzs5kzq==
+334 ugfzc3dvcmq6
+xxxxmypassword_in_base64xxxx
+235 2.0.0 ok authenticated
+mail from: webservice@b1online.de
+250 2.1.0  sender ok
+rcpt to: benedikt@b1online.de
+250 2.1.5  recipient ok
+data
+354 enter data for mail with id g0718am3md7ajw
+test mich
+.
+250 queued as g0718am3md7ajw
+
+
+this looks very strange to me. independently from my mailserver the
+telnet command should have succeeded on both machines. but it failed on
+my debian box. what could be wrong? is this a problem of my setup, or is
+my isp blocking something?
+
+thanks in advance
+
+benedikt
+
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/1271946001.11753.18.camel@localhost.localdomain
+
+

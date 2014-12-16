@@ -1,0 +1,36 @@
+please try starting x11.app first.  =46rom the console:
+
+open -a x11
+(wait a few seconds for it to appear in the dock as launched)
+./helloworld
+
+does that work as expected?
+
+
+on apr 16, 2010, at 16:12, schindler karl-michael wrote:
+
+> hi
+>=20
+> am 17.04.2010 um 00:42 schrieb jeremy huddleston:
+>=20
+>> are you running your application while x11 is already running (launch =
+x11.app but don't start an xterm), or are you using it to launch x11 =
+(from terminal.app using the launchd $display socket)?
+>=20
+>=20
+> i start the fpgui program (helloworld) from terminal.app with the =
+terminal command "./helloworld". this starts x11.app but without an =
+xterm window or any other window and helloworld gets the error. the same =
+if x11 is already started. if another x11 program, for example xterm or =
+something else, is running, helloworld gets its windows and all seems =
+fine.
+>=20
+> michael.
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+x11-users mailing list      (x11-users@lists.apple.com)
+help/unsubscribe/update your subscription: http://lists.apple.com/mailman/options/x11-users/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

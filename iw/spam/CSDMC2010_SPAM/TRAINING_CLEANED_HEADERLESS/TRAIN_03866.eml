@@ -1,0 +1,25 @@
+on sun, 02 may 2010 18:08:23 -0400, mark neidorff wrote:
+
+> i'm running updated lenny.  i just got a droid phone and wanted to mount
+> it on my lenny box.  so, i plugged the usb cable into the droid and the
+> computer. i expected to see an sd? device show up with partitions (like
+> sdb1, sdb2, etc.) but they don't show up.  my primary hd shows up as
+> sda1-7.  there are entries for sdb,c,d,e and sdf, but no partitions to
+> mount.
+> 
+> what do i have to do to mount the droid under lenny?
+
+after connecting the phone, type "dmesg" to see what is going on.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.03.05.51.48@csmining.org
+
+

@@ -1,0 +1,52 @@
+on tue, 20 apr 2010 01:16:23 +0700, sthu deus wrote:
+
+> thank you for your time and answer, camalen:
+> 
+>>as ron already said, review your system specs.
+>>
+>>ooo needs a lot of ram the first time it opens, and keeps consuming a
+>>good quantity of your system resources as long as is loaded.
+> 
+> wow! what a product!
+
+life is hard :-)
+ 
+>>in ooo 2.4 there is a "quick launch" option that preloads ooo at
+>>startup, not sure if that is available on newer releases.
+> 
+> how i can use the 2.4 version in the future releases?! - compile myself?
+> or there are some repos for debian that make peoples life not as bad as
+> ms' ?!
+>
+> or how i can make w/o c++ programming save the 2.4 version for ever?
+> please do not suppose i'm foolish - just want still comfortable working
+> for years...
+
+if ooo does not offer such feature anymore, you can get "preload" which 
+is... humm, a "preloader" daemon ;-)
+
+>>another thing you can try is launching ooo with an empty profile folder
+>>(just rename the current one) to start it from scratch and check if the
+>>delay still continues.
+> 
+> sorry, i do not understand "empty profile folder"...
+
+openoffice saves the user settings under "~/.openoffice.org2" (or a 
+similar path). just try by renaming the current folder and start ooo (it 
+will recreate an empty and new one) to check if you note any speed 
+improvement.
+
+ http://packages.debian.org/stable/misc/preload
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.19.18.58.20@csmining.org
+
+

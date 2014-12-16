@@ -1,0 +1,27 @@
+once upon a time, jesse wrote :
+
+> oh yeah, i was following this thread in the sylpheed-claws list.  very
+> interesting stuff.  i might have to stick w/ 0.8.2 until aspell gets
+> updated in red hat.
+
+then this may be 6 months or more since my guess after 3 beta releases is
+that the freeze on package versions for inclusion in the next stable
+release (n+1) has already happened, thus you'll have to wait at least for
+red hat linux... n+2 :-)
+
+this is why (if it doesn't break anything), i'll maybe release recent
+aspell packages. but to be sure i'll need to do some testing ;-)
+
+matthias
+
+-- 
+matthias saou                                world trade center
+-------------                                edificio norte 4 planta
+system and network engineer                  08039 barcelona, spain
+electronic group interactive                 phone : +34 936 00 23 23
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

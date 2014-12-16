@@ -1,0 +1,44 @@
+tabor j. wells wrote:
+> and where does it say production-ready? http://razor.sourceforge.net
+> says at the top of the page:
+>
+> june 13, 2002 - vipul's razor v2 released! the first beta of vipul's
+> razor v2 is now available for public download.
+
+1)  i think the code is still very much pre-beta.
+
+2)  when you go to the "download" page, it tells you "fetch the latest
+versions of razor-agents and razor-agents-sdk packages"  it is not at all
+clear that these are development packages.
+
+the site is badly designed, and very misleading.  imo.  the fact that the
+word "beta" appears in the middle of some introductory text on the front
+page is hardly a valid argument.  (well accepted software design "fact":
+users don't read *anything*)
+
+i get the impression that vipul & co are deliberately trying to mislead
+users into downloading the dev code in order to get more unwitting test
+sites.
+
+but that's just my opinion, i could be wrong.
+
+rod.
+
+--
+anyway... long story short...
+...is a phrase whose origins are complicated and rambling.
+
+>> doing the blogging thang again at http://www.groovymother.com/ <<
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+razor-users mailing list
+razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

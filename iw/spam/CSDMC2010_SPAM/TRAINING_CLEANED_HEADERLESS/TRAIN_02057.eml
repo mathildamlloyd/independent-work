@@ -1,0 +1,51 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on 03/05/10, zoran kolic (zkolic@sbb.rs) wrote:
+
+| > | when i try to connect, wicd says that it is 'putting interface up...'=
+, 'validating authentication...', 'obtaining ip address...' then it times o=
+ut and says 'connection failed: unable to get ip address.'
+| >=20
+| > i have no clue what causes the problem, but i have found a clumsy
+| > workaround by trial and error: when i reset the router (linksys
+| > wrt54gl) either to wpa from wpa2, or back the other way, wic manages
+| > to connect the next try. it doesn't seem to matter whether wic is
+| > looking for a password or a pre-shared key, so long as the the
+| > protocol is tkip.  next time, i have to reset the router back the
+| > other way. no further change required -- until the next time, when the
+| > router needs to be reset _again_!.
+|=20
+| i have the same router. the very first thing was to
+| set it to "g only".
+
+that won't work for me, since one of the laptops has only b, the other
+ g. see below.
+
+| ... would be fine to know some
+| details about the hardware. wifi chip at least.
+
+my card is listed at=20
+http://www.thinkwiki.org/wiki/wireless_network_adapters#ibm_high_rate_wirel=
+ess_lan_pc_card,
+at the very bottom of the page:
+
+ibm high rate wireless lan pc card
+chipset: hermes i
+drivers: orinoco_cs
+supported wireless modes: 802.11b
+
+i pulled the thing out of the machine, and discovered, something that
+i had not seen anywhere else, printed on the underside what may well
+be a clue: "encryption: wep64"
+
+--=20
+johnrchamplin@columbus.rr.com
+=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=
+=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=
+=3d=3d
+gpg key 1024d/99421a63 2005-01-05
+ee51 79e9 f244 d734 a012 1cec 7813 9fe9 9942 1a63
+gpg --keyserver subkeys.pgp.net --recv-keys 99421a63

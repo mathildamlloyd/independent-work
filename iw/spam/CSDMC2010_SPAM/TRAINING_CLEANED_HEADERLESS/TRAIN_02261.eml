@@ -1,0 +1,25 @@
+on sat, 24 apr 2010 22:57:27 +0200, merciadri luca wrote:
+
+> this looks like kerneloops sends the oopses through a simple url.
+> strange. it seems not to even ping a reference ip to see if the
+> connexion is still alive. weird.
+> 
+> submit-url = http://submit.kerneloops.org/submitoops.php is appended at
+> the end of my kerneloops.conf.
+
+yes. 
+
+sorry, i read later this e-mail (see my last reply).
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.25.10.27.43@csmining.org
+
+

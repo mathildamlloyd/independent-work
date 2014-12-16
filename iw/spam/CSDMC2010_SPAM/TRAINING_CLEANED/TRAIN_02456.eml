@@ -1,0 +1,87 @@
+None> On Fri, 2010-05-14 at 06:31 -0500, Ron Johnson wrote:
+>> On 05/14/2010 06:14 AM, John A. Sullivan III wrote:
+>>> On Fri, 2010-05-14 at 06:52 +0000, Camaleón wrote:
+>>> <snip>
+>>>> Look at PDF. PDF became a ISO/IEC standard but we (at linux) still lack
+>>>> for a PDF editor that can compete with Acrobat Professional.
+>>> <snip>
+>>> That comment really strikes home.  We are working on a potential major
+>>> Windows desktop replacement project.  The two things that are absolutely
+>>> killing us are email and a viable substitute for Acrobat Standard.  We
+>>> can roughly mimic everything Acrobat does
+>>
+>> Forms, you mean?
+> No, editing the PDF file, e.g., adding text, stamps, markups.
+
+But, but, but... you're not *supposed* to edit PDF files!
+
+>>>                                             but only with create
+>>> complexity, taking ten times longer to get it done, using several
+>>> applications in the process, having less than comparable results, and
+>>> making the process detestable to the end users who wonder why would
+>>> anyone give up Windows for this.  There are couple of admirable efforts
+>>> out there but they have a very, very long way to go - John
+>>>
+>>
+>> Disable internet access and they can't get infected by malware.
+> Not something that will sell the solution.  They can run their business
+> with the distraction of malware and the expense of malware solutions.
+> They can't run their business if the functionality is missing with no
+> viable workaround.  Editing a page at a time in GIMP, editing a page at
+
+You miss my point: leave them on Windows and disable internet access.
+
+-- 
+Dissent is patriotic, remember?
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/4BEDA36A.4040303@cox.net
+
+
+re: pdf grief - was re: flash is open?on 05/14/2010 01:40 pm, john a. sullivan iii wrote:
+> on fri, 2010-05-14 at 06:31 -0500, ron johnson wrote:
+>> on 05/14/2010 06:14 am, john a. sullivan iii wrote:
+>>> on fri, 2010-05-14 at 06:52 +0000, camalen wrote:
+>>> 
+>>>> look at pdf. pdf became a iso/iec standard but we (at linux) still lack
+>>>> for a pdf editor that can compete with acrobat professional.
+>>> 
+>>> that comment really strikes home.  we are working on a potential major
+>>> windows desktop replacement project.  the two things that are absolutely
+>>> killing us are email and a viable substitute for acrobat standard.  we
+>>> can roughly mimic everything acrobat does
+>>
+>> forms, you mean?
+> no, editing the pdf file, e.g., adding text, stamps, markups.
+
+but, but, but... you're not *supposed* to edit pdf files!
+
+>>>                                             but only with create
+>>> complexity, taking ten times longer to get it done, using several
+>>> applications in the process, having less than comparable results, and
+>>> making the process detestable to the end users who wonder why would
+>>> anyone give up windows for this.  there are couple of admirable efforts
+>>> out there but they have a very, very long way to go - john
+>>>
+>>
+>> disable internet access and they can't get infected by malware.
+> not something that will sell the solution.  they can run their business
+> with the distraction of malware and the expense of malware solutions.
+> they can't run their business if the functionality is missing with no
+> viable workaround.  editing a page at a time in gimp, editing a page at
+
+you miss my point: leave them on windows and disable internet access.
+
+-- 
+dissent is patriotic, remember?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4beda36a.4040303@cox.net
+
+

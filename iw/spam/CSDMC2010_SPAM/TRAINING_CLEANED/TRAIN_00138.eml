@@ -1,0 +1,82 @@
+NoneIl 12/05/10 15.32, Boris Bobrov ha scritto:
+> Hi, Frank.
+> Try to set dhcp pool size in your router to 2 or 3
+> Вторник 11 мая 2010 00:06:28 you wrote:
+>    
+>> Hi guys,
+>>
+>> I'm having some headaches with our WLAN. We're going online with 2
+>> laptops, that means we try. We do have the following setup:
+>>
+>> The router is a Speedport W 303V and we do have the folloeing laptops:
+>> Asus M6N, Intel ipw2100 driver, Debian/sid with wicd
+>> Acer Aspire 5680, Atheros AR2413 with the ath5k driver, Ubuntu 8.10 with
+>> network manager
+>>
+>> When my wife is online with her Acer/Ubuntu system I cannot connect with
+>> my Asus/Debian machine. The wireless network is detected but I do not
+>> get an IP address.This is from the wicd.log file:
+>> No DHCPOFFERS received.
+>> No working leases in persistent database - sleeping.
+>> DHCP connection failed
+>> exiting connection thread
+>> Sending connection attempt result dhcp_failed
+>>
+>> It does work the other way round though!
+>>
+>>
+>> Any ideas on where to look?
+>>
+>> THX Frank
+>>
+>>      
+
+
+-- 
+To UNSUBSCRIBE, email to debian-laptop-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/4BEAB423.1030403@vodafone.it
+
+
+re: wireless connection issuesfixed ips around?
+
+il 12/05/10 15.32, boris bobrov ha scritto:
+> hi, frank.
+> try to set dhcp pool size in your router to 2 or 3
+>  11  2010 00:06:28 you wrote:
+>    
+>> hi guys,
+>>
+>> i'm having some headaches with our wlan. we're going online with 2
+>> laptops, that means we try. we do have the following setup:
+>>
+>> the router is a speedport w 303v and we do have the folloeing laptops:
+>> asus m6n, intel ipw2100 driver, debian/sid with wicd
+>> acer aspire 5680, atheros ar2413 with the ath5k driver, ubuntu 8.10 with
+>> network manager
+>>
+>> when my wife is online with her acer/ubuntu system i cannot connect with
+>> my asus/debian machine. the wireless network is detected but i do not
+>> get an ip address.this is from the wicd.log file:
+>> no dhcpoffers received.
+>> no working leases in persistent database - sleeping.
+>> dhcp connection failed
+>> exiting connection thread
+>> sending connection attempt result dhcp_failed
+>>
+>> it does work the other way round though!
+>>
+>>
+>> any ideas on where to look?
+>>
+>> thx frank
+>>
+>>      
+
+
+-- 
+to unsubscribe, email to debian-laptop-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4beab423.1030403@vodafone.it
+
+

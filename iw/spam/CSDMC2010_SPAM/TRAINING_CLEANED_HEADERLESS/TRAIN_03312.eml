@@ -1,0 +1,23 @@
+on thu, apr 29, 2010 at 3:19 pm, luke scott  wrote:
+
+> is quartz "the option" or "one of the options" for capturing keyboard and
+> mouse events? if it's one of the options, i would be interested in knowing
+> what the other options are.
+
+the supported modern way is via the cgevent api...
+
+
+
+... the best list for this api is likely ...
+
+
+
+-shawn
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+objc-language mailing list      (objc-language@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/objc-language/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

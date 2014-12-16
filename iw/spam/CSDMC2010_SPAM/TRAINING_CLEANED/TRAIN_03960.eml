@@ -1,0 +1,89 @@
+None> On 5/1/2010 12:45 PM, Ron Johnson wrote:
+>> On 05/01/2010 04:50 AM, markus reichelt wrote:
+>>> * Ron Johnson<ron.l.johnson@cox.net> wrote:
+>>>
+>>>> The issue is that I'm trying to read some 2-3 year old "movie"
+>>>> DVD-Rs and they're all at some point failing.
+>>>
+>>> Try another drive (best would be a dvd burner).
+>>>
+>>> Apart from that, you could try ddrescue and just plain copy the whole
+>>> disc to an iso imagefile.
+>>
+>> ddrescue or gddrescue?
+>>
+>>> Also, check out vobcopy, it's my fav
+>>> application to backup dvds.
+>>>
+>>
+>> I'll try that.
+>>
+>
+>
+> If you are interested in DVDs under Debian, note that a useful thing to  
+> know about is the videolan project
+>
+> http://www.videolan.org/
+>
+> They provide libdvdcss and libdvdplay, useful libraries to install,  
+> which are not included in Debian.  (non-DFSG)
+>
+VLC also has a neat "stream to file" feature.  I've used that many times
+to backup DVD movies, or to get them onto my MythTV machine.  Ron, I'm
+not sure that'll help your situation, but you might want to give it a
+shot.  If you need help with that, let me know.
+
+-Rob
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/20100502002406.GA465@aurora.owens.net
+
+
+re: dvd paranoia?on sat, may 01, 2010 at 03:52:30pm -0500, mark allums wrote:
+> on 5/1/2010 12:45 pm, ron johnson wrote:
+>> on 05/01/2010 04:50 am, markus reichelt wrote:
+>>> * ron johnson wrote:
+>>>
+>>>> the issue is that i'm trying to read some 2-3 year old "movie"
+>>>> dvd-rs and they're all at some point failing.
+>>>
+>>> try another drive (best would be a dvd burner).
+>>>
+>>> apart from that, you could try ddrescue and just plain copy the whole
+>>> disc to an iso imagefile.
+>>
+>> ddrescue or gddrescue?
+>>
+>>> also, check out vobcopy, it's my fav
+>>> application to backup dvds.
+>>>
+>>
+>> i'll try that.
+>>
+>
+>
+> if you are interested in dvds under debian, note that a useful thing to  
+> know about is the videolan project
+>
+> http://www.videolan.org/
+>
+> they provide libdvdcss and libdvdplay, useful libraries to install,  
+> which are not included in debian.  (non-dfsg)
+>
+vlc also has a neat "stream to file" feature.  i've used that many times
+to backup dvd movies, or to get them onto my mythtv machine.  ron, i'm
+not sure that'll help your situation, but you might want to give it a
+shot.  if you need help with that, let me know.
+
+-rob
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100502002406.ga465@aurora.owens.net
+
+

@@ -1,0 +1,48 @@
+[replying to my own message.]
+
+on mon, 26 apr 2010 15:12:24 -0400
+celejar  wrote:
+
+...
+
+> hm, i had thought that at least some of the small, relaying mtas
+> accepted connections on port 25.  on closer perusal, it looks like they
+> don't.
+> 
+> one option would be to build your own version of one of the big ones,
+> with all unnecessary functionality excluded.  i don't know what the
+> resulting binary size would be.
+
+i was sufficiently intrigued by the (apparent) absence of a simple mta
+that does the above, so i decided to write my own: tmta.  it actually
+works, and is documented, although it's still pretty much in the
+proof-of-concept stage:
+
+https://sourceforge.net/projects/tmta/
+
+one important thing that it does *not* (yet?) do is fork; it's currently
+implemented as a basic, single-threaded daemon, so it can only accept
+one connection at a time.  it shouldn't be too difficult (famous last
+words ...) to convert into a multi-threaded model, although i have no
+experience with that sort of thing.
+
+it is still small, though - under 70 lines of actual perl code,
+although it does, of course, require the basic perl installation and
+about a half-dozen other modules.
+
+if anyone has any feedback, or suggestions for improvement, i'd love
+to hear them.
+
+celejar
+-- 
+foffl.sourceforge.net - feeds offline, an offline rss/atom aggregator
+mailmin.sourceforge.net - remote access via secure (openpgp) email
+ssuds.sourceforge.net - a simple sudoku solver and generator
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100430162040.f26361ba.celejar@csmining.org
+
+

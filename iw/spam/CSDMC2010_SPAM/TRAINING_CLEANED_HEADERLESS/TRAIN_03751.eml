@@ -1,0 +1,24 @@
+on tue, 18 may 2010 20:16:27 +0200, merciadri luca wrote:
+
+> i have many media files in some specific directory (folder, call it as
+> you want). loading the folder takes ~30 sec., even if i am using quite
+> fast hdds, etc. they're all on the same partition. i have disabled
+> previewing, or thumbnails.
+> 
+> how can i do to make this process faster?
+
+did you also turn off "count number of items" and "show text in icons" in 
+nautilus "preview" preferences?
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.18.20.20.40@csmining.org
+
+

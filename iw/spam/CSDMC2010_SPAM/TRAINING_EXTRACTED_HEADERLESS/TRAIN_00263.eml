@@ -1,0 +1,42 @@
+From nobody Tue Dec 16 09:15:47 2014
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+[sorry for replying to myself]
+
+On Fri,21.May.10, 18:53:34, Andrei Popescu wrote:
+> On Fri,21.May.10, 11:42:57, Steve Fishpaste wrote:
+>=20
+> >                                              but the question is why
+> > is it so old when Ubuntu is keeping up-to-date daily?!
+>=20
+> Wasn't there some automatic download/recompile going on in PPA? Or maybe=
+=20
+> the Ubuntu maintainer just has more time...
+
+And one more thing: if the package in sid/unstable is updated too often=20
+it will never migrate to testing, because it has to be at least 10 days=20
+old (assuming no bugs are found and there are no dependency problems).
+
+Regards,
+Andrei
+--=20
+Offtopic discussions among Debian users and developers:
+http://lists.alioth.debian.org/mailman/listinfo/d-community-offtopic
+From nobody Tue Dec 16 09:15:47 2014
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAEBCAAGBQJL9q5kAAoJEHNWs3jeoi3p6iAH/1mDNAGZfSI8cH93dgUjGhhH
+mwcAZhE2MxMQvObcFBhehehki/nL2WQWa5yRTewvtczYDRPquZpxcDdkhVFg75Iq
+ObpKiOt8u3vADhdesfgH+RsAe99a5AssMFsS0RW4H87sSLxyD3x+dF7yA/gL2DWs
+JapvKbvB+w/Jm5Z388GEZHWxfAZm05F/GO1KRdRB8hLM3ANTR+bp0+GW0R3aUjrB
+Q5IJT5twYLOsaws4VvF1K+droea1LKbZZVJvVW1Y3u4UxO5GZHEVev6X+j7x/I9a
+7srvewx1Xh/oZTfLMkFvA60CBoHH/xKaHLEiZG3I/dtvkMmVv4WlqWVy97s+Sxs=
+=H2k1
+-----END PGP SIGNATURE-----

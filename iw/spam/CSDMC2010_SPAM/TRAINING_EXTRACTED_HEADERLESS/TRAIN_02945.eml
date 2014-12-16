@@ -1,0 +1,55 @@
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Sat,24.Apr.10, 16:15:46, Jordan Metzmeier wrote:
+> > Try putting this in ~/.bashrc:
+> >
+> > export EDITOR=3D/usr/bin/vim
+>=20
+> You can also make it a system wide configuration with
+> "update-alternatives --config editor". I have not tried it shells
+> other than bash but I assume it is portable.
+
+Yep:
+
+# update-alternatives --config editor
+There are 3 choices for the alternative editor (providing /usr/bin/editor).
+
+  Selection    Path                    Priority   Status
+------------------------------------------------------------
+  0            /usr/bin/vim.nox         40        auto mode
+  1            /usr/bin/mcedit-debian   25        manual mode
+* 2            /usr/bin/vim.nox         40        manual mode
+  3            /usr/bin/vim.tiny        10        manual mode
+
+Press enter to keep the current choice[*], or type selection number:=20
+
+But it won't work if ncftp relies on $EDITOR:
+
+$ echo $EDITOR
+
+$
+
+Regards,
+Andrei
+--=20
+Offtopic discussions among Debian users and developers:
+http://lists.alioth.debian.org/mailman/listinfo/d-community-offtopic
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAEBCAAGBQJL0/8SAAoJEHNWs3jeoi3poD4H/iM50QOL7HT9lbir6p5P7boE
+yU/RHWy3qUZel5ubim4j2G5CKMbYN0z97sjJhVlbJgTjCreRJOqrmlWK2a2g0h2c
+JOrhu9ceV9JKKK2szE7+eoVuGJG2l/yU5NprGEl8MMflO8BbKKZ5sajqpnwAajVD
+2hobl35EuE1kPcEknQ0AsGStJvb7GFf+kgxQa6mccrLzumcPv8v5T5LMtqbNp4AV
+EA1n/z+d5CH5OnIW+chXQ6TOCnjNCqPzKGWjwYR62KR235Je3zEqZPHC1f0vM9YQ
+e/LyI1qkNXchNRkMbQRy0uE2S4iB6lkpw+IoSuaXX4pjQJ3mz7naBcyIg4fG7NM=
+=WNoo
+-----END PGP SIGNATURE-----

@@ -1,0 +1,30 @@
+NoneJFormattedTextField backspace issue in 6u20 + 5u24I'm using Leopard, so I'm not sure if this also applies to Snow Leopard.
+
+Run any of the JFormattedTextField demos here (web start is fine):
+
+http://java.sun.com/docs/books/tutorial/uiswing/components/formattedtextfield.html
+
+The backspace key is now deleting two characters at a time.
+ _______________________________________________
+Do not post admin requests to the list. They will be ignored.
+Java-dev mailing list      (Java-dev@lists.apple.com)
+Help/Unsubscribe/Update your Subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+This email sent to mlsubscriber.tech@csmining.org
+
+jformattedtextfield backspace issue in 6u20 + 5u24i'm using leopard, so i'm not sure if this also applies to snow leopard.
+
+run any of the jformattedtextfield demos here (web start is fine):
+
+http://java.sun.com/docs/books/tutorial/uiswing/components/formattedtextfield.html
+
+the backspace key is now deleting two characters at a time.
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

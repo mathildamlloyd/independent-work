@@ -1,0 +1,39 @@
+on sun, 02 may 2010 17:33:59 +0200, steven wrote:
+
+> on sun, 2010-05-02 at 14:17 +0000, camalen wrote:
+
+(...)
+ 
+>> two easy tests:
+>> 
+>> 1/ create a new panel and drop there the "faulty" icons. are they still
+>> showed with a solid background?
+> creating a new panel with notification area keeps showing the issue on
+> this new panel.
+> 
+> 
+>> 2/ create a new user, login and check if the same behaviour continues.
+> a new user has the same issue.
+
+there is an open bug, but the weird thing is that in your case it works 
+in one computer and fails in the other :-?
+
+***
+gnome-panel: some application icons lost transparency in notification area
+http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=551751
+***
+
+anyway, check if the affected applications make use of "eggtrayicon".
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.02.15.46.27@csmining.org
+
+

@@ -1,0 +1,39 @@
+-----begin pgp signed message-----
+hash: sha1
+
+eduardo m kalinowski wrote:
+>>> mount the new device (mount -odev /dev/newdevice), and do a
+>>>   rsync -ax / /media/newdevice.
+>>>      
+>> what exactly is the advantage of this approach over "cp -a" or "mv"?
+>>    
+> 
+> over mv? that you keep the original files.
+
+of course. but in this case the op said "migrate".
+
+> over cp? that you can resume from where you left off in case the
+> transfer is stopped for any reason.
+
+useful point. with cp you'd have to start over.
+
+what are the disadvantages of rsync? e.g., doesn't it compress and
+decompress everything, hence hogging the cpu and possibly slowing transfers?
+
+
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org
+
+ieyearecaayfakvbzscacgkq+vsrxyk4409n6qcg2h+f4xhps/ermsuaxifazg5v
+nnuaol1+bijzovhecwozulmwvibj2nyb
+=fu3d
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bc1cec7.7030909@web.de
+
+

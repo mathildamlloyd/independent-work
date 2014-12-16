@@ -1,0 +1,37 @@
+update of /cvsroot/spamassassin/spamassassin
+in directory usw-pr-cvs1:/tmp/cvs-serv6501
+
+modified files:
+      tag: b2_4_0
+manifest 
+log message:
+removed old evolver
+
+index: manifest
+===================================================================
+rcs file: /cvsroot/spamassassin/spamassassin/manifest,v
+retrieving revision 1.100.2.11
+retrieving revision 1.100.2.12
+diff -b -w -u -d -r1.100.2.11 -r1.100.2.12
+--- manifest28 aug 2002 13:50:15 -00001.100.2.11
++++ manifest28 aug 2002 16:55:16 -00001.100.2.12
+@@ -50,7 +50,6 @@
+ masses/corpus_policy
+ masses/corpus_submit
+ masses/craig-evolve.c
+-masses/evolve.cxx
+ masses/freqdiff
+ masses/hit-frequencies
+ masses/lib/mail/archiveiterator.pm
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: jabber - the world's fastest growing 
+real-time communications platform! don't just im. build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+spamassassin-commits mailing list
+spamassassin-commits@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-commits
+

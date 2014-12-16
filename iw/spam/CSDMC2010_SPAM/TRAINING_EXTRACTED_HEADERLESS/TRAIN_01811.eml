@@ -1,0 +1,152 @@
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+On Tue, Apr 6, 2010 at 9:23 PM, Steven Crooks <steven@worldofcrooks.org>wro=
+te:
+
+> On Tuesday 06 April 2010 19:31:19 Smokejohn wrote:
+> > On Tue, Apr 6, 2010 at 7:57 PM, Klaus Becker <colonius@free.fr> wrote:
+> > > Le Mardi 06 Avril 2010 18:35:51, John Kapnogiannis a =E9crit :
+> > > > Hello there. I got a debian testing installation and I currently
+> cannot
+> > > > login in kde. I give my pass and instead of a proper kde session I
+> get
+> > > > kdm's login screen again. I haven't done any upgrade but I did a
+> really
+> > > > stupid thing: I hit the power button and turn the laptop off the ha=
+rd
+> > > > way while it was in suspend mode. I tried googling but it gave me n=
+o
+> > > > usefull things.
+> > > >
+> > > > The .xsession-errors file in my home folder says Permission denied.=
+ I
+> > > > checked the permissions in /tmp and /var/tmp and everything seems
+> fine.
+> > > > I also deleted the .kde folder. Login in as root and typing startx
+> > > > opens a kde session.
+> > > >
+> > > > Any ideas?
+> > > >
+> > > > PS: I did the instructions described in this page:
+> > > > https://developer.skype.com/jira/browse/SCL-510 in order to fix
+> skype
+> > > > on me 64-bit installation, but I don't think it has something to do
+> > > > with my problem. I think something got wrong when I hit the power
+> > > > button. :(
+> > >
+> > > Hi,
+> > >
+> > > perhaps
+> > >
+> > > #chown -R john /home/john
+> > >
+> > > or any username you use ?
+> > >
+> > > If this does'nt work, you can try to create a new user and then cope
+> all
+> > > your
+> > > files to /home/new-user.
+> > >
+> > >
+> > > Nope did not help. Adding a new user did not fix anything too. I trie=
+d
+> >
+> > login in a console and then startx and I got some errors about xkb not
+> > being able to get initialized. Strange....  So the thing is that no use=
+r
+> > except the root can start a kde session.
+>
+> Just for completion:
+>
+> Check if there is enough space on your/the harddisk.
+>
+> Steven
+>
+
+There is plenty of space. I think something messed up the permissions cause
+the laptop was in suspend mode when I repeatedly pressed the power button.
+So it has to be my bad and not a bug or something.
+
+J
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<br><br><div class=3D"gmail_quote">On Tue, Apr 6, 2010 at 9:23 PM, Steven C=
+rooks <span dir=3D"ltr">&lt;<a href=3D"mailto:steven@worldofcrooks.org">ste=
+ven@worldofcrooks.org</a>&gt;</span> wrote:<br><blockquote class=3D"gmail_q=
+uote" style=3D"margin: 0pt 0pt 0pt 0.8ex; border-left: 1px solid rgb(204, 2=
+04, 204); padding-left: 1ex;">
+<div><div></div><div class=3D"h5">On Tuesday 06 April 2010 19:31:19 Smokejo=
+hn wrote:<br>
+&gt; On Tue, Apr 6, 2010 at 7:57 PM, Klaus Becker &lt;<a href=3D"mailto:col=
+onius@free.fr">colonius@free.fr</a>&gt; wrote:<br>
+&gt; &gt; Le Mardi 06 Avril 2010 18:35:51, John Kapnogiannis a =E9crit :<br=
+>
+&gt; &gt; &gt; Hello there. I got a debian testing installation and I curre=
+ntly cannot<br>
+&gt; &gt; &gt; login in kde. I give my pass and instead of a proper kde ses=
+sion I get<br>
+&gt; &gt; &gt; kdm&#39;s login screen again. I haven&#39;t done any upgrade=
+ but I did a really<br>
+&gt; &gt; &gt; stupid thing: I hit the power button and turn the laptop off=
+ the hard<br>
+&gt; &gt; &gt; way while it was in suspend mode. I tried googling but it ga=
+ve me no<br>
+&gt; &gt; &gt; usefull things.<br>
+&gt; &gt; &gt;<br>
+&gt; &gt; &gt; The .xsession-errors file in my home folder says Permission =
+denied. I<br>
+&gt; &gt; &gt; checked the permissions in /tmp and /var/tmp and everything =
+seems fine.<br>
+&gt; &gt; &gt; I also deleted the .kde folder. Login in as root and typing =
+startx<br>
+&gt; &gt; &gt; opens a kde session.<br>
+&gt; &gt; &gt;<br>
+&gt; &gt; &gt; Any ideas?<br>
+&gt; &gt; &gt;<br>
+&gt; &gt; &gt; PS: I did the instructions described in this page:<br>
+&gt; &gt; &gt; <a href=3D"https://developer.skype.com/jira/browse/SCL-510" =
+target=3D"_blank">https://developer.skype.com/jira/browse/SCL-510</a> in or=
+der to fix skype<br>
+&gt; &gt; &gt; on me 64-bit installation, but I don&#39;t think it has some=
+thing to do<br>
+&gt; &gt; &gt; with my problem. I think something got wrong when I hit the =
+power<br>
+&gt; &gt; &gt; button. :(<br>
+&gt; &gt;<br>
+&gt; &gt; Hi,<br>
+&gt; &gt;<br>
+&gt; &gt; perhaps<br>
+&gt; &gt;<br>
+&gt; &gt; #chown -R john /home/john<br>
+&gt; &gt;<br>
+&gt; &gt; or any username you use ?<br>
+&gt; &gt;<br>
+&gt; &gt; If this does&#39;nt work, you can try to create a new user and th=
+en cope all<br>
+&gt; &gt; your<br>
+&gt; &gt; files to /home/new-user.<br>
+&gt; &gt;<br>
+&gt; &gt;<br>
+&gt; &gt; Nope did not help. Adding a new user did not fix anything too. I =
+tried<br>
+&gt;<br>
+&gt; login in a console and then startx and I got some errors about xkb not=
+<br>
+&gt; being able to get initialized. Strange.... =A0So the thing is that no =
+user<br>
+&gt; except the root can start a kde session.<br>
+<br>
+</div></div>Just for completion:<br>
+<br>
+Check if there is enough space on your/the harddisk.<br>
+<font color=3D"#888888"><br>
+Steven<br>
+</font></blockquote></div><br>There is plenty of space. I think something m=
+essed up the permissions cause the laptop was in suspend mode when I repeat=
+edly pressed the power button. So it has to be my bad and not a bug or some=
+thing. <br>
+<br>J<br>

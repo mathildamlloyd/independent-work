@@ -1,0 +1,64 @@
+on fri, 07 may 2010 23:29:10 +0200, merciadri luca wrote:
+
+> camalen writes:
+> 
+>> how about...?
+>>
+>> 1/ pressing "o.k", instead "save", it will keep your settings only for
+>> the current session but it just to test if it works :-?
+
+> impossible without modifying .hptalx, as the application directly bugs
+> when i type `hptalx'. this is instantaneous.
+> 
+> i just renamed .hptalx in .hptalx2, and the program starts normally,
+> without bugging.
+> 
+> pressing `o.k.' does not make the app bugging, but once i click on
+> `connect', bug buddy directly arises! (and, without the connection
+> capability, the program is totally unuseful, as it is its goal.)
+
+before pressing "connect" be sure your calculator is setup as described 
+here:
+
+http://hptalx.sourceforge.net/manual.shtml#aen171
+
+can you see the "awaiting server cmd." message in calculator's display?
+
+>> 2/ look at "~/.hptalx" file and check if the previously saved settings
+>> seem right (port connection pointing to /dev/ttyusb0, and so on...).
+> ==
+> ~$ cat .hptalx
+> 
+> 
+>  100
+>  9600
+>  1
+>  1
+>  15
+>  gedit
+> 
+> ==
+> 
+> strange, really. i compiled it the other day, and the whole process went
+> through without any issue.
+
+port "100"? what kind of port nomenclature is that? :-? 
+
+i would expect "/dev/ttyusb0" for an usb device or "/dev/ttys0" for the 
+first rs-232 port...
+
+i think the application is crashing because cannot establish a connection 
+with the device.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.08.17.12.26@csmining.org
+
+

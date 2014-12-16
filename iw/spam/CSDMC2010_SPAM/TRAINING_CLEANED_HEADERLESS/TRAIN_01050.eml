@@ -1,0 +1,48 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain;
+  charset="iso-8859-1"
+content-transfer-encoding: quoted-printable
+
+on monday 26 april 2010 16:34:36 celejar wrote:
+> on mon, 26 apr 2010 16:16:32 -0500
+> "boyd stephen smith jr."  wrote:
+> > on monday 26 april 2010 15:09:57 celejar wrote:
+> > > what makes the non-free firmware question particularly interesting is
+> > > that the alternative is often to hardcode the functionality into the
+> > > hardware.  now, if you had a board with completely closed hw, but that
+> > > presented an open, well documented interface for the driver, most
+> > > people would be very happy (although there are, of course, the open
+> > > hardware crusaders - more power to them!).  so, now that they've simp=
+ly
+> > > implemented some of that functionality in sw, in the form of firmware
+> > > which the driver installs on the card, but which has nothing to do wi=
+th
+> > > your host machine, are you really any worse off?
+> >
+> > as a distributor you may very well be.  if you can't provide the source
+> > code, you can't satisfy the terms of the gpl (usually).
+>=20
+> ?  we're talking about firmware for things like wireless cards, produced
+> by the hw manufacturers, e.g., broadcom.  where does the gpl enter into
+> this?
+
+some are included in the tarball provided by the linux kernel team, which i=
+s=20
+distributed under the gplv2.  in particular, i am thinking of the iwl3945=20
+firmware that is required to run my wireless card.
+
+it doesn't matter what upstream wants to call source code.  the gpl(v2)=20
+defines it as the preferred form for making modifications.  (gplv2, section=
+=20
+3.)  it is unlikely that the firmware was written in a hex editor (or=20
+equivalent).  most likely it is c source for a freestanding (non-hosted)=20
+environment with some manufacturer-specific libraries, but it could also be=
+ in=20
+some manufacturer-specific assembly code.  either form would be better for=
+=20
+making modifications than a binary blob.
+=2d-=20
+boyd stephen smith jr.            ,=3d ,-_-. =3d.
+bss@iguanasuicide.net            ((_/)o o(\_))
+icq: 514984 ym/aim: datwinkdaddy  `-'(. .)`-'
+http://iguanasuicide.net/             \_/

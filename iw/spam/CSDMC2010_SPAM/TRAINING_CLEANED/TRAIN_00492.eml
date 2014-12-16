@@ -1,0 +1,94 @@
+NoneI am just using QTMovie because I need to draw the contents of the
+movie into a bitmap. So I am grabbing the NSImage of the current frame
+and using that.
+
+Is QTMovie dependant on QTMovieView for events in some fashion?
+
+
+
+thx
+
+bill appleton
+
+
+
+
+
+
+
+On Tue, May 18, 2010 at 12:51 PM, James Walker <jamesw@frameforge3d.com> wr=
+ote:
+> On 5/18/2010 11:55 AM, Bill Appleton wrote:
+>
+>> i am using cocoa and QTMovie to open and play valid movie files
+>
+> Are you using QTMovieView, or QTMovieLayer, or what?
+>
+> --
+> =A0James W. Walker, Innoventive Software LLC
+> =A0<http://www.frameforge3d.com/>
+> _______________________________________________
+> Do not post admin requests to the list. They will be ignored.
+> QuickTime-API mailing list =A0 =A0 =A0(QuickTime-API@lists.apple.com)
+> Help/Unsubscribe/Update your Subscription:
+> http://lists.apple.com/mailman/options/quicktime-api/billappleton%40dream=
+factory.com
+>
+> This email sent to billappleton@dreamfactory.com
+>
+ _______________________________________________
+Do not post admin requests to the list. They will be ignored.
+QuickTime-API mailing list      (QuickTime-API@lists.apple.com)
+Help/Unsubscribe/Update your Subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+This email sent to mlsubscriber.tech@csmining.org
+
+re: my movies don't idlehi james et al,
+
+i am just using qtmovie because i need to draw the contents of the
+movie into a bitmap. so i am grabbing the nsimage of the current frame
+and using that.
+
+is qtmovie dependant on qtmovieview for events in some fashion?
+
+
+
+thx
+
+bill appleton
+
+
+
+
+
+
+
+on tue, may 18, 2010 at 12:51 pm, james walker  wr=
+ote:
+> on 5/18/2010 11:55 am, bill appleton wrote:
+>
+>> i am using cocoa and qtmovie to open and play valid movie files
+>
+> are you using qtmovieview, or qtmovielayer, or what?
+>
+> --
+> =a0james w. walker, innoventive software llc
+> =a0
+> _______________________________________________
+> do not post admin requests to the list. they will be ignored.
+> quicktime-api mailing list =a0 =a0 =a0(quicktime-api@lists.apple.com)
+> help/unsubscribe/update your subscription:
+> http://lists.apple.com/mailman/options/quicktime-api/billappleton%40dream=
+factory.com
+>
+> this email sent to billappleton@dreamfactory.com
+>
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

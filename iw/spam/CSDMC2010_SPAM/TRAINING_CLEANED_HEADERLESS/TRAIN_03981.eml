@@ -1,0 +1,50 @@
+on thu, 13 may 2010 19:31:47 -0400, celejar wrote:
+
+> adobe claims that they publish the flash specs:
+> 
+(...)
+ 
+> http://www.adobe.com/choice/openmarkets.html
+
+mmmm, and there are others that think this is not enough:
+
+***
+http://www.openmedianow.org/?q=node/21
+
+"(...) one reason for the lack of excitement over the project in the free 
+software world is that it omits "huge amounts" of information needed for 
+a complete implementation of flash. in particular, savoye points out that 
+the announcement contains no mention of the real time messaging protocol
+(rtmp) that is required for the flash media server. nor does it mention 
+the sorenson spark codec that is used for video encoding in flash 6 and 
+7, and remains the choice of some users still for flash video because 
+other formats convert easily to it. both may be encumbered by patents 
+but, without them, the information that adobe has released is of limited 
+use."
+
+> i always thought that the reason for all the trouble with flash on linux
+> is that flash was a closed standard.  if the spec is published, why are
+> the floss players so far behind adobe's player?  is it just that
+> difficult to design a good player?
+
+as per the above link, it seems not all the specs have been released or 
+made publicly available. there are also some concerns about software 
+patents (for using -and distributing- mp3 codecs or flv).
+
+anyway, i agree with your "hidden demand" ;-)
+
+look at pdf. pdf became a iso/iec standard but we (at linux) still lack 
+for a pdf editor that can compete with acrobat professional.
+ 
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.14.06.52.05@csmining.org
+
+

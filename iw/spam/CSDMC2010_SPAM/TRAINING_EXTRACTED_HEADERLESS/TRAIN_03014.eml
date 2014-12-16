@@ -1,0 +1,34 @@
+From nobody Tue Dec 16 09:15:45 2014
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+Let's say that you have two internet connections at home, and
+consequently two devices which link your computer to the Internet. How
+can you manage, e.g. in Iceweasel/FF, to use one or the other? If you
+have multiple downloads all the time, it might be an interesting thing
+to split them among the diferent connections.
+
+--=20
+Merciadri Luca
+See http://www.student.montefiore.ulg.ac.be/~merciadri/
+I use PGP. If there is an incompatibility problem with your mail
+client, please contact me.
+
+
+Listen to many, speak to a few. (William Shakespeare)
+
+From nobody Tue Dec 16 09:15:45 2014
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iEYEARECAAYFAkvug/IACgkQM0LLzLt8MhzVLwCgoT5cKxJgDQ9dNG/TO3/b4N6k
+x0UAnAz/Eu5hX45OXCx3ZibL8VJrTQRR
+=zjlc
+-----END PGP SIGNATURE-----

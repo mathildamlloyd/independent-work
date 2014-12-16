@@ -1,0 +1,54 @@
+-----begin pgp signed message-----
+hash: sha1
+
+camalen  writes:
+
+> on tue, 18 may 2010 20:08:02 +0200, merciadri luca wrote:
+>
+>> camalen writes:
+>
+>>> just review your "/var/log/xorg.0.log". if x crashed there must
+>>> something there :-?
+>> nothing really interesting there. just:
+>> 
+>> ==
+>> audit: tue may 18 18:01:04 2010: 3716 x: client 33 rejected from local
+>> host (uid 0)
+>>   auth name: mit-magic-cookie-1 id: -1
+>> ==
+>> but 18:01:24 seems to be when i asked to restart gdm.
+>
+> nothing more in the rest of the "/var/log/xorg.x.log" files?
+no. weird.
+
+>
+>> note that i do not think that x crashed entirely. i just mean that the
+>> screen was looking like frozen, but screensaver was still moving...
+>> slowly, or sometimes really slowly.
+>
+> next time it happens, go to a tty and type "top" to list the processes in 
+> use. sort the table by cpu cycles and/or memory use. the slowness could 
+> be caused by a "rampant" program consuming a lot of resources.
+okay. thanks!
+- -- 
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+- -- 
+
+love is like war, easy to start, hard to end, impossible to forget.
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: processed by mailcrypt 3.5.8 
+
+ieyearecaayfakvy/qwacgkqm0llzlt8mhyleacde1sb1i3o5/qv4sgekhl3pn8r
+fooan1cq6u6xvwgs6vbahfgsudqi7ave
+=hdak
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87fx1p7wwj.fsf@merciadriluca-station.merciadriluca
+
+

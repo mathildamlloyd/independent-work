@@ -1,0 +1,32 @@
+-----begin pgp signed message-----
+hash: sha1
+
+hi,
+
+i have many text files (actually .tex files) which contain some
+sequence or regexp (it depends on the files) that i would like to
+remove. is there a commandline/gui for doing this massive edit?
+
+thanks.
+- -- 
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+- -- 
+
+you can fool all of the people some of the time, some of the people all of the time, but you can't fool all of the people all of the time. (abraham lincoln)
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: processed by mailcrypt 3.5.8 
+
+ieyearecaayfakvtgqkacgkqm0llzlt8mhwzowcftye31uax4o3gm9wkn2cvrxcx
+jmkan28qe1qvuxlkyvhhozb0xc4c0dvj
+=huwz
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87iq6qwh1x.fsf@merciadriluca-station.merciadriluca
+
+

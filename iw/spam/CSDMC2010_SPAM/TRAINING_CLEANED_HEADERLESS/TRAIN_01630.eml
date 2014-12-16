@@ -1,0 +1,67 @@
+ron johnson put forth on 4/26/2010 2:37 am:
+> on 04/26/2010 02:14 am, stan hoeppner wrote:
+>> mark allums put forth on 4/25/2010 1:19 am:
+>>
+>>> (why? ext3 and 4 are exceptionally well supported by linux and gnu.  xfs
+>>> will be, too, probably.)
+>>
+>> are you kidding?  xfs already is all of the things you mention.  you
+>> apparently need a history lesson.
+>>
+>> xfs went into production systems starting in 1993 on sgi's indy
+>> workstations.  xfs was gpl'd by sgi in 2000, and was in linux mainline
+>> just
+>> before ext3, since mid 2001 in kernel 2.4.  it was used almost
+>> exclusively
+>> on the ia64 altix machines.  it took a while before non sgi customers
+>> starting trying out xfs on i386 hardware.
+> [snip]
+> 
+> they couldn't have directly take the irix code and brought it directly
+> to linux.  it just wouldn't work, and linus wouldn't allow such shimmed
+> code into the mainline.
+> 
+> so, while there's an xfs which is 17 years old, the linux xfs code is
+> "only" 9-10 years old.
+
+absolutely correct.  i wasn't trying to imply the same exact code has been
+around for 17 years.  hell if that was the case i wouldn't be using it.
+whilst the initial linux porting effort was more than a simple recompile, i
+don't believe it was a herculanean effort.  far more changes to the xfs code
+have been made since inclusion in mainline than the changes required to get
+from irix to linux.
+
+i actually saw a brief video interview of one of the sgi irix devs quite
+some time ago in which he described the initial linux port effort to get it
+running on sgi's big origin 3000 mips machines.  they had to do this to
+start validating how everything would run under linux because they didn't
+have the first itanium altix systems manufactured yet.
+
+iirc their testbed was a 32 processor origin 3000 running mips r14k
+processors.  this was back before the linux mips port project existed so
+they were in essence creating the first linux mips port as part of their
+effort.  he clearly stated that developing/maintaining a linux mips port was
+not in the cards for sgi, that this effort was strictly a validation effort.
+ he said it took about a week to get linux booting on the origin system, and
+another week to get it stable.  the first xfs port to linux was part of this
+effort.  if it took only 2 weeks for the bulk of this effort, i can't
+imagine they had to modify a ton of xfs code.  irix was written in c as is
+linux, so the changes in xfs were probably fairly minor.
+
+i'd venture to guess that the most significant linux xfs changes were those
+for the 32bit x86 code base.  irix and thus xfs were born on 64bit mips risc
+cpus.  moving that to a linux 64bit itanium environment was probably
+relatively straight forward.  moving down to a 32bit platform probably
+required a lot of code changes, as did the initial linux 64bit ports up to
+alpha, hppa, itanium, and eventually mips64.
+
+-- 
+stan
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bd54de6.9060605@hardwarefreak.com
+
+

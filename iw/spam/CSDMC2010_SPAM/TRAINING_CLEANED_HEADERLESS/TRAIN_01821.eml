@@ -1,0 +1,16 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+
+> as a debian maintainer, i can't upload to volatile. the current klamav from testing should work fine if someone cares to upload it.
+>
+
+[...]
+
+scott, we'll need to bump the version number; if you keep the package in some
+vcs it might make sense if you prepare an updated package; otherwise i can take
+care of that.
+
+best,
+michael
+

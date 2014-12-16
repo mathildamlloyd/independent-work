@@ -1,0 +1,29 @@
+on fri, 07 may 2010 19:58:26 +0200 merciadri luca wrote:
+> i noticed on many computers with debian, whatever the kernel
+> (2.6.xx, xx >= 26), that, once ``too much'' tabs have been opened,
+> firefox/iceweasel becomes sluggish, slower and slower, and often
+> stalls after some time. i also noticed that, when becoming more and
+> more sluggish, it takes more and more ram, even when all the pages
+> are completely loaded. why? am i the only person who's experiencing
+> this? is there an objective explanation to this?
+
+i'd had similar problem with iceweasel on lenny when my browser cache
+limit was set to a large value.  but things are okay after bringing it
+down (to 20mb).  you might want to try that.
+
+large cache slows iceweasel down because it uses these large databases
+of stored history to suggest addresses in each tab's address bar.  i
+also had a zotero database, which used to worsen things.
+
+girish.
+
+-- 
+girish kulkarni - allahabad, india - http://athene.org.in/girish
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100508180204.6d9ce52d@marvin.dhcp.hri
+
+

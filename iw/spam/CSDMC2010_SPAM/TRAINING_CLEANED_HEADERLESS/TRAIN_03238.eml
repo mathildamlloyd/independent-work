@@ -1,0 +1,97 @@
+this automatic mail gives an overview over security issues that were recently 
+fixed in debian testing. the majority of fixed packages migrate to testing 
+from unstable. if this would take too long, fixed packages are uploaded to the 
+testing-security repository instead. it can also happen that vulnerable 
+packages are removed from debian testing.
+
+migrated from unstable:
+=======================
+sudo 1.7.2p6-1:
+cve-2010-1163: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-1163
+               http://bugs.debian.org/578275
+
+sun-java6 6.20-dlj-1 (non-free):
+cve-2009-2409: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-2409
+cve-2009-3728: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3728
+cve-2009-3729: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3729
+cve-2009-3865: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3865
+cve-2009-3866: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3866
+cve-2009-3867: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3867
+cve-2009-3868: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3868
+cve-2009-3869: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3869
+cve-2009-3871: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3871
+cve-2009-3872: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3872
+cve-2009-3873: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3873
+cve-2009-3874: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3874
+cve-2009-3875: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3875
+cve-2009-3876: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3876
+cve-2009-3877: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3877
+cve-2009-3879: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3879
+cve-2009-3880: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3880
+cve-2009-3881: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3881
+cve-2009-3882: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3882
+cve-2009-3883: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3883
+cve-2009-3884: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3884
+cve-2009-3886: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2009-3886
+cve-2010-0082: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0082
+cve-2010-0084: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0084
+cve-2010-0085: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0085
+cve-2010-0088: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0088
+cve-2010-0089: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0089
+cve-2010-0090: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0090
+cve-2010-0091: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0091
+cve-2010-0092: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0092
+cve-2010-0093: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0093
+cve-2010-0094: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0094
+cve-2010-0095: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0095
+cve-2010-0837: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0837
+cve-2010-0838: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0838
+cve-2010-0839: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0839
+cve-2010-0840: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0840
+cve-2010-0841: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0841
+cve-2010-0842: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0842
+cve-2010-0843: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0843
+cve-2010-0844: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0844
+cve-2010-0845: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0845
+cve-2010-0846: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0846
+cve-2010-0847: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0847
+cve-2010-0848: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0848
+cve-2010-0849: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0849
+cve-2010-0850: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0850
+cve-2010-0886: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0886
+cve-2010-0887: http://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2010-0887
+
+
+
+how to update:
+--------------
+make sure the line
+
+deb http://security.debian.org squeeze/updates main contrib non-free
+
+is present in your /etc/apt/sources.list. of course, you also need the line
+pointing to your normal squeeze mirror. you can use
+
+aptitude update && aptitude dist-upgrade
+
+to install the updates.
+
+
+more information:
+-----------------
+more information about which security issues affect debian can be found in the 
+security tracker:
+
+http://security-tracker.debian.org/tracker/
+
+a list of all known unfixed security issues is at
+
+http://security-tracker.debian.org/tracker/status/release/testing
+
+
+-- 
+to unsubscribe, email to debian-testing-security-announce-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/e1o80ij-00057n-mn@soler.debian.org
+
+

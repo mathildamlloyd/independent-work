@@ -1,0 +1,116 @@
+i wish i could answer your question but my laptop does not have the digital stuff
+hooked up :( so i so not know about it. i have an excellent ess maestro3 which oss
+supports pretty lame so i was forced to learn about alsa.
+
+i have used these commands to explore alsa and my chip:
+
+arecord -l   (list devices)
+arecord -l   (list pcm decices)
+
+i get some output like this:
+
+> arecord -l
+card 0: maestro3 [ess allegro pci], device 0: allegro [allegro]
+  subdevices: 1/1
+  subdevice #0: subdevice #0
+
+> arecord -l
+pcm list:
+ (snip - craploads of output)
+
+i noticed that the output from this commands kind of maps to what the alsamixer or
+gamix have.
+
+for what it is worth, here is what i have in modules.conf for my sound stuff:
+
+> ## alsa portion
+> alias char-major-116 snd
+> ## oss/free portion
+> alias char-major-14 soundcore
+>
+> ## alsa portion
+> alias snd-card-0 snd-maestro3
+> ## oss/free portion
+> alias sound-slot-0 snd-card-0
+>
+> ## oss/free portion - card #1
+> alias sound-service-0-0 snd-mixer-oss
+> # bad alias sound-service-0-1 snd-seq-oss
+> alias sound-service-0-3 snd-pcm-oss
+> # bad alias sound-service-0-8 snd-seq-oss
+> alias sound-service-0-12 snd-pcm-oss
+> #
+> ## alsa options (optional)
+> options snd snd_major=116 snd_cards_limit=1 snd_device_mode=0666
+> options snd-maestro3 snd_index=0 snd_id=maestro3 snd_amp_gpio=8
+> #
+> ## oss options (optional)
+> alias snd-card-1 off
+> alias snd-card-2 off
+> alias snd-card-3 off
+> alias sound-slot-1 off
+> alias sound-service-1-0 off
+>
+> ## preserve mixer settings
+> #post-install /usr/sbin/alsactl restore maestro3
+> #pre-remove /usr/sbin/alsactl store maestro3
+> post-install /usr/sbin/alsactl restore
+> pre-remove /usr/sbin/alsactl store
+
+hope that helps, good luck.
+
+
+lance (lance_tt@bellsouth.net) wrote*:
+>
+>hello,
+>
+>thanks for these rpms, i removed the binary built from source (.tar.gz)
+>and installed your srpm of gamix.  one quick question, is there a way to
+>switch between digital out and analog out with the alsa driver and
+>utilities, or, for that matter, with gamix?  i know with the oss drivers
+>i was using it was as simple as 'emu-config -d for digital and
+>emu-config -a for analog, with the emu-tools package for sblive!  i
+>noticed there is sb live analog/digital output jack in alsamixer but
+>haven't figured out the key to use, if this is the right control in
+>mixer.  also, i tried to expand gamix to display all possible controls
+>but it defaults back to 'wave' and 'music'  with lfe, center, surround
+>and playback under wave (this is how i control output of front and rear
+>speakers for digital out...'surround' and 'playback')  under 'music'
+>there are two controls but unresponsive.  i have a tuner and cassette
+>deck hooked up to an audio/video switch that goes into 'line in' on the
+>soundcard.  again, with the oss drivers, it was as simple as emu-config
+>-d and emu-config -a.  digital out for anything coming from the
+>computer, analog out for the tuner and cassette deck.  i don't know if
+>this is necessary to switch inbetween to get 'line in' to work or not,
+>but an expansion of gamix would help, where i could see all the
+>controls....
+>
+>any help would be greatly appreciated and thanks again for the gamix
+>rpms.
+>
+>kind regards,
+>
+>lance
+>--
+>:
+>####[ linux one stanza tip (lost) ]###########################
+>
+>sub : command line shortcuts (clear)                 lost #310
+>
+>tired of typing in "clear" every time you want the screen to
+>be cleared ? press [ctrl-l] ... this works for  most shells,
+>(except for ash, bsh and ksh)
+>
+>#############################################
+>:
+>
+
+--
+that's "angle" as in geometry.
+
+
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

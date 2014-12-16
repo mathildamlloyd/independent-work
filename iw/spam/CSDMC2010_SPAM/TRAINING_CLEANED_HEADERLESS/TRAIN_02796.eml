@@ -1,0 +1,21 @@
+on 14 aug 2002 10:59:22 -0400, "thomas j. baker"  wrote:
+
+> has anyone had any luck with the gstreamer repository? i'm using rh 7.3
+> and ximian gnome 2 snaps and the gstreamer stuff just doesn't work at
+> all. rhythmbox crashes on startup, gst-player can't play a simple mpg
+> file, etc.
+
+    i'm in your same shoes- i can get it upgraded and all, but i can never seem to work out where to start out with the thing; it strikes me as confusing!  but to be fair, i appreciate the pipline idea; just as it's useful on the commandline, it'll be emensely powerful for manipulating multimedia, too.    it's just not easy yet.  i'm sure all kindsa glade-produced front-ends will come up for it soon, though.  and the docs are complete, too...
+ 
+------------------------------------------------------------------------
+brian fahrlnder              linux zealot, conservative, and technomad
+evansville, in                    my voyage: http://www.countermoon.com
+icq  5119262
+------------------------------------------------------------------------
+"waddling" into the mainstream?  i suppose...
+http://www.usatoday.com/usatonline/20020805/4333165s.htm
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

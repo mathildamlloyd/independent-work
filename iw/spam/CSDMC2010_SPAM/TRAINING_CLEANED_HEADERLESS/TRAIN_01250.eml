@@ -1,0 +1,267 @@
+
+
+<!--
+ body      { background-image: url(http://images.lockergnome.com/images/issue/top-right.gif); color: #14367a }
+ a:link    { color: #2e64dc; text-decoration: underline; font-weight: normal }
+ a:visited { color: #000000; text-decoration: underline; font-weight: normal }
+ a:active  { color: gray; text-decoration: none }
+ a:hover   { color: gray; text-decoration: none }
+ p.title   { background: #2e64dc; border-bottom: #14367a 4px solid; border-left: #94b2ee 4px solid; border-right: #14367a 4px solid; border-top: #94b2ee 4px solid; color: #ffffff; font-family: comic sans ms, trebuchet ms, helvetica, arial; font-size: 14pt; font-weight: normal }
+ p.sidebar { background: #94b2ee; border-bottom: #2e64dc 3px solid; border-left: #ffffff 3px solid; border-right: #2e64dc 3px solid; border-top: #ffffff 3px solid; color: #14367a; font-family: comic sans ms, trebuchet ms, helvetica, arial; font-size: 10pt; font-weight: bold; text-align: center }
+ .url      { font-size: 8pt; font-family: verdana, tahoma, arial }
+-->
+20020709 lockergnome apple core
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 07.09.2002 gnomereport 
+
+
+content management is key: need a reason your boss should be sending you to gnomedex? some of the leading experts on content management solutions (those things we affectionately call blogs) will be sharing the future of blogging and how you can adapt it to both the way you do business and the way you communicate in general. join evan williams and doc searls as they share pearls of wisdom on blogging, linux and other open source applications that are changing our lives. if that's not enough incentive, remind the boss that the internet security guru, steve gibson, will be sharing his wisdom as well. 
+register for gnomedex today!   
+
+
+i've finally done it! lockrgnome's top 50 
+mac os x tips is in publication 
+and available for purchase at gnometomes.com. less than half the tips have 
+appeared in the apple core newsletter already, so purchasing them means 
+getting mostly brand new content. this represents the first thing i've 
+written that people might actually pay to read, so if we sell one copy, 
+i'll be ecstatic. and hopefully, any of you who check out the tips will 
+find them useful. i know that figuring out how to do each of the 50 things 
+on the list has improved my personal os x experience.
+
+although this newsletter started out with chris, randy, and i writing 
+sections of the newsletter, time constraints have limited the 
+contributions of the other two guys. this does not mean either of them is 
+truly less involved, it just means i'm doing more writing. both chris and 
+randy regularly send me links to cool mac stuff they find, much of which 
+will ultimately end up in upcoming issues. since the writing will be 
+primarily mine, i've opted to eliminate the "review by" links at the bottom 
+of each article. unless otherwise noted, you can safely assume i wrote it. 
+if you need to send me an e-mail, the e-mail the editors link in the 
+sidebar will reach me, as well as putting your message in front of chris 
+and randy.
+
+i've been doing some exploring of applescript over the past several months 
+and believe i'm finally confidant enough in writing scripts that i'm going 
+to add a section on scripting to the newsletter. i'm curious to know what 
+your level of experience with scripting is, because i can either start with 
+some really basic stuff, or skip the basics and dive into meatier scripting 
+topics. either way, i'm open to some 
+applescript suggestions.
+
+
+
+see you in august,jake ludington
+for mac outlook users:
+os x tips - http://www.gnometomes.com/tome/cat_macintosh.html
+
+gnomedownloads
+sherlock plugins v2.2 [600k] mac os 9/osx free
+http://www.searchstandard.com/
+
+
+while doing some research for my top 50 tips, i discovered that turning 
+off some of sherlock's extras, like multi-language indexing, in the 
+preferences will speed things up considerably, particularly for local 
+machine searches. this renewed my interest in finding ways to add-on 
+search capabilities to the bundled sleuth, resulting in my discovery of 
+searchstandard.com. this bundled collection of search plug-ins makes it 
+possible to look for almost anything using sherlock. their web site 
+won't wow you, but searchstandard's free plugins most certainly make 
+finding things online, including searches on your favorite mac sites, 
+that much easier.
+
+
+
+
+gnomenetwork
+xnet v1.0.6 [216k] osx $48
+http://bitcom.ch/products-xnet-e.html
+
+dealing with servers that offer mission critical services, like 
+intranet access, e-mail, or web serving, means dealing with those 
+services failing from time to time. don't be left in the dark 
+when one of your services go down, let xnet keep you informed. 
+the unregistered version of the product lets you verify http, 
+ping, smtp, and ftp service availability, with many more service 
+verifications included in the pro version. xnet runs on your 
+local machine, verifying remote service availability and sending 
+you a message when those services go down. the interface allows 
+for user-defined services, with alert features for both an e-mail 
+account (mine alerts are going to my cell phone) and locally via 
+a sound from your machine.
+
+
+
+
+gnometerminal
+
+for os x installs with multiple users, there may come a time when you 
+need to change ownership of a particular file. this is particularly 
+useful in situations where one user created a file, but an entirely 
+different user is the only one who will ever make future decisions 
+relating to that file, like whether to keep it or throw it in the 
+trash. chown is the terminal command designed to handle this. from 
+the command line type:
+
+sudo chown username filename
+
+you'll of course want to substitute the username of the new owner for 
+username. the name of the file receiving a change of ownership will 
+replace filename.
+
+
+
+
+
+
+50 linux tips: from the mind behind the penguin shell come two 
+more ebooks in the gnometome series. whether you are a linux newbie 
+or command line guru, you'll want these tips as part of your 
+information arsenal. 
+get your copy 
+of tony's top 50 penguintweaks or top 50 penguincore tips today!    
+
+
+gnomefavorite
+susan kare
+http://www.kare.com
+
+as we move further into the future of apple's mac os evolution, it 
+remains important to understand where things evolved from. susan 
+kare designed all the original icons for the mac os, way back in 
+1983. in fact, that smiling mac that appears as os x boots is her 
+creation. check out her collection of ui artwork, from both windows 
+and mac operating systems. also available from kare.com are kare 
+designed icon apparel and collections of fonts as designed by susan.
+
+
+gnometip
+
+show info gives you access to change the application associated with a 
+particular file type, rename files, and reassign permissions. one of 
+the best features of show info is it's ability to store "comments" 
+related to a file or application. this can be a great place to store 
+information on recently made changes to a file, information from others 
+who've looked at a file, or in the case of applications, serial numbers 
+and other pertinent data you may need when dealing with tech support.
+
+
+
+
+
+
+
+http://www.lockergnome.com/issues/applecore/20020709.html
+your subscribed e-mail address is: [qqqqqqqqqq-lg@spamassassin.taint.org] - to unsubscribe or change your delivery address, please visit the subscription management page. for further information, please refer to the gnomecredits in the sidebar.
+
+
+
+
+
+look over here
+
+download tip ebooks
+
+latest windows daily
+latest digital media
+latest tech specialist
+latest penguin shell
+latest apple core
+latest web weekly
+latest bits & bytes
+latest audio show
+
+low price search
+our tech conference
+
+microsoft office tips
+pc productivity tips
+cool internet tips
+windows 2000 tips
+windows xp tips
+top 50 fun sites
+must-know tech terms
+top 50 useful sites
+top 75 tech sites
+top 50 penguincore
+top 50 penguintweaks
+
+
+
+
+
+tell a friend about us!
+suggest a feature
+advertise with us
+high-tech job search
+chat with gnomies
+watch the webcams
+computer power user
+
+read past issues
+download x-setup
+about lockergnome
+our privacy policy
+view more options
+our xml / rss feed
+syndicate our tips
+link to lockergnome
+get chris's book
+
+general feedback
+e-mail the editors
+gnomespecials
+manage your workgroup
+form pilot
+say the time 5.0
+boomer - stream now
+create web/cd catalog
+easy web editor
+kleptomania
+tag&rename
+pretty good solitaire
+visualize color combos
+firststop websearch
+ecobuilder
+book collector
+get listed here
+question: which group is 250,000+ strong and always looking for stuff to make their personal and professional lives run smoother? 
+
+
+
+
+
+click here to zoom
+
+
+look it up
+
+
+
+
+
+
+byte me now
+
+2002, lockergnome llc. issn: 1095-3965. all rights reserved. please read our terms of service. our web site is hosted by digitaldaze. domain registered at dns central.
+
+
+
+
+

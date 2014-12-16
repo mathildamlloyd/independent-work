@@ -1,0 +1,17 @@
+greetings all-
+
+i need to modify a product based on debian. it installs from a cd and uses the debian installer system. since this product does not contain the proper driver for some of my hardware, i need a way to have the installer copy some files from the cd (which i'll add to the master iso) to the appropriate locations on the installation target. i've been through the preseed documentation and cannot seem to find it there.
+
+any tips/pointers/etc?
+
+thanks!
+
+--tim
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/30407954.92.1272995170409.javamail.root@mail
+
+

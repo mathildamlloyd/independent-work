@@ -1,0 +1,84 @@
+this looks like a classic case of argb mixup.
+have you ordered your bytes to paint "alpha, red, green blue"?
+
+bob.
+
+on apr 19, 2010, at 8:38 am, alexander car=f4t wrote:
+
+> hello again,
+>=20
+> regarding my color problem i attached a screenshot of the actual image =
+i get when mapping the pixels of a cgimage onto a qimage: the image is =
+kind of blue/white (pillow should be red, pullover shuld be green and =
+skin white).
+>=20
+> the full mapping sequence looks like this:
+>=20
+> *****************************
+> cgimageref image =3d null;
+>=20
+> size_t width, height, rowbytes, bitspercomponent;
+> cvpixelbufferlockbaseaddress( pixelbuffer, 0 );
+> rowbytes =3d cvpixelbuffergetbytesperrow( pixelbuffer );
+> baseaddr =3d cvpixelbuffergetbaseaddress( pixelbuffer );
+> width =3d cvpixelbuffergetwidth( pixelbuffer );
+> height =3d cvpixelbuffergetheight( pixelbuffer );
+> colorspace =3d cgcolorspacecreatedevicergb();
+> cvbufferretain( pixelbuffer );
+> provider =3d cgdataprovidercreatewithdata( pixelbuffer, baseaddr, =
+rowbytes *height, releaseandunlockthis );
+> image =3d cgimagecreate( width, height, 8, 32, rowbytes, colorspace,=20=
+
+> kcgimagealphanoneskipfirst, provider, null, true, =
+kcgrenderingintentdefault );
+>=20
+> unsigned char *rawdata =3d new unsigned char[1000000];
+> unsigned char backup;
+>=20
+> cfdataref data =3d =
+cgdataprovidercopydata(cgimagegetdataprovider(image));
+> rawdata =3d (unsigned char*) cfdatagetbyteptr(data);
+>=20
+> if (data !=3d null){
+>  currentobject->displayimage =3d new =
+qimage(rawdata,320,240,qimage::format_rgb32);  =20
+>  currentobject->update();
+> }  =20
+> *****************************
+>=20
+> i already changed the formats but this made it even worse. =
+furthermore, i did a manua byte swap of the raw data buffer (in case =
+this might be an endian problem):
+>=20
+>  for (int i=3d0;i<100000;i=3di+2){
+>    backup =3d rawdata[i];
+>    rawdata[i]=3drawdata[i+1];
+>    rawdata[i+1] =3d backup;
+>  }=20
+>=20
+> but this painted swapped range in green.
+>=20
+> i anyone might know what the problem might be i'd appreciate any hint.
+>=20
+> thanks a lot in advance
+>=20
+> -- a l e x
+>=20
+> _______________________________________________
+> do not post admin requests to the list. they will be ignored.
+> quicktime-api mailing list      (quicktime-api@lists.apple.com)
+> help/unsubscribe/update your subscription:
+> =
+http://lists.apple.com/mailman/options/quicktime-api/robert_monaghan%40mac=
+.com
+>=20
+> this email sent to robert_monaghan@mac.com
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

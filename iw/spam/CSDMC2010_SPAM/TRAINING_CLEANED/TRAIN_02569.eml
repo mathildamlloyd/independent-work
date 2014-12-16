@@ -1,0 +1,188 @@
+None> Hello everybody,
+> 
+> I have a problem with my sound card (nVidia Corporation MCP67 High
+> Definition Audio | ALC662 High Definition Audio) and I would like you to
+> indicate the best location and the best way for me to report the bug that
+> I will describe:
+> 
+> After a fresh installation and setup of alsa, I only have sound in one of
+> two outputs and the microphone does not work. After reading a lot of
+> documentation about the subject, I found that inserting the line "options
+> snd-hda-intel model = 3stack 6ch-index = 0" in alsa-base.conf file I can
+> make my sound card work better, but with some problems, which are:
+> 
+> a) If I select the 6-channel mode (in kmix or alsa-mixer), the two sound
+> outputs work but the microphone do not work.
+> b) If I select the 2-channel mode (in kmix or alsa-mixer), the microphone
+> works but only one sound output works.
+> 
+> You do not agree with me that this is a bug? I've been experiencing it in
+> different distributions and several versions of the Linux kernel. As in
+> several versions of ALSA.
+> 
+> Before you ask me, yes, I've tried all the options associated with ALC662
+> codec (
+>
+http://www.mjmwired.net/kernel/Documentation/sound/alsa/HD-Audio-Models.txt)
+> and the option mentioned above was that worked best.
+> 
+> 
+>  I am a novice user of Linux. So I ask you for help. How could I help
+>  solve
+> this problem? What is the right place to report this bug?
+> 
+> Thanks,
+> 
+> Motherboard: ASUS M2N68-AM SE
+> Debian Lenny
+> Squeeze Debian / Sid
+
+may be this will help you
+
+/usr/src/linux/Documentation/sound/alsa/HD-Audio-Models.txt
+
+ALC662/663/272
+==============
+  3stack-dig    3-stack (2-channel) with SPDIF
+  3stack-6ch     3-stack (6-channel)
+  3stack-6ch-dig 3-stack (6-channel) with SPDIF
+  6stack-dig     6-stack with SPDIF
+  lenovo-101e    Lenovo laptop
+  eeepc-p701    ASUS Eeepc P701
+  eeepc-ep20    ASUS Eeepc EP20
+  ecs           ECS/Foxconn mobo
+  m51va         ASUS M51VA
+  g71v          ASUS G71V
+  h13           ASUS H13
+  g50v          ASUS G50V
+  asus-mode1    ASUS
+  asus-mode2    ASUS
+  asus-mode3    ASUS
+  asus-mode4    ASUS
+  asus-mode5    ASUS
+  asus-mode6    ASUS
+  dell          Dell with ALC272
+  dell-zm1      Dell ZM1 with ALC272
+  samsung-nc10  Samsung NC10 mini notebook
+  auto          auto-config reading BIOS (default)
+
+read also /usr/src/linux/Documentation/sound/alsa/HD-Audio.txt
+
+There is also excelent ALSA documentation in their project page.
+
+write also in feature how you are testing things (which programs) and
+possibly supply log information.
+
+i.e. 
+        arecord -L 
+and 
+        aplay -L 
+and
+        amixer
+output
+
+
+regards
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/hs8jj8$ub5$1@dough.gmane.org
+
+
+re: problem with alc662 intel hdaleonardo meira wrote:
+
+> hello everybody,
+> 
+> i have a problem with my sound card (nvidia corporation mcp67 high
+> definition audio | alc662 high definition audio) and i would like you to
+> indicate the best location and the best way for me to report the bug that
+> i will describe:
+> 
+> after a fresh installation and setup of alsa, i only have sound in one of
+> two outputs and the microphone does not work. after reading a lot of
+> documentation about the subject, i found that inserting the line "options
+> snd-hda-intel model = 3stack 6ch-index = 0" in alsa-base.conf file i can
+> make my sound card work better, but with some problems, which are:
+> 
+> a) if i select the 6-channel mode (in kmix or alsa-mixer), the two sound
+> outputs work but the microphone do not work.
+> b) if i select the 2-channel mode (in kmix or alsa-mixer), the microphone
+> works but only one sound output works.
+> 
+> you do not agree with me that this is a bug? i've been experiencing it in
+> different distributions and several versions of the linux kernel. as in
+> several versions of alsa.
+> 
+> before you ask me, yes, i've tried all the options associated with alc662
+> codec (
+>
+http://www.mjmwired.net/kernel/documentation/sound/alsa/hd-audio-models.txt)
+> and the option mentioned above was that worked best.
+> 
+> 
+>  i am a novice user of linux. so i ask you for help. how could i help
+>  solve
+> this problem? what is the right place to report this bug?
+> 
+> thanks,
+> 
+> motherboard: asus m2n68-am se
+> debian lenny
+> squeeze debian / sid
+
+may be this will help you
+
+/usr/src/linux/documentation/sound/alsa/hd-audio-models.txt
+
+alc662/663/272
+==============
+  3stack-dig    3-stack (2-channel) with spdif
+  3stack-6ch     3-stack (6-channel)
+  3stack-6ch-dig 3-stack (6-channel) with spdif
+  6stack-dig     6-stack with spdif
+  lenovo-101e    lenovo laptop
+  eeepc-p701    asus eeepc p701
+  eeepc-ep20    asus eeepc ep20
+  ecs           ecs/foxconn mobo
+  m51va         asus m51va
+  g71v          asus g71v
+  h13           asus h13
+  g50v          asus g50v
+  asus-mode1    asus
+  asus-mode2    asus
+  asus-mode3    asus
+  asus-mode4    asus
+  asus-mode5    asus
+  asus-mode6    asus
+  dell          dell with alc272
+  dell-zm1      dell zm1 with alc272
+  samsung-nc10  samsung nc10 mini notebook
+  auto          auto-config reading bios (default)
+
+read also /usr/src/linux/documentation/sound/alsa/hd-audio.txt
+
+there is also excelent alsa documentation in their project page.
+
+write also in feature how you are testing things (which programs) and
+possibly supply log information.
+
+i.e. 
+        arecord -l 
+and 
+        aplay -l 
+and
+        amixer
+output
+
+
+regards
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hs8jj8$ub5$1@dough.gmane.org
+
+

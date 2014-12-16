@@ -1,0 +1,135 @@
+None/usr/src/linux-2.4 symlinked to your kernel source directory?  Also is
+there a .config in /usr/src/yourkernelsource/.config  ?
+
+On Fri, 2002-08-30 at 21:56, Ben Liblit wrote:
+> I am trying to rebuild the recently posted ALSA driver package for my 
+> kernel.  Although I run Red Hat 7.3, I am not using a Red Hat kernel 
+> package: my kernel is lovingly downloaded, configured, and built by 
+> hand.  Call me old fashioned.
+> 
+> Sadly, the RPM rebuild fails part way through:
+> 
+>      % rpm --rebuild alsa-driver-0.9.0rc3-fr6.src.rpm
+> 
+>      gcc -DALSA_BUILD -D__KERNEL__ -DMODULE=1 \
+>      -I/usr/src/redhat/BUILD/alsa-driver-0.9.0rc3/include \
+>      -I/lib/modules/2.4.18/build/include -O2 \
+>      -mpreferred-stack-boundary=2 -march=i686 -DLINUX -Wall \
+>      -Wstrict-prototypes -fomit-frame-pointer -pipe   -DEXPORT_SYMTAB \
+>      -c sound.c
+> 
+>      sound.c:41: `snd_hack_usb_set_interface' undeclared here (not in a \
+>      function)
+> 
+>      sound.c:41: initializer element is not constant
+> 
+>      sound.c:41: (near initialization for \
+>      __ksymtab_snd_hack_usb_set_interface.value')
+> 
+>      make[1]: *** [sound.o] Error 1
+> 
+> The line in question looks like this:
+> 
+> 	/* USB workaround */
+> 	#if LINUX_VERSION_CODE < KERNEL_VERSION(2, 5, 24)
+> 	#if defined(CONFIG_SND_USB_AUDIO) || \
+> 	defined(CONFIG_SND_USB_AUDIO_MODULE) || \
+> 	defined(CONFIG_SND_USB_MIDI) || \
+> 	defined(CONFIG_SND_USB_MIDI_MODULE)
+> -41-> 
+> EXPORT_SYMBOL(snd_hack_usb_set_interface);
+> 	#endif
+> 	#endif
+> 
+> Any suggestions?
+> 
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+-- 
+:
+####[ Linux One Stanza Tip (LOST) ]###########################
+
+Sub : Finding out files larger than given size       LOST #324
+
+To find out all files in a dir over a given size, try:
+find /path/to/dir_of_file -type f -size +Nk
+[Where N is a number like 1024 for 1mb, and multiples thereof] 
+
+####[Discussions on LIH : 04 Jul 2002]########################
+:
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+re: alsa-driver rebuild fails with undeclared usb symboli know this is simple but do you have /usr/src/linux and
+/usr/src/linux-2.4 symlinked to your kernel source directory?  also is
+there a .config in /usr/src/yourkernelsource/.config  ?
+
+on fri, 2002-08-30 at 21:56, ben liblit wrote:
+> i am trying to rebuild the recently posted alsa driver package for my 
+> kernel.  although i run red hat 7.3, i am not using a red hat kernel 
+> package: my kernel is lovingly downloaded, configured, and built by 
+> hand.  call me old fashioned.
+> 
+> sadly, the rpm rebuild fails part way through:
+> 
+>      % rpm --rebuild alsa-driver-0.9.0rc3-fr6.src.rpm
+> 
+>      gcc -dalsa_build -d__kernel__ -dmodule=1 \
+>      -i/usr/src/redhat/build/alsa-driver-0.9.0rc3/include \
+>      -i/lib/modules/2.4.18/build/include -o2 \
+>      -mpreferred-stack-boundary=2 -march=i686 -dlinux -wall \
+>      -wstrict-prototypes -fomit-frame-pointer -pipe   -dexport_symtab \
+>      -c sound.c
+> 
+>      sound.c:41: `snd_hack_usb_set_interface' undeclared here (not in a \
+>      function)
+> 
+>      sound.c:41: initializer element is not constant
+> 
+>      sound.c:41: (near initialization for \
+>      __ksymtab_snd_hack_usb_set_interface.value')
+> 
+>      make[1]: *** [sound.o] error 1
+> 
+> the line in question looks like this:
+> 
+> /* usb workaround */
+> #if linux_version_code < kernel_version(2, 5, 24)
+> #if defined(config_snd_usb_audio) || \
+> defined(config_snd_usb_audio_module) || \
+> defined(config_snd_usb_midi) || \
+> defined(config_snd_usb_midi_module)
+> -41-> 
+> export_symbol(snd_hack_usb_set_interface);
+> #endif
+> #endif
+> 
+> any suggestions?
+> 
+> 
+> _______________________________________________
+> rpm-list mailing list 
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+-- 
+:
+####[ linux one stanza tip (lost) ]###########################
+
+sub : finding out files larger than given size       lost #324
+
+to find out all files in a dir over a given size, try:
+find /path/to/dir_of_file -type f -size +nk
+[where n is a number like 1024 for 1mb, and multiples thereof] 
+
+####[discussions on lih : 04 jul 2002]########################
+:
+
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

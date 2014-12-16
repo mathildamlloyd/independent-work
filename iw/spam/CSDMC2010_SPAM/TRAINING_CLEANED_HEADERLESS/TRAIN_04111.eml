@@ -1,0 +1,45 @@
+2010-04-30 00:04, marcelo laia skrev:
+>> according to the debian site, however, the file is not available
+>> in squeeze:
+>>
+>> it seems to come from a cmex package. can that package have
+>> changed and dropped the fmex* files? it now seems to contain
+>> cmex*-files instead, but i do not know if that is the correct interpretation.
+>>
+>
+>
+> hummm! and now? what to do?
+>
+> if i do a search in i386 (i have both kernels), the results is the same!
+> what you suggest me? contact to maintainers? who is he/she?
+>
+
+
+as you do not explicitly request the font to be used, i expected latex 
+to choose some other font instead. does it work if you run the command 
+update-updmap and try again?
+
+otherwise, i have two suggestions:
+
+1) send and email to the debian-tex mailing list 
+(). that list is the official 
+maintainer address for texlive-base, according to 
+().
+
+2) report the problem as a bug. ().
+
+before doing any of those two, you should rewrite the example document 
+to be as small and simple as possible (still showing the problem) and 
+perhaps also translate the text to english.
+
+regards
+
+johan
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hrdo3l$np6$1@dough.gmane.org
+
+

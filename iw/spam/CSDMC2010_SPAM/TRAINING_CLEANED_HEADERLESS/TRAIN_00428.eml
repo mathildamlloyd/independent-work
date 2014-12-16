@@ -1,0 +1,61 @@
+the email thread below is from fall of 2006.
+i don't supposed anyone has any new comments to add to this question?
+
+iremoted is still popular ( http://danbri.org/words/2009/10/18/478 ).   
+and the license looks friendly.
+
+also i noticed this:
+http://www.martinkahr.com/2007/07/26/remote-control-wrapper-20/index.html
+
+does anyone have any first hand experience with these or other  
+possibilities?
+
+regards,
+  - jeremy
+
+greg guerin wrote:
+
+> joshua smith wrote:
+>
+> >i would like the allow mac users to control my full-screen java/jogl
+> >application using the new apple remote thingy.
+>
+> for personal use only, you could use amit singh's iremoted:
+>   
+>
+> it emits a line on stdout for every apple remote command received.   
+> spawn
+> it in a child process with exec(), then read the inputstream and  
+> parse the
+> text.
+>
+> the executable for iremoted can't be redistributed, hence the "for  
+> personal
+> use only" caveat above.  however, you might be able to negotiate  
+> something
+> with its author.
+>
+> in any case, exec()'ing a child process and parsing its inputstream  
+> seems
+> like an ideal way to add apple-remote features to a java app,  
+> because the
+> child process doesn't need to depend on or be constrained by the jvm.
+>
+> maybe there's a version of martin kahr's code that already does  
+> something
+> daemon-like.  if not, it would probably be a fairly straightforward  
+> objc
+> tool to write.  much simpler than trying to get it to work under  
+> jni, i
+> suspect.
+>
+>   -- gg
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

@@ -1,0 +1,20 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on sun,23.may.10, 13:01:42, deloptes wrote:
+=20
+> the problem is that there are still many packages that do not "see" that =
+i'm
+> in chroot and try to restart services while upgrading.
+> do you know any solution to this?
+
+see 'man invoke-rc.d' section init script policy and=20
+/usr/share/doc/sysv-rc/readme-policy-rc.d
+
+regards,
+andrei
+--=20
+offtopic discussions among debian users and developers:
+http://lists.alioth.debian.org/mailman/listinfo/d-community-offtopic

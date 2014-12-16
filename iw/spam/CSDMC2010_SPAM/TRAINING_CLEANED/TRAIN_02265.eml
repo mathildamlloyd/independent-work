@@ -1,0 +1,55 @@
+None>
+>>>>>> On Wed, 24 Jul 2002, "Chris" == Chris Garrigues wrote:
+>
+>  Chris> Am I the only one for whom typing control-L to the main
+>  Chris> window causes this error?
+>
+>Getting it here too on a copy I haven't updated from CVS since 
+>about May sometime.
+
+It's in 2.5 as well.
+
+//Christer
+
+-- 
+| Sys admin @ MEDIC              WWW: http://www.dtek.chalmers.se/            |
+| Email: mort@dtek.chalmers.se   Phone: (0)31 772 5431, (0)707 53 57 57	      |
+"I fought the loa and the loa won, I fought the loa and the loa won..."
+        -- Dave Aronsson, a.s.r.
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+
+re: [fwd: error exmh 2.5 07/13/2001 ]in message <5378.1027548783@dimebox>, hal devore writes:
+>
+>>>>>> on wed, 24 jul 2002, "chris" == chris garrigues wrote:
+>
+>  chris> am i the only one for whom typing control-l to the main
+>  chris> window causes this error?
+>
+>getting it here too on a copy i haven't updated from cvs since 
+>about may sometime.
+
+it's in 2.5 as well.
+
+//christer
+
+-- 
+| sys admin @ medic              www: http://www.dtek.chalmers.se/            |
+| email: mort@dtek.chalmers.se   phone: (0)31 772 5431, (0)707 53 57 57      |
+"i fought the loa and the loa won, i fought the loa and the loa won..."
+        -- dave aronsson, a.s.r.
+
+
+
+_______________________________________________
+exmh-workers mailing list
+exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

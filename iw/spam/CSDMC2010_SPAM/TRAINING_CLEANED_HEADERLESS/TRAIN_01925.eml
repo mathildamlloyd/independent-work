@@ -1,0 +1,32 @@
+hello:
+
+i=92ve recently had a few users get new snow leopard machines.  they all =
+are having problems similar to those described in the =93fileid race =
+detected=94 (jan 19, 2010) of this list.  i share home directories using =
+nfs (mac os x server 10.5.8).  my leopard clients do not exhibit this =
+behavior.
+
+the snow leopard clients are all patched up to 10.6.3.  i searched this =
+list and did not see any information indicating that this bug, alluded =
+to by jim luther (response to initial =93fileid race detected=94 posting =
+also on jan 19, 2010), has been fixed by now.  does anyone have some =
+concrete information about this bug?  thanks a bunch for your help.
+
+--
+peter schwenk  ||  campus it associate 3
+mathematical sciences  ||  university of delaware
+newark, de  19716-2553  ||  (302) 831-0437 (v)
+schwenk @ math . udel . edu  ||  http://www.math.udel.edu/~schwenk
+
+
+
+
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+filesystem-dev mailing list      (filesystem-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/filesystem-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

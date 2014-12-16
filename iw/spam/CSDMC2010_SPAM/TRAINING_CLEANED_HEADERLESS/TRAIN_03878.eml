@@ -1,0 +1,13 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+on 30/04/10 19:34, gary wrote:
+> system("g++ $files $incl $libs 2>build.log&");
+
+note this is risky: the system call will return as soon as the g++
+process is invoked, rather than when it completes - the trailing '&'
+should be removed.  also, any stdout output will still hit your console
+(although i presume, since things appear to be working, that there isn't
+any/much stdout output)
+

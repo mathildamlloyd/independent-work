@@ -1,0 +1,70 @@
+NoneOsamu Aoki schreef:
+> On Sat, May 15, 2010 at 08:23:09AM -0500, Ron Johnson wrote:
+>> On 05/15/2010 08:16 AM, RyanJB wrote:
+>>> Thanks for the comprehensive reply, it's like you just whipped up
+>>> a new documentation for this problem ;)
+>>>
+>>> I think it's best for me to run lenny with backport. My need is
+>>> actually only a stable home system. I do favor current apps
+>>> though; I often use betas (but not alphas), but I can live with
+>>> old apps.
+>>>
+>> Then use Sid.  Lots of non-geeks do.
+>=20
+> Why??? I think he made a correct judgement.=20
+>=20
+> He said "I can live with old apps".
+>=20
+> He can always run sid in chroot or virtual machine.  But the fact that
+> he is asking this question is the proof, he should get to lern Debian
+> system now.
+>=20
+> Once he will get to used to Debian system, he can do sid as I do or Ron=
+
+> does.  But I think it is premature.  Give him few months, he will....
+This is a very sane advice. I also started with a stable install, but=20
+after some time I decided I can handle testing. The problem is not that=20
+it's hard to run testing because it breaks, it is just a bit more likely =
+
+to break in which case it is good to have some experience sorting out=20
+the debris. For unstable, this is probably even more true.
+
+Sjoerd
+
+re: how to keep debian current??from nobody tue dec 16 07:55:44 2014
+content-type: text/plain; charset=utf-8; format=flowed
+content-transfer-encoding: quoted-printable
+
+osamu aoki schreef:
+> on sat, may 15, 2010 at 08:23:09am -0500, ron johnson wrote:
+>> on 05/15/2010 08:16 am, ryanjb wrote:
+>>> thanks for the comprehensive reply, it's like you just whipped up
+>>> a new documentation for this problem ;)
+>>>
+>>> i think it's best for me to run lenny with backport. my need is
+>>> actually only a stable home system. i do favor current apps
+>>> though; i often use betas (but not alphas), but i can live with
+>>> old apps.
+>>>
+>> then use sid.  lots of non-geeks do.
+>=20
+> why??? i think he made a correct judgement.=20
+>=20
+> he said "i can live with old apps".
+>=20
+> he can always run sid in chroot or virtual machine.  but the fact that
+> he is asking this question is the proof, he should get to lern debian
+> system now.
+>=20
+> once he will get to used to debian system, he can do sid as i do or ron=
+
+> does.  but i think it is premature.  give him few months, he will....
+this is a very sane advice. i also started with a stable install, but=20
+after some time i decided i can handle testing. the problem is not that=20
+it's hard to run testing because it breaks, it is just a bit more likely =
+
+to break in which case it is good to have some experience sorting out=20
+the debris. for unstable, this is probably even more true.
+
+sjoerd
+

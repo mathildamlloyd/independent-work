@@ -1,0 +1,70 @@
+hi george,
+
+i just figured what my problem was:
+
+i first needed to get the raw pixels via:
+
+cfdataref data =3d =
+cgdataprovidercopydata(cgimagegetdataprovider(image));
+rawdata =3d (unsigned char*) cfdatagetbyteptr(data);
+
+and then i could create a qimage by using:
+
+displayimage =3d new qimage(rawdata,320,240,qimage::format_rgb32);
+
+i still have some color issues but at least i have my first positive =
+result now.
+
+talk to you later,
+best
+
+-- a l e x
+
+
+
+am 19.04.2010 um 05:31 schrieb george birbilis:
+
+>> furthermore, since i am using the trolltech-qt-framework i would like =
+to
+> display each frame on a qpixmap but i didn't succeed yet.=20
+>> can anyone help how to approach this or (better) how to ideally deal =
+with
+> the pointer p ?
+>=20
+> there should be some qt components around wrapping quicktime, have you
+> search the web on this?
+> this thread sounds interesting:
+> http://lists.apple.com/archives/quicktime-api/2004/feb/msg00135.html
+>=20
+>=20
+> -<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-
+> george birbilis (http://zoomicon.com)
+> microsoft mvp j# 2004-2010
+> borland spirit of delphi 2001
+> http://birbilis.spaces.live.com
+> http://twitter.com/zoomicon
+> -<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-
+> insert quicktime in powerpoint, forms etc.:
+> http://zoomicon.com/qt4all
+>=20
+>=20
+>=20
+>=20
+> _______________________________________________
+> do not post admin requests to the list. they will be ignored.
+> quicktime-api mailing list      (quicktime-api@lists.apple.com)
+> help/unsubscribe/update your subscription:
+> =
+http://lists.apple.com/mailman/options/quicktime-api/alexander_carot%40gmx=
+.net
+>=20
+> this email sent to alexander_carot@gmx.net
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

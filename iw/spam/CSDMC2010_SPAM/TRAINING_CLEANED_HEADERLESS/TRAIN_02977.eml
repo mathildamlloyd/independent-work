@@ -1,0 +1,21 @@
+hello,
+i've got a small problem but still annoying. i upgraded from rh 7.1 to 
+rh 7.3 and everything looks ok except that the time is ahead by one 
+hour. i've been looking the man files for hwclock and options but it 
+simply doesn't work, it gives the following error from he shell as well 
+as from the startup while loading the kernel:  hwclock: ioctl() to 
+/dev/rtc to turn on update interrupts failed unexpectedly, errno=25: 
+inappropriate ioctl for device.
+.... my solution at the time is to enter the setup of the pc and reduce 
+the time by one hour (awful!)
+regards,
+felipe
+prl, dcu
+
+
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+

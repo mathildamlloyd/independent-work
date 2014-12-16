@@ -1,0 +1,14 @@
+>>>>> "tp" == tim peters  writes:
+
+  >> first test results using tokenizer.tokenizer.tokenize_headers()
+  >> unmodified.  ...  second test results using
+  >> mboxtest.mytokenizer.tokenize_headers().  this uses all headers
+  >> except received, data, and x-from_.  ...
+
+  tp> try the latter again, but call the base tokenize_headers() too.
+
+sorry.  i haven't found the time to try any more test runs.  perhaps
+later today.
+
+jeremy
+

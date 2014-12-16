@@ -1,0 +1,15 @@
+matthias haase wrote:
+> the bytecode-interpreter *is* disabled on rh8, defined at line 3 in
+> the specfile of the srpm.
+
+right you are.  the srpm includes a patch to enable it, but then the
+specfile defaults to not applying that patch.  i saw the former but
+missed the later.  egad, what a convoluted maze.
+
+sorry for the misinformation!
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

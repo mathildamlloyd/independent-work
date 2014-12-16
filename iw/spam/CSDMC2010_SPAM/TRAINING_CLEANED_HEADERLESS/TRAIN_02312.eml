@@ -1,0 +1,317 @@
+
+
+<!--
+ body      { background-image: url(http://images.lockergnome.com/images/issue/top-right.gif); color: #331f30 }
+ a:link    { color: #331f30; text-decoration: underline; font-weight: normal }
+ a:visited { color: #331f30; text-decoration: underline; font-weight: normal }
+ a:active  { color: gray; text-decoration: none }
+ a:hover   { color: gray; text-decoration: none }
+ p.title   { background: #c69ebf; border-bottom: #4f2f4a 4px solid; border-left: #e7d5e4 4px solid; border-right: #4f2f4a 4px solid; border-top: #e7d5e4 4px solid; color: #331f30; font-family: comic sans ms, trebuchet ms, helvetica, arial; font-size: 14pt; font-weight: normal }
+ p.sidebar { background: #e7d5e4; border-bottom: #c69ebf 3px solid; border-left: #ffffff 3px solid; border-right: #c69ebf 3px solid; border-top: #ffffff 3px solid; color: #331f30; font-family: comic sans ms, trebuchet ms, helvetica, arial; font-size: 10pt; font-weight: bold; text-align: center } 
+ .url      { font-size: 8pt; font-family: verdana, tahoma, arial }
+-->
+20020722 lockergnome tech specialist
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 07.22.2002 gnomereport 
+
+
+50 tips to make windows more useful 
+do you have to deal with windows on a daily basis? might as well 
+maximize your time with it. you'll find that some of these tips 
+will apply to other operating systems, too. the world of computing 
+isn't so mysterious once you understand how it works. with this 
+gnometome, you'll begin to work faster - and smarter. 
+download windows productivity tips now!  
+
+i did a lot this weekend, but i didn't really get much done, 
+ya know? my knees are killing me from hauling stuff out of 
+the basement for storage up in the attic, but the pile only 
+made it as far as the kitchen. then i stripped and painted 
+the floor where that collection of stuff was previously 
+stored, and erected some shelving so i'd have room for more 
+stuff. i woke up the next morning discover a very sick 
+ferret, likely from the fumes that leeched into the next 
+room over despite the ventilation i had setup to prevent the 
+migration of bad air. so, i ended up dismantling the ferret 
+cage to move it upstairs for a week or so until i'm sure 
+it's safe. thankfully, all critters are doing well now.
+
+i also started in on replacing the cheapo rusted screws 
+with stainless steel deck screws out back, but found that 
+the ones i picked up are too weak, leaving me with stripped 
+out heads and bent shafts. that project stopped after barely 
+getting started. the front steps are also in need of rust-
+proof screws, but they are made from much softer wood, so i 
+moved the tools to the other side of the house. two-thirds 
+of the way through the first row, i found that the extra 
+1/2" on the screws i purchased was too much and i began 
+running into the top of the old concrete steps underneath. 
+figures. live and learn. 
+
+oh well, it was entirely too hot to work outside anyway. 
+back down to the basement i went to geek out instead. 
+roughly an hour into geekitude, i glanced over and realized 
+it was 78.7 degrees in the basement and i was virtually 
+stuck to my chair from the sweat. i shut off as much as i 
+really could and still work on a couple of projects, but it 
+didn't help the heat situation much. it was just too hot 
+outside for the air conditioner to keep up with the added 
+heat from the computers. that left me in need of a shower 
+and with only the notebook in the living room for the 
+balance of the weekend. i cleaned out a lot of ancient 
+email, which was nice, but nothing really got accomplished 
+otherwise. boy, am i tired. and the weekend is so far away.
+
+hey, the second season of m*a*s*h comes out on dvd 
+tomorrow! that should put me in better spirits. i could 
+watch m*a*s*h for hours on end. in fact, i often do just 
+that. the only kink is that the episodes don't play back-to-back 
+from dvd. i'm going to play with applescript on the mac 
+to see if i can customize how the individual discs play. in 
+theory, i should be able to make a disc play all the way 
+through. if i succeed, i'll be sure to share the script 
+technique in the applecore newsletter. too bad i can't do that with a stand-alone dvd player.
+
+see you in august,randy nieland
+
+gnomenetwork
+slow file save dialog boxes
+pointed out by ian hargreaves
+
+http://support.microsoft.com/default.aspx?scid=kb;en-us;q321126
+i've hated this one for a long time, and now we have a 
+hotfix and a workaround, so take your pick as to which will 
+work best. i often map drive letters to specific network 
+shares, and if i happen to have a system turned off, i'll 
+notice a significant delay when clicking the drop-down boxes 
+in open, look in or save in/as dialog boxes. windows 2000 
+attempts to reconnect to mapped resources before showing you 
+the list, and depending on how many drives you have mapped 
+and how many of those resources are unavailable, it can take 
+eons just to save a file. a workaround is to use the my 
+network places functionality instead of mapping drive 
+letters. fine for some, but i prefer having drive letters 
+mapped for many things, being that i work at a command 
+prompt quite a bit, and it's easier to navigate that way. 
+alternatively, a hotfix is now available, but you'll have to 
+contact microsoft to obtain the fix if that's the route you 
+choose.
+
+
+gnomesystem
+customized 9x/me blue screen errors
+http://www.vsres.com/blscrn/
+we've all seen 'em. those annoyingly incoherent blue 
+screens indicating a system error of some sort, but provide 
+no real help in solving the problem. if you're a programmer 
+that has had to deal with error conditions produced by 
+windows 95/98/me, then this might be a better way to handle 
+them within your applications. blue screen v1.21 is an 
+activex control that uses the standard windows system error 
+functions, but provides a way to pass along text and 
+response options you designate. note that this is not 
+functional on windows nt/2000/xp, which handle system errors 
+in an entirely different manner.
+
+gamers beware of intel 845g chipset
+http://www.theinquirer.net/?article=4532
+http://www.theinquirer.net/?article=4513
+discount the amd hype and returned volley from intel when 
+reading up on all of this, but one thing is painfully clear. 
+the intel 845g chipset and p4 celeron processors really 
+don't provide an acceptable gaming experience. not only is 
+performance subject to ridicule, but compatibility is also 
+looking to be a serious matter. intel has never claimed that 
+celerons were high-end desktop processors, but they have 
+typically provided a decent enough experience that they can 
+make for acceptable machines for the more budget-minded 
+consumer. the compatibility issues with this particular 
+version of celeron and the 845g chipset are something to 
+watch out for. once the celeron is moved to the .13 micron 
+core, i suspect the performance concern won't remain, but 
+the 845g alone seems to have it's own problems without 
+adding the celeron misery. the lesson in knowing what 
+hardware you're buying is what's important here.
+
+
+
+gnomealertz
+today's top 5 kbalertz
+
+q296133 - wd2002: recorded macro to create right-to-left style records paragraph alignment incorrectly (q296133)
+q292152 - wd2002: macro to modify currently selected text does not work correctly (q292152)
+q292150 - wd2002: undo command does not remove list style link to paragraph style (q292150)
+q292094 - wd2002: error message: microsoft mail local fax is not installed on your system (q292094)
+q292078 - wd2002: new document created by macro while word is minimized opens in restored state (q292078)
+
+
+
+clean your system add/remove plus! 2002 offers a new and better way 
+to uninstall programs you no longer want on your computer. all you have to do 
+is double-click on a desktop icon called "uninstall programs", quickly find 
+the program you want to uninstall and click a button. add/remove plus! 2002, 
+unlike the standard windows uninstall feature (the control panel add/remove 
+programs applet), will uninstall the program and remove it from the list. 
+get your copy of add/remove plus now!
+
+
+recommend it!
+gnomeassistant
+test drive compaq servers
+http://www.testdrive.compaq.com/
+compaq (ok, hp) offers a set of servers running various 
+*nix operating systems, as well as oracle 9i, for test 
+drive. just register for an account and you can tinker 
+around with linux, freebsd or even tru64 unix running on an 
+alpha server, but without the hassle and expense of 
+obtaining your own toys. i love the idea of having a pre-
+configured environment that lets you kick the tires without 
+causing any permanent damage. 
+
+
+gnomestuff
+too cool
+http://www.pcworld.com/news/article/0,aid,102779,00.asp
+this was just too interesting not to mention. water-cooled 
+systems are all-the-rage among overclockers and those 
+that seem to need bragging rights over their friends' computer 
+systems. hitachi is taking a chapter from that tome and 
+applying the concept where it's truly needed - notebook 
+computers. believe me when i say that these suckers get very 
+hot. i spend half my life with notebook planted on lap, and 
+i have to put something between the two surfaces to avoid my 
+own little heat stroke. fans and the mini water cooling 
+system hitachi is implementing provide roughly the same heat 
+mitigation efficiency, but without the noise. the concept of 
+a water-cooled notebook sounds a little odd, but i would 
+welcome the elimination of the turbine droning with open 
+arms.
+
+
+
+
+
+
+recommend it!
+
+
+
+http://www.lockergnome.com/issues/techspecialist/20020722.html
+your subscribed e-mail address is: [qqqqqqqqqq-lg@spamassassin.taint.org] - to unsubscribe or change your delivery address, please visit the subscription management page. for further information, please refer to the gnomecredits in the sidebar.
+
+
+
+
+
+look over here
+
+download tip ebooks
+
+latest windows daily
+latest digital media
+latest tech specialist
+latest penguin shell
+latest apple core
+latest web weekly
+latest bits & bytes
+latest audio show
+
+low price search
+our tech conference
+
+microsoft office tips
+pc productivity tips
+cool internet tips
+windows 2000 tips
+windows xp tips
+
+tell a friend about us!
+suggest a feature
+advertise with us
+high-tech job search
+chat with gnomies
+watch the webcams
+computer power user
+
+read past issues
+download x-setup
+about lockergnome
+our privacy policy
+view more options
+our xml / rss feed
+syndicate our tips
+link to lockergnome
+get chris's book
+
+
+e-mail a suggestion
+your rant / rave
+general feedback
+the editor's blog
+e-mail the editor
+sound systems
+yamaha rx-v1200
+sony davc900
+harman kardonavr520
+denonavr5803
+pioneer vsxd811s
+pioneer elitevsx49tx
+sony htddw840
+yamaha htr5560
+bose ls122bk
+sony davc450
+
+gnomespecials
+manage your workgroup
+form pilot
+say the time 5.0
+boomer - stream now
+create web/cd catalog
+easy web editor
+kleptomania
+tag&rename
+pretty good solitaire
+visualize color combos
+firststop websearch
+ecobuilder
+book collector
+get listed here
+question: which group is 250,000+ strong and always looking for stuff to make their personal and professional lives run smoother? 
+
+
+
+
+
+click here to zoom
+
+
+look it up
+
+
+
+
+
+
+byte me now
+
+2002, lockergnome llc. issn: 1095-3965. all rights reserved. please read our terms of service. our web site is hosted by digitaldaze. domain registered at dns central.
+
+
+
+
+

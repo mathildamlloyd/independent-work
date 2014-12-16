@@ -1,0 +1,32 @@
+package: bbkeys
+version: 0.9.0-7.1
+severity: normal
+
+i am not shure if this is for bbkeys or blacbox!
+when i run any java program i am not able to switch to it by bbkeys
+binding that work for every other program just fine.
+in my ~/.bbkeysrc i have:
+
+    [nextwindow]      (mod4-tab)
+    [prevwindow]      (mod4-shift-tab)
+    [nextworkspace]   (mod4-control-tab)
+    [prevworkspace]   (mod4-control-shift-tab)
+
+and it work. it is just java programs are not included in 'switch to...'
+window that pops up. to be more concrete i just downloaded 
+omegat_2.1.5_beta_linux.tar.bz2 from http://www.omegat.org and this
+java program (nor any other window that it create) does not appear in
+'switch to...' list. when i click with mouse on the arrow in the
+blackbox toolbar it does cycle all opened windows on workspace
+(including java programs).
+
+martin
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100425155505.ga6884@alfa
+
+

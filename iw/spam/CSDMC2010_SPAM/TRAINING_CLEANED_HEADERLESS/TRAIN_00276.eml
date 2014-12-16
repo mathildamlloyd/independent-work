@@ -1,0 +1,38 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+on fri, apr 30, 2010 at 10:15 am, camale=f3n  wrote:
+
+> on fri, 30 apr 2010 10:05:42 +0200, james stuckey wrote:
+>
+> >> can you please upload a snapshot so we can see what you get?
+> >>
+> >>
+> > http://www.jhstuckey.com/1080.jpeg
+> >
+> > does that look right to you?
+>
+> mmmm, yes, nothing strange :-?. i bit "big" for my taste...
+>
+> do you find the font of the toolbar is still "small"? then instead 96dpi
+> set to 120dpi, that will make things "bigger".
+>
+> greetings,
+>
+> --
+> camale=f3n
+>
+>
+> --
+> to unsubscribe, email to debian-user-request@lists.debian.org
+> with a subject of "unsubscribe". trouble? contact
+> listmaster@lists.debian.org
+> archive: http://lists.debian.org/pan.2010.04.30.08.15.37@csmining.org
+>
+>
+doing "xrandr --dpi 120", logging out of wmii and logging back in doesn't
+change anything.
+
+maybe the problem i perceived in the text on screen is just how the monitor
+displays.

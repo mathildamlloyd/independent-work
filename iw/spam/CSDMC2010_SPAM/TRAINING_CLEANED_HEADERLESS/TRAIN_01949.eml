@@ -1,0 +1,58 @@
+from nobody tue dec 16 09:15:45 2014
+content-type: text/plain; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+andrei popescu wrote:
+> on sat,15.may.10, 16:47:07, merciadri luca wrote:
+>  =20
+>
+> bonding is not suitable for you because it works too low-level (it is=20
+> layer 2), unless you have two links from the same provider, using some =
+
+> technology that can be bonded (like adsl).
+>
+> afaiu what you need is bgp[1], but i can't give you any tips as this is=
+=20
+> way out of my league ;)
+>
+> probably a good start (whatever technology you end up using) is a=20
+> gnu/linux (preferably debian) machine connected to both internet links =
+
+> and your internal network since consumer gateways don't even have more =
+
+> than one wan port[2].
+>
+> [1] http://en.wikipedia.org/wiki/border_gateway_protocol
+> [2] some of them could be used for this with custom firmware, but this =
+
+> is off-topic
+>
+> regards,
+> andrei
+> p.s. there is no need to cc me as i am subscribed to the list ;)
+>  =20
+thanks for both messages. i'll study this.
+
+--=20
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+i use pgp. if there is an incompatibility problem with your mail
+client, please contact me.
+
+
+the principal task of civilization, its actual raison d'=eatre, is to
+defend us against nature. (sigmund freud)
+
+from nobody tue dec 16 09:15:45 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: openpgp digital signature
+content-disposition: attachment; filename="signature.asc"
+
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org
+
+ieyearecaayfakvu4vkacgkqm0llzlt8mhxr/qczaew9ogriji7wnmaiz0ysjmze
+5cyanrjtt4jdwx7psct6r0rcrmmqwz+8
+=r5qr
+-----end pgp signature-----

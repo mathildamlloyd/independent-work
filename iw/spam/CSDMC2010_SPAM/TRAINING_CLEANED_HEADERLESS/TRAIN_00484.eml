@@ -1,0 +1,43 @@
+on 2010-04-19 13:11, sthu deus wrote:
+> thank you for your time and answer, ron:
+> 
+>> what version is that?  v3.2 from sid opens much faster than any 
+>> other version i've seen.
+> 
+> 3.2.0-4
+
+for me, that version performs much better than an other than the old 
+1.x ones.
+
+>> "hang" has a specific meaning.
+>> do you mean "seemingly does nothing"?
+> 
+> correct, just hangs for a while (no any responses) then opens the document.
+> 
+>> upgrade to v3.2; add more ram; buy a faster cpu; learn c++ and join 
+>> the ooo development team.
+> 
+> thank you for the wisdom - so i will do.
+
+also, run top(1) sorting by (m)emory.  you'll almost definitely see 
+ooo grind up cpu and ram.
+
+>> there use to be a "preloader", but i don't see it anymore.
+> 
+> ?
+> 
+
+there was a feature where gnome or kde would pre-load ooo at de 
+startup.  that way, it *appears* that ooo loads much faster, even 
+though it was really just shifted.
+
+-- 
+dissent is patriotic, remember?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bccab01.6050505@cox.net
+
+

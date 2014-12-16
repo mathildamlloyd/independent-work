@@ -1,0 +1,22 @@
+on wed, 2002-08-28 at 13:57, michael clark wrote:
+> to update spamassasin, all i need to do is install the new tar.gz 
+> file as if it were a new installation? i don't need to stop incoming 
+> mail or anything like that? thanks, mike
+if you are using spamd, you will have to stop/restart it. 
+
+-- 
+larry rosenman                     http://www.lerctr.org/~ler
+phone: +1 972-414-9812                 e-mail: ler@lerctr.org
+us mail: 1905 steamboat springs drive, garland, tx 75044-6749
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: jabber - the world's fastest growing 
+real-time communications platform! don't just im. build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

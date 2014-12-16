@@ -1,0 +1,47 @@
+on fri, 14 may 2010 15:45:36 +0200, artifex maximus wrote:
+
+> on fri, may 14, 2010 at 3:28 pm, camalen wrote:
+
+>> can we (we=people) make our own flash implementation by using adobe
+>> flash specs?
+> 
+> yes. "developers are now free to implement what is documented in the
+> specifications without restrictions from adobe."
+> 
+> i think you might separate the description of file format (free) and the
+> code itself (proprietary). so you can write your flash player using the
+> documentation but you cannot get the code of adobe flash player.
+
+o.k. here is what i was looking for:
+
+http://en.wikipedia.org/wiki/swf#licensing
+
+>> oh, no, but... if w3c does not trust "flash" technology to be included
+>> as one of their recommended standards, why should i? that is the point.
+> 
+> linux, freebsd, osx and other oss included in that w3c standards? i
+> think the answer is no... do you have trust in them?
+
+"linux, freebsd, osx and other oss" all of them include their own 
+licencing model, whatever it is (closed or open sourced), so i can use 
+the software knowing beforehand what i can (or can't) do with it.
+
+the licensing model of flash was (very) unclear for me, that is what i 
+meant to say. and heck, it was recently "opened" (2008?) so it's a 
+evolving license that could "dissolve" into something worse.
+
+do not get me wrong, i'm only saying that if i were a developer, i would 
+have many doubts in choosing a flash format for any of my works.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.14.14.58.51@csmining.org
+
+

@@ -1,0 +1,79 @@
+NoneOn 04/05/10, Zoran Kolic (zkolic@sbb.rs) wrote:
+
+| > ...
+| > IBM High Rate Wireless LAN PC Card
+| > Chipset: Hermes I
+| > Drivers: orinoco_cs
+
+| Woops!
+| Cannot say I had an experience with orinoco. It was
+| old kind of chip. I think that support for orinoco
+| was abandoned for bsd year or so ago. And no wpa2, for
+| sure.
+
+The curious thing, or one of them, is that I do get a connection
+whether the router is set to WPA or WPA@ -- the first time it is set
+that way.
+
+
+| Any chance you could put some newer card in
+| place?
+
+Possibly, but so long as it and the 600X ThinkPad it is in run, I'm
+not inclined to spend the money.
+
+Thanks for responding.=20
+
+--=20
+JohnRChamplin@columbus.rr.com
+219 East Beck Street=20
+Columbus, OH 43206
+home: 1-614-228-3623; cell: 1-614-477-6724
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D
+GPG key 1024D/99421A63 2005-01-05
+EE51 79E9 F244 D734 A012 1CEC 7813 9FE9 9942 1A63
+gpg --keyserver subkeys.pgp.net --recv-keys 99421A63
+re: unable to connect to my home wirelessfrom nobody tue dec 16 07:55:47 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on 04/05/10, zoran kolic (zkolic@sbb.rs) wrote:
+
+| > ...
+| > ibm high rate wireless lan pc card
+| > chipset: hermes i
+| > drivers: orinoco_cs
+
+| woops!
+| cannot say i had an experience with orinoco. it was
+| old kind of chip. i think that support for orinoco
+| was abandoned for bsd year or so ago. and no wpa2, for
+| sure.
+
+the curious thing, or one of them, is that i do get a connection
+whether the router is set to wpa or wpa@ -- the first time it is set
+that way.
+
+
+| any chance you could put some newer card in
+| place?
+
+possibly, but so long as it and the 600x thinkpad it is in run, i'm
+not inclined to spend the money.
+
+thanks for responding.=20
+
+--=20
+johnrchamplin@columbus.rr.com
+219 east beck street=20
+columbus, oh 43206
+home: 1-614-228-3623; cell: 1-614-477-6724
+=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=
+=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=
+=3d=3d
+gpg key 1024d/99421a63 2005-01-05
+ee51 79e9 f244 d734 a012 1cec 7813 9fe9 9942 1a63
+gpg --keyserver subkeys.pgp.net --recv-keys 99421a63

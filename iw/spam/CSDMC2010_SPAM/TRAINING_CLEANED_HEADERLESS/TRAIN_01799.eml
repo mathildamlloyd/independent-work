@@ -1,0 +1,26 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=us-ascii; format=flowed
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on fri, apr 16, 2010 at 08:15:38pm -0400, daniel d jones wrote:
+>what i'm trying to do is pretty simple.  getting it to work is turning out=
+ not
+>to be.  what i want to do is call a bash script with a couple of arguments,
+>and, within the script, call sed to use those args to replace two placehol=
+ders
+>in a file:
+>
+>bashscript sub1 sub2
+>
+>this line inside bashscript doesn't work:
+>
+>sed -e 's/placeholder1/$1/' -e 's/placeholder2/$2/' < input > output
+
+if you switch the single quotes to double quotes it will work as you expect=
+=2e =20
+variables inside of double quotes are expanded.  single quotes are for lite=
+ral=20
+strings, as you've discovered.
+
+me

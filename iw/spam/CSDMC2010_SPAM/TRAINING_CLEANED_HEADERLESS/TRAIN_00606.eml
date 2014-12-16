@@ -1,0 +1,43 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+
+---------------------------------------------------------------------------
+debian volatile update announcement vua 63-1     http://volatile.debian.org
+debian-volatile@lists.debian.org                            adam d. barratt
+april 24th, 2010
+---------------------------------------------------------------------------
+
+package              : python-clamav
+version              : 0.4.1-1.1~volatile1 (lenny)
+importance           : medium
+
+python-clamav, which provides python bindings to clamav, a virus scanning
+engine, needed a recompilation with the newer clamav 0.95.3.  if you use
+python-clamav directly or through nautilus-clamscan, we strongly recommend
+you to upgrade to this version, as the old version the package was linked
+against stopped working.
+
+
+upgrade instructions
+--------------------
+
+you can get the updated packages at
+
+http://volatile.debian.org/debian-volatile/pool/volatile/main/p/python-clamav
+
+and install them with dpkg, or add the volatile archive for lenny
+to your /etc/apt/sources.list:
+
+ deb http://volatile.debian.org/debian-volatile lenny/volatile main
+ deb-src http://volatile.debian.org/debian-volatile lenny/volatile main
+
+you can also use any of our mirrors.  see
+http://www.debian.org/volatile/volatile-mirrors for the full list of
+mirrors.  the archive signing keys were included in debian lenny.
+
+for further information about debian-volatile, please refer to
+http://www.debian.org/volatile/.
+
+if there are any issues, please don't hesitate to get in touch with the
+debian-volatile team.

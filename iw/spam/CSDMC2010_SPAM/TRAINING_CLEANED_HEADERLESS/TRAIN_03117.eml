@@ -1,0 +1,36 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+merciadri luca wrote:
+> hi,
+>
+> when compiling any .tex document using the route latex -> dvips ->
+> ps2pdf, i get a pdf. normal, but the problem is that if i the pdf is
+> already opened (e.g. because i was reading the version of the document
+> before having modified and compiled it) when the compilation and the
+> whole process ends, the opened pdf is blank, i.e. the current page
+> becomes white, and every page i go at is white. if i then re-open the
+> document, i find the new version of my pdf.
+>
+> i would like to know how this process actually works. for me, it looks
+> like the ps2pdf tool creates the pdf from scratch, and overwrites the
+> old pdf. but why am i receiving no warning message from acroread?
+> anyway, acroread seems not to be locking the file, or, if so, ps2pdf
+> forces the writing.
+>
+> thanks.
+>
+>  =20
+posting is so slow that i have already obtained the answer through
+comp.text.tex. so please do not take the op into account.
+
+--=20
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+i use pgp. if there is an incompatibility problem with your mail
+client, please contact me.
+
+
+
+

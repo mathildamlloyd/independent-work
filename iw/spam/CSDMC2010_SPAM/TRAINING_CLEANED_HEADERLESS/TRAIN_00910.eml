@@ -1,0 +1,31 @@
+on thu, 29 apr 2010 22:20:36 +0200, james stuckey wrote:
+
+> on thu, apr 29, 2010 at 10:15 pm, camalen wrote:
+
+>> option   "dpi" "96 x 96"
+>>
+>> under your /etc/x11/xorg.conf "monitor" section?
+>>
+>> (make a backup copy of the original file before making any change)
+>>
+>> i can't tell if that made a change or not. in either case, the fonts
+>> still
+> look like garbage/aren't easy to read. 
+> i should note, the fonts in what
+> i'm typing right now (gmail) aren't bad -- it's the fonts on the menu
+> bar in iceweasel/icedove/whatever program.
+
+can you please upload a snapshot so we can see what you get?
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.29.21.05.08@csmining.org
+
+

@@ -1,0 +1,35 @@
+the lock bit comes into a vfs as the uf_immutable flag.  see man chflags
+
+on apr 23, 2010, at 3:02 pm, mogambo wrote:
+
+> hi,
+>=20
+> it seems that clicking that checkbox makes the file read-only.  =
+however, the actual permissions do not change on the file when i check =
+with ls.  trying to modify the file, with vi say, fails saying it's a =
+read-only file.
+>=20
+> is it handled with some extended attributes?  what are the =
+expectations from a file system driver for a remote file system to =
+support this feature?
+>=20
+> thanks,
+> -m.
+> _______________________________________________
+> do not post admin requests to the list. they will be ignored.
+> filesystem-dev mailing list      (filesystem-dev@lists.apple.com)
+> help/unsubscribe/update your subscription:
+> =
+http://lists.apple.com/mailman/options/filesystem-dev/nelson%40thursby.com=
+
+>=20
+> this email sent to nelson@thursby.com
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+filesystem-dev mailing list      (filesystem-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/filesystem-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

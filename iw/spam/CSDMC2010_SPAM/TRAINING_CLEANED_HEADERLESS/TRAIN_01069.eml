@@ -1,0 +1,29 @@
+on fri, 23 apr 2010 16:18:31 -0300, carlos bergero wrote:
+
+> sorry forget to copy it
+> tlsprune is disable now so it doesnt lock the start up of the cyrus
+
+next time use an online service (such pastebin) to put the data and send 
+a link ;-)
+
+(...)
+
+> both are mostly standar files.
+
+yep, i see nothing strange in there.
+
+i would start cyrus setup and user migration from scratch to avoid any 
+incompatibility between the old installation and the new.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.24.08.58.14@csmining.org
+
+

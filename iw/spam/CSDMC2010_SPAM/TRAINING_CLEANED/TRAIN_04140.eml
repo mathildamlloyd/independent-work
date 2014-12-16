@@ -1,0 +1,41 @@
+None
+On Thu, 05 Sep 2002 14:40:53 PDT, Siva Doriaswamy writes:
+>Recently, my incoming mail (or spool) location moved to another disk.
+>I'm not quite clear how to reconfigure procmail/rcvstore/exmh to accept
+>mail from the new location.
+
+How do you feed procmail? Not with a .forward, I'd guess.
+
+How does mail enter your system anyway? Per fetchmail maybe? Or direct 
+ SMTP-delivery? Or does it just magically hit your spool?
+
+Lotsa questions...
+
+cheers,
+&rw
+-- 
+-- Booze: because one doesn't solve the world's problems over white wine.
+
+
+re: changed location of incoming mail. exmh not working!!from nobody tue dec 16 07:55:45 2014
+content-type: text/plain; charset=us-ascii
+
+
+on thu, 05 sep 2002 14:40:53 pdt, siva doriaswamy writes:
+>recently, my incoming mail (or spool) location moved to another disk.
+>i'm not quite clear how to reconfigure procmail/rcvstore/exmh to accept
+>mail from the new location.
+
+how do you feed procmail? not with a .forward, i'd guess.
+
+how does mail enter your system anyway? per fetchmail maybe? or direct 
+ smtp-delivery? or does it just magically hit your spool?
+
+lotsa questions...
+
+cheers,
+&rw;
+-- 
+-- booze: because one doesn't solve the world's problems over white wine.
+
+

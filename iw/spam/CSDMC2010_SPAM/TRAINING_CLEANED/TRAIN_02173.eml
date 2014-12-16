@@ -1,0 +1,140 @@
+NoneOn Wed, Apr 7, 2010 at 1:35 PM, Daniel Sutil <daniel.sutil@csmining.org> wrote=
+:
+
+>
+> On Wed, Apr 7, 2010 at 12:15 PM, Smokejohn <smokejohn@csmining.org> wrote:
+>
+>>
+>>
+>> On Tue, Apr 6, 2010 at 11:53 PM, Klaus Becker <colonius@free.fr> wrote:
+>>
+>>> Le Mardi 06 Avril 2010 22:41:44, Daniel Sutil a =E9crit :
+>>> > Finally I applied the following workaround: I remove kdm and installe=
+d
+>>> gdm.
+>>> > After that, I have no problem to login. I haven't investigated any
+>>> further
+>>> > because I really don't know from where the problem comes, but now,
+>>> maybe we
+>>> > have to undo the steps applied with the skype's solution to solve our
+>>> > problem.
+>>>
+>>>
+>>> Hi,
+>>>
+>>> I had the same problem with kdm, but no problem with gdm.
+>>>
+>>> cheers
+>>>
+>>> Klaus
+>>>
+>>> Hi. Installing gdm did not do the trick :(
+>>
+>> You must uninstall the kdm service first and select in the session
+> selector of gdm "kde". If you don't select the session type, get some
+> errors.
+>
+
+I uninstalled kdm and selected kde as a session but I got the same message
+telling me that my session lasted lower than 10s and bla bla..
+
+>
+>
+>> When doing startx as a normal user from console I get some errors like
+>> "xkb could not initialize" and "Xinit: no such file or directory" and
+>> "Xinit: Could not connect to xserver"....
+>>
+>
+> Have you stopped the kdm first?
+>
+
+Yes I did stop kdm when I tried that. The strange thing is that if I login
+as root from console and do a startx then a kde session starts normally. If
+I do that as a normal user I get the errors..
+
+>
+>
+>>
+>> Some friend told me to purge kde and reinstall it. I don't think this wi=
+ll
+>> help. Do you think I should give it a try?
+>>
+>>
+>>
+> I tried that with no success :-(
+>
+> If that didn't help you I will not bother..
+
+J
+re: cannot loginfrom nobody tue dec 16 07:55:45 2014
+content-type: text/plain; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+on wed, apr 7, 2010 at 1:35 pm, daniel sutil  wrote=
+:
+
+>
+> on wed, apr 7, 2010 at 12:15 pm, smokejohn  wrote:
+>
+>>
+>>
+>> on tue, apr 6, 2010 at 11:53 pm, klaus becker  wrote:
+>>
+>>> le mardi 06 avril 2010 22:41:44, daniel sutil a =e9crit :
+>>> > finally i applied the following workaround: i remove kdm and installe=
+d
+>>> gdm.
+>>> > after that, i have no problem to login. i haven't investigated any
+>>> further
+>>> > because i really don't know from where the problem comes, but now,
+>>> maybe we
+>>> > have to undo the steps applied with the skype's solution to solve our
+>>> > problem.
+>>>
+>>>
+>>> hi,
+>>>
+>>> i had the same problem with kdm, but no problem with gdm.
+>>>
+>>> cheers
+>>>
+>>> klaus
+>>>
+>>> hi. installing gdm did not do the trick :(
+>>
+>> you must uninstall the kdm service first and select in the session
+> selector of gdm "kde". if you don't select the session type, get some
+> errors.
+>
+
+i uninstalled kdm and selected kde as a session but i got the same message
+telling me that my session lasted lower than 10s and bla bla..
+
+>
+>
+>> when doing startx as a normal user from console i get some errors like
+>> "xkb could not initialize" and "xinit: no such file or directory" and
+>> "xinit: could not connect to xserver"....
+>>
+>
+> have you stopped the kdm first?
+>
+
+yes i did stop kdm when i tried that. the strange thing is that if i login
+as root from console and do a startx then a kde session starts normally. if
+i do that as a normal user i get the errors..
+
+>
+>
+>>
+>> some friend told me to purge kde and reinstall it. i don't think this wi=
+ll
+>> help. do you think i should give it a try?
+>>
+>>
+>>
+> i tried that with no success :-(
+>
+> if that didn't help you i will not bother..
+
+j

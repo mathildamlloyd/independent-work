@@ -1,0 +1,65 @@
+on sat, 10 apr 2010 09:53:20 +0200, steef wrote:
+
+> camalen wrote:
+
+(...)
+
+>>   so i would
+>> test with the nvidia debian drivers. if they do not work, you can
+>> always come back and activate the intel one.
+>>
+>>
+> that is what i did when the nvidia drivers from *their site* worked out
+> disastrously
+
+i fear newer drivers. 
+
+the first time i installed nvidia proprietary drivers was 3/4 years ago. 
+in that time i was running opensuse 10.1 and hopefully, nvidia provided 
+rpm drivers in their site so installation went straightforward (very easy 
+and worked fine: i needed 3d for running google earth and twinview setup 
+for the two displays i had attached).
+
+that time (and that time was 4 years ago) i installed the same drivers i 
+have nowadays (173.xx). why i have not updated to the latest ones 
+(195.x)? because "if it works, don't touch it" and i don't needed to do 
+fancy things in that computer and the old version was (and is still) 
+working without glitches.
+ 
+>>> i'll look into that wiki (again),
+>>>
+>>>
+> it is almost like the old days of potato and woody. had to fresh up my
+> old brain again.   so i installed nvidia-glx and the other required
+> packages. that 's nowadays much easier than in the wiki thanks to apt if
+> you start with 
+
+yes, i have also encountered the "debian-way" plain easy. i thought 
+installing nvidia drivers was going to be a headache but truly was not :-)
+
+> after that i put the appropriate sections in my /etx/x11/xorg.conf.
+> nvidia instead of in tel and i made a module section with load "glx" in
+> it.
+> 
+> i restarted the x-server and now *everything is working like a charm*
+> 
+> he camalen, i really owe you, man! you really helped me out.
+> 
+> many regards,
+
+glad you got it working! :-d
+
+you're welcome.
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.11.09.40.42@csmining.org
+
+

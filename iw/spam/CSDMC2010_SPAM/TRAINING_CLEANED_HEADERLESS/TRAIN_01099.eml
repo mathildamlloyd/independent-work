@@ -1,0 +1,44 @@
+-----begin pgp signed message-----
+hash: sha1
+
+camalen  writes:
+
+> pdf manipulation is still very limited in linux so don't expect the same 
+> manageability and easiness of acrobat professional or such programs 
+> here :-)
+mmh okay, but what i want looks basic, doesn't it? no problem.
+
+> that said, i would make first the big pdf file (with all the needed 
+> appended files in there) and then make the bookmarks with a program that 
+> allows creating/editing them, like "jpdfbookmarks".
+thanks. i'll check it out.
+
+> dunno whether "pdfkt" or "pdfedit" will allow creating/editing
+> bookmarks.
+i think you meant `pdftk' at the place of `pdfkt'.
+
+>  http://flavianopetrocchi.blogspot.com
+thanks for this link. i'll check it.
+- -- 
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+- -- 
+
+to live is the rarest thing in the world.  most people exist, that's
+ all. (oscar wilde)
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: processed by mailcrypt 3.5.8 
+
+ieyearecaayfakvl17macgkqm0llzlt8mhxbagcfypgyruq1p851+ob77z/eup92
+5qsan0fmua7ihdb+i3pymga1tdiusryv
+=q+pr
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87pr16yte3.fsf@merciadriluca-station.merciadriluca
+
+

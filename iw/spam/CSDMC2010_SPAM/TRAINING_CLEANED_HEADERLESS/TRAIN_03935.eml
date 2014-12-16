@@ -1,0 +1,32 @@
+thomas siedlich wrote:
+> hi hugo!
+> 
+> on 2010-04-06, hugo vanwoerkom  wrote:
+>> hugo vanwoerkom wrote:
+>> ok. what about this. can anybody explain the following:
+>>
+>> hugo@debian:~$ which mc
+>> /usr/local/bin/mc
+>> hugo@debian:~$ mc -v
+>> gnu midnight commander 4.7.0.1
+> [...]
+>> hugo@debian:~$ /usr/local/bin/mc -v
+>> gnu midnight commander 4.6.1
+> [...]
+> 
+> maybe an alias?
+> 
+> what says 'alias mc'?
+> 
+
+not found.
+
+hugo
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hpg5gr$4l5$1@dough.gmane.org
+
+

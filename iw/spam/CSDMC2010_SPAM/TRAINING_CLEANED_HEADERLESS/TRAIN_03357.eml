@@ -1,0 +1,84 @@
+it's got to be razor 2.x...i've never installed razor 1.x 
+
+however:
+
+[mburger@burgers mburger]$ razor-report -v
+razor agents 2.14, protocol version 3
+
+as to more details...i don't have any...it runs, seems to do its thing, 
+and then gives that error.
+
+on mon, 12 aug 2002, chad norwood wrote:
+
+>   can you send more details about the error?
+>   and also do a 'razor-report -v' to make sure 2.x is being called.
+> 
+>   -chad
+> 
+> on 11/08/02 21:09 -0500, mike burger wrote:
+> ) ok...i need to amend this.
+> ) 
+> ) i don't get the error when i check the spam...just when i go to report it.
+> ) 
+> ) on sun, 11 aug 2002, mike burger wrote:
+> ) 
+> ) > i did...unfortunately, now i get this:
+> ) > 
+> ) > died at /usr/bin/razor-check line 32,  line 1.
+> ) > 
+> ) > did i need to remove and reinstall, or something.  i just did a make 
+> ) > install over the existing installation.
+> ) > 
+> ) > on sun, 11 aug 2002, vipul ved prakash wrote:
+> ) > 
+> ) > > on sun, aug 11, 2002 at 07:39:41am -0500, mike burger wrote:
+> ) > > > 
+> ) > > > any ideas what might have changed, here? i'm running razor-agents-2.12, 
+> ) > > > and razor-agents-sdk-2.0.3.
+> ) > > 
+> ) > > mike, 
+> ) > > 
+> ) > > please upgrade to 2.14 as many bugs were fixed between the two releases, and 
+> ) > > see if your problem persists.
+> ) > > 
+> ) > > cheers,
+> ) > > vipul.
+> ) > > 
+> ) > > 
+> ) > 
+> ) > 
+> ) > 
+> ) > -------------------------------------------------------
+> ) > this sf.net email is sponsored by:thinkgeek
+> ) > welcome to geek heaven.
+> ) > http://thinkgeek.com/sf
+> ) > _______________________________________________
+> ) > razor-users mailing list
+> ) > razor-users@lists.sourceforge.net
+> ) > https://lists.sourceforge.net/lists/listinfo/razor-users
+> ) > 
+> ) 
+> ) 
+> ) 
+> ) -------------------------------------------------------
+> ) this sf.net email is sponsored by:thinkgeek
+> ) welcome to geek heaven.
+> ) http://thinkgeek.com/sf
+> ) _______________________________________________
+> ) razor-users mailing list
+> ) razor-users@lists.sourceforge.net
+> ) https://lists.sourceforge.net/lists/listinfo/razor-users
+> 
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: dice - the leading online job board
+for high-tech professionals. search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+razor-users mailing list
+razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

@@ -1,0 +1,22 @@
+
+ xserver has a well known issue with the i915 driver and it's dri/drm 
+  limitation to 2048x2048 window size. so the default setup is not working 
+  because in recent versions of x it loads drm by default creating 
+  configuration that allows only  "clone" of the primary display with dri 
+  enabled on it.
+  the impact on kde is that it can not set dual display (only "clone" option 
+  is available).
+  solved: applying custom xorg.conf with 
+        option "noaccel" "true"
+  in the device section and position option into each monitors config.
+
+
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hscpsv$4t7$1@dough.gmane.org
+
+

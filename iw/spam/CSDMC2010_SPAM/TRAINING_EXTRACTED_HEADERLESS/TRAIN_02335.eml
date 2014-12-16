@@ -1,0 +1,88 @@
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+2010/4/27 Stephen Powell <zlinuxman@wowway.com>
+
+> On Tue, 27 Apr 2010 15:22:53 -0400 (EDT), cosme wrote:
+> >
+> > asignar hora a PC
+> > Hola como crear un script para poner en netlogon de samba para que las
+> > estaciones Windows cojan la hora del server en windows ser=EDa por jemp=
+lo
+> > netime.bat
+> >
+> > @echo off
+> > net time \\debian-pdc /set /yes
+> >
+> > al traducirlo a Debian ser=EDa un netime.sh
+> >
+> > y como quedar=EDa dentro????
+>
+> Solo en ingles, por favor, o mailto:debian-user-spanish@lists.debian.org
+>
+> --
+>  .''`.     Stephen Powell
+>  : :'  :
+>  `. `'`
+>   `-
+>
+>
+> --
+> To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org
+> with a subject of "unsubscribe". Trouble? Contact
+> listmaster@lists.debian.org
+> Archive:
+> http://lists.debian.org/82853430.29593.1272394679432.JavaMail.root@md01.w=
+ow.synacor.com
+>
+> I have to say I kinda like trying to guess the meaning of the post based
+solely on the command lines
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<br><br><div class=3D"gmail_quote">2010/4/27 Stephen Powell <span dir=3D"lt=
+r">&lt;<a href=3D"mailto:zlinuxman@wowway.com">zlinuxman@wowway.com</a>&gt;=
+</span><br><blockquote class=3D"gmail_quote" style=3D"margin: 0pt 0pt 0pt 0=
+.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;">
+<div class=3D"im">On Tue, 27 Apr 2010 15:22:53 -0400 (EDT), cosme wrote:<br=
+>
+&gt;<br>
+&gt; asignar hora a PC<br>
+&gt; Hola como crear un script para poner en netlogon de samba para que las=
+<br>
+&gt; estaciones Windows cojan la hora del server en windows ser=EDa por jem=
+plo<br>
+&gt; netime.bat<br>
+&gt;<br>
+&gt; @echo off<br>
+&gt; net time \\debian-pdc /set /yes<br>
+&gt;<br>
+&gt; al traducirlo a Debian ser=EDa un netime.sh<br>
+&gt;<br>
+&gt; y como quedar=EDa dentro????<br>
+<br>
+</div>Solo en ingles, por favor, o mailto:<a href=3D"mailto:debian-user-spa=
+nish@lists.debian.org">debian-user-spanish@lists.debian.org</a><br>
+<br>
+--<br>
+ =A0.&#39;&#39;`. =A0 =A0 Stephen Powell<br>
+=A0: :&#39; =A0:<br>
+=A0`. `&#39;`<br>
+ =A0 `-<br>
+<div class=3D"im"><br>
+<br>
+--<br>
+To UNSUBSCRIBE, email to <a href=3D"mailto:debian-user-REQUEST@lists.debian=
+.org">debian-user-REQUEST@lists.debian.org</a><br>
+with a subject of &quot;unsubscribe&quot;. Trouble? Contact <a href=3D"mail=
+to:listmaster@lists.debian.org">listmaster@lists.debian.org</a><br>
+</div>Archive: <a href=3D"http://lists.debian.org/82853430.29593.1272394679=
+432.JavaMail.root@md01.wow.synacor.com" target=3D"_blank">http://lists.debi=
+an.org/82853430.29593.1272394679432.JavaMail.root@md01.wow.synacor.com</a><=
+br>
+
+<br>
+</blockquote></div>I have to say I kinda like trying to guess the meaning o=
+f the post based solely on the command lines<br>

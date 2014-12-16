@@ -1,0 +1,115 @@
+on 11 may 2010 13:50, deloptes  wrote:
+> deloptes wrote:
+>
+> screenshot - i need at least those app/lets working to even start thinking
+> of using kde
+>
+> - teatime
+
+p   kteatime                                                       -
+kde 4 utility for making a fine cup of tea
+
+> - weather
+
+http://kde-look.org/content/show.php/yawp+%28yet+another+weather+plasmoid%29?content=94106
+
+
+> - moon
+
+check!
+
+
+> - clock/calendar
+
+check!
+
+
+> - wireless manager
+
+knetworkmanager works, but i prefer wicd, which has integration in
+kde's system settings. it's in the system tray, not on the panel. you
+can configure it to always show, though.
+
+
+> - skype
+
+integrated into kopete!
+
+
+> - korganizer
+
+check!
+
+
+> - kwallet
+
+check!
+
+
+> - cpu monitor
+
+check, but you might want to comment here:
+https://bugs.kde.org/show_bug.cgi?id=172312
+https://bugs.kde.org/show_bug.cgi?id=191341
+https://bugs.kde.org/show_bug.cgi?id=191342
+
+
+> - infrared control
+
+how did you do this in kde 3?
+
+
+> - powermanagement
+
+check!
+
+
+> - keyboard
+
+i   plasma-widget-kbstate                                          - a
+plasma widget that shows the state of the modifier keys
+
+
+> - screen management (xrandr interface)
+
+yes, built into system settings.
+
+
+> - krypt
+>
+
+http://kde-apps.org/content/show.php/krypt?content=80641
+
+
+> i forgot to mention that the keyboard froze after pressing alt+f2 and
+> switching language settings
+>
+
+please, please comment on this bug:
+https://bugs.kde.org/show_bug.cgi?id=205369
+
+
+> a huge trouble i see is with the keyboard layout for my mother
+> language "bulgarian"
+> who the hell have change the default keyboard layout for the phonetic setup?
+> i've been using this for years now hen i press "w" i get seomthing
+> different ..
+> _this_ _is_ _really_ _odd_ - _stupid_ _monkeys_!
+>
+
+i don't speak bulgarian, so i cannot reproduce. please file a bug!
+
+
+-- 
+dotan cohen
+
+http://bido.com
+http://what-is-what.com
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/aanlktinoxmbie3v2htcnli-955bwcfwkhxlpg7prcbaw@mail.csmining.org
+
+

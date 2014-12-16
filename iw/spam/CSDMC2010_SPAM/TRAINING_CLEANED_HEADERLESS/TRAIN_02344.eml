@@ -1,0 +1,24 @@
+the documentation isn't clear, will qtvisualcontextcopyimagefortime() =
+block or just return nil if the data isn't there yet.
+
+i'm iterating a movie frame by frame from a secondary thread. rather =
+than polling/spinning on qtvisualcontextisnewimageavailable() for each =
+frame, can i just copyimagefortime() and let it block until the data is =
+available? the alternative is to install a hook via =
+qtvisualcontextsetimageavailablecallback() and trigger a semaphore, but =
+blocking on the copy call would be much more straightforward.
+
+thanks!
+
+matt slot / bitwise operator / ambrosia software, inc. -- =
+http://www.ambrosiasw.com/
+
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

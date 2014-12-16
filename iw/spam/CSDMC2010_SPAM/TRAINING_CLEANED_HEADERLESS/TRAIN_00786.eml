@@ -1,0 +1,39 @@
+on 14 apr 2010, jordan metzmeier wrote:
+> on 04/14/2010 12:59 pm, anthony campbell wrote:
+> >i have to find out how to connect to a vpn server. i know nothing about
+> >this and have little time to find out, because i need to get it working
+> >by saturday!
+> >
+> >can anyone kindly tell me what package(s) to install and point me to a
+> >(preferably simple) how-to?
+> >
+> >anthony
+> >
+> there are many different type of vpns... is the server already
+> running? do you know what it is using (openvpn or pptp for example)?
+> 
+> if it is your job to setup both the client  and server, openvpn
+> could be a good place to start. their documentation is quite good.
+> if you need to connect to an existing vpn server, you need to know
+> the type of vpn before you can choose client software.
+> 
+
+thanks for the prompt reply. i just need to be able to connect to the
+server at pc-streaming, to get tv when abroad. it is pptp. would
+pptp-linux and network-manager-pptp be the way to go?
+
+anthony
+
+-- 
+anthony campbell - ac@acampbell.org.uk 
+microsoft-free zone - using debian gnu/linux 
+http://www.acampbell.org.uk - sample my ebooks at
+http://www.smashwords.com/profile/view/acampbell
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100414173940.ga17726@acampbell.org.uk
+
+

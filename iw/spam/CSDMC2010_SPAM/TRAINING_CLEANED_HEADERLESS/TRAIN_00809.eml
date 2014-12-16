@@ -1,0 +1,21 @@
+on 05/03/2010 09:26 pm, alex samad wrote:
+[snip]
+>
+> i find with my atom, using syncplaces (a firefox addin), which encrypts
+> its files - it takes for ever, i am guess i am missing some of those
+> nice cpu op's that speed these things up.
+>
+
+amd & intel's low-power cpus need encryption engines just like 
+via's, and libssl needs hooks into it.
+
+-- 
+dissent is patriotic, remember?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bdf9038.7010504@cox.net
+
+

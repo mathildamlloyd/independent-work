@@ -1,0 +1,26 @@
+hi,
+
+on my netbook i'm using automatic usb sticks mount through udev rules,
+and i already used to running 'sync' command before unplugging stick,
+so no data will be lost. but if i have few sticks inserted and some
+information copying on one of them, if i run 'sync' i have to wait
+while copying ends, because:
+
+a) sync command drops cache on disk, but copying process fill it
+again; sync will work until all the caches are dropped to disks
+b) i can't unplug stick when it stops to flash because i can't be sure
+that there are no more parts of cache needed to be flushed on that
+disk.
+
+so here is my question - how can i run sync for only one device?
+
+with best regards,
+alexander batischev
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/p2u28c1d5ea1005060246p3434d45dy6b9ca5b6d34a08de@mail.csmining.org
+
+

@@ -1,0 +1,34 @@
+on 11 may 2010 00:20, facundo aguilera  wrote:
+> el lunes 10 mayo 2010 11:08:40 dotan cohen  escribi=
+=c3=b3:
+>> please tell us what problems, bugs, or issues kde 4 that make it
+>> difficult to use. please be very specific so that bugs can be filed
+>> and the software can be fixed. general statements such as "kde4 sux"
+>> are not welcome, as they do not give any indication as to what can be
+>> fixed.
+>
+> the old problem using proxies with kopete and kmail. they do not use the
+> general settings in systemsettings and can't be configured in any other w=
+ay.
+>
+
+thanks, facundo. it seems that the proxy configuration is only for kio slav=
+es:
+https://bugs.kde.org/show_bug.cgi?id=3d186872
+
+but that bug requests that the kde proxy configuration apply to all
+apps. please comment there. thanks.
+
+--=20
+dotan cohen
+
+http://bido.com
+http://what-is-what.com
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/aanlktinnstarggk504qqsoh_9fpd1dzbyc4irv59ir0t@mail.csmining.org
+
+

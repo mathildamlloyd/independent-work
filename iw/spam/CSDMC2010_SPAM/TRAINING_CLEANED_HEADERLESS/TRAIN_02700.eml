@@ -1,0 +1,29 @@
+> seriously though, it spurs the question: should this list be moderated ? 
+> (and the next question: if "yes", who wants to co-moderate ?)
+
+
+no...the list has been on target i'd say about 95% of the time.
+iff it starts being a problem, consider it. right now, john's
+right - this remove thread is taking more time than any remove
+requests have in the entire past year.
+
+one thing you may want to consider (if feasible) - bugtraq's
+adopted a technique by which they add headers to each message
+indicating where to email to remove. the catch: the mail is
+not sent to "majordomo" - it is sent to "listname-remove"@domain.
+i've found that useful when i can't remember exactly which mail
+addr i used to signup (since my email addr never shows up in
+a received message, and i have multiple addresses going to the
+same box).
+
+for all that, remember, even if you put the actual removal
+instructions right in the bottom of your email, you will
+_still_ get the clueless asking you how to remove. (trust me,
+we've been there.)
+
+thomas
+
+-
+nessus@list.nessus.org: general discussions about nessus.
+* to unsubscribe, send a mail to majordomo@list.nessus.org with
+"unsubscribe nessus" in the body.

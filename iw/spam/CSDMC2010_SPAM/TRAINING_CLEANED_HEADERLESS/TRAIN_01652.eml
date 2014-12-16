@@ -1,0 +1,38 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on fri,21.may.10, 14:43:47, celejar wrote:
+=20
+> but i've long found the 'recommends' concept to be somewhat tricky and
+> perhaps to vary from maintainer to maintainer.  for example, mesa-utils
+> needs glx, which, practically speaking, means that you need
+> libgl1-mesa-dri.  the maintainer refuses to make this even a
+> recommends, basically since the x server can run on a different machine:
+>=20
+> http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3d559223
+>=20
+> now, i'd bet (although i suppose that i may be wrong) that the vast
+> majority of debian installations have the x server and clients on the
+> same machine, and the other case is probably the more 'unusual' one.
+
+imagine a large organization with a lot of thin clients...
+
+> otoh, acpi-support 'recommends' radeontool, even though this package is
+> utterly irrelevant to those without ati radeon chipsets:
+>=20
+> http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3d562883
+
+oh, i can finally get rid of that one! (used to be a depends and i=20
+forgot to check)
+
+both are excelent examples :) but even if you disagree with the=20
+maintainer, in the end debian is a do-ocracy.  that is, the one who does=20
+the job usually gets to decide how it's done ;)
+
+regards,
+andrei
+--=20
+offtopic discussions among debian users and developers:
+http://lists.alioth.debian.org/mailman/listinfo/d-community-offtopic

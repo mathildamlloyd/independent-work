@@ -1,0 +1,48 @@
+Noneapt and a hybrid systemBack when I had regular RH7.3 there was nothing better than "apt-get upgrade". But
+now I'm running (null) beta and I have these questions:
+
+which version of "apt" can I use, the RH7.3 version or the "rawhide" version?
+
+Is there a way to use apt to update (null) with the rpms available for (null)
+through up2date, since I prefer apt to that?
+
+If I can use apt, can I use it to get updates from these 3 different places:
+1. the (null) up2date Redhat upgrades
+2. the (null) files at Freshrpms.net
+3. the regular RH7.3 files from freshrpms.net
+
+Am I asking for too much simplicity in this complicated world?
+
+--
+That's "angle" as in geometry.
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+apt and a hybrid systemback when i had regular rh7.3 there was nothing better than "apt-get upgrade". but
+now i'm running (null) beta and i have these questions:
+
+which version of "apt" can i use, the rh7.3 version or the "rawhide" version?
+
+is there a way to use apt to update (null) with the rpms available for (null)
+through up2date, since i prefer apt to that?
+
+if i can use apt, can i use it to get updates from these 3 different places:
+1. the (null) up2date redhat upgrades
+2. the (null) files at freshrpms.net
+3. the regular rh7.3 files from freshrpms.net
+
+am i asking for too much simplicity in this complicated world?
+
+--
+that's "angle" as in geometry.
+
+
+
+_______________________________________________
+rpm-list mailing list 
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

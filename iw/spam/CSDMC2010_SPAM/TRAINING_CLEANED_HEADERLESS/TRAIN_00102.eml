@@ -1,0 +1,17 @@
+at this moment, for me, kaddressbook?  akonadi did not  get configured right, i 
+had to follow this advice to get it to start working:  
+http://forum.kde.org/viewtopic.php?f=20&t;=79717&sid;=ce96096a96a9d8ca3ebb13105dce3d21&start;=10#p137002
+
+having done that yesterday i noticed that the concept of contact categories is 
+missing.  today i found that i only get empty dialogs when i attempt to edit a 
+contact!  so for me kaddressbook is unstable.
+
+- allen
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201005112038.02484.blowers@computer.org
+
+

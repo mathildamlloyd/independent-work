@@ -1,0 +1,90 @@
+
+here's a message that works fine for me:
+
+
+
+x-mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+to: kevinc@doink.com
+subject: gpg test
+mime-version: 1.0
+content-type: text/x-pgp; format=mime; x-action=encrypt;
+x-recipients="d165c0cc, d165c0cc"
+content-transfer-encoding: 7bit
+date: wed, 11 sep 2002 13:18:58 -0700
+from: kevin cosgrove 
+message-id: <20020911201900.492892feab@joseph.doink.com>
+x-spam-status: no, hits=-1.3 required=5.0 tests=awl version=2.11
+
+-----begin pgp message-----
+version: gnupg v1.0.7 (gnu/linux)
+comment: exmh version 2.5 10/15/1999
+
+blah, blah, blah
+
+-----end pgp message-----
+
+
+
+
+
+it could be that your content type of text/plain is messing you up.
+your config stuff looks substantially the same as mine.
+
+cheers....
+
+
+
+
+
+
+
+on 11 september 2002 at 16:11, hacksaw  wrote:
+
+you may assume the x's were originally a valid address.
+
+x-em-version: 5, 0, 0, 4
+x-em-registration: #01e0520310450300b900
+x-priority: 3
+x-mailer: my own email v4.00
+mime-version: 1.0
+content-type: text/plain; charset=us-ascii
+subject: discussion
+from: "xxxxxxx" 
+date: tue, 10 sep 2002 05:47:46 -0500 (06:47 edt)
+to: hacksaw@hacksaw.org
+
+
+*gpgrfc822:     0
+*gpgchoosekey:  1
+*gpgruntwice:   1
+*gpgcacheids:   persistent
+*gpgminmatch:   75
+*gpgshowinline: none
+*gpgshortmessages:      1
+*gpgautoextract:        1
+*gpgkeyserver:  pgp-public-keys@keys.pgp.net
+*gpgkeyquerymethod:     hkp
+*gpghkpkeyserverurl:    keys.pgp.com
+*gpgkeyserverurl:       http://www-swiss.ai.mit.edu/htbin/pks-extract-key.pl?op
+=get&search;=0x%s
+*gpgkeyothermethod:     exec echo "can't find $id" > $tmp
+*gpgcomment:    exmh version 2.5 08/15/2002
+*gpgmodulepath: /usr/lib/gnupg
+*gpgciphermods: skipjack idea
+*gpgdigestmods: tiger
+*gpgpubkeymods: rsa
+*gpgpgp5compatibility:  1
+*gpgcipheralgo: 3des
+*gpgdigestalgo: sha1
+*gpgcompressalgo:       zip
+
+
+
+
+
+_______________________________________________
+exmh-workers mailing list
+exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

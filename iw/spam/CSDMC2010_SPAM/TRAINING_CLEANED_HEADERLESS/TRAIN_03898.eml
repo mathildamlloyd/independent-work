@@ -1,0 +1,29 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=iso-8859-1
+
+on sun, may 16, 2010 at 9:17 pm, andrei popescu wrote:
+
+> on sun,16.may.10, 15:13:28, james stuckey wrote:
+> >
+> > *what i'm doing to mount the media: *
+> > root@debian:/home/stuckey# mount /dev/sr0
+> > mount: block device /dev/sr0 is write-protected, mounting read-only
+> > mount: wrong fs type, bad option, bad superblock on /dev/sr0,
+> >        missing codepage or helper program, or other error
+> >        (could this be the ide device where you in fact use
+> >        ide-scsi so that sr0 or sda or so is needed?)
+> >        in some cases useful info is found in syslog - try
+> >        dmesg | tail  or so
+>
+> is this a data or audio cd (audio cds can't be mounted, only played)? is
+> it possible to test with another os on the same hardware?
+>
+> regards,
+> andrei
+>
+>
+hello,
+
+as i've already said, it works in windows and mac. i'll try changing the
+cable, but since it works in windows and mac i doubt the cable is at fault.
+i've tried audio and data cds and dvds.

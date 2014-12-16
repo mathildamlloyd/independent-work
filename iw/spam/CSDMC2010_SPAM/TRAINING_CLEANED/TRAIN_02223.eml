@@ -1,0 +1,52 @@
+NoneDQ> jm@jmason.org (Justin Mason) writes:
+DQ> 
+DQ> > But I think rsync is key; it's very efficient bandwidth-wise, and it
+DQ> > allows you to select which ones you want just as well as wget would.
+DQ> > (Bandwidth is a much bigger issue for me and some other of the europeans
+DQ> > involved, than it would be for you guys ;)  IMO it's by far the most
+DQ> > efficient and scriptable way to do this stuff, these days.
+DQ> 
+DQ> It must be horrible being a dial-up user in 2002.  If we can *automate*
+DQ> rsync submission with good *authentication*, it would be fine with me.
+DQ> The current rsync method is not sufficiently authenticated, though.
+
+I'll take a look at it.  I'm sure there's got to be some reasonly easy way to 
+have rsync carry itself over ssh and secure access using ssh keys.
+
+DQ> > I suggest we use the hughes-family.org server for rsyncing, as we do for
+DQ> > the corpus_submit stuff -- in a separate subdirectory, though! -- then
+DQ> > I'll take a look at getting a nightly hit-frequencies-collation system
+DQ> > going.
+
+Ok, I'll take a look at it.
+
+C
+
+
+re: [sadev] nightly mass-check and hit-frequenciesdaniel quinlan wrote:
+
+dq> jm@jmason.org (justin mason) writes:
+dq> 
+dq> > but i think rsync is key; it's very efficient bandwidth-wise, and it
+dq> > allows you to select which ones you want just as well as wget would.
+dq> > (bandwidth is a much bigger issue for me and some other of the europeans
+dq> > involved, than it would be for you guys ;)  imo it's by far the most
+dq> > efficient and scriptable way to do this stuff, these days.
+dq> 
+dq> it must be horrible being a dial-up user in 2002.  if we can *automate*
+dq> rsync submission with good *authentication*, it would be fine with me.
+dq> the current rsync method is not sufficiently authenticated, though.
+
+i'll take a look at it.  i'm sure there's got to be some reasonly easy way to 
+have rsync carry itself over ssh and secure access using ssh keys.
+
+dq> > i suggest we use the hughes-family.org server for rsyncing, as we do for
+dq> > the corpus_submit stuff -- in a separate subdirectory, though! -- then
+dq> > i'll take a look at getting a nightly hit-frequencies-collation system
+dq> > going.
+
+ok, i'll take a look at it.
+
+c
+
+

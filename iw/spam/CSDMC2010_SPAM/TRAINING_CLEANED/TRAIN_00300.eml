@@ -1,0 +1,52 @@
+None> Recently I have been receiving Spam where both the From: and To: address are
+> set to my address therefore getting thru due to AWL.  Any suggestions on
+> this one?  I could turn off AWL but it does have advantages.  BTW, I use a
+> site-wide AWL.
+
+ Use cron to remove your address from the AWL daily...?!
+
+	/Tony
+-- 
+# Per scientiam ad libertatem! // Through knowledge towards freedom! #
+# Genom kunskap mot frihet! =*= (c) 1999-2002 tony@svanstrom.com =*= #
+
+     perl -e'print$_{$_} for sort%_=`lynx -dump svanstrom.com/t`'
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+re: [satalk] from: and to: are my addresson mon, 26 aug 2002 the voices made certaintytech write:
+
+> recently i have been receiving spam where both the from: and to: address are
+> set to my address therefore getting thru due to awl.  any suggestions on
+> this one?  i could turn off awl but it does have advantages.  btw, i use a
+> site-wide awl.
+
+ use cron to remove your address from the awl daily...?!
+
+/tony
+-- 
+# per scientiam ad libertatem! // through knowledge towards freedom! #
+# genom kunskap mot frihet! =*= (c) 1999-2002 tony@svanstrom.com =*= #
+
+     perl -e'print$_{$_} for sort%_=`lynx -dump svanstrom.com/t`'
+
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: osdn - tired of that same old
+cell phone?  get a new here for free!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1;=vs3390
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

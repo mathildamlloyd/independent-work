@@ -1,0 +1,32 @@
+on 04/15/2010 07:59 pm, stan hoeppner wrote:
+> aioanei rares put forth on 4/15/2010 3:16 pm:
+>
+>    
+>> no, it means that 2 one-gig modules in same-coloured slots will
+>> theoretically work better. i have one module in a dual-channel mobo and
+>> it works ok. most desktop/workstation mobos do.
+>>      
+> no, that's not correct.  if the mobo dimm slots are colored, you put one
+> dimm in each color slot for dual channel operation, not both dimms in the
+> same colored slots.
+>    
+
+i believe different manufactures follow different conventions. for some 
+it's the two in same-color slots, for others in different-color slots. 
+when in doubt, check the manual
+
+
+-- 
+just don't create a file called -rf.  :-)
+-- larry wall in<11393@jpl-devvax.jpl.nasa.gov>
+
+eduardo m kalinowski
+eduardo@kalinowski.com.br
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bc7a25e.4030204@kalinowski.com.br
+
+

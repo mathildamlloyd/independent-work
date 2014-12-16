@@ -1,0 +1,24 @@
+on 2010-04-14 23:29, stan hoeppner wrote:
+[snip]
+> 
+> you mentioned you had problems building 2.6.32 and .33 kernel source.  do
+> you use the debian kernel source or kernel.org source?  i've been using the
+> kernel.org source for quite some time and have never had any real problems
+> with it (knocks on wood).  i had a build problem with .33 a while back but
+> that turned out to be due to a slight bit too much overclock on my machine
+> in this warmer weather.  ;)
+> 
+
+debian source.  it's the first kernel build problem i'm had since 
+the 2.4 days, and i've been using 2.6 since .0.
+
+-- 
+dissent is patriotic, remember?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bc6a4bf.50504@cox.net
+
+

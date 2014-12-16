@@ -1,0 +1,116 @@
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: text/plain; charset=ISO-8859-1
+
+On Sat, Apr 24, 2010 at 3:11 PM, Ron Johnson <ron.l.johnson@cox.net> wrote:
+
+> On 04/24/2010 12:53 PM, B. Alexander wrote:
+>
+>> Hi,
+>>
+>> I have a question on filesystems. Back in the day, I started using
+>> reiser3. It was faster than ext3, and it could be extended without
+>> umounting the filesystem (which has since been fixed in ext3), plus,
+>> unlike any filesystem I have encountered, it could be reduced in size.
+>>
+>> Well, now reiser3 is very long in the tooth, reiser4 will probably never
+>> go anywhere, so I'm wondering what filesystems are recommended. Last I
+>> heard, ext4 is stablizing, but it had problems with filesystem
+>> corruption, though that was mid-fall last year, IIRC.
+>>
+>> So now, I would like to slowly start replacing my reiser3 partitions
+>> with...something else. There are two options, the old standards, e.g.
+>> ext3/4, xfs, etc, and then there are a slew of new filesystems, such as
+>> nilfs2, btrfs and exofs.
+>>
+>> I'm talking about a range of machines, from workstations to servers to
+>> NFS and storage servers with multi-terabyte disks, and a backup server
+>> with several hundred gigs of backups.
+>>
+>> Does anyone have suggestions and practical experience with the pros and
+>> cons of the various filesystems?
+>>
+>>
+> XFS is the canonical fs for when you have lots of Big Files.  I've also
+> seen simple benchmarks on this list showing that it's faster than ext3/ext4.
+>
+
+Thats cool. What about Lots of Little Files? That was another of the draws
+of reiser3. I have a space I mount on /media/archive, which has everything
+from mp3/oggs and movies, to books to a bunch of tiny files. This will
+probably be the first victim for the xfs test partition.
+
+nilfs2, btrfs and exofs are *definitely* still beta or even alpha.
+>
+> xfs and ext[34] can all be extended.  For production servers with a working
+> UPS, I'd go with ext3 for / & /boot and xfs (since it hates sudden power
+> outages) for the "/data" directories.  For production workstations, I'd
+> stick with the standby ext3 for / & /boot and ext3 or xfs for /home and
+> "/data" (depending on the workload).
+>
+
+Define "hates sudden power outages"...Is it recoverable?
+
+Thanks for the info, Ron,
+--b
+From nobody Tue Dec 16 09:15:46 2014
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<br><br><div class=3D"gmail_quote">On Sat, Apr 24, 2010 at 3:11 PM, Ron Joh=
+nson <span dir=3D"ltr">&lt;<a href=3D"mailto:ron.l.johnson@cox.net" target=
+=3D"_blank">ron.l.johnson@cox.net</a>&gt;</span> wrote:<br><blockquote clas=
+s=3D"gmail_quote" style=3D"border-left: 1px solid rgb(204, 204, 204); margi=
+n: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+
+<div><div></div><div>On 04/24/2010 12:53 PM, B. Alexander wrote:<br>
+<blockquote class=3D"gmail_quote" style=3D"border-left: 1px solid rgb(204, =
+204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+Hi,<br>
+<br>
+I have a question on filesystems. Back in the day, I started using<br>
+reiser3. It was faster than ext3, and it could be extended without<br>
+umounting the filesystem (which has since been fixed in ext3), plus,<br>
+unlike any filesystem I have encountered, it could be reduced in size.<br>
+<br>
+Well, now reiser3 is very long in the tooth, reiser4 will probably never<br=
+>
+go anywhere, so I&#39;m wondering what filesystems are recommended. Last I<=
+br>
+heard, ext4 is stablizing, but it had problems with filesystem<br>
+corruption, though that was mid-fall last year, IIRC.<br>
+<br>
+So now, I would like to slowly start replacing my reiser3 partitions<br>
+with...something else. There are two options, the old standards, e.g.<br>
+ext3/4, xfs, etc, and then there are a slew of new filesystems, such as<br>
+nilfs2, btrfs and exofs.<br>
+<br>
+I&#39;m talking about a range of machines, from workstations to servers to<=
+br>
+NFS and storage servers with multi-terabyte disks, and a backup server<br>
+with several hundred gigs of backups.<br>
+<br>
+Does anyone have suggestions and practical experience with the pros and<br>
+cons of the various filesystems?<br>
+<br>
+</blockquote>
+<br></div></div>
+XFS is the canonical fs for when you have lots of Big Files. =A0I&#39;ve al=
+so seen simple benchmarks on this list showing that it&#39;s faster than ex=
+t3/ext4.<br></blockquote><div><br>Thats cool. What about Lots of Little Fil=
+es? That was another of the draws of reiser3. I have a space I mount on /me=
+dia/archive, which has everything from mp3/oggs and movies, to books to a b=
+unch of tiny files. This will probably be the first victim for the xfs test=
+ partition.<br>
+
+<br></div><blockquote class=3D"gmail_quote" style=3D"border-left: 1px solid=
+ rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+nilfs2, btrfs and exofs are *definitely* still beta or even alpha.<br>
+<br>
+xfs and ext[34] can all be extended. =A0For production servers with a worki=
+ng UPS, I&#39;d go with ext3 for / &amp; /boot and xfs (since it hates sudd=
+en power outages) for the &quot;/data&quot; directories. =A0For production =
+workstations, I&#39;d stick with the standby ext3 for / &amp; /boot and ext=
+3 or xfs for /home and &quot;/data&quot; (depending on the workload).<br>
+
+</blockquote><div><br>Define &quot;hates sudden power outages&quot;...Is it=
+ recoverable?<br><br>Thanks for the info, Ron,<br>--b<br></div></div>

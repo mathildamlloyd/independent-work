@@ -1,0 +1,39 @@
+from nobody tue dec 16 09:15:45 2014
+content-type: text/plain; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+hi,
+
+when copying and pasting a .ps or a .pdf file, or a serie of such files,
+the resulting (i.e. pasted) files' icon is often the `snippets' one,
+i.e. the one which designates a broken/corrupted file. however, when
+right-clicking on the files, their content appears as the icon, i.e. the
+`snippets' icon disappears. why? is it normal? i do not like copying and
+pasting files and seeing such an icon, because one might think that
+these are corrupted files.
+
+thanks.
+
+--=20
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+i use pgp. if there is an incompatibility problem with your mail
+client, please contact me.
+
+you can fool all of the people some of the time, some of the people all
+of the time, but you can't fool all of the people all of the time.
+(abraham lincoln)
+
+from nobody tue dec 16 09:15:45 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: openpgp digital signature
+content-disposition: attachment; filename="signature.asc"
+
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org
+
+ieyearecaayfakvlciwacgkqm0llzlt8mhzsagcelscv8y379ew3y104utkjycl4
+npqan1jiinqllbpmqongstpj3j4+euft
+=0bmb
+-----end pgp signature-----

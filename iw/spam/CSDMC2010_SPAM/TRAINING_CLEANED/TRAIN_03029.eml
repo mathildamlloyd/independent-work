@@ -1,0 +1,33 @@
+None> http://www.hughes-family.org/bugzilla/show_bug.cgi?id=704
+> ok, this is now fixed. cheers!
+
+How did you fix it? By creating the pidfile as the "-u" user?
+If so, you should add this to the documentation since it prevents
+the use of the standard /var/run directory (which is only writable
+by root).
+
+
++Thomas
+
+-- 
+Thomas Anders <anders@hmi.de>
+Hahn-Meitner-Institut Berlin, Germany
+
+
+re: [bug 704] spamd doesn't remove pid file on shutdown when running as non-root userbugzilla-daemon@hughes-family.org wrote:
+> http://www.hughes-family.org/bugzilla/show_bug.cgi?id=704
+> ok, this is now fixed. cheers!
+
+how did you fix it? by creating the pidfile as the "-u" user?
+if so, you should add this to the documentation since it prevents
+the use of the standard /var/run directory (which is only writable
+by root).
+
+
++thomas
+
+-- 
+thomas anders 
+hahn-meitner-institut berlin, germany
+
+

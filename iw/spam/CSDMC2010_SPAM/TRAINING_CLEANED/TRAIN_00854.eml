@@ -1,0 +1,39 @@
+NoneHello,
+
+On antradienis 13 Balandis 2010 19:04:51 Patrice Pillot wrote:
+> Hi,
+>=20
+> Edson Marquezani Filho a =C3=A9crit :
+> > I'm using SQLite as database backend
+>=20
+> You said you were using squeeze, didn't you ? May I ask you how you
+> tweaked amarok to use sqlite instead of mysqle ?
+
+amarok 2 does not support SQLite. That's not something you can "tweak" amar=
+ok=20
+for.
+
+=2D-=20
+Modestas Vainius <modestas@vainius.eu>
+re: amarok's issuesfrom nobody tue dec 16 07:55:45 2014
+content-type: text/plain;
+  charset="utf-8"
+content-transfer-encoding: quoted-printable
+
+hello,
+
+on antradienis 13 balandis 2010 19:04:51 patrice pillot wrote:
+> hi,
+>=20
+> edson marquezani filho a =c3=a9crit :
+> > i'm using sqlite as database backend
+>=20
+> you said you were using squeeze, didn't you ? may i ask you how you
+> tweaked amarok to use sqlite instead of mysqle ?
+
+amarok 2 does not support sqlite. that's not something you can "tweak" amar=
+ok=20
+for.
+
+=2d-=20
+modestas vainius 

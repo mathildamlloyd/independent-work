@@ -1,0 +1,34 @@
+briand@aracnet.com put forth on 4/15/2010 9:13 am:
+> on thu, 15 apr 2010 00:59:50 -0500
+> stan hoeppner  wrote:
+> 
+>> briand@aracnet.com put forth on 4/15/2010 12:08 am:
+>>
+>>> and .32-trunk is the running kernel, has been for some time, and
+>>> i've rebooted several times.
+>>
+>> did up aptitude upgrade to the .32-trunk kernel or is your .32-trunk
+>> kernel what resulted from a fresh install?  also, what architecture
+>> is your kernel? most, if not all, of the commenters in the bug were
+>> using amd64 kernels.
+>>
+> 
+> intel atom 
+
+5 of teh 19 atom cpus support x86-64.  which kernel are you running?  32bit
+i3/4/5/686 or amd64?
+
+> i'm relatively certain it's an upgrade kernel, but i'm not positive.
+
+could you check your logs?
+
+-- 
+stan
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bc79b4f.2080500@hardwarefreak.com
+
+

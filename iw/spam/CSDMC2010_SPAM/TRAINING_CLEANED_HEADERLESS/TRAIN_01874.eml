@@ -1,0 +1,10 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain
+content-transfer-encoding: 7bit
+
+not with a different server, but i have tested it with a different
+client - command line ftp - , it works in text and binary mode and i can
+upload files to the server. i cannot figure why in gui mode it does not
+work while in command line it does.
+-- 
+tomas kral 

@@ -1,0 +1,134 @@
+>> at certain times, seems friday noontime, i am unable to shutdown the
+>> system. instead of the usual scripts to killing all processes, unmounting
+>> everything and will now halt, goodby, i get:
+>> 
+>>  process running pstree (or something like that)
+>>  shutdown aborted
+>> 
+>>  at this point, the system (or at least any console or ui) is dead.
+>> 
+>>  what it this?
+
+
+> just see which process is running pstree.
+> "ps -eaf | grep pstree"
+> you could find the parent pid of pstree (second column).
+> look at the parent of pstree, and the process started this one.
+> if you go back that way, finally you will reach init, but before that you
+> could find which system process started these processes.
+i'll have to try it when i know the thing is running.
+
+> as i recall, pstree is not part of basic installation.
+> it was put to do some scripting, regarding found, in
+> perl/python?
+> my first bet would be to remove offensive cron line and
+> shutdown normally. than to do filesystem checks. next,
+> to set cron to use pstree as a regular user. i think that
+> shutdown was done in some parts, aka closed network. what
+> has to wait, hangs the system.
+> otherwise, there is a chance that some housekeeping pro-
+> cesses are started at noon every day. you could always
+> look at /etc directory and find them. some unices have
+> it in /etc/periodic/daily. it starts with #!/bin/sh.
+> another clue may be in /var/log, as a result of newsyslog.conf.
+
+i have no /etc/periodic and no logs for pstree
+
+i manually ran it (x11 variant) and this is what i got:
+init-+-xprt
+     |-akonadi_control-+-akonadi_ical_re
+     |                 |-8*[akonadi_kabc_re]
+     |                 |-4*[akonadi_kcal_re]
+     |                 |-42*[akonadi_maildir]
+     |                 |-akonadi_maildis
+     |                 |-akonadi_nepomuk---{akonadi_nepomu}
+     |                 |-akonadi_vcard_r
+     |                 |-akonadiserver-+-mysqld---74*[{mysqld}]
+     |                 |               `-66*[{akonadiserver}]
+     |                 `-4*[{akonadi_contro}]
+     |-apmd
+     |-atd
+     |-avahi-daemon---avahi-daemon
+     |-boinc
+     |-clamd---2*[{clamd}]
+     |-console-kit-dae---63*[{console-kit-da}]
+     |-cron
+     |-cupsd
+     |-das_watchdog---{das_watchdog}
+     |-3*[dbus-daemon]
+     |-2*[dbus-launch]
+     |-ddclient
+     |-dirmngr
+     |-dovecot-+-2*[dovecot-auth]
+     |         |-imap
+     |         |-3*[imap-login]
+     |         `-3*[pop3-login]
+     |-exim4
+     |-fail2ban-server---6*[{fail2ban-serve}]
+     |-fetchmail
+     |-2*[getty]
+     |-gpm
+     |-hald-+-hald-runner-+-hald-addon-inpu
+     |      |             `-hald-addon-stor
+     |      `-{hald}
+     |-in.tftpd
+     |-inetd
+     |-jackdbus
+     |-kaccess
+     |-kded4---{kded4}
+     |-kdeinit4-+-kio_file
+     |          |-kio_http_cache_
+     |          |-kio_imap4
+     |          |-klauncher
+     |          |-ksmserver-+-kwin
+     |          |           `-{ksmserver}
+     |          |-python---python---python
+     |          `-qjackctl---{qjackctl}
+     |-kdm-+-xorg
+     |     `-kdm---startkde-+-kwrapper4
+     |                      `-2*[ssh-agent]
+     |-kget
+     |-kglobalaccel
+     |-klipper
+     |-klogd
+     |-kmail---{kmail}
+     |-kmix
+     |-knemo
+     |-knotify4
+     |-korgac---{korgac}
+     |-krunner---{krunner}
+     |-kxkb---{kxkb}
+     |-nepomukserver
+     |-plasma-desktop-+-ksysguardd
+     |                `-7*[{plasma-desktop}]
+     |-portmap
+     |-postmaster-+-postmaster
+     |            `-postmaster---postmaster
+     |-preload
+     |-proftpd
+     |-rpc.mountd
+     |-rpc.statd
+     |-smartd
+     |-spamd---2*[spamd]
+     |-sshd
+     |-svscanboot-+-readproctitle
+     |            `-svscan
+     |-syslogd
+     |-tinyproxy---11*[tinyproxy]
+     |-udevd---2*[udevd]
+     |-xfs
+     |-xfstt
+     `-yakuake-+-bash---pstree.x11
+               `-{yakuake}
+press return to close
+
+which would basically reflect what init ran and what kde4 is doing when i did 
+it. why would this be stuck at the end?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201005091612.33337.d_baron@012.net.il
+
+

@@ -1,0 +1,88 @@
+on 7 may 2010 11:56, lisi  wrote:
+> on thursday 06 may 2010 18:22:18 you wrote:
+>> >> you still have gnustep, xfce, lxde, no using any or simply never
+>> >> upgrade.
+>> >
+>> > i have looked at all those, in addition to kde 4 and gnome.  none appeals
+>> > to me.  each has something that i strongly dislike or does not have
+>> > something that i like and use a lot.
+>>
+>> please tell me what kde 4.4 is missing, or what it has that you
+>> dislike. i can help address those issues.
+>
+> i doubt it, because i think that the problem is the basic philosophy.  they
+> have sacrificed funtionality in favour of glitz.
+>
+> e.g.
+> 1. you cannot turn off all those horrible, and to me actually physically
+> painful (i have problems with my eyes) "special effects" _before_ being
+> subjected to them.  (all that horrible wobbly, wavy, shimmery, spinning
+> transparent glitz.)
+
+that boils down to "it's on by default". just go turn them off. and
+the defaults do not have wobbly windows, wavy effects, or anything
+shimmering. nothing spins either, but the alt-tab dialogue does slide.
+there is plenty of transparency, though, and i hate that too. so i
+turn it off.
+
+my mother suffers from what she calls "vertigo" and the effects do not
+upset her. nor do they upset the autistics that i volunteer with. they
+are merely an annoyance to those annoyed by them, nothing wild.
+
+
+> 2. ctrl+tab does not move to the next window.
+
+do you mean between tabs? fixed:
+https://bugs.kde.org/show_bug.cgi?id=231541
+
+
+> 3. alt+f2 is cumbersome and unhelpful.  (in kde 3.5.x i can type e.g. k and be
+> presented with a list of all the applications that i have previously used
+> beginning with k.)
+
+it works that way in kde 4 as well, so long as you have opened them
+from krunner in the past. that is how i open all my applications.
+
+
+> 4. alt+f1 does not bring up the menu.
+
+it's alt-f5 for the kmenu. has been since kde 3 i think.
+
+
+> 5. kcontrol no longer exists.
+
+it's called system settings, and with the tree menu it's very similar.
+it is being reworked for kde 4.5, so if you have any suggestions then
+now is the time to make them!
+
+> etc etc.
+>
+
+tell me more!
+
+
+>> > i am, however, very sad that kde 3.5, which i regard as the pinnacle of
+>> > de's, is being laid to rest.
+>>
+>> then help me shape it's successor. what is not suitable about kde 4?
+>
+> why would i rather have a toyota hatchback (especially a hybrid one) than a
+> two seater sports car?
+>
+
+you evaded the question. i cannot help when you evade the question.
+
+
+-- 
+dotan cohen
+
+http://bido.com
+http://what-is-what.com
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/g2h880dece01005070919yce94d995rd670844d68f5bce1@mail.csmining.org
+
+

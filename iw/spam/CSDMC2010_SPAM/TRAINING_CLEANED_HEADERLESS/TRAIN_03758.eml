@@ -1,0 +1,76 @@
+on sun, 2010-04-18 at 11:42 +0000, camale=c3=b3n wrote:
+> on sat, 17 apr 2010 16:58:19 -0400, john a. sullivan iii wrote:
+>=20
+> > hello, all.  we have some clients eager to migrate from
+> > exchange/outlook/windows to debian lenny.  zimbra is working well on th=
+e
+> > back end but is lacking as an outlook replacement - great web interface
+> > but still lacking some essential features.  evolution does not support
+> > address books from zimbra so that leaves us with kontact.  kontact is
+> > great except it seems seriously broken in several regards specifically
+> > korganizer.  the kde response is to upgrade to kde4. =20
+>=20
+>=20
+> the fact is that upstream kde developers have stopped the development of=20
+> kde 3.5.x branch, so no more improvements are added to the existing=20
+> programs. i think only critical bugs are still watched and fixed.
+>=20
+>=20
+> > since we are on
+> > lenny, we are on kde 3.5 and we'd like to keep it that way until kde4
+> > matures a bit more.  how are lenny users handling the crippling bugs?=20
+>=20
+>=20
+> i was a kde 3.5.x user for long time (2003-2010) but switched to gnome as=
+=20
+> soon as the first kde 4.0 came to scene (it was not intended for end-
+> users but *we had* to deal with it and the result was many people=20
+> searched another alternatives, me included).
+>=20
+> but now, kde sc 4.4 has nothing to do with that times. last time i tested=
+=20
+> i found it stable enough for daily use. so the advice of updating to kde=20
+> 4 (if you still want to use kde) is now valid.
+>=20
+>=20
+> > i did not see anything in backports.  here's what we are seeing:
+> >=20
+> > timezones: any appointments synchronized with korganizer from zimbra ar=
+e
+> > interpreted as utc.  thus, all appointments are offset by our offset
+> > from utc.  this is the bug which is rendering it unusable and is
+> > apparently well known.  i can't believe this is broken in a production
+> > system.
+> >=20
+> > malformed uris: calendar requests via imap are requesting
+> > myserver.mycompany.com:993calender instead of
+> > myserver.mycompany.com:993/calender.  we can work around this by using
+> > webdav instead.
+> >=20
+> > this is crippling us on a potentially huge lenny deployment.  any know
+> > fixes? thanks - john
+>=20
+>=20
+> dunno how to manage this in debian :-? but there is a dedicated list=c2=
+=b9=20
+> that may provide you more accurate help about this.
+>=20
+> =c2=b9 http://lists.debian.org/debian-kde/
+
+ah, this is so deeply frustrating! kde 4.4 sounds great but it is
+nowhere to be found in debian but in experimental and it sounds like it
+is nowhere near ready for production.  3.5.10 is truly and completely,
+unusably broken for calendaring other than in a standalone world.
+
+it looks like evolution has introduced webdav support for contacts in
+2.24 and we can grab 2.28 from testing.  that sounds better than
+experimental so maybe we need to abandon kmail (sigh) and think about
+evolution instead.  thanks, all - john
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/1271730517.4308.2.camel@localhost
+
+

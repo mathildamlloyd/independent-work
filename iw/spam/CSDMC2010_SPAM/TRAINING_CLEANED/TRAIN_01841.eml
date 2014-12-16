@@ -1,0 +1,33 @@
+NoneOn Fri,07.May.10, 15:49:27, Ron Johnson wrote:
+
+> >I just set up getmail do do this.
+> >That seemed a lot simpler than fetchmail withh the certificates.
+>=20
+> Maybe the certificates are already somewhere in /usr/share?
+
+IIUC getmail doesn't check the certificates.
+
+Regards,
+Andrei
+--=20
+Offtopic discussions among Debian users and developers:
+http://lists.alioth.debian.org/mailman/listinfo/d-community-offtopic
+re: [semi-ot] accessing gmail from pythonfrom nobody tue dec 16 07:55:45 2014
+content-type: text/plain; charset=us-ascii
+content-disposition: inline
+content-transfer-encoding: quoted-printable
+
+on fri,07.may.10, 15:49:27, ron johnson wrote:
+
+> >i just set up getmail do do this.
+> >that seemed a lot simpler than fetchmail withh the certificates.
+>=20
+> maybe the certificates are already somewhere in /usr/share?
+
+iiuc getmail doesn't check the certificates.
+
+regards,
+andrei
+--=20
+offtopic discussions among debian users and developers:
+http://lists.alioth.debian.org/mailman/listinfo/d-community-offtopic

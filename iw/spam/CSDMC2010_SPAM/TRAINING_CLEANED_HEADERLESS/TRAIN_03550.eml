@@ -1,0 +1,18 @@
+> look at pdf. pdf became a iso/iec standard but we (at linux) still lack 
+> for a pdf editor that can compete with acrobat professional.
+ 
+in the gnu/linux world, being able to edit pdf files is not considered
+as a worthwhile feature.  better edit the file in some other format, and
+only use pdf for a "static output format".  in my experience, this works
+very well.
+
+
+        stefan
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/jwvk4r62q75.fsf-monnier+gmane.linux.debian.user@gnu.org
+
+

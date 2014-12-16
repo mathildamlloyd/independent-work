@@ -1,0 +1,45 @@
+thanks gabriele.  i was able to launch your app online without a =
+problem, but i could not launch it offline.  i do have the latest =
+developer preview installed and i suspect that might be the problem: i =
+believe the bug may have been introduced with java 1.6.0_18.
+
+- nick
+
+
+on apr 16, 2010, at 12:47 pm, gabriele kahlout wrote:
+
+> http://memorizeasy.mysimpatico.com
+>=20
+> it's actually 2 jnlps, one setup and one launch.
+>=20
+> should it not work offline with you, pls let me know. i'm aware that
+> it does work (i've tested that some time ago, and just now,  but ...).
+>=20
+> i also verified that yours doesn't launch offline.
+>=20
+>=20
+> 2010/4/16, nick howes :
+>> on apr 16, 2010, at 11:18 am, gabriele kahlout wrote:
+>>=20
+>>>> launching without an internet connection causes the application to
+>>>> "hang".
+>>>=20
+>>> in the case of my application this doesn't happen. must be specific =
+to
+>>> some cases.
+>>=20
+>> thanks for that information.
+>>=20
+>> maybe it's something about our jnlp file
+>> .  could you maybe share the =
+jnlp
+>> file for the case that doesn't hang?
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

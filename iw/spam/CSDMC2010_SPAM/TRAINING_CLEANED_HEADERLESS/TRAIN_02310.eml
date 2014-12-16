@@ -1,0 +1,240 @@
+
+
+(you are receiving this email because you subscribed to it (honest).
+for information on how to unsubscribe please read the bottom of this
+email).
+
+0. intro.  [ibm db2]
+1. increased download capacity.
+2. audio of kernel summit available.
+3. be a sf.net foundry guide.
+4. work for sourceforge.net
+5. site statistics
+
+
+0. intro
+
+hello sourceforge.net users,
+
+this week we've made a big announcement.  as you likely know, any
+large dynamic website is powered by a database that funnels data to
+the web servers serving data which ultimately gets sent to you.
+these databases manage everything from user authentication, session
+management, site searching, etc.  sourceforge.net is a database-
+dependent website.
+
+today we have announced that we are moving sourceforge.net to db2,
+a powerful relational database by ibm.  we are doing this because
+the site continues to grow at a rapid rate, with 700 new users and
+70 new projects a day, and we need a database that can handle this
+growth.  we feel that db2 can do this for us, and ibm is giving us
+the resources to make this transition successful.  you can read the
+press release here:
+
+http://www.vasoftware.com/news/press.php/2002/1070.html
+
+how will this effect you?  in the first phase, you won't see much
+difference other then the site will continue to grow and the
+sourceforge.net team will be able to handle the growth.  in later
+phases you will see new features on the site that take advantage of
+the databases advanced capabilities.
+
+today our mail archives have been converted over.  the rest of the
+site will make the migration to db2 in the coming months.
+
+if you have questions about this or any other aspect of the site,
+please feel free to email me, pat@sourceforge.net.  i always
+appreciate the feedback.
+
+thank you for your continued support of sourceforge.net and the
+open source community.
+
+pat-
+
+patrick mcgovern
+director, sourceforge.net
+
+
+
+1. increased download capacity
+
+sourceforge.net continues to grow, and it's appetite for bandwidth
+is never-ending.  every day sf.net serves over 300,000 files to
+ensure that developers and end-users within the open source
+community can always obtain the software released by hosted
+projects, sourceforge.net maintains a network of high-capacity
+download servers.  these servers are located throughout the world,
+as to provide better download times regardless of which network
+provider you are using, and regardless of your geographic location.
+
+three new download servers have recently been added to our network,
+further strengthening our file serving capabilities.  these latest
+additions include servers hosted by:
+
+time warner telecom (wisconsin,usa);
+http://www.twtelecom.com/
+
+university of minnesota (minnesota, usa)
+http://www.umn.edu/
+
+cesnet (czech republic)
+http://www.cesnet.cz/
+
+we thank these sponsors for their commitment to sourceforge.net and
+the needs of the open source community.
+
+on a related note, we are looking for a mirror in japan.  if you are
+an isp or university in japan and are willing to spare 20mbps for a
+sourceforge.net mirror (we'll supply the hardware), please let us
+know at bandwidth@sourceforge.net
+
+
+
+2. audio of kernel summit available
+
+sourceforge.net now has the audio from the entire 2002 osdn/usenix
+kernel summit, held in june.  listen to the linux kernel master
+discuss such hot topics as kernel modules, virtual memory,
+block i/o, database scaling, security modules, and async i/o.
+you may find this audio repository at:
+
+http://linuxkernel.foundries.sourceforge.net/article.pl?sid=02/06/26/0116225
+
+
+
+3. contribute to sourceforge.net! be a foundry guide!
+
+want to contribute to sourceforge.net, but you don't know how to
+code? be a foundry guide!  foundry guides get to hype the cool
+projects that they think are worth downloading and testing.
+a guide finds all the stuff on the web about their subject of
+choice, and gives it prominent placement.  how do you become a
+foundry guide? go to http://foundries.sourceforge.net/; find a
+topic that interests you; and send email to
+foundries@sourceforge.net stating your desired topic and why you
+are qualified to be a foundry guide.
+
+
+
+4. work for sourceforge.net
+
+we have a new position for a senior web developer available at
+sourceforge.net.  we are looking for someone to help us maintain,
+upgrade, and add new features to sourceforge.net.  ideal person has
+5+ years of development experience on high end, high volume
+websites (3+ million page views a day).  has a vast level of
+knowledge of internet technologies:  php, postgresql, mysql, db2,
+linux, perl, apache, ldap, mailman.  a flare for design / ui is a
+bonus.  sourceforge is a unique site with unique challenges.  we are
+looking for someone at the top of their game.
+
+location of job is in fremont, california.  please send resume and
+url's of sites you have worked on to jobs@sourceforge.net.  text
+resumes only.  (no ms word files!)
+
+
+
+5. site statistics
+
+stats: (monday 12th, 2000)
+hosted projects: 45,194
+registered users: 465,530
+page views: 3,344,708 in a single day (monday)
+files transfered in a single day: 340,838 (monday)
+emails sent in a single day from mailing lists: 851,143 (monday)
+
+
+top ten projects
+
+1 phpmyadmin
+http://sourceforge.net/projects/phpmyadmin/
+phpmyadmin is a tool written in php intended to handle the
+administration of mysql over the www.  currently it can create and
+drop databases, create/drop/alter tables, delete/edit/add fields,
+execute any sql statement, manage keys on fields.
+
+2 compiere erp + crm business solution
+http://sourceforge.net/projects/compiere/
+smart erp+crm solution for small-medium enterprises (sme) in the
+global marketplace covering all areas from customer management,
+supply chain and accounting.  for $2-200m revenue companies looking
+for "brick and click" first tier functionality.
+
+3 squirrelmail
+http://sourceforge.net/projects/squirrelmail/
+squirrelmail is a php4-based web email client.  it includes built-in
+pure php support for imap and smtp, and renders all pages in pure
+html 4.0 for maximum compatibility across browsers.  it also has
+mime support, folder manipulation, etc
+
+4 tutos
+http://sourceforge.net/projects/tutos/
+tutos is the ultimate team organization software, a web-based
+groupware or erp/crm system to manage events/calendars, addresses,
+teams, projects,tasks,bugs,mailboxes,documents and your time spent
+with these things
+
+5 jboss.org
+http://sourceforge.net/projects/jboss/
+the jboss/server is the leading open source, standards-compliant,
+j2ee based application server implemented in 100% pure java
+
+6 firewall builder
+http://sourceforge.net/projects/fwbuilder/
+object-oriented gui and set of compilers for various firewall
+platforms.  currently implemented compilers for iptables, ipfilter
+and openbsd pf
+
+7 openmosix
+http://sourceforge.net/projects/openmosix/
+openmosix is a linux kernel extension for single-system image
+clustering.  taking n pc boxes, openmosix gives users and
+applications the illusion of one single computer with n cpus.
+openmosix is perfectly scalable and adaptive.
+
+8 cdex
+http://sourceforge.net/projects/cdexos/
+cdex a cd-ripper, thus extracting digital audio data from an audio
+cd. the application supports many audio encoders, like mpeg
+(mp2,mp3), vqf, aac encoders.
+
+9 phpchrystal - an open intranet system
+http://sourceforge.net/projects/phpchrystal/
+phpchrystal ist ein opensource-intranetsystem welches vorrangig auf
+lan-partys eingesetzt werden kann.  vorteile von phpchrystal sind
+seine portierbarkeit, flexibilitt und performance, da es vollends
+auf php, mysql und xml basiert
+
+10 dev-c++
+http://sourceforge.net/projects/dev-cpp/
+dev-c++ is an full-featured integrated development environment
+(ide) for win32 and linux.  it uses gcc, mingw or cygwin as
+compiler and libraries set.
+
+more top projects:
+http://sourceforge.net/top/mostactive.php?type=week
+
+
+
+
+
+email list removal:
+
+when the sf.net team sends out a site-wide email, we sometimes see
+replies that look like this:  "hey!! i didn't subscribe to this list!!!
+you spammer. i hate you!  i hate your dog!  (insert other colorful
+phrases here)".  the truth is, when you registered on sourceforge.net
+there was a check box that said "receive site-wide updates, low
+volume".  you left it checked when you submitted the registration form,
+hence you are receiving this email.  we send these updates every 4 to 6
+weeks, so it truly is low volume.  however if you want off, this is not
+a problem.  simply click on the link below.
+
+
+==================================================================
+you receive this message because you subscribed to sourceforge
+site mailing(s). you may opt out from some of them selectively
+by logging in to sourceforge and visiting your account maintenance
+page (http://sourceforge.net/account/), or disable them altogether
+by visiting following link:
+

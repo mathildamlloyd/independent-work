@@ -1,0 +1,74 @@
+NoneOn Apr 23, 2010, at 01:33:12, Rick Mann wrote:
+
+> There has been an ongoing problem with Apple's production push =
+notification feedback servers, in that they require us to install =
+Entrust root certs. For some reason, Apple chose to sign certs for the =
+production push, sand box push, and sandbox feedback servers with =
+well-known root certs, but the production feedback server cert is signed =
+with unknown root certs.
+>=20
+> Someone suggested I install these intermediate certs on the system, =
+but I don't know where to install them. He pointed to =
+$JAVA_HOME/lib/Security/cacerts, but I see no such directory under 1.6.
+>=20
+> Where do these go? Where do they go in more traditional Java (Open =
+Solaris Java)?
+>=20
+> TIA,
+> Rick
+>=20
+> _______________________________________________
+> Do not post admin requests to the list. They will be ignored.
+> Java-dev mailing list      (Java-dev@lists.apple.com)
+> Help/Unsubscribe/Update your Subscription:
+> =
+http://lists.apple.com/mailman/options/java-dev/rmann%40latencyzero.com
+>=20
+> This email sent to rmann@latencyzero.com
+
+ _______________________________________________
+Do not post admin requests to the list. They will be ignored.
+Java-dev mailing list      (Java-dev@lists.apple.com)
+Help/Unsubscribe/Update your Subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+This email sent to mlsubscriber.tech@csmining.org
+
+re: installing intermediate certsand now i see that's supposed to be lower-case "security."
+
+on apr 23, 2010, at 01:33:12, rick mann wrote:
+
+> there has been an ongoing problem with apple's production push =
+notification feedback servers, in that they require us to install =
+entrust root certs. for some reason, apple chose to sign certs for the =
+production push, sand box push, and sandbox feedback servers with =
+well-known root certs, but the production feedback server cert is signed =
+with unknown root certs.
+>=20
+> someone suggested i install these intermediate certs on the system, =
+but i don't know where to install them. he pointed to =
+$java_home/lib/security/cacerts, but i see no such directory under 1.6.
+>=20
+> where do these go? where do they go in more traditional java (open =
+solaris java)?
+>=20
+> tia,
+> rick
+>=20
+> _______________________________________________
+> do not post admin requests to the list. they will be ignored.
+> java-dev mailing list      (java-dev@lists.apple.com)
+> help/unsubscribe/update your subscription:
+> =
+http://lists.apple.com/mailman/options/java-dev/rmann%40latencyzero.com
+>=20
+> this email sent to rmann@latencyzero.com
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

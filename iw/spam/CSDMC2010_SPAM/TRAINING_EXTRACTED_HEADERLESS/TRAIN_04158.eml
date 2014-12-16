@@ -1,0 +1,34 @@
+From nobody Tue Dec 16 09:15:47 2014
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Sat,22.May.10, 17:16:22, briand@aracnet.com wrote:
+> trying to install windows xp pro
+>=20
+> the installation goes just fine but when I try to run the vm I get
+
+For what purpose do you want to run Windows? Maybe we can suggest better=20
+alternatives (like VirtualBox, package virtualbox-ose).
+
+Regards,
+Andrei
+--=20
+Offtopic discussions among Debian users and developers:
+http://lists.alioth.debian.org/mailman/listinfo/d-community-offtopic
+From nobody Tue Dec 16 09:15:47 2014
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAEBCAAGBQJL+N1sAAoJEHNWs3jeoi3pMLsH/Rx6e93HXt/cLGMBygF3NFkx
+sZjzBCcLgwI5C6v83VP7V3yUvB8BbYn9XodLdL19KyF+jr0SJ3kezhXNqgd9TR98
+qLCh2lAUuKFo15WiCZziYiwAXSPE7KrR7wjxm5ft4HVmkrLVQb5ZUSYFm3idr1At
+nj2WsxRWXphnJTI6taiyQqiD1xz/ek9p4MSJHW1VqxxqZUlFpfcUTZp1cCBuFV8X
+mKC+T7c3IWbqsKe8VyrqTebMoTaQ+Lfp/oGlpFmJAB1DOAtP+STEa0GdY2+J9be4
+2zoo2PdNfhGkU05Ab0wplKIjykiQgg6QNpF1MDIlMu6TFkemcVXMa5sfQjOIZYM=
+=ZR6i
+-----END PGP SIGNATURE-----

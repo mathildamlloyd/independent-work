@@ -1,0 +1,31 @@
+on tue, aug 13, 2002 at 01:01:42pm -0500, justin shore wrote:
+> ah...  you learn something new every day!  this would make things 
+> quite a bit easier.  i assume it can handle a mailbox full of mail to 
+> report rather than a single piece of spam from stdin.  i'll check the 
+> docs on that though.
+
+unfortunately not, it's a one at a time thing.  if it would help
+you, i have a script that i use which handles a mbox file at a time,
+strips the sa stuff, reports to razor, and can then do things like
+open relay checks, reports to spamcop, etc.  it's available via:
+http://www.kluge.net/~felicity/random/handlespam.txt
+
+
+:)
+
+-- 
+randomly generated tagline:
+"but you have to allow a little for the desire to evangelize when you
+ think you have good news."         - larry wall
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: dice - the leading online job board
+for high-tech professionals. search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+razor-users mailing list
+razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

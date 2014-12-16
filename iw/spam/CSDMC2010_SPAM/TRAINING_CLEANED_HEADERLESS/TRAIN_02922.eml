@@ -1,0 +1,39 @@
+-----begin pgp signed message-----
+hash: sha1
+
+camalen  writes:
+
+> on sun, 18 apr 2010 16:33:32 +0200, merciadri luca wrote:
+>
+>> as stated in the title, the light on my asus eee 1000he automatically
+>> and randomly reduces some seconds after i have set it to its maximum
+>> level. why? that must be for some energy reason, but i would like to
+>> deactivate this feature, or at least to modify the timer between the
+>> action i do, and the using of the default value.
+>
+> open gconf editor and navigate to "/apps/gnome-power-manager/backlight/
+> idle_brightness". you can tweak many things from there.
+
+thanks. i had not thought about it.
+- -- 
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+- -- 
+
+it is better to die on one's feet than live on one's knees.
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: processed by mailcrypt 3.5.8 
+
+ieyearecaayfakvmya8acgkqm0llzlt8mhyqdacfefdjy5xgik1ze30ifi3hccv+
+5vwana5oyr2a8xuejicp741x1z3uljqg
+=tmpk
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87633nbldc.fsf@merciadriluca-eee.workgroup
+
+

@@ -1,0 +1,87 @@
+on wed, apr 14, 2010 at 11:03:06am +0200, andreas weber wrote:
+> on 2010-04-13 23:53, charles kroeger wrote:
+> > anyone having problems with their nvidia card and drivers should first
+> > consult lennart sorensen's howto:
+> > 
+> > http://tinyplanet.ca/~lsorense/debian/debian-nvidia-dri-howto.html
+> 
+> i did it, thanks to the author. lean and clean written. however, i
+> disagree with its content at some point. is this whole nvidia driver
+> installation some kind of religious debate? why use the wording "make
+> sure to remove all the garbage created by the nvidia installer..." if it
+> really just works? i've been using the official driver installer since
+> 2008, and it works absolutely easy. a 1 liner to install and the same to
+> uninstall, afaics properly btw.
+
+it is based on the fact that the 'official installer' overwrites files
+belonging to debian packages.  when those packages someday get upgraded,
+they overwrite what the nvidia driver installed, and then things break.
+i have helped enough people fix that kind of mess to know.
+
+just a simple fact.  overwriting packages owned by a package is always
+a bad idea no matter how it is done, because someday the package will
+overwrite it back on you.
+
+> what tricked me yesterday: why don't i get the 2.6.32-4 kernel that
+> works with the 195.36.15 nvidia driver although i have
+> linux-image-2.6-amd64 installed? i had to install it manually. the
+> document states
+> "amd64: any amd or intelapt-get install linux-image-2.6-amd64 ... that
+> will keep you running the latest kernel released by debian"
+
+linux-image-2.6-x is not updated right away unfortunately in the case
+of unstable (and sometimes testing).  it should always be up to date in
+stable though.  i have never quite figured out how the kernel packagers
+decide when to update it.
+
+> and no, please no flaming, i have no intention to provoke someone. all i
+> say is: the nvidia installer really works easily. and yes, you'll have
+> to kick the installer after kernel upgrades. as easy as the debian way
+> these days. i would really appreciate some technical hint about the
+> benefits of the debian way other than "the official installer suckz".
+> and yes, of course i also read
+
+it simply comes down to the fact that using the nvidia installer
+overwrites packaged files and that is "a bad thing"(tm).
+
+> http://wiki.debian.org/nvidiagraphicsdrivers
+> 
+> which says
+> "advantages of "the debian way":
+>     * more automated, which saves work if the kernel is changed. "
+> and i disagree.
+
+well i am thinking of trying to come up with a method that actually makes
+it try to compile the module if it is missing at boot.  my wife thought
+it was rather unfriendly that her last upgrade (which gave her a new
+kernel) took away x.  sure recompiling the module with module-assistant
+was easy, but it had to be done manually.  i will see if i can't find
+a way to automate that for those users that want it.
+
+> > i.e. edit /etc/x11/xorg.conf -remove 'nivida' and replace with 'nv'
+> > very handy when the compile fails.
+> > and it will.
+> 
+> oh yes. ;-)
+
+sometimes it does. :)
+
+also the nvidia installer for a long time hasn't worked with debian's
+2.6.29 and higher kernels because they are now kbuild only (and hence
+don't allow compiler tests that the nvidia installer used to work unless
+they get converted to kbuild).  i am not sure if it works with it yet.
+those running their own kernels would of course never notice that problem
+since they have the full sources installed the way the nvidia makefiles
+assumed it would be.  this same kernel header change also turned vmware
+modules into a nightmare as well as a few other out of kernel drivers.
+
+-- 
+len sorensen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100414145125.gm4307@caffeine.csclub.uwaterloo.ca
+
+

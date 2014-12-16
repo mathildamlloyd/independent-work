@@ -1,0 +1,18 @@
+on wed, apr 21, 2010 at 2:01 pm, nick douma  wrote:
+>>>
+> when using single quotes ('), everything in the string is literal, so no escaping is required. you only need escaping when using double quotes (").
+>
+
+it is not quotes '' but `` :-)
+
+thanks
+
+--siju
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/i2nb713df2c1004210141vc61462aaqd9add3d8934a6cae@mail.csmining.org
+
+

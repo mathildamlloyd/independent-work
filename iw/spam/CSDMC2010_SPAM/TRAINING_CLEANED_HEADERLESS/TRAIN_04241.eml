@@ -1,0 +1,18 @@
+can you post some details? i haven't done any serious benchmarking, but i haven't seen a scenario where something 'seemed' significantly slower, and in all cases i've tried (gui applications and j2ee applications) the memory footprint was significantly smaller). i imagine a codebase that would not benefit much from compressed oops would be one relying primarily on manipulating primitive data types, but in that scenario i don't see how performance would be impacted. i'd love to see your data, and if anyone has some insight on the potential performance tradeoffs with compressed oops, please share!
+
+-- 
+erik
+
+
+on apr 26, 2010, at 9:30 pm, benson margulies wrote:
+
+> a quick benchmark of some cpu-intensive code of ours shows a quite marked slowdown with that option turned on.
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

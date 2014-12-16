@@ -1,0 +1,25 @@
+on thu may 6 2010 15:59:39 boyd stephen smith jr. wrote:
+> i think that kmail requiring mysql to function in debian stable is a
+> problem. i request that the qt/kde packaging team take steps to ensure that
+> debian stable users are not stranded with that situation for the lifetime
+> of stable.
+
+i'm curious.  when i install mysql on a lenny server it thereafter
+automatically starts the global /var/lib/mysql mysql server at boot time.
+
+i thought akonadi was intended to use a private mysql server process
+running in each users' home directory and started as needed.  (maybe
+i misunderstood.)
+
+does installing kde cause a global /var/lib/mysql mysql server to run on
+each workstation, even when nobody is logged in?
+
+--mike bird
+
+
+-- 
+to unsubscribe, email to debian-kde-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201005061633.47357.mgb-debian@yosemite.net
+
+

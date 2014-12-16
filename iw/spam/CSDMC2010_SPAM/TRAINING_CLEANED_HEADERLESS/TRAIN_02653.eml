@@ -1,0 +1,48 @@
+on sat, 01 may 2010 14:08:21 -0500, ron johnson wrote:
+
+> on 05/01/2010 02:03 pm, camalen wrote:
+
+>> your perms are missing the "x" flag for the owner so no access is
+>> allowed. i recall a similar situation in another mailing list...
+>>
+>>
+> i don't want to *execute* the files, i want to *read* them.
+
+don't you need exec perms for listing directories? ;-)
+
+***
+sm01@stt008:~$ mkdir desktop/test
+
+sm01@stt008:~$ ls -l desktop | grep test
+drwxr-xr-x 2 sm01 sm01    48 may  1 21:14 test
+
+sm01@stt008:~$ ls -afl desktop/test
+total 1
+drwxr-xr-x  2 sm01 sm01  48 may  1 21:14 ./
+drwxr-xr-x 10 sm01 sm01 752 may  1 21:19 ../
+
+sm01@stt008:~$ chmod -x desktop/test
+
+sm01@stt008:~$ ls -l desktop | grep test
+drw-r--r-- 2 sm01 sm01    48 may  1 21:14 test
+
+sm01@stt008:~$ ls -afl desktop/test
+ls: no se puede acceder a desktop/test/.: permiso denegado
+ls: no se puede acceder a desktop/test/..: permiso denegado
+total 0
+?????????? ? ? ? ?            ? .
+?????????? ? ? ? ?            ? ..
+***
+
+greetings,
+
+-- 
+camalen
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.05.01.19.25.07@csmining.org
+
+

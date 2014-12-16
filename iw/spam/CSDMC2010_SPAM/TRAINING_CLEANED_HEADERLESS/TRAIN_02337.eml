@@ -1,0 +1,19 @@
+
+harlan feinstein wrote:
+> exmh keeps turning the folder indicator blue for one folder, and
+> i've read all the messages in the folder.  driving me nuts.  i've
+> packed the folder, i've deleted the .mh_sequences file there,
+> keeps doing it.  help!  
+> 
+
+i would rescan then do 'first unseen', and see what happens ..
+
+
+
+
+
+_______________________________________________
+exmh-users mailing list
+exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+

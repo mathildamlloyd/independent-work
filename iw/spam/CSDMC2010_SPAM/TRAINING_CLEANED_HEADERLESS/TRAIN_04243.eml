@@ -1,0 +1,27 @@
+ryanjb wrote:
+>
+> i find a net install works best 
+> nowadays. then you just download and install packages as you want to.
+> 
+> the archive is simply huge now so it's a lot to download and burn unless you 
+> have machines that are not connected to the net that you want to install or 
+> update.
+
+
+yes, start with a testing netinst www.debian.org/devel/debian-installer/ 
+and install the base and then add the sid repos and do an aptitude 
+full-upgrade to the base, after that you can start to build your 
+testing/unstable system the way you want it.
+-- 
+jimmy johnson
+
+debian testing at sda12
+registered linux user #380263
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bee4e5b.70909@csmining.org
+
+

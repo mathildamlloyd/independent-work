@@ -1,0 +1,44 @@
+hello,
+
+i have a web-service that produces static images from various sources =
+using quartz.
+
+recently i wanted to add the capability of adding qtmovie screenshots =
+there, but i'm having some issues.
+
+when the service is run by a user which currently has a graphical login, =
+it works fine - i can load a qtmovie, and grab a frame from a specific =
+time to be used in the image export.
+
+
+however, in the production environment, the app is run by a user which =
+is not logged in. everything else (quartz) works fine, but qtmovie =
+loading bails out with this:
+
+=
+/sourcecache/qtothercomponents/quicktime-1674/midvale/ava_vp3_qt/component=
+/ava_hdutilitieshw.c: cggetonlinedisplaylist failed with code 1011=20
+=
+/sourcecache/qtothercomponents/quicktime-1674/midvale/ava_vp3_qt/component=
+/ava_hdutilitieshw.c: cggetonlinedisplaylist failed with code 1011=20
+_registerapplication(), failed to establish the default connection to =
+the windowserver, _cgsdefaultconnection() is null
+=
+/sourcecache/qtothercomponents/quicktime-1674/midvale/ava_vp3_qt/component=
+/ava_hdutilitieshw.c: cggetonlinedisplaylist failed with code 1011=20
+
+is there a way to work around this? i only want to get the poster image =
+from that movie, nothing else. i can detect in my code when i'm not =
+connected to the windowserver with cggetonlinedisplaylist, so i can =
+switch to a different code path if required.
+
+regards,
+orestis markou=
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

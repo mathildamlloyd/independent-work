@@ -1,0 +1,305 @@
+
+
+-----begin pgp signed message-----
+
+cert advisory ca-2002-21 vulnerability in php
+
+   original release date: july 22, 2002
+   last revised: --
+   source: cert/cc
+
+   a complete revision history can be found at the end of this file.
+
+systems affected
+
+     * systems running php versions 4.2.0 or 4.2.1
+
+overview
+
+   a  vulnerability  has been discovered in php. this vulnerability could
+   be  used  by  a remote attacker to execute arbitrary code or crash php
+   and/or the web server.
+
+i. description
+
+   php  is  a  popular  scripting  language  in  widespread use. for more
+   information about php, see
+
+          http://www.php.net/manual/en/faq.general.php
+
+   the  vulnerability  occurs  in the portion of php code responsible for
+   handling  file uploads, specifically multipart/form-data. by sending a
+   specially  crafted  post  request  to  the web server, an attacker can
+   corrupt  the  internal  data  structures used by php. specifically, an
+   intruder  can  cause  an improperly initialized memory structure to be
+   freed.  in  most  cases, an intruder can use this flaw to crash php or
+   the  web  server. under some circumstances, an intruder may be able to
+   take  advantage  of  this  flaw  to  execute  arbitrary  code with the
+   privileges of the web server.
+
+   you  may  be  aware that freeing memory at inappropriate times in some
+   implementations  of  malloc  and  free  does not usually result in the
+   execution  of  arbitrary  code.  however, because php utilizes its own
+   memory  management  system,  the  implementation of malloc and free is
+   irrelevant to this problem.
+
+   stefan  esser  of  e-matters  gmbh has indicated that intruders cannot
+   execute   code   on   x86   systems.   however,  we  encourage  system
+   administrators  to  apply  patches  on  x86  systems  as well to guard
+   against denial-of-service attacks and as-yet-unknown attack techniques
+   that may permit the execution of code on x86 architectures.
+
+   this  vulnerability  was discovered by e-matters gmbh and is described
+   in  detail  in  their  advisory.  the  php  group  has  also issued an
+   advisory.  a list of vendors contacted by the cert/cc and their status
+   regarding this vulnerability is available in vu#929115.
+
+   although   this  vulnerability  only  affects  php  4.2.0  and  4.2.1,
+   e-matters  gmbh  has  previously  identified  vulnerabilities in older
+   versions  of  php.  if  you  are  running  older  versions  of php, we
+   encourage you to review
+   http://security.e-matters.de/advisories/012002.html
+
+ii. impact
+
+   a  remote  attacker can execute arbitrary code on a vulnerable system.
+   an  attacker  may not be able to execute code on x86 architectures due
+   to  the way the stack is structured. however, an attacker can leverage
+   this  vulnerability  to  crash php and/or the web server running on an
+   x86 architecture.
+
+iii. solution
+
+apply a patch from your vendor
+
+   appendix a contains information provided by vendors for this advisory.
+   as  vendors report new information to the cert/cc, we will update this
+   section  and note the changes in our revision history. if a particular
+   vendor  is  not  listed  below,  we  have not received their comments.
+   please contact your vendor directly.
+
+upgrade to the latest version of php
+
+   if  a  patch  is  not  available  from your vendor, upgrade to version
+   4.2.2.
+
+deny post requests
+
+   until  patches  or an update can be applied, you may wish to deny post
+   requests.  the  following  workaround  is  taken from the php security
+   advisory:
+
+     if  the  php  applications on an affected web server do not rely on
+     http post input from user agents, it is often possible to deny post
+     requests on the web server.
+
+     in  the  apache  web server, for example, this is possible with the
+     following  code  included  in  the  main  configuration  file  or a
+     top-level .htaccess file:
+
+     
+        order deny,allow
+        deny from all
+     
+
+     note  that an existing configuration and/or .htaccess file may have
+     parameters contradicting the example given above.
+
+disable vulnerable service
+
+   until  you  can upgrade or apply patches, you may wish to disable php.
+   as a best practice, the cert/cc recommends disabling all services that
+   are not explicitly required. before deciding to disable php, carefully
+   consider your service requirements.
+
+appendix a. - vendor information
+
+   this  appendix  contains  information  provided  by  vendors  for this
+   advisory.  as  vendors  report new information to the cert/cc, we will
+   update this section and note the changes in our revision history. if a
+   particular  vendor  is  not  listed  below, we have not received their
+   comments.
+
+apple computer inc.
+
+          mac  os  x  and  mac  os x server are shipping with php version
+          4.1.2  which  does  not  contain the vulnerability described in
+          this alert.
+
+caldera
+
+          caldera  openlinux  does  not provide either vulnerable version
+          (4.2.0,  4.2.1)  of  php  in their products. therefore, caldera
+          products are not vulnerable to this issue.
+
+compaq computer corporation
+
+          source:  compaq computer corporation, a wholly-owned subsidiary
+          of  hewlett-packard  company  and  hewlett-packard  company  hp
+          services software security response team
+          x-ref: ssrt2300 php post requests
+          at  the  time  of  writing  this  document, compaq is currently
+          investigating   the   potential  impact  to  compaq's  released
+          operating system software products.
+          as  further  information  becomes available compaq will provide
+          notice  of  the  availability  of any necessary patches through
+          standard  security bulletin announcements and be available from
+          your normal hp services supportchannel.
+
+cray inc.
+
+          cray, inc. does not supply php on any of its systems.
+
+debian
+
+          debian gnu/linux stable aka 3.0 is not vulnerable.
+          debian gnu/linux testing is not vulnerable.
+          debian gnu/linux unstable is vulnerable.
+          the  problem  effects php versions 4.2.0 and 4.2.1. woody ships
+          an  older  version  of  php  (4.1.2),  that doesn't contain the
+          vulnerable function.
+
+freebsd
+
+          freebsd  does not include any version of php by default, and so
+          is  not  vulnerable; however, the freebsd ports collection does
+          contain  the  php4  package. updates to the php4 package are in
+          progress  and a corrected package will be available in the near
+          future.
+
+guardian digital
+
+          guardian  digital  has not shipped php 4.2.x in any versions of
+          engarde, therefore we are not believed to be vulnerable at this
+          time.
+
+hewlett-packard company
+
+          source:  hewlett-packard company security response team
+          at  the  time  of  writing  this  document,  hewlett packard is
+          currently  investigating  the potential impact to hp's released
+          operating system software products.
+          as further information becomes available hp will provide notice
+          of  the  availability of any necessary patches through standard
+          security  bulletin  announcements  and  be  available from your
+          normal hp services support channel.
+
+ibm
+
+          ibm  is  not vulnerable to the above vulnerabilities in php. we
+          do  supply the php packages for aix through the aix toolbox for
+          linux  applications.  however,  these packages are at 4.0.6 and
+          also incorporate the security patch from 2/27/2002.
+
+mandrakesoft
+
+          mandrake linux does not ship with php version 4.2.x and as such
+          is  not  vulnerable.  the  mandrake linux cooker does currently
+          contain  php  4.2.1  and  will  be  updated shortly, but cooker
+          should  not be used in a production environment and no advisory
+          will be issued.
+
+microsoft corporation
+
+          microsoft  products  are not affected by the issues detailed in
+          this advisory.
+
+network appliance
+
+          no netapp products are vulnerable to this.
+
+red hat inc.
+
+          none  of  our commercial releases ship with vulnerable versions
+          of php (4.2.0, 4.2.1).
+
+suse inc.
+
+          suse linux is not vulnerable to this problem, as we do not ship
+          php 4.2.x.
+     _________________________________________________________________
+
+   the  cert/cc acknowledges e-matters gmbh for discovering and reporting
+   this vulnerability.
+     _________________________________________________________________
+
+   author: ian a. finlay.
+   ______________________________________________________________________
+
+   this document is available from:
+   http://www.cert.org/advisories/ca-2002-21.html
+   ______________________________________________________________________
+
+cert/cc contact information
+
+   email: cert@cert.org
+          phone: +1 412-268-7090 (24-hour hotline)
+          fax: +1 412-268-6989
+          postal address:
+          cert coordination center
+          software engineering institute
+          carnegie mellon university
+          pittsburgh pa 15213-3890
+          u.s.a.
+
+   cert/cc   personnel   answer  the  hotline  08:00-17:00  est(gmt-5)  /
+   edt(gmt-4)  monday  through  friday;  they are on call for emergencies
+   during other hours, on u.s. holidays, and on weekends.
+
+using encryption
+
+   we  strongly  urge you to encrypt sensitive information sent by email.
+   our public pgp key is available from
+   http://www.cert.org/cert_pgp.key
+
+   if  you  prefer  to  use  des,  please  call the cert hotline for more
+   information.
+
+getting security information
+
+   cert  publications  and  other security information are available from
+   our web site
+   http://www.cert.org/
+
+   to  subscribe  to  the cert mailing list for advisories and bulletins,
+   send  email  to majordomo@cert.org. please include in the body of your
+   message
+
+   subscribe cert-advisory
+
+   *  "cert"  and  "cert  coordination center" are registered in the u.s.
+   patent and trademark office.
+   ______________________________________________________________________
+
+   no warranty
+   any  material furnished by carnegie mellon university and the software
+   engineering  institute  is  furnished  on  an  "as is" basis. carnegie
+   mellon university makes no warranties of any kind, either expressed or
+   implied  as  to  any matter including, but not limited to, warranty of
+   fitness  for  a  particular purpose or merchantability, exclusivity or
+   results  obtained from use of the material. carnegie mellon university
+   does  not  make  any warranty of any kind with respect to freedom from
+   patent, trademark, or copyright infringement.
+     _________________________________________________________________
+
+   conditions for use, disclaimers, and sponsorship information
+
+   copyright 2002 carnegie mellon university.
+
+   revision history
+july 22, 2002:  initial release
+
+
+
+
+-----begin pgp signature-----
+version: pgp 6.5.8
+
+iqcvawubptyovqcvpmxqi2hjaqgk6qqap1rr7k18pnxpqzvqkpywxyrtpit8mmkn
+uuyermoox+5mawh0hbawcvvcylh0gkgbtpbkrgtot8iehzojwhczqoamm9kni/fg
+qeveznlfbx4gigzgpu0xwlph3zqaaywln57egueyz26zburiiuu2cucmyygqkqli
+tuzdndqumr0=
+=+829
+-----end pgp signature-----
+
+

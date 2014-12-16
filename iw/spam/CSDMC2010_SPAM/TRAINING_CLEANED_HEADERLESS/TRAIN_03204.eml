@@ -1,0 +1,28 @@
+-----begin pgp signed message-----
+hash: sha1
+
+ron johnson wrote:
+> anyway, the cron-apt package does what you want.  it is recommended,
+> though, to use it only for downloads.
+
+it does help the op since he uses apt-get, but what about the people who
+normally use aptitude? there's no "cron-aptitude" package. and though
+cron-apt can be configured to actually run aptitude, i don't get the
+impression that it has really been tested that way.
+
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org
+
+ieyearecaayfaku/ujoacgkq+vsrxyk44081hacgi1ereskuegr3ucmtvanuvrfj
+6uuani0/x+hetbqxee0iaemksl3gaiff
+=znjl
+-----end pgp signature-----
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bbfba3b.20009@web.de
+
+

@@ -1,0 +1,40 @@
+
+on 4/7/2010 10:45 am, greg guerin wrote:
+> brandon moon wrote:
+>
+>> so you were right, java is throwing a classnotfoundexception, but i 
+>> don't understand why this would be the case. i have a static 
+>> initializer in that class, and that's where it is loading and calling 
+>> that native method.
+>
+>
+> when a static native method is called, it receives a jclass reference 
+> (a local reference).  if you need to keep it for other things, then 
+> you should make it into a global ref and keep it.
+>
+> you may have to add some cleverness to avoid circularity, such as 
+> helper classes that can be loaded and clinit'ed before their native 
+> methods are invoked.
+>
+> also, if you've tested your current code in a non-jnlp environment and 
+> it works there, then this problem may be a side-effect of jnlp, which 
+> has different security constraints than a natively launched process.  
+> if you haven't tested your code in a non-jnlp environment, you might 
+> want to try it.
+>
+>   -- gg
+>
+> _______________________________________________
+> do not post admin requests to the list. they will be ignored.
+> java-dev mailing list      (java-dev@lists.apple.com)
+> help/unsubscribe/update your subscription:
+> http://lists.apple.com/mailman/options/java-dev/brandon%40pixelture.com
+>
+> this email sent to brandon@pixelture.com
+
+i thought i mentioned that before, but i guess it wasn't very clear.  my 
+bad.  yes, it does run locally on my machine using eclipse.  the problem 
+only occurs when run with a jnlp.  do you know what kinds of security 
+constraints could cause this kind of problem, and how i could get around it?
+
+brandon moon

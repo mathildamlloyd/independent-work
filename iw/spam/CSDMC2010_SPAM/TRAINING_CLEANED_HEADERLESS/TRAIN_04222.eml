@@ -1,0 +1,28 @@
+on wed, may 19, 2010 at 12:46:53pm -0400, vince vielhaber wrote:
+>
+> a friend was running windows and the viruses got the best of it. she
+> sent me the drive so i could get her pics and documents off of it and
+> put 5.0.4 on it and send it back (she's a few states away).
+>
+> what problems (and solutions) should i be expecting when she installs
+> the drive in her computer?  i'm assuming the network setup will be one
+> problem.
+>
+> my background is mainly in freebsd.  if a drive is set up as being
+> /dev/ad0 and the other machine sees it as /dev/ad4 it won't complete
+> the boot, it'll complain with a cannot mount root error.  will that be
+> an issue with debian?
+>
+besides the fstab and udev issues that others posted, you should be
+pretty good.  i recommend setting up a button on her desktop that sets
+up an ssh tunnel so you can get in and add/fix stuff.
+
+-rob
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100519222719.ga10443@aurora.owens.net
+
+

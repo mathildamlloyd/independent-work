@@ -1,0 +1,99 @@
+NoneAm Donnerstag 06 Mai 2010 schrieb Frederik Schwarzer:
+> [Martin Steigerwald - Donnerstag 06 Mai 2010 11:34:57]
+>=20
+> > Hi!
+> >=20
+> > JFYI as this might (partly) be packaging related.
+> >=20
+> > I found the following bugs with Akonadi since I upgraded to KDE 4.4.3
+> > happening often, possibly always when I start Kontact for the first
+> > time after starting a KDE session. On further starts of Kontact it
+> > works as
+>=20
+> > expected:
+> Umm, that's interesting. I had this since KDE 4.4.0 (self-compiled) and
+> it vanished when switching from the 4.4.2 debs to the 4.4.3 ones.
+> So I thought it was just fixed for 4.4.3. Now I wonder what I did to
+> make it work.
+
+Well: Thats what I mean. Do you *understand* whats going on there?
+
+I am a Linux trainer, consultant and administrator since >5 years and=20
+still don't get *why* this happen and *what* it triggers. I might get it=20
+when I study MySQL, DBUS, Resource Agents, Nepomuk, *whatever* else it=20
+uses - but I am and I want to be *just a user* of this stuff.=20
+
+So I think this is for upstream to solve - and if it ain't work reliably=20
+in KDE 4.4 I think it has to be fixed within KDE 4.4 series. Akonadi might=
+=20
+use MySQL or not, but it if uses it, KAddressBook should still just work=20
+*predictably*.
+
+Thus I suggest reporting anything like that upstream - especially to you,=20
+Boyd - complaining here probably just won't help. And if upstream does not=
+=20
+get bug reports they probably don't even know that something is broken on=20
+probably only *some* systems.
+
+Some issues might be packaging related, but then I hope to get hints back=20
+from upstream developers so that I can file debian bug reports with proper=
+=20
+suggestions. Until then I think I default to reporting upstream, unless=20
+someone convinces me to do elsewise.
+
+Ciao,
+=2D-=20
+Martin 'Helios' Steigerwald - http://www.Lichtvoll.de
+GPG: 03B0 0D6C 0040 0710 4AFA  B82F 991B EAAC A599 84C7
+re: akonadi first time start bugs with kde 4.4.3from nobody tue dec 16 07:55:46 2014
+content-type: text/plain;
+  charset="iso-8859-1"
+content-transfer-encoding: quoted-printable
+
+am donnerstag 06 mai 2010 schrieb frederik schwarzer:
+> [martin steigerwald - donnerstag 06 mai 2010 11:34:57]
+>=20
+> > hi!
+> >=20
+> > jfyi as this might (partly) be packaging related.
+> >=20
+> > i found the following bugs with akonadi since i upgraded to kde 4.4.3
+> > happening often, possibly always when i start kontact for the first
+> > time after starting a kde session. on further starts of kontact it
+> > works as
+>=20
+> > expected:
+> umm, that's interesting. i had this since kde 4.4.0 (self-compiled) and
+> it vanished when switching from the 4.4.2 debs to the 4.4.3 ones.
+> so i thought it was just fixed for 4.4.3. now i wonder what i did to
+> make it work.
+
+well: thats what i mean. do you *understand* whats going on there?
+
+i am a linux trainer, consultant and administrator since >5 years and=20
+still don't get *why* this happen and *what* it triggers. i might get it=20
+when i study mysql, dbus, resource agents, nepomuk, *whatever* else it=20
+uses - but i am and i want to be *just a user* of this stuff.=20
+
+so i think this is for upstream to solve - and if it ain't work reliably=20
+in kde 4.4 i think it has to be fixed within kde 4.4 series. akonadi might=
+=20
+use mysql or not, but it if uses it, kaddressbook should still just work=20
+*predictably*.
+
+thus i suggest reporting anything like that upstream - especially to you,=20
+boyd - complaining here probably just won't help. and if upstream does not=
+=20
+get bug reports they probably don't even know that something is broken on=20
+probably only *some* systems.
+
+some issues might be packaging related, but then i hope to get hints back=20
+from upstream developers so that i can file debian bug reports with proper=
+=20
+suggestions. until then i think i default to reporting upstream, unless=20
+someone convinces me to do elsewise.
+
+ciao,
+=2d-=20
+martin 'helios' steigerwald - http://www.lichtvoll.de
+gpg: 03b0 0d6c 0040 0710 4afa  b82f 991b eaac a599 84c7

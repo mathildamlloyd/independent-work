@@ -1,0 +1,67 @@
+>   coming in late to this thread, but if your k desktop is ok,
+> then you actually have this problem quite well isolated to something
+> in the kdm log-in process. it's not x, and it's not your desktop
+> itself.
+> 
+>   by the time kdm has switched over to you, it's writing errors
+> into a file, ".xession-errors", in your home directory -- you can
+> check this for clues to what's going on.
+> 
+>   another option is to blitz kdm's config files, and re-configure
+> or re-install the package.  i'm not familiar with how sid 
+> does this, but you can do "dpkg -l kdm", and look for files in
+> the /etc directory -- for the current debian stable it's
+> /etc/kde3/kdm.  i suggest re-naming the analogous directory
+> (don't delete it, you might want it back), and then doing
+> "apt-get install --reinstall kdm", or whatever the analogous
+> operation is in aptitude or synaptic, if that's your preference,
+> which should re-build the configuration section.  that's likely
+> to fix it, at the cost of un-doing any customizations you've
+> done.
+> 
+>   if blitzing and re-building the kdm config fails, then it's
+> probably some kind of interaction between kdm and something else...
+> 
+> -- a.
+> -- 
+> andrew reid / reidac@bellatlantic.net
+
+hi andrew,
+
+thanks for jumping in here.  i've tried the following:
+
+1. i have no ".xsession-errors" (or ".xession-errors") in my home 
+directory or that of any other user.
+
+2. it appears the configuration files for kde4 are found under 
+"/usr/share/kde4/config" and also "/etc/kde4/kdm/".  i tried moving the 
+"config" directory to an obscure location and the doing the "apt-get 
+install --reinstall kdm".  it regenerated the config directory but no 
+change in login.
+
+3. i found that under /user/bin (when doing the dpkg -l kdm) there is a 
+file "genkdmconf" which looked promising.  reading the help file for it 
+and executing "genkdmconf -no-old", the files under /etc/kde4/kdm were 
+backed up and new ones regenerated.  now, i get a different login screen 
+background, but the action is still the same -- does not accept my 
+password.  i can still use the "console login" option of that screen and 
+get to the cli login and doing so still allows me to startx and get 
+things going.
+
+so it appears that your last paragraph applies.  i'll be glad to try 
+(almost) anything you or anyone else suggests on this.
+
+(i am also, per my previous message, starting another thread for the 
+symbol not found problem i have in trying to get some applications 
+running (synaptic, iceape, geany to name a few).)
+
+regards,
+don
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4be75d6d.3010200@noark.net
+
+

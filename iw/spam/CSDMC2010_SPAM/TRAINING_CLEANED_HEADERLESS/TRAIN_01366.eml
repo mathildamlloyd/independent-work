@@ -1,0 +1,28 @@
+
+"fdisk /mbr" will not destroy the os, it will simply restore the windows
+mbr as it was.  running fdisk and deleting a partition would however
+destroy the os (bu even then only if you format the disc afterwards).
+
+
+sure wasn't it solocdm  
+sometime around wed, 31 jul 2002 10:48:16 -0600 said:
+ 
+> i need to ask a question concerning this issue.
+> 
+> what if i don't want to get rid of the mbr -- it will destroy the os
+> on that drive.  how do i remove lilo without the above fdisk
+> procedure?
+> 
+-- 
+paul askins <:)
+email:  paul askins 
+
+behind every great man, there is a woman -- urging him on.
+-- harry mudd, "i, mudd", stardate 4513.3
+
+-- 
+irish linux users' group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+list maintainer: listmaster@linux.ie
+
+

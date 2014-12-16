@@ -1,0 +1,52 @@
+adam hardy on 14/05/10 14:13, wrote:
+> ron johnson on 14/05/10 12:54, wrote:
+>> on 05/14/2010 06:32 am, adam hardy wrote:
+>>> merciadri luca on 14/05/10 11:31, wrote:
+>>>> ron johnson wrote:
+>>>>> on 05/13/2010 06:28 pm, adam hardy wrote:
+>>>>>> i figure this is probably something i would have to script myself
+>>>>>> because i can't find anything useful looking out there, but i thought
+>>>>>> i'd ask before i try (or perhaps before i procrastinate again):
+>>>>>>
+>>>>>> i have a machine here at home running some 24x5 programs which i 
+>>>>>> really
+>>>>>> need to keep up and running, along with my broadband so it can get 
+>>>>>> its
+>>>>>> datafeeds.
+>>>>>>
+>>>>>> i figured i could run a program on my webserver to ping my home 
+>>>>>> machine
+>>>>>> regularly and in case it starts to slow down, lose packets or die
+>>>>>> completely, it could send me an sms to alert me to the fact.
+>>>>>>
+>>>>>> is there something like this already in existence?
+>>>>>>
+>>>>> smsclient, ping and bash should do the trick...
+>>>>>
+>>>> might not be too hard to implement, as explained by ron.
+>>>
+>>> i shall look into these options. i'll obviously have to open up the ping
+>>> port on my firewall.
+>>>
+>>
+>> outgoing ports are randomly assigned, though, aren't they?
+> 
+> sure. i mean on the box at home that i'm monitoring from the online 
+> server. aaaah, just realised i don't have a fixed ip ?$*!(*)"*"!!!
+
+actually the more i think about it, the more i realise that i would rather have 
+some kind of full blooded monitoring app which lets me see stats (or even charts 
+like ntop) of internet speed over the week, although i bet that is just dreaming.
+
+i read one thread somewhere out there about apps like cacti, zenoss and 
+groundwork - if you know anything about such packages, then you know more about 
+them than me: is this kind of package remotely suitable or am i barking up the 
+wrong tree?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bed4f8d.2080007@cyberspaceroad.com
+
+

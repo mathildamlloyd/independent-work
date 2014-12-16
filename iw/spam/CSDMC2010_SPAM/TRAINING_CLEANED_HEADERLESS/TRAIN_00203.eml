@@ -1,0 +1,17 @@
+on wed may 12 2010 09:58:57 jozsi vadkan wrote:
+> sed -n '1,2p;4p' file.txt
+>
+> doesn't work.
+
+works for me in lenny.  what output do you see?  what version
+of sed do you have?
+
+--mike bird
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/201005121011.44506.mgb-debian@yosemite.net
+
+

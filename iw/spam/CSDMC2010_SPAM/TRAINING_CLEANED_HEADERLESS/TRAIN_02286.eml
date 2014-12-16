@@ -1,0 +1,74 @@
+from nobody tue dec 16 08:46:54 2014
+content-type: text/plain;
+  charset="utf-8"
+content-transfer-encoding: quoted-printable
+
+hello,
+
+on ketvirtadienis 06 gegu=c5=be=c4=97 2010 02:13:50 boyd stephen smith jr. =
+wrote:
+> > debian packagers don't have that much time to spend on packaging (they
+> > are volunteers after all), and hardly they can do decisions about which
+> > particular branch is better.
+> > they have to package the last one which has
+> >=20
+> >  been released, unless has been released very soon and there is no time
+> >  for testing.
+>=20
+> stable is going to be with those users for at least a year, probably more.
+> they deserve more than whatever upstream wants to throw at the wall this
+> week.
+
+debian users deserve quality packaging of upstream software, good integrati=
+on=20
+of it throughout the whole distribution and general assumption that it won'=
+t=20
+eat their kittens (yet data loss bugs happen). but whether upstream softwar=
+e=20
+meets users' needs is out of debian scope. just find another software/solut=
+ion=20
+which does, develop it by yourself, pay somebody to develop it for you or a=
+sk=20
+kindly and wait till somebody else is motivated enough to do it.
+
+> >  also, is specially hard to decide which branch is better, because
+> >  branch a can have application x in a great shape, and application y in=
+ a
+> >  bad one, while in branch b the case might be the opposite. and having =
+to
+> >  go back one whole release of the whole software compilation just becau=
+se
+> >  one app has one annoying dependency is a little bit overkill, isn't it?
+>=20
+> just block the kdepim 4.4 apps from migrating to testing.  the kdepim 4.3
+> programs already work with the kdebase 4.4 libraries.
+>=20
+> heck, just stop *kmail* from migrating.  korganizer and kaddressbook have
+> required akonadi since 4.2 or earlier.
+
+move on. kdepim 4.3 is gone. given that kde sc 4.5 might release with kdepi=
+m=20
+from 4.4 anyway extending kdepim 4.4 codebase lifetime to 1 year, beating d=
+ead=20
+horse (4.3) makes absolutely no sense. i recommend you to face reality here.
+
+> these responses are quite frustrating.  i read ana's post as "please make
+> sure kde 4.4 is ready for stable".  my post was "kde 4.4 is inappropriate
+> for stable".  all the replies have been "too bad, we are going to release
+> it anyway".
+
+don't you see that you always put yourself in the front in your rationales?=
+=20
+you run a dozen of db servers, you don't want another one, you don't trust=
+=20
+mysql, you say kde 4.4 is inappropriate for stable. nothing objective and y=
+ou=20
+assume that your truth is an ultimate one. pet bugs are always rc to the=20
+reporter, but yet again, we need to face reality here. if you have so many=
+=20
+problems with particular piece of software, look for better options or read=
+=20
+the first part of this mail again.
+
+=2d-=20
+modestas vainius 

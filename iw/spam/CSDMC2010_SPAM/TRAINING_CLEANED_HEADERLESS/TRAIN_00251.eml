@@ -1,0 +1,30 @@
+b. alexander wrote:
+> i've got an issue with a sid box that i have been maintaining for a 
+> while. this is my workstation, and i have noticed a growing number of 
+> broken packages, unmet dependencies and conflicts. i have been using 
+> safe-upgrade for months now, hoping that it would work itself out over 
+> time. however, this hasn't happened. so what can i do to fix the 
+> problems without losing functionality? below is the result of aptitude 
+> full-upgrade (forgive the cut-and-paste):
+>snip< 
+> thanks,
+
+
+i'm using kde and it's fully up-to-date with no broken packages, your 
+problem seems to be that you are holding obsolete/orphan packages, you 
+may want to use synaptic to look at your system and do some 
+investigating as to why dependence are not being met.
+-- 
+jimmy johnson
+
+bakersfield, ca. u.s.a.
+registered linux user #380263
+k.i.s.s. (keep it simple stupid)
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bcd4e4f.3040506@csmining.org
+
+

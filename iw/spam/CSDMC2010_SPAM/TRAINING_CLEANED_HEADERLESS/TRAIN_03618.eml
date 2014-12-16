@@ -1,0 +1,19 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain;
+  charset="us-ascii"
+content-transfer-encoding: quoted-printable
+
+heyho!
+
+short note to the kde packagers since kdenetwork now depends on=20
+libkwebkitpart-dev: don't hesitate to nmu (even with zero delay) if it help=
+s=20
+to get kde into squeeze faster.  (in any case, and if no bug reports come=20
+in, i'll just wait with the next upload until kwebkitpart is in testing.)
+
+cheers
+=2d- vbi
+
+
+=2d-=20
+no wonder you're tired!  you understood so much today.

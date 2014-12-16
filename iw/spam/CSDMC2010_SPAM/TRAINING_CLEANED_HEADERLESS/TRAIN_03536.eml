@@ -1,0 +1,48 @@
+from nobody tue dec 16 08:46:55 2014
+content-type: text/plain; charset=us-ascii
+
+> from:  robert elz 
+> date:  thu, 22 aug 2002 18:32:00 +0700
+>
+>     date:        wed, 21 aug 2002 10:54:46 -0500
+>     from:        chris garrigues 
+>     message-id:  <1029945287.4797.tmda@deepeddy.vircio.com>
+> 
+>   | i can't reproduce this error.
+> 
+> ah, i think i just found the cause, nmh is broken (which is probably
+> obvious from my previous mail).
+> 
+> the man page for pick (and how it always used to work) was that -list
+> would list messages matched.  -nolist would supress that.   if -sequence
+> is given the default is -nolist, without -sequence the default is -list.
+> 
+> that's all fine - but it appears now (which probably means i had never
+> used pick since i upgraded nmh last) that what counts is the order of
+> -list and -sequence - that is, if -sequence comes after -list, the -list
+> gets turned off (-sequence implies -nolist instead of just making -nolist
+> the default).
+> 
+> an easy workaround for this is to make sure that -list is the last arg
+> given to pick, so if i run ...
+> 
+> delta$ pick +inbox -lbrace -lbrace -subject ftp -rbrace -rbrace  4852-4852 
+> -sequence mercury -list
+> 4852
+> 
+> which is just as it should be.
+
+hmmm, i assume you're going to report this to the nmh folks?
+
+chris
+
+-- 
+chris garrigues                 http://www.deepeddy.com/~cwg/
+vircio                          http://www.vircio.com
+716 congress, suite 200
+austin, tx  78701+1 512 374 0500
+
+  world war iii:  the wrong-doers vs. the evil-doers.
+
+
+

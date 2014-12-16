@@ -1,0 +1,43 @@
+NoneIn <COL119-W36EE985CCF60C8E24C4354A80D0@phx.gbl>, IAN DELANEY wrote:
+>oh, i may have just figured it out.  It's using vim.  Must be different
+> version perhaps.  Once entered the data, I couldn't see how to save and
+> exit.  I'm used to nano. The other instance uses nano as a text editor to
+> enter the description.'   No matter, let's persevere since I've started.
+
+Setting EDITOR=3D/usr/bin/nano in your environment will make most Debian=20
+utilities use it instead of /usr/bin/sensible-editor.
+
+>The bug report:
+
+That's a decent report, but bug reports don't go to debian-user@l.d.o.  The=
+y=20
+go to submit@b.d.o.
+=2D-=20
+Boyd Stephen Smith Jr.                   ,=3D ,-_-. =3D.
+bss@iguanasuicide.net                   ((_/)o o(\_))
+ICQ: 514984 YM/AIM: DaTwinkDaddy         `-'(. .)`-'
+http://iguanasuicide.net/                    \_/
+re: reportugfrom nobody tue dec 16 07:55:46 2014
+content-type: text/plain;
+  charset="us-ascii"
+content-transfer-encoding: quoted-printable
+
+in , ian delaney wrote:
+>oh, i may have just figured it out.  it's using vim.  must be different
+> version perhaps.  once entered the data, i couldn't see how to save and
+> exit.  i'm used to nano. the other instance uses nano as a text editor to
+> enter the description.'   no matter, let's persevere since i've started.
+
+setting editor=3d/usr/bin/nano in your environment will make most debian=20
+utilities use it instead of /usr/bin/sensible-editor.
+
+>the bug report:
+
+that's a decent report, but bug reports don't go to debian-user@l.d.o.  the=
+y=20
+go to submit@b.d.o.
+=2d-=20
+boyd stephen smith jr.                   ,=3d ,-_-. =3d.
+bss@iguanasuicide.net                   ((_/)o o(\_))
+icq: 514984 ym/aim: datwinkdaddy         `-'(. .)`-'
+http://iguanasuicide.net/                    \_/

@@ -1,0 +1,29 @@
+i thought i'd installed razor correctly, but i am seeing the following in my 
+logs.  can anyone give me a hitn?
+
+sep  8 06:46:45 omega spamd[6514]: razor2 check skipped: no such file or 
+directory can't locate object method "new" via package "net::dns::resolver" 
+(perhaps you forgot to load "net::dns::resolver"?) at (eval 31) line 1, 
+ line 114. ^i...propagated at 
+/usr/lib/perl5/site_perl/5.6.1/mail/spamassassin/dns.pm line 392,  
+line 114.
+
+-- 
+robin lynn frank
+paradigm-omega, llc
+==================================
+the only certainty about documentation is that
+whoever wrote it "might" have understood it.
+the rest of us may not be so lucky.
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by: osdn - tired of that same old
+cell phone?  get a new here for free!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1;=vs3390
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

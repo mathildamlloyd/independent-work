@@ -1,0 +1,133 @@
+hi all,
+
+i am stuck in the quicktime api icmdecompressionsessiondecodeframe()
+for a while, and i could not find any other resources or any other
+sample code. could any body help me out, and any suggestions
+appreciated.
+
+i want to import a movie file from local drive, get the compressed
+video frames, decode them, and encapsulate them into our own
+uncvideounit format.
+right now we have already got the compressed video frames, but when we
+are trying to decode them, we have got some problem. here is our
+source code, could any body tell me if there is something wrong in our
+code.
+
+
+// initialize callback structure
+icmdecompressiontrackingcallbackrecord callrecord;
+callrecord.decompressiontrackingcallback = writeframetobitmap;
+callrecord.decompressiontrackingrefcon = null;
+
+
+// add attributes for pixel buffer that comes out
+cfmutabledictionaryref pixelbufferattributes = null;
+pixelbufferattributes = cfdictionarycreatemutable( null, 0,
+&kcftypedictionarykeycallbacks;, &kcftypedictionaryvaluecallbacks; );
+
+ostype format = k24rgbpixelformat;
+cfnumberref pformat = cfnumbercreate( null, kcfnumbersint32type, &format; );
+cfdictionaryaddvalue( pixelbufferattributes,
+kcvpixelbufferpixelformattypekey, pformat );
+cfrelease( pformat );
+
+int width = 1280;
+cfnumberref pwidth = cfnumbercreate( null, kcfnumberinttype, &width; );
+cfdictionaryaddvalue( pixelbufferattributes,
+kcvpixelbufferwidthkey, pwidth );
+cfrelease( pwidth );
+
+int height = 720;
+cfnumberref pheight = cfnumbercreate( null, kcfnumberinttype, &height; );
+cfdictionaryaddvalue( pixelbufferattributes,
+kcvpixelbufferheightkey, pheight );
+cfrelease( pheight );
+
+
+//  set up decompression session
+icmdecompressionsessionref decompressionsession;
+imagedescriptionhandle description =
+(imagedescriptionhandle)newhandleclear(sizeof(imagedescription));
+osstatus nstatus = icmdecompressionsessioncreate ( null,
+description, null, pixelbufferattributes, &callrecord;,
+&decompressionsession;);
+cfrelease( pixelbufferattributes );
+
+
+// get video frames from movie files and decode each frame
+timevalue64 starttime =
+getmediaadvancedecodetime(gettrackmedia(track));// for starting
+time of each frame
+timevalue64 durationpersample = 0;// fro duration of each frame
+int count = 0;
+while(true)
+{
+bytecount size = 0;
+uint8 *adata = new unsigned char[maxdatasize];
+nerr = getmediasample2(videomedia, adata, maxdatasize, &size;,
+starttime, nil, &durationpersample;, nil, nil, nil, 1, nil, nil);
+
+
+osstatus nstatus = icmdecompressionsessiondecodeframe(
+decompressionsession, (const uint8*)adata, size, null, null, (void
+*)&count; );
+
+
+count++;
+starttime += durationpersample;
+
+if(nerr != noerr)
+break;
+
+delete [] adata;
+}
+
+
+
+here is the definition for the callback funtion:
+
+
+static void writeframetobitmap(
+void *decompressiontrackingrefcon,
+osstatus result,
+icmdecompressiontrackingflags decompressiontrackingflags,
+cvpixelbufferref pixelbuffer,
+timevalue64 displaytime,
+timevalue64 displayduration,
+icmvalidtimeflags validtimeflags,
+void *reserved,
+void *sourceframerefcon )
+{
+// when we get decoded frame, print it out to bitmap
+if ( (result == noerr) && (decompressiontrackingflags &
+kicmdecompressiontracking_emittingframe) && pixelbuffer )
+{
+char num[16];
+sprintf_s(num, 16, "%d", *((int *)sourceframerefcon));
+std::string strfilepath = std::string("bitmap0") + std::string(num);
+
+boost::shared_ptr pmyimage = stillimage::createinstance();
+size_t size = cvpixelbuffergetdatasize(pixelbuffer);
+byte *mem_buffer = (byte*)malloc(size * sizeof(byte));
+strcpy((char*)mem_buffer, (char *)cvpixelbuffergetbaseaddress(pixelbuffer));
+pmyimage->loadimage(mem_buffer, size);
+pmyimage->saveimage(strfilepath.c_str(), bmp);
+}
+
+
+}
+
+
+thanks very much.
+
+bo peng
+software engineer
+capella systems, llc
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+quicktime-api mailing list      (quicktime-api@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/quicktime-api/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

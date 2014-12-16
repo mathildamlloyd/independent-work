@@ -1,0 +1,22 @@
+if i create an empty (0 length) .xsession or an .xsession file
+containing one line, say, echo hello, world, i get this error when i
+try to log into gnome.
+
+your session lasted less than 10 seconds. if you have not logged out
+yourself this could mean there is some installation problem or that you
+may be out of disk space. try logging in with one of the failsafe
+sessions to see if you can fix the problem.
+
+there aren't any errors in .xsession-errors when i try to log in with
+the 0 length .xsession file. in case of the .xsession file with echo
+hello, world, i see just 'hello, world' in the .xsession-errors file.
+
+why does this happen?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/k2q308d4701004140621ibf159f8dycc2bb534b1aeb7bd@mail.csmining.org
+
+

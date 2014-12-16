@@ -1,0 +1,39 @@
+stephen powell  writes:
+
+> ferenc wagner wrote:
+>
+>> stephen powell  writes:
+>>>
+>>> both grub-legacy and grub-pc use sectors on the hard disk outside of
+>>> the master boot record and outside of a partition ...
+>>
+>> you may want to try extlinux, it works much like lilo in this respect.
+>
+> it does not use the master boot record.  it relies on a master boot
+> record program to chain load it from the partition boot sector.  (i
+> use the mbr package for that.)
+
+the extlinux package itself also contains an mbr.bin, which you can use
+(it's strong point is probably ebios support).
+
+> speaking of documentation, that seems to be its main weakness.
+> documentation is sketchy and spread out over a number of different files.
+
+/usr/share/doc/extlinux.txt.gz references syslinux.txt, which is fairly
+comprehensive according to my standards, at least as far as the core is
+concerned.  what did you miss?  some modules may be less well documented.
+
+> it installs hook scripts that i don't want (and that have bugs).
+
+i hope we can fix them soon (they are debian specific additions).
+-- 
+cheers,
+feri.
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/874ohwt3td.fsf@tac.ki.iif.hu
+
+

@@ -1,0 +1,72 @@
+i posted this earlier today but did not see it come across in email, so 
+i am re-posting.  excuse if this is a duplicate!  thanks...
+
+-------- original message --------
+subject: re: re: password messed up
+date: fri, 07 may 2010 15:13:14 -0500
+from: don 
+to: debian-user@lists.debian.org
+references: 
+
+ > at login screen, jump to a tty console and login as root (or with your
+ > usual user). then, run "startx" and check for the output.
+
+thanks again for your reply camalen.
+
+i booted up and got the login gui screen.  then used the choice of
+console login, and using my usual user name, logged in with the cli.
+then run "startx" ... and lo and behold get my kde4 main screen!
+
+so i conclude that the problem lies with the gui kde login.
+
+although some might be interested in figuring out exactly the problem, i
+take on the role of a "user" here and wish to figure out how to make my
+system well again.  (of course, anyone reading this who wants to delve
+into why this is happening, i'd assist.)
+
+if you, or anyone else, could tell me what i can try to do to fix
+things, i'd appreciate it.  i know i can do a clean install of
+everything, but i would be hopeful that less drastic things might work.
+  any chance of fixing things by doing a reinstall or particular
+packages?  if so, not only telling me which packages to try, but also a
+little guidance with exactly *how* to do it would be appreciated.
+
+at least at this point, i can get back to most of my old system programs
+and data, so the urgency is abated.
+
+i want to throw one other thing in here, just in case it rings a bell or
+someone sees some relationship to this password/login problem.  i
+mentioned in my original post that i had other problems.  back in march,
+just before my emergency 1-week residence in a hospital, i suddenly
+starting having problems with certain programs i regularly use (date was
+probably around march 14).  the programs i believe all use gtk.  some
+are: iceape, synaptic, geany.  and here are the results when i try
+running them from the command line:
+
+don@kali:~$ sudo synaptic
+synaptic: symbol lookup error: /usr/lib/libgdk-x11-2.0.so.0: undefined
+symbol: g_malloc_n
+don@kali:~$ iceape
+/usr/lib/iceape/iceape-bin: symbol lookup error:
+/usr/lib/libgdk-x11-2.0.so.0: undefined symbol: g_malloc_n
+don@kali:~$ geany
+geany: symbol lookup error: /usr/lib/libgdk-x11-2.0.so.0: undefined
+symbol: g_malloc_n
+don@kali:~$
+
+unless there is some relation to my password/login problem of this
+thread, i'll start a new thread with the above problem.
+
+thanks, and if anyone has more ideas on fixing my password/login
+problem, please help!
+
+regards,
+don
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4be4bb25.6060004@noark.net
+
+

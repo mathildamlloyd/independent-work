@@ -1,0 +1,24 @@
+
+"hess, mtodd, /mth" said:
+
+> i hate to bring this up, but i see more and more spams that contain very
+> little, if any, text.  instead, most of the spam text is in a graphic image.
+> how will we be able to detect those as spam?  ocr?
+
+or, alternatively, giveaway patterns in the html?  that's what's happening
+with most obfuscating techniques the spammers are trying -- they become
+a very reliable sign of spam in themselves!
+
+--j.
+
+
+-------------------------------------------------------
+this sf.net email is sponsored by:thinkgeek
+welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+spamassassin-talk mailing list
+spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

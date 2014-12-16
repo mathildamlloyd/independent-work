@@ -1,0 +1,61 @@
+None> broke. The problem didn't have a well documented solution in older OSes. =
+I
+> am hoping to get some guidance.=A0I would like to have a dedicated thread=
+ for
+> every=A0IOBluetoothDevice/IOBluetoothRFCOMMChannel pair.
+> The runloop below exits immediately.=A0IOBluetoothValidateHardware used t=
+o
+> perform enough side-effect magic to keep the runloop running. What
+> should=A0startBlueToothThread look like?
+
+To my knowledge, no part of the Bluetooth frameworks documentation
+says anything about thread safety, and for that reason you must assume
+that it is only safe to use from the main thread.
+
+Also, a thread's run loop will only run if it has either run loop
+sources or timers attached; the fact that NSRunLoop's -run ever
+returns means that it has neither. This is what I would expect based
+on your -startBlueToothThread: method, as it doesn't appear to create
+a source or timer. If you wanted to keep the thread alive, I would
+attach a dummy timer to the run loop that fires after some
+extraordinary amount of time. (Assuming you're not using the Bluetooth
+APIs on the thread...)
+ _______________________________________________
+Do not post admin requests to the list. They will be ignored.
+Bluetooth-dev mailing list      (Bluetooth-dev@lists.apple.com)
+Help/Unsubscribe/Update your Subscription:
+http://lists.apple.com/mailman/options/bluetooth-dev/mlsubscriber.tech%40csmining.org
+
+This email sent to mlsubscriber.tech@csmining.org
+
+re: bluetooth and runloops in a dedicated thread.> i have an old project that i am restarting, and under snow leopard it is
+> broke. the problem didn't have a well documented solution in older oses. =
+i
+> am hoping to get some guidance.=a0i would like to have a dedicated thread=
+ for
+> every=a0iobluetoothdevice/iobluetoothrfcommchannel pair.
+> the runloop below exits immediately.=a0iobluetoothvalidatehardware used t=
+o
+> perform enough side-effect magic to keep the runloop running. what
+> should=a0startbluetooththread look like?
+
+to my knowledge, no part of the bluetooth frameworks documentation
+says anything about thread safety, and for that reason you must assume
+that it is only safe to use from the main thread.
+
+also, a thread's run loop will only run if it has either run loop
+sources or timers attached; the fact that nsrunloop's -run ever
+returns means that it has neither. this is what i would expect based
+on your -startbluetooththread: method, as it doesn't appear to create
+a source or timer. if you wanted to keep the thread alive, i would
+attach a dummy timer to the run loop that fires after some
+extraordinary amount of time. (assuming you're not using the bluetooth
+apis on the thread...)
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+bluetooth-dev mailing list      (bluetooth-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/bluetooth-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

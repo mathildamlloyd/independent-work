@@ -1,0 +1,276 @@
+None> On 11 May 2010 23:02, deloptes <deloptes@yahoo.com> wrote:
+>>>> - weather
+>>>
+>>
+http://kde-look.org/content/show.php/yaWP+%28Yet+Another+Weather+Plasmoid%29?content=94106
+>>
+>> This was not working in 4.3 and I couldn't start it in 4.4.
+>>
+> 
+> Interesting, it works on the Ubuntu box I test KDE on.
+> 
+> 
+>>>> - korganizer
+>>>
+>>> Check!
+>>
+>> it took at least 10min to start
+>>
+> 
+> Wow. Any console output?
+> 
+> 
+>>>> - infrared control
+>>>
+>>> How did you do this in KDE 3?
+>>
+>> with klirc and lircd and modifying the kernel key map for my cinergy xxs
+>> dvbt card ;-)
+>>
+>> a big challenge was to setup the kde keys ... it's not very developed,
+>> but the basic functionality works
+>>
+> 
+> Please, your input is needed here:
+> https://bugs.kde.org/show_bug.cgi?id=197885
+> 
+> 
+>>> i   plasma-widget-kbstate                                          - A
+>>> plasma widget that shows the state of the modifier keys
+>>
+>> In kde3 the "idiots" didn't think of us poor people not using latin and
+>> associated per default ALT+K to switch the keymap. Now if you switch from
+>> english to rushian/bulgarian or whatever ALT+K gives a completely
+>> different keycode ... So I had to always change this.
+>>
+>> Now in kde4 it's even better. You have to click ... and no reasonable
+>> language switching combination is working. In this point Windows wins, as
+>> it's per default configured to switch languages when typing
+>> (left)ALT+SHIFT
+>>
+> 
+> I switch between languages with the Capslock key.
+> עובד גם בעברית!‏
+> Работает тоже по Русский!
+> 
+> 
+>>>> - screen management (xrandr interface)
+>>>
+>>> Yes, built into System Settings.
+>>
+>> yes but not working for me and everybody running i915 vga card. this is
+>> also related to X-Server and the a**holes from intel. (don't judge me the
+>> notebook was given to me from the company I'm working for :-( )
+>>
+> 
+> I don't think that's a KDE issue, though.
+
+no but it's definitely an issue if you can not arrange your displays.
+
+> 
+> 
+>>> http://kde-apps.org/content/show.php/Krypt?content=80641
+>>
+>> the question is if it is compiling in kde4? and also if it is working
+>> well
+>>
+> 
+> It's not a core or even supported app, I think. It's a third-party
+> app. I really can't help with that.
+
+yes, I know. I'll check ... I have about  10 application to recompile.
+
+> 
+> 
+>>>> I forgot to mention that the keyboard froze after pressing ALT+F2 and
+>>>> switching language settings
+>>>
+>>> Please, please comment on this bug:
+>>> https://bugs.kde.org/show_bug.cgi?id=205369
+>>
+>> The problem is that it was not iresponsive for just 10secs but forever.
+>>
+> 
+> I see. Does that happen often, or only that once?
+
+For now it has happened twice ... it could be that I have
+installed/configured something after logging in the first time. 
+
+What is happening permanently is that if I click the logout button the whole
+desktop freezes. I have to press CTRL+ALT+F[1-6] to restart kdm
+
+What I am missing now is also the old behavior from CTRL+ALT+DEL to get
+prompt for reboot or shutdown - or whatever. Now this combination is
+locking the screen. Was it adopted from newer windows?
+
+>>
+> 
+> Thanks. It will stay unusable for you until you tell us what you need
+> to use it! That's what I'm here for.
+> 
+
+Well, 
+- kplayer was not working for DVB input.
+- korganizer does not start
+- kweather and kmoon are not visible (can not choose to activate), though it
+states it's installed.
+
+- ALL kde apps like kplayer/organizer and probably others start very slowly
+about 20-30secs to pop up
+
+
+I'm sorry but I can not test anything that fast. it will take few weeks.
+
+I will probably test upgrading (As I said) from lenny to squeeze to sid. To
+simulate an upgrade of my current system. I think this is more important.
+This will take a while, so my plan for now is to see what basically works
+and what not.
+
+regards
+
+
+-- 
+To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org 
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Archive: http://lists.debian.org/hsdvg7$dpm$1@dough.gmane.org
+
+
+re: fwd: re: kde 3.5 ...dotan cohen wrote:
+
+> on 11 may 2010 23:02, deloptes  wrote:
+>>>> - weather
+>>>
+>>
+http://kde-look.org/content/show.php/yawp+%28yet+another+weather+plasmoid%29?content=94106
+>>
+>> this was not working in 4.3 and i couldn't start it in 4.4.
+>>
+> 
+> interesting, it works on the ubuntu box i test kde on.
+> 
+> 
+>>>> - korganizer
+>>>
+>>> check!
+>>
+>> it took at least 10min to start
+>>
+> 
+> wow. any console output?
+> 
+> 
+>>>> - infrared control
+>>>
+>>> how did you do this in kde 3?
+>>
+>> with klirc and lircd and modifying the kernel key map for my cinergy xxs
+>> dvbt card ;-)
+>>
+>> a big challenge was to setup the kde keys ... it's not very developed,
+>> but the basic functionality works
+>>
+> 
+> please, your input is needed here:
+> https://bugs.kde.org/show_bug.cgi?id=197885
+> 
+> 
+>>> i  plasma-widget-kbstate                     - a
+>>> plasma widget that shows the state of the modifier keys
+>>
+>> in kde3 the "idiots" didn't think of us poor people not using latin and
+>> associated per default alt+k to switch the keymap. now if you switch from
+>> english to rushian/bulgarian or whatever alt+k gives a completely
+>> different keycode ... so i had to always change this.
+>>
+>> now in kde4 it's even better. you have to click ... and no reasonable
+>> language switching combination is working. in this point windows wins, as
+>> it's per default configured to switch languages when typing
+>> (left)alt+shift
+>>
+> 
+> i switch between languages with the capslock key.
+>   !
+>    !
+> 
+> 
+>>>> - screen management (xrandr interface)
+>>>
+>>> yes, built into system settings.
+>>
+>> yes but not working for me and everybody running i915 vga card. this is
+>> also related to x-server and the a**holes from intel. (don't judge me the
+>> notebook was given to me from the company i'm working for :-( )
+>>
+> 
+> i don't think that's a kde issue, though.
+
+no but it's definitely an issue if you can not arrange your displays.
+
+> 
+> 
+>>> http://kde-apps.org/content/show.php/krypt?content=80641
+>>
+>> the question is if it is compiling in kde4? and also if it is working
+>> well
+>>
+> 
+> it's not a core or even supported app, i think. it's a third-party
+> app. i really can't help with that.
+
+yes, i know. i'll check ... i have about  10 application to recompile.
+
+> 
+> 
+>>>> i forgot to mention that the keyboard froze after pressing alt+f2 and
+>>>> switching language settings
+>>>
+>>> please, please comment on this bug:
+>>> https://bugs.kde.org/show_bug.cgi?id=205369
+>>
+>> the problem is that it was not iresponsive for just 10secs but forever.
+>>
+> 
+> i see. does that happen often, or only that once?
+
+for now it has happened twice ... it could be that i have
+installed/configured something after logging in the first time. 
+
+what is happening permanently is that if i click the logout button the whole
+desktop freezes. i have to press ctrl+alt+f[1-6] to restart kdm
+
+what i am missing now is also the old behavior from ctrl+alt+del to get
+prompt for reboot or shutdown - or whatever. now this combination is
+locking the screen. was it adopted from newer windows?
+
+>>
+> 
+> thanks. it will stay unusable for you until you tell us what you need
+> to use it! that's what i'm here for.
+> 
+
+well, 
+- kplayer was not working for dvb input.
+- korganizer does not start
+- kweather and kmoon are not visible (can not choose to activate), though it
+states it's installed.
+
+- all kde apps like kplayer/organizer and probably others start very slowly
+about 20-30secs to pop up
+
+
+i'm sorry but i can not test anything that fast. it will take few weeks.
+
+i will probably test upgrading (as i said) from lenny to squeeze to sid. to
+simulate an upgrade of my current system. i think this is more important.
+this will take a while, so my plan for now is to see what basically works
+and what not.
+
+regards
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/hsdvg7$dpm$1@dough.gmane.org
+
+

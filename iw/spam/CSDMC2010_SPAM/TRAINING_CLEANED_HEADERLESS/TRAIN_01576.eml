@@ -1,0 +1,31 @@
+on fri, 9 apr 2010 14:32:14 -0400 (edt), rodolfo medina wrote:
+> 
+> when i close a ppp connection with `c-c', the keyboard gets stuck and i have to
+> reboot the system.  the problem is reported here:
+> 
+> http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=508589
+> 
+> in the hope of fixing it by updating the kernel, i want to install a freshly
+> new one from the backport repositories.  can anyone suggest the exact package
+> name?  i have lenny on an old pentium iii.
+> 
+> thanks for any help
+> rodolfo
+
+i would suggest linux-image-2.6.32-bpo.3-686
+
+that appears to be the closest to what is in squeeze right now.
+
+-- 
+  .''`.     stephen powell    
+ : :'  :
+ `. `'`
+   `-
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/970515686.2201551270842290414.javamail.root@md01.wow.synacor.com
+
+

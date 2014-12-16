@@ -1,0 +1,26 @@
+rodolfo medina  writes:
+
+> lenny installed on my old pentium iii often gets stuck when logging out
+> gnome, either via the panel menu or with `ctrl-alt-backspace'.
+>
+> does anyone have any direct experience of the same problem or can suggest
+> what the cause may ever be and how to work it out?
+
+
+the problem is reported here:
+
+ http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=508589
+
+does anyone know if it has been fixed, and how?  i don't have the possibility
+of installing sid.
+
+thanks for any help
+rodolfo
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/87tyrn3wv1.fsf@csmining.org
+
+

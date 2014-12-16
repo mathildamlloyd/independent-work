@@ -1,0 +1,41 @@
+on wed, apr 21, 2010 at 03:27:28pm +0000, t o n g  was heard to say:
+> on tue, 20 apr 2010 22:33:14 -0700, daniel burrows wrote:
+> >   can you provide any more information about this?  it shouldn't happen
+> > in any recent version of aptitude.
+> 
+> i can only give you partial information. 
+> 
+> this is what i've been doing
+> 
+>  aptitude --purge-unused purge durep
+>  dpkg -i /linux/linux_bin/deb-pkgs/durep_0.8.1-7.1_all.deb 
+>  aptitude install durep=
+> 
+> for how it happened, i need directions for where to look for such 
+> "more information". 
+
+  if you see "aptitude safe-upgrade" trying to upgrade durep, i'd like
+to see the output of these commands (after you type control-c at the
+aptitude prompt, of course):
+
+aptitude show durep
+aptitude -sy --show-resolver-actions safe-upgrade
+
+> it is not the first time such thing happens, i agree with monique's 
+> obervation, "when aptitude is making suggestions to resolve conflicts, it 
+> will un-hold packages."
+
+  that shouldn't be possible.  if it is happening, something is very
+wrong.  my own guess is that something is clearing your hold flags.  for
+instance, it was recently pointed out to me that "aptitude keep-all"
+clears hold flags (probably wrongly).
+
+  daniel
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100422030648.ga18182@emurlahn.burrows.local
+
+

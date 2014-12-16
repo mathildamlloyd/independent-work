@@ -1,0 +1,39 @@
+on 20100414_123342, ron johnson wrote:
+> on 2010-04-14 09:31, paul e condon wrote:
+> [snip]
+> >
+> >non-obvious --- to the point that there was an open contest with
+> >prizes awarded for the most obfuscated example of c code. the prizes
+> >went to the code for which the judges were most surprised on seeing
+> >it run after they read the code and tried to figure out what would
+> >happen when it was run.
+> 
+> http://www1.us.ioccc.org/main.html  i guess they got bored looking at
+> normal production c code...
+> 
+> there was also an obfuscated perl contest, but that only ran for 5
+> years due to the "perl" and "obfuscation" being redundant.
+> 
+> >but the union construct is now there in the language in order to allow
+> >the professional practitioner to make his code slightly less
+> 
+> unions have been in c for at least 20 years; probably since the early
+> days.
+
+i checked. union is described in the ritchie, johnson, lesk, and
+kernighan, the c programming language, in bell system technical
+journal of july-august 1978, p. 1991. at that time the bell system had
+c compilers running on pdp-11, honeywell 6000, ibm system/370, and
+interdata 8/32.  you're right. >20years.
+
+-- 
+paul e condon           
+pecondon@mesanetworks.net
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100414205849.gc22738@big.lan.gnu
+
+

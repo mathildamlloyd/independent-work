@@ -1,0 +1,20 @@
+on 04/25/2010 07:55 am, james p. wallen wrote:
+[snip]
+>
+> hmmm. maybe debian could set up "activation servers" that could
+> determine whether or not we are using "genuine debian".
+>
+
+but seriously... each kernel module has a "license" field, so if a 
+non-gpl module gets installed, the kernel knows.
+
+-- 
+dissent is patriotic, remember?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bd442f5.6050800@cox.net
+
+

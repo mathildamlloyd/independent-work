@@ -1,0 +1,75 @@
+thanks !!! this worked.
+i did
+ ulimit -c unlimited.
+
+i tried tracking ulimit.  if i do
+which ulimit, i am not getting anything. [ i expect the path of this binary=
+ ]
+
+is it a built in bash command or something like that ????
+
+on sun, may 23, 2010 at 6:35 am, anand sivaram  wrote:
+>
+>
+> on sat, may 22, 2010 at 23:07, aioanei rares 
+> wrote:
+>>
+>> on 05/22/2010 08:10 pm, avinash h.m. wrote:
+>>>
+>>> hi all,
+>>>
+>>> i am using dsl [ damn small linux ] which is branched from debain.
+>>> i am trying to use gcc, gdb. =a0able to install both of them.
+>>>
+>>> i am doing following
+>>> =a0 =a0 =a0- run a helloworld.c program whic has a while loop. =a0so wh=
+ile
+>>> running, its stuck in while.
+>>> =a0 =a0 =a0- another shell, "kill -11 pid" [ pid of the ./a.out ]
+>>> after kill, i get segmentation fault. =a0but core is not dumped. [ i
+>>> expect a print ( core dumped ) ]
+>>>
+>>> anyone faced this ??? please help.
+>>>
+>>> thanks
+>>> - avinash
+>>>
+>>>
+>>>
+>>
+>> first, compile your program with -g, then take a look at man core. not
+>> every program that has received
+>> a segfault signal dumps core. =a0look at gcore to see how to generate it=
+.
+>>
+>>
+>> --
+>> to unsubscribe, email to debian-user-request@lists.debian.org with a
+>> subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+>> archive: http://lists.debian.org/4bf81657.7060002@csmining.org
+>>
+>
+> normally core dump is disabled. =a0you could find the maximum size of cor=
+e
+> file created using "ulimit -a", normally that is 0.
+> increase it using
+> ulimit -c 
+>
+
+
+
+--=20
+knowledge is power,  share it.
+
+birth is joyful, death is pleasant, but its the transition which is trouble=
+some.
+
+with warm regards, avinash
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/aanlktincxyjpxn2wqcmulghbizinbnkf8dm7hz9xfgpf@mail.csmining.org
+
+

@@ -1,0 +1,48 @@
+NoneIs Firefox/Iceweasel leaking?From nobody Tue Dec 16 07:55:45 2014
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+I noticed on many computers with Debian, whatever the kernel (2.6.xx, xx
+>=3D 26), that, once ``too much'' tabs have been opened, Firefox/Icewease=
+l
+becomes sluggish, slower and slower, and often stalls after some time. I
+also noticed that, when becoming more and more sluggish, it takes more
+and more RAM, even when all the pages are completely loaded. Why? Am I
+the only person who's experiencing this? Is there an objective
+explanation to this?
+
+--=20
+Merciadri Luca
+See http://www.student.montefiore.ulg.ac.be/~merciadri/
+I use PGP. If there is an incompatibility problem with your mail
+client, please contact me.
+
+
+No man is rich enough to buy back his past. (Oscar Wilde)
+
+is firefox/iceweasel leaking?from nobody tue dec 16 07:55:45 2014
+content-type: text/plain; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+hi,
+
+i noticed on many computers with debian, whatever the kernel (2.6.xx, xx
+>=3d 26), that, once ``too much'' tabs have been opened, firefox/icewease=
+l
+becomes sluggish, slower and slower, and often stalls after some time. i
+also noticed that, when becoming more and more sluggish, it takes more
+and more ram, even when all the pages are completely loaded. why? am i
+the only person who's experiencing this? is there an objective
+explanation to this?
+
+--=20
+merciadri luca
+see http://www.student.montefiore.ulg.ac.be/~merciadri/
+i use pgp. if there is an incompatibility problem with your mail
+client, please contact me.
+
+
+no man is rich enough to buy back his past. (oscar wilde)
+

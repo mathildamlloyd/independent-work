@@ -1,0 +1,21 @@
+deloptes put forth on 5/3/2010 7:44 pm:
+
+> so the question is, if
+> someone knows of a netbook (that is _64bit) and can be used for development
+> (i.e. has 2gb ram and i.e. 2m cache) this would be exactly perfect for me.
+
+i listed the machine closest to your requirements in my last email.  it
+meets all your requirements but for the 2mb l2 cache.  ttbomk, there are no
+netbooks with 2mb l2 cpu cache.  neither amd nor intel make a cpu with 2mb
+l2 cache for this class of machines.
+
+-- 
+stan
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bdfa350.4070307@hardwarefreak.com
+
+

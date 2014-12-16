@@ -1,0 +1,313 @@
+Nonesomewhat concerned that this is a demonstrable regression between Java 5 =
+and Java 6 - however there are several other factors that can impact =
+memory use:
+
+- 32 vs. 64-bit (biggest culprit)
+- 1.5/client/32-bit tuned garbage collection options running on =
+1.6/server/64-bit
+- client vs. server HotSpot itself (more aggressive compilation and =
+storage of compiled code)
+
+Anecdotally, I've talked to several people who have large long running =
+64-bit processes on Snow Leopard with 2GB-of-RAM machines who were =
+having a miserable time. While reverting to 32-bit may be a quick fix =
+for some, others who tuned the GC parameters or turned on =
+-XX:+UseCompressedOops (which compresses Java references to 32-bit =
+values in the heap) found that they could reclaim or even exceed their =
+original 32-bit performance (since they were still using the server =
+JVM).
+
+Since someone mentioned that NetBeans 6.9 Beta was working well, I'd =
+suggest taking a look at it's JVM options and see if there wasn't some =
+tweaking done to optimize it for a 64-bit by default world.
+
+Best of luck,
+Mike Swingler
+Java Runtime Engineer
+Apple Inc.
+
+On Apr 23, 2010, at 7:06 AM, Dave Minnigerode wrote:
+
+> I too have been using netbeans 6.8 on 10.5 and 10.6 with the default =
+jvm doing java 6 work... It's just stable enough for daily use.  I do =
+restart NB every few hrs when the memory use gets out of hand =
+(apparently some object leaks with the apple jvm/nb combo).... can't =
+switch it back to java 5, so kinda stuck with it. So I'm probably just =
+going to switch to IntilliJ, I've found it's performance to be a lot =
+better than NB overall.   File tree nav is painless for example.
+>=20
+> I'm kinda sad about it, but got work to get done...
+>=20
+> On Apr 23, 2010, at 8:52 AM, eisenstein@csmining.org wrote:
+>=20
+>> Hmm. I'm using the late 2006 Macbook Pro (2.33 GHz upgraded to 4 GB =
+[3.5 GB] RAM). I'm using the latest Java through Software Update, and my =
+app is Swing-based (using Matisse) and using the Swing Application =
+Framework with an embedded Derby database, though I will note that I =
+have issues even before any files are open. Just expanding the tree to =
+get to a file for opening tended to take about 10 seconds, and that's =
+assuming I didn't switch to another window in the meantime.
+>>=20
+>> I just did a full wipe/reinstall of Netbeans to see if my settings =
+were a problem, but I had no change until I loaded in Java 5 and saw a =
+significant difference. I'll be trying out the suggestions people made =
+about using a different target platform than the one Netbeans is running =
+on, but I'm starting to wonder if there is an issue with my system.
+>>=20
+>> On Apr 23, 2010 9:22am, David Loeffler <loeffler@me.com> wrote:
+>>> I use NetBeans 6.9 Beta (I was using 6.8 but want the metadata =
+support for entity beans) and I have no problems.  I have a late 2007 =
+MBP 17" and am using java version "1.6.0_17" .  I am developing a Java 6 =
+running on GlassFish using Postgres as the database.  This is a port of =
+he Java EE 5 app I architected in 2005 and deployed in 2006 on JBoss =
+using eclipse / JBoss Dev Studio as the IDE.  It is a lot more than a =
+port since there a number of enhancements.
+>>>=20
+>>>=20
+>>>=20
+>>> I have made no changes to the Java or preferences for NetBeans.  Of =
+course the Java for my app is 1.6 and NetBeans runs on 1.6 as well.
+>>>=20
+>>>=20
+>>>=20
+>>> I do see an increase in activity when there is an open dialog box so =
+I keep an eye out for them.  I watch CPU activity since I had an issue =
+with Kernel panics a month ago.  Turned out to be a combination of a =
+failing disk drive and a memory stick. Replaced the 160G drive with 500G =
+and the 2G stick with 4G (to make total of 6G).   Apple store guys could =
+not see the problems but through some handy tools and taking to external =
+service personnel we were able to zero in on the problem and fix it.
+>>>=20
+>>>=20
+>>>=20
+>>> Side note: I have shutdown plugins in Safari mainly to keep Flash =
+from running.  Some sites caused Flash plugin to push usage up to 20% or =
+more.  I have been using iStat menu (I recommend) and also launch =
+activity monitor at login just to keep an eye on things.
+>>>=20
+>>>=20
+>>>=20
+>>> On Apr 23, 2010, at 1:06 AM, Jon Eisenstein wrote:
+>>>=20
+>>>=20
+>>>=20
+>>>> I imagine this topic comes up every so often but I haven't been =
+able to find it in the archives. =46rom what I understand, there's some =
+issue with Snow Leopard and Java 6 that makes Netbeans 6.8 near =
+unusable. (I've had to do my development on a lesser-powered PC because =
+there, things will actually open without pegging the CPU at 100% and =
+becoming unresponsive.) Following a tip, I used Pacifist to reinstall =
+Leopard's Java 5 back onto the system, set it as the default, and tried =
+to launch Netbeans. Lo and behold, it was fast, responsive and showed =
+none of the problems I'd been used to. Unfortunately, it made it so that =
+I couldn't work on my Java 6-based app!
+>>>=20
+>>>>=20
+>>>=20
+>>>> So, what is the actual situation here? Is this a known issue with =
+the Apple JVM that's (hopefully) going to get fixed? Is this a bug in =
+Netbeans? Am I the only one seeing issues this bad, and so it could be a =
+problem with my setup? Is there a workaround? Any help would be vastly =
+appreciated -- the Windows box is having disk issues, and I'd love to =
+move my primary development to the Macbook Pro as soon as possible. And =
+if push comes to shove, I may have to just rearchitect the project into =
+Java 5 (which would not be a simple task.)
+>>>=20
+>>>> _______________________________________________
+>>>=20
+>>>> Do not post admin requests to the list. They will be ignored.
+>>>=20
+>>>> Java-dev mailing list      (Java-dev@lists.apple.com)
+>>>=20
+>>>> Help/Unsubscribe/Update your Subscription:
+>>>=20
+>>>> =
+http://lists.apple.com/mailman/options/java-dev/ddl.newsletters%40mac.com
+>>>=20
+>>>>=20
+>>>=20
+>>>> This email sent to ddl.newsletters@mac.com
+>>>=20
+>>>=20
+>>>=20
+>> _______________________________________________
+>> Do not post admin requests to the list. They will be ignored.
+>> Java-dev mailing list      (Java-dev@lists.apple.com)
+>> Help/Unsubscribe/Update your Subscription:
+>> =
+http://lists.apple.com/mailman/options/java-dev/dave%40minnigerode.org
+>>=20
+>> This email sent to dave@minnigerode.org
+> _______________________________________________
+> Do not post admin requests to the list. They will be ignored.
+> Java-dev mailing list      (Java-dev@lists.apple.com)
+> Help/Unsubscribe/Update your Subscription:
+> http://lists.apple.com/mailman/options/java-dev/swingler%40apple.com
+>=20
+> This email sent to swingler@apple.com
+
+ _______________________________________________
+Do not post admin requests to the list. They will be ignored.
+Java-dev mailing list      (Java-dev@lists.apple.com)
+Help/Unsubscribe/Update your Subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+This email sent to mlsubscriber.tech@csmining.org
+
+re: snow leopard, java 6 and netbeanshas anyone tried it with the 10m3050 or 9m3150 developer preview? i'm =
+somewhat concerned that this is a demonstrable regression between java 5 =
+and java 6 - however there are several other factors that can impact =
+memory use:
+
+- 32 vs. 64-bit (biggest culprit)
+- 1.5/client/32-bit tuned garbage collection options running on =
+1.6/server/64-bit
+- client vs. server hotspot itself (more aggressive compilation and =
+storage of compiled code)
+
+anecdotally, i've talked to several people who have large long running =
+64-bit processes on snow leopard with 2gb-of-ram machines who were =
+having a miserable time. while reverting to 32-bit may be a quick fix =
+for some, others who tuned the gc parameters or turned on =
+-xx:+usecompressedoops (which compresses java references to 32-bit =
+values in the heap) found that they could reclaim or even exceed their =
+original 32-bit performance (since they were still using the server =
+jvm).
+
+since someone mentioned that netbeans 6.9 beta was working well, i'd =
+suggest taking a look at it's jvm options and see if there wasn't some =
+tweaking done to optimize it for a 64-bit by default world.
+
+best of luck,
+mike swingler
+java runtime engineer
+apple inc.
+
+on apr 23, 2010, at 7:06 am, dave minnigerode wrote:
+
+> i too have been using netbeans 6.8 on 10.5 and 10.6 with the default =
+jvm doing java 6 work... it's just stable enough for daily use.  i do =
+restart nb every few hrs when the memory use gets out of hand =
+(apparently some object leaks with the apple jvm/nb combo).... can't =
+switch it back to java 5, so kinda stuck with it. so i'm probably just =
+going to switch to intillij, i've found it's performance to be a lot =
+better than nb overall.   file tree nav is painless for example.
+>=20
+> i'm kinda sad about it, but got work to get done...
+>=20
+> on apr 23, 2010, at 8:52 am, eisenstein@csmining.org wrote:
+>=20
+>> hmm. i'm using the late 2006 macbook pro (2.33 ghz upgraded to 4 gb =
+[3.5 gb] ram). i'm using the latest java through software update, and my =
+app is swing-based (using matisse) and using the swing application =
+framework with an embedded derby database, though i will note that i =
+have issues even before any files are open. just expanding the tree to =
+get to a file for opening tended to take about 10 seconds, and that's =
+assuming i didn't switch to another window in the meantime.
+>>=20
+>> i just did a full wipe/reinstall of netbeans to see if my settings =
+were a problem, but i had no change until i loaded in java 5 and saw a =
+significant difference. i'll be trying out the suggestions people made =
+about using a different target platform than the one netbeans is running =
+on, but i'm starting to wonder if there is an issue with my system.
+>>=20
+>> on apr 23, 2010 9:22am, david loeffler  wrote:
+>>> i use netbeans 6.9 beta (i was using 6.8 but want the metadata =
+support for entity beans) and i have no problems.  i have a late 2007 =
+mbp 17" and am using java version "1.6.0_17" .  i am developing a java 6 =
+running on glassfish using postgres as the database.  this is a port of =
+he java ee 5 app i architected in 2005 and deployed in 2006 on jboss =
+using eclipse / jboss dev studio as the ide.  it is a lot more than a =
+port since there a number of enhancements.
+>>>=20
+>>>=20
+>>>=20
+>>> i have made no changes to the java or preferences for netbeans.  of =
+course the java for my app is 1.6 and netbeans runs on 1.6 as well.
+>>>=20
+>>>=20
+>>>=20
+>>> i do see an increase in activity when there is an open dialog box so =
+i keep an eye out for them.  i watch cpu activity since i had an issue =
+with kernel panics a month ago.  turned out to be a combination of a =
+failing disk drive and a memory stick. replaced the 160g drive with 500g =
+and the 2g stick with 4g (to make total of 6g).   apple store guys could =
+not see the problems but through some handy tools and taking to external =
+service personnel we were able to zero in on the problem and fix it.
+>>>=20
+>>>=20
+>>>=20
+>>> side note: i have shutdown plugins in safari mainly to keep flash =
+from running.  some sites caused flash plugin to push usage up to 20% or =
+more.  i have been using istat menu (i recommend) and also launch =
+activity monitor at login just to keep an eye on things.
+>>>=20
+>>>=20
+>>>=20
+>>> on apr 23, 2010, at 1:06 am, jon eisenstein wrote:
+>>>=20
+>>>=20
+>>>=20
+>>>> i imagine this topic comes up every so often but i haven't been =
+able to find it in the archives. =46rom what i understand, there's some =
+issue with snow leopard and java 6 that makes netbeans 6.8 near =
+unusable. (i've had to do my development on a lesser-powered pc because =
+there, things will actually open without pegging the cpu at 100% and =
+becoming unresponsive.) following a tip, i used pacifist to reinstall =
+leopard's java 5 back onto the system, set it as the default, and tried =
+to launch netbeans. lo and behold, it was fast, responsive and showed =
+none of the problems i'd been used to. unfortunately, it made it so that =
+i couldn't work on my java 6-based app!
+>>>=20
+>>>>=20
+>>>=20
+>>>> so, what is the actual situation here? is this a known issue with =
+the apple jvm that's (hopefully) going to get fixed? is this a bug in =
+netbeans? am i the only one seeing issues this bad, and so it could be a =
+problem with my setup? is there a workaround? any help would be vastly =
+appreciated -- the windows box is having disk issues, and i'd love to =
+move my primary development to the macbook pro as soon as possible. and =
+if push comes to shove, i may have to just rearchitect the project into =
+java 5 (which would not be a simple task.)
+>>>=20
+>>>> _______________________________________________
+>>>=20
+>>>> do not post admin requests to the list. they will be ignored.
+>>>=20
+>>>> java-dev mailing list      (java-dev@lists.apple.com)
+>>>=20
+>>>> help/unsubscribe/update your subscription:
+>>>=20
+>>>> =
+http://lists.apple.com/mailman/options/java-dev/ddl.newsletters%40mac.com
+>>>=20
+>>>>=20
+>>>=20
+>>>> this email sent to ddl.newsletters@mac.com
+>>>=20
+>>>=20
+>>>=20
+>> _______________________________________________
+>> do not post admin requests to the list. they will be ignored.
+>> java-dev mailing list      (java-dev@lists.apple.com)
+>> help/unsubscribe/update your subscription:
+>> =
+http://lists.apple.com/mailman/options/java-dev/dave%40minnigerode.org
+>>=20
+>> this email sent to dave@minnigerode.org
+> _______________________________________________
+> do not post admin requests to the list. they will be ignored.
+> java-dev mailing list      (java-dev@lists.apple.com)
+> help/unsubscribe/update your subscription:
+> http://lists.apple.com/mailman/options/java-dev/swingler%40apple.com
+>=20
+> this email sent to swingler@apple.com
+
+ _______________________________________________
+do not post admin requests to the list. they will be ignored.
+java-dev mailing list      (java-dev@lists.apple.com)
+help/unsubscribe/update your subscription:
+http://lists.apple.com/mailman/options/java-dev/mlsubscriber.tech%40csmining.org
+
+this email sent to mlsubscriber.tech@csmining.org
+

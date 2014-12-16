@@ -1,0 +1,52 @@
+on 4/7/2010 9:50 am, mike swingler wrote:
+> on apr 7, 2010, at 8:38 am, brandon moon wrote:
+>
+>    
+>> on 4/7/2010 7:00 am, tomas hurka wrote:
+>>
+>>      
+>>> on 7 apr 2010, at 00:29, brandon moon wrote:
+>>>
+>>>        
+>>>> i'm having an issue with a jni library when distributed as part of a jnlp app (or java web start).  the java application loads the library, then calls a native function that spawns a new thread.  i attach this thread to the jvm (using attachcurrentthreadasdaemon) and initialize a jnienv object.  i then use this jnienv object to get the java class and a few methods (so i can get back to java on certain events).  when i run this over java web start, the call that requests a method id crashes.  i have no idea why this happens, and can't find any related errors online.  has anyone else run into this problem?  any input would be appreciated.
+>>>>
+>>>> this is the native code, the line that causes problems has *** around it:
+>>>>
+>>>> // attach this thread to java vm
+>>>>    if ((*javavm)->attachcurrentthreadasdaemon(javavm, (void**)&eventpumpenv;, null)<  0) {
+>>>>        nslog(@"failed to attach event pump to java vm");
+>>>>    }
+>>>>    else {
+>>>>        // cache class and method references
+>>>>        systemhooks = (*eventpumpenv)->findclass(eventpumpenv, "com/pixelture/systemhooks/systemhooks");
+>>>>        systemhooks = (*eventpumpenv)->newglobalref(eventpumpenv, systemhooks);
+>>>>
+>>>> ***        notifysuspend = (*eventpumpenv)->getstaticmethodid(eventpumpenv, systemhooks, "notifysuspend", "()v"); ***
+>>>>        //notifysuspend = (jmethodid)(*eventpumpenv)->newglobalref(eventpumpenv, (jobject)notifysuspend);
+>>>>        notifysystemevent = (*eventpumpenv)->getstaticmethodid(eventpumpenv, systemhooks, "notifysystemevent", "(ji)v");
+>>>>        //notifysystemevent = (jmethodid)(*eventpumpenv)->newglobalref(eventpumpenv, (jobject)notifysystemevent);
+>>>>
+>>>>        ...
+>>>>
+>>>>        if (debug) nslog(@"attached pollingloop to java and got environment&  methods");
+>>>>    }
+>>>>          
+>>> i think that class "com/pixelture/systemhooks/systemhooks" is not found for some reason. check that systemhooks is not null and that findclass method does not throw an exception.
+>>>        
+>> so you were right, java is throwing a classnotfoundexception, but i don't understand why this would be the case.  i have a static initializer in that class, and that's where it is loading and calling that native method.  how can the class not be found if that's where the native method is being called from?
+>>      
+> think about it: you are calling your jni function from the class' static initializer. the class is not initialized yet. attempts to find the (uninitialized) class should probably fail.
+>
+> regards,
+> mike swingler
+> java runtime engineer
+> apple inc.
+
+i'm not trying to load an instance of the class, i'm trying to load the 
+actual class definition.  the error is telling me that the java 
+classloader can't find that class on the classpath (at least that's my 
+understanding).  what i don't understand is, for it to have called the 
+static initializer, that means java has already loaded the class 
+definition, right?  so why can't it find it?
+
+brandon moon

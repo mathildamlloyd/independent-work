@@ -1,0 +1,24 @@
+> sometimes i'll get "mount: no medium found on /dev/sr0" or it will mount, or
+> it will give me the other error message i posted.
+> i just put a disc in, tried to mount it three times, and got three different
+> results. now it is mounted and /dev looks like
+> http://paste.debian.net/73572/
+> now i've taken the disc out and dev looks like:
+> http://paste.debian.net/73573/
+
+whenever i have problem with reading/writing to dvd/cd
+device, it ends replacing the drive. and drives are
+cheaper and cheaper and last shorter and shorter. if
+you have fond to buy new one, now it is the time to do
+that. at least, i would do.
+best regards
+
+                       zoran
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org 
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/20100517150620.ga971@faust.net
+
+
