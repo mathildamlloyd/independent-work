@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=iso-8859-1
 content-transfer-encoding: quoted-printable
 
@@ -64,3 +64,69 @@ on tue, apr 27, 2010 at 16:08, rudu  wrote:
 > archive: http://lists.debian.org/4bd6bea3.3060705@cegetel.net
 >
 >
+from nobody tue dec 16 09:15:46 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+how about single user mode? =a0are you able to get virtual console there.also try to disable gdm/kdm, see whether virtual consoles are working.on tue, apr 27, 2010 at 16:08, rudu <rudu@cegetel.net>=
+; wrote:
+le 27/04/2010 03:48, hugo vanwoerkom a =e9c=
+rit :
+
+
+rudu wrote:
+
+le 26/04/2010 20:55, hugo vanwoerkom a =e9crit :
+
+
+so are you still running nv?
+
+yes
+
+
+and what was the driver that wouldn't compile?
+i run x86-195.36.15 on the latest sid kernel and it compiles just
+fine, but i don't (yet) have a amd64 system.
+
+
+excerpt from /var/log/nvidia-installer.log :
+
+using: nvidia-installer ncurses user interface
+warning: skipping the runlevel check (the utility `runlevel` failed
+to run).
+-> license accepted.
+-> installing nvidia driver version 195.36.15.
+-> performing cc sanity check with cc=3d"cc".
+-> performing cc version check with cc=3d"cc".
+-> the cc version check failed:
+
+ =a0 [...]
+
+
+
+
+indeed. forget this if it is beating a dead horse, but did you have
+gcc-4.3 + gcc-4.4 both installed? i did and i set the symlink gcc to
+gcc-4.3 and that got rid of the message.
+
+
+thank you hugo, i managed to compile the proprietary driver.
+now every ctrl+alt+fn leads to a complete black screen, with no prompt or c=
+ursor or anything.
+ctrl+alt+f7 works as expected.
+could it be that my system stopped creating the consoles at boot time ?
+what should i check and where ?
+
+tia,
+jean-marc
+
+
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org with a sub=
+ject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+
+archive: http://lists.debian.org/4bd6bea3.3060705@cegetel.net
+
+

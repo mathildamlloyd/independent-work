@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 content-transfer-encoding: quoted-printable
@@ -24,3 +24,15 @@ randomly generated tagline:
 "the cardinal rule at our school is simple. no shooting at teachers. if
  you have to shoot a gun, shoot it at a student or an administrator."
                  - "word smart ii", from princeton review pub.
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.0.6 (gnu/linux)
+comment: for info see http://www.gnupg.org
+
+id8dbqe9bckwauoquewas2mrar+iaj9cvlx61vwsc5kfdlyv9/t7fazmxacgzupc
+f235rrvr6ci8lvpc+ieiss0=
+=bscm
+-----end pgp signature-----

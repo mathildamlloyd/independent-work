@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=windows-1252
 content-transfer-encoding: quoted-printable
 
@@ -36,3 +36,16 @@ robin krahl
 robin@rkrahl.de
 http://rkrahl.de
 
+from nobody tue dec 16 09:15:47 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: openpgp digital signature
+content-disposition: attachment; filename="signature.asc"
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org/
+
+ifyearelaayfaku7qxqacgkqmmq4cqvlkmbcfwdfrgzswck9p4ozwczs+hlzhvis
+txkvb25/5drkqaddfb5zq/ar7t/6cggj/xukkcaek165mz+tq+l/da==
+=lqmb
+-----end pgp signature-----

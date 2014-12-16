@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=iso-8859-1
 
 hello,
@@ -23,4 +23,23 @@ way to do what unetbootin does manually, so that i could load a cd/dvd iso
 onto the stick after making it boot-able.
 
 regards,
+james
+from nobody tue dec 16 09:15:46 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+hello, i'm curious as to the different ways one can create a us=
+b install stick, for the purpose of installing debian. it is possib=
+le to do it by a) acquiring (where?) a boot.img.gz file, and then doing=
+ "zcat boot.img.gz > /dev/sdc". then load a netboot iso to the=
+ disc. 
+b) making a fat/fat32 partition on the stick, and then doing "syslinux=
+ /dev/sdxx", copying vmlinuz and initrd.gz to the stick c) using u=
+netbootin with an .iso file i like the way unetbootin allows one to=
+ use a larger .iso (dvd, or full cd iso). the downside of a) and b) is that=
+ you can only use the smaller netboot .isos, and if i wanted to load a few =
+more files onto the disc for use i wouldn't have the room to do so. 
+does anyone know another method? i'm particularly interested in kno=
+wing the way to do what unetbootin does manually, so that i could load a cd=
+/dvd iso onto the stick after making it boot-able. regards, 
 james

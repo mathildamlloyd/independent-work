@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=utf-8; format=flowed
 content-transfer-encoding: quoted-printable
 
@@ -76,3 +76,16 @@ sjoerd
 
 ps. if you do need cutting-edge, use debian-backports!
 
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: openpgp digital signature
+content-disposition: attachment; filename="signature.asc"
+
+-----begin pgp signature-----
+version: gnupg v2.0.7 (gnu/linux)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org
+
+id8dbqflzr1ghkednpy5oourah8pakdpfbtytdx+rc9szp6v8qxfqqe1qwccdxvs
+phqh3in6ckbm86xy1hqhmlm=
+=439p
+-----end pgp signature-----

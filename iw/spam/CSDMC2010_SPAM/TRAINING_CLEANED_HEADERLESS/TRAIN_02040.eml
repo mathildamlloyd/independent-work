@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 content-transfer-encoding: quoted-printable
@@ -11,3 +11,15 @@ anyone else seeing this? any ideas against which packet to file a bug?
 thanks
 
   --jan
+from nobody tue dec 16 09:15:45 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: digital signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+ieyearecaayfakvfieiacgkqlttvzdk47d5fngcfcngptgfzetrqwxhlg8spcnie
+jj4aoioyno0rukkr3u5cxy1etgpoztl/
+=l1g2
+-----end pgp signature-----

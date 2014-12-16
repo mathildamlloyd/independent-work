@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=utf-8
 content-transfer-encoding: quoted-printable
 
@@ -28,3 +28,24 @@ on fri, apr 23, 2010 at 9:27 am, =e5=88=98=e5=ae=87=e8=be=89  wrote:
 > mount -o loop -t iso9660 /dev/scd0 /mnt
 >
 >
+from nobody tue dec 16 09:15:47 2014
+content-type: text/html; charset=utf-8
+content-transfer-encoding: quoted-printable
+
+that worked, thanks!if one has to do this every time, why is it tha=
+t these options aren't listed in /etc/fstab? on fri, apr 23, 2010 at 9:27 am, =e5=88=98=e5=ae=87=e8=be=89 <lyh19901223@gmail=
+.com> wrote:
+on 23 april 2010 13:54, james stuckey <jhstuckey@csmining.org> wrote:
+>> i'm not able to read dvds in squeeze. i burned this disc o=
+n the same> drive in squeeze. thereafter it worked fine until a week=
+ or so ago
+> (the disc is less than a month old). i tested the disc last week on a<=
+br>> windoze and mac osx and it worked without a problem.>>=
+; when i try to mount the cd/dvd rom drive:> stuckey@debian:~$ mount=
+ /dev/scd0
+
+> mount: block device /dev/sr0 is write-protected, mounting read-only> mount: wrong fs type, bad opti=
+on, bad superblock on /dev/sr0,try the whole options a=
+nd arguments 
+
+mount -o loop -t iso9660 /dev/scd0 /mnt

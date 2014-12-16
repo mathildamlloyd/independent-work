@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 content-transfer-encoding: quoted-printable
@@ -46,3 +46,15 @@ that is).
 
 --=20
 if you only want to go 500 miles, can you begin with a halfstep?
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.0.6 (gnu/linux)
+comment: for info see http://www.gnupg.org
+
+id8dbqe8yt35qf8oi9xnck4raunpaj90b0euz7lkqpr+kyzwpri+i4dcwacdhqd5
+tb0gzvvivaw1rozqp/su9gc=
+=h7ff
+-----end pgp signature-----

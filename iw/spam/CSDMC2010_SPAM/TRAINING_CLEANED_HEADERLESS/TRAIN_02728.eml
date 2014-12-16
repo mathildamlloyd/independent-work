@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:53 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain; charset=utf-8; format=flowed
 content-transfer-encoding: quoted-printable
 
@@ -44,3 +44,16 @@ translation of the popup-box: "copy selected files in /home/sjoerd to:"
 cheers!
 sjoerd
 
+from nobody tue dec 16 09:15:45 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: openpgp digital signature
+content-disposition: attachment; filename="signature.asc"
+
+-----begin pgp signature-----
+version: gnupg v2.0.7 (gnu/linux)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org
+
+id8dbqfl6ayshkednpy5oouraqxbaj9gposb7cclj8awejm7zkxde9raiqcfcrzv
+itmtyt3lopvtscz9crqs24m=
+=iqwi
+-----end pgp signature-----

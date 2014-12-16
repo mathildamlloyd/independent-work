@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:53 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain;
   charset="us-ascii"
 content-transfer-encoding: quoted-printable
@@ -27,3 +27,17 @@ development code can brick your network adapter,
 scramble your filesystems, open up severe security
 holes, or save your documents as ooxml
         -- jonathan corbet, linux weekly news
+from nobody tue dec 16 09:15:45 2014
+content-type: application/pgp-signature; name=signature.asc 
+content-description: this is a digitally signed message part.
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+comment: get my key from http://fortytwo.ch/gpg/92082481
+
+ikceabecagcfaku9ao1ggmh0dha6ly9mb3j0exr3by5jac9szwdhbc9ncgcvzw1h
+awwumjawmja4mji/dmvyc2lvbj0xljumbwq1c3vtptvkzmy4njhkmte4ndmynzyw
+nzfimjvlyjcwmdzkytnlaaojecqqzti935l6uxgan0og6ei+blb6kfqyhy/rhrk+
+zrjgaj9blz7kwyc7kbpw38ylo+wc9d3qeq==
+=b5rv
+-----end pgp signature-----

@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=iso-8859-1
 content-transfer-encoding: quoted-printable
 
@@ -38,3 +38,44 @@ ow.synacor.com
 >
 > i have to say i kinda like trying to guess the meaning of the post based
 solely on the command lines
+from nobody tue dec 16 09:15:46 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+2010/4/27 stephen powell <zlinuxman@wowway.com>=
+
+on tue, 27 apr 2010 15:22:53 -0400 (edt), cosme wrote:
+>
+> asignar hora a pc
+> hola como crear un script para poner en netlogon de samba para que las=
+
+> estaciones windows cojan la hora del server en windows ser=eda por jem=
+plo
+> netime.bat
+>
+> @echo off
+> net time \\debian-pdc /set /yes
+>
+> al traducirlo a debian ser=eda un netime.sh
+>
+> y como quedar=eda dentro????
+
+solo en ingles, por favor, o mailto:debian-user-spanish@lists.debian.org
+
+--
+ =a0.''`. =a0 =a0 stephen powell
+=a0: :' =a0:
+=a0`. `'`
+ =a0 `-
+
+
+--
+to unsubscribe, email to debian-user-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debi=
+an.org/82853430.29593.1272394679432.javamail.root@md01.wow.synacor.com<=
+br>
+
+
+i have to say i kinda like trying to guess the meaning o=
+f the post based solely on the command lines

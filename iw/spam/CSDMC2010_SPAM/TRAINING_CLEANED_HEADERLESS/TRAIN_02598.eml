@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain; charset=iso-8859-1
 content-transfer-encoding: quoted-printable
 
@@ -45,3 +45,58 @@ login in a console and then startx and i got some errors about xkb not bein=
 g
 able to get initialized. strange....  so the thing is that no user except
 the root can start a kde session.
+from nobody tue dec 16 09:15:45 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+on tue, apr 6, 2010 at 7:57 pm, klaus becker <=
+;colonius@free.fr=
+> wrote:
+
+le mardi 06 avril 2010 18:35:51, john kapnogiannis a =e9crit :
+> hello there. i got a debian testing installation =
+and i currently cannot
+> login in kde. i give my pass and instead of a proper kde session i get=
+
+> kdm's login screen again. i haven't done any upgrade but i did=
+ a really
+> stupid thing: i hit the power button and turn the laptop off the hard<=
+br>
+> way while it was in suspend mode. i tried googling but it gave me no
+> usefull things.
+>
+> the .xsession-errors file in my home folder says permission denied. i<=
+br>
+> checked the permissions in /tmp and /var/tmp and everything seems fine=
+.
+> i also deleted the .kde folder. login in as root and typing startx ope=
+ns
+> a kde session.
+>
+> any ideas?
+>
+> ps: i did the instructions described in this page:
+> https://developer.skype.com/jira/browse/scl-510 in order to fix=
+ skype on
+> me 64-bit installation, but i don't think it has something to do w=
+ith my
+> problem. i think something got wrong when i hit the power button. :(
+
+hi,
+
+perhaps
+
+#chown -r john /home/john
+
+or any username you use ?
+
+if this does'nt work, you can try to create a new user and then cope al=
+l your
+files to /home/new-user.
+
+
+nope did not help. adding a new user did not fix a=
+nything too. i tried login in a console and then startx and i got some erro=
+rs about xkb not being able to get initialized. strange....=a0 so the thing=
+ is that no user except the root can start a kde session.
+

@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=iso-8859-1
 
 >>telnet, as in the original responses.  google gives several example
@@ -7,3 +7,15 @@ with many thanks for your reply, i found very simple expect telnet examples
 (like the case that i am dealing with) so i wrote for the same but it
 doesn't work my case. do you think it may come from the fact that the remote
 node is vxworks or maybe some mistake in my code?
+from nobody tue dec 16 09:15:46 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+>=
+;>telnet, as in the original responses. =a0google gives several example =
+scriptswith many thanks for your reply, i found very simple expec=
+t telnet examples (like the case that i am dealing with) so i wrote for the=
+ same but it doesn't work my case. do you think it may come from the fa=
+ct that the remote node is vxworks or maybe some mistake in my code?
+
+

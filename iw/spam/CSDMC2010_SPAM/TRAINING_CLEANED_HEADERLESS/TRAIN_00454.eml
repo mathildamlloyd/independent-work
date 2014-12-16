@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=iso-8859-1
 content-transfer-encoding: quoted-printable
 
@@ -70,3 +70,55 @@ c
 > archive: http://lists.debian.org/pan.2010.04.17.13.26.58@csmining.org
 >
 >
+from nobody tue dec 16 09:15:47 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+hijust picked up a 51645 adaptec - having some problems with th=
+e gui can't login and if i try and boot of the adaptec lun it crashed g=
+rub - magic failed.aon sat, apr =
+17, 2010 at 11:26 pm, camale=f3n <noelamac@csmining.org> wrote:
+on sat, 17 apr 2010 07:57:51 -0500, stan hoeppner wrote:
+
+> camale=f3n put forth on 4/17/2010 3:12 am:
+>> on sat, 17 apr 2010 07:24:20 +0200, israel garcia wrote:
+>>
+>>> on sat, apr 17, 2010 at 2:12 am, stan hoeppner wrote:
+>>
+>>>> what pcie raid card are you using?
+>>> adaptec aac-raid card inside a supermicro server.
+>
+> which apaptec model, specifically? =a0some of the adaptec sata cards a=
+re
+> fakeraid. =a0i want to know if your card is fakeraid or real raid. =a0=
+that
+> may have bearing on this issue.
+
+being a supermicro server, i doubt it's a "fakeraid" ca=
+rd o:-)
+
+otoh, a fakeraid won't see a big disk of 4 tib, it would detect/treat
+each drive separately.
+
+>> i wish you the best (similar setup here and bad experience with ad=
+aptec
+>> raid cards) :-(
+>>
+>> as per the 4 tib issue. i just have reviewed the wikipedia article=
+
+>> about mbr and forgot the limit of 2 tib for a "bootable"=
+ partition.
+>
+> i've never run into these issues because i intentionally avoid the=
+m. =a0i
+> always create a small /boot of about 100mb at the start of the disk an=
+d
+> stick the bootloader in the mbr. =a0every bios can handle bootstrappin=
+g
+> such a setup.
+
+yes, that tends to be the better approach. either "ext2" or=
+ "ext3" are
+the recommended filesystems for grub.
+
+> i thought the op originally said he has a separate small /boot, so i&#

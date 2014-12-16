@@ -28,7 +28,12 @@ def parse_emails():
             label = line.replace("\n", "").split(" ")
             labels[label[1]] = label[0]
 
+    count = 0
+    total = len(os.listdir(srcdir))
+
     for filename in os.listdir(srcdir):
+        count += 1
+        print("Processing %d of %d files" % (count, total))
         f = os.path.join(srcdir, filename)
         f_new = open(os.path.join(dstdir, filename), 'w')
         text = ""

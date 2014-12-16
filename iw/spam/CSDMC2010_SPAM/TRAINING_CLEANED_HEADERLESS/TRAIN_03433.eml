@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain; charset=iso-8859-1
 
 if you are asking what i think you are asking, as in which files would you
@@ -42,3 +42,45 @@ on tue, apr 20, 2010 at 2:49 pm, liviu andronic wrote:
 > http://lists.debian.org/k2z68b1e2611004201149o7450ce70k995ff71346679026@mail.csmining.org
 >
 >
+from nobody tue dec 16 09:15:45 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+if you are asking what i think you are asking, as in which files would you =
+need to restore your system in the event that you lose your apt and dpkg da=
+tabases, then i do the following:/var/backups/var/cache/apt (le=
+ss /var/cache/apt/archives)
+/var/lib/apt/var/lib/dpkgthis will give you enough that apt-get=
+ update, etc works. now the rules have probably changed if you use aptitude=
+ as i believe it creates/uses a different database.
+on tue, apr 20, 2010 at 2:49 pm, liviu andronic <landronimirc@csmining.org> =
+wrote:
+dear all
+what files contain the information on the current ("now") apt tre=
+e? i
+would like to perform backups of these files so that i could restore
+the tree if some package upgrade messed up my debian testing.
+
+thank you
+liviu
+
+
+
+--
+do you know how to read?
+http:/=
+/www.alienetworks.com/srtest.cfm
+http://goodies.xfce.org/projects/applications/xfce=
+4-dict#speed-reader
+do you know how to write?
+http://garbl.home.comcast.net/~garbl/stylemanual/e.htm#e=
+-mail
+
+
+--
+to unsubscribe, email to debian-user-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debia=
+n.org/k2z68b1e2611004201149o7450ce70k995ff71346679026@mail.csmining.org
+
+

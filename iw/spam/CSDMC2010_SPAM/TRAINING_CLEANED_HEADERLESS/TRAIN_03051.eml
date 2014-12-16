@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=utf-8
 
 >
@@ -49,3 +49,55 @@ i'm not clear i
 > archive: http://lists.debian.org/9910535707.20100507203657@csmining.org
 >
 >
+from nobody tue dec 16 09:15:46 2014
+content-type: text/html; charset=utf-8
+content-transfer-encoding: quoted-printable
+
+
+
+##### 2 - my microphone works with lots of noise.
+hi! i have a problem with my microphone. it works with lots of noise and re=
+corded sound is very-very quiet or simply there is no sound but only rhythm=
+ical crack. this result changes when i change in alsamixer l r capture para=
+meter (capture [db gain=3d6.00, 6.00] - lots of noise and quite sound, capt=
+ure [db gain=3d30.00, 30.00] - rhythmical crack). maybe this is a problem o=
+f bad configuration. who can help?
+
+
+i have not only one parameter but two parameters l r capture and now i was =
+talking about the first of them. when i turn the second parameter a bit up =
+from null than that is a loud siren. who knows this problem?
+
+this happens with my inner microphone in acer 5220 and with my microsoft li=
+fecam under ubuntu 9.04 (mint 7).
+this is about my sound card:
+00:1b.0 audio device: intel corporation 82801h (ich8 family) hd audio contr=
+oller (rev 03)
+subsystem: acer incorporated [ali] device 011f
+control: i/o- mem+ busmaster+ speccycle- memwinv- vgasnoop- parerr- steppin=
+g- serr+ fastb2b- disintx-
+status: cap+ 66mhz- udf- fastb2b- parerr- devsel=3dfast >tabort- <tab=
+ort- <mabort- >serr- <perr- intx-
+latency: 0, cache line size: 64 bytes
+interrupt: pin a routed to irq 21
+region 0: memory at fc300000 (64-bit, non-prefetchable) [size=3d16k]
+capabilities: <access denied>
+kernel driver in use: hda intel
+kernel modules: snd-hda-intel
+
+thanks,
+theodore
+
+#########with regard to the noise produced on the mic=
+rophone when plugged into the sound card, try the sound card drivers availa=
+ble here,=c2=a0www=
+.opensound.com/oss.html . thought by some to be superior to alsa.
+i'm not clear i
+
+--
+to unsubscribe, email to debian-laptop-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/9910535707.20100507203657@g=
+mail.com
+
+

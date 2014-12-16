@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=iso-8859-1
 
 on fri, apr 30, 2010 at 5:44 pm, boyd stephen smith jr. <
@@ -27,3 +27,33 @@ bss@iguanasuicide.net> wrote:
 >
 
 i installed eclipse from sid, since there isn't eclipse in testing.
+from nobody tue dec 16 09:15:46 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+on fri, apr 30, 2010 at 5:44 pm, boyd st=
+ephen smith jr. <bss@iguanasuicide.net> wrote:
+on friday 30 april 2010 06:16:22 james stuckey wrote:
+> the unstable/sid doesn't have to be comment out. setting the defau=
+lt
+> =a0release will keep the system tracked to, in this case, testing.
+
+er, mostly.
+
+if there is a versioned dependency that can be satisfied from sid but not
+testing, you will get the package from sid. =a0this shouldn't happen gi=
+ven the
+way testing is managed, unless you installed at least one package from sid.=
+
+
+> how did the packages =a0from sid get installed in the first place? if =
+you're
+> tracking something, you have to give it an explicit "aptitude ins=
+tall -t
+> =a0sid <package>" command, right?
+
+with the official testing and sid repositories that should be true. =
+=a0it would
+only happen if someone manually fixed up testing and did it wrong.
+--i installed ecli=
+pse from sid, since there isn't eclipse in testing. 

@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 content-transfer-encoding: quoted-printable
@@ -12,3 +12,15 @@ for giggles, i just enabled the bios warning beep when my cpu gets >60c. af=
 ter starting 4x burnp6 and letting it run for a while, sure enough, i got t=
 he warning beep. i'm gonna look a little more into this, and maybe involve =
 my vga card in this using furmark to see what happens there.
+from nobody tue dec 16 09:15:47 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: digital signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+
+ieyearecaayfakvoe8oacgkqkpq5zksafijoiacfeh2pvwwyo3gcreywjwts8wuk
+h9uanrrvcjyshcmm6gamm8bayykb9s65
+=vvy9
+-----end pgp signature-----

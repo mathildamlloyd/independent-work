@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 
@@ -20,3 +20,14 @@ choice of 5 just adds an offset.  which i think cause people to assume
 things work differently than they do.
 
 bob
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.0.7 (gnu/linux)
+
+id8dbqe9bky50prco8e2ulyraji6ajwmoi8s2iug4xpvawcqpbc3gcd/cqcfepom
+cos03yufmiflshhcz8kklxu=
+=ywm7
+-----end pgp signature-----

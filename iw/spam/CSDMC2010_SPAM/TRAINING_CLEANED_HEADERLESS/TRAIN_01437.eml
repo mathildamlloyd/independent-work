@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=us-ascii
 
 
@@ -18,3 +18,15 @@ cheers,
 -- has failed to improve our lives, please press 3.                         
 
 
+from nobody tue dec 16 09:15:47 2014
+content-type: application/pgp-signature; name="signature.ng"
+content-disposition: inline; filename="signature.ng"
+content-transfer-encoding: 7bit
+
+-----begin pgp signature-----
+version: gnupg v1.2.0 (gnu/linux)
+
+id8dbqe9pikce0nzsjr53oirarv6aj0dnw3zse1x3xc/afguhb90hfc0qwceiinr
+kuozsln0mfgwgugmrsprbgk=
+=1urd
+-----end pgp signature-----

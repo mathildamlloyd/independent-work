@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=iso-8859-1
 content-transfer-encoding: quoted-printable
 
@@ -70,3 +70,62 @@ ll
 > if that didn't help you i will not bother..
 
 j
+from nobody tue dec 16 09:15:46 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+on wed, apr 7, 2010 at 1:35 pm, daniel s=
+util <daniel=
+.sutil@csmining.org> wrote:
+on wed, apr 7, 2010 at 12:15 pm, smokejohn <smokejohn@csmining.org> wrote:
+
+on tue, apr 6, 2010 at 11:53 pm, kl=
+aus becker <colonius@free.fr> wrote:
+
+
+
+le mardi 06 avril 2010 22:41:44, daniel sutil a =e9crit :
+> finally i applied the following workaround: i remove kdm and inst=
+alled gdm.
+> after that, i have no problem to login. i haven't investigated any=
+ further
+> because i really don't know from where the problem comes, but now,=
+ maybe we
+> have to undo the steps applied with the skype's solution to solve =
+our
+> problem.
+
+
+hi,
+
+i had the same problem with kdm, but no problem with gdm.
+
+cheers
+
+klaus
+hi. installing gdm did not do the trick :=
+(you must uninstall the kdm ser=
+vice first and select in the session selector of gdm "kde". if yo=
+u don't select the session type, get some errors.
+i uninstalled kdm and selecte=
+d kde as a session but i got the same message telling me that my session la=
+sted lower than 10s and bla bla..=a0 
+=a0
+when doing startx as a normal user from console i get some errors like=
+ "xkb could not initialize" and "xinit: no such file or dire=
+ctory" and "xinit: could not connect to xserver"....
+have you stopped the kdm firs=
+t?yes i did stop kdm when i tri=
+ed that. the strange thing is that if i login as root from console and do a=
+ startx then a kde session starts normally. if i do that as a normal user i=
+ get the errors.. 
+=a0
+
+
+
+some friend told me to purge kde and reinstall it. i don't think th=
+is will help. do you think i should give it a try?=a0
+i tried that with no succe=
+ss :-(
+if that didn't help you i will not bo=
+ther..j 

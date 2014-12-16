@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain;
   charset="iso-8859-1"
 content-transfer-encoding: quoted-printable
@@ -30,3 +30,14 @@ things you can do with it ;-).  let's see what comes out of it.
 =2d-=20
 martin 'helios' steigerwald - http://www.lichtvoll.de
 gpg: 03b0 0d6c 0040 0710 4afa  b82f 991b eaac a599 84c7
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature; name=signature.asc 
+content-description: this is a digitally signed message part.
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+ieyeabecaayfakvkvzsacgkqmrvqrkwzhmcsrwcgnozyhz8x0ta2xagb0gqs5nzi
+jdqana41xuca6k0jwoa6qcs75oqu2m3y
+=tklt
+-----end pgp signature-----

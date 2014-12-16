@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 content-transfer-encoding: quoted-printable
@@ -28,3 +28,25 @@ impossible to use them for advanced setups like radius, ...
  : :'  :   =20
  `. `'`     4096r/caf14efc=20
    `-       081c b7cd ff04 2ba9 94ea  36b2 8b7f 7d30 caf1 4efc
+from nobody tue dec 16 09:15:47 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: digital signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+iqicbaebcaagbqjlvzbzaaojeit/ftdk8u78ehkqajvxnzcbknzz1qbh5v33k0/x
+05gm0fwqymhlx3xgirj8mmtflkqajucpqxai0m3h/zsu8eoeyhhnzo95kj6klx/q
+ejzqs7kivsnexerocckxlth8h5ncuiilm+x/tbn5/g8f0hd22x38zxijdnelvewm
+swtal2mrfdblkmlxfdrvomo02tu+/gguqagk8bx5m++xq8tzhwcamlvomnxun5wr
+fl47ynjticaizrt604arq0mmwmhufoqnefbhfnwoytg7+ug/h0/cvfqmp8thx4aa
+d9tlzobs3litn/wixxdcxq3krbqd1sbaus8qidqrt+fwu47qdmwrnshlx5s9vvu3
+bokxvu+rtgvcdfrolgw8p28xmigew51bvkmnoxfy11nn5ydk3yjetdny84mx2cwm
+i9bgdfypcvazdnturfq9v7kv6ckya8gkxveeujkh2ahncpnao7gqzhpqoxdj7llq
+pndlhp+bj1cwuvyo6ibd/qlp5umqm7m4nhl7mcyxbstgcq+ok6wlggmlecr2titw
+rc8kwcev9wty3gqnoooewn4yennr9aafckqx+snc5n+0fdpfqwbw2gmnwzwtykfu
+mutto+ktom8b7xxb2fncrjzduvqtmbafnbvr8i01t/udfffwffg1frooizkubsdi
+wk1gonsk6baw6z2zinsi
+=zi9r
+-----end pgp signature-----

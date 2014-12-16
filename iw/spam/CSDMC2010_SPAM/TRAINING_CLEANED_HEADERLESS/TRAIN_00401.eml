@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 
@@ -11,3 +11,14 @@ home page?
   http://spamassassin.sourceforge.net/
 
 bob
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.0.7 (gnu/linux)
+
+id8dbqe9o3xf0prco8e2ulyranffaj4oimwuh/vpp4yjvt7z8gv/7cyfhgcftmd6
+nffjypksca/gzoaif8mbkcu=
+=udmt
+-----end pgp signature-----

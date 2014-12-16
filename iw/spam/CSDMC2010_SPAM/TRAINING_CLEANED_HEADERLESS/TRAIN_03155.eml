@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:53 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain;
   charset="utf-8"
 content-transfer-encoding: quoted-printable
@@ -30,3 +30,14 @@ b) they care enough to chip in a little bit=20
 
 =2d-=20
 cheers, cobaco (aka bart cornelis)
+from nobody tue dec 16 09:15:45 2014
+content-type: application/pgp-signature; name=signature.asc 
+content-description: this is a digitally signed message part.
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+ieyeabecaayfakvjtmuacgkq5ihpj4zisrvf2qcfudtw3lvpudfvvxgjbsrdzwhf
+8nkamgoeyx/b+7lli82co5sxyw5geisb
+=38to
+-----end pgp signature-----

@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain;
   charset="utf-8"
 content-transfer-encoding: quoted-printable
@@ -65,3 +65,14 @@ ciao,
 =2d-=20
 martin 'helios' steigerwald - http://www.lichtvoll.de
 gpg: 03b0 0d6c 0040 0710 4afa  b82f 991b eaac a599 84c7
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature; name=signature.asc 
+content-description: this is a digitally signed message part.
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+ieyeabecaayfakvpstgacgkqmrvqrkwzhmdujwcffzhdp4ipn25jl0egtkezxa8p
+jmsan3imjlag3gzphlcmmnsp5jnw14/a
+=5fht
+-----end pgp signature-----

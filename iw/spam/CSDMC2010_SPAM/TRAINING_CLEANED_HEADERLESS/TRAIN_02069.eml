@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=iso-8859-1
 content-transfer-encoding: quoted-printable
 
@@ -35,4 +35,46 @@ y
 > archive: http://lists.debian.org/pan.2010.04.29.19.39.08@csmining.org
 >
 >
+i don't use gnome or kde.
+from nobody tue dec 16 09:15:47 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+on thu, apr 29, 2010 at 9:39 pm, camale=
+=f3n <noelamac@g=
+mail.com> wrote:
+on thu, 29 apr 2010 21:27:59 +0200, james stuckey wrote:
+
+(...)
+
+> i don't recall how the config file was made. the resolution i want=
+ is
+> 1920x1080. restarting x gave me this resolution. now my fonts on scree=
+n
+> (like on the menu bar in iceweasel/icedove, for example) aren't to=
+o easy
+> to read. they just don't look right. how do i fix that?
+
+that is probably due to a low dpi value. you can change it to whateve=
+r
+value you feel more confortable with.
+
+dpi value can be modified in gnome under "fonts settings / details&quo;=
+t; and
+in kde there should be a similar way under its control center / fonts.
+
+a value of "96 dpi" should render fonts just fine.
+
+greetings,
+
+--
+camale=f3n
+
+
+--
+to unsubscribe, email to debian-user-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/pan.2010.04.29.19.39.08@gmail=
+.com
+
 i don't use gnome or kde.

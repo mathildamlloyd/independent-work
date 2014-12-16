@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset="iso-8859-1"
 content-transfer-encoding: 7bit
 
@@ -39,3 +39,415 @@ key j2ee industry news headlines
 
 this newsletter is available in html format at:
 http://www.theserverside.com/resources/newsletters/news42.html?text-click
+from nobody tue dec 16 09:15:47 2014
+content-type: text/html; charset="iso-8859-1"
+content-transfer-encoding: 7bit
+
+
+
+ theserverside.com newsletter #42
+
+
+
+
+
+
+
+september 4, 2002circulation: 130 000+no. 42
+
+
+
+
+
+
+
+
+
+this newsletter sponsored in part by rational 
+
+
+
+
+rational xde is here -- developing java software will never be the same.
+
+
+rational xde professional is an extended development environment for 
+java developers. use it with your choice of ide - as a standalone ide or install 
+it into ibm websphere studio application developer. it runs in the ide. 
+visualize your code while you develop. order your free rational developer 
+solutions cd and try rational xde now!
+
+
+
+
+
+
+
+
+
+in this issue
+
+
+
+ featured articles 
+
+
+ o struts 1.1: should i upgrade? 
+
+
+hard core tech talks
+
+
+  o amy fowler - senior staff engineer, java software, sun microsystems 
+  
+
+
+
+ upcoming conferences 
+
+  o  great lakes software symposium 2002     
+
+
+enterprise java education strategies 
+
+
+  o floyd marinescu to co-teach j2ee patterns - sept 16, dallas 
+
+
+ new patterns 
+
+
+  o ixml pattern      
+  o widget pages     
+
+
+ new app server reviews 
+
+
+  o jrun 4.0 - good stuff 
+
+
+ key j2ee industry news headlines 
+
+
+  some key headlines: 
+
+  o java server faces public draft and early access available  
+     
+  o apache cactus 1.4 j2ee unit testing framework released      
+
+
+ this newsletter is transmitted twice a month. it is printer-friendly and available
+
+  online
+
+
+
+
+
+
+
+featured articles
+
+
+ 
+struts 1.1: should i upgrade? 
+
+by john yu
+
+
+built on the success of struts 1.0, struts 1.1 beta was released in march this year and showcased at javaone 2002. this article describes the new features found in apache struts 1.1 beta and the impact of migration from struts 1.0 to struts 1.1. it also offers advice on the migration decision and the upgrade process.
+
+
+read the article here
+
+
+back to top
+
+
+
+
+
+
+
+this newsletter is sponsored in part by bea
+
+
+
+
+
+
+bea dev2dev days - application development for the 21st century.
+prepare yourself for dev2dev days, the premier worldwide developer education event from bea. a full day of serious enterprise development
+instruction, including in-depth code-level demonstrations and j2ee
+training. get the skills you need to tackle your toughest integration
+and development challenges. we're coming to a city near you!
+
+
+
+
+
+
+
+
+new hard core tech talks
+
+
+
+   get leading
+edge information on j2ee from those who 
+know it best, in hard core tech talks!  videos hosted on hostj2ee.com.  featured this week is amy fowler, who talks about the javaserver faces specification. 
+
+
+
+
+
+senior staff engineer, java software, sun microsystems 
+
+ 
+in this interview, amy talks about the problems javaserver faces (jsf) solves and how j2ee developers can leverage it in their web apps. she looks at ui components used in jsf, the implementation of event handling code, and describes a typical use case involving jsf. she also discusses interoperability with jsf using struts, webwork, and the portlet api. 
+
+
+
+
+click here to watch amy fowler's video interview
+
+
+
+
+back to top
+
+
+
+
+
+upcoming conferences
+
+
+great lakes software symposium 2002 
+
+ october 25-27, 2002 - chicago 
+           presented by,  
+ 
+
+
+
+a three day j2ee/xml/web services conference for java developers, java architects and technical project managers with 48 presentations to select from and features bruce tate, author of "bitter java", the middleware company's own bruce martin presenting on xbeans, and many others.  
+
+
+get more conference info here
+
+
+
+back to top
+
+
+
+
+enterprise java education strategies
+
+
+floyd marinescu to co-teach j2ee patterns - sept 16, dallas 
+
+dear tss members,
+
+
+i thought you'd be interested to know that the middleware company has created a j2ee patterns training course that i will be co-teaching in dallas during the week of september 16th. the course combines and improves upon the best j2ee design patterns material available in my book ejb design patterns, sun's core patterns, theserverside's patterns repository and others. 
+
+
+
+i have just reviewed the final material and i am very excited with the end product. this class takes an indepth look at all the most important patterns today, both from a theoretical and a practical perspective. one of the cool things about the course is that it shows you how the patterns were implemented in a variety of popular open source frameworks and production applications, including theserverside.com. 
+
+
+i highly recommend this course to the seasoned j2ee developer who wants to master the cutting edge in j2ee architecture and design. 
+
+
+if you'd like to register for the course, simply click here: 
+http://www.middleware-company.com/training/j2eepatterns.shtml
+
+
+sincerely, 
+
+floyd marinescu 
+author, ejb design patterns 
+director of theserverside.com j2ee community 
+
+back to top
+
+
+
+
+new patterns 
+
+
+  ixml pattern   
+ by venkatesh balakumar   
+
+ 
+
+ 
+in due course, we will be finding ourselves in the middle of web services, which will granulate into representing all data in xml. for preparing and implementing web services, it's necessary to express all data in xml. this pattern does the same.
+
+read more on this pattern.
+
+ widget pages   
+ by guilherme silva   
+
+ 
+
+ 
+this pattern allows for using xmlc and barracuda without exposing their apis to widget users. in fact it allows for transparently using more than one widget implementation at the same time, which is ideal for migrating or upgrading. 
+
+read more on this pattern.
+
+back to top
+
+
+
+
+
+
+new app server reviews 
+
+
+ jrun 4.0 - good stuff    
+ by jason mckerr   
+
+ 
+
+ 
+some general impressions i had of jrun: it's very easy to get it up and running.  
+allaire-now-macromedia has always had one of my favorite servlet engines. 
+the java management console (web-based admin interface) has gotten a tonne better.  
+it's dead easy to plug into just about any ide (i've done it with jbuilder enterprise 6, and the intellij idea eap (builds 640 -642). 
+the jsp compiler is smokin! very, very fast. i think it must come with jikes or something. 
+
+
+read more on this review.
+
+back to top
+
+
+
+
+
+
+
+
+
+this newsletter sponsored in part by borland 
+
+
+
+
+
+
+
+borland(r) - #1 in java development solutions.
+discover the key to success with java technologies from the industry
+leader. develop to deploy with the award-winning borland software 
+platform for java. get your free "enterprise guide to java development" 
+at http://borland.atre.net/sse9_03.
+
+    
+    
+
+
+
+
+
+
+
+key j2ee industry headlines
+
+
+  
+oracle releases preview of new j2ee 1.3 jdeveloper ide 
+
+ 
+oracle has released a preview (v9.0.3) of the jdeveloper ide. this release introduces full j2ee 1.3 development support starting from uml modeling of ejb's and web services, to development, debugging, tuning and deployment, with full integration with ant, struts 1.1 and junit.  
+
+click here to read more.
+
+
+  
+java server faces public draft and early access available 
+
+ 
+the public draft of the javaserver faces 1.0 specification has been published, as well as an early access download of the api's and tag library. jsf is a web application framework that reduces the amount of code needed to write a web front end. developers need only write jsf components and corresponding event handling code, the framework then simplifies the tasks of validation, request parameter parsing, state management, multipe clients support, etc.  
+
+click here to read more.
+
+
+  
+meta group: j2ee complexity holding back platform adoption
+
+ 
+the meta group has released a research report saying that the relative complexity of doing server-side development using j2ee is hurting adoption of the platform. among other predictions are the continuing dominance of bea and ibm, more consolidation, and increasing vendor competition in tools and frameworks. 
+
+  
+click here to read more.
+
+
+  
+ibm nudges back release of websphere 5.0
+
+ 
+ibm has rescheduled its release of j2ee 1.3 certified websphere application server 5 from september to late november, saying it "reprioritized" its schedule in order to release websphere studio 5 first - a break from the usual order of releases. analysts said the delay shouldn't be seen as a big setback. 
+  
+click here to read more.
+
+
+  
+apache cactus 1.4 j2ee unit testing framework released 
+
+ 
+cactus 1.4 (part of the apache jakarta project) is now available for download. cactus is a simple test framework for unit testing server-side java code (servlets, ejbs, tag libs, filters) that uses and extends the junit framework. v1.4 includes many new improvements, including the ability to assert for specific http response codes. 
+
+click here to read more.
+
+
+  
+webwork 1.2 web application framework released 
+
+ 
+version 1.2 of webwork is now available. the release includes significant improvements and marks the first release since integrating into the opensymphony project (home of sitemesh, oscache, etc). webwork is a pull hmvc web application framework in java, developed as open source (apache license). 
+  
+
+click here to read more.
+
+
+  
+jade open framework 1.1 released with eclipse integration 
+
+ 
+salmon llc is pleased to announce the release of jade 1.1, the open source rapid application development tool for the j2ee. jade is a java framework and jsp tag library that integrates with dreamweaver, intellij idea and now eclipse. jade was released as open source only a few months ago, but has been used privately as the foundation for a j2ee consulting practice for several years. 
+
+
+click here to read more.
+
+
+
+
+back to top
+
+
+unsubscribe
+
+
+
+if you are receiving this newsletter it is because you signed up as a 
+
+  member of theserverside.com and elected to receive our newsletters. to 
+
+  unsubscribe from theserverside.com's bi-weekly newsletter, log on to 
+
+  theserverside and edit your user profile. email webmaster@theserverside.com if 
+
+  you are having problems editing your profile. 
+
+
+
+this newsletter and contents are copyright (c) 2002 the middleware company
+
+

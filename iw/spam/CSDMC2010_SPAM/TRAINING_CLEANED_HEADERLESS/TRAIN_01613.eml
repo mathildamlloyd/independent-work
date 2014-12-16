@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=utf-8
 content-transfer-encoding: quoted-printable
 
@@ -35,3 +35,16 @@ so yes, testing *does* receive security support
 
 sjoerd
 
+from nobody tue dec 16 09:15:47 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: openpgp digital signature
+content-disposition: attachment; filename="signature.asc"
+
+-----begin pgp signature-----
+version: gnupg v2.0.14 (gnu/linux)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org/
+
+ieyearecaayfakvy/8iacgkqhkednpy5ooxndwccc83k9mru3iqwk+sglautrfce
+hl0an0sqmyf4ljomgxoxmw0szmooif2q
+=w0bh
+-----end pgp signature-----

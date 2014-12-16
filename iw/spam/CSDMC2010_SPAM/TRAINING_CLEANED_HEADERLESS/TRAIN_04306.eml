@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=iso-8859-1
 
 hi all,
@@ -55,3 +55,44 @@ can anyone shed some light on this issue?
 thank you in advance!!
 
 samuel
+from nobody tue dec 16 09:15:47 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+hi all,recently a couple of new machines came to my hands, hp dl 18=
+0 g6 with 500gb sata hard disk, and i tried to setup a 2-nodes ganeti clust=
+er with debian lenny.default 2-6-26 kernel does work without any is=
+sue. 
+i've done a fresh installation with nothing more than the basics (v=
+im and less ;) ) and after a aptitude install ganeti, editing xen-config.xs=
+p and grub xen options, upon restarting i get the following error on the sc=
+reen:
+apr 15 13:24:56 virt8 kernel: [=a0 297.381987] ata3.00: exception emask=
+ 0x0 sact 0x0 serr 0x0 action 0x6 frozenapr 15 13:24:56 virt8 kernel: [=
+=a0 297.382163] ata3.00: cmd a0/00:00:00:24:00/00:00:00:00:00/a0 tag 0 pio =
+36 in
+apr 15 13:24:56 virt8 kernel: [=a0 297.382164]=a0=a0=a0=a0=a0=a0=a0=a0=a0 c=
+db 12 00 00 00 24 00 00 00=a0 00 00 00 00 00 00 00 00apr 15 13:24:56 vi=
+rt8 kernel: [=a0 297.382165]=a0=a0=a0=a0=a0=a0=a0=a0=a0 res 40/00:00:00:00:=
+00/00:00:00:00:00/00 emask 0x4 (timeout)
+apr 15 13:24:56 virt8 kernel: [=a0 297.382595] ata3.00: status: { drdy }apr 15 13:24:56 virt8 kernel: [=a0 297.382727] ata3: hard resetting linkapr 15 13:24:56 virt8 kernel: [=a0 297.858982] ata3: sata link up 1.5 gbp=
+s (sstatus 113 scontrol 310)
+apr 15 13:24:56 virt8 kernel: [=a0 297.914096] ata3.00: configured for pio0=
+apr 15 13:24:56 virt8 kernel: [=a0 297.914235] ata3: eh completethe installed versions are:linux-image-2.6.26-1-xen-686xen-hypervi=
+sor-3.2-1-i386
+ganeti=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=
+=a0=a0=a0=a0=a0=a0 1.2.6-3+lenny2ganeti-instance-debootstrap=a0=a0=a0=
+=a0=a0=a0=a0=a0 0.5-1drbd8-utils=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=
+=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0=a0 2:8.0.14-2+lenny1i upgraded to ke=
+rnel 2-6-26-2 to see whether it solved the issue without success.
+i also tried booting with clocksource=3dacpi_pm. i've also just tried a=
+cpi=3doff, pci=3dnosmi, and nocpi as suggests the ata kernel website withou=
+t much success.i've checked through internet and found the foll=
+owing:
+https:=
+//bugzilla.redhat.com/show_bug.cgi?id=3d480317it should be solv=
+ed because hipervisor version 3.2 is higher than the one solving the issue =
+(3.0.3) unless redhat's version differ much from the debian ones in min=
+nor version....which i don't think.
+can anyone shed some light on this issue? thank you in adva=
+nce!!samuel

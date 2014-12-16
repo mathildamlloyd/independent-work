@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:53 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain; charset=utf-8
 
 at inkscape wiki, it says that we can open .eps file if ghostscript is
@@ -20,3 +20,20 @@ regards,
 
 umarzuki mochlis
 http://debmal.my
+from nobody tue dec 16 09:15:45 2014
+content-type: text/html; charset=utf-8
+content-transfer-encoding: quoted-printable
+
+at inkscape wiki, it says that we can open .eps file if ghostscript is i=
+nstalledhttp://wiki.inkscape.org/wiki/index=
+.php/faq#what_formats_can_inkscape_import.2fexport.3f
+# aptitude search ghostscripti a ghostscript =c2=
+=a0 =c2=a0 =c2=a0 =c2=a0 =c2=a0 =c2=a0 =c2=a0 =c2=a0 =c2=a0 =c2=a0 - the gp=
+l ghostscript postscript/pdf interprp =c2=a0 ghostscript-doc =c2=
+=a0 =c2=a0 =c2=a0 =c2=a0 =c2=a0 =c2=a0 =c2=a0 =c2=a0 - the gpl ghostscript =
+postscript/pdf interpr
+i a ghostscript-x =c2=a0 =c2=a0 =c2=a0 =c2=a0 =c2=a0 =c2=a0 =c2=a0 =c2=
+=a0 =c2=a0 - the gpl ghostscript postscript/pdf interpror does it meant other ghostscript?-- regard=
+s,umarzuki mochlishttp://debmal.my=
+
+

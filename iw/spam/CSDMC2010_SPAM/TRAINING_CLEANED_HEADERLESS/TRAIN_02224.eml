@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain;
   charset="iso-8859-1"
 content-transfer-encoding: quoted-printable
@@ -41,3 +41,14 @@ before).
 
 cheers,
 kevin
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature; name=signature.asc 
+content-description: this is a digitally signed message part.
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+id8dbqbl68yhnkmhg6pzzjiraqbgaj9vxrn3hvazwo99jmp0x14ymkkjawcdevki
+fueh4bs2+ehka9xqm68jkso=
+=jnrc
+-----end pgp signature-----

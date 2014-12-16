@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=utf-8
 content-disposition: inline
 
@@ -17,3 +17,15 @@ looks fine to me.
 
 read:
 aptitude show firmware-iwlwifi
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: digital signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+ieyearecaayfakvhktgacgkq682c+dbp+os6mqcgrhs6seuoaf+tebx53yoeapbd
+ztyaoidgsvpxvd9pk3rv/3k6ylm30a0e
+=jqgi
+-----end pgp signature-----

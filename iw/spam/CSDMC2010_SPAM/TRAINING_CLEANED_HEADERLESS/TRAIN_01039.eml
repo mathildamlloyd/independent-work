@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 
@@ -24,3 +24,15 @@ that?
 
 noah
 
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: digital signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+
+id8dbqfl6degyrvljbfatsmram+baj9kuteal5squ4ik2i5nqgwkxrqb0qcfqxpb
+xuju2uejqsk7eqyfnvh0qry=
+=mtht
+-----end pgp signature-----

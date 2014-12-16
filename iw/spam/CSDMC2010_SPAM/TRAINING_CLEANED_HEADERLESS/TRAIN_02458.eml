@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain;
   charset="iso-8859-15"
 content-transfer-encoding: quoted-printable
@@ -29,3 +29,17 @@ cheers
 i have opinions of my own - strong opinions - but i don't always agree
 with them.
         -- george w. bush
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature; name=signature.asc 
+content-description: this is a digitally signed message part.
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+comment: get my key from http://fortytwo.ch/gpg/92082481
+
+ikceabecagcfakvfwzbggmh0dha6ly9mb3j0exr3by5jac9szwdhbc9ncgcvzw1h
+awwumjawmja4mji/dmvyc2lvbj0xljumbwq1c3vtptvkzmy4njhkmte4ndmynzyw
+nzfimjvlyjcwmdzkytnlaaojecqqzti935l6sewani4ygmxmj8rf2zssakc/ptcr
+y0ujaj9zxnciyuaozeb+b+3cnlzlk8kska==
+=ffdn
+-----end pgp signature-----

@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=iso-8859-1
 content-transfer-encoding: quoted-printable
 
@@ -26,3 +26,16 @@ q:what do you call the money you pay to the government when
 you ride into the country on the back of an elephant?
 a:a howdah duty.
 
+from nobody tue dec 16 09:15:47 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: openpgp digital signature
+content-disposition: attachment; filename="signature.asc"
+
+-----begin pgp signature-----
+version: gnupg v2.0.12 (mingw32)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org/
+
+ieyearecaayfakvl1c4acgkqkl4izoyjsrad5gcgnggsrgzj4uuwmcayxcq6r+ls
+fyman1dpifq+/n0fvwh6bri2sjfq1ttc
+=unne
+-----end pgp signature-----

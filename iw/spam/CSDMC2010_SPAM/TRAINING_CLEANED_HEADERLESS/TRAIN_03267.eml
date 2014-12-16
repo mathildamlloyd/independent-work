@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=us-ascii; format=flowed
 content-disposition: inline
 content-transfer-encoding: quoted-printable
@@ -23,3 +23,14 @@ patb=3d`echo $2 | sed 's,/,\/,'`
 sed -e "s/pattern1/$pata/" -e "s/pattern2/$patb/" < input > output
 
 me
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.4.6 (gnu/linux)
+
+id8dbqflyemmdy0tuf3wsnsraj19ajsgksdsbhebqft1ihk/cpqg9vy4gqcgrxg4
+0sp3wc4abnw0lamv7oeiito=
+=dxfi
+-----end pgp signature-----

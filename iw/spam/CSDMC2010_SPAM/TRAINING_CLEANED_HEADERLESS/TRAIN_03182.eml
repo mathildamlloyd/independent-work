@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:45 2014
 
 
 
@@ -6,5 +6,504 @@ e
 e
 ssage
 content-type: text/plain; charset=iso-8859-1
+
+
+from nobody tue dec 16 09:15:45 2014
+content-type: text/html
+
+
+
+
+otn 
+  techblast 
+ july 2002 issue
+the monthly techblast is also available through the oracle 
+  technology network website. 
+
+
+
+
+
+
+in 
+      this issue:
+
+
+
+this 
+            month's feature
+
+
+
+ 
+            news
+
+
+
+software 
+            downloads
+
+
+
+oracle 
+            university
+
+
+
+new 
+            books
+
+
+
+
+worldwide 
+              events: 
+              americas | emea | apac
+
+
+
+
+
+
+ this 
+        month's feature: 
+new developer services on otn
+otn members: get 
+        oracle software on cd shipped 
+        to you today!
+ order otn techtracks 
+        and receive oracle9i database release 2, oracle9i application server release 
+        2, and oracle developer suite (including jdeveloper) cds for the platform 
+        of your choice. techtracks is a one-year subscription, and it includes 
+        access to oracle support's knowledgebase and cd updates shipped to you 
+        whenever there are major new releases of oracle software. enter promo 
+        code owc for a $50 savings during the month of july.
+exchange your knowledge 
+        through otn community code services
+otn community code 
+        is a web-browsable cvs repository that lets you review, customize, extend, 
+        and share oracle-related code and coding techniques. otn populated it 
+        with sample application projects, so that you can view sample code source 
+        online, download it, submit bugs and suggestions to the development teams, 
+        and get email notifications when code is updated. participate in an oracle-sponsored 
+        project, and then create your own project and share your code with the 
+        otn community.
+web services center 
+        now available on otn
+        the otn web services 
+        center is a new resource for the development and deployment of web 
+        services. visitors to this new center can experience live web service 
+        examples, access the latest web services technical information, and build 
+        their own web services using oracle9i 
+        jdeveloper. the web services center offers information of value to 
+        web services architects, 
+        developers 
+        and newcomers.
+win great prizes 
+        in the otn web services challenge
+        developers are encouraged to submit their own web services to the otn 
+        web services challenge. entering your web services makes you eligible 
+        for fantastic prizes, including a fully decked-out dell mobile workstation. 
+        the challenge starts august 1, so get 
+        a head start today by learning more about the rules. you can even 
+        preregister your 
+        interest in the challenge.
+new internet seminar: 
+        j2ee and web services on linux with oracle9ias release 2 
+attend 
+        this on-demand internet seminar to learn how to use oracle9i application 
+        server release 2 to develop high performance j2ee and web services applications 
+        on the linux operating systems.
+this 
+        month's feature | news | software 
+        downloads | oracle university | new 
+        books | worldwide events
+news
+special 
+        discount on red hat linux advanced server 
+        receive up to 45% discount on the initial purchase of red hat linux advanced 
+        server. find 
+        out how! offer valid july 1- july 31, 2002. to get more information 
+        on oracle and linux, click 
+        here. 
+helping webgain 
+        developers move to oracle9i jdeveloper
+        with all the consolidation taking place in the java tools space, developers 
+        are seeking tools that provide a complete and integrated environment for 
+        developing j2ee applications and web services, and also offer security 
+        and stability for the future. oracle9i jdeveloper delivers on all counts, 
+        and the new webgain 
+        developer center on otn has been created to give visualcafe users 
+        the resources to move 
+        rapidly and smoothly to the integrated development environment of oracle9i 
+        jdeveloper. listen 
+        to the interview with ted farrell, oracle's senior director of applications 
+        tools technology and former webgain cto, on "moving to oracle9i jdeveloper". 
+        
+oracle9i application 
+        server # 1 in ecperf benchmarks 
+        in its first ecperf submissions, oracle9i application server release 2 
+        achieved the industry's best ever 'performance' benchmark at 61,863 bbops/min, 
+        beating ibm by 39% and bea by 63%. the proof is in: oracle9ias is still 
+        faster than ibm and bea. oracle9ias also achieved the best results in 
+        the ecperf 'price/performance' category at $5/bbop, 28% better than bea's 
+        top result, and 54% better than ibm's top result. get the facts: read 
+        the oracle9ias ecperf benchmark report now and tune 
+        into a live internet seminar and q&a on wednesday, july 17 at 
+        8:00 a.m. pdt for a live presentation and discussion of these record setting 
+        results. 
+four internet seminars 
+        on the new security features in oracle9i application server release 2
+
+watch 
+        these four internet seminars to learn about the new security features 
+        in oracle9i application server release 2. oracle9i application server 
+        release 2 is the first application server to offer integrated support 
+        for single sign-on, jaas and an ldap compliant directory that together 
+        let you cost efficiently secure all your j2ee applications, portals, and 
+        web services.
+otn toolbar
+        search otn from anywhere on the internet with otn toolbar. download 
+        today to easily gain access to many of the key features of otn (including 
+        downloads, sample code, documentation, and discussion forums).
+new internet seminar 
+        on oracle9ias web cache and esi 
+watch 
+        this internet seminar and learn how oracle9ias web cache lets you accelerate 
+        any web application running on any server by up to 20 times. speed applications 
+        built in active server pages, java server pages, servlets, ejbs and more. 
+        deploy with web servers like apache and microsoft iis as well as application 
+        servers like bea weblogic, ibm websphere, sun/iplanet and, of course, 
+        oracle9ias. best of all, oracle9ias web cache uniquely supports caching 
+        of both static and dynamically generated content without changing the 
+        application, enabling dynamic web sites to more efficiently deliver rich 
+        content and therefore improving the user experience. 
+oracle9i reports 
+        data source sdk available now
+        the oracle9i 
+        reports data source sdk allows you to plug in your own data sources 
+        and benefit from the sophisticated report creation and distribution environment 
+        of oracle9i 
+        reports. check out the new documentation and samples. 
+putting forms on 
+        the web 
+        looking to move your existing forms application from client/server to 
+        the web? want the easy access and maintainability of a web deployed forms 
+        application? then check 
+        out this new paper.
+struts and oracle9i 
+        jdeveloper
+        here's a cool 
+        new article with detailed instructions on how to configure and use 
+        the jakarta struts open source model-view-controller framework with oracle9i 
+        jdeveloper.
+ quickstart with 
+        oracle9i jdeveloper for bea developers
+        are you using bea's weblogic and looking for development tools? here is 
+        the easy way to start 
+        using the award winning oracle9i jdeveloper with weblogic. and if you 
+        want to use the fastest j2ee container, check out the migration 
+        kit to oracle9ias. 
+wireless and voice 
+        made easy with oracle9i application server 
+        new internet lessons give viewers the low-down on how to use the wireless 
+        and voice services of oracle9i application server (oracle9ias wireless) 
+        to quickly and easily give access to applications and data using any device, 
+        over any network. learn why oracle is a leader in wireless and voice infrastructure 
+        for yourselves! check 
+        out the new internet lessons in the free mobile ekit!
+snapshot seminar: 
+        interwoven & oracle9ias content management
+        oracle and interwoven together offer a portal ready, proven, and flexible 
+        enterprise content management solution. . watch a 15 minute on-demand 
+        snapshot seminar 
+        and learn how you can let your users control their content through a portal 
+        powered by oracle and interwoven. 
+updated oracle9ias 
+        portal developer kit (pdk) - july
+the updated 
+        oracle9ias portal developer kit (pdk) highlights portlet communication. 
+        using the pdk, you can build smart portlets with such features as inter-portlet 
+        communication, page to portlet communication, and portlet reusability. 
+        this release includes new j2ee-based and web services samples. 
+snapshot seminar: 
+        documentum & oracle9ias content management
+        oracle and documentum now offer a joint solution to create, manage and 
+        deliver content through web sites and portals. watch a 15 minute on-demand 
+        snapshot 
+        seminar and learn how you can let your users control their content 
+        through a portal powered by oracle and documentum.
+
+this 
+        month's feature | news | software 
+        downloads | oracle university | new 
+        books | worldwide events
+ 
+        new software downloads
+oracle9i 
+        application server release 2 for windows nt/2000, aix, and compaq tru64 
+        unix 
+oracle9ias 
+        toplink 4.6 for linux, unix, and windows nt/2000 
+oracle9i 
+        lite release 5.0.2.0.0 for sun sparc solaris 
+oracle 
+        data provider for .net (odp.net) beta 
+this 
+        month's feature | news | software 
+        downloads | oracle university | new 
+        books | worldwide events
+oracle 
+        university
+special offer! 
+        save 45% on oracle9i dba certification training 
+        the expanded oracle certification program now offers a true certification 
+        levels that are built to fit the needs of it professionals as well as 
+        organizations looking to hire them. each level constitutes reaching a 
+        benchmark of experience and expertise that is industry recognized and 
+        approved. and, with each new credential can come increased opportunities, 
+        higher pay, and more benefits to keep oracle professionals successful. 
+        
+oracle9i certification 
+        savings plan  save 45% on 4 instructor led inclass courses. 4 for 
+        the price of 2! click 
+        here to learn more! 
+
+
+
+
+
+
+
+
+
+
+seeking 
+                      a new job? check out otn 
+                      skills marketplace for all open oracle-trained positions.
+need 
+                      help implementing technology solutions to business problems? 
+                      oracle9i 
+                      by example series tutorials can save you time.
+taking 
+                      an ocp exam? otn members, take advantage of the 20% exam 
+                      discount.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+untitled document
+
+
+
+
+
+
+
+
+
+
+this 
+          month's feature | news | software 
+          downloads | oracle university | new 
+          books | worldwide events
+
+
+
+new 
+                books 
+oracle9i 
+                dba 101
+oracle9i 
+                dba 101 by marlene theriault, rachel carmichael, & james 
+                viscusi (isbn 0-07-222474-6) explains, step-by-step, how to effectively 
+                administer an oracle database. readers will find coverage of the 
+                key oracle9i new features as well as details on the daily responsibilities 
+                of a dba and tips on how to successfully accomplish those tasks. 
+                from the exclusive publishers of oracle press books, this is the 
+                ideal resource for the aspiring oracle database administrator. 
+                
+oracle9i 
+                mobile
+oracle9i 
+                mobile by alan yeung, philip stephenson, & nicholas pang 
+                (isbn 0-07-222455-x) helps readers design, deploy, and manage 
+                flexible mobile applications on the oracle platform. from the 
+                exclusive publishers of oracle press books, this resource explains 
+                how to use and extend the mobile services available in oracle9ias 
+                wireless and integrate with other oracle technologies. mobilize 
+                any e-business, reach new customers, and deliver critical information 
+                to mobile users with the most scalable and reliable mobile infrastructure 
+                available. 
+
+oracle press user group program
+                oracle press has a new user group program! oracle press supports 
+                the service that user groups provide to the technical community. 
+                we value our relationship with community-based groups and welcome 
+                the opportunity to form partnerships with user groups to disseminate 
+                the latest technological information available in osborne publications. 
+                osborne encourages participation by technical user groups that 
+                meet regularly, discuss, teach, and troubleshoot technical topics, 
+                write book reviews, and publish print and/or online newsletters. 
+                
+
+
+
+
+
+oracle press can 
+          provide user groups: 
+
+
+
+review 
+            copies of oracle press books for newsletter reviews 
+
+
+book 
+            donations and promotional items for user group events 
+
+
+30% 
+            discount on bulk purchases of 10 or more books 
+
+
+and 
+            more...
+
+
+
+
+
+
+
+click 
+                here for complete details about oracle press' user group program.
+ 
+this 
+                month's feature | news | software 
+                downloads | oracle university | new 
+                books | worldwide events
+worldwide 
+                events 
+
+americas
+oracle 
+              user group events
+find 
+              out where new user group events are happening in your area. 
+               
+apac
+
+
+
+
+
+
+
+oracleworld 
+              online - beijing 
+over 
+              5,000 industry professionals from all over china and the world gathered 
+              to learn how oracle can help your business reduce costs, improve 
+              efficiencies, and improve the way you run your business. if you 
+              missed oracleworld in copenhagen, you can get all the highlights 
+              including keynotes, conference presentations and whitepapers online.
+
+
+
+
+oracle 
+        iseminars: free & live @ your desktop
+ attend a free oracle apac iseminar to learn more about how oracle9i 
+        - application server, database & tools could provide you with a complete 
+        and cost-effective e-business infrastructure. 
+
+
+
+
+please 
+              click 
+              here for further information and online registration for all 
+              iseminars. (please select correct time zone & click "reset"). 
+              for any 
+              questions, please email 
+              us. 
+emea
+
+
+
+oracleworld 
+                  online - copenhagen
+thousands 
+                  of professionals from all over the world gathered to learn how 
+                  oracle can help your business reduce costs, improve efficiencies, 
+                  and improve the way you run your business. if you missed oracleworld 
+                  in copenhagen, you can get all the highlights including keynotes, 
+                  conference presentations and whitepapers online.
+
+
+
+
+
+
+oracle 
+          technology days belgian & luxembourg
+join us 
+          for the oracle technology days - featuring oracle9i release 2  
+          live, local, free! 
+
+join 
+        us for this executive full-day event :
+        29/8/2002 - brussels (sessions in english)
+        3/9/2002 - gent (sessies in het nederlands)
+        12/9/2002 - lige (session en franais)
+click 
+        here for more information and registration.
+regards,
+oracle 
+        technology network team
+unsubscribe
+ when you registered at otn, you indicated you 
+        would like to receive e-mail updates from us. if you do not want to receive 
+        future e-mails, please visit our update 
+        section , log in with your username and password, and uncheck the 
+        i wish to receive informational e-mails box. 
+username 
+        and password questions?
+ forget your otn login information? use our password 
+        lookup.
+duplicate 
+        messages?
+ you may 
+        have multiple accounts on otn. please send a message to otn 
+        with the username you're using to access http://otn.oracle.com. we'll 
+        then contact you and delete the unused account. 
+
+
+ 
+
+
+
+
+
+
+to be removed from oracle's mailing lists, send an email to: 
+unsubscribe@oracleeblast.com
+with the following in the message body: 
+remove xxxxxx.yyyyy@ruhr-uni-bochum.de
+stop 
+
+[250000/116/137209217] 
 
 

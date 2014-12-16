@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain;
   charset="iso-8859-1"
 content-transfer-encoding: quoted-printable
@@ -21,3 +21,14 @@ other things in kde) or, even better, a fix available?
 =2d-=20
 mit freundlichen gr=fc=dfen / best regards
 dominik
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature; name=signature.asc 
+content-description: this is a digitally signed message part.
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+ieyeabecaayfakvinrkacgkq0x+gvmha76ycwqcdfmxq1oi+jc7+7c6nyaseps6h
+lxuaoiibewhottfanyizch3h2skzvqvd
+=x8pz
+-----end pgp signature-----

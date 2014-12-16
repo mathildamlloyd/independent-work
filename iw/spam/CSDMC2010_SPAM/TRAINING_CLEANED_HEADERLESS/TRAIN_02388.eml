@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 content-transfer-encoding: quoted-printable
@@ -22,3 +22,19 @@ andrei
 --=20
 offtopic discussions among debian users and developers:
 http://lists.alioth.debian.org/mailman/listinfo/d-community-offtopic
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: digital signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+iqecbaebcaagbqjl942haaojehnws3jeoi3pi9gh+gjydfdoevqi4bb/izhi29rm
+ii1y6jhppgjzgxzdzus19tu664b7r3m6tryzwijzf7v5rv/gwkifxijvsmpt4hw/
+qgj51+uii/4djfnbnf+xsocusbtzcxf9jmopipkwhgydffak/cfx/fep3jfoqkth
+d9nyqspumwwnlpzjszwnysm0wy83ufkcxobx+irsi+upejqcot9wil/+uzlhaxyk
+/wqs8siyivh4pccx1mumm0zyurpa7s03ul3zazkp8su1bz9v5tpc310crvtdqhrg
+ylixvgtgqhoq+bgmsmp7xlcuy2fyip1y6xaho6iyi/jtoayfcjngklr/kvx2ybw=
+=jyjv
+-----end pgp signature-----

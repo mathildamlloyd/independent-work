@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:53 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain; charset=us-ascii
 
 
@@ -22,3 +22,15 @@ cheers,
 -- no real damage, but still a nuisance."   -- martijn berlage
 
 
+from nobody tue dec 16 09:15:45 2014
+content-type: application/pgp-signature; name="signature.ng"
+content-disposition: inline; filename="signature.ng"
+content-transfer-encoding: 7bit
+
+-----begin pgp signature-----
+version: gnupg v1.0.7 (gnu/linux)
+
+id8dbqe9fz4ye0nzsjr53oiralxqajsg8dkax7bxb6bgzz70vdsakx6uiqcdg8pj
+s2jufuut7kaz3xb0jyox87a=
+=rfa6
+-----end pgp signature-----

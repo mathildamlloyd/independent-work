@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain;
   charset="iso-8859-15"
 content-transfer-encoding: quoted-printable
@@ -25,3 +25,14 @@ using mobile broadband on a train trip).
 
 cheers,
 kevin
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature; name=signature.asc 
+content-description: this is a digitally signed message part.
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+id8dbqbl6l1tnkmhg6pzzjirarcxaj9dslulzv7vpgvzjbfy8ukub3/7mqcfqi5a
+2dlvcttwhi7mtl2bhwygski=
+=prrb
+-----end pgp signature-----

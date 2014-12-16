@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:53 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain;
   charset="utf-8"
 content-transfer-encoding: quoted-printable
@@ -93,3 +93,14 @@ not be the problem for you.
 
 =2d-=20
 modestas vainius 
+from nobody tue dec 16 09:15:45 2014
+content-type: application/pgp-signature; name=signature.asc 
+content-description: this is a digitally signed message part.
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+ieyeabecaayfakvj37uacgkqho9jrnpq4hqelwcentusyu9of198jc0qaxdqfimx
+9bcaooblzqslj3x3lbk13hld7supdelc
+=92t9
+-----end pgp signature-----

@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain; charset=us-ascii; format=flowed
 content-disposition: inline
 content-transfer-encoding: quoted-printable
@@ -24,3 +24,14 @@ ral=20
 strings, as you've discovered.
 
 me
+from nobody tue dec 16 09:15:45 2014
+content-type: application/pgp-signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.4.6 (gnu/linux)
+
+id8dbqflytr4dy0tuf3wsnsrak63aj9ku9k/94qykfr1kuqejtckd4sfwgcgwfsa
+tvcrtlxkhf7z2jcemg7zjsy=
+=7egi
+-----end pgp signature-----

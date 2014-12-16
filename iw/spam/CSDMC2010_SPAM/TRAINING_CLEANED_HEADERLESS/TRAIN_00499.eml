@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:53 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain;
   charset="iso-8859-1"
 content-transfer-encoding: 8bit
@@ -50,3 +50,151 @@ on wednesday 13 november 2002 12:20, you wrote:
 > >thanks.
 > >
 > >jon.
+from nobody tue dec 16 09:15:45 2014
+content-type: text/plain;
+  charset="iso-8859-1";
+  name="notspam.txt"
+content-transfer-encoding: 8bit
+content-disposition: attachment; filename="notspam.txt"
+
+>>from slashdot@slashdot.org wed nov 13 01:37:23 2002
+return-path: 
+delivered-to: jon+.umr@directfreight.com
+received: from smtp.umr.edu (mrelay1.cc.umr.edu [131.151.1.120])
+by www.directfreight.com (postfix) with esmtp id a84ba2e06c
+for ; wed, 13 nov 2002 01:36:36 -0600 (cst)
+received: from sc8-osdn-mail-1.osdn.com (sc8-osdn-mail.osdn.com [66.35.250.105]) via esmtp by mrelay1.cc.umr.edu (8.12.1/) id gad7aalz016074; wed, 13 nov 2002 01:36:36 -0600
+received: from sc8-slashdot-nfs.slashdot.org ([10.2.150.1] helo=slashdot.org)
+by localhost with smtp (exim 3.35 #1 (debian))
+id 18bs5u-0004vq-04
+for ; tue, 12 nov 2002 23:37:24 -0800
+date: wed, 13 nov 2002 07:37:23 +0000
+from: slashdot@slashdot.org
+subject: [slashdot] headlines for 2002-11-13
+to: gabriels@umr.edu
+precedence: list
+x-bulkmail: 2.051
+message-id: 
+x-status: n
+
+slashdot daily headline mailer
+
+======================================================================
+secure your apache servers with 128-bit ssl encryption
+guarantee transmitted data integrity, secure all communication sessions and more 
+with ssl encryption from thawte a leading global certificate provider for the 
+open source community. learn more in our free guide--click here to get it now:
+http://www.gothawte.com/rd515.html
+======================================================================
+
+classic computer magazine archive
+    from the days-gone-by dept.
+    posted by chrisd on monday november 11, @20:18 (tech)
+    http://slashdot.org/article.pl?sid=02/11/11/2227249
+
+secure wireless through infrared antennas
+    from the wires-in-the-sky dept.
+    posted by cowboyneal on monday november 11, @21:29 (tech)
+    http://slashdot.org/article.pl?sid=02/11/12/0031227
+
+newton's "principia" stolen
+    from the dirty-filthy-tasteful-thiefs dept.
+    posted by chrisd on monday november 11, @22:28 (science)
+    http://slashdot.org/article.pl?sid=02/11/12/0013242
+
+us busts military network hacker
+    from the crime-and-punishment dept.
+    posted by cowboyneal on monday november 11, @23:56 (security)
+    http://slashdot.org/article.pl?sid=02/11/12/0159203
+
+10-tflop computer built from standard pc parts
+    from the economic-supercomputing dept.
+    posted by cowboyneal on tuesday november 12, @02:47 (hardware)
+    http://slashdot.org/article.pl?sid=02/11/12/0252217
+
+pkware zips to growth
+    from the old-school-compression-algorithms dept.
+    posted by cowboyneal on tuesday november 12, @04:51 (news)
+    http://slashdot.org/article.pl?sid=02/11/12/0319202
+
+boosting battery life for risc processors
+    from the staying-unplugged-longer dept.
+    posted by cowboyneal on tuesday november 12, @07:39 (announce)
+    http://slashdot.org/article.pl?sid=02/11/12/0513217
+
+stanford researchers trying to protect p2p networks
+    from the trusted-file-sharing dept.
+    posted by cowboyneal on tuesday november 12, @08:36 (internet)
+    http://yro.slashdot.org/article.pl?sid=02/11/12/0438222
+
+mplayer adds sorenson v3 to the linux roster
+    from the celebrate-good-times-come-on dept.
+    posted by cmdrtaco on tuesday november 12, @09:28 (linux)
+    http://slashdot.org/article.pl?sid=02/11/12/1338238
+
+zaurus 5600 announced
+    from the coming-at-you dept.
+    posted by hemos on tuesday november 12, @10:04 (pilot)
+    http://slashdot.org/article.pl?sid=02/11/12/1434226
+
+teach yourself unix system administration in 24 hours
+    from the next-week-how-to-end-world-hunger dept.
+    posted by timothy on tuesday november 12, @10:40 (unix)
+    http://books.slashdot.org/article.pl?sid=02/11/06/202252
+
+harry potter & the chamber of secrets leaked
+    from the gotta-hate-when-that-happens dept.
+    posted by cmdrtaco on tuesday november 12, @11:39 (movies)
+    http://slashdot.org/article.pl?sid=02/11/12/1549256
+
+oracle's gpl linux firewire clustering
+    from the not-a-bad-idea dept.
+    posted by cmdrtaco on tuesday november 12, @12:20 (tech)
+    http://developers.slashdot.org/article.pl?sid=02/11/12/161219
+
+have fujitsu harddrives been failing in record numbers?
+    from the check-your-hardware dept.
+    posted by cliff on tuesday november 12, @13:06 (tech)
+    http://ask.slashdot.org/article.pl?sid=02/11/12/116241
+
+bind 4 and 8 vulnerabilities
+    from the who-uses-bind4-anymore dept.
+    posted by michael on tuesday november 12, @14:10 (security)
+    http://developers.slashdot.org/article.pl?sid=02/11/12/1823213
+
+supreme court to hear cipa case
+    from the justice-is-nearsighted dept.
+    posted by michael on tuesday november 12, @15:22 (doj)
+    http://yro.slashdot.org/article.pl?sid=02/11/12/1810209
+
+jedi archives in dublin library?
+    from the acknowledge-the-creators dept.
+    posted by hemos on tuesday november 12, @16:27 (starwars)
+    http://slashdot.org/article.pl?sid=02/11/12/1548249
+
+antibiotic resistant staph infections
+    from the supergerm-kills-25-million dept.
+    posted by michael on tuesday november 12, @17:31 (science)
+    http://science.slashdot.org/article.pl?sid=02/11/12/1931243
+
+nsa approves first 802.11b product for secret data
+    from the modprobe-orinoco dept.
+    posted by michael on tuesday november 12, @18:34 (security)
+    http://slashdot.org/article.pl?sid=02/11/12/1934247
+
+
+
+
+copyright 1997-2002 osdn.  all rights reserved.
+
+======================================================================
+
+you have received this message because you subscribed to it
+on slashdot.  to stop receiving this and other
+messages from slashdot, or to add more messages
+or change your preferences, please go to your user page.
+
+http://slashdot.org/my/messages/
+
+you can log in and change your preferences from there.
+

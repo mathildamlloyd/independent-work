@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 
@@ -15,3 +15,14 @@ craig,
 regards,
 
 --jordan
+from nobody tue dec 16 09:15:47 2014
+content-type: application/pgp-signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.0.7 (gnu/linux)
+
+id8dbqe9uuwvpwqdavebu7oragpaakcbgoaqyclpbbmryq53f7izo8yvtqcfqyms
+6dk7xdtkr9uizeg9z0y1azg=
+=7twy
+-----end pgp signature-----

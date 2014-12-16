@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=iso-8859-1
 
 on sat, may 1, 2010 at 10:15 pm, daniel burrows  wrote:
@@ -39,3 +39,50 @@ the aptitude search ~aunstable appears to just list all the packages in the
 repository. as so with the other commands. the list of packages is so long
 that gmail freezes when i try to past it in, and paste.debian.net tells me
 that it is over 90kb and cannot be pasted.
+from nobody tue dec 16 09:15:46 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+on sat, may 1, 2010 at 10:15 pm, daniel =
+burrows <dburro=
+ws@debian.org> wrote:
+on sat, may 01, 2010 at 10:09:32pm +0200, james stuckey <jhstuckey@csmining.org> was heard to say:
+> on sat, may 1, 2010 at 9:14 pm, daniel burrows <<=
+a href=3d"mailto:dburrows@debian.org">dburrows@debian.org> wrote:
+> > =a0did you mean to drop debian-user?
+> >
+> > on sat, may 01, 2010 at 06:29:55pm +0200, james stuckey <
+> > jhstuckey@csmining.org>=
+; was heard to say:
+> > > i have the nvidia drivers, among other packages, from sid.
+> >
+> > =a0 what's in your /etc/apt/sources.list?
+>
+> no i didn't, thanks.
+>
+> deb ftp:=
+//ftp.debian-multimedia.org squeeze main non-free
+>
+> deb htt=
+p://ftp.de.debian.org/debian/ squeeze main contrib non-free
+> #deb-src http://ftp.de.debian.org/debian/ squeeze main contrib non-free
+>
+> #deb htt=
+p://ftp.de.debian.org/debian sid main contrib non-free
+> deb-src http://ftp.de.debian.org/debian/ sid main contrib non-free
+>
+> deb http://s=
+ecurity.debian.org/ squeeze/updates main contrib non-free
+> #deb-src htt=
+p://security.debian.org/ squeeze/updates main contrib non-free
+
+ =a0that's the problem -- you have no (active) "deb" li=
+nes for unstable,
+so apt doesn't know which packages are from it.
+
+ =a0daniel
+the aptitude search ~aunstable appears to jus=
+t list all the packages in the repository. as so with the other commands. t=
+he list of packages is so long that gmail freezes when i try to past it in,=
+ and paste.debian.net tells me that=
+ it is over 90kb and cannot be pasted. 

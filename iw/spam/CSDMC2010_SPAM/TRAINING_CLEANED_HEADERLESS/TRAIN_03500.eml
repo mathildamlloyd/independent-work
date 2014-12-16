@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=utf-8
 
 >
@@ -33,3 +33,30 @@ regards,
 
 umarzuki mochlis
 http://debmal.my
+from nobody tue dec 16 09:15:46 2014
+content-type: text/html; charset=utf-8
+content-transfer-encoding: quoted-printable
+
+
+
+
+
+i already know how to use the "regular" pop3 class, which i use o=
+n a semi-regular basis for examining/zapping mails which fetchmail barfs on=
+. =c2=a0i've googled my fingers off, but there are no hints as to what =
+the keyfile and certfile are.
+maybe this link can helphttp://www.andrews-corner.=
+org/mutt.html=c2=a0
+
+-- 
+dissent is patriotic, remember?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org with a sub=
+ject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+
+archive: http://lists.debian.org/4be373c9.1070308@cox.net
+
+-- regards,umarzuk=
+i mochlishttp://debmal.my

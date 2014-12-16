@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=iso-8859-1
 
 on fri, may 14, 2010 at 06:06, kent west  wrote:
@@ -90,3 +90,102 @@ on fri, may 14, 2010 at 06:06, kent west  wrote:
 >
 >
 what is the output of "file lmgrd"
+from nobody tue dec 16 09:15:47 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+on fri, may 14, 2010 at 06:06, kent west=
+ <westk@acu.edu&g;=
+t; wrote:
+i'm trying to start a daemon for maple v 14, but when i try to run it,<=
+br>
+the system complains that the file doesn't exist. what's up?
+
+westk[@]goshen.acu.edu<=
+/a>]:/usr/local/maple_network_tools/flexlm/11.7:> ls -lh
+total 2.8m
+lrwxrwxrwx 1 root staff =a0 =a06 2010-05-13 16:04 lmcksum -> lmutil
+lrwxrwxrwx 1 root staff =a0 =a06 2010-05-13 16:04 lmdiag -> lmutil
+lrwxrwxrwx 1 root staff =a0 =a06 2010-05-13 16:04 lmdown -> lmutil
+-rwxr-xr-x 1 root staff 854k 2010-05-13 16:04 lmgrd
+lrwxrwxrwx 1 root staff =a0 =a06 2010-05-13 16:04 lmhostid -> lmutil
+lrwxrwxrwx 1 root staff =a0 =a06 2010-05-13 16:04 lminstall -> lmutil
+lrwxrwxrwx 1 root staff =a0 =a06 2010-05-13 16:04 lmremove -> lmutil
+lrwxrwxrwx 1 root staff =a0 =a06 2010-05-13 16:04 lmreread -> lmutil
+lrwxrwxrwx 1 root staff =a0 =a06 2010-05-13 16:04 lmstat -> lmutil
+lrwxrwxrwx 1 root staff =a0 =a06 2010-05-13 16:04 lmswitchr -> lmutil
+-rwxr-xr-x 1 root staff 979k 2010-05-13 16:04 lmutil
+lrwxrwxrwx 1 root staff =a0 =a06 2010-05-13 16:04 lmver -> lmutil
+-rwxr-xr-x 1 root staff 962k 2010-05-13 16:04 maplelmg
+
+westk[@]goshen.acu.edu<=
+/a>]:/usr/local/maple_network_tools/flexlm/11.7:>
+sudo ./lmgrd
+sudo: unable to execute ./lmgrd: no such file or directory
+
+westk[@]goshen.acu.edu<=
+/a>]:/usr/local/maple_network_tools/flexlm/11.7:> ldd
+lmgrd
+/usr/bin/ldd: line 117: ./lmgrd: no such file or directory
+
+
+the old version, maple 13, works (minus the errors, which is because
+i've moved the license file):
+
+westk[@]goshen.acu.edu<=
+/a>]:/usr/local/maple_network_tools.13/flexlm:> ls -lh
+total 2.1m
+lrwxrwxrwx 1 root root =a0 =a0 6 2007-06-14 16:17 lmcksum -> lmutil
+lrwxrwxrwx 1 root root =a0 =a0 6 2007-06-14 16:17 lmdiag -> lmutil
+lrwxrwxrwx 1 root root =a0 =a0 6 2007-06-14 16:17 lmdown -> lmutil
+-rwxr-xr-x 1 root staff 616k 2008-07-01 15:52 lmgrd
+lrwxrwxrwx 1 root root =a0 =a0 6 2007-06-14 16:17 lmhostid -> lmutil
+lrwxrwxrwx 1 root root =a0 =a0 6 2007-06-14 16:17 lminstall -> lmutil
+lrwxrwxrwx 1 root root =a0 =a0 6 2007-06-14 16:17 lmremove -> lmutil
+lrwxrwxrwx 1 root root =a0 =a0 6 2007-06-14 16:17 lmreread -> lmutil
+lrwxrwxrwx 1 root root =a0 =a0 6 2007-06-14 16:17 lmstat -> lmutil
+lrwxrwxrwx 1 root root =a0 =a0 6 2007-06-14 16:17 lmswitchr -> lmutil
+-rwxr-xr-x 1 root staff 644k 2008-07-01 15:52 lmutil
+lrwxrwxrwx 1 root root =a0 =a0 6 2007-06-14 16:17 lmver -> lmutil
+-rwxr-xr-x 1 root staff 814k 2008-07-01 15:52 maplelmg
+
+westk[@]goshen.acu.edu<=
+/a>]:/usr/local/maple_network_tools.13/flexlm:> ./lmgrd
+license manager: can't initialize: cannot find license file
+=a0the license files (or server network addresses) attempted are
+=a0listed below. =a0use lm_license_file to use a different license file,
+=a0or contact your software provider for a license file.
+filename: =a0 =a0 =a0/usr/local/flexlm/licenses/license.dat
+license path: =a0/usr/local/flexlm/licenses/license.dat
+flexlm error: =a0-1,359. =a0system error: 2 "no such file or directory=
+"
+for further information, refer to the flexlm end user manual,
+available at "www.macrovision.com".
+19:35:24 (lmgrd) -----------------------------------------------
+19:35:24 (lmgrd) =a0 please note:
+19:35:24 (lmgrd)
+19:35:24 (lmgrd) =a0 this log is intended for debug purposes only.
+19:35:24 (lmgrd) =a0 there are many details in licensing policies
+19:35:24 (lmgrd) =a0 that are not reported in the information logged
+19:35:24 (lmgrd) =a0 here, so if you use this log file for any kind
+19:35:24 (lmgrd) =a0 of usage reporting you will generally produce
+19:35:24 (lmgrd) =a0 incorrect results.
+19:35:24 (lmgrd)
+19:35:24 (lmgrd) -----------------------------------------------
+19:35:24 (lmgrd)
+19:35:24 (lmgrd)
+19:35:24 (lmgrd) using license file "/usr/local/flexlm/licenses/licens=
+e.dat"
+
+--
+kent
+
+
+
+--
+to unsubscribe, email to debian-user-request@lists.debian.org
+with a subject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+archive: http://lists.debian.org/4bec9b19.5060001@acu.edu
+
+what is the output of "file lmgrd&q;=
+uot;

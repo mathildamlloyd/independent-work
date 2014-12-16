@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:53 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain; charset=iso-8859-1
 
 im still learning how to use mailing lists i read alot but i dont reply
@@ -41,3 +41,43 @@ on fri, apr 23, 2010 at 7:38 pm, ron johnson  wrote:
 
 -- 
 thomas ferry a.k.a  jinzo
+from nobody tue dec 16 09:15:45 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+im still learning how to use mailing lists i read alot but i dont reply alo=
+t.testing would be your best bet. if you want current y=
+ou need debian unstable.. i think you can get the binary's from the=a0e=
+xperiential=a0repo though=a0
+on fri, apr 23, 2010 at 7:38 pm, ron johnson=
+ <ron.l.johns=
+on@cox.net> wrote:
+on 04/22/2010 03:54 am, dotan cohen wrote:
+[snip]
+
+it looks to me that backports is the best for an everyday
+user who values stability, and prefers to use released software
+version. please let me know where i am mistaken. thanks.
+
+
+"stable with current releases" is a contradiction. =a0if you want=
+ current releases, run testing or unstable. =a0(ignore the scary words from=
+ the website. =a0testing and unstable are stable enough.)
+
+if you *really want* stable, though, deinstall iceweseal, icedove, openoffi=
+ce, etc and get their binaries directly from upstream. there's no shame=
+ in that. =a0(for ooo, i'd recommend www.go-oo.org; it's debian's upstream.)
+
+-- 
+dissent is patriotic, remember?
+
+
+-- 
+to unsubscribe, email to debian-user-request@lists.debian.org with a sub=
+ject of "unsubscribe". trouble? contact listmaster@lists.debian.org
+
+archive: http://lists.debian.org/4bd22f5c.9010204@cox.net
+
+-- thomas ferry a.k=
+.a =a0jinzo
+

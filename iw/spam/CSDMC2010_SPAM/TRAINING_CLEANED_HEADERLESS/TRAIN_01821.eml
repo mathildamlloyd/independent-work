@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 
@@ -14,3 +14,24 @@ care of that.
 best,
 michael
 
+from nobody tue dec 16 09:15:47 2014
+content-type: application/pgp-signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (darwin)
+
+iqicbaebcaagbqjlxli2aaojekjveonjogdbn/kp+gndafc1eoakw/a/ugv6t8wy
+r1egzqglkhn96+stqhpesuwjy3mxqisi87x9uylytvx2d31u5ssedb2ya6rtdvvl
+jnqguhtbtooyj4qvbinci5pvs2pih5jvfaa+8vmnyluyf8m7c3ad66mmqa8ehjf0
+8r67r376b+pwsyfe0dfpmzbjn+geeumwojsg4gkmupvr8vnltuslr5c7hbycjgbs
+wj5gpiq7wyn7oiupacqbmkorcwt8o/+a/t+yx5/az5dxcrlns8ipuvaloofqwf2i
+uzlxgosaljun4r5wyzve37ghnoadh/3036utoowzuxd4t2/kotvmgeap2fndeand
+g4kxd7dsglskrmcuiy8k6o7weha1zvmdsi5fnc9pum+ykt4jx8sonjyyfuqk4mmc
+sfx0ncyoxi1gvr2ndhs0ty654ik2vafqexdgphajkx/djib4apg1tqvtgf3iifsi
+fsy6ivqicdycwx0kbz98kmid/dncpp+af7r+wx1ca8cs38d72uch6odgkktextq8
+a1lmq2r9zt2qffqtfdfn7kdap7ofdbejommymbyezaspx2wno+sm7rey7dcldsuj
+gzzvij8vhkqlnqlqzjwdergvk9htebmzcbraqejxygcbv8hurkpvr/ylyz0c6bnx
+5bvbbb2w16aw1t0ysthc
+=evrr
+-----end pgp signature-----

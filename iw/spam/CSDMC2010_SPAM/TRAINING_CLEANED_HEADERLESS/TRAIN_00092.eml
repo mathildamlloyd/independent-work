@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 content-transfer-encoding: 7bit
@@ -22,3 +22,14 @@ current email password   :  {    }
 re-confirm password:  {    }
 
 you will continue to receive this warning message periodically
+from nobody tue dec 16 09:15:47 2014
+content-type: text/x-vcard; name="mjulian.vcf"; charset="iso-8859-1"
+content-disposition: attachment; filename="mjulian.vcf"
+content-description: card for mercedes julian 
+content-transfer-encoding: quoted-printable
+
+begin=3avcard
+n=3a=3bwebmaster
+version=3a2=2e1
+end=3avcard
+

@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain; charset=utf-8
 content-transfer-encoding: quoted-printable
 
@@ -40,3 +40,16 @@ client, please contact me.
 when making your choices in life, do not forget to live. (samuel johnson)=
 
 
+from nobody tue dec 16 09:15:45 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: openpgp digital signature
+content-disposition: attachment; filename="signature.asc"
+
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org
+
+ieyearecaayfakvnl00acgkqm0llzlt8mhxhlacgi4xjciquaoo8h2kdlxgbzvgb
+cqean3sywpizyj2ddvt+rt8mehdfpdfz
+=rn1u
+-----end pgp signature-----

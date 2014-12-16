@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 content-transfer-encoding: quoted-printable
@@ -19,3 +19,15 @@ randomly generated tagline:
 be warned that typing \fbkillall \finame\fp may not have the desired
  effect on non-linux systems, especially when done by a privileged user.
  (from the killall manual page)
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.0.6 (gnu/linux)
+comment: for info see http://www.gnupg.org
+
+id8dbqe9zppqauoquewas2mraj5baj9xx0ndkbqq8a6hbdobdfswmhasxacfxtzk
+pjl1dqiotsb92uk/0huhgbo=
+=m9tu
+-----end pgp signature-----

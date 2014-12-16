@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain;
   charset="utf-8"
 content-transfer-encoding: quoted-printable
@@ -22,3 +22,14 @@ run plasma-desktop from krunner or x terminal.
 
 =2d-=20
 modestas vainius 
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature; name=signature.asc 
+content-description: this is a digitally signed message part.
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+ieyeabecaayfakvytaeacgkqho9jrnpq4ht96wccdxxgslpq7jskg2yyublxzuux
+4yqanjmbze6emhd4oahdl/actjdha+tg
+=7d2t
+-----end pgp signature-----

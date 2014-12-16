@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=utf-8
 content-transfer-encoding: quoted-printable
 
@@ -63,3 +63,66 @@ r
 mit freundlichen gr=c3=bc=c3=9fen
 
 zichen chen
+from nobody tue dec 16 09:15:46 2014
+content-type: text/html; charset=utf-8
+content-transfer-encoding: quoted-printable
+
+i may be a light debian user. 'cause i simply use gnome power manager a=
+s battery tool, supposed to be the default power manager in gnome. i think =
+it is kind of dull. i've found battery using up much more quickly under=
+ debian than it under windows(yes, i'm using a dual-booting laptop).
+so, is this just because i choosed a unsuitable tool? or it has any oth=
+er reason. in the comparison mentioned above, i was doing some file work an=
+d/or running emacson mon, apr 19, 2010 a=
+t 11:29 pm, bob proulx <bob@proulx.com> wrote:
+joe emenaker wrote:
+> i'm looking for a good battery charge/discharge profiler tool for =
+my
+> ubuntu laptop.
+
+of course i am sure that you know you are posting about ubuntu to the=
+
+debian laptop mailing list? =c2=a0the least you could do is to lie to us
+and say you are running debian when posting to a debian list. =c2=a0:-)
+
+> a couple of years ago, i came across a really neat tool for windows fo=
+r
+> estimating the time remaining until the battery is completely charged =
+or
+> discharged. it was pretty clever about how it went about it. it would<=
+br>
+> ...
+> tool was learning what "80%" /really/ mean=
+t to that battery.
+
+i have often wanted this too. =c2=a0and your other wishlist items as =
+well.
+as far as i know there isn't a tool that does exactly this for
+gnu/linux in general or on debian in particular. =c2=a0if you find one i
+would be interested in it.
+
+there are some useful tools available though. =c2=a0you might look at '=
+ibam'.
+
+ =c2=a0ibam is an advanced battery monitor for laptops, which uses
+ =c2=a0statistical and adaptive linear methods to provide accurate
+ =c2=a0estimations of minutes of battery left or of the time needed until
+ =c2=a0full recharge. it requires apm, acpi or pmu.
+
+it needs some training. =c2=a0but given that it does perform fairly well.
+unfortunately it isn't tied into the system tray tools and so isn't=
+
+going to be a seemless integration there. =c2=a0it is available in gkrellm<=
+br>
+if you use that stack. =c2=a0see the gkrellm-ibam package.
+
+bob
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+
+ieyearecaayfakvmyzoacgkq0prco8e2ulydhacdgu6+dgfyc/jebz7zkj1dadeq
+qqianifmqo0x0ow6l6rsl4pqzdputg6z
+=3debsh
+-----end pgp signature-----
+-- mit freundlichen gr=
+=c3=bc=c3=9fenzichen chen

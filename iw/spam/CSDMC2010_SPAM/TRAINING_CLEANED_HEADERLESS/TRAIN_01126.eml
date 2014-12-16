@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=iso-8859-1
 
 if i try to play them in moc i get: (0) can't set audio parameters: invalid
@@ -53,3 +53,49 @@ flac: flac audio bitstream data, 24 bit, 6 channels, 96 khz, 54720000
 samples
 
 this only happens with this file. the file plays on other systems (windows).
+from nobody tue dec 16 09:15:46 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+if i try to play them in moc i get: (0) can't set audio parameters: inv=
+alid argumentwith mplayer i see:mplayer svn-r30656 (c) 2000=
+-2010 mplayer teamcan't open joystick device /dev/input/js0: no suc=
+h file or directory
+can't init input joystickmplayer: could not connect to socketmp=
+layer: no such file or directoryfailed to open lirc support. you will n=
+ot be able to use your remote control.playing 02 lohengrin - prelud=
+e, act 1.flac.
+audio only file format detected.=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=
+=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=
+=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=
+=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3dopening audio decoder: [ffmpeg] ffmpeg=
+/libavcodec audio decodersaudio: 96000 hz, 6 ch, s32le, 6195.6 kbit/33.=
+61% (ratio: 774455->2304000)
+selected audio codec: [ffflac] afm: ffmpeg (ffmpeg flac audio)=3d=3d=3d=
+=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=
+=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=
+=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d=3d[ao_alsa=
+] alsa-lib: pcm_hw.c:1293:(snd_pcm_hw_open) open /dev/snd/pcmc0d0p failed: =
+device or resource busy
+[ao_alsa] playback open error: device or resource busyfailed to initial=
+ize audio driver 'alsa'[ao oss] audio_setup: can't open aud=
+io device /dev/dsp: device or resource busy[ao_alsa] alsa-lib: pcm_hw.c=
+:1293:(snd_pcm_hw_open) open /dev/snd/pcmc0d0p failed: device or resource b=
+usy
+[ao_alsa] playback open error: device or resource busy[ao arts] loading=
+ the arts backend "/usr/lib/liba=
+rtscbackend.la" failed[ao esd] esd_open_sound failed: connecti=
+on timed out
+ao: [pulse] init failed: connection refused[jack] cannot open serverao_nas: init(): can't open nas audio server -> nosound[ao sdl] =
+samplerate: 96000hz channels: stereo format s32le[ao sdl] unsupported a=
+udio format: 0x19.
+[ao_alsa] alsa-lib: pcm_hw.c:1293:(snd_pcm_hw_open) open /dev/snd/pcmc0d0p =
+failed: device or resource busy[ao sdl] unable to open audio: couldn=
+9;t open audio device: device or resource busydvb card number must be b=
+etween 1 and 4
+ao: [null] 96000hz 6ch s32le (4 bytes per sample)video: no videosta=
+rting playback...a:=a0=a0 3.5 (03.5) of 570.0 (09:30.0)=a0 1.4% exi=
+ting... (quit)running file on the file gives:flac: flac audio b=
+itstream data, 24 bit, 6 channels, 96 khz, 54720000 samples
+this only happens with this file. the file plays on other systems (wind=
+ows).

@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 content-transfer-encoding: quoted-printable
@@ -26,3 +26,15 @@ randomly generated tagline:
 "m: can anyone tell us the lesson that has been learned here?
   s: yes master, not a single one of us could defeat you.
   m: you gain wisdom child ... "            - the frantics
+from nobody tue dec 16 09:15:45 2014
+content-type: application/pgp-signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.0.6 (gnu/linux)
+comment: for info see http://www.gnupg.org
+
+id8dbqe9zoikauoquewas2mranj0aj9ruh+vxggz/0mrsnvpqljjkstkeqcfsn2h
+eed/03arys9odld3qfuufba=
+=nbse
+-----end pgp signature-----

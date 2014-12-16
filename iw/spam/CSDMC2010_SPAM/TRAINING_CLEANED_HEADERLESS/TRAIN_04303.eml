@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:53 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain; charset="us-ascii"
 content-transfer-encoding: 7bit
 content-disposition: inline
@@ -9,3 +9,124 @@ your message was not delivered to
  
 this mail message contains banned or potentially offensive text.
 
+from nobody tue dec 16 09:15:45 2014
+content-type: message/delivery-status
+content-transfer-encoding: 7bit
+content-disposition: inline
+
+reporting-mta: dns;buffy.jpci.net
+ 
+final-recipient: rfc822;daz@jpci.net
+action: failure
+status: 550 phrase in email not acceptable
+
+from nobody tue dec 16 09:15:45 2014
+content-type: message/rfc822
+content-transfer-encoding: 7bit
+content-disposition: inline
+
+received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+ helo=usw-sf-list1.sourceforge.net)
+ by usw-sf-list2.sourceforge.net with esmtp (exim 3.31-va-mm2 #1 (debian))
+ id 17ywhf-0003wq-00; tue, 08 oct 2002 08:28:05 -0700
+received: from dsl092-072-213.bos1.dsl.speakeasy.net ([66.92.72.213]
+ helo=blazing.arsecandle.org)
+ by usw-sf-list1.sourceforge.net with esmtp 
+ (cipher tlsv1:des-cbc3-sha:168) (exim 3.31-va-mm2 #1 (debian))
+ id 17ywgp-000544-00
+ for ; tue, 08 oct 2002 08:27:14 -0700
+received: (qmail 31751 invoked from network); 8 oct 2002 15:26:25 -0000
+received: from localhost (helo raging) (rod@127.0.0.1)
+ by localhost with smtp; 8 oct 2002 15:26:25 -0000
+message-id: <042a01c26edf$16332c50$b554a8c0@raging>
+from: "rodbegbie" 
+to: "odhiambo washington" ,
+ "spamassassin" 
+references: <20021008130510.ga23757@ns2.wananchi.com>
+subject: re: [satalk] spamd error messages
+organization: arsecandle industries, inc.
+x-habeas-swe-1: winter into spring
+x-habeas-swe-2: brightly anticipated
+x-habeas-swe-3: like habeas swe (tm)
+x-habeas-swe-4: copyright 2002 habeas (tm)
+x-habeas-swe-5: sender warranted email (swe) (tm). the sender of this
+x-habeas-swe-6: email in exchange for a license for this habeas
+x-habeas-swe-7: warrant mark warrants that this is a habeas compliant
+x-habeas-swe-8: message (hcm) and not spam. please report use of this
+x-habeas-swe-9: mark in spam to .
+mime-version: 1.0
+content-type: multipart/signed; micalg=sha1;
+ protocol="application/x-pkcs7-signature";
+ boundary="----=_nextpart_000_0426_01c26ebd.8df911e0"
+x-priority: 3
+x-msmail-priority: normal
+x-mailer: microsoft outlook express 6.00.2800.1106
+x-mimeole: produced by microsoft mimeole v6.00.2800.1106
+sender: spamassassin-talk-admin@example.sourceforge.net
+errors-to: spamassassin-talk-admin@example.sourceforge.net
+x-beenthere: spamassassin-talk@example.sourceforge.net
+x-mailman-version: 2.0.9-sf.net
+precedence: bulk
+list-help: 
+list-post: 
+list-subscribe: , 
+ 
+list-id: talk about spamassassin 
+list-unsubscribe: , 
+ 
+list-archive: 
+x-original-date: tue, 8 oct 2002 11:26:32 -0400
+date: tue, 8 oct 2002 11:26:32 -0400
+
+this is a multi-part message in mime format.
+
+------=_nextpart_000_0426_01c26ebd.8df911e0
+content-type: text/plain;
+charset="iso-8859-1"
+content-transfer-encoding: 7bit
+
+odhiambo washington wrote:
+> after being bitten by bugs in 2.41, i've downgraded to 2.31 but now spamd
+> spews errors like i've never seen before:
+
+delete the contents of /usr/local/share/spamassassin and reinstall.  there
+are some files that were new to v2.4x, so they won't be overwritten when you
+downgrade.
+
+rod.
+
+
+--
+"fast!  fast!  faster!  bring the beef, you bastard,"
+cries paula abdul, "and don't forget the pasta!"
+
+doing the blogging thang again at http://www.groovymother.com/ <<
+
+------=_nextpart_000_0426_01c26ebd.8df911e0
+content-type: application/x-pkcs7-signature;
+name="smime.p7s"
+content-transfer-encoding: base64
+content-disposition: attachment;
+filename="smime.p7s"
+
+miagcsqgsib3dqehaqcamiacaqexczajbgurdgmcgguamiagcsqgsib3dqehaqaaoiijijccanow
+gghjoamcaqicarcwdqyjkozihvcnaqefbqawuzelmakga1uebhmcvvmxhdaabgnvbaote0vxdwlm
+yxggu2vjdxjlieluyy4xjjakbgnvbamthuvxdwlmyxggu2vjdxjligvcdxnpbmvzcybdqs0xmb4x
+dtaymdqxode1mjkzn1oxdtiwmdqxmze1mjkzn1owtjelmakga1uebhmcvvmxfjaubgnvbaotdudl
+b1rydxn0ieluyy4xjzalbgnvbamthkdlb1rydxn0ifrydwugq3jlzgvudglhbhmgq0egmjcbnzan
+bgkqhkig9w0baqefaaobjqawgykcgyeaspcspzispyx/ajqwoycsyygqfby3ovseprzlru0endjr
+wjo7dwfpirrfouqktkkxsy6bqzx/cecrrn9i4ny5gcxui2jsyrsmdwobbwl52n5cpebhgcebybwd
+kfaf8vvkxyuntmdzptt2ob5rnpjtetiq9mpncb/5g7ocr1heljccaweaaanjmgewdgydvr0paqh/
+baqdaghgmb0ga1uddgqwbbqig0tniaimmfr8wraatrxief0rstapbgnvhrmbaf8ebtadaqh/mb8g
+a1udiwqymbaafep4mlir21kwnl7fwrq2qgphfeyhma0gcsqgsib3dqebbquaa4gbacmw3z+slsls
+fafdecqjpfizfzjzspqklwy7vhnnwh2lakyecbtafhbpdyhspkrj3kghxeijnkymfjsk6xd1k1yu
+wmxrauuh+hiduzug4okbwqbhbtqjjedo/cchilqsaleu2km+n5kkrpb0uvrhrocgffrmrwhz9zyb
+lxoq0/eemiicgjccaeugawibagibbdanbgkqhkig9w0baqqfadbtmqswcqydvqqgewjvuzecmbog
+a1uechmtrxf1awzhecbtzwn1cmugsw5jljemmcqga1ueaxmdrxf1awzhecbtzwn1cmugzuj1c2lu
+zxnzienbltewhhcnotkwnjixmdqwmdawwhcnmjawnjixmdqwmdawwjbtmqswcqydvqqgewjvuzec
+mboga1uechmtrxf1awzhecbtzwn1cmugsw5jljemmcqga1ueaxmdrxf1awzhecbtzwn1cmugzuj1
+c2luzxnzienbltewgz8wdqyjkozihvcnaqebbqadgy0amigjaogbam4vgbwxt3fek6lfwg0xtzqa
+djj0itlz1mrorvc0ncwfaydgr0wlivffqeswwdyyb+jqymt5/vgcqitz9j2dkockidmsodrsjqbu
+wqdzqu4aizx5ukxvwsupoe9g+m34ljxwhxzr4vcwdydiqrosvojvom6rxyo4ygkwenv+j6ydagmb
+
+------=_nextpart_000_0426_01c26ebd.8df911e0--

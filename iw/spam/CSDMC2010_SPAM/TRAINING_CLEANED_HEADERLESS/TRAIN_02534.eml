@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=utf-8
 content-transfer-encoding: quoted-printable
 
@@ -41,3 +41,30 @@ kousik maiti(=e0=a6=95=e0=a7=8c=e0=a6=b6=e0=a6=bf=e0=a6=95 =e0=a6=ae=e0=a6=
 =be=e0=a6=87=e0=a6=a4=e0=a6=bf)
 registered linux user #474025
 registered ubuntu user # 28654
+from nobody tue dec 16 09:15:47 2014
+content-type: text/html; charset=utf-8
+content-transfer-encoding: quoted-printable
+
+try apt-get install fakeroot devscripts build-essential<=
+br>if it gives error then post your /etc/apt/sources.liston fri, apr 30, 2010 at 4:07 pm, =
+james stuckey <=
+jhstuckey@csmining.org> wrote:
+
+
+have you tried "apt-get update" or "aptitude update" be=
+fore trying to
+
+install these packages?
+=c2=a0yes, i=
+ did "aptitude safe-upgrade" after "aptitude update" an=
+d then "aptitude full-upgrade". i selected "n" =
+and it prompted me to "downgrade the packages to testing". this m=
+eans that the versions it had were newer than testing, i.e., from sid. how =
+could this be if i followed 2.7.3 of dr? according to that, my candidate ve=
+rsion is appropriately set: 
+stuckey@debian:~$ cat /etc/apt/apt.confapt::default-release "t=
+esting";
+-- wishing you the very be=
+st of everything, always!!!kousik maiti(=e0=a6=95=e0=a7=8c=e0=a6=b6=e0=
+=a6=bf=e0=a6=95 =e0=a6=ae=e0=a6=be=e0=a6=87=e0=a6=a4=e0=a6=bf) register=
+ed linux user #474025registered ubuntu user # 28654

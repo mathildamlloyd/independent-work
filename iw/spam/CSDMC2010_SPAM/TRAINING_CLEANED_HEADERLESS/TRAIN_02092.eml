@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=us-ascii
 
 > from:  brent welch 
@@ -35,3 +35,14 @@ austin, tx  78701+1 512 374 0500
 
 
 
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature
+
+-----begin pgp signature-----
+version: gnupg v1.0.6 (gnu/linux)
+comment: exmh version 2.2_20000822 06/23/2000
+
+id8dbqe9bso7k9b4h5r0iuirarnlakcedkkx52y2p9sdtrcpsgtemgzhbgcfe2qy
+vnjn/s+r1/dmpua2v+gihc4=
+=wxvl
+-----end pgp signature-----

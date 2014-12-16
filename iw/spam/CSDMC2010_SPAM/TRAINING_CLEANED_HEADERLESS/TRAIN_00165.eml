@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=utf-8
 content-transfer-encoding: quoted-printable
 
@@ -80,3 +80,16 @@ client, please contact me.
 
 what doesn't kill you will make you stronger. (friedrich nietzsche)
 
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: openpgp digital signature
+content-disposition: attachment; filename="signature.asc"
+
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org
+
+ieyearecaayfakvsceuacgkqm0llzlt8mhza0acgnyqapvzbiw8ooi4e9gdvhb1v
+b34anar5pmwknxretumdr7prim2hauks
+=zo8n
+-----end pgp signature-----

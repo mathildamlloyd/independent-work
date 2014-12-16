@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 content-transfer-encoding: quoted-printable
@@ -16,3 +16,15 @@ when driving at night i find the headlights of oncoming vehicles very
 attractive.
 [agree]   [disagree]
                  
+from nobody tue dec 16 09:15:45 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: digital signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+ieyearecaayfakvfltwacgkq+afzydwk2zlkvwcgn/7sriq1j8pnwoudtpm08kju
+vtsanjwyo6wtetnkfu1m/eqeayqdo9mn
+=tlih
+-----end pgp signature-----

@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=iso-8859-1
 
 on tue, apr 20, 2010 at 8:07 pm, john hasler  wrote:
@@ -46,3 +46,54 @@ on the sharp end of my network, i try to keep it as up to date as is
 feasable.
 
 --b
+from nobody tue dec 16 09:15:46 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+on tue, apr 20, 2010 at 8:07 pm, john ha=
+sler <jhasler@de=
+bian.org> wrote:
+b. alexander wrote:
+> i've got an issue with a sid box that i have been maintaining for =
+a
+> while. this is my workstation, and i have noticed a growing number of<=
+br>
+> broken packages, unmet dependencies and conflicts. i have been using
+> safe-upgrade for months now, hoping that it would work itself out over=
+
+> time. however, this hasn't happened.
+
+no, of course not. =a0sid is constantly undergoing the sort of change=
+s
+that take place when you upgrade from one release to the next and which
+full-upgrade is designed to handle (and which safe-upgrade blocks):
+transitions, removal of obsolete packages, major version changes that
+require new library versions that may be incompatible with other
+packages, etc. =a0sid is often also in an inconsistent state when, for
+example, a package is uploaded in advance of its dependencies. =a0by
+repeatedly running safe-upgrade you have forced these things to pile
+up.
+
+> so what can i do to fix the problems without losing functionality?
+
+"aptitude full-upgrade" and then patiently sort through the=
+ resulting
+mess. =a0it might be simplest to write down all the proposed removals, let<=
+br>
+it do its thing, and then install the removed packages.yes. i need to block out some time and do just this. =a0
+
+> no problem. most of my=a0debian installs=a0at home run sid, with the r=
+est
+> running testing...except my firewall, which runs stable for the first<=
+br>
+> 6 months or so (until critical packages start getting long in the
+> tooth), then i upgrade it to testing and run until the next stable
+> release.
+
+i'm having trouble imagining what packages appropriate to a firew=
+all
+could get long in the tooth.ssh, ssl, iptables, s=
+nort, etc. i don't have an extensively large package list on my firewal=
+l, especially compared to a workstation, but since it is on the sharp end o=
+f my network, i try to keep it as up to date as is feasable.
+--b=a0

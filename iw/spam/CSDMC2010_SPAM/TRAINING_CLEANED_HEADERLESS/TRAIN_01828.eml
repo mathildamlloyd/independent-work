@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain; charset=us-ascii
 
 chris,
@@ -20,3 +20,96 @@ in message <1027546301.610.tmda@deepeddy.vircio.com>, chris garrigues writes:
 > chris
 > 
 
+from nobody tue dec 16 09:15:45 2014
+content-type: message/rfc822 ; name="5637"
+content-description: 5637
+content-disposition: attachment; filename="5637"
+
+return-path: exmh-workers-admin@spamassassin.taint.org
+delivery-date: tue, 02 oct 2001 15:02:08 -0600
+received: from mhbs.lsil.com (mhbs.lsil.com [147.145.31.100])
+ by flytrap.co.lsil.com (8.9.3+sun/8.9.1) with esmtp id paa14805
+ for ; tue, 2 oct 2001 15:02:06 -0600 (mdt)
+received: from mail2.lsil.com by mhbs.lsil.com with esmtp for kchrist@lsil.com;
+ tue, 2 oct 2001 14:02:04 -0700
+received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org
+ [199.183.24.211])
+ by mail2.lsil.com (8.9.3+sun/8.9.1) with esmtp id oaa15069
+ for ; tue, 2 oct 2001 14:02:03 -0700 (pdt)
+received: from listman.spamassassin.taint.org (localhost.localdomain
+ [127.0.0.1]) by listman.redhat.com (postfix) with esmtp
+ id dfa943002f; tue,  2 oct 2001 17:02:01 -0400 (edt)
+delivered-to: exmh-workers@listman.spamassassin.taint.org
+received: from mail.spamassassin.taint.org (mail.spamassassin.taint.org
+ [199.183.24.239])
+ by listman.redhat.com (postfix) with esmtp id 309802f422
+ for ; tue,  2 oct 2001 17:01:02 -0400 (edt)
+received: (from mail@localhost)
+ by mail.redhat.com (8.11.0/8.8.7) id f92l12f21878
+ for exmh-workers@listman.redhat.com; tue, 2 oct 2001 17:01:02 -0400
+received: from mail2.lsil.com (mail2.lsil.com [147.145.40.22])
+ by mail.redhat.com (8.11.0/8.8.7) with esmtp id f92l11g21859
+ for ; tue, 2 oct 2001 17:01:01 -0400
+received: from mhbs.lsil.com (mhbs [147.145.31.100])
+ by mail2.lsil.com (8.9.3+sun/8.9.1) with esmtp id oaa14865
+ for ; tue, 2 oct 2001 14:00:57 -0700 (pdt)
+from: kchrist@lsil.com
+received: from inca.co.lsil.com by mhbs.lsil.com with esmtp for
+ exmh-workers@spamassassin.taint.org; tue, 2 oct 2001 14:00:22 -0700
+received: from flytrap.co.lsil.com (flytrap.co.lsil.com [172.20.3.234])
+ by inca.co.lsil.com (8.9.3/8.9.3) with esmtp id paa26097
+ for ; tue, 2 oct 2001 15:00:21 -0600 (mdt)
+received: from arrakis.co.lsil.com (arrakis [172.20.22.152])
+ by flytrap.co.lsil.com (8.9.3+sun/8.9.1) with esmtp id paa14673
+ for ; tue, 2 oct 2001 15:00:19 -0600 (mdt)
+received: from arrakis (localhost [127.0.0.1])
+ by arrakis.co.lsil.com (8.9.1b+sun/8.9.1) with esmtp id paa16677
+ for ; tue, 2 oct 2001 15:00:17 -0600 (mdt)
+x-mailer: exmh version 2.5 07/09/2001 with nmh-1.0.4+dev
+to: exmh-workers@spamassassin.taint.org
+subject: seditbeautify bug
+reply-to: kevin.christian@lsil.com
+message-id: <16675.1002056416@arrakis>
+x-loop: exmh-workers@spamassassin.taint.org
+sender: exmh-workers-admin@spamassassin.taint.org
+errors-to: exmh-workers-admin@spamassassin.taint.org
+x-beenthere: exmh-workers@spamassassin.taint.org
+x-mailman-version: 2.0.1
+precedence: bulk
+list-help: 
+list-post: 
+list-subscribe: , 
+ 
+list-id: discussion list for exmh developers
+ 
+list-unsubscribe: , 
+ 
+list-archive: 
+date: tue, 02 oct 2001 15:00:16 -0600
+mime-version: 1.0
+content-type: text/plain; charset=us-ascii
+content-transfer-encoding: 7bit
+
+
+it appears that the binding for seditbeautify applies to
+more than just the sedit window. since seditbeautify assumes
+we are in a sedit window the routine fails. (try typing
+ctrl-l over the main window to see what i mean).
+
+the quick fix for this is to make the ^l more restrictive. however, i'd
+suggest keeping things the way the are and extending ^l to be a
+highlight toggle. if the window is currently highlighted (sedit or msg)
+re-display without highlighting and vice versa.
+
+while i can hack tcl, hacking tk is another story. translation: i can't 
+fix this bug myself. any volunteers?
+
+kevin
+
+
+
+
+_______________________________________________
+exmh-workers mailing list
+exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers

@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain;
   charset="utf-8"
 content-transfer-encoding: quoted-printable
@@ -33,3 +33,18 @@ try to set dhcp pool size in your router to 2 or 3
 >=20
 > thx frank
 >=20
+from nobody tue dec 16 09:15:47 2014
+content-type: application/pgp-signature; name=signature.asc 
+content-description: this is a digitally signed message part.
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+iqecbaabagagbqjl6q3/aaojeclh0/4+jzdz3b4iai9xjmpy9g/cfl7y6r7dpa5q
+xmfakodf1++rzq1swj6oef4pi9yblisy1cxazgndrmpsytstotaxixeixxlzph0m
+vttxguoz4rtmthkgoqxfdpsusuucl5rm+kpjlawqft28upeqwihbautdznu2dyzb
+iepew3lfegmxc6apuuxks9cylzfyhdenwmwheumavlwhqrbt/9qb1ovmzw/w0dg8
+jwtjnsryvvaoepspvmojnkozmgm9bxb77zncxcxotl/bmaj/e+hd2go1flci9slg
+kidpindvjk34llrzf2ahomtbp5njjdyed+rrvzjprzsu1rxx8z8xle3rkvyc9we=
+=mwiq
+-----end pgp signature-----

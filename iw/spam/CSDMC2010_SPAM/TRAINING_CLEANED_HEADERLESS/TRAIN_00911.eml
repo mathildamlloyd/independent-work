@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=utf-8
 content-disposition: inline
 content-transfer-encoding: quoted-printable
@@ -17,3 +17,15 @@ tzafrir cohen wrote at 2010-04-11 07:41 -0500:
 notmuchmail.org mentions a curses interface for nutmuch but it does not see=
 m to=20
 be available in debian's notmuch package.
+from nobody tue dec 16 09:15:47 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: digital signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+ieyearecaayfakve40macgkq682c+dbp+osduqcenwvxw+9kbz0hh/dxr/9vsnnc
+lsmaoj20rjs3pzo0i9/ubsuwp7ugzts4
+=37uc
+-----end pgp signature-----

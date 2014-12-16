@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=iso-8859-1
 content-transfer-encoding: quoted-printable
 
@@ -43,3 +43,16 @@ client, please contact me.
 
 the nail that sticks up will be hammered down.
 
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: openpgp digital signature
+content-disposition: attachment; filename="signature.asc"
+
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org
+
+ieyearecaayfakvundwacgkqm0llzlt8mhywmgcdh1qmk93sfk3ywsuqo81prvhm
+yr4an3hgdpe/0szgjts4m8n2haa2cy5d
+=ozzl
+-----end pgp signature-----

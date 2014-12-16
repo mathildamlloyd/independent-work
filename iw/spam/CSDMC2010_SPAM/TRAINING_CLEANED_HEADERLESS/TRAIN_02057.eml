@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 content-transfer-encoding: quoted-printable
@@ -49,3 +49,15 @@ johnrchamplin@columbus.rr.com
 gpg key 1024d/99421a63 2005-01-05
 ee51 79e9 f244 d734 a012 1cec 7813 9fe9 9942 1a63
 gpg --keyserver subkeys.pgp.net --recv-keys 99421a63
+from nobody tue dec 16 09:15:45 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: digital signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+ieyearecaayfakvfblkacgkqebof6zlcgmnszaccdd4ybbfaulzfccbrryhnhden
+ee0an3noc3rlbcbxn2gz3xxjfsfslc2r
+=jarb
+-----end pgp signature-----

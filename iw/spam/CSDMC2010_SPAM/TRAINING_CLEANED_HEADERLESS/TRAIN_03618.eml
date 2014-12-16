@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain;
   charset="us-ascii"
 content-transfer-encoding: quoted-printable
@@ -17,3 +17,17 @@ cheers
 
 =2d-=20
 no wonder you're tired!  you understood so much today.
+from nobody tue dec 16 09:15:47 2014
+content-type: application/pgp-signature; name=signature.asc 
+content-description: this is a digitally signed message part.
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+comment: get my key from http://fortytwo.ch/gpg/92082481
+
+ikceabecagcfakvydl9ggmh0dha6ly9mb3j0exr3by5jac9szwdhbc9ncgcvzw1h
+awwumjawmja4mji/dmvyc2lvbj0xljumbwq1c3vtptvkzmy4njhkmte4ndmynzyw
+nzfimjvlyjcwmdzkytnlaaojecqqzti935l6ap0anrzol6b3f5tqvdnjzx5riowh
+hdzvakcvtjvsshipv8k6eym4soz6gyls/q==
+=eko2
+-----end pgp signature-----

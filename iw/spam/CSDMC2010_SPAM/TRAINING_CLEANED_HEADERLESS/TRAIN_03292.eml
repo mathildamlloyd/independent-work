@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:53 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 content-transfer-encoding: quoted-printable
@@ -17,3 +17,15 @@ randomly generated tagline:
  19.05 via nfs from a remote linux machine in paraguay doesn't seem to
  get the background colors right, you'll know who to thank."
  (by matt welsh)
+from nobody tue dec 16 09:15:45 2014
+content-type: application/pgp-signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.0.6 (gnu/linux)
+comment: for info see http://www.gnupg.org
+
+id8dbqe9eoxdauoquewas2mrauh1akd8hetylbbawwkpwyjy6k4jwkhomgcg4c++
+rl8b1ivlvs/m0afw6dubyqa=
+=biby
+-----end pgp signature-----

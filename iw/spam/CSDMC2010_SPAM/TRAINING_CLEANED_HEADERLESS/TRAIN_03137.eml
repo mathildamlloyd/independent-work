@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=iso-8859-1
 content-transfer-encoding: quoted-printable
 
@@ -29,3 +29,16 @@ client, please contact me.
 
 
 
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: openpgp digital signature
+content-disposition: attachment; filename="signature.asc"
+
+-----begin pgp signature-----
+version: gnupg v1.4.9 (gnu/linux)
+comment: using gnupg with mozilla - http://enigmail.mozdev.org
+
+ieyearecaayfakvzwdwacgkqm0llzlt8mhzxeqcgjpt0omqdm0d4j3ji91liwc6b
+lpwaokbmz4im8/snjgnisouveapgx2iz
+=n2jz
+-----end pgp signature-----

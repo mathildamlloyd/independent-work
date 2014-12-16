@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=us-ascii
 
 ouch...i'll get right on it.
@@ -202,3 +202,14 @@ austin, tx  78701+1 512 374 0500
 
 
 
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature
+
+-----begin pgp signature-----
+version: gnupg v1.0.6 (gnu/linux)
+comment: exmh version 2.2_20000822 06/23/2000
+
+id8dbqe9y68zk9b4h5r0iuiraniqaj0xp6l4dh32pmewnpt5c8+lbbuelqcdh1av
+heczndjhllrnag3s6ftpdw8=
+=coew
+-----end pgp signature-----

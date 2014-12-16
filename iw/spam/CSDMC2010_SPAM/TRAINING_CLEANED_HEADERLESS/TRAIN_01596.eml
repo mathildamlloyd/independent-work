@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:55 2014
+from nobody tue dec 16 09:15:47 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 content-transfer-encoding: quoted-printable
@@ -51,3 +51,19 @@ alex
 
 
 --=20
+from nobody tue dec 16 09:15:47 2014
+content-type: application/pgp-signature; name="signature.asc"
+content-description: digital signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.4.10 (gnu/linux)
+
+iqecbaebcaagbqjlu7t4aaojejhmsydbhaaj2/0iamm5e4gudouaew6bg8b6isey
+oswyyibymfmqhhmkqclzjxl5w4ze7l4mimj7iwow7q/a7cdmzuauwbwedpao5xqx
+7p63j7gpqrsl2fwdk4yioeam03h6gvn6qtbwqsngyit0wzlt/htietlar+zhlps+
+qeytfxyns2mdlywrn9l5bu/nrj1x4ynxmwfw6isns+cqzt7nhch2p55eqmvp+odq
+2br6ulaoo+3eqmesn3a28pyz7tmvrzyjsijsr7u04kgwxofjxxfr9dkgmlorr5zd
+yipjr9ctqx4u8gqqulkzd0exi8dnsaalvuatsh3oh8euvkiqy/6kayrplghp4ta=
+=glxh
+-----end pgp signature-----

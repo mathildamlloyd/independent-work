@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain; charset=us-ascii
 content-disposition: inline
 content-transfer-encoding: quoted-printable
@@ -22,3 +22,15 @@ randomly generated tagline:
 "so on one hand, honey is an amazingly sophisticated and efficient food
  source. on the other hand it's bee backwash."
              - alton brown, good eats, "pantry raid iv: comb alone"
+from nobody tue dec 16 09:15:46 2014
+content-type: application/pgp-signature
+content-disposition: inline
+
+-----begin pgp signature-----
+version: gnupg v1.0.6 (gnu/linux)
+comment: for info see http://www.gnupg.org
+
+id8dbqe9c8zvauoquewas2mram+8akc24inxyazy5bji/u/fi2rq5hy9jacgi9fm
+4jujlqnmvwcqm/8ultyvazu=
+=hkgw
+-----end pgp signature-----

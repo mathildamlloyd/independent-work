@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:53 2014
+from nobody tue dec 16 09:15:45 2014
 content-type: text/plain; charset=iso-8859-1
 
 hi, boyd!
@@ -47,3 +47,43 @@ wesley w. garland
 director, product development
 pagemail, inc.
 +1 613 542 2787 x 102
+from nobody tue dec 16 09:15:45 2014
+content-type: text/html; charset=iso-8859-1
+content-transfer-encoding: quoted-printable
+
+hi, boyd!on tue, apr 20, 2=
+010 at 11:18 am, boyd stephen smith jr. <bss@iguanasuicide.net>=
+ wrote:
+
+not portably. =a0it might be possible by parsing ($shell -v -c 'exit 12=
+3') or
+($shell --version -c 'exit 123').sa=
+y, that's a clever approach, thanks for suggesting it.
+
+sorry, i don't even see a good way to tell if a function with a particu=
+lar
+name is defined, but less list all the functions in the current shell
+environment.can
+you clarify?=a0 listing all the functions in the current shell
+environment solves my issue perfectly.. but less is just a pager, no?=a0
+oh, wait, did you mean "much less list"?=a0=a0 in which case, we&=
+#39;re in the
+same boat, but i'm hoping there is a solution i'm not aware of (eve=
+n
+though my hopes are dim :) )
+=a0
+bash is still an essential package last i checked. =a0you might simply use<=
+br>
+/bin/bash and whatever bash-isms you like.that
+would work pretty much everywhere except bone-stock solaris, where i
+have no possibility of recovery -- "/bin/bash: bad interpreter: no suc=
+h
+file or directory".=a0 at least if i use /bin/sh as my interpreter, i =
+can
+always at the very least output an error message.
+i suppose my other alternative is roughly=a0 [ -x /bin/bash ]
+&& /bin/bash $0 $* && exit $?, and assume that
+everywhere-but-solaris has /bin/bash. hmm.=a0 if debian keeps bash around
+as a default package, even when dash-is-bin-sh, then i guess i'm in
+fairly safe territory in that regard.thanks,wes-- wesley w. garlanddirector, product developmentpagemail=
+, inc.+1 613 542 2787 x 102

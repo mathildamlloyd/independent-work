@@ -1,4 +1,4 @@
-from nobody tue dec 16 08:46:54 2014
+from nobody tue dec 16 09:15:46 2014
 content-type: text/plain;
 charset="iso-8859-1"
 content-transfer-encoding: 7bit
@@ -23,3 +23,15 @@ gg
 
 
  http://www.english.upenn.edu/~afilreis/50s/schleslib.html
+from nobody tue dec 16 09:15:46 2014
+content-type: application/octet-stream;
+name="liberalism in america.url"
+content-transfer-encoding: 7bit
+content-disposition: attachment;
+filename="liberalism in america.url"
+
+[default]
+baseurl=http://www.english.upenn.edu/~afilreis/50s/schleslib.html
+[internetshortcut]
+url=http://www.english.upenn.edu/~afilreis/50s/schleslib.html
+modified=e0824ed43364c201de
