@@ -1,4 +1,5 @@
 from spam.models import Word
+from django.db.models import Sum
 
 def add_word(word, is_spam, is_novel_occurrence):
     # check if word already contained in db
@@ -17,3 +18,15 @@ def add_word(word, is_spam, is_novel_occurrence):
         if is_novel_occurrence:
             w.ham_docs += 1
     w.save()
+
+def get_training_freq(word):
+    # check if word is in db, otherwise return null
+    w = Word.objects.filter(word=word)
+    if len(w) == 0:
+        return None
+    else:
+        w = w[0]
+        return (word.ham_docs, word.spam_docs, word.ham_count, word.spam_count)
+
+def get_totals():
+    return Word.objects.aggregate(Sum('ham_count'), Sum('spam_count'))
