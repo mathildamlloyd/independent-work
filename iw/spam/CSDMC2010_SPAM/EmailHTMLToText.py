@@ -3,7 +3,7 @@ import sys
 import string
 import enchant
 from bs4 import BeautifulSoup
-from spam.utils import add_word
+from spam.utils import add_email
 
 def filter_func(char):
     return char == "\n" or char == " " or char == "-" or char == "'" or 65 <= ord(char) <= 90 or 97 <= ord(char) <= 122
@@ -15,11 +15,11 @@ def parse_emails():
         print 'The source directory %s does not exist, exit...' % (srcdir)
         sys.exit()
     # dstdir is the directory where the content .eml are stored
-    print 'Input destination directory: '
-    dstdir = raw_input()
-    if not os.path.exists(dstdir):
-        print 'The destination directory is newly created.'
-        os.makedirs(dstdir)
+    #print 'Input destination directory: '
+    #dstdir = raw_input()
+    #if not os.path.exists(dstdir):
+    #    print 'The destination directory is newly created.'
+    #    os.makedirs(dstdir)
 
     # get training labels for email set
     labels = {}
@@ -40,8 +40,8 @@ def parse_emails():
         with open(f) as openfileobject:
             for idx, line in enumerate(openfileobject):
                 # Skip the header
-                if idx <= 3:
-                    pass
+                #if idx <= 3:
+                #    pass
                 text += line
         text = filter(lambda x: x in string.printable, text)
         parsed_text = BeautifulSoup(text).get_text()
@@ -53,13 +53,13 @@ def parse_emails():
         # Get the training label for the current email being parsed
         is_spam = labels[filename] == "0"
         d = enchant.Dict("en_US")
-        email_wordset = set()
+        sanitized_text = []
         for index, word in enumerate(parsed_text):
-            print(word)
             if word != '' and d.check(word):
+                sanitized_text.append(word)
                 #if word in email_wordset:
                 #    add_word(word, is_spam, False)
                 #else:
                 #    add_word(word, is_spam, True)
-                email_wordset.add(word)
+        add_email(filename, is_spam, sanitized_text)
         #f_new.close()
