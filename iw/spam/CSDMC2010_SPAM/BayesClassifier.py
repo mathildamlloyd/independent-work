@@ -1,3 +1,5 @@
+from __future__ import division
+from math import log, exp
 from spam.utils import Counter
 from ProcessEmailDirectory import process_directory
 
@@ -19,12 +21,12 @@ class NaiveBayes():
         self.prob_method = prob_method
 
     # return conditional probability of spam given input word
-    def word_log_cond_prob(self, word)
+    def word_log_cond_prob(self, word):
         # TODO: ALSO DO THIS FOR DIFFERENT TYPES OF SMOOTHING LATER
         # TODO: COULD ALSO LATER USE ONLY EXTREME-HAM OR SPAM WORDS
         if (self.prob_method):
             p_ham = self.training.get_ham_doc_count(word)
-            s_spam = self.training.get_spam_doc_count(word)
+            p_spam = self.training.get_spam_doc_count(word)
             total_ham = self.training.get_total_ham_doc_count()
             total_spam = self.training.get_total_spam_doc_count()
         else:
@@ -47,18 +49,18 @@ class NaiveBayes():
 
     # given testing email filename, return whether or not is classified spam
     def classify_is_spam(self, email):
-        raw_text = self.testing_set[email][1].split(" ")
+        raw_text = self.testing_set[email][1]
         # append any poison words to end of the email
         if email in self.test_poison_counts:
             raw_text += self.test_poison_counts[email]
         n = 0
         # calculate log probability, not counting rare or novel words
         for word in raw_text:
-            p = word_log_cond_prob(word)
+            p = self.word_log_cond_prob(word)
             if not p:
-                pass
-            n += math.log(1 - p) - math.log(p)
-        return 1/(1 + math.exp(n)) > 0.5
+                continue
+            n += log(1 - p) - log(p)
+        return n < 0
 
     # calculate accuracy of the classifier over all testing emails
     def classifier_accuracy(self):
@@ -72,9 +74,12 @@ class NaiveBayes():
         # true positives over poison/non-poisoned spam emails
         tp_poisoned = 0
         tp_nonpoisoned = 0
+        count = 0
         for email in self.testing_set:
+            count += 1
+            print("Classifying %d of %d files" % (count, len(self.testing_set)))
             actual = self.testing_set[email][0]
-            predic = classify_is_spam(email)
+            predic = self.classify_is_spam(email)
             if actual == True:
                 if predic == True:
                     if email in self.test_poison_counts:
