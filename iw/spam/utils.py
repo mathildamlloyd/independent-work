@@ -20,6 +20,9 @@ class Counter(object):
     Tracks the counts of times a word appears within spam and ham emails.
     (Both the number of emails and the number of times).
     Should be used across multiple emails in order to decrease db queries.
+
+    >>> c = Counter()
+    >>> c.get_spam_doc_count("cow")
     """
     
     def __init__(self):
@@ -66,7 +69,7 @@ class Counter(object):
         """
         if word in self.emails:
             return self.emails[word]
-        q = self.get_word(word):
+        q = self.get_word(word)
         if not q:
             self.emails[word] = None
             return None
