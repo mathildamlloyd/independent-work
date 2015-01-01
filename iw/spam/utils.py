@@ -135,3 +135,46 @@ class Counter(object):
             total_count += email.body.count(word)
         self.ham_word_counter[word] = total_count
         return self.ham_word_counter[word]
+
+    def get_total_spam_word_count(self):
+        if not hasattr(self, "_spam_word_count"):
+            # Query for total number of words in all spam_emails
+            # TODO: Add body_len field to Email model
+            # self._spam_word_count = Email.objects.filter(is_spam=True).aggregate(Sum("body_len"))
+            emails = list(Email.objects.filter(is_spam=True))
+            # Might as well save the spam email count
+            self._spam_doc_count = len(emails)
+            total_len = 0
+            for email in emails:
+                total_len += len(email.body.split(" "))
+            self._spam_word_count = total_len
+        return self._spam_word_count
+
+    def get_total_ham_word_count(self):
+        if not hasattr(self, "_ham_word_count"):
+            # Query for total number of words in all ham_emails
+            # TODO: Add body_len field to Email model
+            # self._ham_word_count = Email.objects.filter(is_spam=False).aggregate(Sum("body_len"))
+            emails = list(Email.objects.filter(is_spam=False))
+            total_len = 0
+            for email in emails:
+                total_len += len(email.body.split(" "))
+            self._ham_word_count = total_len
+        return self._ham_word_count
+
+    def get_total_spam_doc_count(self):
+        """
+        Note: If you're going to use both get_total_spam_word_count and get_total_spam_doc_count in the same method,
+        it would be better to call get_total_spam_word_count because that will calculate the doc_count as well.
+        """
+        if not hasattr(self, "_spam_doc_count"):
+            self._spam_doc_count = Email.objects.filter(is_spam=True).count()
+        return self._spam_doc_count
+
+    def get_total_ham_doc_count(self):
+        """
+        Note: See get_total_spam_doc_count
+        """
+        if not hasattr(self, "_ham_doc_count"):
+            self._ham_doc_count = Email.objects.filter(is_spam=False).count()
+        return self._ham_doc_count
