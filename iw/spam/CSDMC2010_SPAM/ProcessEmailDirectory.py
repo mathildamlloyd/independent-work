@@ -6,8 +6,9 @@ from EmailHTMLToText import parse_email
 # populate the training database with emails from specified source directory
 def train_database():
     processed_emails = process_directory()
-    for email in processed_emails:
-        add_email(email, processed_emails[email][0], processed_emails[email][1])
+    # adding words now occurs in process_directory as well
+    #for email in processed_emails:
+    #    add_email(email, processed_emails[email][0], processed_emails[email][1])
 
 # process all of the emails from a specified source directory
 def process_directory():
@@ -22,14 +23,13 @@ def process_directory():
         for idx, line in enumerate(openfileobject):
             label = line.replace("\n", "").split(" ")
             labels[label[1]] = label[0]
-    processed_emails = {}
     count = 0
     total = len(os.listdir(srcdir))
     for filename in os.listdir(srcdir):
         count += 1
-        #print("Processing %d of %d files" % (count, total))
+        print("Processing %d of %d files" % (count, total))
         f = os.path.join(srcdir, filename)
         raw_text = parse_email(f)
         is_spam = labels[filename] == "0"
-        processed_emails[filename] = (is_spam, raw_text)
+        add_email(email, is_spam, raw_text)
     return processed_emails
