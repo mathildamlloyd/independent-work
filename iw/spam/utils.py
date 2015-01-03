@@ -210,3 +210,14 @@ def split_chunks(word_list, chunk_size, padding=""):
     args = [iter(word_list)]*chunk_size
     return izip_longest(*args, fillvalue=padding)
 
+def eval_chunk_spamicity(chunk):
+    """
+    Evaluates the spamicity of a chunk of words.
+    """
+    # TODO
+    raise NotImplementedError
+
+def eval_chunks(chunks):
+    return [eval_chunk_spamicity(chunk) for chunk in chunks]
+
+
