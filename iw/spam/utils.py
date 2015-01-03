@@ -33,9 +33,9 @@ class Counter(object):
         # maps the string word to the ham_doc_count
         self.ham_doc_counter = {}
         # maps the string word to the spam_word_count
-        self.spam_word_count = {}
+        self.spam_word_counter = {}
         # maps the string word to the ham_word_count
-        self.ham_word_count = {}
+        self.ham_word_counter = {}
         # maps the string word to the Word class object
         self.words = {}
         # maps the string word to the queryset of Email objects
@@ -89,6 +89,9 @@ class Counter(object):
             return self.spam_doc_counter[word]
         # Get the number of spam emails
         emails = self.get_emails(word)
+        if not emails:
+            self.spam_doc_counter[word] = 0
+            return 0
         self.spam_doc_counter[word] = emails.filter(is_spam=True).count()
         # At this point, we can store the ham count to decrease number of operations
         self.ham_doc_counter[word] = emails.count() - self.spam_doc_counter[word]
@@ -103,6 +106,9 @@ class Counter(object):
             return self.ham_doc_counter[word]
         # Get the number of ham emails
         emails = self.get_emails(word)
+        if not emails:
+            self.ham_doc_counter[word] = 0
+            return 0
         self.ham_doc_counter[word] = emails.filter(is_spam=False).count()
         # At this point, we can store the spam count to decrease number of operations
         self.spam_doc_counter[word] = emails.count() - self.ham_doc_counter[word]
@@ -116,14 +122,18 @@ class Counter(object):
         if word in self.spam_word_counter:
             return self.spam_word_counter[word]
         # Get spam emails
-        spam_emails = list(self.get_emails(word).filter(is_spam=True))
+        emails = self.get_emails(word)
+        if not emails:
+            self.spam_word_counter[word] = 0
+            return 0
+        spam_emails = list(emails.filter(is_spam=True))
         total_count = 0
         for email in spam_emails:
             total_count += email.body.count(word)
         self.spam_word_counter[word] = total_count
         return self.spam_word_counter[word]
 
-    def get_spam_word_count(self, word):
+    def get_ham_word_count(self, word):
         """
         Takes in a word as a string and returns the count of the number
         of TIMES that it appears in ham emails.
@@ -131,7 +141,11 @@ class Counter(object):
         if word in self.ham_word_counter:
             return self.ham_word_counter[word]
         # Get ham emails
-        ham_emails = list(self.get_emails(word).filter(is_spam=False))
+        emails = self.get_emails(word)
+        if not emails:
+            self.ham_word_counter[word] = 0
+            return 0
+        ham_emails = list(emails.filter(is_spam=False))
         total_count = 0
         for email in ham_emails:
             total_count += email.body.count(word)
