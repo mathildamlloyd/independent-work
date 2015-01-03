@@ -1,3 +1,5 @@
+from itertools import izip_longest
+
 from spam.models import Word
 from spam.models import Email
 from django.db.models import Sum
@@ -178,3 +180,19 @@ class Counter(object):
         if not hasattr(self, "_ham_doc_count"):
             self._ham_doc_count = Email.objects.filter(is_spam=False).count()
         return self._ham_doc_count
+
+
+
+
+def split_chunks(word_list, chunk_size, padding=""):
+    """
+    Takes in a list of words and splits it into chunks of size: chunk_size.
+    Returns an iterable of chunks.
+    If the length of the word list is not divisible by the chunk_size, empty strings will be used to pad the end of the word_list.
+    Usage:
+    >>> split_chunks(["a", "b", "c", "d"], 3)
+    [["a", "b", "c"], ["d", "", ""]]
+    """
+    args = [iter(word_list)]*chunk_size
+    return izip_longest(*args, fillvalue=padding)
+
