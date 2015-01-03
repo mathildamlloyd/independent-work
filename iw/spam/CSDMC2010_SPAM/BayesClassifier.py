@@ -9,7 +9,6 @@ class NaiveBayes():
 
     # initialize classifier settings like poison amount to insert
     def __init__(self, prob_method, poison_perc_train, poison_perc_test, words_per_email):
-        # TODO: FILL IN HOW TO DO POISONING LATER
         # TODO: FINISH FILLING IN ADDITIONAL RUN SETTINGS
         # dictionary of inserted training/testing poison words and their counts (over docs/bag-of-words)
         self.train_poison_counts  = {}
