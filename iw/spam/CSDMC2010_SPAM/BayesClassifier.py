@@ -5,6 +5,18 @@ from spam.utils import Counter
 from spam.models import Email
 from ProcessEmailDirectory import process_directory
 
+def split_chunks(word_list, chunk_size, padding=""):
+    """
+    Takes in a list of words and splits it into chunks of size: chunk_size.
+    Returns an iterable of chunks.
+    If the length of the word list is not divisible by the chunk_size, empty strings will be used to pad the end of the word_list.
+    Usage:
+    >>> split_chunks(["a", "b", "c", "d"], 3)
+    [["a", "b", "c"], ["d", "", ""]]
+    """
+    args = [iter(word_list)]*chunk_size
+    return izip_longest(*args, fillvalue=padding)
+
 class NaiveBayes():
 
     # initialize classifier settings like poison amount to insert
@@ -49,6 +61,9 @@ class NaiveBayes():
                 random_word = unicode(sample(random_words, 1)[0], "utf-8") 
                 self.testing_set[email][1].append(random_word)
 
+        # TODO: SHOULD SAVE CHUNK_SIZE
+        self.CHUNK_SIZE = 7
+
     # return conditional probability of spam given input word
     def word_log_cond_prob(self, word):
         # TODO: ALSO DO THIS FOR DIFFERENT TYPES OF SMOOTHING LATER
@@ -77,6 +92,7 @@ class NaiveBayes():
         return p_spam / (p_ham + p_spam)
 
     # given testing email filename, return whether or not is classified spam
+    # XXX: Should be deprecated to take in a list of probabilities    
     def classify_is_spam(self, email):
         raw_text = self.testing_set[email][1]
         # append any poison words to end of the email
@@ -90,6 +106,34 @@ class NaiveBayes():
                 continue
             n += log(1 - p) - log(p)
         return n < 0
+
+    def get_chunk_spamicity(self, chunk):
+        """
+        Returns the probability that an email is spam given a chunk of words.
+        """
+        n = 0
+        for word in chunk:
+            p = self.word_log_cond_prob(word)
+            if not p:
+                continue
+            n += log(1 - p) - log(p)
+        return exp(n)
+
+    def chunks_to_spamicity(self, chunks):
+        return [self.get_chunk_spamicity(chunk) for chunk in chunks]
+        
+    def classify_by_chunks(self, email):
+        # Need to get raw_text
+        # TODO: Is this how I do it?
+        raw_text = self.testing_set[email][1]
+        # append any poison words to end of the email
+        if email in self.test_poison_counts:
+            raw_text += self.test_poison_counts[email]
+        # Split text into chunks of CHUNK_SIZE
+        chunks = split_chunks(raw_text.split(" "), self.CHUNK_SIZE)
+        chunk_spamicities = self.chunks_to_spamicity(chunks)
+
+        # TODO: Now that each chunk has  a spamicity value, need to do something with it...
 
     # calculate accuracy of the classifier over all testing emails
     def classifier_accuracy(self):

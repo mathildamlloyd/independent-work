@@ -195,29 +195,3 @@ class Counter(object):
             self._ham_doc_count = Email.objects.filter(is_spam=False).count()
         return self._ham_doc_count
 
-
-
-
-def split_chunks(word_list, chunk_size, padding=""):
-    """
-    Takes in a list of words and splits it into chunks of size: chunk_size.
-    Returns an iterable of chunks.
-    If the length of the word list is not divisible by the chunk_size, empty strings will be used to pad the end of the word_list.
-    Usage:
-    >>> split_chunks(["a", "b", "c", "d"], 3)
-    [["a", "b", "c"], ["d", "", ""]]
-    """
-    args = [iter(word_list)]*chunk_size
-    return izip_longest(*args, fillvalue=padding)
-
-def eval_chunk_spamicity(chunk):
-    """
-    Evaluates the spamicity of a chunk of words.
-    """
-    # TODO
-    raise NotImplementedError
-
-def eval_chunks(chunks):
-    return [eval_chunk_spamicity(chunk) for chunk in chunks]
-
-
