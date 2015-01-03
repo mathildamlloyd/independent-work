@@ -19,16 +19,13 @@ def split_chunks(word_list, chunk_size, padding=""):
 
 class NaiveBayes():
 
-    # initialize classifier settings like poison amount to insert
-    def __init__(self, prob_method, poison_perc_train, poison_perc_test, words_per_email):
         # TODO: FINISH FILLING IN ADDITIONAL RUN SETTINGS
+    def run(self, prob_method, poison_perc_train, poison_perc_test, words_per_email, chunk_size=7):
+        # Note that we don't actually need to reset our training counter
+
         # dictionary of inserted training/testing poison words and their counts (over docs/bag-of-words)
         self.train_poison_counts  = {}
         self.test_poison_counts = {}
-        # dictionary of test emails to their spam value and text body
-        self.testing_set = process_directory()
-        # cache of training database
-        self.training = Counter()
         # prob_method: probabilities drawn from doc frequencies (True) or bag-of-words frequencies (False)
         self.prob_method = prob_method
         # percentage of the training/testing spam set to poison, and amount to poison per email
@@ -60,9 +57,16 @@ class NaiveBayes():
             for _ in xrange(words_per_email):
                 random_word = unicode(sample(random_words, 1)[0], "utf-8") 
                 self.testing_set[email][1].append(random_word)
+        random_words.close()
+
 
         # TODO: SHOULD SAVE CHUNK_SIZE
-        self.CHUNK_SIZE = 7
+        self.CHUNK_SIZE = chunk_size
+
+    # initialize classifier settings like poison amount to insert
+    def __init__(self, prob_method, poison_perc_train, poison_perc_test, words_per_email, chunk_size=7):
+        self.training = Counter()
+        super(NaiveBayes, self).__init__()
 
     # return conditional probability of spam given input word
     def word_log_cond_prob(self, word):
