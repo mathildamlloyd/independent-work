@@ -59,12 +59,11 @@ class NaiveBayes():
                 self.testing_set[email][1].append(random_word)
         random_words.close()
 
-
         # TODO: SHOULD SAVE CHUNK_SIZE
         self.CHUNK_SIZE = chunk_size
 
     # initialize classifier settings like poison amount to insert
-    def __init__(self, prob_method, poison_perc_train, poison_perc_test, words_per_email, chunk_size=7):
+    def __init__(self):
         self.training = Counter()
         super(NaiveBayes, self).__init__()
 
