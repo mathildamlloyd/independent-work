@@ -1,7 +1,9 @@
 from __future__ import division
 from math import log, exp, floor
+from numpy import std, var, mean, amin, amax
+from itertools import izip_longest
 from random import sample
-from spam.utils import Counter
+from spam.utils import Counter, add_email
 from spam.models import Email
 from ProcessEmailDirectory import process_directory
 
@@ -17,19 +19,23 @@ def split_chunks(word_list, chunk_size, padding=""):
     args = [iter(word_list)]*chunk_size
     return izip_longest(*args, fillvalue=padding)
 
-class NaiveBayes():
+class NaiveBayes(object):
 
-        # TODO: FINISH FILLING IN ADDITIONAL RUN SETTINGS
-    def run(self, prob_method, poison_perc_train, poison_perc_test, words_per_email, chunk_size=7):
+    # TODO: FINISH FILLING IN ADDITIONAL RUN SETTINGS
+    def change_settings(self, prob_method, poison_perc_train, poison_perc_test, words_per_email):
+
         # Note that we don't actually need to reset our training counter
 
         # dictionary of inserted training/testing poison words and their counts (over docs/bag-of-words)
         self.train_poison_counts  = {}
+	self.testing_set = process_directory()
         self.test_poison_counts = {}
         # prob_method: probabilities drawn from doc frequencies (True) or bag-of-words frequencies (False)
         self.prob_method = prob_method
         # percentage of the training/testing spam set to poison, and amount to poison per email
-        random_words = open("/usr/share/dict/words").read().splitlines()
+        dict_file = open("/usr/share/dict/words")
+	random_words = dict_file.read().splitlines()
+	dict_file.close()
         email_spam_subset = list(Email.objects.filter(is_spam=True))
         no_poisoned_email = int(floor(poison_perc_train * len(email_spam_subset)))
         if self.prob_method:
@@ -57,15 +63,16 @@ class NaiveBayes():
             for _ in xrange(words_per_email):
                 random_word = unicode(sample(random_words, 1)[0], "utf-8") 
                 self.testing_set[email][1].append(random_word)
-        random_words.close()
-
-        # TODO: SHOULD SAVE CHUNK_SIZE
-        self.CHUNK_SIZE = chunk_size
 
     # initialize classifier settings like poison amount to insert
-    def __init__(self):
+    def __init__(self, chunk_size=7):
         self.training = Counter()
+        self.CHUNK_SIZE = chunk_size
         super(NaiveBayes, self).__init__()
+
+    def change_chunk_size(self, chunk_size):
+        self.CHUNK_SIZE = chunk_size
+	
 
     # return conditional probability of spam given input word
     def word_log_cond_prob(self, word):
@@ -112,7 +119,7 @@ class NaiveBayes():
 
     def get_chunk_spamicity(self, chunk):
         """
-        Returns the probability that an email is spam given a chunk of words.
+        Returns the log probability that an email is spam given a chunk of words.
         """
         n = 0
         for word in chunk:
@@ -120,12 +127,12 @@ class NaiveBayes():
             if not p:
                 continue
             n += log(1 - p) - log(p)
-        return exp(n)
+        return n
 
     def chunks_to_spamicity(self, chunks):
         return [self.get_chunk_spamicity(chunk) for chunk in chunks]
-        
-    def classify_by_chunks(self, email):
+
+    def get_email_chunk_spamicities(self, email, chunk_size):
         # Need to get raw_text
         # TODO: Is this how I do it?
         raw_text = self.testing_set[email][1]
@@ -133,13 +140,35 @@ class NaiveBayes():
         if email in self.test_poison_counts:
             raw_text += self.test_poison_counts[email]
         # Split text into chunks of CHUNK_SIZE
-        chunks = split_chunks(raw_text.split(" "), self.CHUNK_SIZE)
+        chunks = split_chunks(raw_text, chunk_size)
         chunk_spamicities = self.chunks_to_spamicity(chunks)
+        return chunk_spamicities
 
+    def test_heuristic(self):
+	ham_stats = []
+	spam_poison_stats = []
+	spam_nopois_stats = []
+	for email in self.testing_set:
+	    stat = std(self.get_email_chunk_spamicities(email, self.CHUNK_SIZE))
+	    if self.testing_set[email][0]:
+		if email in self.test_poison_counts:
+		    spam_poison_stats += stat
+		else:
+		    spam_nopois_stas += stat
+	    else:
+		    ham_stats += stat
+	print("ham heuristic value (average, std): %d, $d" % (mean(ham_stats), std(ham_stats)))	
+	print("poisoned spam heuristic value (average, std): %d, $d" % (mean(spam_poison_stats), std(spam_poison_stats))) 
+	print("nopoison spam heuristic value (average, std): %d, $d" % (mean(spam_nopois_stats), std(spam_nopois_stats)))
+   
+    def classify_by_chunks(self, email, chunk_size=None):
+	if not chunk_size:
+            chunk_size = self.CHUNK_SIZE
+	chunk_spamicities = self.get_email_chunk_spamicities(email, chunk_size)
         # TODO: Now that each chunk has  a spamicity value, need to do something with it...
 
     # calculate accuracy of the classifier over all testing emails
-    def classifier_accuracy(self):
+    def classifier_accuracy(self, retrain):
         # false positives over ham emails
         fp = 0
         # true negatives over ham emails
@@ -185,4 +214,10 @@ class NaiveBayes():
         tp = tp_poisoned + tp_nonpoisoned
         fnr = fn / (fn + tp)
         acc = (tp + tn)/(fp + fn + tp + tn)
+	if retrain:
+	    for email in self.testing_set:
+		raw_text = self.testing_set[email][1]
+       		if email in self.test_poison_counts:
+            	    raw_text += self.test_poison_counts[email]
+		add_email(email, self.testing_set[email][0], raw_text)
         return (acc, fpr, fnr, fnr_poisoned, fnr_nonpoisoned)

@@ -25,11 +25,12 @@ def process_directory():
             labels[label[1]] = label[0]
     count = 0
     total = len(os.listdir(srcdir))
+    processed_emails = {}
     for filename in os.listdir(srcdir):
         count += 1
-        print("Processing %d of %d files" % (count, total))
+        #print("Processing %d of %d files" % (count, total))
         f = os.path.join(srcdir, filename)
         raw_text = parse_email(f)
         is_spam = labels[filename] == "0"
-        add_email(email, is_spam, raw_text)
+        processed_emails[filename] = (is_spam, raw_text)
     return processed_emails
