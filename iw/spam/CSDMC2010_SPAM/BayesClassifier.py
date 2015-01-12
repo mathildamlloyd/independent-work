@@ -6,6 +6,7 @@ from random import sample
 from spam.utils import Counter, add_email
 from spam.models import Email
 from ProcessEmailDirectory import process_directory
+from ProcessEmailDirectory import demo_process_directory
 
 def split_chunks(word_list, chunk_size, padding=""):
     """
@@ -71,7 +72,7 @@ class NaiveBayes(object):
 
         # dictionary of inserted training/testing poison words and their counts (over docs/bag-of-words)
         self.train_poison_counts  = {}
-        self.testing_set = "spam/CSDMC2010_SPAM/demo/" + fdir
+        self.testing_set = demo_process_directory(fdir)
         self.test_poison_counts = {}
         # prob_method: probabilities drawn from doc frequencies (True) or bag-of-words frequencies (False)
         self.prob_method = prob_method
@@ -245,7 +246,10 @@ class NaiveBayes(object):
                     fp += 1
                 else:
                     tn += 1
-        fpr = fp/(fp + tn)
+        try:
+            fpr = fp/(fp + tn)
+        except Exception:
+            fpr = 0
         try:
             fnr_poisoned = fn_poisoned / (fn_poisoned + tp_poisoned)
         except Exception:
@@ -256,8 +260,15 @@ class NaiveBayes(object):
             fnr_nonpoisoned = None
         fn = fn_poisoned + fn_nonpoisoned
         tp = tp_poisoned + tp_nonpoisoned
-        fnr = fn / (fn + tp)
-        acc = (tp + tn)/(fp + fn + tp + tn)
+        try:
+            fnr = fn / (fn + tp)
+        except Exception:
+            fnr = 0
+        try:
+            acc = (tp + tn)/(fp + fn + tp + tn)
+        except Exception:
+            print("why")
+            acc = 0
 	if retrain:
 	    for email in self.testing_set:
 		raw_text = self.testing_set[email][1]

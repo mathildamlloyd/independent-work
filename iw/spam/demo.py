@@ -6,27 +6,23 @@ BASE_DIR = "spam/CSDMC2010_SPAM/demo/"
 class Demo(object):
 
     def run(self, doc_count=True):
-        print("Would you like to try a high spamicity or low spamicity spam email?")
-        print("1: high spam")
-        print("2: low spam")
         # Prompt for which file to use
-        fname = raw_input()
-        while fname != "1" or fname != 2:
-            print("Would you like to try a high spamicity or low spamicity spam email?")
-            print("1: high spam")
-            print("2: low spam")
+        fname = ""
+        while fname != "1" and fname != "2":
+            print("Would you like to try email 1 or email 2?")
+            fname = raw_input()
 
         classifier = NaiveBayes()
         fdir = BASE_DIR + "src/" + fname
-        n.change_demo_settings(doc_count, 0, 1, 0, fdir)
+        classifier.change_demo_settings(doc_count, 0, 1, 0, fdir)
         # Classify the original file
-        original = n.classifier_accuracy(False)
+        original = classifier.classifier_accuracy(False)
         print("Original email:")
         with open(fdir+"/" + fname, "r") as fin:
             print fin.read()
-        self.print_accuracy(poisoned, False)
+        self.print_accuracy(original, False)
         # We want to copy the correct file to a reusable location
-        copyfile(BASE_DIR + "src/" + fname, BASE_DIR + "dst/" + fname)
+        copyfile(BASE_DIR + "src/" + fname + "/" + fname, BASE_DIR + "dst/" + fname+ "/" + fname)
         # Prompt to add poison
         print("Please type in the poisoned text that you would like to append to the end of the email")
         extra_poison = raw_input()
@@ -34,9 +30,13 @@ class Demo(object):
         f = open(fdir + "/" + fname, "a")
         f.write(extra_poison)
         f.close()
-        n.change_demo_settings(doc_count, 0, 1, 0, fdir)
-        poisoned = n.classifier_accuracy(False)
+        classifier.change_demo_settings(doc_count, 0, 1, 0, fdir)
+        poisoned = classifier.classifier_accuracy(False)
         self.print_accuracy(poisoned, True)
+
+    def run_demo(self):
+        while True:
+            self.run()
 
 
     def print_accuracy(self, results, poisoned):
