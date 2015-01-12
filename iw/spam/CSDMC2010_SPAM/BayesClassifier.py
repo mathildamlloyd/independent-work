@@ -28,14 +28,14 @@ class NaiveBayes(object):
 
         # dictionary of inserted training/testing poison words and their counts (over docs/bag-of-words)
         self.train_poison_counts  = {}
-	self.testing_set = process_directory()
+        self.testing_set = process_directory()
         self.test_poison_counts = {}
         # prob_method: probabilities drawn from doc frequencies (True) or bag-of-words frequencies (False)
         self.prob_method = prob_method
         # percentage of the training/testing spam set to poison, and amount to poison per email
         dict_file = open("/usr/share/dict/words")
-	random_words = dict_file.read().splitlines()
-	dict_file.close()
+        random_words = dict_file.read().splitlines()
+        dict_file.close()
         email_spam_subset = list(Email.objects.filter(is_spam=True))
         no_poisoned_email = int(floor(poison_perc_train * len(email_spam_subset)))
         if self.prob_method:
@@ -63,6 +63,50 @@ class NaiveBayes(object):
             for _ in xrange(words_per_email):
                 random_word = unicode(sample(random_words, 1)[0], "utf-8") 
                 self.testing_set[email][1].append(random_word)
+
+    def change_demo_settings(self, prob_method, poison_perc_train, poison_perc_test, words_per_email, fdir):
+        # Can clean this up later since not everything is necessary
+
+        # Note that we don't actually need to reset our training counter
+
+        # dictionary of inserted training/testing poison words and their counts (over docs/bag-of-words)
+        self.train_poison_counts  = {}
+        self.testing_set = "spam/CSDMC2010_SPAM/demo/" + fdir
+        self.test_poison_counts = {}
+        # prob_method: probabilities drawn from doc frequencies (True) or bag-of-words frequencies (False)
+        self.prob_method = prob_method
+        # percentage of the training/testing spam set to poison, and amount to poison per email
+        dict_file = open("/usr/share/dict/words")
+        random_words = dict_file.read().splitlines()
+        dict_file.close()
+        email_spam_subset = list(Email.objects.filter(is_spam=True))
+        no_poisoned_email = int(floor(poison_perc_train * len(email_spam_subset)))
+        if self.prob_method:
+            email_poison_subset = sample(email_spam_subset, no_poisoned_email)
+            for poisoned_email in email_poison_subset:
+                poisoned_email_wordset = poisoned_email.word_set.values_list("word", flat=True)
+                for _ in xrange(words_per_email):
+                    random_word = unicode(sample(random_words, 1)[0], "utf-8")
+                    if random_word not in poisoned_email_wordset:
+                        if random_word not in self.train_poison_counts:
+                            self.train_poison_counts[random_word] = set()
+                        self.train_poison_counts[random_word].add(poisoned_email.email)
+            for word in self.train_poison_counts:
+                self.train_poison_counts[word] = len(self.train_poison_counts[word])
+        else:
+            for _ in xrange(no_poisoned_email * words_per_email):
+                random_word = unicode(sample(random_words, 1)[0], "utf-8")
+                if random_word not in self.train_poison_counts:
+                    self.train_poison_counts[random_word] = 0
+                self.train_poison_counts[random_word] += 1
+        # poison the testing set
+        email_spam_test = sample(self.testing_set.keys(), int(floor(poison_perc_test * len(self.testing_set))))
+        for email in email_spam_test:
+            self.test_poison_counts[email] = []
+            for _ in xrange(words_per_email):
+                random_word = unicode(sample(random_words, 1)[0], "utf-8") 
+                self.testing_set[email][1].append(random_word)
+
 
     # initialize classifier settings like poison amount to insert
     def __init__(self, chunk_size=7):
@@ -182,7 +226,7 @@ class NaiveBayes(object):
         count = 0
         for email in self.testing_set:
             count += 1
-            print("Classifying %d of %d files" % (count, len(self.testing_set)))
+            #print("Classifying %d of %d files" % (count, len(self.testing_set)))
             actual = self.testing_set[email][0]
             predic = self.classify_is_spam(email)
             if actual == True:
