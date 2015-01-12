@@ -221,3 +221,28 @@ class NaiveBayes(object):
             	    raw_text += self.test_poison_counts[email]
 		add_email(email, self.testing_set[email][0], raw_text)
         return (acc, fpr, fnr, fnr_poisoned, fnr_nonpoisoned)
+
+    def generate_example(self):	
+	email = "TRAIN_00000.eml"
+        raw_text = self.testing_set[email][1]
+        # append any poison words to end of the email
+        if email in self.test_poison_counts:
+            raw_text += self.test_poison_counts[email]
+        n = 0
+	f = open("example_random.txt",'a')
+        # calculate log probability, not counting rare or novel words
+        for word in raw_text:
+            p = self.word_log_cond_prob(word)
+	    f.write(word + ": " + str(p) + '\n')
+            if not p:
+                continue
+            n += log(1 - p) - log(p)
+	#for _ in xrange(15):
+        #    p = self.word_log_cond_prob("looked")
+	#    f.write("looked" + ": " + str(p) + '\n')
+        #    if not p:
+        #        continue
+        #    n += log(1 - p) - log(p)
+	f.write("Cumulative email spam probability, given wordset is: " + str(1/(1+exp(n))))
+	f.close()
+		
